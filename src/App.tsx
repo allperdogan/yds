@@ -39,6 +39,7 @@ export const App: React.FC = () => {
 
   // Navigation state passed to specific views
   const [vocabDayFilter, setVocabDayFilter] = useState<number | undefined>(undefined);
+  const [vocabInitialViewMode, setVocabInitialViewMode] = useState<'flashcard' | 'dictionary'>('flashcard');
   const [practiceTypeFilter, setPracticeTypeFilter] = useState<QuestionType | undefined>(undefined);
   const [tacticFilter, setTacticFilter] = useState<QuestionType | undefined>(undefined);
 
@@ -244,6 +245,7 @@ export const App: React.FC = () => {
         {activeTab === 'vocab' && (
           <VocabFlashcardView
             initialDay={vocabDayFilter}
+            initialViewMode={vocabInitialViewMode}
             srsData={srsData}
             onUpdateSRS={handleUpdateSRS}
             bookmarkedWords={stats.bookmarkedWords}
@@ -266,7 +268,10 @@ export const App: React.FC = () => {
               handleToggleBookmark(wId, true);
             }}
             onAddMistake={handleAddMistake}
-            onNavigateToFlashcards={() => setActiveTab('vocab')}
+            onNavigateToFlashcards={(mode) => {
+              setVocabInitialViewMode(mode || 'flashcard');
+              setActiveTab('vocab');
+            }}
           />
         )}
 

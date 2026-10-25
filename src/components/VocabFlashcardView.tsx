@@ -28,6 +28,7 @@ import { AudioService } from '../services/audioService';
 
 interface VocabFlashcardViewProps {
   initialDay?: number;
+  initialViewMode?: 'flashcard' | 'dictionary';
   srsData: Record<string, SRSItem>;
   onUpdateSRS: (updatedData: Record<string, SRSItem>) => void;
   bookmarkedWords: string[];
@@ -37,6 +38,7 @@ interface VocabFlashcardViewProps {
 
 export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
   initialDay,
+  initialViewMode,
   srsData,
   onUpdateSRS,
   bookmarkedWords,
@@ -44,7 +46,15 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
   onNavigateToDrill
 }) => {
   // Main View Mode: Flashcards (SRS) vs Full Dictionary / Atlas List
-  const [viewMode, setViewMode] = useState<'flashcard' | 'dictionary'>('flashcard');
+  const [viewMode, setViewMode] = useState<'flashcard' | 'dictionary'>(
+    initialViewMode || 'flashcard'
+  );
+
+  useEffect(() => {
+    if (initialViewMode) {
+      setViewMode(initialViewMode);
+    }
+  }, [initialViewMode]);
 
   // Flashcard & Common Filters
   const [filterMode, setFilterMode] = useState<'all' | 'due' | 'day' | 'bookmarked'>(

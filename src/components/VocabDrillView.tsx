@@ -33,7 +33,7 @@ interface VocabDrillViewProps {
   onToggleBookmark?: (wordId: string) => void;
   onAddMistakeWord?: (wordId: string) => void;
   onAddMistake?: (questionId: string) => void;
-  onNavigateToFlashcards?: () => void;
+  onNavigateToFlashcards?: (mode?: 'flashcard' | 'dictionary') => void;
 }
 
 export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
@@ -330,7 +330,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           </p>
         </div>
 
-        {/* View Switcher: Soru Çöz vs 1.412 Kart (SRS) & Sözlük */}
+        {/* View Switcher: Soru Çöz vs 1.412 Kart (SRS) vs Kelime Sözlüğü (A-Z) */}
         <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold shrink-0">
           <button
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-300 shadow-sm font-extrabold"
@@ -339,14 +339,24 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             <span>⚡ Soru Çöz Drill</span>
           </button>
           {onNavigateToFlashcards && (
-            <button
-              onClick={onNavigateToFlashcards}
-              title="1.412 Kelimelik Flashcard (SRS) ve A-Z Sözlük Masasına Git"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 transition-colors"
-            >
-              <Layers className="w-3.5 h-3.5 text-indigo-500" />
-              <span>🎴 1.412 Kart (SRS) & Sözlük</span>
-            </button>
+            <>
+              <button
+                onClick={() => onNavigateToFlashcards('flashcard')}
+                title="1.412 Kelimelik Flashcard (SRS) Masasına Git"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors"
+              >
+                <Layers className="w-3.5 h-3.5 text-indigo-500" />
+                <span>🎴 1.412 Kart (SRS)</span>
+              </button>
+              <button
+                onClick={() => onNavigateToFlashcards('dictionary')}
+                title="1.412 Kelimelik A-Z Sözlük & Arama Masasına Git"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors"
+              >
+                <BookOpen className="w-3.5 h-3.5 text-emerald-500" />
+                <span>📚 Kelime Sözlüğü (A-Z)</span>
+              </button>
+            </>
           )}
         </div>
       </div>
