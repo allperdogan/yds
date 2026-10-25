@@ -1,4 +1,33 @@
 import { YdsQuestion } from '../types';
+export { YDS_FULL_MOCK_EXAM_2 } from './ydsFullMockExam2';
+export { YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam3';
+
+export const YDS_MOCK_EXAMS_LIST = [
+  {
+    id: 'exam_1',
+    title: '1. Deneme: Standart ÖSYM 2024 VIP Simülasyonu',
+    badge: 'ÖSYM Standartı',
+    description: 'Birebir resmi sınav dengesi, standart soru tipleri ve dengeli süre yönetimi.',
+    questionCount: 80,
+    difficulty: 'ÖSYM Düzeyi'
+  },
+  {
+    id: 'exam_2',
+    title: '2. Deneme: Ağır Akademik Kondisyon Denemesi (80-90 Hedef)',
+    badge: '80-90 Hedef',
+    description: 'Yoğun bilimsel & tarihsel paragraflar, karmaşık cümle tamamlama ve ileri düzey kelime kadrosu.',
+    questionCount: 80,
+    difficulty: 'İleri Seviye'
+  },
+  {
+    id: 'exam_3',
+    title: '3. Deneme: Çeldirici & Hız Odaklı Master Deneme',
+    badge: 'Tuzak Deşifresi',
+    description: 'ÖSYM soru yazarlarının imza çeldiricileri, ikili bağlaç tuzakları ve zaman baskısı antrenmanı.',
+    questionCount: 80,
+    difficulty: 'YDS Master'
+  }
+];
 
 export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
   {

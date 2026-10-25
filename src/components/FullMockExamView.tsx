@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Timer, AlertTriangle, CheckCircle2, XCircle, Award, BarChart3, ChevronRight, ChevronLeft, Flag, HelpCircle, ShieldAlert, Sparkles, BookMarked, RotateCcw } from 'lucide-react';
+import { Timer, AlertTriangle, CheckCircle2, XCircle, Award, BarChart3, ChevronRight, ChevronLeft, Flag, HelpCircle, ShieldAlert, Sparkles, BookMarked, RotateCcw, Brain, BatteryCharging, Zap, Info } from 'lucide-react';
 import { YdsQuestion, MockExamResult } from '../types';
-import { YDS_FULL_MOCK_EXAM_1 } from '../data/ydsFullMockExam';
+import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3, YDS_MOCK_EXAMS_LIST } from '../data/ydsFullMockExam';
 
 interface FullMockExamViewProps {
   onAddMistake: (questionId: string) => void;
@@ -12,6 +12,9 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
   onAddMistake,
   onSaveExamResult
 }) => {
+  // Sınav Seçimi (Deneme 1, 2, 3)
+  const [selectedExamId, setSelectedExamId] = useState<string>('exam_1');
+  
   // Sınav Durumu
   const [examState, setExamState] = useState<'intro' | 'active' | 'review'>('intro');
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -23,6 +26,28 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
   const [timeLeft, setTimeLeft] = useState<number>(180 * 60);
   const [isTimerPaused, setIsTimerPaused] = useState<boolean>(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
+
+  // 60. Soru Glikoz & Zihinsel Kriz Kalkanı
+  const [hasShownStaminaModal, setHasShownStaminaModal] = useState<boolean>(false);
+  const [isStaminaModalOpen, setIsStaminaModalOpen] = useState<boolean>(false);
+  const [isStaminaGuideOpen, setIsStaminaGuideOpen] = useState<boolean>(false);
+
+  // Sınav Soru Havuzunu Seç
+  const examMap: Record<string, YdsQuestion[]> = {
+    exam_1: YDS_FULL_MOCK_EXAM_1,
+    exam_2: YDS_FULL_MOCK_EXAM_2,
+    exam_3: YDS_FULL_MOCK_EXAM_3
+  };
+  const questions = examMap[selectedExamId] || YDS_FULL_MOCK_EXAM_1;
+  const currentQ = questions[currentIndex] || questions[0];
+
+  // 60. Soru Eşiği Tetikleyici
+  useEffect(() => {
+    if (examState === 'active' && currentIndex >= 59 && !hasShownStaminaModal) {
+      setIsStaminaModalOpen(true);
+      setHasShownStaminaModal(true);
+    }
+  }, [currentIndex, examState, hasShownStaminaModal]);
 
   // Sınav Zamanlayıcısı
   useEffect(() => {
@@ -43,15 +68,14 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
     };
   }, [examState, isTimerPaused, timeLeft]);
 
-  const questions = YDS_FULL_MOCK_EXAM_1;
-  const currentQ = questions[currentIndex];
-
   const handleStartExam = () => {
     setUserAnswers({});
     setFlaggedQuestions({});
     setStruckOptions({});
     setTimeLeft(180 * 60);
     setCurrentIndex(0);
+    setHasShownStaminaModal(false);
+    setIsStaminaModalOpen(false);
     setExamState('active');
   };
 
@@ -153,25 +177,123 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
   const answeredCount = Object.keys(userAnswers).length;
   const flaggedCount = Object.values(flaggedQuestions).filter(Boolean).length;
 
+  const getRecommendedPacing = (idx: number) => {
+    if (idx < 6) return '~45 sn (Kelime)';
+    if (idx < 16) return '~40 sn (Gramer)';
+    if (idx < 26) return '~1 dk (Cloze)';
+    if (idx < 36) return '~1.5 dk (Cümle Tamamlama)';
+    if (idx < 42) return '~1.5 dk (Çeviri)';
+    if (idx < 62) return '~2.5 dk (Paragraf)';
+    return '~1.5 dk (Son 20 Soru / Kondisyon)';
+  };
+
   return (
     <div className="max-w-5xl mx-auto space-y-6 pb-24 md:pb-12 px-2">
       {/* 1. INTRO / BAŞLANGIÇ EKRANI */}
       {examState === 'intro' && (
-        <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-10 shadow-sm space-y-8 text-center max-w-2xl mx-auto">
+        <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-10 shadow-sm space-y-8 text-center max-w-3xl mx-auto">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-600 to-indigo-600 text-white flex items-center justify-center mx-auto shadow-lg shadow-sky-500/20">
             <Timer className="w-8 h-8" />
           </div>
 
           <div className="space-y-3">
-            <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300">
-              Gerçek ÖSYM Standartı
-            </span>
+            <div className="inline-flex items-center gap-2">
+              <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300">
+                Gerçek ÖSYM Standartı
+              </span>
+              <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300">
+                3 Farklı Tam Deneme
+              </span>
+            </div>
             <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white">
               180 Dakika / 80 Soruluk Tam YDS Deneme Sınavı
             </h2>
             <p className="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-lg mx-auto">
               Sınav kondisyonunu ve 3 saatlik zihinsel dayanıklılığı geliştirmek için birebir ÖSYM soru dağılımıyla hazırlanmış eksiksiz simülasyon.
             </p>
+          </div>
+
+          {/* DENEME SEÇİM KARTLARI */}
+          <div className="space-y-2 text-left">
+            <span className="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              Çözmek İstediğiniz Denemeyi Seçin:
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              {YDS_MOCK_EXAMS_LIST.map((exam) => {
+                const isSelected = selectedExamId === exam.id;
+                return (
+                  <div
+                    key={exam.id}
+                    onClick={() => setSelectedExamId(exam.id)}
+                    className={`p-4 rounded-2xl border cursor-pointer transition-all ${
+                      isSelected
+                        ? 'border-sky-500 bg-sky-50/70 dark:bg-sky-950/40 ring-2 ring-sky-500/30 shadow-md'
+                        : 'border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/40 hover:border-slate-300'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-full ${
+                        isSelected
+                          ? 'bg-sky-600 text-white'
+                          : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+                      }`}>
+                        {exam.badge}
+                      </span>
+                      <span className="text-[11px] font-bold text-slate-500">80 Soru</span>
+                    </div>
+                    <h4 className="text-xs font-black text-slate-900 dark:text-white leading-snug">
+                      {exam.title.split(':')[1] || exam.title}
+                    </h4>
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                      {exam.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* 80-90 ALANLARIN KONDİSYON VE GLİKOZ PROTOKOLÜ (EXPANDABLE REHBER) */}
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/30 border border-amber-200 dark:border-amber-800/70 rounded-2xl p-4 text-left space-y-3">
+            <div className="flex items-start justify-between gap-3">
+              <div className="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-black text-xs md:text-sm">
+                <Brain className="w-4 h-4 text-amber-600 shrink-0" />
+                <span>🔥 Realist Olalım: Neden SADECE Bu App Yetmez? (12-15 Tam Deneme Şartı)</span>
+              </div>
+              <button
+                onClick={() => setIsStaminaGuideOpen(!isStaminaGuideOpen)}
+                className="text-xs font-extrabold text-amber-700 dark:text-amber-400 hover:underline shrink-0"
+              >
+                {isStaminaGuideOpen ? 'Kapat' : 'Protokolü Oku'}
+              </button>
+            </div>
+
+            <p className="text-xs text-amber-900/80 dark:text-amber-300/80 leading-relaxed">
+              Sınav 180 dakika ve 80 soru. Beyin 60. sorudan sonra glikoz yakmayı bırakıp pes eder. Gerçek bir 80-90 adayının sınava kadar en az <strong>12-15 tane tam denemeyi</strong> kesintisiz masada çözüp o 3 saatlik zihinsel felci defalarca yaşamış olması şarttır!
+            </p>
+
+            {isStaminaGuideOpen && (
+              <div className="pt-2 border-t border-amber-200/80 dark:border-amber-800/80 space-y-2 text-xs text-amber-950 dark:text-amber-200">
+                <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
+                  <span className="font-extrabold text-amber-800 dark:text-amber-300">1. Kesintisiz 180 Dakika Masada Oturma Disiplini:</span>
+                  <p className="text-slate-700 dark:text-slate-300 text-[11px]">
+                    Deneme çözerken telefonu uçak moduna alın, asla masadan kalkmayın ve ara vermeyin. Beyin ancak bu şekilde 180 dakikalık odaklanma kasını geliştirir.
+                  </p>
+                </div>
+                <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
+                  <span className="font-extrabold text-amber-800 dark:text-amber-300">2. Glikoz ve Sıvı Desteği (60. Soru Krizi):</span>
+                  <p className="text-slate-700 dark:text-slate-300 text-[11px]">
+                    Sınavın 60. dakikasında ve 60. sorusunda glikoz rezervi tükenir. Masanızda bir yudum su ve kuru üzüm/şeker bulundurun; anlık kan şekeri desteği mental yorgunluğu önler.
+                  </p>
+                </div>
+                <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
+                  <span className="font-extrabold text-amber-800 dark:text-amber-300">3. Son 6 Hafta Maratonu (Haftada 2 Tam Deneme):</span>
+                  <p className="text-slate-700 dark:text-slate-300 text-[11px]">
+                    Sınava son 1.5 ay kala her hafta Çarşamba ve Pazar saat 10:15'te tam deneme başlatın. Biyolojik saatiniz sınav saatinde en yüksek zihinsel performansa kilitlensin.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Sınav Dağılım Tablosu */}
@@ -233,6 +355,14 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
               <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
                 {answeredCount} / 80 İşaretlendi
               </span>
+
+              {/* Soru Başına İdeal Süre Rehberi */}
+              {examState === 'active' && (
+                <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+                  <Zap className="w-3 h-3 text-indigo-500" />
+                  <span>İdeal Hız: {getRecommendedPacing(currentIndex)}</span>
+                </span>
+              )}
             </div>
 
             <div className="flex items-center gap-2">
@@ -349,6 +479,31 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
               })}
             </div>
           </div>
+
+          {/* 60. Soru Eşiği Kondisyon Hatırlatıcısı (60 - 80. Sorularda Aktif) */}
+          {examState === 'active' && currentIndex >= 59 && (
+            <div className="bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-amber-500/5 border border-amber-500/30 rounded-2xl p-3.5 flex items-center justify-between gap-3 animate-in fade-in">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-sm font-black text-xs">
+                  60+
+                </div>
+                <div>
+                  <span className="text-xs font-black text-amber-900 dark:text-amber-300">
+                    ⚠️ 60. Soru Eşiği (Kritik Kondisyon Etabı)
+                  </span>
+                  <p className="text-[11px] text-amber-800/80 dark:text-amber-400/80">
+                    Beyin glikoz rezervini tüketti; pes etmeyin. Derin nefes alın, su için ve şık eleme tekniğiyle son 20 soruyu tamamlayın!
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsStaminaModalOpen(true)}
+                className="px-3 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-extrabold text-[11px] shadow-sm shrink-0"
+              >
+                Glikoz Kalkanı
+              </button>
+            </div>
+          )}
 
           {/* Soru Kartı */}
           <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm space-y-6">
@@ -540,6 +695,57 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                 className="px-5 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs shadow-md transition-colors"
               >
                 Evet, Sınavı Tamamla
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 60. Soru Glikoz & Zihinsel Kriz Kalkanı Modalı */}
+      {isStaminaModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in">
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 max-w-lg w-full border-2 border-amber-400 dark:border-amber-600 space-y-5 shadow-2xl">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-black text-xl shadow-lg shadow-amber-500/30 shrink-0">
+                ⚠️
+              </div>
+              <div>
+                <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300">
+                  Kritik Eşik Uyarısı
+                </span>
+                <h3 className="text-lg md:text-xl font-black text-slate-900 dark:text-white mt-0.5">
+                  60. Soru Eşiği: Zihinsel Kriz Kalkanı!
+                </h3>
+              </div>
+            </div>
+
+            <div className="space-y-3 text-xs text-slate-700 dark:text-slate-300 leading-relaxed bg-amber-50/60 dark:bg-amber-950/20 p-4 rounded-2xl border border-amber-200/60 dark:border-amber-800/40">
+              <p className="font-semibold text-amber-950 dark:text-amber-200">
+                Tebrikler, 80 soruluk sınavın en zorlu virajına girdiniz! ÖSYM istatistiklerine göre adayların büyük kısmı 60. sorudan sonra zihinsel pes etme yaşar ve aceleyle yanlış işaretler.
+              </p>
+              
+              <div className="space-y-2 pt-1 font-medium">
+                <div className="flex items-start gap-2">
+                  <span className="text-amber-600 font-bold shrink-0">🛑</span>
+                  <span><strong>30 Saniyelik Reset:</strong> Ekrandan veya kağıttan gözlerini çek, arkana yaslan ve 3 derin diyafram nefesi al.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-amber-600 font-bold shrink-0">💧</span>
+                  <span><strong>Glikoz & Su:</strong> Bir yudum su iç veya şeker/kuru meyve desteği al; beyin glikozsuz kaldığında eleme refleksini kaybeder.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-amber-600 font-bold shrink-0">🎯</span>
+                  <span><strong>Son 20 Soru Mantığı:</strong> Paragraf bitti! Kalan 20 soru (Diyalog, Anlamca En Yakın, Paragraf Tamamlama, Akışı Bozan) sadece <em>konu odağı, referans kelimeler (this, that, such)</em> ve <em>şık eleme mekaniğidir</em>.</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-end gap-3 pt-1">
+              <button
+                onClick={() => setIsStaminaModalOpen(false)}
+                className="w-full py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-xs shadow-lg shadow-amber-500/25 active:scale-95 transition-all text-center"
+              >
+                Kondisyonumu Koruyorum, Kalan 20 Soruya Devam Et!
               </button>
             </div>
           </div>

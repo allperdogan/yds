@@ -1,6 +1,7 @@
 import { YdsQuestion } from '../types';
+import { YDS_GRAMMAR_DRILL_BANK } from './ydsGrammarBank';
 
-export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
+const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
   // 1. KELİME SORUSU (Vocabulary)
   {
     id: 'q1',
@@ -267,4 +268,9 @@ Dr. Wright: Precisely. Without modifying the dosing regimen or introducing prote
 3. Kontrol: IV. cümleyi atıp III'ten doğrudan V'e geçildiğinde: "...decline is driven by hazardous chemicals... Consequently, policymakers are introducing strict moratoriums on chemical sprays..." pürüzsüz bir mantık zinciri kurulmaktadır.
 4. Doğru Şık: D (IV. Cümle)`
   }
+];
+
+export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
+  ...BASE_YDS_QUESTIONS_DATA,
+  ...YDS_GRAMMAR_DRILL_BANK
 ];

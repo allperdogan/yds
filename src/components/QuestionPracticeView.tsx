@@ -198,6 +198,11 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
                 <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400">
                   {currentQ.difficulty}
                 </span>
+                {(currentQ as any).grammarTopicTitle && (
+                  <span className="hidden sm:inline-block text-[10px] font-bold px-2 py-0.5 rounded bg-purple-50 dark:bg-purple-950 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800">
+                    {(currentQ as any).grammarTopicTitle}
+                  </span>
+                )}
               </div>
 
               {/* Bookmark / Hata Defteri Ekle */}
