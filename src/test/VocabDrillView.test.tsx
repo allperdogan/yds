@@ -91,6 +91,31 @@ describe('VocabDrillView Functional & Button Tests', () => {
     expect(screen.getByText(/Hafıza Teknikleri & Çözüm Formülü/i)).toBeInTheDocument();
   });
 
+  it('calls onAddMistakeWord and onAddMistake when wrong answer is chosen', () => {
+    const handleAddMistakeWord = vi.fn();
+    const handleAddMistake = vi.fn();
+
+    render(
+      <VocabDrillView
+        knownVocabIds={[]}
+        pendingReviewVocabIds={[]}
+        onMarkKnown={vi.fn()}
+        onMarkPendingReview={vi.fn()}
+        onRemovePendingReview={vi.fn()}
+        onAddMistakeWord={handleAddMistakeWord}
+        onAddMistake={handleAddMistake}
+      />
+    );
+
+    const wrongBtn = screen.getByRole('button', { name: /undermine/i });
+    fireEvent.click(wrongBtn);
+
+    expect(handleAddMistakeWord).toHaveBeenCalledWith('w1');
+    expect(handleAddMistake).toHaveBeenCalled();
+    expect(screen.getByText(/Hata Defterim & Zor Kelimeler/i)).toBeInTheDocument();
+    expect(screen.getByText(/Pekiştirene kadar takip edilecek/i)).toBeInTheDocument();
+  });
+
   it('handles clicking "Bilmiyorum (Tüm Şıkları Öğret)" button', () => {
     const handleMarkKnown = vi.fn();
     const handleMarkPendingReview = vi.fn();

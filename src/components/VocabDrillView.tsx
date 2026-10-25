@@ -15,7 +15,8 @@ import {
   Layers,
   Target,
   Calendar,
-  Zap
+  Zap,
+  Bookmark
 } from 'lucide-react';
 import { VocabQuizQuestion, YdsWord } from '../types';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from '../data/ydsVocabQuiz';
@@ -25,18 +26,26 @@ import { AudioService } from '../services/audioService';
 interface VocabDrillViewProps {
   knownVocabIds: string[];
   pendingReviewVocabIds: string[];
+  bookmarkedWordIds?: string[];
   onMarkKnown: (wordId: string) => void;
   onMarkPendingReview: (wordId: string) => void;
   onRemovePendingReview: (wordId: string) => void;
+  onToggleBookmark?: (wordId: string) => void;
+  onAddMistakeWord?: (wordId: string) => void;
+  onAddMistake?: (questionId: string) => void;
   onNavigateToFlashcards?: () => void;
 }
 
 export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   knownVocabIds,
   pendingReviewVocabIds,
+  bookmarkedWordIds = [],
   onMarkKnown,
   onMarkPendingReview,
   onRemovePendingReview,
+  onToggleBookmark,
+  onAddMistakeWord,
+  onAddMistake,
   onNavigateToFlashcards
 }) => {
   // Drill Mode: Curated VIP Questions vs Infinite 1,412 Question Generator
@@ -218,6 +227,12 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       onRemovePendingReview(currentQ.targetWordId);
     } else {
       onMarkPendingReview(currentQ.targetWordId);
+      if (onAddMistakeWord) {
+        onAddMistakeWord(currentQ.targetWordId);
+      }
+      if (onAddMistake) {
+        onAddMistake(currentQ.id);
+      }
     }
   };
 
@@ -226,6 +241,12 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     setSelectedOption(null);
     setHasAnswered(true);
     onMarkPendingReview(currentQ.targetWordId);
+    if (onAddMistakeWord) {
+      onAddMistakeWord(currentQ.targetWordId);
+    }
+    if (onAddMistake) {
+      onAddMistake(currentQ.id);
+    }
     setShowLearningCard(true);
   };
 
@@ -623,7 +644,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           {hasAnswered && showLearningCard && (
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-900 dark:to-slate-900 border-2 border-amber-300 dark:border-amber-700/80 rounded-3xl p-6 md:p-8 space-y-6 shadow-xl animate-in fade-in slide-in-from-top-3">
               {/* Header */}
-              <div className="flex items-center justify-between border-b border-amber-200 dark:border-slate-800 pb-3">
+              <div className="flex items-center justify-between border-b border-amber-200 dark:border-slate-800 pb-3 flex-wrap gap-2">
                 <div className="flex items-center gap-2">
                   <span className="p-1 rounded-lg bg-amber-500 text-white">
                     <Lightbulb className="w-4 h-4" />
@@ -633,14 +654,41 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                   </h4>
                 </div>
 
-                <button
-                  onClick={() => playAudio(currentQ.targetWord)}
-                  title="Doğru Kelimenin Telaffuzunu Dinle"
-                  className="p-2 bg-amber-200/70 dark:bg-amber-900/40 rounded-xl text-amber-900 dark:text-amber-200 hover:scale-105 transition-transform"
-                >
-                  <Volume2 className="w-4 h-4" />
-                </button>
+                <div className="flex items-center gap-2">
+                  {onToggleBookmark && (
+                    <button
+                      onClick={() => onToggleBookmark(currentQ.targetWordId)}
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
+                        bookmarkedWordIds.includes(currentQ.targetWordId)
+                          ? 'bg-amber-200/90 dark:bg-amber-950 text-amber-900 dark:text-amber-200 border border-amber-400'
+                          : 'bg-white/90 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 hover:bg-slate-50'
+                      }`}
+                      title="Kelimeyi Zor / Hata Defterine Ekle veya Kaldır"
+                    >
+                      <Bookmark className={`w-3.5 h-3.5 ${bookmarkedWordIds.includes(currentQ.targetWordId) ? 'fill-amber-600 text-amber-600' : ''}`} />
+                      <span>{bookmarkedWordIds.includes(currentQ.targetWordId) ? 'Hata Defterinde' : 'Hata Defterine Ekle'}</span>
+                    </button>
+                  )}
+
+                  <button
+                    onClick={() => playAudio(currentQ.targetWord)}
+                    title="Doğru Kelimenin Telaffuzunu Dinle"
+                    className="p-2 bg-amber-200/70 dark:bg-amber-900/40 rounded-xl text-amber-900 dark:text-amber-200 hover:scale-105 transition-transform"
+                  >
+                    <Volume2 className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
+
+              {/* Mistake feedback banner */}
+              {selectedOption !== currentQ.correctAnswer && (
+                <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-rose-100/90 dark:bg-rose-950/80 border border-rose-300 dark:border-rose-800 text-rose-900 dark:text-rose-200 text-xs font-bold">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping shrink-0" />
+                  <span>
+                    ⚠️ "<strong>{currentQ.targetWord}</strong>" kelimesi <strong>Hata Defterim & Zor Kelimeler</strong> listene eklendi. Pekiştirene kadar takip edilecek.
+                  </span>
+                </div>
+              )}
 
               {/* Context Explanation */}
               <div className="bg-white/90 dark:bg-slate-800/90 p-3.5 rounded-2xl border border-amber-200 dark:border-slate-700 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">

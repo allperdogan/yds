@@ -16,6 +16,8 @@ import { UserStats, SRSItem, QuestionType } from './types';
 import { StorageService } from './services/storageService';
 import { SRSEngine } from './services/srsEngine';
 import { BackupPayload } from './services/syncService';
+import { getUnifiedQuestionById } from './data/ydsQuestions';
+import { YDS_VOCABULARY_LIST } from './data/ydsVocabulary';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('vocab_drill');
@@ -69,13 +71,14 @@ export const App: React.FC = () => {
     }));
   };
 
-  // Toggle Bookmark
-  const handleToggleBookmark = (wordId: string) => {
+  // Toggle Bookmark (with optional forceAdd)
+  const handleToggleBookmark = (wordId: string, forceAdd?: boolean) => {
     setStats((prev) => {
       const exists = prev.bookmarkedWords.includes(wordId);
+      if (forceAdd && exists) return prev;
       return {
         ...prev,
-        bookmarkedWords: exists
+        bookmarkedWords: exists && !forceAdd
           ? prev.bookmarkedWords.filter((id) => id !== wordId)
           : [...prev.bookmarkedWords, wordId]
       };
@@ -129,10 +132,39 @@ export const App: React.FC = () => {
   // Add / Remove Mistake
   const handleAddMistake = (qId: string) => {
     setStats((prev) => {
-      if (prev.mistakeQuestionIds.includes(qId)) return prev;
+      let newMistakes = prev.mistakeQuestionIds;
+      if (!newMistakes.includes(qId)) {
+        newMistakes = [...newMistakes, qId];
+      }
+
+      // Check if question is a vocabulary question or matches a word in YDS_VOCABULARY_LIST
+      let newBookmarked = prev.bookmarkedWords;
+      let newPending = prev.pendingReviewVocabIds;
+
+      const q = getUnifiedQuestionById(qId);
+      if (q) {
+        const correctText = q.options[q.answer]?.trim().toLowerCase();
+        if (correctText) {
+          const matched = YDS_VOCABULARY_LIST.find((w) => {
+            const wText = w.word.toLowerCase();
+            return wText === correctText || correctText.startsWith(wText) || wText.startsWith(correctText);
+          });
+          if (matched) {
+            if (!newBookmarked.includes(matched.id)) {
+              newBookmarked = [...newBookmarked, matched.id];
+            }
+            if (!newPending.includes(matched.id)) {
+              newPending = [...newPending, matched.id];
+            }
+          }
+        }
+      }
+
       return {
         ...prev,
-        mistakeQuestionIds: [...prev.mistakeQuestionIds, qId]
+        mistakeQuestionIds: newMistakes,
+        bookmarkedWords: newBookmarked,
+        pendingReviewVocabIds: newPending
       };
     });
   };
@@ -224,9 +256,16 @@ export const App: React.FC = () => {
           <VocabDrillView
             knownVocabIds={stats.knownVocabIds}
             pendingReviewVocabIds={stats.pendingReviewVocabIds}
+            bookmarkedWordIds={stats.bookmarkedWords}
             onMarkKnown={handleMarkKnown}
             onMarkPendingReview={handleMarkPendingReview}
             onRemovePendingReview={handleRemovePendingReview}
+            onToggleBookmark={handleToggleBookmark}
+            onAddMistakeWord={(wId) => {
+              handleMarkPendingReview(wId);
+              handleToggleBookmark(wId, true);
+            }}
+            onAddMistake={handleAddMistake}
             onNavigateToFlashcards={() => setActiveTab('vocab')}
           />
         )}
@@ -283,10 +322,22 @@ export const App: React.FC = () => {
           <MistakesView
             mistakeQuestionIds={stats.mistakeQuestionIds}
             bookmarkedWords={stats.bookmarkedWords}
+            pendingReviewWords={stats.pendingReviewVocabIds}
             onRemoveMistake={handleRemoveMistake}
-            onRemoveBookmark={(wId) => handleToggleBookmark(wId)}
+            onRemoveBookmark={(wId) => {
+              handleToggleBookmark(wId);
+              handleRemovePendingReview(wId);
+            }}
+            onMarkWordKnown={(wId) => {
+              handleMarkKnown(wId);
+              handleRemovePendingReview(wId);
+              setStats((prev) => ({
+                ...prev,
+                bookmarkedWords: prev.bookmarkedWords.filter((id) => id !== wId)
+              }));
+            }}
             onNavigateToPractice={() => setActiveTab('practice')}
-            onNavigateToVocab={() => setActiveTab('vocab')}
+            onNavigateToVocab={() => setActiveTab('vocab_drill')}
           />
         )}
       </main>

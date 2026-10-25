@@ -86,4 +86,41 @@ describe('MistakesView Functional & Button Tests', () => {
 
     expect(onRemoveBookmark).toHaveBeenCalledWith('w1');
   });
+
+  it('renders drill mistake words from pendingReviewWords and shows badge', () => {
+    render(
+      <MistakesView
+        mistakeQuestionIds={[]}
+        bookmarkedWords={[]}
+        pendingReviewWords={['w14']}
+        onRemoveMistake={vi.fn()}
+        onRemoveBookmark={vi.fn()}
+        onNavigateToPractice={vi.fn()}
+        onNavigateToVocab={vi.fn()}
+      />
+    );
+
+    // Switch to words tab
+    const wordsTabBtn = screen.getByText(/Zor Kelimeler \(1\)/i);
+    fireEvent.click(wordsTabBtn);
+
+    expect(screen.getByRole('heading', { name: /compel/i })).toBeInTheDocument();
+    expect(screen.getByText(/Soruda Yanlış Yapıldı/i)).toBeInTheDocument();
+  });
+
+  it('renders mock exam mistake questions cleanly using unified question lookup', () => {
+    render(
+      <MistakesView
+        mistakeQuestionIds={['m_q1']}
+        bookmarkedWords={[]}
+        onRemoveMistake={vi.fn()}
+        onRemoveBookmark={vi.fn()}
+        onNavigateToPractice={vi.fn()}
+        onNavigateToVocab={vi.fn()}
+      />
+    );
+
+    expect(screen.getByText(/Hata #1/i)).toBeInTheDocument();
+    expect(screen.getByText(/antibiotic-resistant bacteria/i)).toBeInTheDocument();
+  });
 });

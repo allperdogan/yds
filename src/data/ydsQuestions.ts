@@ -274,3 +274,80 @@ export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
   ...BASE_YDS_QUESTIONS_DATA,
   ...YDS_GRAMMAR_DRILL_BANK
 ];
+
+import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam';
+import { YDS_READING_PASSAGES } from './ydsReadingPassages';
+import { YDS_VOCAB_QUIZ_QUESTIONS } from './ydsVocabQuiz';
+import { YDS_VOCABULARY_LIST } from './ydsVocabulary';
+
+// Flatten reading questions
+const readingPassageQuestions: YdsQuestion[] = YDS_READING_PASSAGES.flatMap((p) => p.questions);
+
+// Convert curated vocab quiz questions into standard YdsQuestion
+const vocabQuizAsYdsQuestions: YdsQuestion[] = YDS_VOCAB_QUIZ_QUESTIONS.map((vq) => ({
+  id: vq.id,
+  type: 'vocabulary',
+  title: `Kelime Sorusu: ${vq.targetWord}`,
+  question: vq.sentence,
+  options: {
+    A: vq.options[0] || '',
+    B: vq.options[1] || '',
+    C: vq.options[2] || '',
+    D: vq.options[3] || '',
+    E: vq.options[4] || 'diğer'
+  },
+  answer: (['A', 'B', 'C', 'D', 'E'][vq.options.indexOf(vq.correctAnswer)] || 'A') as 'A' | 'B' | 'C' | 'D' | 'E',
+  explanation: `${vq.explanation} (Doğru Anlam: ${vq.meaningTr})`,
+  tacticUsed: 'Kelime Eş Anlam & Bağlam Analizi',
+  difficulty: 'İleri'
+}));
+
+// Complete unified questions master pool
+export const ALL_UNIFIED_YDS_QUESTIONS: YdsQuestion[] = [
+  ...YDS_QUESTIONS_DATA,
+  ...YDS_FULL_MOCK_EXAM_1,
+  ...YDS_FULL_MOCK_EXAM_2,
+  ...YDS_FULL_MOCK_EXAM_3,
+  ...readingPassageQuestions,
+  ...vocabQuizAsYdsQuestions
+];
+
+const unifiedQuestionMap = new Map<string, YdsQuestion>();
+ALL_UNIFIED_YDS_QUESTIONS.forEach((q) => unifiedQuestionMap.set(q.id, q));
+
+export const getUnifiedQuestionById = (id: string): YdsQuestion | undefined => {
+  if (unifiedQuestionMap.has(id)) {
+    return unifiedQuestionMap.get(id);
+  }
+
+  // Handle synthetic infinite vocab questions (e.g., inf_w14)
+  if (id.startsWith('inf_')) {
+    const wordId = id.replace('inf_', '');
+    const wordObj = YDS_VOCABULARY_LIST.find((w) => w.id === wordId);
+    if (wordObj) {
+      const syntheticQ: YdsQuestion = {
+        id,
+        type: 'vocabulary',
+        title: `Hatalı Kelime Testi: ${wordObj.word}`,
+        question: `The research committee pointed out that _____ conditions were critical. ("${wordObj.exampleEn}")`,
+        options: {
+          A: wordObj.word,
+          B: 'enhance',
+          C: 'undermine',
+          D: 'mitigate',
+          E: 'deteriorate'
+        },
+        answer: 'A',
+        explanation: `Doğru Kelime: ${wordObj.word} (${wordObj.meaning}). Örnek: "${wordObj.exampleEn}" - ${wordObj.exampleTr}. Çağrışım: ${wordObj.mnemonic || 'ÖSYM VIP sözcüğü'}`,
+        tacticUsed: 'Kelime Çağrışım ve Soru Çözümü',
+        trapWarning: 'Bu kelimede pratik testi sırasında hata yapıldı.',
+        difficulty: 'İleri'
+      };
+      unifiedQuestionMap.set(id, syntheticQ);
+      return syntheticQ;
+    }
+  }
+
+  return undefined;
+};
+
