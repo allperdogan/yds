@@ -253,6 +253,11 @@ export const App: React.FC = () => {
         {activeTab === 'tactics' && (
           <TacticsView
             initialType={tacticFilter}
+            initialMode="tactic"
+            mistakeIds={stats.mistakeQuestionIds}
+            onAddMistake={handleAddMistake}
+            onRemoveMistake={handleRemoveMistake}
+            onRecordQuestionResult={handleRecordQuestionResult}
             onSelectPracticeType={(type) => {
               setPracticeTypeFilter(type);
               setActiveTab('practice');
@@ -261,12 +266,16 @@ export const App: React.FC = () => {
         )}
 
         {activeTab === 'practice' && (
-          <QuestionPracticeView
+          <TacticsView
             initialType={practiceTypeFilter}
+            initialMode="practice"
             mistakeIds={stats.mistakeQuestionIds}
             onAddMistake={handleAddMistake}
             onRemoveMistake={handleRemoveMistake}
             onRecordQuestionResult={handleRecordQuestionResult}
+            onSelectPracticeType={(type) => {
+              setPracticeTypeFilter(type);
+            }}
           />
         )}
 

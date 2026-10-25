@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HelpCircle, Check, X, ShieldAlert, Sparkles, BookMarked, RefreshCw, EyeOff, Eye, ChevronRight, ChevronLeft, Timer } from 'lucide-react';
+import { HelpCircle, Check, X, ShieldAlert, Sparkles, BookMarked, RefreshCw, EyeOff, Eye, ChevronRight, ChevronLeft, Timer, Lightbulb } from 'lucide-react';
 import { YdsQuestion, QuestionType } from '../types';
 import { YDS_QUESTIONS_DATA } from '../data/ydsQuestions';
 
@@ -9,6 +9,7 @@ interface QuestionPracticeViewProps {
   onAddMistake: (questionId: string) => void;
   onRemoveMistake: (questionId: string) => void;
   onRecordQuestionResult: (questionId: string, selected: string, isCorrect: boolean) => void;
+  onBackToTactics?: () => void;
 }
 
 export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
@@ -16,7 +17,8 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
   mistakeIds,
   onAddMistake,
   onRemoveMistake,
-  onRecordQuestionResult
+  onRecordQuestionResult,
+  onBackToTactics
 }) => {
   const [selectedTypeFilter, setSelectedTypeFilter] = useState<string>(initialType || 'all');
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -139,18 +141,31 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
           ))}
         </div>
 
-        {/* Question Timer */}
-        <div className="flex items-center gap-2 shrink-0 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-xl">
-          <Timer className="w-4 h-4 text-sky-600 dark:text-sky-400" />
-          <span className="font-mono text-xs font-bold text-slate-800 dark:text-slate-200">
-            {formatTimer(seconds)}
-          </span>
-          <button
-            onClick={() => setIsTimerRunning(!isTimerRunning)}
-            className="text-[10px] text-slate-500 underline ml-1"
-          >
-            {isTimerRunning ? 'Durdur' : 'Başlat'}
-          </button>
+        {/* Top Right: Back to Tactics & Timer */}
+        <div className="flex items-center gap-2 shrink-0">
+          {onBackToTactics && (
+            <button
+              onClick={onBackToTactics}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 text-xs font-bold transition-all"
+            >
+              <Lightbulb className="w-3.5 h-3.5 text-indigo-500" />
+              <span>💡 Sınav Taktiği Formülüne Dön</span>
+            </button>
+          )}
+
+          {/* Question Timer */}
+          <div className="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-xl">
+            <Timer className="w-4 h-4 text-sky-600 dark:text-sky-400" />
+            <span className="font-mono text-xs font-bold text-slate-800 dark:text-slate-200">
+              {formatTimer(seconds)}
+            </span>
+            <button
+              onClick={() => setIsTimerRunning(!isTimerRunning)}
+              className="text-[10px] text-slate-500 underline ml-1"
+            >
+              {isTimerRunning ? 'Durdur' : 'Başlat'}
+            </button>
+          </div>
         </div>
       </div>
 

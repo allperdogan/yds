@@ -37,7 +37,10 @@ export const BottomTabBar: React.FC<BottomTabBarProps> = ({
       <div className="flex items-center justify-around py-2 px-2 max-w-md mx-auto">
         {tabs.map((tab) => {
           const Icon = tab.icon;
-          const isActive = activeTab === tab.id;
+          const isActive =
+            activeTab === tab.id ||
+            (tab.id === 'tactics' && activeTab === 'practice') ||
+            (tab.id === 'vocab_drill' && activeTab === 'vocab');
           return (
             <button
               key={tab.id}

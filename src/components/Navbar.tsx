@@ -42,17 +42,27 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
 
-        {/* Clean Desktop Tabs */}
+        {/* Exam-Section Centric Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold">
           <button
             onClick={() => setActiveTab('vocab_drill')}
             className={`px-3 py-1.5 rounded-lg transition-all ${
-              activeTab === 'vocab_drill'
+              activeTab === 'vocab_drill' || activeTab === 'vocab'
                 ? 'bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-400 shadow-sm'
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
             }`}
           >
-            🎯 Kelime
+            🎯 Kelime (1-6)
+          </button>
+          <button
+            onClick={() => setActiveTab('tactics')}
+            className={`px-3 py-1.5 rounded-lg transition-all ${
+              activeTab === 'tactics' || activeTab === 'practice'
+                ? 'bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-400 shadow-sm'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
+            }`}
+          >
+            🎯 2. Soru Tipleri & Taktikler (7-42 & 63-80)
           </button>
           <button
             onClick={() => setActiveTab('reading_lab')}
@@ -62,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
             }`}
           >
-            📖 Paragraf & Cümle Deşifre
+            📖 3. Paragraf & Cümle Deşifre (43-62)
           </button>
           <button
             onClick={() => setActiveTab('mock_exam')}
@@ -72,17 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
             }`}
           >
-            ⏱️ 80 Soruluk Deneme
-          </button>
-          <button
-            onClick={() => setActiveTab('tactics')}
-            className={`px-3 py-1.5 rounded-lg transition-all ${
-              activeTab === 'tactics'
-                ? 'bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-400 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
-            }`}
-          >
-            💡 Taktikler
+            ⏱️ 4. 80 Soruluk Deneme
           </button>
           <button
             onClick={() => setActiveTab('daily')}
