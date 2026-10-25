@@ -88,6 +88,23 @@ export interface YdsQuestion {
   dayAssigned?: number;
 }
 
+export interface TacticSampleQuestion {
+  question: string;
+  passage?: string;
+  dialogueSpeaker?: string;
+  options: {
+    A: string;
+    B: string;
+    C: string;
+    D: string;
+    E: string;
+  };
+  answer: 'A' | 'B' | 'C' | 'D' | 'E';
+  solutionSteps: string[];
+  trapExplanation: string;
+  fastMethodTrick: string;
+}
+
 export interface YdsTacticGuide {
   id: QuestionType;
   numberRange: string;
@@ -99,6 +116,7 @@ export interface YdsTacticGuide {
   stepByStepMethod: string[];
   commonTraps: string[];
   proTip: string;
+  sampleQuestion?: TacticSampleQuestion;
 }
 
 export interface DailyMission {

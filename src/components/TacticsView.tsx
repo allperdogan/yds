@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Compass, ShieldAlert, CheckCircle, Lightbulb, PlayCircle, BookOpen, AlertTriangle, FileText, Check, X, Sparkles, Brain } from 'lucide-react';
+import { Compass, ShieldAlert, CheckCircle, Lightbulb, PlayCircle, BookOpen, AlertTriangle, FileText, Check, X, Sparkles, Brain, Zap } from 'lucide-react';
 import { YdsTacticGuide, QuestionType } from '../types';
 import { YDS_TACTIC_GUIDES } from '../data/ydsTactics';
 import { YDS_QUESTIONS_DATA } from '../data/ydsQuestions';
@@ -32,6 +32,10 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
   // Tuzak Quiz State'i
   const [activeTrapQuizIndex, setActiveTrapQuizIndex] = useState<number | null>(null);
   const [trapAnswers, setTrapAnswers] = useState<Record<number, string>>({});
+
+  // Örnek Soru & Çözüm State'i
+  const [revealedSolutions, setRevealedSolutions] = useState<Record<string, boolean>>({});
+  const [sampleUserAnswers, setSampleUserAnswers] = useState<Record<string, string>>({});
 
   const activeTactic: YdsTacticGuide =
     YDS_TACTIC_GUIDES.find((t) => t.id === selectedType) || YDS_TACTIC_GUIDES[0];
@@ -241,6 +245,157 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
               ))}
             </div>
           </div>
+
+          {/* Section 4: Örnek Soru & Adım Adım Taktiksel Çözüm */}
+          {activeTactic.sampleQuestion && (
+            <div className="space-y-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300">
+                    ÖSYM Model Soru & Çözüm Algoritması
+                  </span>
+                  <h4 className="text-base font-black text-slate-900 dark:text-white mt-1 flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-amber-500" />
+                    <span>Bu Taktik Soruda Nasıl Uygulanır? (Örnek Soru & Çözüm)</span>
+                  </h4>
+                </div>
+
+                <button
+                  onClick={() =>
+                    setRevealedSolutions((prev) => ({
+                      ...prev,
+                      [activeTactic.id]: !prev[activeTactic.id]
+                    }))
+                  }
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-bold hover:bg-slate-200 transition-colors shrink-0"
+                >
+                  <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
+                  <span>
+                    {revealedSolutions[activeTactic.id]
+                      ? 'Çözüm Adımlarını Gizle'
+                      : 'Taktiksel Çözümü Göster'}
+                  </span>
+                </button>
+              </div>
+
+              {/* Sample Question Box */}
+              <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 md:p-6 space-y-4">
+                {activeTactic.sampleQuestion.passage && (
+                  <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200/80 dark:border-slate-800 text-xs md:text-sm font-serif text-slate-800 dark:text-slate-200 leading-relaxed max-h-52 overflow-y-auto">
+                    <span className="font-sans text-[10px] font-bold uppercase text-slate-400 block mb-1">
+                      Örnek Metin:
+                    </span>
+                    {activeTactic.sampleQuestion.passage}
+                  </div>
+                )}
+
+                {activeTactic.sampleQuestion.dialogueSpeaker && (
+                  <p className="text-xs font-bold text-indigo-600 dark:text-indigo-400">
+                    Konuşmacılar: {activeTactic.sampleQuestion.dialogueSpeaker}
+                  </p>
+                )}
+
+                <p className="text-sm md:text-base font-bold text-slate-900 dark:text-white leading-relaxed whitespace-pre-line">
+                  {activeTactic.sampleQuestion.question}
+                </p>
+
+                {/* Options Grid */}
+                <div className="grid grid-cols-1 gap-2 pt-1">
+                  {Object.entries(activeTactic.sampleQuestion.options).map(([optKey, optVal]) => {
+                    const isSelected = sampleUserAnswers[activeTactic.id] === optKey;
+                    const isCorrect = activeTactic.sampleQuestion?.answer === optKey;
+                    const showFeedback = isSelected || revealedSolutions[activeTactic.id];
+
+                    let btnClass =
+                      'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 hover:border-slate-300';
+                    if (showFeedback && isCorrect) {
+                      btnClass =
+                        'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-400 dark:border-emerald-700 text-emerald-900 dark:text-emerald-200 font-bold';
+                    } else if (showFeedback && isSelected && !isCorrect) {
+                      btnClass =
+                        'bg-rose-50 dark:bg-rose-950/60 border-rose-400 dark:border-rose-700 text-rose-900 dark:text-rose-200';
+                    }
+
+                    return (
+                      <div
+                        key={optKey}
+                        onClick={() => {
+                          setSampleUserAnswers((prev) => ({
+                            ...prev,
+                            [activeTactic.id]: optKey
+                          }));
+                          setRevealedSolutions((prev) => ({
+                            ...prev,
+                            [activeTactic.id]: true
+                          }));
+                        }}
+                        className={`p-3 rounded-xl border text-xs cursor-pointer transition-all flex items-start gap-2.5 ${btnClass}`}
+                      >
+                        <span
+                          className={`w-5 h-5 rounded-lg flex items-center justify-center shrink-0 font-bold text-[11px] ${
+                            showFeedback && isCorrect
+                              ? 'bg-emerald-500 text-white'
+                              : showFeedback && isSelected && !isCorrect
+                              ? 'bg-rose-500 text-white'
+                              : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+                          }`}
+                        >
+                          {optKey}
+                        </span>
+                        <span className="flex-1 pt-0.5">{optVal}</span>
+                        {showFeedback && isCorrect && (
+                          <span className="text-[10px] font-black uppercase text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950 px-2 py-0.5 rounded-full shrink-0">
+                            Doğru Cevap
+                          </span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Revealed Detailed Solution Card */}
+                {revealedSolutions[activeTactic.id] && (
+                  <div className="pt-3 border-t border-slate-200/80 dark:border-slate-800 space-y-3 animate-in fade-in">
+                    <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 space-y-2">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                        <CheckCircle className="w-3.5 h-3.5" />
+                        <span>Adım Adım Taktiksel Çözüm:</span>
+                      </span>
+                      <div className="space-y-1.5 text-xs text-slate-700 dark:text-slate-300">
+                        {activeTactic.sampleQuestion.solutionSteps.map((step, sIdx) => (
+                          <p key={sIdx} className="leading-relaxed">
+                            {step}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Trap Box */}
+                    <div className="p-3.5 rounded-xl bg-rose-50/60 dark:bg-rose-950/20 border border-rose-200/60 dark:border-rose-900/40 text-xs text-rose-900 dark:text-rose-200 space-y-1">
+                      <span className="font-extrabold flex items-center gap-1.5 text-rose-700 dark:text-rose-400">
+                        <ShieldAlert className="w-3.5 h-3.5" />
+                        <span>ÖSYM Çeldirici Tuzağı Neredeydi?</span>
+                      </span>
+                      <p className="leading-relaxed text-[11px]">
+                        {activeTactic.sampleQuestion.trapExplanation}
+                      </p>
+                    </div>
+
+                    {/* 30 Second Trick Box */}
+                    <div className="p-3.5 rounded-xl bg-amber-50/70 dark:bg-amber-950/30 border border-amber-300 dark:border-amber-800/60 text-xs text-amber-950 dark:text-amber-200 space-y-1">
+                      <span className="font-extrabold flex items-center gap-1.5 text-amber-800 dark:text-amber-400">
+                        <Zap className="w-3.5 h-3.5 text-amber-500" />
+                        <span>⚡ 30 Saniyelik Kestirme Yol (Hızlı Refleks Tüyosu):</span>
+                      </span>
+                      <p className="leading-relaxed font-semibold text-[11px]">
+                        {activeTactic.sampleQuestion.fastMethodTrick}
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
 
           {/* Action Button: Test this tactic right now */}
           <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-end">

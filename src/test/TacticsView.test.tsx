@@ -46,4 +46,32 @@ describe('TacticsView Functional & Button Tests', () => {
 
     expect(onSelectPracticeType).toHaveBeenCalledWith('reading');
   });
+
+  it('renders sample question with options and toggles step-by-step solution steps', () => {
+    render(<TacticsView initialType="translation_en_tr" />);
+
+    expect(screen.getByText(/Bu Taktik Soruda Nasıl Uygulanır\? \(Örnek Soru & Çözüm\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Glaciologists warn that/i)).toBeInTheDocument();
+
+    // Toggle solution button
+    const toggleBtn = screen.getByRole('button', { name: /Taktiksel Çözümü Göster/i });
+    fireEvent.click(toggleBtn);
+
+    // Solution steps should be visible
+    expect(screen.getByText(/Adım Adım Taktiksel Çözüm:/i)).toBeInTheDocument();
+    expect(screen.getByText(/ÖSYM Çeldirici Tuzağı Neredeydi\?/i)).toBeInTheDocument();
+    expect(screen.getByText(/Hızlı Refleks Tüyosu/i)).toBeInTheDocument();
+  });
+
+  it('switches to ÖSYM Çeldirici Deşifresi tab and renders traps and physical protocol', () => {
+    render(<TacticsView />);
+
+    // Click traps tab button
+    const trapsBtn = screen.getByRole('button', { name: /ÖSYM Çeldirici Deşifresi/i });
+    fireEvent.click(trapsBtn);
+
+    expect(screen.getByText(/ÖSYM Çeldirici Psikolojisi & Son 5 Yıl Çıkmış Soru Deşifresi/i)).toBeInTheDocument();
+    expect(screen.getByText(/Tuzak 1: Virgül ve Yapı Elemesi/i)).toBeInTheDocument();
+    expect(screen.getByText(/Son 30 Gün Fiziki Çıkmış Soru Protokolü/i)).toBeInTheDocument();
+  });
 });
