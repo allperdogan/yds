@@ -18,7 +18,8 @@ export class StorageService {
       mistakeQuestionIds: [],
       knownVocabIds: [],
       pendingReviewVocabIds: [],
-      solvedQuestions: {}
+      solvedQuestions: {},
+      mockExamResults: []
     };
   }
 
@@ -27,9 +28,14 @@ export class StorageService {
       const raw = localStorage.getItem(STATS_KEY);
       if (raw) {
         const stats: UserStats = JSON.parse(raw);
-        // Ensure new arrays exist for backward compatibility
+        // Ensure new arrays and objects exist for backward compatibility
         if (!stats.knownVocabIds) stats.knownVocabIds = [];
         if (!stats.pendingReviewVocabIds) stats.pendingReviewVocabIds = [];
+        if (!stats.bookmarkedWords) stats.bookmarkedWords = [];
+        if (!stats.mistakeQuestionIds) stats.mistakeQuestionIds = [];
+        if (!stats.completedDays) stats.completedDays = [];
+        if (!stats.solvedQuestions) stats.solvedQuestions = {};
+        if (!stats.mockExamResults) stats.mockExamResults = [];
         this.updateStreakIfNeeded(stats);
         return stats;
       }
