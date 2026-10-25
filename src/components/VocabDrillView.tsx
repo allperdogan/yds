@@ -58,8 +58,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   const [selectedDay, setSelectedDay] = useState<number | 'all'>('all');
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [hasAnswered, setHasAnswered] = useState<boolean>(false);
+  const [drillAnswers, setDrillAnswers] = useState<Record<string, string | null>>({});
   const [showLearningCard, setShowLearningCard] = useState<boolean>(false);
   const [isMasteredModalOpen, setIsMasteredModalOpen] = useState<boolean>(false);
   const [isAtlasModalOpen, setIsAtlasModalOpen] = useState<boolean>(false);
@@ -205,20 +204,30 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   // Active pool depends on drillSource
   const currentPool = drillSource === 'infinite' ? infiniteQuestions : curatedQuestions;
 
-  // Active question list: prioritize pending review words, then remaining
+  // Active question list: prioritize pending review words on pool load, then remaining.
+  // CRITICAL FIX: We do NOT re-sort activeQuestions on pendingReviewVocabIds changes during a session!
+  // Re-sorting dynamically shifted array indices while answering, causing currentIndex to point to the PREVIOUS question!
   const activeQuestions: VocabQuizQuestion[] = useMemo(() => {
     const pending = currentPool.filter((q) => pendingReviewVocabIds.includes(q.targetWordId));
     const others = currentPool.filter((q) => !pendingReviewVocabIds.includes(q.targetWordId));
     return [...pending, ...others];
-  }, [currentPool, pendingReviewVocabIds]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPool]);
 
   const currentQ: VocabQuizQuestion | undefined = activeQuestions[currentIndex];
   const isTargetInReviewQueue = currentQ ? pendingReviewVocabIds.includes(currentQ.targetWordId) : false;
 
+  // Answers are immutably bound to currentQ.id - never leak across questions
+  const currentAnswer = currentQ ? drillAnswers[currentQ.id] : undefined;
+  const hasAnswered = currentAnswer !== undefined;
+  const selectedOption = currentAnswer || null;
+
   const handleSelectOption = (opt: string) => {
     if (hasAnswered || !currentQ) return;
-    setSelectedOption(opt);
-    setHasAnswered(true);
+    setDrillAnswers((prev) => ({
+      ...prev,
+      [currentQ.id]: opt
+    }));
     setShowLearningCard(true); // Always reveal mnemonics for all 4 options!
 
     const isCorrect = opt === currentQ.correctAnswer;
@@ -238,8 +247,11 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
 
   const handleDontKnow = () => {
     if (!currentQ || hasAnswered) return;
-    setSelectedOption(null);
-    setHasAnswered(true);
+    setDrillAnswers((prev) => ({
+      ...prev,
+      [currentQ.id]: null
+    }));
+    setShowLearningCard(true);
     onMarkPendingReview(currentQ.targetWordId);
     if (onAddMistakeWord) {
       onAddMistakeWord(currentQ.targetWordId);
@@ -247,7 +259,6 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (onAddMistake) {
       onAddMistake(currentQ.id);
     }
-    setShowLearningCard(true);
   };
 
   const handleDirectMarkKnown = () => {
@@ -258,8 +269,6 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   };
 
   const handleNext = () => {
-    setSelectedOption(null);
-    setHasAnswered(false);
     setShowLearningCard(false);
     if (currentIndex < activeQuestions.length - 1) {
       setCurrentIndex((prev) => prev + 1);
@@ -348,8 +357,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           onClick={() => {
             setDrillSource('infinite');
             setCurrentIndex(0);
-            setSelectedOption(null);
-            setHasAnswered(false);
+            setDrillAnswers({});
             setShowLearningCard(false);
           }}
           className={`flex-1 py-2 rounded-xl transition-all flex items-center justify-center gap-1.5 ${
@@ -366,8 +374,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           onClick={() => {
             setDrillSource('curated');
             setCurrentIndex(0);
-            setSelectedOption(null);
-            setHasAnswered(false);
+            setDrillAnswers({});
             setShowLearningCard(false);
           }}
           className={`flex-1 py-2 rounded-xl transition-all flex items-center justify-center gap-1.5 ${
@@ -396,8 +403,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               onClick={() => {
                 setSelectedDay('all');
                 setCurrentIndex(0);
-                setSelectedOption(null);
-                setHasAnswered(false);
+                setDrillAnswers({});
                 setShowLearningCard(false);
               }}
               className={`px-3 py-1 rounded-xl shrink-0 transition-all ${
@@ -416,8 +422,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                   onClick={() => {
                     setSelectedDay(day);
                     setCurrentIndex(0);
-                    setSelectedOption(null);
-                    setHasAnswered(false);
+                    setDrillAnswers({});
                     setShowLearningCard(false);
                   }}
                   className={`px-3 py-1 rounded-xl shrink-0 transition-all ${
@@ -460,8 +465,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             onClick={() => {
               setSelectedCategory(cat.id as any);
               setCurrentIndex(0);
-              setSelectedOption(null);
-              setHasAnswered(false);
+              setDrillAnswers({});
               setShowLearningCard(false);
             }}
             className={`px-3 py-1.5 rounded-xl shrink-0 transition-all ${
@@ -513,7 +517,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
 
       {/* 6. MAIN QUESTION CARD */}
       {currentQ ? (
-        <div className="space-y-4">
+        <div key={currentQ.id} className="space-y-4">
           <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm space-y-6">
             {/* Category badge & Review indicator */}
             <div className="flex items-center justify-between">

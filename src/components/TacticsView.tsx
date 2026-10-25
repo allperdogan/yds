@@ -279,7 +279,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
               </div>
 
               {/* Sample Question Box */}
-              <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 md:p-6 space-y-4">
+              <div key={activeTactic.id} className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 md:p-6 space-y-4">
                 {activeTactic.sampleQuestion.passage && (
                   <div className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200/80 dark:border-slate-800 text-xs md:text-sm font-serif text-slate-800 dark:text-slate-200 leading-relaxed max-h-52 overflow-y-auto">
                     <span className="font-sans text-[10px] font-bold uppercase text-slate-400 block mb-1">

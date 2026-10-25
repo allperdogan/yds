@@ -116,6 +116,51 @@ describe('VocabDrillView Functional & Button Tests', () => {
     expect(screen.getByText(/Pekiştirene kadar takip edilecek/i)).toBeInTheDocument();
   });
 
+  it('prevents question sequence shift when answering incorrectly (does not jump back to previous question)', () => {
+    let pendingReviews: string[] = [];
+    const handleMarkPendingReview = vi.fn((id: string) => {
+      pendingReviews = [...pendingReviews, id];
+    });
+
+    const { rerender } = render(
+      <VocabDrillView
+        knownVocabIds={[]}
+        pendingReviewVocabIds={pendingReviews}
+        onMarkKnown={vi.fn()}
+        onMarkPendingReview={handleMarkPendingReview}
+        onRemovePendingReview={vi.fn()}
+      />
+    );
+
+    // Question 1: target is "enhance" (w1). Answer it correctly and click Next
+    const enhanceBtn = screen.getByRole('button', { name: /enhance/i });
+    fireEvent.click(enhanceBtn);
+    const nextBtn = screen.getByRole('button', { name: /Sıradaki Soruya Geç/i });
+    fireEvent.click(nextBtn);
+
+    // Now on Question 2: check that we are on Question 2 (Soru 2 / ...)
+    expect(screen.getByText(/Soru 2 \//i)).toBeInTheDocument();
+
+    // Answer Question 2 incorrectly (deteriorate is wrong for undermine)
+    const wrongBtn = screen.getByRole('button', { name: /deteriorate/i });
+    fireEvent.click(wrongBtn);
+
+    // Re-render component with the updated pendingReviewVocabIds (simulating App state update)
+    rerender(
+      <VocabDrillView
+        knownVocabIds={[]}
+        pendingReviewVocabIds={pendingReviews}
+        onMarkKnown={vi.fn()}
+        onMarkPendingReview={handleMarkPendingReview}
+        onRemovePendingReview={vi.fn()}
+      />
+    );
+
+    // CRITICAL ASSERTION: The screen MUST STAY on Question 2! It must NOT jump back to Question 1!
+    expect(screen.getByText(/Soru 2 \//i)).toBeInTheDocument();
+    expect(screen.queryByText(/Soru 1 \//i)).not.toBeInTheDocument();
+  });
+
   it('handles clicking "Bilmiyorum (Tüm Şıkları Öğret)" button', () => {
     const handleMarkKnown = vi.fn();
     const handleMarkPendingReview = vi.fn();

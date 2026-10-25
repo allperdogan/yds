@@ -22,10 +22,20 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
 }) => {
   const [selectedTypeFilter, setSelectedTypeFilter] = useState<string>(initialType || 'all');
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [isAnswered, setIsAnswered] = useState<boolean>(false);
+  const [practiceAnswers, setPracticeAnswers] = useState<Record<string, string>>({});
   const [showExplanation, setShowExplanation] = useState<boolean>(false);
   const [struckOptions, setStruckOptions] = useState<Record<string, boolean>>({});
+
+  // Sync initialType prop changes cleanly
+  useEffect(() => {
+    if (initialType) {
+      setSelectedTypeFilter(initialType);
+      setCurrentIndex(0);
+      setSeconds(0);
+      setShowExplanation(false);
+      setStruckOptions({});
+    }
+  }, [initialType]);
 
   // Timer state for pacing
   const [seconds, setSeconds] = useState<number>(0);
@@ -51,18 +61,22 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
   const currentQ: YdsQuestion | undefined = filteredQuestions[currentIndex];
   const isMistakeSaved = currentQ ? mistakeIds.includes(currentQ.id) : false;
 
+  // Answers strictly bound to currentQ.id - never leak across questions
+  const selectedOption = currentQ ? practiceAnswers[currentQ.id] || null : null;
+  const isAnswered = Boolean(selectedOption);
+
   const handleSelectOption = (key: string) => {
-    if (isAnswered) return;
-    setSelectedOption(key);
-    setIsAnswered(true);
+    if (isAnswered || !currentQ) return;
+    setPracticeAnswers((prev) => ({
+      ...prev,
+      [currentQ.id]: key
+    }));
     setShowExplanation(true);
 
-    if (currentQ) {
-      const isCorrect = key === currentQ.answer;
-      onRecordQuestionResult(currentQ.id, key, isCorrect);
-      if (!isCorrect) {
-        onAddMistake(currentQ.id);
-      }
+    const isCorrect = key === currentQ.answer;
+    onRecordQuestionResult(currentQ.id, key, isCorrect);
+    if (!isCorrect) {
+      onAddMistake(currentQ.id);
     }
   };
 
@@ -77,8 +91,6 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
   const handleNext = () => {
     if (currentIndex < filteredQuestions.length - 1) {
       setCurrentIndex((prev) => prev + 1);
-      setSelectedOption(null);
-      setIsAnswered(false);
       setShowExplanation(false);
       setStruckOptions({});
       setSeconds(0);
@@ -88,8 +100,6 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prev) => prev - 1);
-      setSelectedOption(null);
-      setIsAnswered(false);
       setShowExplanation(false);
       setStruckOptions({});
       setSeconds(0);
@@ -124,8 +134,6 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
               onClick={() => {
                 setSelectedTypeFilter(type.id);
                 setCurrentIndex(0);
-                setSelectedOption(null);
-                setIsAnswered(false);
                 setShowExplanation(false);
                 setStruckOptions({});
                 setSeconds(0);
@@ -185,7 +193,7 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
       ) : currentQ && (
         <div className="space-y-4">
           {/* Question Card */}
-          <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm space-y-6">
+          <div key={currentQ.id} className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm space-y-6">
             {/* Header: Soru No, Badge, Hata Defteri */}
             <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4">
               <div className="flex items-center gap-2">
