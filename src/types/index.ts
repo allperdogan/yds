@@ -14,6 +14,7 @@ export interface YdsWord {
   ydsTip: string;
   frequency: 'ultra' | 'high' | 'medium';
   groupDay: number; // Day 1 to 30
+  mnemonic?: string; // Akılda kalıcı çağrışım / ses benzeşimi / hafıza tekniği
 }
 
 export type SRSGrade = 0 | 3 | 4 | 5; // 0: Again, 3: Hard, 4: Good, 5: Easy

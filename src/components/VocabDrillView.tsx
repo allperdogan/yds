@@ -1,7 +1,25 @@
 import React, { useState, useMemo } from 'react';
-import { Volume2, Check, ArrowRight, HelpCircle, CheckCircle2, RotateCcw, Lightbulb, BookOpen, X, Search, Sparkles, Compass, Layers } from 'lucide-react';
-import { VocabQuizQuestion } from '../types';
+import {
+  Volume2,
+  Check,
+  ArrowRight,
+  HelpCircle,
+  CheckCircle2,
+  RotateCcw,
+  Lightbulb,
+  BookOpen,
+  X,
+  Search,
+  Sparkles,
+  Compass,
+  Layers,
+  Target,
+  Calendar,
+  Zap
+} from 'lucide-react';
+import { VocabQuizQuestion, YdsWord } from '../types';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from '../data/ydsVocabQuiz';
+import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { AudioService } from '../services/audioService';
 
 interface VocabDrillViewProps {
@@ -21,7 +39,15 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   onRemovePendingReview,
   onNavigateToFlashcards
 }) => {
-  const [selectedCategory, setSelectedCategory] = useState<'all' | 'vocab' | 'verb' | 'adjective' | 'conjunction' | 'phrasal_verb' | 'grammar'>('all');
+  // Drill Mode: Curated VIP Questions vs Infinite 1,412 Question Generator
+  const [drillSource, setDrillSource] = useState<'infinite' | 'curated'>('curated');
+
+  // Filters
+  const [selectedCategory, setSelectedCategory] = useState<
+    'all' | 'vocab' | 'verb' | 'adjective' | 'noun' | 'conjunction' | 'phrasal_verb' | 'adverb' | 'grammar'
+  >('all');
+  const [selectedDay, setSelectedDay] = useState<number | 'all'>('all');
+
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [hasAnswered, setHasAnswered] = useState<boolean>(false);
@@ -31,8 +57,123 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   const [atlasTab, setAtlasTab] = useState<'conjunctions' | 'verbs' | 'adjectives'>('conjunctions');
   const [searchLearnedQuery, setSearchLearnedQuery] = useState<string>('');
 
-  // Filter pool by category
-  const categorizedQuestions = useMemo(() => {
+  // 1. DYNAMIC INFINITE QUESTION GENERATOR FROM ALL 1,412 WORDS
+  const infiniteQuestions: VocabQuizQuestion[] = useMemo(() => {
+    let pool = [...YDS_VOCABULARY_LIST];
+
+    // Filter by Category
+    if (selectedCategory !== 'all' && selectedCategory !== 'grammar' && selectedCategory !== 'vocab') {
+      pool = pool.filter((w) => w.type === selectedCategory);
+    }
+
+    // Filter by Day
+    if (selectedDay !== 'all') {
+      pool = pool.filter((w) => w.groupDay === selectedDay);
+    }
+
+    // Fast lookup dictionary
+    const wordMap = new Map<string, YdsWord>();
+    YDS_VOCABULARY_LIST.forEach((w) => wordMap.set(w.word.toLowerCase(), w));
+
+    // Group by word type for authentic distractor generation
+    const byType: Record<string, YdsWord[]> = {};
+    YDS_VOCABULARY_LIST.forEach((w) => {
+      if (!byType[w.type]) byType[w.type] = [];
+      byType[w.type].push(w);
+    });
+
+    return pool.map((w, index) => {
+      const wordText = w.word;
+      const escaped = wordText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const reg = new RegExp(`\\b${escaped}\\b`, 'i');
+      let sentence = w.exampleEn;
+
+      if (reg.test(sentence)) {
+        sentence = sentence.replace(reg, '_____');
+      } else {
+        // Fallback for inflected forms (e.g., -ing, -ed, -s)
+        const root = wordText.split(' ')[0].replace(/e$/, '');
+        const rootReg = new RegExp(`\\b${root}[a-z]*\\b`, 'i');
+        if (rootReg.test(sentence)) {
+          sentence = sentence.replace(rootReg, '_____');
+        } else {
+          sentence = `The research team noted that _____ conditions were critical for success. ("${w.exampleEn}")`;
+        }
+      }
+
+      // Pick 3 realistic distractors of the same grammatical part of speech
+      const candidateDistractors = (byType[w.type] || YDS_VOCABULARY_LIST).filter(
+        (c) => c.id !== w.id && c.word.toLowerCase() !== w.word.toLowerCase()
+      );
+
+      const distractors: string[] = [];
+      const distLen = candidateDistractors.length;
+      if (distLen >= 3) {
+        const step = Math.max(1, Math.floor(distLen / 4));
+        const d1 = candidateDistractors[(index * 5 + 1) % distLen];
+        const d2 = candidateDistractors[(index * 5 + step + 2) % distLen];
+        const d3 = candidateDistractors[(index * 5 + step * 2 + 3) % distLen];
+        distractors.push(d1.word, d2.word, d3.word);
+      } else {
+        distractors.push('enhance', 'undermine', 'mitigate');
+      }
+
+      // 4 choices sorted alphabetically so the correct answer is not in a fixed position
+      const options = Array.from(new Set([w.word, ...distractors])).sort((a, b) =>
+        a.localeCompare(b)
+      );
+
+      // Build options breakdown including mnemonics for every choice
+      const optionsBreakdown: Record<
+        string,
+        { word: string; meaning: string; mnemonic: string; rootAnalysis?: string }
+      > = {};
+
+      options.forEach((opt) => {
+        const found = wordMap.get(opt.toLowerCase());
+        if (found) {
+          optionsBreakdown[opt] = {
+            word: found.word,
+            meaning: found.meaning,
+            mnemonic: found.mnemonic
+              ? `💡 ÇAĞRIŞIM: ${found.mnemonic}`
+              : `💡 ÇAĞRIŞIM: ÖSYM sınavlarında sıklıkla test edilen akademik kelime.`,
+            rootAnalysis: found.ydsTip ? `🔬 YDS Notu: ${found.ydsTip}` : undefined
+          };
+        } else {
+          optionsBreakdown[opt] = {
+            word: opt,
+            meaning: opt === w.word ? w.meaning : 'çeldirici şık',
+            mnemonic: 'ÖSYM sınav sözcüğü'
+          };
+        }
+      });
+
+      return {
+        id: `inf_${w.id}`,
+        category:
+          w.type === 'verb' || w.type === 'adjective' || w.type === 'phrasal_verb' || w.type === 'conjunction'
+            ? w.type
+            : 'vocab',
+        targetWordId: w.id,
+        targetWord: w.word,
+        type: w.type,
+        sentence,
+        options,
+        correctAnswer: w.word,
+        meaningTr: w.meaning,
+        explanation: `"${w.exampleTr}" — YDS Sınav Notu: ${
+          w.ydsTip || 'ÖSYM bu kelimeyi ve eş anlamlılarını sınavlarda sıklıkla test eder.'
+        }`,
+        synonyms: w.synonyms,
+        collocation: w.collocations.join(', '),
+        optionsBreakdown
+      };
+    });
+  }, [selectedCategory, selectedDay]);
+
+  // 2. CURATED VIP QUESTIONS
+  const curatedQuestions = useMemo(() => {
     if (selectedCategory === 'all') return YDS_VOCAB_QUIZ_QUESTIONS;
     if (selectedCategory === 'verb') {
       return YDS_VOCAB_QUIZ_QUESTIONS.filter((q) => q.category === 'verb' || q.type === 'verb');
@@ -49,19 +190,18 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (selectedCategory === 'grammar') {
       return YDS_VOCAB_QUIZ_QUESTIONS.filter((q) => q.category === 'grammar');
     }
-    return YDS_VOCAB_QUIZ_QUESTIONS.filter((q) => q.category === selectedCategory);
+    return YDS_VOCAB_QUIZ_QUESTIONS;
   }, [selectedCategory]);
+
+  // Active pool depends on drillSource
+  const currentPool = drillSource === 'infinite' ? infiniteQuestions : curatedQuestions;
 
   // Active question list: prioritize pending review words, then remaining
   const activeQuestions: VocabQuizQuestion[] = useMemo(() => {
-    const pending = categorizedQuestions.filter((q) =>
-      pendingReviewVocabIds.includes(q.targetWordId)
-    );
-    const others = categorizedQuestions.filter(
-      (q) => !pendingReviewVocabIds.includes(q.targetWordId)
-    );
+    const pending = currentPool.filter((q) => pendingReviewVocabIds.includes(q.targetWordId));
+    const others = currentPool.filter((q) => !pendingReviewVocabIds.includes(q.targetWordId));
     return [...pending, ...others];
-  }, [categorizedQuestions, pendingReviewVocabIds]);
+  }, [currentPool, pendingReviewVocabIds]);
 
   const currentQ: VocabQuizQuestion | undefined = activeQuestions[currentIndex];
   const isTargetInReviewQueue = currentQ ? pendingReviewVocabIds.includes(currentQ.targetWordId) : false;
@@ -70,14 +210,13 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (hasAnswered || !currentQ) return;
     setSelectedOption(opt);
     setHasAnswered(true);
-    setShowLearningCard(true); // Always reveal the memorable mnemonics for all 4 options!
+    setShowLearningCard(true); // Always reveal mnemonics for all 4 options!
 
     const isCorrect = opt === currentQ.correctAnswer;
     if (isCorrect) {
       onMarkKnown(currentQ.targetWordId);
       onRemovePendingReview(currentQ.targetWordId);
     } else {
-      // Wrong -> Queue for re-test & show explanation
       onMarkPendingReview(currentQ.targetWordId);
     }
   };
@@ -117,16 +256,15 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     const list: Array<{ id: string; word: string; meaning: string; mnemonic?: string; category: string }> = [];
     const seen = new Set<string>();
 
-    YDS_VOCAB_QUIZ_QUESTIONS.forEach((q) => {
-      if (knownVocabIds.includes(q.targetWordId) && !seen.has(q.targetWordId)) {
-        seen.add(q.targetWordId);
-        const detail = q.optionsBreakdown?.[q.correctAnswer];
+    YDS_VOCABULARY_LIST.forEach((w) => {
+      if (knownVocabIds.includes(w.id) && !seen.has(w.id)) {
+        seen.add(w.id);
         list.push({
-          id: q.targetWordId,
-          word: q.targetWord,
-          meaning: q.meaningTr,
-          mnemonic: detail?.mnemonic,
-          category: q.category
+          id: w.id,
+          word: w.word,
+          meaning: w.meaning,
+          mnemonic: w.mnemonic,
+          category: w.type
         });
       }
     });
@@ -136,7 +274,8 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       return list.filter(
         (item) =>
           item.word.toLowerCase().includes(query) ||
-          item.meaning.toLowerCase().includes(query)
+          item.meaning.toLowerCase().includes(query) ||
+          (item.mnemonic && item.mnemonic.toLowerCase().includes(query))
       );
     }
 
@@ -144,17 +283,157 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   }, [knownVocabIds, searchLearnedQuery]);
 
   return (
-    <div className="max-w-2xl mx-auto space-y-5 pb-24 px-2">
-      {/* Category Pills Selector */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-        {[
-          { id: 'all', label: '🌟 Tüm Sorular' },
-          { id: 'verb', label: '⚔️ Fiiller (Verbs)' },
-          { id: 'adjective', label: '🎨 Sıfatlar (Adjectives)' },
-          { id: 'conjunction', label: '🔗 Bağlaçlar' },
-          { id: 'phrasal_verb', label: '⚡ Phrasal Verbs' },
-          { id: 'grammar', label: '📐 Gramer' }
-        ].map((cat) => (
+    <div className="max-w-3xl mx-auto space-y-4 pb-24 px-2">
+      {/* 1. TOP UNIFIED NAVIGATION BAR */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div>
+          <div className="flex items-center gap-2">
+            <h2 className="text-lg font-black text-slate-900 dark:text-white flex items-center gap-1.5">
+              <span>⚡ Kelime Çalışma & Soru Çözücü</span>
+            </h2>
+            <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800">
+              {YDS_VOCABULARY_LIST.length} Kelime
+            </span>
+          </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            1.412 kelimelik havuzdan test çöz, hafıza tekniklerini ve 4 şıkkın çağrışımlarını incele
+          </p>
+        </div>
+
+        {/* View Switcher: Soru Çöz vs 1.412 Kart (SRS) & Sözlük */}
+        <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold shrink-0">
+          <button
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-300 shadow-sm font-extrabold"
+          >
+            <Target className="w-3.5 h-3.5" />
+            <span>⚡ Soru Çöz Drill</span>
+          </button>
+          {onNavigateToFlashcards && (
+            <button
+              onClick={onNavigateToFlashcards}
+              title="1.412 Kelimelik Flashcard (SRS) ve A-Z Sözlük Masasına Git"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 transition-colors"
+            >
+              <Layers className="w-3.5 h-3.5 text-indigo-500" />
+              <span>🎴 1.412 Kart (SRS) & Sözlük</span>
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* 2. DRILL SOURCE TOGGLE: INFINITE POOL vs VIP MODEL QUESTIONS */}
+      <div className="flex items-center justify-between gap-2 bg-slate-100 dark:bg-slate-850 p-1.5 rounded-2xl text-xs font-bold">
+        <button
+          onClick={() => {
+            setDrillSource('infinite');
+            setCurrentIndex(0);
+            setSelectedOption(null);
+            setHasAnswered(false);
+            setShowLearningCard(false);
+          }}
+          className={`flex-1 py-2 rounded-xl transition-all flex items-center justify-center gap-1.5 ${
+            drillSource === 'infinite'
+              ? 'bg-sky-600 text-white shadow-md font-extrabold'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
+          }`}
+        >
+          <Zap className="w-4 h-4" />
+          <span>♾️ 1.412 Kelime Soru Çözücü ({infiniteQuestions.length} Soru)</span>
+        </button>
+
+        <button
+          onClick={() => {
+            setDrillSource('curated');
+            setCurrentIndex(0);
+            setSelectedOption(null);
+            setHasAnswered(false);
+            setShowLearningCard(false);
+          }}
+          className={`flex-1 py-2 rounded-xl transition-all flex items-center justify-center gap-1.5 ${
+            drillSource === 'curated'
+              ? 'bg-indigo-600 text-white shadow-md font-extrabold'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
+          }`}
+        >
+          <Sparkles className="w-4 h-4" />
+          <span>💎 VIP Model Sorular ({curatedQuestions.length} Soru)</span>
+        </button>
+      </div>
+
+      {/* 3. DAY SELECTOR (Only in Infinite Mode) */}
+      {drillSource === 'infinite' && (
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between text-xs px-1 text-slate-500">
+            <span className="font-bold flex items-center gap-1">
+              <Calendar className="w-3.5 h-3.5 text-sky-500" />
+              <span>Müfredat Gününe Göre Soru Çöz:</span>
+            </span>
+            <span>{selectedDay === 'all' ? 'Tüm 30 Gün (1.412 Kelime)' : `Gün ${selectedDay}`}</span>
+          </div>
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs font-semibold">
+            <button
+              onClick={() => {
+                setSelectedDay('all');
+                setCurrentIndex(0);
+                setSelectedOption(null);
+                setHasAnswered(false);
+                setShowLearningCard(false);
+              }}
+              className={`px-3 py-1 rounded-xl shrink-0 transition-all ${
+                selectedDay === 'all'
+                  ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-bold shadow-sm'
+                  : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800'
+              }`}
+            >
+              📅 Tüm Günler (1.412)
+            </button>
+            {Array.from({ length: 30 }, (_, i) => i + 1).map((day) => {
+              const count = YDS_VOCABULARY_LIST.filter((w) => w.groupDay === day).length;
+              return (
+                <button
+                  key={day}
+                  onClick={() => {
+                    setSelectedDay(day);
+                    setCurrentIndex(0);
+                    setSelectedOption(null);
+                    setHasAnswered(false);
+                    setShowLearningCard(false);
+                  }}
+                  className={`px-3 py-1 rounded-xl shrink-0 transition-all ${
+                    selectedDay === day
+                      ? 'bg-sky-600 text-white font-bold shadow-sm'
+                      : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800'
+                  }`}
+                >
+                  Gün {day} ({count})
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* 4. CATEGORY SELECTOR PILLS */}
+      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs font-semibold">
+        {(drillSource === 'infinite'
+          ? [
+              { id: 'all', label: `🌟 Tümü (${infiniteQuestions.length})` },
+              { id: 'verb', label: '⚔️ Fiiller' },
+              { id: 'adjective', label: '🎨 Sıfatlar' },
+              { id: 'noun', label: '📦 İsimler' },
+              { id: 'phrasal_verb', label: '⚡ Phrasal Verbs' },
+              { id: 'conjunction', label: '🔗 Bağlaçlar' },
+              { id: 'adverb', label: '🚀 Zarflar' }
+            ]
+          : [
+              { id: 'all', label: '🌟 Tüm Sorular' },
+              { id: 'verb', label: '⚔️ Fiiller (Verbs)' },
+              { id: 'adjective', label: '🎨 Sıfatlar (Adjectives)' },
+              { id: 'conjunction', label: '🔗 Bağlaçlar' },
+              { id: 'phrasal_verb', label: '⚡ Phrasal Verbs' },
+              { id: 'grammar', label: '📐 Gramer' }
+            ]
+        ).map((cat) => (
           <button
             key={cat.id}
             onClick={() => {
@@ -164,9 +443,9 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               setHasAnswered(false);
               setShowLearningCard(false);
             }}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all ${
+            className={`px-3 py-1.5 rounded-xl shrink-0 transition-all ${
               selectedCategory === cat.id
-                ? 'bg-sky-600 text-white shadow-sm'
+                ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-bold shadow-sm'
                 : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-50'
             }`}
           >
@@ -175,8 +454,8 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
         ))}
       </div>
 
-      {/* Clean Status Bar with "Öğrendiklerim" & "Fiil & Bağlaç Atlası" buttons */}
-      <div className="flex items-center justify-between bg-white dark:bg-slate-900 px-4 py-3 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-xs font-bold">
+      {/* 5. CLEAN STATUS BAR WITH "ÖĞRENDİKLERİM" & "ATLAS" */}
+      <div className="flex items-center justify-between bg-white dark:bg-slate-900 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-xs font-bold">
         <div className="flex items-center gap-2">
           {/* Clickable Mastered Count Button */}
           <button
@@ -198,34 +477,22 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             <span>Fiil & Bağlaç Atlası</span>
           </button>
 
-          {/* 1.373 Kelime & SRS Flashcard Havuzu Butonu */}
-          {onNavigateToFlashcards && (
-            <button
-              onClick={onNavigateToFlashcards}
-              title="1.373 Akademik Kelime & SRS Flashcard Havuzuna Git"
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-sky-50 hover:bg-sky-100 dark:bg-sky-950/60 dark:hover:bg-sky-900/60 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800 transition-colors"
-            >
-              <Layers className="w-3.5 h-3.5 text-sky-500" />
-              <span>1.373 Kelime & SRS</span>
-            </button>
-          )}
-
           {pendingReviewVocabIds.length > 0 && (
-            <span className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400">
-              <span className="w-2 h-2 rounded-full bg-amber-500" />
+            <span className="flex items-center gap-1 text-amber-600 dark:text-amber-400">
+              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
               {pendingReviewVocabIds.length} Tekrar
             </span>
           )}
         </div>
 
-        <span className="text-slate-400">
+        <span className="text-slate-400 font-mono">
           Soru {currentIndex + 1} / {activeQuestions.length}
         </span>
       </div>
 
+      {/* 6. MAIN QUESTION CARD */}
       {currentQ ? (
         <div className="space-y-4">
-          {/* Main Clean Question Card */}
           <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm space-y-6">
             {/* Category badge & Review indicator */}
             <div className="flex items-center justify-between">
@@ -245,9 +512,9 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                 </span>
 
                 {isTargetInReviewQueue && (
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 text-[10px] font-bold border border-amber-200 dark:border-amber-800">
+                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 text-[10px] font-bold border border-amber-200 dark:border-amber-800">
                     <RotateCcw className="w-3 h-3" />
-                    <span>Pekiştirme</span>
+                    <span>Pekiştirme Tekrarı</span>
                   </span>
                 )}
               </div>
@@ -290,8 +557,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
 
                 if (hasAnswered) {
                   if (isCorrect) {
-                    btnClass =
-                      'bg-emerald-500 text-white border-emerald-600 shadow-md font-extrabold';
+                    btnClass = 'bg-emerald-500 text-white border-emerald-600 shadow-md font-extrabold';
                   } else if (isSelected && !isCorrect) {
                     btnClass = 'bg-rose-500 text-white border-rose-600 font-extrabold';
                   } else {
@@ -304,9 +570,14 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                     key={idx}
                     onClick={() => handleSelectOption(opt)}
                     disabled={hasAnswered}
-                    className={`w-full py-4 px-5 rounded-2xl border-2 text-base font-bold text-left transition-all active:scale-[0.99] flex items-center justify-between ${btnClass}`}
+                    className={`w-full py-3.5 px-4 rounded-2xl border-2 text-base font-bold text-left transition-all active:scale-[0.99] flex items-center justify-between ${btnClass}`}
                   >
-                    <span>{opt}</span>
+                    <div className="flex items-center gap-3">
+                      <span className="w-6 h-6 rounded-lg text-xs font-black flex items-center justify-center bg-black/5 dark:bg-white/10">
+                        {String.fromCharCode(65 + idx)}
+                      </span>
+                      <span>{opt}</span>
+                    </div>
                     {hasAnswered && isCorrect && <Check className="w-5 h-5 text-white stroke-[3px]" />}
                   </button>
                 );
@@ -328,7 +599,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                   onClick={handleDirectMarkKnown}
                   className="text-xs font-bold text-emerald-600 hover:text-emerald-700 py-2 px-3 rounded-xl transition-colors flex items-center gap-1"
                 >
-                  <Check className="w-4 h-4" />
+                  <Check className="w-3.5 h-3.5" />
                   <span>Biliyorum (Atla)</span>
                 </button>
               </div>
@@ -348,7 +619,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             )}
           </div>
 
-          {/* COMPREHENSIVE MNEMONICS & 4-OPTION BREAKDOWN CARD */}
+          {/* 7. COMPREHENSIVE MNEMONICS & 4-OPTION BREAKDOWN CARD */}
           {hasAnswered && showLearningCard && (
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-slate-900 dark:to-slate-900 border-2 border-amber-300 dark:border-amber-700/80 rounded-3xl p-6 md:p-8 space-y-6 shadow-xl animate-in fade-in slide-in-from-top-3">
               {/* Header */}
@@ -374,7 +645,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               {/* Context Explanation */}
               <div className="bg-white/90 dark:bg-slate-800/90 p-3.5 rounded-2xl border border-amber-200 dark:border-slate-700 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
                 <strong className="text-emerald-600 dark:text-emerald-400 font-extrabold">
-                  Doğru Cevap: {currentQ.correctAnswer}
+                  Doğru Cevap: {currentQ.correctAnswer} (= {currentQ.meaningTr})
                 </strong>{' '}
                 — {currentQ.explanation}
               </div>
@@ -382,7 +653,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               {/* All 4 Options Broken Down with Mnemonics */}
               <div className="space-y-3 pt-1">
                 <p className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                  Şıkların Çağrışımları & Kuralları:
+                  Şıkların Türkçe Karşılıkları & Akılda Kalıcı Çağrışımları:
                 </p>
 
                 <div className="grid grid-cols-1 gap-3">
@@ -453,13 +724,25 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           )}
         </div>
       ) : (
-        <div className="text-center py-20 bg-white dark:bg-slate-900 rounded-3xl border p-8 space-y-3">
+        <div className="text-center py-20 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-8 space-y-3">
           <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
-          <h3 className="text-lg font-bold">Bu kategorideki tüm sorular tamamlandı!</h3>
+          <h3 className="text-lg font-bold">Bu filtredeki tüm kelime soruları tamamlandı!</h3>
+          <p className="text-xs text-slate-500">
+            Farklı bir gün veya kategori seçerek kelime havuzunu çözmeye devam edebilirsiniz.
+          </p>
+          <button
+            onClick={() => {
+              setSelectedCategory('all');
+              setSelectedDay('all');
+            }}
+            className="px-4 py-2 bg-sky-600 text-white rounded-xl text-xs font-bold"
+          >
+            Tüm 1.412 Kelimeyi Aç
+          </button>
         </div>
       )}
 
-      {/* MASTERED WORDS VAULT MODAL (Öğrendiğim Kelimeler Listesi) */}
+      {/* 8. MASTERED WORDS VAULT MODAL (Öğrendiğim Kelimeler Kasası) */}
       {isMasteredModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in">
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-xl w-full p-6 max-h-[85vh] flex flex-col shadow-2xl relative">
@@ -470,7 +753,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                   <span>🧠 Öğrendiğim Kelimeler Havuzu</span>
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                  Toplam {learnedItems.length} kelimeyi hafızana aldın. Buradan istediğin an tekrar edebilirsin.
+                  Toplam {learnedItems.length} kelimeyi hafızana aldın. Buradan istediğin an çağrışımlarıyla tekrar et.
                 </p>
               </div>
               <button
@@ -529,7 +812,6 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
 
                         <button
                           onClick={() => {
-                            // Move back to review queue
                             onMarkPendingReview(item.id);
                           }}
                           title="Unuttum, Tekrar Sırasına Al"
@@ -542,7 +824,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
 
                     {item.mnemonic && (
                       <p className="text-xs text-amber-900 dark:text-amber-200 bg-amber-100/60 dark:bg-amber-950/40 p-2 rounded-lg font-medium leading-relaxed">
-                        {item.mnemonic}
+                        💡 {item.mnemonic}
                       </p>
                     )}
                   </div>
@@ -562,7 +844,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
         </div>
       )}
 
-      {/* ALTIN BAĞLAÇ & FİİL ATLASI MODALI */}
+      {/* 9. ALTIN BAĞLAÇ & FİİL ATLASI MODALI */}
       {isAtlasModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-3 md:p-4 bg-black/60 backdrop-blur-sm animate-in fade-in">
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full p-5 md:p-7 shadow-2xl relative space-y-5 max-h-[90vh] flex flex-col">

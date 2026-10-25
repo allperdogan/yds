@@ -18,7 +18,8 @@ import {
   ChevronRight,
   Calendar,
   X,
-  Target
+  Target,
+  Lightbulb
 } from 'lucide-react';
 import { YdsWord, SRSItem, SRSGrade } from '../types';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
@@ -86,6 +87,7 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
         (w) =>
           w.word.toLowerCase().includes(q) ||
           w.meaning.toLowerCase().includes(q) ||
+          (w.mnemonic && w.mnemonic.toLowerCase().includes(q)) ||
           w.synonyms.some((s) => s.toLowerCase().includes(q))
       );
     } else if (filterMode === 'day') {
@@ -123,6 +125,7 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
         (w) =>
           w.word.toLowerCase().includes(q) ||
           w.meaning.toLowerCase().includes(q) ||
+          (w.mnemonic && w.mnemonic.toLowerCase().includes(q)) ||
           w.synonyms.some((s) => s.toLowerCase().includes(q)) ||
           w.collocations.some((c) => c.toLowerCase().includes(q))
       );
@@ -221,6 +224,15 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
 
         {/* View Mode Segmented Control */}
         <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold">
+          {onNavigateToDrill && (
+            <button
+              onClick={onNavigateToDrill}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 transition-all"
+            >
+              <Target className="w-3.5 h-3.5 text-sky-500" />
+              <span>⚡ Soru Çöz Drill</span>
+            </button>
+          )}
           <button
             onClick={() => setViewMode('flashcard')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
@@ -479,7 +491,7 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
                 Bu Filtrede Kelime Bulunamadı
               </h3>
               <p className="text-sm text-slate-500 max-w-sm mx-auto">
-                Filtre ayarlarını sıfırlayarak 1.373 kelimelik ana havuzumuza dönebilirsiniz.
+                Filtre ayarlarını sıfırlayarak {YDS_VOCABULARY_LIST.length} kelimelik ana havuzumuza dönebilirsiniz.
               </p>
               <button
                 onClick={() => {
@@ -593,6 +605,19 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
                             {currentWord.meaning}
                           </h4>
                         </div>
+
+                        {/* Akılda Kalıcı Çağrışım & Hafıza Kodlaması */}
+                        {currentWord.mnemonic && (
+                          <div className="bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-yellow-500/10 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-yellow-950/30 border border-amber-300 dark:border-amber-800/60 p-3 rounded-2xl space-y-1">
+                            <div className="flex items-center gap-1.5 text-amber-700 dark:text-amber-300 font-extrabold text-xs">
+                              <Lightbulb className="w-4 h-4 text-amber-500 shrink-0" />
+                              <span>💡 Akılda Kalıcı Çağrışım (Hafıza Kodlaması):</span>
+                            </div>
+                            <p className="text-xs text-slate-800 dark:text-slate-200 font-medium leading-relaxed pl-5">
+                              {currentWord.mnemonic}
+                            </p>
+                          </div>
+                        )}
 
                         {/* Synonyms (Eş Anlamlılar) */}
                         {currentWord.synonyms && currentWord.synonyms.length > 0 && (
@@ -770,7 +795,7 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="1.373 kelime içinde İngilizce veya Türkçe ara..."
+                  placeholder={`${YDS_VOCABULARY_LIST.length} kelime içinde İngilizce, Türkçe veya çağrışım ara...`}
                   className="w-full pl-9 pr-8 py-2 text-xs rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
                 {searchQuery && (
@@ -904,6 +929,19 @@ export const VocabFlashcardView: React.FC<VocabFlashcardViewProps> = ({
                     <div className="text-sm font-bold text-indigo-700 dark:text-indigo-400">
                       {word.meaning}
                     </div>
+
+                    {/* Akılda Kalıcı Çağrışım (Hafıza Tekniği) */}
+                    {word.mnemonic && (
+                      <div className="bg-amber-500/10 dark:bg-amber-950/30 border border-amber-300 dark:border-amber-800/60 p-2.5 rounded-xl space-y-0.5">
+                        <div className="flex items-center gap-1.5 text-amber-700 dark:text-amber-300 font-extrabold text-[11px]">
+                          <Lightbulb className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                          <span>💡 Akılda Kalıcı Çağrışım:</span>
+                        </div>
+                        <p className="text-xs text-slate-800 dark:text-slate-200 pl-5 font-medium leading-relaxed">
+                          {word.mnemonic}
+                        </p>
+                      </div>
+                    )}
 
                     {/* Synonyms & Collocations */}
                     <div className="flex flex-wrap gap-x-4 gap-y-1.5 text-xs">

@@ -108,7 +108,7 @@ describe('VocabFlashcardView Functional & Button Tests', () => {
     fireEvent.click(dictModeBtn);
 
     // Search bar should be present with placeholder
-    const searchInput = screen.getByPlaceholderText(/1\.373 kelime içinde İngilizce veya Türkçe ara\.\.\./i);
+    const searchInput = screen.getByPlaceholderText(/\d+ kelime içinde/i);
     expect(searchInput).toBeInTheDocument();
 
     // Type a query in search

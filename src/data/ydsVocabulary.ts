@@ -25,7 +25,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yeni beslenme yönergeleri halkın bağışıklık sistemini geliştirmeyi amaçlamaktadır.",
     "ydsTip": "ÖSYM olumlu gelişme paragraflarında doğru cevap olarak sıkça kullanır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w2",
@@ -51,7 +52,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Devletler arasındaki ilişkiler hızla kötüleşmeye başladı.",
     "ydsTip": "Zıtlık sorularında \"improve\" ile karşıt çift oluşturur.",
     "frequency": "ultra",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w3",
@@ -77,7 +79,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Küresel ısınmanın ağır etkilerini hafifletmek için acil adımlar gereklidir.",
     "ydsTip": "İklim ve çevre metinlerinde en çok sorulan fiildir.",
     "frequency": "ultra",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w4",
@@ -102,7 +105,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yolsuzluk, halkın demokratik kurumlara olan güvenini sarstı.",
     "ydsTip": "ÖSYM bunu hep \"confidence / authority\" isimleriyle birleştirir.",
     "frequency": "ultra",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w5",
@@ -122,7 +126,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bilim insanları erimedeki artışı sera gazı emisyonlarına bağlamaktadır.",
     "ydsTip": "Her yıl preposition (TO) sorusu olarak gelir.",
     "frequency": "ultra",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 PHRASAL KODU: \"ATTRIBUTE\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"bir şeye bağlamak, sebebi olarak görmek\"."
   },
   {
     "id": "w6",
@@ -148,7 +153,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Sarp dağ fırtınaları arama kurtarma çalışmalarını aksattı.",
     "ydsTip": "Olumsuz kriz paragraflarında doğru cevap olur.",
     "frequency": "ultra",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 ÇAĞRIŞIM: Koşarken önüne koca bir piknik sepeti (HAMPER) koyup ayağına engel oldular."
   },
   {
     "id": "w7",
@@ -172,7 +178,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Halk sağlığı kampanyaları bulaşıcı hastalıkları küresel olarak yok etmeye çabalamaktadır.",
     "ydsTip": "Tıp ve sağlık metinlerinde \"eradicate disease\" eşleşmesiyle gelir.",
     "frequency": "ultra",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RADICAL (kökten)\". Bir hastalığı kökünden söküp ERADICATE etti (kökünü kazıdı)."
   },
   {
     "id": "w8",
@@ -198,7 +205,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Merkez bankaları tırmanan enflasyon baskılarını dizginlemek için faiz artırdı.",
     "ydsTip": "Ekonomi ve çevre sorularının en sevilen kelimesidir.",
     "frequency": "ultra",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KÖRPELİK / DİZGİN\". Atın ağzındaki gem (curb) gibi enflasyonu CURB etti (dizginledi, frenledi)."
   },
   {
     "id": "w9",
@@ -223,7 +231,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kimya tesisleri emisyon düzenlemelerine kesinlikle uymalıdır.",
     "ydsTip": "Preposition (WITH) sorusu olarak ÖSYM'nin favorisidir.",
     "frequency": "ultra",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KOM-PLİMAN / UYUM\". Şirket kurallarına COMPLY WITH yaptı (uydu, riayet etti)."
   },
   {
     "id": "w10",
@@ -247,7 +256,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yetkililere spekülatif yorumlar yapmaktan kaçınmaları uyarısı yapıldı.",
     "ydsTip": "Arkasından her zaman \"FROM + V-ing\" yapısı gelir.",
     "frequency": "ultra",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"FREN\". Kendine fren yaptırıp sigara içmekten REFRAIN FROM etti (sakındı, kaçındı)."
   },
   {
     "id": "w11",
@@ -273,7 +283,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bakanlık ulaşım şebekesindeki eksiklikleri kabul etti.",
     "ydsTip": "Akademik metinlerde yazarın tutumunu gösteren fiildir.",
     "frequency": "ultra",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"admit / recognize\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kabul etmek, tanımak, varlığını onaylamak\"."
   },
   {
     "id": "w12",
@@ -298,7 +309,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Eğitim sistemleri bağımsız analitik muhakemeyi geliştirmelidir.",
     "ydsTip": "Mecazi anlamda \"yetenek/ilişki geliştirmek\" olarak çok çıkar.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"develop / foster\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geliştirmek, ekmek/yetiştirmek, işlemek\"."
   },
   {
     "id": "w13",
@@ -324,7 +336,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Hükümet vergi indirimleri güneş enerjisine geçişi hızlandırdı.",
     "ydsTip": "Zıtlık sorularında \"slow down / hamper\" ile kıyaslanır.",
     "frequency": "high",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"speed up / hasten\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hızlandırmak, ivme kazandırmak\"."
   },
   {
     "id": "w14",
@@ -349,7 +362,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ağır kuraklık binlerce çiftçi aileyi göç etmeye mecbur bıraktı.",
     "ydsTip": "\"Compelling evidence (karşı konulamaz/ikna edici kanıt)\" YDS klasiğidir.",
     "frequency": "ultra",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KOM-PLE ZORLAMA\". Bir insanı istemediği bir şeyi yapmaya COMPEL etmek (zorlamak, mecbur bırakmak)."
   },
   {
     "id": "w15",
@@ -375,7 +389,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bilimsel keşif seferleri bütçe kesintileriyle ciddi şekilde kısıtlandı.",
     "ydsTip": "İsim hali \"constraint (kısıtlama/engel)\" de çok sık sorulur.",
     "frequency": "high",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"restrict / limit\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısıtlamak, sınırlamak, baskılamak\"."
   },
   {
     "id": "w16",
@@ -401,7 +416,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yetkililer daha sıkı çevre standartları uygulamaya karar verdi.",
     "ydsTip": "\"Carry out\" ile birebir eş anlamlı olarak sorulur.",
     "frequency": "ultra",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"execute / carry out\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uygulamak, yürürlüğe koymak, icra etmek\"."
   },
   {
     "id": "w17",
@@ -426,7 +442,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Feci volkanik patlamadan önce ani bir sismik uğultu meydana geldi.",
     "ydsTip": "\"Proceed (ilerlemek)\" kelimesiyle karıştırmayın; ÖSYM tuzak yapar.",
     "frequency": "ultra",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"antecede / lead\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"önde/önce gelmek, -den önce olmak\"."
   },
   {
     "id": "w18",
@@ -452,7 +469,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Beklenmedik faiz artışları piyasada şiddetli dalgalanmaları tetikledi.",
     "ydsTip": "\"Cause / lead to / bring about\" fiilleriyle eş anlamlıdır.",
     "frequency": "ultra",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"initiate / spark\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tetiklemek, yol açmak, başlatmak\"."
   },
   {
     "id": "w19",
@@ -477,7 +495,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Aşırı sulama hayati yeraltı suyu rezervlerini tüketmeye devam etmektedir.",
     "ydsTip": "Çevre paragraflarının demirbaşıdır. Zıddı \"Replenish\"tir.",
     "frequency": "ultra",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DE- (aşağı/yokluk)\" + \"PLETE (dolu)\". Doluluğu sıfırlayıp tüketmek, bitirmek."
   },
   {
     "id": "w20",
@@ -504,7 +523,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Laboratuvar deneyleri devrim niteliğinde farmakolojik veriler üretti/sağladı.",
     "ydsTip": "İki anlamı vardır: sonuç/mahsul üretmek veya baskıya boyun eğmek (to).",
     "frequency": "ultra",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"produce / generate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"1. Üretmek, sağlamak, 2. Teslim olmak/boyun eğmek (to)\"."
   },
   {
     "id": "w21",
@@ -529,7 +549,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Rönesans dönemi boyunca edebiyat ve felsefe gelişip serpildi.",
     "ydsTip": "\"Thrive / prosper\" ile eş anlamlı olarak sorulur.",
     "frequency": "ultra",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"FLOWER (çiçek)\" gibi açmak, yeşermek, refah bulup serpilmek."
   },
   {
     "id": "w22",
@@ -554,7 +575,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Belediye yetkilileri barajın bakımını ihmal etti.",
     "ydsTip": "İsim hali \"negligence (ihmal)\" de sıklıkla test edilir.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ignore / disregard\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ihmal etmek, göz ardı etmek\"."
   },
   {
     "id": "w23",
@@ -579,7 +601,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Mühendisler teknik aksaklıkları düzeltmek için aralıksız çabaladı.",
     "ydsTip": "\"Remedy / repair\" anlamında sınavın şık kelimelerindendir.",
     "frequency": "high",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"ctify\". Eylemi yineleyip pekiştirmek: \"düzeltmek, telafi etmek, çaresine bakmak\"."
   },
   {
     "id": "w24",
@@ -605,7 +628,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tokyo’daki gökdelenler şiddetli sarsıntılara dayanacak şekilde tasarlanır.",
     "ydsTip": "\"Endure / resist\" eş anlamlısıdır; mühendislik metinlerinde sıkça çıkar.",
     "frequency": "ultra",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"STAND (ayakta durmak)\". Fırtınaya karşı dik durup WITHSTAND etti (dayandı, direndi)."
   },
   {
     "id": "w25",
@@ -630,7 +654,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Siber savunmayı ihmal etmek ulusal ekonomik istikrarı tehlikeye atar.",
     "ydsTip": "Cümlenin olumsuz (-) yönünü gösteren kilit kelimedir.",
     "frequency": "ultra",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w26",
@@ -655,7 +680,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İşbirlikçi araştırma kümeleri yapay zekada buluşları teşvik eder.",
     "ydsTip": "\"Promote / encourage\" anlamına gelir ve olumlu şık işaretidir.",
     "frequency": "ultra",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"FOSİL DEĞİL FİDAN\". Genç yetenekleri özenle FOSTER etti (besleyip teşvik etti)."
   },
   {
     "id": "w27",
@@ -681,7 +707,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çevre aktivistleri sıfır karbonlu kentsel politikaları hararetle savunmaktadır.",
     "ydsTip": "İsim hali \"savunucu/avukat\", fiil hali \"savunmak\"tır.",
     "frequency": "ultra",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"support / champion\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"savunmak, desteklemek, arkasında durmak\"."
   },
   {
     "id": "w28",
@@ -706,7 +733,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tüm araştırmacılar deneylerde sıkı etik kurallara bağlı kalmalıdır.",
     "ydsTip": "\"Comply with\" ile eşanlamlıdır ve daima \"TO\" edatı alır.",
     "frequency": "ultra",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"AD-HESIVE (yapışkan bant)\". Kurallara yapışıp kalmak, sıkı sıkıya bağlı kalmak."
   },
   {
     "id": "w29",
@@ -730,7 +758,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Birçok ülke tartışmalı karar üzerinde oylamada çekimser kalmayı tercih etti.",
     "ydsTip": "\"Refrain from\" gibi daima \"FROM\" edatıyla kullanılır.",
     "frequency": "ultra",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 PHRASAL KODU: \"ABSTAIN\" fiili \"FROM\" edatıyla birleşerek özel bir kalıp oluşturur: \"kaçınmak, çekimser kalmak, uzak durmak\"."
   },
   {
     "id": "w30",
@@ -752,7 +781,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Birçok modern ilaç yağmur ormanı bitki türlerinden elde edilmektedir/türemektedir.",
     "ydsTip": "\"Stem from / originate from\" sebep-köken yapısıdır.",
     "frequency": "ultra",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 PHRASAL KODU: \"DERIVE\" fiili \"FROM\" edatıyla birleşerek özel bir kalıp oluşturur: \"-den türemek, -den kaynaklanmak, elde etmek\"."
   },
   {
     "id": "w31",
@@ -776,7 +806,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bilim insanları titiz deneysel metodolojiden asla sapmamalıdır.",
     "ydsTip": "Daima \"FROM\" edatı alır. İsim hali \"deviation (sapma)\"dır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"diverge / depart\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sapmak, yoldan çıkmak, ayrılmak (from)\"."
   },
   {
     "id": "w32",
@@ -802,7 +833,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Aday tüm sandıklar sayıldıktan sonra nihayet yenilgiyi kabul etti.",
     "ydsTip": "\"Acknowledge / admit\" kelimelerinin resmi-politik eş anlamlısıdır.",
     "frequency": "high",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"admit / acknowledge\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kabullenmek, istemeyerek de olsa teslim etmek\"."
   },
   {
     "id": "w33",
@@ -827,7 +859,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kaşifler kutup buzunda mahsur kalan gemilerini terk etmek zorunda kaldı.",
     "ydsTip": "Phrasal verb eş anlamlısı \"give up\"tır.",
     "frequency": "ultra",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"desert / forsake\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"terk etmek, vazgeçmek, yarıda bırakmak\"."
   },
   {
     "id": "w34",
@@ -849,7 +882,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Astronomik gözlemlerden fizikçiler karanlık maddenin varlığını çıkarsadı.",
     "ydsTip": "Paragraf soru köklerinde \"deduce / infer\" sıkça sorulur.",
     "frequency": "ultra",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"infer / conclude\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tümden gelerek sonuca varmak, çıkarım yapmak\"."
   },
   {
     "id": "w35",
@@ -871,7 +905,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Okurlar yazarın yeni ekonomik modele dair şüpheciliğini çıkarabilir.",
     "ydsTip": "\"It can be inferred from the passage that...\" soru kökünün kalbidir.",
     "frequency": "ultra",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deduce / conclude\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çıkarım yapmak, ima edilen anlamı çıkarmak\"."
   },
   {
     "id": "w36",
@@ -896,7 +931,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ekonomistler denetimsiz tekellerin kaçınılmaz olarak tüketicileri sömürdüğünü iddia eder.",
     "ydsTip": "\"Claim / maintain\" ile eş anlamlı iddia bildiren fiildir.",
     "frequency": "ultra",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"claim / maintain\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iddia etmek, ileri sürmek, kesinlikle söylemek\"."
   },
   {
     "id": "w37",
@@ -921,7 +957,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çöl toplulukları kuraklık boyunca tarımsal üretimi sürdürmekte zorlandı.",
     "ydsTip": "Sıfat hali \"sustainable (sürdürülebilir)\" çevre metinlerinin yıldızıdır.",
     "frequency": "ultra",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"maintain / uphold\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sürdürmek, devam ettirmek, ayakta tutmak\"."
   },
   {
     "id": "w38",
@@ -945,7 +982,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Sansasyonel medya haberleri karmaşık epidemiyolojik bulguları sıklıkla çarpıtır.",
     "ydsTip": "Çeldirici elemede \"distorted facts (çarpıtılmış gerçekler)\" olarak aranır.",
     "frequency": "high",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"tort\". Durumun tersine dönmesi: \"çarpıtmak, saptırmak, şeklini/anlamını bozmak\"."
   },
   {
     "id": "w39",
@@ -968,7 +1006,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Modern konferans arenası beş bin delegeyi rahatça barındırabilir.",
     "ydsTip": "Hem fiziksel barındırmak hem de \"ihtiyacı karşılamak\" anlamıyla çıkar.",
     "frequency": "high",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"house / lodge\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"1. Barındırmak, yer sağlamak, 2. Uyum sağlamak/karşılamak\"."
   },
   {
     "id": "w40",
@@ -991,7 +1030,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Jeotermal santraller yer altı volkanik termal enerjisinden faydalanır/kullanır.",
     "ydsTip": "Teknoloji metinlerinde \"faydalanmak (= utilize)\", sosyolojide \"sömürmek\"tir.",
     "frequency": "ultra",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"EKS-PLUATASYON\". Doğal kaynakları verimli kullanmak veya çalışanları sömürmek."
   },
   {
     "id": "w41",
@@ -1017,7 +1057,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Sağlık bakanlığı ülke çapında bir çocuk aşılama hamlesi başlattı.",
     "ydsTip": "\"Launch / commence\" ile eşanlamlıdır.",
     "frequency": "ultra",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"start / commence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"başlatmak, önayak olmak\"."
   },
   {
     "id": "w42",
@@ -1042,7 +1083,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Güneş paneli verimlilikleri önceki teorik sınırları aşmıştır.",
     "ydsTip": "\"Exceed / outstrip\" kelimeleriyle eş anlamlı olarak sorulur.",
     "frequency": "ultra",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"exceed / outdo\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aşmak, geride bırakmak, üstün gelmek\"."
   },
   {
     "id": "w43",
@@ -1068,7 +1110,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bazı toksik kimyasallar doğal hücre bölünmesi sürecini engeller/yavaşlatır.",
     "ydsTip": "Biyoloji ve tıp sorularında \"hinder / prevent\" karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"İNHİBİTÖR\". Kimyasal reaksiyonun hızını dizginleyip INHIBIT etti (baskıladı, engelledi)."
   },
   {
     "id": "w44",
@@ -1093,7 +1136,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Hükümetler yeşil altyapıya önemli miktarda fon tahsis etmelidir.",
     "ydsTip": "\"Set aside\" phrasal verb'ünün resmi akademik karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"ALO-KOTA\". Bakanlık alo diyerek bütçeden eğitime özel bir pay ALLOCATE etti (tahsis etti)."
   },
   {
     "id": "w45",
@@ -1118,7 +1162,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Petrol fiyatları Orta Doğu’daki jeopolitik huzursuzluğa bağlı olarak çılgınca dalgalanır.",
     "ydsTip": "Ekonomi ve iklim grafik metinlerinin vazgeçilmez fiilidir.",
     "frequency": "ultra",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vary / shift\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dalgalanmak, inip çıkmak, değişmek\"."
   },
   {
     "id": "w46",
@@ -1144,7 +1189,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Klasik gazetelerin etkisi dijital çağda azalmıştır.",
     "ydsTip": "\"Dwindle = plummet = decline = diminish\" ÖSYM eşanlam grubudur.",
     "frequency": "ultra",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"decrease / lessen\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"azalmak, eksilmek, küçülmek\"."
   },
   {
     "id": "w47",
@@ -1170,7 +1216,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yüksek hızlı demiryolları bölgesel şehirler arasındaki ticareti büyük ölçüde kolaylaştırır.",
     "ydsTip": "\"Hamper / hinder\" kelimelerinin tam zıddıdır.",
     "frequency": "ultra",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ease / enable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kolaylaştırmak, önünü açmak, imkan tanımak\"."
   },
   {
     "id": "w48",
@@ -1196,7 +1243,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Şüpheli önemli adli delilleri dedektiflerden gizlemeye çalıştı.",
     "ydsTip": "\"Reveal / disclose (açığa çıkarmak)\" kelimesinin tam karşıtıdır.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hide / cover up\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gizlemek, saklamak, örtbas etmek\"."
   },
   {
     "id": "w49",
@@ -1222,7 +1270,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Muhbirler gizli şirket dolandırıcılığını araştırmacı gazetecilere ifşa etti.",
     "ydsTip": "\"Reveal\" kelimesinin eş anlamlısıdır; zıttı \"conceal\"dır.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"close\". Durumun tersine dönmesi: \"açıklamak, ifşa etmek, açığa vurmak\"."
   },
   {
     "id": "w50",
@@ -1248,7 +1297,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bağımsız laboratuvarlardaki sonraki deneyler kuantum teoremini doğruladı.",
     "ydsTip": "Bilimsel metinlerde \"confirm findings\" yerine doğru şıktır.",
     "frequency": "high",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"confirm / corroborate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doğrulamak, geçerli kılmak, onaylamak\"."
   },
   {
     "id": "w51",
@@ -1274,7 +1324,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Havacılık ajansı miadı dolmuş uydu programını sonlandırmaya karar verdi.",
     "ydsTip": "\"Initiate\" kelimesinin tam zıddıdır.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"end / cease\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"son vermek, bitirmek, sonlandırmak\"."
   },
   {
     "id": "w52",
@@ -1296,7 +1347,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ultraviyole ışınları korumasız cildin dış katmanlarına kolayca nüfuz edebilir.",
     "ydsTip": "\"Penetrate the atmosphere / cell\" fen bilimleri metinlerinde sık geçer.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"pierce / permeate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nüfuz etmek, içine işlemek, delip geçmek\"."
   },
   {
     "id": "w53",
@@ -1322,7 +1374,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Adaletsiz ticaret tarifeleri müttefiklerden şiddetli diplomatik misillemeyi tetikledi.",
     "ydsTip": "Olumsuz bir tepkiyi başlatmak anlamında \"trigger\" ile eşanlamlıdır.",
     "frequency": "high",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"incite / instigate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kışkırtmak, neden olmak, tetiklemek\"."
   },
   {
     "id": "w54",
@@ -1347,7 +1400,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Filozoflar özgür iradeyi biyolojik belirlenimcilikle uzlaştırmakta zorlandı.",
     "ydsTip": "\"Reconcile differences (farklılıkları uzlaştırmak)\" sık sorulan tamlamadır.",
     "frequency": "high",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KONSEY\". Küs tarafları konseyde buluşturup RECONCILE etti (uzlaştırdı, barıştırdı)."
   },
   {
     "id": "w55",
@@ -1373,7 +1427,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Deneysel veriler Einstein’ın görelilik teorisinin geçerliliğini güçlü biçimde pekiştirdi.",
     "ydsTip": "\"Undermine\" fiilinin tam zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"inforce\". Eylemi yineleyip pekiştirmek: \"güçlendirmek, takviye etmek, sağlamlaştırmak\"."
   },
   {
     "id": "w56",
@@ -1400,7 +1455,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bazı topraklar yoğun ekvator sıcağında bile nemi muhafaza edebilir.",
     "ydsTip": "\"Maintain / keep\" kelimesinin akademik karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"tain\". Eylemi yineleyip pekiştirmek: \"muhafaza etmek, elinde tutmak, korumak\"."
   },
   {
     "id": "w57",
@@ -1423,7 +1479,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Süper bilgisayarlar süper fırtınaların karmaşık meteorolojik etkilerini modelleyebilir.",
     "ydsTip": "Teknoloji metinlerinde \"model / replicate\" ile eş anlamlıdır.",
     "frequency": "high",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"model / reproduce\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"taklit etmek, modellemek, benzetimini yapmak\"."
   },
   {
     "id": "w58",
@@ -1449,7 +1506,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bazı dirençli bakteriler okyanus altındaki kaynar volkanik yarıklarda serpilir.",
     "ydsTip": "\"Flourish\" ile eşanlamlıdır.",
     "frequency": "ultra",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"TRİVE (3 kat)\". Kuraklıkta bile serpilip 3 kat büyüyerek THRIVE etti (gelişti, parladı)."
   },
   {
     "id": "w59",
@@ -1475,7 +1533,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Adli tıp bulgularını doğrulamak için bağımsız laboratuvarlar görevlendirildi.",
     "ydsTip": "\"Confirm / validate\" ile tam eş anlamlıdır.",
     "frequency": "ultra",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"confirm / validate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doğrulamak, teyit etmek, kanıtlamak\"."
   },
   {
     "id": "w60",
@@ -1500,7 +1559,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kıyı adaları yükselen okyanus gelgitlerine karşı savunmasızdır.",
     "ydsTip": "ÖSYM'nin 1 numaralı sıfatıdır, \"TO\" ile kullanılır.",
     "frequency": "ultra",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w61",
@@ -1525,7 +1585,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yüksek fruktozlu mısır şurubu kardiyovasküler sağlık için zararlıdır.",
     "ydsTip": "\"Harmful\" yerine ÖSYM hep bunu sorar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w62",
@@ -1550,7 +1611,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gezegensel teleskop benzeri görülmemiş bir yıldız patlaması kaydetti.",
     "ydsTip": "Devrim ve bilimsel buluş sorularında doğru cevaptır.",
     "frequency": "ultra",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"precedented\". \"precedented\" kökünün zıddı olarak \"eşi benzeri görülmemiş, tarihte ilk kez olan\" anlamına gelir."
   },
   {
     "id": "w63",
@@ -1575,7 +1637,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Büyük sistemsel reformlar olmadan ekonomik gerileme kaçınılmaz görünmektedir.",
     "ydsTip": "Zarf hali \"inevitably\" de doğrudan doğru şık çıkar.",
     "frequency": "ultra",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"evitable\". Sınavda şık elerken zıt duygu (-) bildirir: \"kaçınılmaz, engellenemez\"."
   },
   {
     "id": "w64",
@@ -1600,7 +1663,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Jeolog ani deprem için akla yatkın bir teori öne sürdü.",
     "ydsTip": "\"Plausible explanation\" sınavın en klasik tamlamasıdır.",
     "frequency": "ultra",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"plaus\" köküne gelerek: \"akla yatkın, mantıklı, inandırıcı\"."
   },
   {
     "id": "w65",
@@ -1625,7 +1689,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İnsan beyninin sinirsel bağlantıları karmaşık/girift yollar barındırır.",
     "ydsTip": "\"Complex\" yerine akademik metinlerde sıkça doğru cevap olur.",
     "frequency": "ultra",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"tricate\". Sınavda şık elerken zıt duygu (-) bildirir: \"karmaşık, girift, ince ayrıntılı\"."
   },
   {
     "id": "w66",
@@ -1650,7 +1715,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kuantum işlemcileri yakında geleneksel süper bilgisayarları kullanım dışı bırakabilir.",
     "ydsTip": "\"Render obsolete (hükümsüz/kullanım dışı bırakmak)\" kalıbı meşhurdur.",
     "frequency": "ultra",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"outdated / antiquated\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kullanımdan kalkmış, modası geçmiş, eskimiş\"."
   },
   {
     "id": "w67",
@@ -1674,7 +1740,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yazılım geliştirme son derece kazançlı bir meslek olarak ortaya çıkmıştır.",
     "ydsTip": "İş ve ekonomi sorularında \"profitable\" yerine sorulur.",
     "frequency": "ultra",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"LÜKS-RATİF\". Lüks bir hayat yaşatacak kadar kârlı ve bol kazançlı iş."
   },
   {
     "id": "w68",
@@ -1700,7 +1767,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tehlikeli kimyasal atıkların uygunsuz bertarafı içme suyunu tehdit eder.",
     "ydsTip": "\"Hazardous waste (tehlikeli atık)\" tamlaması çok sık geçer.",
     "frequency": "ultra",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dangerous / perilous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tehlikeli, riskli, sağlığa zararlı\"."
   },
   {
     "id": "w69",
@@ -1725,7 +1793,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Erken doğan bebekler bronşiyal enfeksiyonlara karşı özellikle hassastır.",
     "ydsTip": "\"Vulnerable to\" ile birebir eş anlamlıdır ve \"TO\" alır.",
     "frequency": "ultra",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 PHRASAL KODU: \"SUSCEPTIBLE\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"hassas, duyarlı, kolay yakalanan/etkilenen\"."
   },
   {
     "id": "w70",
@@ -1751,7 +1820,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bazı bakteriler kendilerini aşırı sıcağa karşı dirençli kılan genler geliştirdi.",
     "ydsTip": "\"Vulnerable\" kelimesinin zıddıdır; zıtlık sorularında hayat kurtarır.",
     "frequency": "ultra",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"tough / durable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dirençli, dayanıklı, çabuk toparlanan\"."
   },
   {
     "id": "w71",
@@ -1777,7 +1847,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Hareketsiz toplumlarda kardiyovasküler hastalıklar giderek daha yaygındır.",
     "ydsTip": "\"Widespread\" kelimesinin ÖSYM karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"PERVANE\". Sıcak yaz aylarında pervaneler her evde PREVALENT (çok yaygın) haldedir."
   },
   {
     "id": "w72",
@@ -1803,7 +1874,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kronik otoimmün bozukluklar için evrensel bir tedavi çıldırtıcı derecede ele geçmez olmaya devam ediyor.",
     "ydsTip": "Bilimsel çözümsüzlük metinlerinde doğru şıktır.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"slippery / evasive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yakalanması/anlaşılması zor, ele avuca sığmaz\"."
   },
   {
     "id": "w73",
@@ -1829,7 +1901,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Sanayi Devrimi insan uygarlığı üzerinde derin/köklü dönüşümler yarattı.",
     "ydsTip": "\"Profound impact / effect\" YDS'nin vazgeçilmez tamlamasıdır.",
     "frequency": "ultra",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deep / fundamental\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"derin, köklü, şiddetli, büyük çaplı\"."
   },
   {
     "id": "w74",
@@ -1855,7 +1928,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Temiz tatlı su tüm canlı organizmalar için vazgeçilmez bir ön koşuldur.",
     "ydsTip": "\"Essential / crucial\" kelimelerinin şık alternatifidir.",
     "frequency": "ultra",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w75",
@@ -1880,7 +1954,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Adli genetikçiler şüpheliyi suça bağlayan ikna edici/güçlü deliller sundu.",
     "ydsTip": "\"Compelling evidence / reason\" kalıbı sıkça doğru cevaptır.",
     "frequency": "ultra",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"convincing / persuasive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karşı konulamaz, ikna edici, çok güçlü\"."
   },
   {
     "id": "w76",
@@ -1906,7 +1981,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Anlaşmanın muğlak/belirsiz ifadeleri daha sonra diplomatik ihtilafa yol açtı.",
     "ydsTip": "Zıttı \"explicit / clear\"dır.",
     "frequency": "ultra",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unclear / vague\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"belirsiz, iki anlamlı, muğlak\"."
   },
   {
     "id": "w77",
@@ -1932,7 +2008,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Paleolitik insansılar çakmaktaşından ilkel/temel el baltaları üretti.",
     "ydsTip": "\"Sophisticated / advanced\" kelimelerinin tam zıddıdır.",
     "frequency": "high",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"basic / primitive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"temel, ilkel, başlangıç düzeyinde\"."
   },
   {
     "id": "w78",
@@ -1957,7 +2034,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Sosyal medya algoritmaları çağdaş siyasi söylem üzerinde her yana sinmiş bir etki gösterir.",
     "ydsTip": "\"Widespread\" ile eşanlamlıdır.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"widespread / ubiquitous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"her yana yayılmış, sinmiş, yaygın\"."
   },
   {
     "id": "w79",
@@ -1983,7 +2061,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kutuplara yakın buzullar daimi/kesintisiz sıfırın altında donma durumunda bulunur.",
     "ydsTip": "Zarf hali \"perpetually (sürekli olarak)\" de çok sorulur.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"eternal / endless\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ebedi, sürekli, daimi, kesintisiz\"."
   },
   {
     "id": "w80",
@@ -2009,7 +2088,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Mühendisler derin jeotermal santraller kurmanın teknik olarak uygulanabilir olduğu sonucuna vardı.",
     "ydsTip": "\"Viable / workable\" ile eşanlamlıdır.",
     "frequency": "ultra",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"feas\" köküne gelerek: \"uygulanabilir, yapılabilir, fizıbıl\"."
   },
   {
     "id": "w81",
@@ -2035,7 +2115,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kutup tundrası ekosistemleri son derece kırılgandır ve bozulmalardan yavaş toparlanır.",
     "ydsTip": "\"Fragile ecosystem / economy\" sık kullanılan tamlamadır.",
     "frequency": "ultra",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"delicate / brittle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kırılgan, narin, kolay bozulan\"."
   },
   {
     "id": "w82",
@@ -2061,7 +2142,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Okyanus akıntılarındaki ince/güç algılanan değişimler şiddetli hava anomalilerini tetikleyebilir.",
     "ydsTip": "\"Subtle differences\" okuma parçalarının incelikli doğru şıkkıdır.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"tle\". Temelde yer alıp: \"hemen göze çarpmayan, ince, güç algılanan\"."
   },
   {
     "id": "w83",
@@ -2087,7 +2169,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Araştırma programı uluslararası bilimsel vakıflardan hatırı sayılır/büyük bir hibe aldı.",
     "ydsTip": "Zarf hali \"substantially (büyük ölçüde)\" kelime sorularının kralıdır.",
     "frequency": "ultra",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"stantial\". Temelde yer alıp: \"önemli, büyük miktarda, hatırı sayılır\"."
   },
   {
     "id": "w84",
@@ -2113,7 +2196,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Hükümetler salgını dizginlemek için sert/köklü kapanma önlemleri almaya mecbur kaldı.",
     "ydsTip": "\"Drastic changes / measures\" tamlaması YDS'de defalarca çıkmıştır.",
     "frequency": "ultra",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"extreme / radical\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sert, köklü, ani ve şiddetli\"."
   },
   {
     "id": "w85",
@@ -2139,7 +2223,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ev mikrodalga fırınının yaydığı radyasyon önemsiz ve zararsızdı.",
     "ydsTip": "\"Substantial\" kelimesinin tam zıddıdır; zıtlıklarda hayat kurtarır.",
     "frequency": "ultra",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"neglig\" köküne gelerek: \"önemsiz, göz ardı edilebilir, yok denecek kadar az\"."
   },
   {
     "id": "w86",
@@ -2164,7 +2249,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yapay zeka otomasyonu birçok manuel büro pozisyonunu fuzuli/ihtiyaç fazlası kıldı.",
     "ydsTip": "\"Superfluous / unnecessary\" anlamında doğru şık olur.",
     "frequency": "high",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"superfluous / unnecessary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gereksiz, fuzuli, ihtiyaç fazlası\"."
   },
   {
     "id": "w87",
@@ -2190,7 +2276,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "DSÖ küresel ergen ruh sağlığını inceleyen kapsamlı bir rapor yayınladı.",
     "ydsTip": "\"Comprehensible (anlaşılabilir)\" ile karıştırmayın; comprehensive \"kapsamlı\"dır.",
     "frequency": "ultra",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"thorough / exhaustive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kapsamlı, etraflı, ayrıntılı\"."
   },
   {
     "id": "w88",
@@ -2215,7 +2302,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Nükleer enerji üretimi çevreciler arasında son derece tartışmalı bir konu olmaya devam ediyor.",
     "ydsTip": "İsim hali \"controversy (tartışma/ihtilaf)\" da çok sık sorulur.",
     "frequency": "ultra",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"disputed / debatable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tartışmalı, ihtilaflı\"."
   },
   {
     "id": "w89",
@@ -2241,7 +2329,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kundaklama uzmanları fabrika yangınının kasıtlı bir eylem olduğunu belirledi.",
     "ydsTip": "\"Inadvertent / accidental (kazara)\" kelimesinin tam zıddıdır.",
     "frequency": "high",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"intentional / purposeful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kasıtlı, planlı, bilerek yapılan\"."
   },
   {
     "id": "w90",
@@ -2267,7 +2356,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Donmuş Antarktika altı çölü memeli yaşamı için son derece elverişsiz/düşmanca bir ortam oluşturur.",
     "ydsTip": "\"Hospitable (konuksever/elverişli)\" kelimesinin zıddıdır.",
     "frequency": "high",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unfriendly / aggressive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"düşmanca, elverişsiz, sert\"."
   },
   {
     "id": "w91",
@@ -2293,7 +2383,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Temiz içilebilir su Sahra altı mülteci yerleşimlerinde trajik biçimde kıttır.",
     "ydsTip": "\"Abundant (bol)\" kelimesinin tam zıddıdır. İsim hali \"scarcity (kıtlık)\"tır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"rare / sparse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kıt, yetersiz, nadir bulunan\"."
   },
   {
     "id": "w92",
@@ -2318,7 +2409,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "mRNA aşılarının geliştirilmesi tıpta çığır açan bir dönüm noktası oldu.",
     "ydsTip": "Bilim ve tıp metinlerinde doğru şıkkın yıldızıdır.",
     "frequency": "ultra",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"BREAK (kırmak)\" + \"THROUGH (içinden geçmek)\". Duvarı kırıp öteye geçmek -> Büyük buluş, çığır açan ilerleme."
   },
   {
     "id": "w93",
@@ -2344,7 +2436,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Metropol ve kırsal merkezler arasında büyüyen ekonomik uçurum toplumsal birliği tehdit eder.",
     "ydsTip": "\"Inequality\" kelimesinin akademik eş anlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"PARİTE (eşitlik)\". Dis-parity -> Paritenin bozulması, uçurum ve eşitsizlik."
   },
   {
     "id": "w94",
@@ -2367,7 +2460,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Makroekonomik istikrar sürdürülebilir yabancı yatırım için temel bir ön koşul kabul edilir.",
     "ydsTip": "Koşul cümlelerinde \"condition\" yerine kullanılır.",
     "frequency": "ultra",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"precondition / requirement\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ön koşul, ön şart\"."
   },
   {
     "id": "w95",
@@ -2393,7 +2487,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Geniş bir bilimsel fikir birliği insan kaynaklı karbon emisyonlarının troposferi ısıttığını doğrulamaktadır.",
     "ydsTip": "\"Scientific consensus\" okuma parçalarında ana fikri veren ifadedir.",
     "frequency": "ultra",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"agreement / accord\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fikir birliği, genel mutabakat, uzlaşma\"."
   },
   {
     "id": "w96",
@@ -2418,7 +2513,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Hızlanan endüstriyel atıklar iç göl ekosistemlerinin şiddetli bozulmasına yol açtı.",
     "ydsTip": "\"Environmental deterioration\" çevre başlıklarının vazgeçilmezidir.",
     "frequency": "ultra",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"kötüleşme, bozulma, çöküş\" kavramını temsil eder."
   },
   {
     "id": "w97",
@@ -2441,7 +2537,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ticari genomik dizileme derin hukuki ve etik sonuçlar/yansımalar taşır.",
     "ydsTip": "Genellikle çoğul \"implications (muhtemel sonuçlar)\" olarak sorulur.",
     "frequency": "ultra",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"olası sonuç, ima, yansıma, etki\" kavramını temsil eder."
   },
   {
     "id": "w98",
@@ -2464,7 +2561,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İnsanlık çığır açıcı bir yapay zeka devriminin eşiğinde durmaktadır.",
     "ydsTip": "\"On the threshold of... (eşiğinde)\" kalıbı sık çıkar.",
     "frequency": "high",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"brink / limit\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eşik, sınır, başlangıç noktası\"."
   },
   {
     "id": "w99",
@@ -2490,7 +2588,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ani hiperenflasyon gelişmekte olan piyasayı uzun süreli toplumsal kargaşaya sürükledi.",
     "ydsTip": "\"Political / economic turmoil\" tamlaması tarih ve siyaset metinlerinde görülür.",
     "frequency": "high",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"TUR-BOYUNCA MOİL (meyil)\". Kriz döneminde ortalık TURMOIL (kargaşa, çalkantı) içinde kaldı."
   },
   {
     "id": "w100",
@@ -2515,7 +2614,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gutenberg matbaasının icadı Aydınlanma için entelektüel bir katalizör işlevi gördü.",
     "ydsTip": "\"Act as a catalyst for...\" kalıbı YDS'de doğrudan test edilir.",
     "frequency": "ultra",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"stimulus / spark\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"katalizör, tetikleyici etken, hızlandırıcı unsur\"."
   },
   {
     "id": "w101",
@@ -2541,7 +2641,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kontrolsüz ağaç kesimi nesli tükenmekte olan primat türlerini acil ekolojik tehlikeye sokar.",
     "ydsTip": "\"In jeopardy = in danger\" birebir eş anlamlı kalıptır.",
     "frequency": "ultra",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"danger / peril\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tehlike, risk\"."
   },
   {
     "id": "w102",
@@ -2567,7 +2668,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yüksek gümrük duvarları sorunsuz küresel ticaretin önündeki en zorlu engel olmaya devam ediyor.",
     "ydsTip": "\"Obstacle / hindrance\" kelimelerinin şık karşılığıdır.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"obstacle / barrier\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"engel, köstek, mani\"."
   },
   {
     "id": "w103",
@@ -2593,7 +2695,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Şiddetli tatlı su kıtlığı kurak Kuzey Afrika ovalarında ürün güvenliğini tehdit eder.",
     "ydsTip": "\"Abundance (bolluk)\" kelimesinin tam zıddıdır.",
     "frequency": "ultra",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"shortage / dearth\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kıtlık, darlık, yetersizlik\"."
   },
   {
     "id": "w104",
@@ -2619,7 +2722,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tropikal nehir havzaları şaşırtıcı bir endemik amfibi bolluğuna sahiptir.",
     "ydsTip": "\"Scarcity / lack\" kelimesinin zıddıdır.",
     "frequency": "ultra",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"plenty / profusion\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bolluk, bereket, çokluk\"."
   },
   {
     "id": "w105",
@@ -2644,7 +2748,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Dijital ağlar ticarette topyekûn bir devrime yol açtı.",
     "ydsTip": "ÖSYM'nin en çok doğru cevap yaptığı phrasal verb'dür.",
     "frequency": "ultra",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w106",
@@ -2669,7 +2774,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Biyologlar kuş göçünü izlemek için saha çalışmaları yürüttü.",
     "ydsTip": "Research, experiment, survey ile %90 bu gelir.",
     "frequency": "ultra",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w107",
@@ -2691,7 +2797,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yenilenebilir santraller artık yerli elektriğin üçte birini oluşturmaktadır.",
     "ydsTip": "Rakam/yüzde varsa \"oluşturmak\", yoksa \"açıklamak\"tır.",
     "frequency": "ultra",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"ACCOUNT (hesap)\". Rapor verirken yüzdelerin ve oranların hesabını vermek, açıklamak."
   },
   {
     "id": "w108",
@@ -2716,7 +2823,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kent belediyeleri hızlı nüfus akınıyla başa çıkmakta zorlanır.",
     "ydsTip": "\"Struggle to cope with\" sınavın kalıp ifadesidir.",
     "frequency": "ultra",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w109",
@@ -2738,7 +2846,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Birçok modern diplomatik ihtilaf çözümsüz tarihi antlaşmalardan kaynaklanır.",
     "ydsTip": "Sebep bildirir; \"A stems from B\"de B sebeptir.",
     "frequency": "ultra",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w110",
@@ -2762,7 +2871,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yetkililer şiddetli rüzgar nedeniyle roket fırlatmasını iptal etmeye karar verdi.",
     "ydsTip": "\"Put off (ertelemek)\" ile karıştırmayın; call off iptal etmektir.",
     "frequency": "ultra",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 PHRASAL KODU: \"CALL\" fiili \"OFF\" edatıyla birleşerek özel bir kalıp oluşturur: \"iptal etmek, sonlandırmak (= cancel)\"."
   },
   {
     "id": "w111",
@@ -2787,7 +2897,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gökbilimciler kara delikle ilgili cesur bir hipotez öne sürdü.",
     "ydsTip": "\"Theory / hypothesis / idea\" ile doğru cevap olur.",
     "frequency": "ultra",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 PHRASAL KODU: \"PUT\" fiili \"FORWARD\" edatıyla birleşerek özel bir kalıp oluşturur: \"öne sürmek, iddia etmek, teklif etmek\"."
   },
   {
     "id": "w112",
@@ -2811,7 +2922,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Doktorlar neden olarak viral enfeksiyonu tamamen ihtimal dışı bırakmadı.",
     "ydsTip": "\"Cannot be ruled out\" kalıbı okuma parçalarında sık geçer.",
     "frequency": "ultra",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RULE (kural)\" + \"OUT (dışarı)\". Kural gereği oyun dışı bırakmak, elemek."
   },
   {
     "id": "w113",
@@ -2836,7 +2948,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bir asteroit çarpması 66 milyon yıl önce dinozorları tamamen yok etti.",
     "ydsTip": "Yok oluş ve felaket metinlerinin vazgeçilmezidir.",
     "frequency": "ultra",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"WIPE (silmek)\" + \"OUT (tamamen)\". Tahtayı siler gibi kökünü kazımak, yok etmek."
   },
   {
     "id": "w114",
@@ -2858,7 +2971,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ekstra rüzgar enerjisi üretimi hidroelektrik açığını telafi etmeye yardımcı oldu.",
     "ydsTip": "\"Compensate for = make up for\" eşanlam sorusudur.",
     "frequency": "ultra",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 PHRASAL KODU: \"MAKE\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"telafi etmek, açığı kapatmak (= compensate for)\"."
   },
   {
     "id": "w115",
@@ -2881,7 +2995,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İlaç etkililik gösterse de şiddetli yan etkiler denemeleri durdurdu.",
     "ydsTip": "Arkasından tam cümle (S+V) alır, zıtlık kurar.",
     "frequency": "ultra",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 FORMÜL: Although arkasından TAM CÜMLE alır (S + V). Artı (+) bir durumdan eksi (-) bir duruma geçiş yaptırır."
   },
   {
     "id": "w116",
@@ -2903,7 +3018,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ağır ekonomik yaptırımlara rağmen ülke nükleer araştırmalarını genişletti.",
     "ydsTip": "Arkasından cümle değil İSİM öbeği alır; \"of\" almaz!",
     "frequency": "ultra",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 TUZAK: Although tam cümle ister (S+V). Boşluktan sonra yüklem (fiil) olmadığı için elenir!"
   },
   {
     "id": "w117",
@@ -2925,7 +3041,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Avrupa katı veri gizliliğini benimserken diğer bölgeler şirketlerin yapay zekaya erişimini önceler.",
     "ydsTip": "İki farklı özneyi taban tabana zıt kıyaslar.",
     "frequency": "ultra",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 FORMÜL: \\"
   },
   {
     "id": "w118",
@@ -2947,7 +3064,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslar sera gazlarını dizginlemezse, küresel sıcaklıklar tehlike eşiklerini aşacaktır.",
     "ydsTip": "Kendi cümlesinde \"not\" barındırır; olumlu yazılır olumsuz anlaşılır.",
     "frequency": "ultra",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 FORMÜL: Unless kendi içinde \\"
   },
   {
     "id": "w119",
@@ -2970,7 +3088,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Keşif ekibi sıfırın altında tipi fırtınasıyla karşılaştı; yine de zirveyi fethetti.",
     "ydsTip": "Noktalı virgülden sonra gelen büyük geçiş zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 KURAL: Eksi (-) duruma rağmen olumlu (+) bir sonuç alındığında kullanılan altın zıtlık zarfı."
   },
   {
     "id": "w120",
@@ -2992,7 +3111,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Baraj göl basıncı altında çatladı; dolayısıyla mansaptaki köyler tahliye edildi.",
     "ydsTip": "Önceki cümlenin kaçınılmaz neticesini bildiren zarftır.",
     "frequency": "ultra",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"therefore / thus\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sonuç olarak, bu nedenle, dolayısıyla\"."
   },
   {
     "id": "w121",
@@ -3012,7 +3132,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl uymak, riayet etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ABIDE\" fiili \"BY\" edatıyla birleşerek özel bir kalıp oluşturur: \"uymak, riayet etmek\"."
   },
   {
     "id": "w122",
@@ -3032,7 +3153,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl iddia etmek (kanıtsız) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"claim / assert\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iddia etmek (kanıtsız)\"."
   },
   {
     "id": "w123",
@@ -3052,7 +3174,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl değiştirmek, düzeltmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"modify / revise\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"değiştirmek, düzeltmek\"."
   },
   {
     "id": "w124",
@@ -3072,7 +3195,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yok etmek, imha etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"destroy / wipe out\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yok etmek, imha etmek\"."
   },
   {
     "id": "w125",
@@ -3092,7 +3216,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl öngörmek, tahmin etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"ANTİK-PATİKA\". Patikanın sonunun nereye çıkacağını önceden ANTICIPATE etti (öngördü, bekledi)."
   },
   {
     "id": "w126",
@@ -3112,7 +3237,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl açıkça ifade etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"express / enunciate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"açıkça ifade etmek\"."
   },
   {
     "id": "w127",
@@ -3132,7 +3258,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl belirlemek, açıklığa kavuşturmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"determine / discover\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"belirlemek, açıklığa kavuşturmak\"."
   },
   {
     "id": "w128",
@@ -3152,7 +3279,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl özümsemek, benimsemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"absorb / integrate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özümsemek, benimsemek\"."
   },
   {
     "id": "w129",
@@ -3172,7 +3300,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ulaşmak, elde etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"achieve / reach\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ulaşmak, elde etmek\"."
   },
   {
     "id": "w130",
@@ -3192,7 +3321,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl artırmak, çoğaltmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"increase / enhance\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"artırmak, çoğaltmak\"."
   },
   {
     "id": "w131",
@@ -3212,7 +3342,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl denk gelmek, aynı zamana rastlamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"concur / overlap\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"denk gelmek, aynı zamana rastlamak\"."
   },
   {
     "id": "w132",
@@ -3232,7 +3363,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl iş birliği yapmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"cooperate / team up\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iş birliği yapmak\"."
   },
   {
     "id": "w133",
@@ -3252,7 +3384,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl başlamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"start / initiate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"başlamak\"."
   },
   {
     "id": "w134",
@@ -3272,7 +3405,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl telafi etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KOMPANSE ETMEK\". Verilen zararı telafi etmek, açığı kapatmak."
   },
   {
     "id": "w135",
@@ -3292,7 +3426,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl kavramak, tam anlamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KOMPLE ANLAMAK\". Konuyu sadece ezberlemeyip zihinde COMPREHEND etti (idrak etti, kavradı)."
   },
   {
     "id": "w136",
@@ -3312,7 +3447,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl bahşetmek, danışmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"bestow / consult\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bahşetmek, danışmak\"."
   },
   {
     "id": "w137",
@@ -3332,7 +3468,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl sınırlandırmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 PHRASAL KODU: \"CONFINE\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"sınırlandırmak\"."
   },
   {
     "id": "w138",
@@ -3352,7 +3489,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl uymak, riayet etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 PHRASAL KODU: \"CONFORM\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"uymak, riayet etmek\"."
   },
   {
     "id": "w139",
@@ -3372,7 +3510,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yüzleşmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"face / encounter\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yüzleşmek\"."
   },
   {
     "id": "w140",
@@ -3392,7 +3531,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl üzerinde derin düşünmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ponder / consider\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üzerinde derin düşünmek\"."
   },
   {
     "id": "w141",
@@ -3412,7 +3552,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl iddia etmek, mücadele etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"assert / struggle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iddia etmek, mücadele etmek\"."
   },
   {
     "id": "w142",
@@ -3432,7 +3573,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl toplanmak (kongre vb.) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"assemble / gather\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"toplanmak (kongre vb.)\"."
   },
   {
     "id": "w143",
@@ -3452,7 +3594,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl doğrulamak, teyit etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"confirm / substantiate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doğrulamak, teyit etmek\"."
   },
   {
     "id": "w144",
@@ -3472,7 +3615,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl kısmak, azaltmak, budamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reduce / cut back\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısmak, azaltmak, budamak\"."
   },
   {
     "id": "w145",
@@ -3492,7 +3636,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl çürümek, bozulmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"decompose / rot\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çürümek, bozulmak\"."
   },
   {
     "id": "w146",
@@ -3512,7 +3657,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl aldatmak, yanıltmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mislead / delude\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aldatmak, yanıltmak\"."
   },
   {
     "id": "w147",
@@ -3532,7 +3678,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl meydan okumak, karşı gelmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"challenge / resist\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"meydan okumak, karşı gelmek\"."
   },
   {
     "id": "w148",
@@ -3552,7 +3699,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yıkmak, yerle bir etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"destroy / tear down\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yıkmak, yerle bir etmek\"."
   },
   {
     "id": "w149",
@@ -3572,7 +3720,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tasvir etmek, betimlemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"portray / illustrate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tasvir etmek, betimlemek\"."
   },
   {
     "id": "w150",
@@ -3592,7 +3741,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl soyundan gelmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 PHRASAL KODU: \"DESCEND\" fiili \"FROM\" edatıyla birleşerek özel bir kalıp oluşturur: \"soyundan gelmek\"."
   },
   {
     "id": "w151",
@@ -3612,7 +3762,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl cay caydırmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DE-TERÖR\". Ağır cezalarla suçluları eylem yapmaktan DETER FROM etti (caydırdı)."
   },
   {
     "id": "w152",
@@ -3632,7 +3783,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ayırt etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"distinguish / discriminate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayırt etmek\"."
   },
   {
     "id": "w153",
@@ -3652,7 +3804,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yayılmak, dağıtmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"spread / disperse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yayılmak, dağıtmak\"."
   },
   {
     "id": "w154",
@@ -3672,7 +3825,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl atmak, gözden çıkarmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"card\". Durumun tersine dönmesi: \"atmak, gözden çıkarmak\"."
   },
   {
     "id": "w155",
@@ -3692,7 +3846,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ayrımcılık yapmak, ayırt etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"criminate\". Durumun tersine dönmesi: \"ayrımcılık yapmak, ayırt etmek\"."
   },
   {
     "id": "w156",
@@ -3712,7 +3867,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl dağıtmak, saçılmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"PERS ORDUSU\". Yenilgiye uğrayan askerler dört bir yana DISPERSE oldu (dağıldı, saçıldı)."
   },
   {
     "id": "w157",
@@ -3732,7 +3888,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl itiraz etmek, tartışmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"pute\". Durumun tersine dönmesi: \"itiraz etmek, tartışmak\"."
   },
   {
     "id": "w158",
@@ -3752,7 +3909,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl aksatmak, düzeni bozmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RUPTURE (yırtılmak/kopmak)\". Akışı bozup sistemi DISRUPT etti (aksattı, sekteye uğrattı)."
   },
   {
     "id": "w159",
@@ -3772,7 +3930,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yaymak (bilgi/fikir) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"SEMEN (tohum)\". Bilgiyi tohum saçar gibi geniş kitlelere DISSEMINATE etti (yaydı)."
   },
   {
     "id": "w160",
@@ -3792,7 +3951,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ayrılmak, farklılaşmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deviate / branch off\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayrılmak, farklılaşmak\"."
   },
   {
     "id": "w161",
@@ -3812,7 +3972,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl giderek azalmak, erimek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"diminish / decrease\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"giderek azalmak, erimek\"."
   },
   {
     "id": "w162",
@@ -3832,7 +3993,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ortaya çıkarmak, sağlamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"EL-İLE ÇEKMEK\". Sanıktan gizli bilgileri ELICIT etti (çekip çıkardı, temin etti)."
   },
   {
     "id": "w163",
@@ -3852,7 +4014,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ortadan kaldırmak, elemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"eradicate / remove\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ortadan kaldırmak, elemek\"."
   },
   {
     "id": "w164",
@@ -3872,7 +4035,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl aydınlatmak, açıklığa kavuşturmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"clarify / explain\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aydınlatmak, açıklığa kavuşturmak\"."
   },
   {
     "id": "w165",
@@ -3892,7 +4056,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl girişmek, başlamak (işe) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 PHRASAL KODU: \"EMBARK\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"girişmek, başlamak (işe)\"."
   },
   {
     "id": "w166",
@@ -3912,7 +4077,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ortaya çıkmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"appear / arise\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ortaya çıkmak\"."
   },
   {
     "id": "w167",
@@ -3932,7 +4098,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yaymak (gaz, ışık, ısı) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"EMİSYON\". Bacadan atmosfere zararlı gaz EMIT edildi (salındı, yayıldı)."
   },
   {
     "id": "w168",
@@ -3952,7 +4119,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yasalaştırmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"ACT (yasa)\". Mecliste bekleyen kanun teklifini ENACT ettiler (yasalaştırdılar)."
   },
   {
     "id": "w169",
@@ -3972,7 +4140,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl karşılaşmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"meet / face\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karşılaşmak\"."
   },
   {
     "id": "w170",
@@ -3992,7 +4161,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl katlanmak, dayanmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"withstand / bear\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"katlanmak, dayanmak\"."
   },
   {
     "id": "w171",
@@ -4012,7 +4182,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl zorla uygulamak, icra etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"implement / impose\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zorla uygulamak, icra etmek\"."
   },
   {
     "id": "w172",
@@ -4032,7 +4203,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl aşındırmak, yıpratmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wear away / corrode\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aşındırmak, yıpratmak\"."
   },
   {
     "id": "w173",
@@ -4052,7 +4224,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tırmanmak, şiddetlenmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"intensify / surge\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tırmanmak, şiddetlenmek\"."
   },
   {
     "id": "w174",
@@ -4072,7 +4245,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl buharlaşmak, yok olmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vanish / vaporize\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"buharlaşmak, yok olmak\"."
   },
   {
     "id": "w175",
@@ -4092,7 +4266,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl çağrıştırmak, anımsatmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"arouse / recall\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çağrıştırmak, anımsatmak\"."
   },
   {
     "id": "w176",
@@ -4112,7 +4287,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl daha da kötüleştirmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w177",
@@ -4132,7 +4308,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl kullanmak, sarf etmek (baskı/güç) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"apply / exercise\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kullanmak, sarf etmek (baskı/güç)\"."
   },
   {
     "id": "w178",
@@ -4152,7 +4329,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tüketmek, yormak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deplete / drain\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tüketmek, yormak\"."
   },
   {
     "id": "w179",
@@ -4172,7 +4350,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl hızlandırmak, kolaylaştırmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"accelerate / hasten\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hızlandırmak, kolaylaştırmak\"."
   },
   {
     "id": "w180",
@@ -4192,7 +4371,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tahrif etmek, sahtesini yapmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"forge / distort\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tahrif etmek, sahtesini yapmak\"."
   },
   {
     "id": "w181",
@@ -4212,7 +4392,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl üretmek, meydana getirmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"produce / create\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üretmek, meydana getirmek\"."
   },
   {
     "id": "w182",
@@ -4232,7 +4413,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl dizginleyip faydalanmak (enerjiden) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KOŞUM TAKIMI\". Rüzgarın vahşi gücüne koşum takıp türbinlerle HARNESS etti (dizginleyip kullandı)."
   },
   {
     "id": "w183",
@@ -4252,7 +4434,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl acele ettirmek, hızlandırmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"accelerate / speed up\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"acele ettirmek, hızlandırmak\"."
   },
   {
     "id": "w184",
@@ -4272,7 +4455,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl aydınlatmak (mecazi ve gerçek) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"clarify / light up\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aydınlatmak (mecazi ve gerçek)\"."
   },
   {
     "id": "w185",
@@ -4292,7 +4476,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl zorla dayatmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 PHRASAL KODU: \"IMPOSE\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"zorla dayatmak\"."
   },
   {
     "id": "w186",
@@ -4312,7 +4497,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tetiklemek, neden olmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"İNDÜKLEME\". Manyetik akım gibi bir durumu tetiklemek, meydana getirmek."
   },
   {
     "id": "w187",
@@ -4332,7 +4518,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl acı/zarar vermek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"AFFLİCT (acı vermek)\". Düşman ordusuna ağır hezimet INFLICT ON etti (zarara uğrattı)."
   },
   {
     "id": "w188",
@@ -4352,7 +4539,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yenilik yapmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"invent / pioneer\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yenilik yapmak\"."
   },
   {
     "id": "w189",
@@ -4372,7 +4560,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl kışkırtmak, başlatmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"provoke / trigger\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kışkırtmak, başlatmak\"."
   },
   {
     "id": "w190",
@@ -4392,7 +4581,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl müdahale etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 PHRASAL KODU: \"INTERVENE\" fiili \"IN\" edatıyla birleşerek özel bir kalıp oluşturur: \"müdahale etmek\"."
   },
   {
     "id": "w191",
@@ -4412,7 +4602,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl göstermek, ortaya koymak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"display / exhibit\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"göstermek, ortaya koymak\"."
   },
   {
     "id": "w192",
@@ -4432,7 +4623,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl beslemek, büyütmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nurture / feed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"beslemek, büyütmek\"."
   },
   {
     "id": "w193",
@@ -4452,7 +4644,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl hükümsüz kılmak, sıfırlamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"annul / invalidate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hükümsüz kılmak, sıfırlamak\"."
   },
   {
     "id": "w194",
@@ -4472,7 +4665,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl belirsizleştirmek, gizlemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hide / conceal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"belirsizleştirmek, gizlemek\"."
   },
   {
     "id": "w195",
@@ -4492,7 +4686,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl dengelemek, telafi etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"compensate for / balance\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dengelemek, telafi etmek\"."
   },
   {
     "id": "w196",
@@ -4512,7 +4707,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl algılamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"discern / recognize\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"algılamak\"."
   },
   {
     "id": "w197",
@@ -4532,7 +4728,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ebedileştirmek, sürdürmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"maintain / continue\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ebedileştirmek, sürdürmek\"."
   },
   {
     "id": "w198",
@@ -4552,7 +4749,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl azimle sürdürmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"persist / continue\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"azimle sürdürmek\"."
   },
   {
     "id": "w199",
@@ -4572,7 +4770,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ertelemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"delay / put off\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ertelemek\"."
   },
   {
     "id": "w200",
@@ -4592,7 +4791,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl reçete etmek, buyurmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"order / stipulate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"reçete etmek, buyurmak\"."
   },
   {
     "id": "w201",
@@ -4612,7 +4812,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yasaklamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ban / forbid\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yasaklamak\"."
   },
   {
     "id": "w202",
@@ -4632,7 +4833,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl uzatmak (süreyi) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"extend / lengthen\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uzatmak (süreyi)\"."
   },
   {
     "id": "w203",
@@ -4652,7 +4854,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ışımak, yaymak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"emit / beam\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ışımak, yaymak\"."
   },
   {
     "id": "w204",
@@ -4672,7 +4875,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl geri çekilmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"cede\". Eylemi yineleyip pekiştirmek: \"geri çekilmek\"."
   },
   {
     "id": "w205",
@@ -4692,7 +4896,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yinelemek, tekrarlamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"iterate\". Eylemi yineleyip pekiştirmek: \"yinelemek, tekrarlamak\"."
   },
   {
     "id": "w206",
@@ -4712,7 +4917,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl feragat etmek, bırakmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"linquish\". Eylemi yineleyip pekiştirmek: \"feragat etmek, bırakmak\"."
   },
   {
     "id": "w207",
@@ -4732,7 +4938,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl çare bulmak, iyileştirmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"medy\". Eylemi yineleyip pekiştirmek: \"çare bulmak, iyileştirmek\"."
   },
   {
     "id": "w208",
@@ -4752,7 +4959,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl resmen reddetmek, vazgeçmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"nounce\". Eylemi yineleyip pekiştirmek: \"resmen reddetmek, vazgeçmek\"."
   },
   {
     "id": "w209",
@@ -4772,7 +4980,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl geri püskürtmek, itmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fend off / resist\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geri püskürtmek, itmek\"."
   },
   {
     "id": "w210",
@@ -4792,7 +5001,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl bastırmak (duygu/isyan) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"press\". Eylemi yineleyip pekiştirmek: \"bastırmak (duygu/isyan)\"."
   },
   {
     "id": "w211",
@@ -4812,7 +5022,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl inkar etmek, tanımamak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"pudiate\". Eylemi yineleyip pekiştirmek: \"inkar etmek, tanımamak\"."
   },
   {
     "id": "w212",
@@ -4832,7 +5043,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl feshetmek, yürürlükten kaldırmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"scind\". Eylemi yineleyip pekiştirmek: \"feshetmek, yürürlükten kaldırmak\"."
   },
   {
     "id": "w213",
@@ -4852,7 +5064,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl benzemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"semble\". Eylemi yineleyip pekiştirmek: \"benzemek\"."
   },
   {
     "id": "w214",
@@ -4872,7 +5085,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl didik didik incelemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"examine / inspect\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"didik didik incelemek\"."
   },
   {
     "id": "w215",
@@ -4892,7 +5106,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ayırmak, tecrit etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"separate / isolate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayırmak, tecrit etmek\"."
   },
   {
     "id": "w216",
@@ -4912,7 +5127,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl durgunlaşmak, gerilemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"standstill / languish\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"durgunlaşmak, gerilemek\"."
   },
   {
     "id": "w217",
@@ -4932,7 +5148,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl bastırmak, boyun eğdirmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"due\". Temelde yer alıp: \"bastırmak, boyun eğdirmek\"."
   },
   {
     "id": "w218",
@@ -4952,7 +5169,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tahakküm altına almak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"jugate\". Temelde yer alıp: \"tahakküm altına almak\"."
   },
   {
     "id": "w219",
@@ -4972,7 +5190,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl sübvanse etmek, mali desteklemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"sidize\". Temelde yer alıp: \"sübvanse etmek, mali desteklemek\"."
   },
   {
     "id": "w220",
@@ -4992,7 +5211,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yenik düşmek, boyun eğmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 PHRASAL KODU: \"SUCCUMB\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"yenik düşmek, boyun eğmek\"."
   },
   {
     "id": "w221",
@@ -5012,7 +5232,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yerini almak, tahtından etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"replace / supplant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yerini almak, tahtından etmek\"."
   },
   {
     "id": "w222",
@@ -5032,7 +5253,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl bastırmak, örtbas etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"crush / quell\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bastırmak, örtbas etmek\"."
   },
   {
     "id": "w223",
@@ -5052,7 +5274,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl boşa çıkarmak, engellemek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"frustrate / foil\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"boşa çıkarmak, engellemek\"."
   },
   {
     "id": "w224",
@@ -5072,7 +5295,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tahammül etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"endure / put up with\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tahammül etmek\"."
   },
   {
     "id": "w225",
@@ -5092,7 +5316,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl aşmak, üstüne çıkmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"surpass / exceed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aşmak, üstüne çıkmak\"."
   },
   {
     "id": "w226",
@@ -5112,7 +5337,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl maruz kalmak, geçirmek (ameliyat vb.) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"dergo\". \"dergo\" kökünün zıddı olarak \"maruz kalmak, geçirmek (ameliyat vb.)\" anlamına gelir."
   },
   {
     "id": "w227",
@@ -5132,7 +5358,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl üstlenmek, girişmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"dertake\". \"dertake\" kökünün zıddı olarak \"üstlenmek, girişmek\" anlamına gelir."
   },
   {
     "id": "w228",
@@ -5152,7 +5379,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yararlanmak, kullanmak ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"use / employ\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yararlanmak, kullanmak\"."
   },
   {
     "id": "w229",
@@ -5172,7 +5400,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl vazgeçmek, feragat etmek (haktan) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"relinquish / forgo\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"vazgeçmek, feragat etmek (haktan)\"."
   },
   {
     "id": "w230",
@@ -5192,7 +5421,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl haklı çıkarmak, garanti etmek ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"justify / guarantee\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"haklı çıkarmak, garanti etmek\"."
   },
   {
     "id": "w231",
@@ -5212,7 +5442,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl düzensiz, kararsız, dengesiz ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unpredictable / irregular\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"düzensiz, kararsız, dengesiz\"."
   },
   {
     "id": "w232",
@@ -5232,7 +5463,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl kronik, sürekli, müzmin ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"persistent / long-standing\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kronik, sürekli, müzmin\"."
   },
   {
     "id": "w233",
@@ -5252,7 +5484,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl eşzamanlı, aynı andaki ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"concurrent / synchronous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eşzamanlı, aynı andaki\"."
   },
   {
     "id": "w234",
@@ -5272,7 +5505,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl somut, elle tutulur, hissedilir ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"tang\" köküne gelerek: \"somut, elle tutulur, hissedilir\"."
   },
   {
     "id": "w235",
@@ -5292,7 +5526,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl eli kulağında, pek yakında olması beklenen ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"impending / approaching\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eli kulağında, pek yakında olması beklenen\"."
   },
   {
     "id": "w236",
@@ -5312,7 +5547,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl katıksız, tam, sırf (şans/azim) ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"pure / absolute\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"katıksız, tam, sırf (şans/azim)\"."
   },
   {
     "id": "w237",
@@ -5332,7 +5568,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl bozulmamış, zarar görmemiş, sapasağlam ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"tact\". Sınavda şık elerken zıt duygu (-) bildirir: \"bozulmamış, zarar görmemiş, sapasağlam\"."
   },
   {
     "id": "w238",
@@ -5352,7 +5589,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl sert, esnek olmayan, katı ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inflexible / stiff\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sert, esnek olmayan, katı\"."
   },
   {
     "id": "w239",
@@ -5372,7 +5610,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl olumsuz, aleyhte, elverişsiz ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unfavorable / detrimental\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"olumsuz, aleyhte, elverişsiz\"."
   },
   {
     "id": "w240",
@@ -5392,7 +5631,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl verimli, bereketli ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"productive / fruitful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"verimli, bereketli\"."
   },
   {
     "id": "w241",
@@ -5412,7 +5652,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl nafile, boşuna, beyhude ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"useless / pointless\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nafile, boşuna, beyhude\"."
   },
   {
     "id": "w242",
@@ -5432,7 +5673,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl inatçı, kalıcı, sürekli ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"enduring / tenacious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"inatçı, kalıcı, sürekli\"."
   },
   {
     "id": "w243",
@@ -5452,7 +5694,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl çok yönlü, becerikli ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"adaptable / multi-talented\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çok yönlü, becerikli\"."
   },
   {
     "id": "w244",
@@ -5472,7 +5715,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl akut, şiddetli, keskin ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"severe / critical\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"akut, şiddetli, keskin\"."
   },
   {
     "id": "w245",
@@ -5492,7 +5736,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ani, birdenbire, beklenmedik ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sudden / hasty\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ani, birdenbire, beklenmedik\"."
   },
   {
     "id": "w246",
@@ -5512,7 +5757,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl önde gelen, belirgin, seçkin ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"eminent / distinguished\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"önde gelen, belirgin, seçkin\"."
   },
   {
     "id": "w247",
@@ -5532,7 +5778,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl ön, ilk, başlangıç niteliğindeki ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"initial / preparatory\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ön, ilk, başlangıç niteliğindeki\"."
   },
   {
     "id": "w248",
@@ -5552,7 +5799,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yaşayabilir, uygulanabilir, karlı ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"vi\" köküne gelerek: \"yaşayabilir, uygulanabilir, karlı\"."
   },
   {
     "id": "w249",
@@ -5572,7 +5820,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl sıkı, titiz, tavizsiz ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"strict / stringent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sıkı, titiz, tavizsiz\"."
   },
   {
     "id": "w250",
@@ -5592,7 +5841,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl eksiklik, yetersizlik ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"shortage / lack\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eksiklik, yetersizlik\"."
   },
   {
     "id": "w251",
@@ -5612,7 +5862,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl büyüklük, azamet, önem ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"scale / extent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"büyüklük, azamet, önem\"."
   },
   {
     "id": "w252",
@@ -5632,7 +5883,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl geçiş, intikal süreci ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"geçiş, intikal süreci\" kavramını temsil eder."
   },
   {
     "id": "w253",
@@ -5652,7 +5904,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl refah, esenlik, sosyal yardım ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"well-being / prosperity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"refah, esenlik, sosyal yardım\"."
   },
   {
     "id": "w254",
@@ -5672,7 +5925,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl karakteristik özellik, nitelik ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"characteristic / feature\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karakteristik özellik, nitelik\"."
   },
   {
     "id": "w255",
@@ -5692,7 +5946,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl fazlalık, arz fazlası, bütçe fazlası ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"excess / glut\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fazlalık, arz fazlası, bütçe fazlası\"."
   },
   {
     "id": "w256",
@@ -5712,7 +5967,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl savunmasızlık, hassasiyet ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"susceptibility / weakness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"savunmasızlık, hassasiyet\"."
   },
   {
     "id": "w257",
@@ -5732,7 +5988,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl tesadüf, rastlantı ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"chance / fluke\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tesadüf, rastlantı\"."
   },
   {
     "id": "w258",
@@ -5752,7 +6009,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl miras, kalıt, bırakılan iz ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inheritance / heritage\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"miras, kalıt, bırakılan iz\"."
   },
   {
     "id": "w259",
@@ -5772,7 +6030,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl kusur, pürüz, leke ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"defect / imperfection\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kusur, pürüz, leke\"."
   },
   {
     "id": "w260",
@@ -5792,7 +6051,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl engel, mani ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"barrier / hurdle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"engel, mani\"."
   },
   {
     "id": "w261",
@@ -5812,7 +6072,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl şiddetli ve ani şekilde ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 ZARF KODU: \"drastical\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"şiddetli ve ani şekilde\"."
   },
   {
     "id": "w262",
@@ -5832,7 +6093,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl neredeyse, adeta, fiilen ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 ZARF KODU: \"virtual\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"neredeyse, adeta, fiilen\"."
   },
   {
     "id": "w263",
@@ -5852,7 +6114,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl özellikle, bilhassa, göze çarpar biçimde ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 ZARF KODU: \"notab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"özellikle, bilhassa, göze çarpar biçimde\"."
   },
   {
     "id": "w264",
@@ -5872,7 +6135,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl yoğun biçimde, şiddetle ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 ZARF KODU: \"intense\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"yoğun biçimde, şiddetle\"."
   },
   {
     "id": "w265",
@@ -5892,7 +6156,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler sistemlerin karmaşık dinamik ortamları nasıl aşırı derecede, haddinden fazla ettiğini sıkça gözlemler.",
     "ydsTip": "ÖSYM geçmiş sınavlarında sıkça geçen akademik çekirdek kelimedir.",
     "frequency": "high",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 ZARF KODU: \"excessive\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"aşırı derecede, haddinden fazla\"."
   },
   {
     "id": "w266",
@@ -5921,7 +6186,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihi eserler, okyanus ötesi ticaretin kaydedilenden daha önce var olduğu hipotezini kanıtlamaktadır.",
     "ydsTip": "ÖSYM bilimsel araştırma paragraflarında kanıt doğrulaması için sıkça sorar.",
     "frequency": "ultra",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w267",
@@ -5949,7 +6215,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "On yıllardır süren etnik gerilimler, felaket boyutunda bir iç savaşla sonuçlandı.",
     "ydsTip": "'Culminate in' edat kombinasyonu YDS'nin altın edat sorularındandır.",
     "frequency": "ultra",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"climax / peak\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ile sonuçlanmak, zirveye ulaşmak (-in ile kullanılır)\"."
   },
   {
     "id": "w268",
@@ -5976,7 +6243,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ağır bir diz sakatlığı, sporcunun Olimpiyat elemelerinde yarışmasını engelledi.",
     "ydsTip": "'Preclude from' yapısı edat sorularında ve çeldiricilerde çok etkilidir.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"prevent / prohibit\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"önlemek, engel olmak, imkansız kılmak (-from ile)\"."
   },
   {
     "id": "w269",
@@ -6005,7 +6273,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Paleontologlar, kuzey Patagonya'da son derece iyi korunmuş bir dinozor iskeleti gün yüzüne çıkardılar.",
     "ydsTip": "Arkeoloji ve tarih sorularının 'reveal / excavate' eşanlamlı standart fiilidir.",
     "frequency": "high",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"earth\". \"earth\" kökünün zıddı olarak \"gün yüzüne çıkarmak, kazıp ortaya çıkarmak, keşfetmek\" anlamına gelir."
   },
   {
     "id": "w270",
@@ -6033,7 +6302,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kronik akciğer rahatsızlığı olan yaşlı hastalar, solunum virüslerine karşı özellikle hassastır.",
     "ydsTip": "ÖSYM'nin 'susceptible to / prone to / vulnerable to' üçlüsünün ayrılmaz parçasıdır.",
     "frequency": "ultra",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w271",
@@ -6062,7 +6332,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Toksik endüstriyel çözücülere uzun süre maruz kalmak, bilişsel gelişim üzerinde son derece zararlı bir etki yaratır.",
     "ydsTip": "Zararlı etki bildiren ve arkasına 'to' alan en garantili YDS kelimelerindendir.",
     "frequency": "ultra",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 ÇAĞRIŞIM: \\"
   },
   {
     "id": "w272",
@@ -6091,7 +6362,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Spekülatif kripto para birimlerine yapılan finansal yatırımlar, doğasında bulunan büyük riskler taşır.",
     "ydsTip": "'Inherent in' edatıyla birlikte ayrılmaz parça anlamında çok sık test edilir.",
     "frequency": "high",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"herent\". Sınavda şık elerken zıt duygu (-) bildirir: \"doğasında var olan, fıtri, ayrılmaz parçası (-in ile)\"."
   },
   {
     "id": "w273",
@@ -6119,7 +6391,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Seramik termal kaplama, modern uzay araçlarını aşırı atmosferik sürtünme ısısına karşı geçirimsiz ve dayanıklı kılar.",
     "ydsTip": "Mühendislik ve malzeme bilimi parçalarında 'impervious to' şeklinde çıkar.",
     "frequency": "high",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"impenetrable / resistant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geçirmez, etkilenmez, dayanıklı (-to ile)\"."
   },
   {
     "id": "w274",
@@ -6147,7 +6420,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ağır cezai yaptırımlar ve zorunlu hapis cezaları, vergi kaçakçılığına karşı güçlü bir caydırıcı işlev görür.",
     "ydsTip": "Hukuk, savunma ve uluslararası ilişkiler metinlerinde 'act as a deterrent' kalıbı sık çıkar.",
     "frequency": "high",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"disincentive / preventative\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"caydırıcı, engelleyici unsur\"."
   },
   {
     "id": "w275",
@@ -6175,7 +6449,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bebek ölüm oranları, yaygın çocukluk aşılama kampanyaları sayesinde çarpıcı bir şekilde düştü.",
     "ydsTip": "İstatistik ve grafik yorumlama metinlerinde 'increase/drop' fiillerinin değişmez partneridir.",
     "frequency": "ultra",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 ZARF KODU: \"dramatical\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"çarpıcı bir şekilde, büyük ölçüde, gözle görülür biçimde\"."
   },
   {
     "id": "w276",
@@ -6202,7 +6477,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Altyapı bakımını ihmal etmek, kaçınılmaz olarak köprülerin felaket şeklinde çökmesine yol açacaktır.",
     "ydsTip": "Sebep-sonuç bağlamında olumsuz nihai akıbeti nitelemek için kullanılır.",
     "frequency": "ultra",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 ZARF KODU: \"inevitab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"kaçınılmaz olarak, çaresizce\"."
   },
   {
     "id": "w277",
@@ -6231,7 +6507,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bölge ekonomisi, 1960'larda sanayi fabrikaları kurulana kadar ağırlıklı olarak tarımsaldı.",
     "ydsTip": "'Primarily / mainly' yerine ÖSYM'nin en çok tercih ettiği akademik zarftır.",
     "frequency": "ultra",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 ZARF KODU: \"predominant\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"ağırlıklı olarak, çoğunlukla, başlıca\"."
   },
   {
     "id": "w278",
@@ -6258,7 +6535,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İnsan hakları savunucuları, cezaevi suiistimalleri konusunda derhal bağımsız bir soruşturma çağrısında bulundular.",
     "ydsTip": "BM ve uluslararası bildiri metinlerinde 'require/demand' yerine sıkça test edilir.",
     "frequency": "ultra",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 PHRASAL KODU: \"CALL\" fiili \"FOR\" edatıyla birleşerek özel bir kalıp oluşturur: \"talep etmek, çağrısında bulunmak, gerektirmek\"."
   },
   {
     "id": "w279",
@@ -6280,7 +6558,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri uydurmak ortaya koymaktadır.",
     "ydsTip": "Hukuk veya bilim metinlerinde 'sahte delil uydurmak' anlamında çıkar.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"invent / forge\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uydurmak, sahtesini yapmak, imal etmek\"."
   },
   {
     "id": "w280",
@@ -6302,7 +6581,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri bocalamak ortaya koymaktadır.",
     "ydsTip": "Ekonominin sendelemesi veya güvenin sarsılmasında kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"waver / hesitate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bocalamak, sendelemek, gücünü kaybetmek\"."
   },
   {
     "id": "w281",
@@ -6324,7 +6604,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yasaklamak ortaya koymaktadır.",
     "ydsTip": "'Prohibit / ban' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"prohibit / ban\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yasaklamak, men etmek\"."
   },
   {
     "id": "w282",
@@ -6346,7 +6627,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri öngörmek ortaya koymaktadır.",
     "ydsTip": "Tense sorularında gelecek zaman ipucudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"predict / anticipate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öngörmek, tahmin etmek\"."
   },
   {
     "id": "w283",
@@ -6368,7 +6650,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yerine getirmek ortaya koymaktadır.",
     "ydsTip": "'Fulfill requirements/criteria' kriterleri sağlamada kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"accomplish / satisfy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yerine getirmek, gerçekleştirmek\"."
   },
   {
     "id": "w284",
@@ -6390,7 +6673,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yönetmek ortaya koymaktadır.",
     "ydsTip": "Hem siyasi yönetim hem de doğa kurallarının yönetmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"rule / administer\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yönetmek, hükmetmek, kontrol etmek\"."
   },
   {
     "id": "w285",
@@ -6412,7 +6696,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri durdurmak ortaya koymaktadır.",
     "ydsTip": "Üretimi veya salgının yayılmasını durdurmada kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"stop / cease\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"durdurmak, kesmek, durmak\"."
   },
   {
     "id": "w286",
@@ -6434,7 +6719,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri artırmak ortaya koymaktadır.",
     "ydsTip": "Farkındalığı veya gerilimi artırmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"intensify / increase\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"artırmak, yükseltmek, şiddetlendirmek\"."
   },
   {
     "id": "w287",
@@ -6456,7 +6742,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri engellemek ortaya koymaktadır.",
     "ydsTip": "'Hamper / impede / hinder' engelleme üçlüsüdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"HİNDİSTAN CEVİZİ\". Yola düşen kütük trafiği HINDER etti (engelledi, aksattı)."
   },
   {
     "id": "w288",
@@ -6478,7 +6765,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri küçük düşürmek ortaya koymaktadır.",
     "ydsTip": "Sosyal ve psikolojik metinlerde eksi (-) fiildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"degrade / demean\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"küçük düşürmek, aşağılamak\"."
   },
   {
     "id": "w289",
@@ -6500,7 +6788,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri örneklemek ortaya koymaktadır.",
     "ydsTip": "'For example / demonstrate' yerine kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"demonstrate / exemplify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"örneklemek, resimlemek, açıklamak\"."
   },
   {
     "id": "w290",
@@ -6522,7 +6811,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri bozmak ortaya koymaktadır.",
     "ydsTip": "Tıpta bilişsel veya bedensel fonksiyonların bozulmasında geçer.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"IM-PAIR (çifti bozmak)\". Gözün dengesini bozup görme yetisini IMPAIR etti (zayıflattı, bozdu)."
   },
   {
     "id": "w291",
@@ -6544,7 +6834,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri engellemek ortaya koymaktadır.",
     "ydsTip": "Gelişmeyi veya toparlanmayı engellemede - to edatı gerektirebilir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"PED (ayak)\". Ayağına çelme takıp ilerlemesini IMPEDE etti (geciktirdi, engelledi)."
   },
   {
     "id": "w292",
@@ -6566,7 +6857,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ilişkilendirmek ortaya koymaktadır.",
     "ydsTip": "Skandal veya suça karışmada kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"incriminate / involve\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ilişkilendirmek, suça bulaştırmak, ima etmek\"."
   },
   {
     "id": "w293",
@@ -6588,7 +6880,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ima etmek ortaya koymaktadır.",
     "ydsTip": "Paragrafta 'It can be inferred / implied that' soru köküdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hint / insinuate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ima etmek, anlamına gelmek\"."
   },
   {
     "id": "w294",
@@ -6610,7 +6903,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri dayatmak ortaya koymaktadır.",
     "ydsTip": "'Impose sanctions/taxes on' (üzerine yaptırım uygulamak).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inflict / enforce\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dayatmak, yüklemek, yürürlüğe koymak\"."
   },
   {
     "id": "w295",
@@ -6632,7 +6926,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yoksullaştırmak ortaya koymaktadır.",
     "ydsTip": "Toprağın veya halkın yoksullaşmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"bankrupt / deplete\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yoksullaştırmak, verimsizleştirmek\"."
   },
   {
     "id": "w296",
@@ -6654,7 +6949,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri eğilimli olmak ortaya koymaktadır.",
     "ydsTip": "'Be inclined to + V1' (eğiliminde olmak).",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"tend / lean\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eğilimli olmak, meyletmek\"."
   },
   {
     "id": "w297",
@@ -6676,7 +6972,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri bünyesine katmak ortaya koymaktadır.",
     "ydsTip": "'Incorporate into' edatıyla birlikte kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"integrate / include\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bünyesine katmak, dahil etmek, birleştirmek\"."
   },
   {
     "id": "w298",
@@ -6698,7 +6995,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri uğramak ortaya koymaktadır.",
     "ydsTip": "Mali zarara uğramada 'incur debt / losses' esastır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sustain / experience\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uğramak, maruz kalmak, üstlenmek\"."
   },
   {
     "id": "w299",
@@ -6720,7 +7018,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri vermek (acı/zarar) ortaya koymaktadır.",
     "ydsTip": "'Inflict damage/pain on' ayrılmaz kalıptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"impose / cause\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"vermek (acı/zarar), uğratmak\"."
   },
   {
     "id": "w300",
@@ -6742,7 +7041,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ikamet etmek ortaya koymaktadır.",
     "ydsTip": "Biyolojide canlıların yaşam alanını anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dwell / populate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ikamet etmek, yaşamak, mesken tutmak\"."
   },
   {
     "id": "w301",
@@ -6763,7 +7063,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri miras almak ortaya koymaktadır.",
     "ydsTip": "Biyolojide genetik aktarımda kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"receive / acquire\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"miras almak, genetik olarak devralmak\"."
   },
   {
     "id": "w302",
@@ -6785,7 +7086,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri soruşturmak ortaya koymaktadır.",
     "ydsTip": "'Inquire into' (-i soruşturmak).",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"investigate / probe\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"soruşturmak, araştırmak, sormak\"."
   },
   {
     "id": "w303",
@@ -6807,7 +7109,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ilham vermek ortaya koymaktadır.",
     "ydsTip": "Sanat ve liderlik parçalarında geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"motivate / stimulate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ilham vermek, esinlendirmek\"."
   },
   {
     "id": "w304",
@@ -6829,7 +7132,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri bütünleştirmek ortaya koymaktadır.",
     "ydsTip": "'Integrate into' kalıbı sosyoloji metinlerinde esastır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unify / incorporate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bütünleştirmek, entegre etmek\"."
   },
   {
     "id": "w305",
@@ -6851,7 +7155,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri şiddetlendirmek ortaya koymaktadır.",
     "ydsTip": "Çabaları artırmak veya krizin şiddetlenmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"escalate / heighten\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şiddetlendirmek, yoğunlaşmak\"."
   },
   {
     "id": "w306",
@@ -6873,7 +7178,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yolunu kesmek ortaya koymaktadır.",
     "ydsTip": "İstihbarat veya askeri parçalarda çıkar.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"block / catch\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yolunu kesmek, önünü almak, ele geçirmek\"."
   },
   {
     "id": "w307",
@@ -6894,7 +7200,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri müdahale etmek ortaya koymaktadır.",
     "ydsTip": "'Interfere with' (engellemek/aksatmak), 'interfere in' (karışmak).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"meddle / intervene\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"müdahale etmek, burnunu sokmak, karışmak\"."
   },
   {
     "id": "w308",
@@ -6916,7 +7223,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yorumlamak ortaya koymaktadır.",
     "ydsTip": "Verileri veya yasaları yorumlamada kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"construe / translate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yorumlamak, tercüme etmek\"."
   },
   {
     "id": "w309",
@@ -6938,7 +7246,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri müdahale etmek ortaya koymaktadır.",
     "ydsTip": "'Intervene in' krizleri çözmek için müdahaledir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"step in / mediate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"müdahale etmek, araya girmek\"."
   },
   {
     "id": "w310",
@@ -6960,7 +7269,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri gözdağı vermek ortaya koymaktadır.",
     "ydsTip": "Baskı ve tehdit metinlerinde eksi (-) fiildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"frighten / threaten\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gözdağı vermek, korkutmak, sindirmek\"."
   },
   {
     "id": "w311",
@@ -6982,7 +7292,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri merakını uyandırmak ortaya koymaktadır.",
     "ydsTip": "'Intriguing' (büyüleyici/merak uyandırıcı) sıfatı çok sevilir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fascinate / captivate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"merakını uyandırmak, ilgisini çekmek\"."
   },
   {
     "id": "w312",
@@ -7004,7 +7315,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri istila etmek ortaya koymaktadır.",
     "ydsTip": "'Invasive species' (istilacı türler) biyolojide daima çıkar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"occupy / overrun\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"istila etmek, işgal etmek\"."
   },
   {
     "id": "w313",
@@ -7026,7 +7338,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri geçersiz kılmak ortaya koymaktadır.",
     "ydsTip": "'Nullify / void' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nullify / void\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geçersiz kılmak, hükümsüz bırakmak\"."
   },
   {
     "id": "w314",
@@ -7048,7 +7361,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yalıtmak ortaya koymaktadır.",
     "ydsTip": "'Isolate from' edatıyla birlikte kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"segregate / separate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yalıtmak, tecrit etmek, izole etmek\"."
   },
   {
     "id": "w315",
@@ -7070,7 +7384,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri haklı çıkarmak ortaya koymaktadır.",
     "ydsTip": "Yazarın argümanını savunmasında anahtar sözcüktür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"substantiate / defend\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"haklı çıkarmak, gerekçelendirmek\"."
   },
   {
     "id": "w316",
@@ -7092,7 +7407,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yasa yapmak ortaya koymaktadır.",
     "ydsTip": "Hukuk ve meclis konularında standarttır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"enact / ordain\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yasa yapmak, kanun koymak\"."
   },
   {
     "id": "w317",
@@ -7114,7 +7430,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yönlendirmek ortaya koymaktadır.",
     "ydsTip": "Verileri çarpıtmak veya algıyı yönlendirmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"exploit / control\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yönlendirmek, manipüle etmek, elinde oynatmak\"."
   },
   {
     "id": "w318",
@@ -7136,7 +7453,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri arabuluculuk yapmak ortaya koymaktadır.",
     "ydsTip": "Diplomatik müzakerelerde barışı sağlamaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"arbitrate / negotiate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"arabuluculuk yapmak, uzlaştırmak\"."
   },
   {
     "id": "w319",
@@ -7158,7 +7476,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri göç etmek ortaya koymaktadır.",
     "ydsTip": "'Migration' ismiyle birlikte biyoloji ve sosyolojide vazgeçilmezdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"relocate / move\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"göç etmek\"."
   },
   {
     "id": "w320",
@@ -7180,7 +7499,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri en aza indirmek ortaya koymaktadır.",
     "ydsTip": "Risk veya zararı en aza indirmede + yüklemdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reduce / curtail\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"en aza indirmek, küçümsemek\"."
   },
   {
     "id": "w321",
@@ -7202,7 +7522,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yanıltmak ortaya koymaktadır.",
     "ydsTip": "'Misleading' sıfatı çeldirici analizinde esastır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deceive / delude\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yanıltmak, yanlış yönlendirmek\"."
   },
   {
     "id": "w322",
@@ -7224,7 +7545,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri değiştirmek ortaya koymaktadır.",
     "ydsTip": "'Genetically modified organisms (GMO)' çevre metinlerinin konusudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"alter / adjust\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"değiştirmek, tadil etmek, nitelemek\"."
   },
   {
     "id": "w323",
@@ -7246,7 +7568,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ayarlamak ortaya koymaktadır.",
     "ydsTip": "Tıpta bağışıklık tepkisini dengelemektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"regulate / adjust\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayarlamak, modüle etmek, düzenlemek\"."
   },
   {
     "id": "w324",
@@ -7268,7 +7591,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri izlemek ortaya koymaktadır.",
     "ydsTip": "Sağlık veya çevre değişkenlerini takip etmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"observe / track\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"izlemek, gözlemlemek, denetlemek\"."
   },
   {
     "id": "w325",
@@ -7290,7 +7614,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri motive etmek ortaya koymaktadır.",
     "ydsTip": "Eğitim ve psikoloji konularında çok sevilir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inspire / stimulate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"motive etmek, harekete geçirmek\"."
   },
   {
     "id": "w326",
@@ -7312,7 +7637,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri çoğalmak ortaya koymaktadır.",
     "ydsTip": "Hücre veya bakterilerin hızla çoğalmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"proliferate / reproduce\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çoğalmak, çarpmak, katlamak\"."
   },
   {
     "id": "w327",
@@ -7334,7 +7660,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri mutasyona uğramak ortaya koymaktadır.",
     "ydsTip": "Genetik ve viroloji metinlerinde standarttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"transform / alter\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"mutasyona uğramak, değişmek\"."
   },
   {
     "id": "w328",
@@ -7356,7 +7683,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yolunu bulmak ortaya koymaktadır.",
     "ydsTip": "Mecazi olarak zorlukların içinden yol bulmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"steer / guide\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yolunu bulmak, seyretmek, yönlendirmek\"."
   },
   {
     "id": "w329",
@@ -7378,7 +7706,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri inkar etmek ortaya koymaktadır.",
     "ydsTip": "Faydaları sıfırlamak veya tezleri çürütmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nullify / invalidate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"inkar etmek, çürütmek, etkisiz kılmak\"."
   },
   {
     "id": "w330",
@@ -7400,7 +7729,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri müzakere etmek ortaya koymaktadır.",
     "ydsTip": "Diplomasi ve ticaret metinlerinin merkezindedir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"bargain / confer\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"müzakere etmek, pazarlık yapmak\"."
   },
   {
     "id": "w331",
@@ -7422,7 +7752,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri etkisiz hale getirmek ortaya koymaktadır.",
     "ydsTip": "Zehir veya tehditleri etkisizleştirmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"counteract / nullify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"etkisiz hale getirmek, nötrlemek\"."
   },
   {
     "id": "w332",
@@ -7444,7 +7775,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri beslemek ortaya koymaktadır.",
     "ydsTip": "'Nature versus nurture' (doğa mı yetiştirilme mi) tartışmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"foster / cherish\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"beslemek, büyütmek, şefkatle geliştirmek\"."
   },
   {
     "id": "w333",
@@ -7466,7 +7798,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri tamamen yok etmek ortaya koymaktadır.",
     "ydsTip": "'Annihilate / destroy completely' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"annihilate / destroy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tamamen yok etmek, silip süpürmek\"."
   },
   {
     "id": "w334",
@@ -7488,7 +7821,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri gözlemlemek ortaya koymaktadır.",
     "ydsTip": "1. Gözlemlemek 2. Yasalara uymak.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"notice / watch\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gözlemlemek, uymak (kurala)\"."
   },
   {
     "id": "w335",
@@ -7510,7 +7844,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri elde etmek ortaya koymaktadır.",
     "ydsTip": "'Acquire / get' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"acquire / gain\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"elde etmek, edinmek, temin etmek\"."
   },
   {
     "id": "w336",
@@ -7532,7 +7867,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri işgal etmek ortaya koymaktadır.",
     "ydsTip": "Tarihte işgal, mekanda yer kaplamadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inhabit / colonize\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"işgal etmek, yer kaplamak, meşgul etmek\"."
   },
   {
     "id": "w337",
@@ -7554,7 +7890,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri çıkarmak ortaya koymaktadır.",
     "ydsTip": "'Exclude / leave out' ile eşanlamlıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"leave out / exclude\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çıkarmak, atlamak, dahil etmemek\"."
   },
   {
     "id": "w338",
@@ -7576,7 +7913,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri kaynaklanmak ortaya koymaktadır.",
     "ydsTip": "'Originate from / in' kökeni ifade eder.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"stem / derive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kaynaklanmak, başlamak, ortaya çıkmak\"."
   },
   {
     "id": "w339",
@@ -7598,7 +7936,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri daha iyi performans göstermek ortaya koymaktadır.",
     "ydsTip": "Ekonomi ve yatırım metinlerinde sıkça geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"surpass / exceed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"daha iyi performans göstermek\"."
   },
   {
     "id": "w340",
@@ -7620,7 +7959,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ağır basmak ortaya koymaktadır.",
     "ydsTip": "'Benefits outweigh the risks' YDS'nin en ünlü kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"override / surpass\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ağır basmak, daha önemli olmak\"."
   },
   {
     "id": "w341",
@@ -7642,7 +7982,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri üstesinden gelmek ortaya koymaktadır.",
     "ydsTip": "'Surmount / get over' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OVER (aşırı/üstünde)\" + \"come\". Sınırları aşıp üstün gelmek: \"üstesinden gelmek, alt etmek\"."
   },
   {
     "id": "w342",
@@ -7664,7 +8005,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri gözden kaçırmak ortaya koymaktadır.",
     "ydsTip": "'Gözden kaçırmak' anlamında sınav tuzaklarında geçer.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OVER (aşırı/üstünde)\" + \"look\". Sınırları aşıp üstün gelmek: \"gözden kaçırmak, görmezden gelmek, tepeden bakmak\"."
   },
   {
     "id": "w343",
@@ -7686,7 +8028,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri denetlemek ortaya koymaktadır.",
     "ydsTip": "'Supervise' ile birebir eştir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OVER (aşırı/üstünde)\" + \"see\". Sınırları aşıp üstün gelmek: \"denetlemek, gözetmek, yönetmek\"."
   },
   {
     "id": "w344",
@@ -7708,7 +8051,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri bozmak ortaya koymaktadır.",
     "ydsTip": "Mahkeme kararını bozmak veya hükümeti devirmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OVER (aşırı/üstünde)\" + \"turn\". Sınırları aşıp üstün gelmek: \"bozmak, hükümsüz kılmak, devirmek\"."
   },
   {
     "id": "w345",
@@ -7730,7 +8074,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri baskın gelmek ortaya koymaktadır.",
     "ydsTip": "Duygusal baskı veya askeri üstünlüktür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OVER (aşırı/üstünde)\" + \"whelm\". Sınırları aşıp üstün gelmek: \"baskın gelmek, ezmek, altüst etmek\"."
   },
   {
     "id": "w346",
@@ -7752,7 +8097,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yok olmak ortaya koymaktadır.",
     "ydsTip": "'Perishable goods' (çabuk bozulan gıdalar) ticaret metinlerinde çıkar.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"die / succumb\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yok olmak, helak olmak, can vermek\"."
   },
   {
     "id": "w347",
@@ -7774,7 +8120,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ısrar etmek ortaya koymaktadır.",
     "ydsTip": "'Persistent' (inatçı/süregelen) sıfatıyla beraber çok sorulur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"continue / last\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ısrar etmek, inatla sürmek, devam etmek\"."
   },
   {
     "id": "w348",
@@ -7796,7 +8143,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri öncülük etmek ortaya koymaktadır.",
     "ydsTip": "Bilimsel buluşlarda öncü olmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"spearhead / initiate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öncülük etmek, çığır açmak\"."
   },
   {
     "id": "w349",
@@ -7818,7 +8166,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri dalmak ortaya koymaktadır.",
     "ydsTip": "'Plunge / plummet' (fiyatların veya sıcaklığın çakılması).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"plummet / dive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dalmak, hızla düşmek, batmak\"."
   },
   {
     "id": "w350",
@@ -7840,7 +8189,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri kirletmek ortaya koymaktadır.",
     "ydsTip": "'Contaminate' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"contaminate / taint\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kirletmek\"."
   },
   {
     "id": "w351",
@@ -7862,7 +8212,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri resmetmek ortaya koymaktadır.",
     "ydsTip": "Edebiyat ve sinema metinlerinde 'depict' yerine geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"depict / represent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"resmetmek, tasvir etmek, canlandırmak\"."
   },
   {
     "id": "w352",
@@ -7884,7 +8235,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri varsaymak ortaya koymaktadır.",
     "ydsTip": "Bilimsel hipotez kurmada kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hypothesize / propose\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"varsaymak, ileri sürmek, postulat koymak\"."
   },
   {
     "id": "w353",
@@ -7906,7 +8258,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri öngörmek ortaya koymaktadır.",
     "ydsTip": "Gramer ve okuma parçalarında vazgeçilmez fiildir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"forecast / foresee\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öngörmek, tahmin etmek\"."
   },
   {
     "id": "w354",
@@ -7928,7 +8281,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri korumak ortaya koymaktadır.",
     "ydsTip": "'Conserve / protect' ile eşleşir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"protect / maintain\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"korumak, muhafaza etmek, saklamak\"."
   },
   {
     "id": "w355",
@@ -7950,7 +8304,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri başkanlık etmek ortaya koymaktadır.",
     "ydsTip": "'Preside over' toplantıya veya sürece liderlik etmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lead / chair\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"başkanlık etmek, yönetmek\"."
   },
   {
     "id": "w356",
@@ -7972,7 +8327,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri üstün gelmek ortaya koymaktadır.",
     "ydsTip": "'Prevailing' (hakim olan/geçerli olan) sıfatıyla çıkar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"triumph / predominate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üstün gelmek, hüküm sürmek, galip gelmek\"."
   },
   {
     "id": "w357",
@@ -7994,7 +8350,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ilan etmek ortaya koymaktadır.",
     "ydsTip": "Tarihte bağımsızlık ilanında kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"declare / announce\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ilan etmek, duyurmak, haykırmak\"."
   },
   {
     "id": "w358",
@@ -8016,7 +8373,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri hızla çoğalmak ortaya koymaktadır.",
     "ydsTip": "Nükleer silahların yayılması veya kanser hücrelerinin üremesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"multiply / mushroom\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hızla çoğalmak, üremek, artmak\"."
   },
   {
     "id": "w359",
@@ -8038,7 +8396,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri terfi ettirmek ortaya koymaktadır.",
     "ydsTip": "'Encourage / boost' anlamında aşırı yaygındır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"foster / advance\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"terfi ettirmek, teşvik etmek, tanıtımını yapmak\"."
   },
   {
     "id": "w360",
@@ -8060,7 +8419,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri itmek ortaya koymaktadır.",
     "ydsTip": "Füzeyi fırlatmak veya kişiyi başarıya sevk etmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"thrust / drive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"itmek, sevk etmek, ileri fırlatmak\"."
   },
   {
     "id": "w361",
@@ -8082,7 +8442,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri dava açmak ortaya koymaktadır.",
     "ydsTip": "Hukuk metinlerinde suçluları yargılamaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sue / indict\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dava açmak, kovuşturmak, yargılamak\"."
   },
   {
     "id": "w362",
@@ -8104,7 +8465,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri zenginleşmek ortaya koymaktadır.",
     "ydsTip": "'Prosperity' (refah) isminin fiilidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"thrive / flourish\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zenginleşmek, refaha ermek, serpilmek\"."
   },
   {
     "id": "w363",
@@ -8126,7 +8488,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri takip etmek ortaya koymaktadır.",
     "ydsTip": "'Pursuit of happiness' (mutluluk arayışı) meşhurdur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"chase / follow\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"takip etmek, peşinden koşmak, izlemek\"."
   },
   {
     "id": "w364",
@@ -8148,7 +8511,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri onaylamak ortaya koymaktadır.",
     "ydsTip": "Meclisin uluslararası antlaşmayı onaylamasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"endorse / confirm\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"onaylamak, tasdik etmek (antlaşma)\"."
   },
   {
     "id": "w365",
@@ -8170,7 +8534,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri geri sıçramak ortaya koymaktadır.",
     "ydsTip": "Piyasaların veya sağlığın hızla toparlanmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"bound\". Eylemi yineleyip pekiştirmek: \"geri sıçramak, toparlanmak\"."
   },
   {
     "id": "w366",
@@ -8192,7 +8557,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri nüksetmek ortaya koymaktadır.",
     "ydsTip": "'Recurring problem' (tekerrür eden sorun) kalıbı yaygındır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reappear / repeat\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nüksetmek, tekrarlamak, yeniden ortaya çıkmak\"."
   },
   {
     "id": "w367",
@@ -8214,7 +8580,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri arıtmak ortaya koymaktadır.",
     "ydsTip": "Petrolü arıtmak veya teknikleri mükemmelleştirmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"fine\". Eylemi yineleyip pekiştirmek: \"arıtmak, saflaştırmak, inceltmek\"."
   },
   {
     "id": "w368",
@@ -8236,7 +8603,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri kaçınmak ortaya koymaktadır.",
     "ydsTip": "'Refrain from + V-ing' = 'Abstain from + V-ing' ayrılmaz ikilidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"frain\". Eylemi yineleyip pekiştirmek: \"kaçınmak, çekinmek, sakınmak\"."
   },
   {
     "id": "w369",
@@ -8258,7 +8626,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri çürütmek ortaya koymaktadır.",
     "ydsTip": "Bir teoriyi veya iddiayı çürütmede 1 numaradır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"fute\". Eylemi yineleyip pekiştirmek: \"çürütmek, yalanlamak, aksini ispatlamak\"."
   },
   {
     "id": "w370",
@@ -8279,7 +8648,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri içerlemek ortaya koymaktadır.",
     "ydsTip": "Haksızlığa içerlemede eksi (-) psikoloji fiilidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"sent\". Eylemi yineleyip pekiştirmek: \"içerlemek, gücenmek, hınç beslemek\"."
   },
   {
     "id": "w371",
@@ -8301,7 +8671,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ikamet etmek ortaya koymaktadır.",
     "ydsTip": "'Resident' (sakin) ve 'residence' köküdür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"side\". Eylemi yineleyip pekiştirmek: \"ikamet etmek, yerleşmek, -de bulunmak\"."
   },
   {
     "id": "w372",
@@ -8323,7 +8694,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri çözmek (sorun) ortaya koymaktadır.",
     "ydsTip": "'Conflict resolution' (çatışma çözümü) kalıbı yaygındır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"solve\". Eylemi yineleyip pekiştirmek: \"çözmek (sorun), kararlaştırmak\"."
   },
   {
     "id": "w373",
@@ -8345,7 +8717,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri dizginlemek ortaya koymaktadır.",
     "ydsTip": "'Restrain from + V-ing' yapısıyla kurulur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"strain\". Eylemi yineleyip pekiştirmek: \"dizginlemek, zapt etmek, frenlemek\"."
   },
   {
     "id": "w374",
@@ -8367,7 +8740,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri kısıtlamak ortaya koymaktadır.",
     "ydsTip": "'Restrict to' edatıyla birlikte doğru cevaptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"strict\". Eylemi yineleyip pekiştirmek: \"kısıtlamak, sınırlamak\"."
   },
   {
     "id": "w375",
@@ -8389,7 +8763,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yeniden başlamak ortaya koymaktadır.",
     "ydsTip": "Araya giren moladan sonra devam etmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"sume\". Eylemi yineleyip pekiştirmek: \"yeniden başlamak, kaldığı yerden devam etmek\"."
   },
   {
     "id": "w376",
@@ -8411,7 +8786,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri misilleme yapmak ortaya koymaktadır.",
     "ydsTip": "'Retaliate against' edatıyla birlikte askeri/politik parçalarda geçer.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"taliate\". Eylemi yineleyip pekiştirmek: \"misilleme yapmak, karşılık vermek\"."
   },
   {
     "id": "w377",
@@ -8433,7 +8809,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yavaşlatmak ortaya koymaktadır.",
     "ydsTip": "Büyümeyi veya gelişimi yavaşlatmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"tard\". Eylemi yineleyip pekiştirmek: \"yavaşlatmak, geciktirmek, kösteklemek\"."
   },
   {
     "id": "w378",
@@ -8455,7 +8832,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri geri almak ortaya koymaktadır.",
     "ydsTip": "Kayıp verileri veya bilgiyi geri getirmede standarttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"trieve\". Eylemi yineleyip pekiştirmek: \"geri almak, kurtarmak, bulup getirmek\"."
   },
   {
     "id": "w379",
@@ -8477,7 +8855,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri eski haline dönmek ortaya koymaktadır.",
     "ydsTip": "'Revert to' edatıyla önceki duruma dönmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"vert\". Eylemi yineleyip pekiştirmek: \"eski haline dönmek, rücu etmek\"."
   },
   {
     "id": "w380",
@@ -8499,7 +8878,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri gözden geçirmek ortaya koymaktadır.",
     "ydsTip": "Tahminleri veya makaleyi güncellemede kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"vise\". Eylemi yineleyip pekiştirmek: \"gözden geçirmek, revize etmek, değiştirmek\"."
   },
   {
     "id": "w381",
@@ -8521,7 +8901,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri canlandırmak ortaya koymaktadır.",
     "ydsTip": "Ekonomiyi veya gelenekleri canlandırmada + fiildir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"vive\". Eylemi yineleyip pekiştirmek: \"canlandırmak, diriltmek, hayata döndürmek\"."
   },
   {
     "id": "w382",
@@ -8543,7 +8924,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri iptal etmek ortaya koymaktadır.",
     "ydsTip": "Ehliyeti veya izni iptal etmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"voke\". Eylemi yineleyip pekiştirmek: \"iptal etmek, geri çekmek, hükümsüz kılmak\"."
   },
   {
     "id": "w383",
@@ -8565,7 +8947,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri korumak ortaya koymaktadır.",
     "ydsTip": "'Protect / secure' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"protect / shield\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"korumak, güvenceye almak\"."
   },
   {
     "id": "w384",
@@ -8587,7 +8970,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri kesip ayırmak ortaya koymaktadır.",
     "ydsTip": "Diplomatik ilişkileri kesmede 'sever ties' kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"cut off / disconnect\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kesip ayırmak, ilişiğini kesmek\"."
   },
   {
     "id": "w385",
@@ -8609,7 +8993,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri tuzla buz etmek ortaya koymaktadır.",
     "ydsTip": "Umutları yıkmak veya rekor kırmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"smash / destroy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tuzla buz etmek, paramparça etmek\"."
   },
   {
     "id": "w386",
@@ -8631,7 +9016,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri istikrara kavuşturmak ortaya koymaktadır.",
     "ydsTip": "Hastayı veya ekonomiyi dengede tutmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"steady / secure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"istikrara kavuşturmak, dengelemek\"."
   },
   {
     "id": "w387",
@@ -8653,7 +9039,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri uyarmak ortaya koymaktadır.",
     "ydsTip": "'Encourage / activate' yerine geçer.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"encourage / prompt\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uyarmak, canlandırmak, teşvik etmek\"."
   },
   {
     "id": "w388",
@@ -8675,7 +9062,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri şart koşmak ortaya koymaktadır.",
     "ydsTip": "Sözleşme veya yasaların bir koşulu şart koşmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"specify / prescribe\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şart koşmak, sözleşmeyle belirlemek\"."
   },
   {
     "id": "w389",
@@ -8697,7 +9085,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yatışmak ortaya koymaktadır.",
     "ydsTip": "Suların çekilmesi veya fırtınanın/acının dinmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"SU BASMASI\". Sel suları ve fırtına nihayet SUBSIDE etti (yatıştı, dindi, çekildi)."
   },
   {
     "id": "w390",
@@ -8719,7 +9108,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri altını oymak ortaya koymaktadır.",
     "ydsTip": "'Undermine' eşanlamlısı olarak siyasette çıkar.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"vert\". Temelde yer alıp: \"altını oymak, yıkmaya çalışmak, sarsmak\"."
   },
   {
     "id": "w391",
@@ -8741,7 +9131,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri yenik düşmek ortaya koymaktadır.",
     "ydsTip": "'Succumb to' edatıyla birlikte hastalığa yenilmek demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"yield / surrender\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yenik düşmek, boyun eğmek, ölmek\"."
   },
   {
     "id": "w392",
@@ -8763,7 +9154,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri takviye etmek ortaya koymaktadır.",
     "ydsTip": "Geliri veya beslenmeyi takviye etmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"augment / complement\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"takviye etmek, eklemek, tamamlamak\"."
   },
   {
     "id": "w393",
@@ -8785,7 +9177,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri teslim olmak ortaya koymaktadır.",
     "ydsTip": "'Yield / give in' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"yield / concede\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"teslim olmak, vazgeçmek\"."
   },
   {
     "id": "w394",
@@ -8807,7 +9200,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri çevrelemek ortaya koymaktadır.",
     "ydsTip": "Coğrafi metinlerde adaları veya şehirleri çevrelemedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"encircle / enclose\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çevrelemek, kuşatmak, etrafını sarmak\"."
   },
   {
     "id": "w395",
@@ -8829,7 +9223,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri hayatta kalmak ortaya koymaktadır.",
     "ydsTip": "Biyoloji ve felaket metinlerinin temel fiilidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"outlast / endure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hayatta kalmak, sağ kurtulmak\"."
   },
   {
     "id": "w396",
@@ -8851,7 +9246,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri askıya almak ortaya koymaktadır.",
     "ydsTip": "İnsani yardımı veya uçuşları geçici olarak durdurmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"halt / defer\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"askıya almak, tatil etmek, asmak\"."
   },
   {
     "id": "w397",
@@ -8873,7 +9269,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri tanıklık etmek ortaya koymaktadır.",
     "ydsTip": "'Testify to' (bir şeyin doğruluğuna şahitlik etmek).",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"witness / attest\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tanıklık etmek, ifade vermek, kanıtlamak\"."
   },
   {
     "id": "w398",
@@ -8895,7 +9292,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri dönüştürmek ortaya koymaktadır.",
     "ydsTip": "'Transform into' dönüşüm metinlerinde esastır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"convert / alter\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dönüştürmek, biçimini değiştirmek\"."
   },
   {
     "id": "w399",
@@ -8917,7 +9315,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri iletmek ortaya koymaktadır.",
     "ydsTip": "Sinyal iletimi veya hastalığın bulaşmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"broadcast / convey\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iletmek, geçirmek, bulaştırmak\"."
   },
   {
     "id": "w400",
@@ -8939,7 +9338,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ortaya çıkarmak ortaya koymaktadır.",
     "ydsTip": "'Reveal / disclose' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"cover\". \"cover\" kökünün zıddı olarak \"ortaya çıkarmak, gün yüzüne çıkarmak\" anlamına gelir."
   },
   {
     "id": "w401",
@@ -8961,7 +9361,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri birleştirmek ortaya koymaktadır.",
     "ydsTip": "'Unite / merge' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"consolidate / integrate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"birleştirmek, tek vücut haline getirmek\"."
   },
   {
     "id": "w402",
@@ -8983,7 +9384,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri çözülmek ortaya koymaktadır.",
     "ydsTip": "Gizemin aydınlanması veya planların bozulmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"ravel\". \"ravel\" kökünün zıddı olarak \"çözülmek, aydınlanmak, açığa çıkmak\" anlamına gelir."
   },
   {
     "id": "w403",
@@ -9005,7 +9407,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri desteklemek ortaya koymaktadır.",
     "ydsTip": "Hukuku veya adaleti savunmada + fiildir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sustain / defend\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"desteklemek, onamak, sahip çıkmak\"."
   },
   {
     "id": "w404",
@@ -9027,7 +9430,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri gözden kaybolmak ortaya koymaktadır.",
     "ydsTip": "'Disappear' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"disappear / fade\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gözden kaybolmak, yok olmak\"."
   },
   {
     "id": "w405",
@@ -9049,7 +9453,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri aklamak ortaya koymaktadır.",
     "ydsTip": "Zamanın bir kişiyi veya teoriyi haklı çıkarmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"acquit / justify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aklamak, haklı çıkarmak, temize çıkarmak\"."
   },
   {
     "id": "w406",
@@ -9071,7 +9476,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri ihlal etmek ortaya koymaktadır.",
     "ydsTip": "İnsan haklarını veya anlaşmayı ihlal etmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"breach / infringe\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ihlal etmek, çiğnemek, bozmak\"."
   },
   {
     "id": "w407",
@@ -9093,7 +9499,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri zayıflatmak ortaya koymaktadır.",
     "ydsTip": "'Undermine' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"undermine / debilitate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zayıflatmak, zayıflamak\"."
   },
   {
     "id": "w408",
@@ -9115,7 +9522,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Son akademik ampirik yayınlar, çok taraflı müdahalelerin temel gelişimsel göstergeleri saklamak ortaya koymaktadır.",
     "ydsTip": "Bilgiyi veya ödemeyi kasıtlı olarak vermemektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"retain / hold back\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"saklamak, esirgemek, vermemek\"."
   },
   {
     "id": "w409",
@@ -9137,7 +9545,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece erişilebilir kaldığını gözlemlemiştir.",
     "ydsTip": "'Accessible to' kalıbı ve engelliler/ulaşım metinlerinde sıkça çıkar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"access\" köküne gelerek: \"erişilebilir, ulaşılabilir\"."
   },
   {
     "id": "w410",
@@ -9159,7 +9568,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece bitişik kaldığını gözlemlemiştir.",
     "ydsTip": "'Adjacent to' edatı sınavın değişmez kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"adjoining / neighboring\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bitişik, komşu, yan yana\"."
   },
   {
     "id": "w411",
@@ -9181,7 +9591,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece uygulanabilir kaldığını gözlemlemiştir.",
     "ydsTip": "'Applicable to' (-e uygulanabilir) kalıbıyla sorulur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"applic\" köküne gelerek: \"uygulanabilir, geçerli\"."
   },
   {
     "id": "w412",
@@ -9203,7 +9614,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece keyfi kaldığını gözlemlemiştir.",
     "ydsTip": "Hukuksuzluk veya rastgele seçim parçalarında eksi (-) sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"random / capricious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"keyfi, rastgele, nedensiz\"."
   },
   {
     "id": "w413",
@@ -9225,7 +9637,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece çetin kaldığını gözlemlemiştir.",
     "ydsTip": "Zorlu görevleri ve yolculukları niteler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"strenuous / laborious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çetin, meşakkatli, çok zahmetli\"."
   },
   {
     "id": "w414",
@@ -9247,7 +9660,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kendinden emin kaldığını gözlemlemiştir.",
     "ydsTip": "Kişilik ve liderlik testlerinde pozitif (+) sıfattır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"confident / forceful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kendinden emin, iddialı, girişken\"."
   },
   {
     "id": "w415",
@@ -9269,7 +9683,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sert kaldığını gözlemlemiştir.",
     "ydsTip": "'Austerity measures' (kemer sıkma politikaları) ekonomide çok yaygındır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"strict / severe\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sert, sade, kemer sıkma yanlısı\"."
   },
   {
     "id": "w416",
@@ -9291,7 +9706,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece özgün kaldığını gözlemlemiştir.",
     "ydsTip": "'Genuine / real' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"genuine / real\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özgün, otantik, hakiki\"."
   },
   {
     "id": "w417",
@@ -9312,7 +9728,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece özerk kaldığını gözlemlemiştir.",
     "ydsTip": "Siyasette özerklik, teknolojide otonom araçlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"independent / self-governing\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özerk, otonom, bağımsız\"."
   },
   {
     "id": "w418",
@@ -9334,7 +9751,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece iyi huylu kaldığını gözlemlemiştir.",
     "ydsTip": "Tıpta habis (malignant) tümörün tam zıttıdır; zararsız demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"harmless / gentle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iyi huylu, zararsız, sevecen\"."
   },
   {
     "id": "w419",
@@ -9356,7 +9774,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tuhaf kaldığını gözlemlemiştir.",
     "ydsTip": "Olağandışı doğa olaylarında 'peculiar / strange' ile eşleşir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"strange / peculiar\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tuhaf, garip, acayip\"."
   },
   {
     "id": "w420",
@@ -9378,7 +9797,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece apaçık kaldığını gözlemlemiştir.",
     "ydsTip": "'Blatant violation of rights' (hakların açıkça ihlali) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"flagrant / glaring\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"apaçık, bariz, yüzsüzce\"."
   },
   {
     "id": "w421",
@@ -9400,7 +9820,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece felaket getiren kaldığını gözlemlemiştir.",
     "ydsTip": "Doğal afet ve savaş parçalarında eksi (-) anahtar sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"disastrous / calamitous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"felaket getiren, yıkıcı\"."
   },
   {
     "id": "w422",
@@ -9422,7 +9843,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tutarlı kaldığını gözlemlemiştir.",
     "ydsTip": "Metnin ana fikri ve mantıksal tutarlılığı için kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"logical / consistent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tutarlı, ahenkli, mantıklı\"."
   },
   {
     "id": "w423",
@@ -9444,7 +9866,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece birbirine bağlı kaldığını gözlemlemiştir.",
     "ydsTip": "Toplumsal dayanışma metinlerinde 'social cohesion' olarak geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unified / connected\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"birbirine bağlı, kenetlenmiş, yapışık\"."
   },
   {
     "id": "w424",
@@ -9466,7 +9889,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece uyumlu kaldığını gözlemlemiştir.",
     "ydsTip": "'Compatible with' (-ile uyumlu) edatıyla birlikte test edilir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"compat\" köküne gelerek: \"uyumlu, bağdaşan\"."
   },
   {
     "id": "w425",
@@ -9488,7 +9912,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yetkin kaldığını gözlemlemiştir.",
     "ydsTip": "'Incompetent' (yetersiz) zıttıdır; pozitif (+) sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"capable / proficient\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yetkin, ehil, yeterli\"."
   },
   {
     "id": "w426",
@@ -9510,7 +9935,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kesin kaldığını gözlemlemiştir.",
     "ydsTip": "'Inconclusive' (sonuçsuz) zıttıdır; bilimsel kanıt metinlerinde geçer.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"decisive / definitive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kesin, nihai, sonuca bağlayan\"."
   },
   {
     "id": "w427",
@@ -9532,7 +9958,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece eşzamanlı kaldığını gözlemlemiştir.",
     "ydsTip": "'Simultaneous' ile eşanlamlıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"simultaneous / coinciding\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eşzamanlı, aynı anda olan\"."
   },
   {
     "id": "w428",
@@ -9554,7 +9981,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece gizli kaldığını gözlemlemiştir.",
     "ydsTip": "Devlet veya şirket sırları metinlerinde geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"secret / classified\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gizli, mahrem\"."
   },
   {
     "id": "w429",
@@ -9576,7 +10004,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece göze çarpan kaldığını gözlemlemiştir.",
     "ydsTip": "'Conspicuous consumption' (gösterişçi tüketim) sosyoloji terimidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"noticeable / prominent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"göze çarpan, bariz, dikkat çekici\"."
   },
   {
     "id": "w430",
@@ -9598,7 +10027,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yapıcı kaldığını gözlemlemiştir.",
     "ydsTip": "Diplomatik müzakerelerde 'yapıcı diyalog' olarak geçer.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"productive / positive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yapıcı, faydalı, geliştirici\"."
   },
   {
     "id": "w431",
@@ -9620,7 +10050,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece çağdaş kaldığını gözlemlemiştir.",
     "ydsTip": "Hem 'modern' hem de 'çağdaş (aynı dönemde yaşayan)' anlamındadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"modern / current\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çağdaş, güncel, aynı dönemde yaşayan\"."
   },
   {
     "id": "w432",
@@ -9642,7 +10073,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tartışmalı kaldığını gözlemlemiştir.",
     "ydsTip": "'Controversial' yerine geçen üst düzey sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"controversial / disputed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tartışmalı, çekişmeli, kavgacı\"."
   },
   {
     "id": "w433",
@@ -9663,7 +10095,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece bağlı kaldığını gözlemlemiştir.",
     "ydsTip": "'Contingent on / upon' (-e bağlı) kalıbı sınavın vazgeçilmezidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"conditional / dependent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bağlı, şarta bağlı, olası\"."
   },
   {
     "id": "w434",
@@ -9685,7 +10118,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece geleneksel kaldığını gözlemlemiştir.",
     "ydsTip": "Metinlerde genellikle yenilikçi (novel/innovative) fikirlerle tezat oluşturur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"traditional / customary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geleneksel, alışılagelmiş, konvansiyonel\"."
   },
   {
     "id": "w435",
@@ -9707,7 +10141,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece bol kaldığını gözlemlemiştir.",
     "ydsTip": "'Abundant / plentiful' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"abundant / plentiful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bol, bereketli, çok miktarda\"."
   },
   {
     "id": "w436",
@@ -9729,7 +10164,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece hayati kaldığını gözlemlemiştir.",
     "ydsTip": "'Vital / essential / indispensable' ile denk tutulur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vital / essential\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hayati, çok önemli, belirleyici\"."
   },
   {
     "id": "w437",
@@ -9751,7 +10187,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kümülatif kaldığını gözlemlemiştir.",
     "ydsTip": "Çevre kirliliğinin veya radyasyonun birikici etkisini anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"accumulative / collective\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kümülatif, birikerek artan\"."
   },
   {
     "id": "w438",
@@ -9773,7 +10210,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece alaycı kaldığını gözlemlemiştir.",
     "ydsTip": "İnsan doğasına şüpheyle bakan tutumları niteler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"skeptical / distrustful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"alaycı, insanlara güvenmeyen, kinik\"."
   },
   {
     "id": "w439",
@@ -9795,7 +10233,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece belirleyici kaldığını gözlemlemiştir.",
     "ydsTip": "Savaşta veya seçimde zaferi belirleyen unsurdur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"conclusive / resolute\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"belirleyici, kesin, kararlı\"."
   },
   {
     "id": "w440",
@@ -9817,7 +10256,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece eksik kaldığını gözlemlemiştir.",
     "ydsTip": "'Deficient in' (-den yoksun) edat kombiniyle bilinir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lacking / inadequate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eksik, yetersiz, noksan\"."
   },
   {
     "id": "w441",
@@ -9839,7 +10279,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kesin kaldığını gözlemlemiştir.",
     "ydsTip": "Bir konudaki nihai ve en yetkin kaynağı belirtir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"conclusive / authoritative\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kesin, nihai, en yetkin\"."
   },
   {
     "id": "w442",
@@ -9861,7 +10302,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece zararlı kaldığını gözlemlemiştir.",
     "ydsTip": "'Detrimental to' ile birebir eşanlamlıdır; eksi (-) sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"harmful / damaging\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zararlı, tahrip edici, hasar veren\"."
   },
   {
     "id": "w443",
@@ -9883,7 +10325,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yoğun kaldığını gözlemlemiştir.",
     "ydsTip": "Nüfus yoğunluğu veya orman sıklığında standarttır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"thick / compact\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yoğun, sık, kalın\"."
   },
   {
     "id": "w444",
@@ -9905,7 +10348,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yoksun kaldığını gözlemlemiştir.",
     "ydsTip": "'Deprived of' kalıbından türeyen sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"underprivileged / destitute\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yoksun, mahrum, yoksul\"."
   },
   {
     "id": "w445",
@@ -9927,7 +10371,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yıkıcı kaldığını gözlemlemiştir.",
     "ydsTip": "Savaş veya deprem metinlerinde yaygındır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"devastating / ruinous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yıkıcı, tahrip edici\"."
   },
   {
     "id": "w446",
@@ -9949,7 +10394,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece çalışkan kaldığını gözlemlemiştir.",
     "ydsTip": "Akademik veya mesleki titizliği över.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hardworking / industrious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çalışkan, gayretli, titiz\"."
   },
   {
     "id": "w447",
@@ -9971,7 +10417,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece minyon kaldığını gözlemlemiştir.",
     "ydsTip": "Fiziksel boyutun küçüklüğünü anlatır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"tiny / miniature\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"minyon, küçücük, ufacık\"."
   },
   {
     "id": "w448",
@@ -9992,7 +10439,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece feci kaldığını gözlemlemiştir.",
     "ydsTip": "Ekonomik çöküş veya çevre felaketlerinde geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"astrous\". Durumun tersine dönmesi: \"feci, felaket getiren\"."
   },
   {
     "id": "w449",
@@ -10014,7 +10462,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece fark edilebilir kaldığını gözlemlemiştir.",
     "ydsTip": "'Noticeable' eşanlamlısı olarak deney sonuçlarında çıkar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"cernible\". Durumun tersine dönmesi: \"fark edilebilir, ayırt edilebilir\"."
   },
   {
     "id": "w450",
@@ -10036,7 +10485,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tamamen farklı kaldığını gözlemlemiştir.",
     "ydsTip": "Birbiriyle uyuşmayan farklı grupları anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"parate\". Durumun tersine dönmesi: \"tamamen farklı, alakasız, bambaşka\"."
   },
   {
     "id": "w451",
@@ -10058,7 +10508,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece belirgin kaldığını gözlemlemiştir.",
     "ydsTip": "'Distinct from' (-den farklı) edat kombiniyle bilinir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"tinct\". Durumun tersine dönmesi: \"belirgin, farklı, ayrı\"."
   },
   {
     "id": "w452",
@@ -10080,7 +10531,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece çeşitli kaldığını gözlemlemiştir.",
     "ydsTip": "'Biodiversity' (biyoçeşitlilik) metinlerinin temelidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"varied / heterogeneous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çeşitli, türlü türlü, farklı\"."
   },
   {
     "id": "w453",
@@ -10102,7 +10554,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece baskın kaldığını gözlemlemiştir.",
     "ydsTip": "Genetik veya piyasa metinlerinde sıkça doğru cevaptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"prevalent / commanding\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"baskın, egemen, hakim\"."
   },
   {
     "id": "w454",
@@ -10124,7 +10577,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece uykuda kaldığını gözlemlemiştir.",
     "ydsTip": "Volkanların veya virüslerin uyku evresidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inactive / quiescent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uykuda, faal olmayan, pasif\"."
   },
   {
     "id": "w455",
@@ -10146,7 +10600,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece şüpheli kaldığını gözlemlemiştir.",
     "ydsTip": "Güvenilir olmayan bilimsel iddiaları eleştirirken kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"doubtful / questionable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şüpheli, kuşkulu, tekinsiz\"."
   },
   {
     "id": "w456",
@@ -10168,7 +10623,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece dayanıklı kaldığını gözlemlemiştir.",
     "ydsTip": "Tüketim malları veya malzeme biliminde geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"dur\" köküne gelerek: \"dayanıklı, uzun ömürlü\"."
   },
   {
     "id": "w457",
@@ -10190,7 +10646,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece devingen kaldığını gözlemlemiştir.",
     "ydsTip": "Sürekli değişen sistemleri niteler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"energetic / active\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"devingen, dinamik, canlı\"."
   },
   {
     "id": "w458",
@@ -10212,7 +10669,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ayrıntılı kaldığını gözlemlemiştir.",
     "ydsTip": "'Detailed / intricate' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"intricate / detailed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayrıntılı, özenle işlenmiş, karmaşık\"."
   },
   {
     "id": "w459",
@@ -10234,7 +10692,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece seçkin kaldığını gözlemlemiştir.",
     "ydsTip": "Bilim insanlarını överken kullanılan pozitif sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"distinguished / prominent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"seçkin, ünlü, saygın\"."
   },
   {
     "id": "w460",
@@ -10256,7 +10715,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ampirik kaldığını gözlemlemiştir.",
     "ydsTip": "Teorik (theoretical) bilginin zıttıdır; bilimsel kanıttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"experimental / observational\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ampirik, deneysel, deneyime dayalı\"."
   },
   {
     "id": "w461",
@@ -10278,7 +10738,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yöreye özgü kaldığını gözlemlemiştir.",
     "ydsTip": "Belli bir coğrafyaya özgü tür veya hastalıktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"native / indigenous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yöreye özgü, yerel, salgın\"."
   },
   {
     "id": "w462",
@@ -10300,7 +10761,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kalıcı kaldığını gözlemlemiştir.",
     "ydsTip": "Kalıcı barış veya miras için kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lasting / permanent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kalıcı, uzun ömürlü, sürekli\"."
   },
   {
     "id": "w463",
@@ -10322,7 +10784,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece muazzam kaldığını gözlemlemiştir.",
     "ydsTip": "'Immense / massive' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"huge / immense\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"muazzam, devasa, muhteşem\"."
   },
   {
     "id": "w464",
@@ -10344,7 +10807,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kısa ömürlü kaldığını gözlemlemiştir.",
     "ydsTip": "Kalıcı (permanent) sıfatının tam zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"transient / fleeting\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısa ömürlü, gelip geçici, fani\"."
   },
   {
     "id": "w465",
@@ -10366,7 +10830,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece adil kaldığını gözlemlemiştir.",
     "ydsTip": "Kaynakların adil dağıtımında pozitif (+) sıfattır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"equit\" köküne gelerek: \"adil, hakkaniyetli, eşitlikçi\"."
   },
   {
     "id": "w466",
@@ -10388,7 +10853,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece eşdeğer kaldığını gözlemlemiştir.",
     "ydsTip": "'Equivalent to' (-e denk) şeklinde kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"equal / comparable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eşdeğer, denk, muadil\"."
   },
   {
     "id": "w467",
@@ -10410,7 +10876,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece iki anlamlı kaldığını gözlemlemiştir.",
     "ydsTip": "'Ambiguous' ile birebir eşleşir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ambiguous / vague\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iki anlamlı, kuşkulu, muğlak\"."
   },
   {
     "id": "w468",
@@ -10432,7 +10899,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece hatalı kaldığını gözlemlemiştir.",
     "ydsTip": "'Error' kelimesinin sıfat halidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"incorrect / mistaken\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hatalı, yanlış, kusurlu\"."
   },
   {
     "id": "w469",
@@ -10454,7 +10922,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece temel kaldığını gözlemlemiştir.",
     "ydsTip": "'Vital / indispensable' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vital / crucial\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"temel, elzem, vazgeçilmez\"."
   },
   {
     "id": "w470",
@@ -10476,7 +10945,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece açık kaldığını gözlemlemiştir.",
     "ydsTip": "'Evidence' (kanıt) kelimesinin sıfatıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"obvious / apparent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"açık, belirgin, aşikar\"."
   },
   {
     "id": "w471",
@@ -10498,7 +10968,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece aşırı kaldığını gözlemlemiştir.",
     "ydsTip": "Zararlı boyutlardaki fazlalıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inordinate / extreme\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aşırı, haddinden fazla\"."
   },
   {
     "id": "w472",
@@ -10520,7 +10991,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece özel kaldığını gözlemlemiştir.",
     "ydsTip": "'Exclusive to' (-e özgü) kalıbıyla da çıkar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sole / unique\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özel, ayrıcalıklı, hariç tutan\"."
   },
   {
     "id": "w473",
@@ -10542,7 +11014,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece örnek niteliğinde kaldığını gözlemlemiştir.",
     "ydsTip": "Topluma örnek teşkil eden davranıştır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"model / praiseworthy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"örnek niteliğinde, kusursuz\"."
   },
   {
     "id": "w474",
@@ -10564,7 +11037,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece etraflı kaldığını gözlemlemiştir.",
     "ydsTip": "'Exhausted' (yorgun) ile KARIŞTIRILMAMALIDIR! 'Kapsamlı' demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"comprehensive / thorough\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"etraflı, kapsamlı, eksiksiz\"."
   },
   {
     "id": "w475",
@@ -10586,7 +11060,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece açık kaldığını gözlemlemiştir.",
     "ydsTip": "'Implicit' (üstü kapalı) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"clear / direct\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"açık, net, dolaysız\"."
   },
   {
     "id": "w476",
@@ -10608,7 +11083,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece enfes kaldığını gözlemlemiştir.",
     "ydsTip": "Sanat ve estetik metinlerinde kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"superb / delicate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"enfes, pek zarif, olağanüstü\"."
   },
   {
     "id": "w477",
@@ -10630,7 +11106,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yaygın kaldığını gözlemlemiştir.",
     "ydsTip": "'Widespread / broad' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"widespread / broad\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yaygın, kapsamlı, geniş çaplı\"."
   },
   {
     "id": "w478",
@@ -10652,7 +11129,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece konu dışı kaldığını gözlemlemiştir.",
     "ydsTip": "Konuyla doğrudan ilgili olmayan unsurlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"irrelevant / unrelated\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"konu dışı, yabancı, ilgisiz\"."
   },
   {
     "id": "w479",
@@ -10674,7 +11152,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece müsrif kaldığını gözlemlemiştir.",
     "ydsTip": "Aşırı para harcama veya abartılı iddialardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wasteful / prodigal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"müsrif, savurgan, abartılı\"."
   },
   {
     "id": "w480",
@@ -10696,7 +11175,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece cılız kaldığını gözlemlemiştir.",
     "ydsTip": "Zayıf girişimleri veya cılız sağlığı anlatır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"weak / frail\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"cılız, dermansız, zayıf\"."
   },
   {
     "id": "w481",
@@ -10718,7 +11198,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece korku uyandıran kaldığını gözlemlemiştir.",
     "ydsTip": "Aşılması çok zor olan engelleri anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"formid\" köküne gelerek: \"korku uyandıran, yenilmesi güç, heybetli\"."
   },
   {
     "id": "w482",
@@ -10740,7 +11221,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece temel kaldığını gözlemlemiştir.",
     "ydsTip": "'Basic / primary' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"basic / primary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"temel, asıl, esas\"."
   },
   {
     "id": "w483",
@@ -10762,7 +11244,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece hakiki kaldığını gözlemlemiştir.",
     "ydsTip": "'Authentic / real' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"authentic / real\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hakiki, samimi, özgün\"."
   },
   {
     "id": "w484",
@@ -10784,7 +11267,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece devasa kaldığını gözlemlemiştir.",
     "ydsTip": "Fiziksel boyutun devasalığıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"huge / colossal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"devasa, çok büyük, devasa\"."
   },
   {
     "id": "w485",
@@ -10806,7 +11290,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kademeli kaldığını gözlemlemiştir.",
     "ydsTip": "Ani (sudden) zıttıdır; grafik analizlerinde esastır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"step-by-step / progressive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kademeli, yavaş yavaş olan\"."
   },
   {
     "id": "w486",
@@ -10828,7 +11313,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ağır kaldığını gözlemlemiştir.",
     "ydsTip": "Ağır kayıpları veya vahim hataları anlatır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"severe / grave\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ağır, vahim, can yakıcı\"."
   },
   {
     "id": "w487",
@@ -10850,7 +11336,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece birebir aynı kaldığını gözlemlemiştir.",
     "ydsTip": "'Identical to' (-ile tıpatıp aynı) edatıyla kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"equal / exact\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"birebir aynı, özdeş\"."
   },
   {
     "id": "w488",
@@ -10872,7 +11359,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece cahil kaldığını gözlemlemiştir.",
     "ydsTip": "'Ignorant of' (-den habersiz/cahil) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unaware / uninformed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"cahil, habersiz, bilgisiz\"."
   },
   {
     "id": "w489",
@@ -10894,7 +11382,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yasadışı kaldığını gözlemlemiştir.",
     "ydsTip": "'Illegal' yerine geçen üst düzey hukuk/sosyoloji terimidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"illegal / unlawful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yasadışı, haram, gayrimeşru\"."
   },
   {
     "id": "w490",
@@ -10916,7 +11405,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece şanlı kaldığını gözlemlemiştir.",
     "ydsTip": "Seçkin bilim insanı veya tarihi kariyerleri över.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"distinguished / renowned\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şanlı, saygın, seçkin\"."
   },
   {
     "id": "w491",
@@ -10938,7 +11428,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece muazzam kaldığını gözlemlemiştir.",
     "ydsTip": "'Enormous / vast' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"huge / vast\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"muazzam, uçsuz bucaksız, devasa\"."
   },
   {
     "id": "w492",
@@ -10960,7 +11451,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece değişmez kaldığını gözlemlemiştir.",
     "ydsTip": "Fizik kurallarının veya gerçeklerin değişmezliğidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"immut\" köküne gelerek: \"değişmez, başkalaşmaz, sabit\"."
   },
   {
     "id": "w493",
@@ -10982,7 +11474,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tarafsız kaldığını gözlemlemiştir.",
     "ydsTip": "'Biased' (taraflı) zıttıdır; mahkeme ve basında esastır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unbiased / neutral\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tarafsız, yansız, hakkaniyetli\"."
   },
   {
     "id": "w494",
@@ -11004,7 +11497,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece zorunlu kaldığını gözlemlemiştir.",
     "ydsTip": "'It is imperative that + S + (should) V1' subjuntive yapısı meşhurdur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"essential / vital\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zorunlu, acil, mecbur\"."
   },
   {
     "id": "w495",
@@ -11026,7 +11520,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece üstü kapalı kaldığını gözlemlemiştir.",
     "ydsTip": "'Explicit' (açık) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"implied / tacit\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üstü kapalı, ima edilen, gizli\"."
   },
   {
     "id": "w496",
@@ -11048,7 +11543,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece erişilemez kaldığını gözlemlemiştir.",
     "ydsTip": "'Accessible' zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"accessible\". Sınavda şık elerken zıt duygu (-) bildirir: \"erişilemez, ulaşılamaz\"."
   },
   {
     "id": "w497",
@@ -11070,7 +11566,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yetersiz kaldığını gözlemlemiştir.",
     "ydsTip": "Kaynakların yetersizliğini anlatır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"adequate\". Sınavda şık elerken zıt duygu (-) bildirir: \"yetersiz, yetersiz kalan\"."
   },
   {
     "id": "w498",
@@ -11092,7 +11589,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kasıtsız kaldığını gözlemlemiştir.",
     "ydsTip": "'Accidental / unintentional' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"advertent\". Sınavda şık elerken zıt duygu (-) bildirir: \"kasıtsız, istemeden yapılan, sehven\"."
   },
   {
     "id": "w499",
@@ -11114,7 +11612,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece uyumsuz kaldığını gözlemlemiştir.",
     "ydsTip": "'Incompatible with' (-ile uyuşmayan) edat kombiniyle bilinir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"compatible\". Sınavda şık elerken zıt duygu (-) bildirir: \"uyumsuz, bağdaşmaz, tezat oluşturan\"."
   },
   {
     "id": "w500",
@@ -11136,7 +11635,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yetersiz kaldığını gözlemlemiştir.",
     "ydsTip": "'Competent' zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"competent\". Sınavda şık elerken zıt duygu (-) bildirir: \"yetersiz, ehliyetsiz, vasıfsız\"."
   },
   {
     "id": "w501",
@@ -11158,7 +11658,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sonuçsuz kaldığını gözlemlemiştir.",
     "ydsTip": "Delillerin veya testlerin kesin sonuç vermemesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"conclusive\". Sınavda şık elerken zıt duygu (-) bildirir: \"sonuçsuz, yetersiz, kesin olmayan\"."
   },
   {
     "id": "w502",
@@ -11180,7 +11681,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tutarsız kaldığını gözlemlemiştir.",
     "ydsTip": "'Inconsistent with' (-ile tutarsız) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"consistent\". Sınavda şık elerken zıt duygu (-) bildirir: \"tutarsız, çelişkili\"."
   },
   {
     "id": "w503",
@@ -11202,7 +11704,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kayıtsız kaldığını gözlemlemiştir.",
     "ydsTip": "'Indifferent to' (-e karşı kayıtsız) edat sorusudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"different\". Sınavda şık elerken zıt duygu (-) bildirir: \"kayıtsız, umursamaz, farksız\"."
   },
   {
     "id": "w504",
@@ -11224,7 +11727,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yerli kaldığını gözlemlemiştir.",
     "ydsTip": "'Native / endemic' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"digenous\". Sınavda şık elerken zıt duygu (-) bildirir: \"yerli, o topraklara özgü\"."
   },
   {
     "id": "w505",
@@ -11246,7 +11750,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tartışmasız kaldığını gözlemlemiştir.",
     "ydsTip": "'Undeniable' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"disputable\". Sınavda şık elerken zıt duygu (-) bildirir: \"tartışmasız, su götürmez, inkar edilemez\"."
   },
   {
     "id": "w506",
@@ -11267,7 +11772,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece adı çıkmış kaldığını gözlemlemiştir.",
     "ydsTip": "'Notorious for' ile tam eştir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"famous\". Sınavda şık elerken zıt duygu (-) bildirir: \"adı çıkmış, kötü şöhretli\"."
   },
   {
     "id": "w507",
@@ -11289,7 +11795,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece aşağı kaldığını gözlemlemiştir.",
     "ydsTip": "'Superior to' (üstün) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"ferior\". Sınavda şık elerken zıt duygu (-) bildirir: \"aşağı, kalitesiz, ast\"."
   },
   {
     "id": "w508",
@@ -11311,7 +11818,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece dahiyane kaldığını gözlemlemiştir.",
     "ydsTip": "Zekice tasarlanmış buluşları över.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"genious\". Sınavda şık elerken zıt duygu (-) bildirir: \"dahiyane, çok zekice, yaratıcı\"."
   },
   {
     "id": "w509",
@@ -11333,7 +11841,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece doğuştan gelen kaldığını gözlemlemiştir.",
     "ydsTip": "Sonradan öğrenilmemiş, doğuştan var olan yetenektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"nate\". Sınavda şık elerken zıt duygu (-) bildirir: \"doğuştan gelen, fıtri, içsel\"."
   },
   {
     "id": "w510",
@@ -11355,7 +11864,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece zararsız kaldığını gözlemlemiştir.",
     "ydsTip": "Tehlikesiz görünen durum veya mikroplardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"nocuous\". Sınavda şık elerken zıt duygu (-) bildirir: \"zararsız, masum, etkisiz\"."
   },
   {
     "id": "w511",
@@ -11377,7 +11887,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yenilikçi kaldığını gözlemlemiştir.",
     "ydsTip": "Pozitif (+) teknoloji ve bilim sıfatıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"novative\". Sınavda şık elerken zıt duygu (-) bildirir: \"yenilikçi, inovatif\"."
   },
   {
     "id": "w512",
@@ -11399,7 +11910,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sinsi kaldığını gözlemlemiştir.",
     "ydsTip": "Semptom göstermeden yayılan hastalıklar içindir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"sidious\". Sınavda şık elerken zıt duygu (-) bildirir: \"sinsi, gizlice ilerleyen, tehlikeli\"."
   },
   {
     "id": "w513",
@@ -11421,7 +11933,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece önemsiz kaldığını gözlemlemiştir.",
     "ydsTip": "'Significant' zıttıdır; bilimsel deneylerde geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"significant\". Sınavda şık elerken zıt duygu (-) bildirir: \"önemsiz, ehemmiyetsiz, kayda değmez\"."
   },
   {
     "id": "w514",
@@ -11443,7 +11956,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tamamlayıcı kaldığını gözlemlemiştir.",
     "ydsTip": "'Integral to / of' (-in ayrılmaz parçası) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"tegral\". Sınavda şık elerken zıt duygu (-) bildirir: \"tamamlayıcı, ayrılmaz, bütünsel\"."
   },
   {
     "id": "w515",
@@ -11465,7 +11979,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yoğun kaldığını gözlemlemiştir.",
     "ydsTip": "Fiziksel veya duygusal yoğunluktur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"tense\". Sınavda şık elerken zıt duygu (-) bildirir: \"yoğun, şiddetli, aşırı\"."
   },
   {
     "id": "w516",
@@ -11487,7 +12002,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece aralıklı kaldığını gözlemlemiştir.",
     "ydsTip": "Aralıklı oruç veya kesik kesik yağmurdur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"termittent\". Sınavda şık elerken zıt duygu (-) bildirir: \"aralıklı, kesik kesik, fasılalı\"."
   },
   {
     "id": "w517",
@@ -11509,7 +12025,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece özsel kaldığını gözlemlemiştir.",
     "ydsTip": "'Extrinsic' (dışsal) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"trinsic\". Sınavda şık elerken zıt duygu (-) bildirir: \"özsel, asıl, doğasında bulunan\"."
   },
   {
     "id": "w518",
@@ -11531,7 +12048,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece paha biçilmez kaldığını gözlemlemiştir.",
     "ydsTip": "'Valueless' (değersiz) DEĞİLDİR! 'Paha biçilemez' demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"valuable\". Sınavda şık elerken zıt duygu (-) bildirir: \"paha biçilmez, çok değerli\"."
   },
   {
     "id": "w519",
@@ -11553,7 +12071,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yara almaz kaldığını gözlemlemiştir.",
     "ydsTip": "'Vulnerable' (savunmasız) tam zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"vulnerable\". Sınavda şık elerken zıt duygu (-) bildirir: \"yara almaz, zedelenmez, yenilmez\"."
   },
   {
     "id": "w520",
@@ -11575,7 +12094,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece geri dönülemez kaldığını gözlemlemiştir.",
     "ydsTip": "Geri alınamayan kararları niteler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"irrevoc\" köküne gelerek: \"geri dönülemez, iptal edilemez, nihai\"."
   },
   {
     "id": "w521",
@@ -11597,7 +12117,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sağduyulu kaldığını gözlemlemiştir.",
     "ydsTip": "Kaynakları akıllıca ve basiretle kullanmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wise / prudent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sağduyulu, makul, basiretli\"."
   },
   {
     "id": "w522",
@@ -11619,7 +12140,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece gizli kaldığını gözlemlemiştir.",
     "ydsTip": "'Dormant' ile akrabadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dormant / hidden\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gizli, uyuyan, henüz belirmemiş\"."
   },
   {
     "id": "w523",
@@ -11641,7 +12163,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece meşru kaldığını gözlemlemiştir.",
     "ydsTip": "Yasalara veya akla uygun olandır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"legal / lawful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"meşru, yasal, haklı\"."
   },
   {
     "id": "w524",
@@ -11663,7 +12186,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ölümcül kaldığını gözlemlemiştir.",
     "ydsTip": "'Fatal / deadly' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fatal / deadly\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ölümcül, öldürücü, can alıcı\"."
   },
   {
     "id": "w525",
@@ -11685,7 +12209,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ışık saçan kaldığını gözlemlemiştir.",
     "ydsTip": "Biyolüminesans veya gök cisimlerinde geçer.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"radiant / glowing\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ışık saçan, parlak, aydınlık\"."
   },
   {
     "id": "w526",
@@ -11707,7 +12232,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece zorunlu kaldığını gözlemlemiştir.",
     "ydsTip": "'Compulsory / obligatory' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"compulsory / obligatory\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zorunlu, mecburi\"."
   },
   {
     "id": "w527",
@@ -11729,7 +12255,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece marjinal kaldığını gözlemlemiştir.",
     "ydsTip": "Küçük farklar veya dışlanmış gruplar içindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"minimal / slight\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"marjinal, sınırda, cüzi, önemsiz\"."
   },
   {
     "id": "w528",
@@ -11751,7 +12278,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kılı kırk yaran kaldığını gözlemlemiştir.",
     "ydsTip": "Bilimsel araştırmacının titizliğini niteler.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"thorough / scrupulous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kılı kırk yaran, titiz, çok dikkatli\"."
   },
   {
     "id": "w529",
@@ -11773,7 +12301,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece asgari kaldığını gözlemlemiştir.",
     "ydsTip": "'Maximal' zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"least / slight\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"asgari, en az, cüzi\"."
   },
   {
     "id": "w530",
@@ -11795,7 +12324,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ılımlı kaldığını gözlemlemiştir.",
     "ydsTip": "Aşırı uçlardan uzak olandır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"modest / temperate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ılımlı, vasat, makul\"."
   },
   {
     "id": "w531",
@@ -11817,7 +12347,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece mütevazı kaldığını gözlemlemiştir.",
     "ydsTip": "Ekonomide ılımlı büyüme, insanda tevazudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"humble / moderate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"mütevazı, alçakgönüllü, ılımlı\"."
   },
   {
     "id": "w532",
@@ -11839,7 +12370,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tarihi kaldığını gözlemlemiştir.",
     "ydsTip": "Tarihin akışını değiştiren olaylardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"historic / significant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tarihi, çok önemli, hayati\"."
   },
   {
     "id": "w533",
@@ -11861,7 +12393,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tekdüze kaldığını gözlemlemiştir.",
     "ydsTip": "Değişiklik olmayan sıkıcı rutinlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"repetitive / tedious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tekdüze, monoton, can sıkıcı\"."
   },
   {
     "id": "w534",
@@ -11883,7 +12416,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece karşılıklı kaldığını gözlemlemiştir.",
     "ydsTip": "'Mutual understanding' (karşılıklı anlayış) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reciprocal / shared\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karşılıklı, ortaklaşa\"."
   },
   {
     "id": "w535",
@@ -11905,7 +12439,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece dikkate değer kaldığını gözlemlemiştir.",
     "ydsTip": "'Remarkable' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"not\" köküne gelerek: \"dikkate değer, göze çarpan, ünlü\"."
   },
   {
     "id": "w536",
@@ -11926,7 +12461,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kötü şöhretli kaldığını gözlemlemiştir.",
     "ydsTip": "'Notorious for' eksi (-) ünü anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"infamous / disreputable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kötü şöhretli, adı çıkmış\"."
   },
   {
     "id": "w537",
@@ -11948,7 +12484,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece özgün kaldığını gözlemlemiştir.",
     "ydsTip": "İsim olarak 'roman', sıfat olarak 'yeni/özgün' demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"new / innovative\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özgün, yeni, görülmemiş\"."
   },
   {
     "id": "w538",
@@ -11970,7 +12507,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece zararlı kaldığını gözlemlemiştir.",
     "ydsTip": "Zehirli gazlar ve atıklar için kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"toxic / poisonous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zararlı, zehirli, sağlığa aykırı\"."
   },
   {
     "id": "w539",
@@ -11992,7 +12530,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sayısız kaldığını gözlemlemiştir.",
     "ydsTip": "'Many / countless' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"countless / many\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sayısız, pek çok, çok sayıda\"."
   },
   {
     "id": "w540",
@@ -12014,7 +12553,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece nesnel kaldığını gözlemlemiştir.",
     "ydsTip": "'Subjective' (öznel) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"impartial / unbiased\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nesnel, tarafsız, objektif\"."
   },
   {
     "id": "w541",
@@ -12036,7 +12576,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece habersiz kaldığını gözlemlemiştir.",
     "ydsTip": "'Oblivious to' (-den habersiz) kalıbı yaygındır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unaware / unconscious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"habersiz, bihaber, kayıtsız\"."
   },
   {
     "id": "w542",
@@ -12058,7 +12599,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece inatçı kaldığını gözlemlemiştir.",
     "ydsTip": "Geri adım atmayan inatçı tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"stubborn / inflexible\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"inatçı, dik kafalı, dirençli\"."
   },
   {
     "id": "w543",
@@ -12080,7 +12622,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece uğursuz kaldığını gözlemlemiştir.",
     "ydsTip": "Kötü bir olayın habercisi olan işaretlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"threatening / menacing\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uğursuz, meşum, kötüye alamet\"."
   },
   {
     "id": "w544",
@@ -12102,7 +12645,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ağır kaldığını gözlemlemiştir.",
     "ydsTip": "Yerine getirilmesi çok ağır olan yükümlülüklerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"burdensome / taxing\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ağır, külfetli, zahmetli\"."
   },
   {
     "id": "w545",
@@ -12124,7 +12668,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece opak kaldığını gözlemlemiştir.",
     "ydsTip": "Fizikte ışık geçirmeyen, siyasette kapalı kapılar ardında olandır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nontransparent / obscure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"opak, mat, saydam olmayan, anlaşılmaz\"."
   },
   {
     "id": "w546",
@@ -12146,7 +12691,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece en uygun kaldığını gözlemlemiştir.",
     "ydsTip": "En yüksek verimi sağlayan seviyedir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"best / ideal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"en uygun, ideal, optimum\"."
   },
   {
     "id": "w547",
@@ -12168,7 +12714,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ortodoks kaldığını gözlemlemiştir.",
     "ydsTip": "Genel kabul görmüş yerleşik yaklaşımdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"conventional / traditional\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ortodoks, geleneksel, yerleşik\"."
   },
   {
     "id": "w548",
@@ -12190,7 +12737,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece görünürdeki kaldığını gözlemlemiştir.",
     "ydsTip": "Gerçek nedeni gizleyen görünürdeki bahanedir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"ostens\" köküne gelerek: \"görünürdeki, sözde, zahiri\"."
   },
   {
     "id": "w549",
@@ -12212,7 +12760,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ezici kaldığını gözlemlemiştir.",
     "ydsTip": "'Overwhelming majority' (ezici çoğunluk) kalıbı standarttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OVER (aşırı/üstünde)\" + \"whelming\". Sınırları aşıp üstün gelmek: \"ezici, karşı konulmaz, çok ağır\"."
   },
   {
     "id": "w550",
@@ -12234,7 +12783,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece elle tutulur kaldığını gözlemlemiştir.",
     "ydsTip": "Havadaki gerilimin veya rahatlamanın elle tutulur gibi olmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"palp\" köküne gelerek: \"elle tutulur, somut, apaçık\"."
   },
   {
     "id": "w551",
@@ -12256,7 +12806,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece her şeyden önemli kaldığını gözlemlemiştir.",
     "ydsTip": "'Of paramount importance' (en büyük öneme sahip) altın kalıptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"supreme / chief\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"her şeyden önemli, en üstün, baş\"."
   },
   {
     "id": "w552",
@@ -12278,7 +12829,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece özgü kaldığını gözlemlemiştir.",
     "ydsTip": "'Peculiar to' (-e özgü/has) sınavda çok sorulur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unique / strange\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özgü, has, garip\"."
   },
   {
     "id": "w553",
@@ -12300,7 +12852,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tehlikeli kaldığını gözlemlemiştir.",
     "ydsTip": "'Hazardous / dangerous' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hazardous / dangerous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tehlikeli, korkulu, riskli\"."
   },
   {
     "id": "w554",
@@ -12322,7 +12875,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kalıcı kaldığını gözlemlemiştir.",
     "ydsTip": "'Temporary' (geçici) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lasting / enduring\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kalıcı, sürekli, daimi\"."
   },
   {
     "id": "w555",
@@ -12344,7 +12898,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kilit noktada kaldığını gözlemlemiştir.",
     "ydsTip": "'Play a pivotal role in' (kilit rol oynamak) tamlaması meşhurdur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"crucial / central\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kilit noktada, can alıcı, merkezi\"."
   },
   {
     "id": "w556",
@@ -12366,7 +12921,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece bol kaldığını gözlemlemiştir.",
     "ydsTip": "'Abundant' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"abundant / copious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bol, bereketli, çok\"."
   },
   {
     "id": "w557",
@@ -12388,7 +12944,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece güçlü kaldığını gözlemlemiştir.",
     "ydsTip": "İlaç veya zehirlerin yüksek tesiridir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"powerful / strong\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"güçlü, tesirli, etkili\"."
   },
   {
     "id": "w558",
@@ -12410,7 +12967,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece pragmatik kaldığını gözlemlemiştir.",
     "ydsTip": "Teoriden ziyade pratik sonuca odaklanandır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"practical / realistic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"pragmatik, faydacı, uygulamacı\"."
   },
   {
     "id": "w559",
@@ -12432,7 +12990,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece güvencesiz kaldığını gözlemlemiştir.",
     "ydsTip": "Düşme veya çökme tehlikesi olan durumdur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"insecure / unstable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"güvencesiz, istikrarsız, pamuk ipliğine bağlı\"."
   },
   {
     "id": "w560",
@@ -12454,7 +13013,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kesin kaldığını gözlemlemiştir.",
     "ydsTip": "'Exact / accurate' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"exact / accurate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kesin, dakik, tam\"."
   },
   {
     "id": "w561",
@@ -12476,7 +13036,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece baskın kaldığını gözlemlemiştir.",
     "ydsTip": "Genel içinde en ağır basan unsurdur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dominant / prevailing\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"baskın, hakim, en yaygın\"."
   },
   {
     "id": "w562",
@@ -12498,7 +13059,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece bozulmamış kaldığını gözlemlemiştir.",
     "ydsTip": "İnsan eli değmemiş el değmemiş doğadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"untouched / pure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bozulmamış, el değmemiş, tertemiz\"."
   },
   {
     "id": "w563",
@@ -12520,7 +13082,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece üretken kaldığını gözlemlemiştir.",
     "ydsTip": "Çok sayıda eser veren yazar veya mucittir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"productive / fruitful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üretken, velut, bereketli\"."
   },
   {
     "id": "w564",
@@ -12542,7 +13105,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece meyilli kaldığını gözlemlemiştir.",
     "ydsTip": "'Prone to' (-e meyilli/açık) daima olumsuz şeylere yatkınlıktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"susceptible / vulnerable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"meyilli, yatkın, açık (olumsuz duruma)\"."
   },
   {
     "id": "w565",
@@ -12564,7 +13128,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece elverişli kaldığını gözlemlemiştir.",
     "ydsTip": "'Favorable' eşanlamlısı pozitif sıfattır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"favorable / auspicious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"elverişli, uygun, uğurlu\"."
   },
   {
     "id": "w566",
@@ -12586,7 +13151,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece müreffeh kaldığını gözlemlemiştir.",
     "ydsTip": "Refah seviyesi yüksek toplumları niteler.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"affluent / wealthy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"müreffeh, zengin, kalkınmış\"."
   },
   {
     "id": "w567",
@@ -12608,7 +13174,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tedbirli kaldığını gözlemlemiştir.",
     "ydsTip": "Risk almayan basiretli mali veya idari karardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"cautious / judicious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tedbirli, basiretli, sağduyulu\"."
   },
   {
     "id": "w568",
@@ -12630,7 +13197,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece köklü kaldığını gözlemlemiştir.",
     "ydsTip": "'Fundamental / sweeping' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fundamental / extreme\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"köklü, radikal, esaslı\"."
   },
   {
     "id": "w569",
@@ -12652,7 +13220,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece akılcı kaldığını gözlemlemiştir.",
     "ydsTip": "Duygularla değil akılla hareket etmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"logical / reasonable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"akılcı, rasyonel, mantıklı\"."
   },
   {
     "id": "w570",
@@ -12674,7 +13243,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece amansız kaldığını gözlemlemiştir.",
     "ydsTip": "Asla durmayan ısrarlı baskı veya takiptir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unyielding / unrelenting\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"amansız, acımasız, dur durak bilmeyen\"."
   },
   {
     "id": "w571",
@@ -12696,7 +13266,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece isteksiz kaldığını gözlemlemiştir.",
     "ydsTip": "'Reluctant to + V1' (-i yapmaya isteksiz) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RÖLANTİ\". Rölantide çalışan araba hızlanmaya RELUCTANT (isteksiz, gönülsüz) davranır."
   },
   {
     "id": "w572",
@@ -12718,7 +13289,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece dikkate değer kaldığını gözlemlemiştir.",
     "ydsTip": "Takdir toplayan başarılar için kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"remark\" köküne gelerek: \"dikkate değer, olağanüstü, kayda değer\"."
   },
   {
     "id": "w573",
@@ -12740,7 +13312,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sağlam kaldığını gözlemlemiştir.",
     "ydsTip": "Sarsılmayan sağlam ekonomi veya kanıttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"strong / sturdy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sağlam, gürbüz, güçlü\"."
   },
   {
     "id": "w574",
@@ -12762,7 +13335,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece acımasız kaldığını gözlemlemiştir.",
     "ydsTip": "Merhametsiz rekabet veya yönetimdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"merciless / cruel\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"acımasız, merhametsiz, gaddar\"."
   },
   {
     "id": "w575",
@@ -12784,7 +13358,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece göze çarpan kaldığını gözlemlemiştir.",
     "ydsTip": "Bir konunun en can alıcı ve belirgin noktalarıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"prominent / noticeable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"göze çarpan, en belirgin, can alıcı\"."
   },
   {
     "id": "w576",
@@ -12806,7 +13381,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kılı kırk yaran kaldığını gözlemlemiştir.",
     "ydsTip": "Ahlaki dürüstlük veya bilimsel titizliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"meticulous / conscientious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kılı kırk yaran, dürüst, çok titiz\"."
   },
   {
     "id": "w577",
@@ -12828,7 +13404,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece hareketsiz kaldığını gözlemlemiştir.",
     "ydsTip": "Hareketsiz yaşam tarzı ve obezite metinlerinin yıldızıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inactive / desk-bound\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hareketsiz, oturarak yapılan\"."
   },
   {
     "id": "w578",
@@ -12850,7 +13427,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece mantıklı kaldığını gözlemlemiştir.",
     "ydsTip": "'Sensitive' (duygusal) ile KARIŞTIRILMAMALIDIR! 'Akla yatkın' demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"sens\" köküne gelerek: \"mantıklı, makul, sağduyulu\"."
   },
   {
     "id": "w579",
@@ -12872,7 +13450,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece hassas kaldığını gözlemlemiştir.",
     "ydsTip": "'Sensitive to' (-e karşı hassas/duyarlı) edat kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"susceptible / fragile\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hassas, duyarlı, alıngan\"."
   },
   {
     "id": "w580",
@@ -12894,7 +13473,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece şiddetli kaldığını gözlemlemiştir.",
     "ydsTip": "Hastalığın veya cezanın ağırlığıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"acute / harsh\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şiddetli, ağır, sert\"."
   },
   {
     "id": "w581",
@@ -12915,7 +13495,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sığ kaldığını gözlemlemiştir.",
     "ydsTip": "'Deep' zıttıdır; suda sığlık veya analizde yüzeyselliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"superficial / trivial\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sığ, yüzeysel, derin olmayan\"."
   },
   {
     "id": "w582",
@@ -12937,7 +13518,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece zeki kaldığını gözlemlemiştir.",
     "ydsTip": "Piyasayı iyi okuyan keskin zekalı insandır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"astute / sharp\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zeki, kurnaz, keskin zekalı\"."
   },
   {
     "id": "w583",
@@ -12959,7 +13541,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece şüpheci kaldığını gözlemlemiştir.",
     "ydsTip": "'Skeptical of' (-e şüpheyle yaklaşan) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"doubtful / cynical\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şüpheci, kuşkucu\"."
   },
   {
     "id": "w584",
@@ -12981,7 +13564,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece ağır kanlı kaldığını gözlemlemiştir.",
     "ydsTip": "Büyümeyen durgun ekonomi veya tembel metabolizmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"slow / lethargic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ağır kanlı, uyuşuk, durgun\"."
   },
   {
     "id": "w585",
@@ -13003,7 +13587,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tek kaldığını gözlemlemiştir.",
     "ydsTip": "'Only / single' yerine kullanılan resmi sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"only / exclusive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tek, yegane, biricik\"."
   },
   {
     "id": "w586",
@@ -13025,7 +13610,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece gelişmiş kaldığını gözlemlemiştir.",
     "ydsTip": "İleri teknoloji ürünleri veya rafine zevklerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"advanced / complex\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gelişmiş, karmaşık, sofistike, kültürlü\"."
   },
   {
     "id": "w587",
@@ -13047,7 +13633,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece seyrek kaldığını gözlemlemiştir.",
     "ydsTip": "Yoğun (dense) zıttıdır; seyrek nüfus veya bitki örtüsüdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"scanty / thin\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"seyrek, kıt, dağınık\"."
   },
   {
     "id": "w588",
@@ -13069,7 +13656,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kendiliğinden olan kaldığını gözlemlemiştir.",
     "ydsTip": "Dış müdahale olmadan kendiliğinden meydana gelendir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unplanned / instinctive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kendiliğinden olan, doğal, anlık\"."
   },
   {
     "id": "w589",
@@ -13091,7 +13679,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece düzensiz kaldığını gözlemlemiştir.",
     "ydsTip": "Belli bir periyodu olmayan tek tük hadiselerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"intermittent / isolated\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"düzensiz, tek tük, ara sıra olan\"."
   },
   {
     "id": "w590",
@@ -13113,7 +13702,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sahte kaldığını gözlemlemiştir.",
     "ydsTip": "Bilimsel temeli olmayan sahte korelasyondur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"false / fake\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sahte, yapay, temelsiz\"."
   },
   {
     "id": "w591",
@@ -13135,7 +13725,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece durgun kaldığını gözlemlemiştir.",
     "ydsTip": "Ak지eyen pis su veya büyümeyen ekonomidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"static / sluggish\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"durgun, hareketsiz, gelişmeyen\"."
   },
   {
     "id": "w592",
@@ -13157,7 +13748,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece durağan kaldığını gözlemlemiştir.",
     "ydsTip": "Devingen (dynamic) zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unchanging / fixed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"durağan, sabit, hareketsiz\"."
   },
   {
     "id": "w593",
@@ -13179,7 +13771,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece katı kaldığını gözlemlemiştir.",
     "ydsTip": "Hükümetin aldığı çok katı güvenlik önlemleridir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"strict / rigorous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"katı, sıkı, tavizsiz\"."
   },
   {
     "id": "w594",
@@ -13201,7 +13794,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sonraki kaldığını gözlemlemiştir.",
     "ydsTip": "'Subsequent to' (-den sonra/ardından) zaman kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"sequent\". Temelde yer alıp: \"sonraki, akabinde gelen\"."
   },
   {
     "id": "w595",
@@ -13223,7 +13817,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kısa ve öz kaldığını gözlemlemiştir.",
     "ydsTip": "'Brief / concise' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"concise / brief\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısa ve öz, veciz\"."
   },
   {
     "id": "w596",
@@ -13245,7 +13840,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yüzeysel kaldığını gözlemlemiştir.",
     "ydsTip": "Derinlemesine (in-depth) olmayan yüzeysel yaklaşımdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"shallow / surface\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yüzeysel, derme çatma, şekli\"."
   },
   {
     "id": "w597",
@@ -13267,7 +13863,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece gereksiz kaldığını gözlemlemiştir.",
     "ydsTip": "'Redundant' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"redundant / unnecessary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gereksiz, fuzuli, ihtiyaç fazlası\"."
   },
   {
     "id": "w598",
@@ -13289,7 +13886,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece üstün kaldığını gözlemlemiştir.",
     "ydsTip": "'Superior to' (-den üstün) edat kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"better / greater\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üstün, daha iyi, kıdemli\"."
   },
   {
     "id": "w599",
@@ -13311,7 +13909,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece sürdürülebilir kaldığını gözlemlemiştir.",
     "ydsTip": "Geleceği tüketmeyen kalkınma modelidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"sustain\" köküne gelerek: \"sürdürülebilir, çevreye duyarlı\"."
   },
   {
     "id": "w600",
@@ -13333,7 +13932,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece usandırıcı kaldığını gözlemlemiştir.",
     "ydsTip": "Uzun ve tekdüze süren işleri anlatır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"boring / monotonous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"usandırıcı, sıkıcı, bıktırıcı\"."
   },
   {
     "id": "w601",
@@ -13355,7 +13955,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece kesin olmayan kaldığını gözlemlemiştir.",
     "ydsTip": "Değişebilecek ön anlaşma veya adımlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"provisional / preliminary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kesin olmayan, geçici, tereddütlü\"."
   },
   {
     "id": "w602",
@@ -13377,7 +13978,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece etraflı kaldığını gözlemlemiştir.",
     "ydsTip": "'Exhaustive / comprehensive' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"comprehensive / exhaustive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"etraflı, eksiksiz, titiz\"."
   },
   {
     "id": "w603",
@@ -13399,7 +14001,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece geçici kaldığını gözlemlemiştir.",
     "ydsTip": "Kalıcı olmayan geçici durumlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"temporary / fleeting\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geçici, fani, kısa süreli\"."
   },
   {
     "id": "w604",
@@ -13421,7 +14024,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece şeffaf kaldığını gözlemlemiştir.",
     "ydsTip": "Yönetimde şeffaflık veya fiziksel saydamlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"clear / candid\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şeffaf, saydam, açık\"."
   },
   {
     "id": "w605",
@@ -13443,7 +14047,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece önemsiz kaldığını gözlemlemiştir.",
     "ydsTip": "'Insignificant' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unimportant / minor\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"önemsiz, incir çekirdeğini doldurmaz\"."
   },
   {
     "id": "w606",
@@ -13465,7 +14070,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece çalkantılı kaldığını gözlemlemiştir.",
     "ydsTip": "Tarihte çalkantılı dönemler veya havacılıkta türbülanstır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"chaotic / tumultuous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çalkantılı, fırtınalı, kargaşalı\"."
   },
   {
     "id": "w607",
@@ -13487,7 +14093,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece her yerde birden bulunan kaldığını gözlemlemiştir.",
     "ydsTip": "Bugün akıllı telefonların her yerde olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"omnipresent / everywhere\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"her yerde birden bulunan, yaygın\"."
   },
   {
     "id": "w608",
@@ -13509,7 +14116,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece oybirliğiyle alınmış kaldığını gözlemlemiştir.",
     "ydsTip": "Mecliste veya jüride tüm oyların aynı olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"animous\". \"animous\" kökünün zıddı olarak \"oybirliğiyle alınmış, hemfikir\" anlamına gelir."
   },
   {
     "id": "w609",
@@ -13531,7 +14139,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece tarafsız kaldığını gözlemlemiştir.",
     "ydsTip": "'Impartial / objective' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"biased\". \"biased\" kökünün zıddı olarak \"tarafsız, yansız, önyargısız\" anlamına gelir."
   },
   {
     "id": "w610",
@@ -13553,7 +14162,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece savunulamaz kaldığını gözlemlemiştir.",
     "ydsTip": "Mantıken veya askeri olarak savunulamayacak durumlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"tenable\". \"tenable\" kökünün zıddı olarak \"savunulamaz, tutarsız, sürdürülemez\" anlamına gelir."
   },
   {
     "id": "w611",
@@ -13575,7 +14185,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece yersiz kaldığını gözlemlemiştir.",
     "ydsTip": "Gereksiz ve haksız yere yapılan eleştiridir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"warranted\". \"warranted\" kökünün zıddı olarak \"yersiz, haksız, lüzumsuz\" anlamına gelir."
   },
   {
     "id": "w612",
@@ -13597,7 +14208,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece canlı kaldığını gözlemlemiştir.",
     "ydsTip": "Hayat dolu şehirler veya canlı ekonomiler içindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lively / energetic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"canlı, hareketli, enerjik\"."
   },
   {
     "id": "w613",
@@ -13619,7 +14231,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece dinç kaldığını gözlemlemiştir.",
     "ydsTip": "Güçlü egzersiz veya tavizsiz savunmadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"energetic / robust\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dinç, enerjik, gayretli, sert\"."
   },
   {
     "id": "w614",
@@ -13641,7 +14254,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece hayati kaldığını gözlemlemiştir.",
     "ydsTip": "'Crucial / indispensable' ile denk tutulur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"crucial / essential\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hayati, can alıcı, çok önemli\"."
   },
   {
     "id": "w615",
@@ -13663,7 +14277,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece uçucu kaldığını gözlemlemiştir.",
     "ydsTip": "Kimyada uçucu madde, ekonomide dalgalı piyasadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unstable / variable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uçucu, değişken, istikrarsız\"."
   },
   {
     "id": "w616",
@@ -13685,7 +14300,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece savunmasız kaldığını gözlemlemiştir.",
     "ydsTip": "'Vulnerable to' (-e karşı savunmasız) YDS'nin 1 numaralı sıfatıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"VUR-NER-ABLE\". Nereden vururlarsa vursunlar savunmasız ve hassas olmak."
   },
   {
     "id": "w617",
@@ -13707,7 +14323,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, bölgesel faktörlerin modern akademik çerçeveler genelinde son derece gayretli kaldığını gözlemlemiştir.",
     "ydsTip": "Bir davaya aşırı şevkle bağlı olmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"enthusiastic / fervent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gayretli, şevkli, bağnazca istekli\"."
   },
   {
     "id": "w618",
@@ -13729,7 +14346,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında edinim kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Dil edinimi veya şirket devralmalarında 1 numaradır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"edinim, iktisap, satın alma\" kavramını temsil eder."
   },
   {
     "id": "w619",
@@ -13750,7 +14368,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yeterlilik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Sağlık veya bütçenin yeterliliğidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sufficiency / competence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yeterlilik, uygunluk\"."
   },
   {
     "id": "w620",
@@ -13771,7 +14390,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında bağlılık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Tıpta tedaviye veya kurallara harfiyen uymadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"compliance / fidelity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bağlılık, sadakat, uyma\"."
   },
   {
     "id": "w621",
@@ -13793,7 +14413,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hasım kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Politikada veya sporda karşı taraftır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"opponent / rival\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hasım, düşman, rakip\"."
   },
   {
     "id": "w622",
@@ -13815,7 +14436,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında savunuculuk kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hak savunuculuğu yapan sivil toplum kuruluşlarıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"championing / support\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"savunuculuk, destekleme\"."
   },
   {
     "id": "w623",
@@ -13837,7 +14459,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında zenginlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Poverty' (yoksulluk) zıttıdır; refah toplumunu anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wealth / prosperity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zenginlik, refah, varlık\"."
   },
   {
     "id": "w624",
@@ -13859,7 +14482,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında değişiklik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Genetik değişim veya mimari tadilattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"değişiklik, başkalaşım, tadilat\" kavramını temsil eder."
   },
   {
     "id": "w625",
@@ -13880,7 +14504,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında belirsizlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hukuk veya dilde anlam karmaşasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vagueness / uncertainty\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"belirsizlik, muğlaklık, çift anlamlılık\"."
   },
   {
     "id": "w626",
@@ -13902,7 +14527,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında benzeşim kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İki farklı olgu arasında benzerlik kurmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"parallel / comparison\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"benzeşim, analoji, benzerlik\"."
   },
   {
     "id": "w627",
@@ -13923,7 +14549,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında beklenti kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'In anticipation of' (-i bekleyerek/öngörerek) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"beklenti, umut, seziş\" kavramını temsil eder."
   },
   {
     "id": "w628",
@@ -13945,7 +14572,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında endişe kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "1. Geleceğe dair derin kaygı 2. Suçlunun yakalanması.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"endişe, kaygı, tutuklama\" kavramını temsil eder."
   },
   {
     "id": "w629",
@@ -13967,7 +14595,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında büyük arzu kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Geleceğe dair yüksek hedefler ve ideallerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"büyük arzu, emel, gaye\" kavramını temsil eder."
   },
   {
     "id": "w630",
@@ -13989,7 +14618,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında iddia kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Yazarın veya araştırmacının ileri sürdüğü savdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"iddia, sav, tez\" kavramını temsil eder."
   },
   {
     "id": "w631",
@@ -14010,7 +14640,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında özümseme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kültürün veya besinlerin özümsenmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"özümseme, sindirme, asimilasyon\" kavramını temsil eder."
   },
   {
     "id": "w632",
@@ -14031,7 +14662,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında varsayım kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Bilimsel araştırmanın dayandığı temel varsayımdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"varsayım, faraziye, üstlenme\" kavramını temsil eder."
   },
   {
     "id": "w633",
@@ -14053,7 +14685,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında elde etme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Eğitim düzeyi veya hedeflere ulaşmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"achievement / accomplishment\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"elde etme, erişme, başarı\"."
   },
   {
     "id": "w634",
@@ -14074,7 +14707,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında özgünlük kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Tarihi eserin veya belgenin sahiciliğini kanıtlamadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"genuineness / validity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özgünlük, sahicilik, orijinallik\"."
   },
   {
     "id": "w635",
@@ -14095,7 +14729,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında özerklik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kişisel bağımsızlık veya bölgesel özerkliktir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"independence / self-rule\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özerklik, bağımsızlık, otonomi\"."
   },
   {
     "id": "w636",
@@ -14117,7 +14752,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında nefret kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Aversion to' (-e karşı isteksizlik/nefret) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"nefret, hoşnutsuzluk, tiksinti\" kavramını temsil eder."
   },
   {
     "id": "w637",
@@ -14139,7 +14775,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında engel kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Gümrük veya dil engellerini anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"obstacle / impediment\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"engel, bariyer, set\"."
   },
   {
     "id": "w638",
@@ -14160,7 +14797,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yararlanıcı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Sosyal yardım veya sigorta hak sahipleridir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"recipient / heir\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yararlanıcı, hak sahibi, lehtar\"."
   },
   {
     "id": "w639",
@@ -14181,7 +14819,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında önyargı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Unbiased' tarafsız, 'bias' önyargı demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"prejudice / partiality\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"önyargı, taraflılık, meyil\"."
   },
   {
     "id": "w640",
@@ -14203,7 +14842,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında büyük felaket kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toplumu sarsan büyük felaketlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"catastrophe / disaster\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"büyük felaket, afet, facia\"."
   },
   {
     "id": "w641",
@@ -14225,7 +14865,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında kapasite kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Depolama hacmi veya zihinsel yetenektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"volume / ability\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kapasite, hacim, yetenek\"."
   },
   {
     "id": "w642",
@@ -14247,7 +14888,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında durdurma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Savaşın durdurulması veya sigarayı bırakmadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"durdurma, kesilme, ara verme\" kavramını temsil eder."
   },
   {
     "id": "w643",
@@ -14269,7 +14911,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında zorlama kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kişiyi tehdit veya baskı altında bırakmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"compulsion / force\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zorlama, baskı, tehditle yaptırma\"."
   },
   {
     "id": "w644",
@@ -14291,7 +14934,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında bağlılık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toplum fertlerinin birbirine kenetlenmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"bağlılık, uyum, kaynaşma\" kavramını temsil eder."
   },
   {
     "id": "w645",
@@ -14312,7 +14956,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında işbirliği kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'In collaboration with' (-ile işbirliği içinde).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"işbirliği, ortak çalışma\" kavramını temsil eder."
   },
   {
     "id": "w646",
@@ -14334,7 +14979,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında başlangıç kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Resmi süreçlerin başlaması veya mezuniyettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"beginning / start\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"başlangıç, başlama töreni\"."
   },
   {
     "id": "w647",
@@ -14356,7 +15002,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında ticari mal kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Petrol, buğday veya altın gibi piyasa mallarıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"goods / merchandise\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ticari mal, emtia, hammadde\"."
   },
   {
     "id": "w648",
@@ -14378,7 +15025,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında tazminat kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Zarar karşılığı ödenen tazminattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"tazminat, telafi, bedel\" kavramını temsil eder."
   },
   {
     "id": "w649",
@@ -14400,7 +15048,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yetkinlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Mesleki veya dilsel beceri düzeyidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"capability / proficiency\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yetkinlik, ehliyet, yeterlik\"."
   },
   {
     "id": "w650",
@@ -14421,7 +15070,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında karmaşıklık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Sistemlerin veya biyolojinin karmaşıklığıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"intricacy / complication\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karmaşıklık, giriftlik\"."
   },
   {
     "id": "w651",
@@ -14443,7 +15093,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında uyum kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'In compliance with' (-e uygun olarak) altın edattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"conformity / adherence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uyum, riayet, itaat\"."
   },
   {
     "id": "w652",
@@ -14465,7 +15116,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında uzlaşma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Tarafların orta yolda anlaşmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KOM-PROMISE (söz vermek)\". Ortak paydada buluşmak veya tedbirsizlikle güvenliği COMPROMISE etmek (tehlikeye atmak)."
   },
   {
     "id": "w653",
@@ -14487,7 +15139,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında taviz kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Müzakerelerde karşı tarafa verilen tavizdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"taviz, ödün, imtiyaz\" kavramını temsil eder."
   },
   {
     "id": "w654",
@@ -14509,7 +15162,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında uyum kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toplum baskısına veya standartlara uymaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"compliance / adherence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uyum, intibak, kurallara boyun eğme\"."
   },
   {
     "id": "w655",
@@ -14531,7 +15185,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yüzleşme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İki gücün karşı karşıya gelmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yüzleşme, çatışma, restleşme\" kavramını temsil eder."
   },
   {
     "id": "w656",
@@ -14553,7 +15208,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında tıkanıklık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Trafik sıkışıklığı veya burun tıkanıklığıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"tıkanıklık, sıkışıklık, izdiham\" kavramını temsil eder."
   },
   {
     "id": "w657",
@@ -14575,7 +15231,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında tahmin kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kanıtsız yapılan tahmindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"speculation / guess\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tahmin, faraziye, varsayım\"."
   },
   {
     "id": "w658",
@@ -14597,7 +15254,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında sonuç kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'As a consequence of' (-in sonucu olarak) bağlaçtır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"result / outcome\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sonuç, netice, önem\"."
   },
   {
     "id": "w659",
@@ -14619,7 +15277,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında sağlamlaştırma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İktidarı veya mali yapıyı güçlendirmedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"sağlamlaştırma, pekiştirme, birleşme\" kavramını temsil eder."
   },
   {
     "id": "w660",
@@ -14641,7 +15300,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında kısıtlama kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Budget constraints' (bütçe kısıtlamaları) ekonomide esastır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"limitation / restriction\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısıtlama, engel, baskı\"."
   },
   {
     "id": "w661",
@@ -14663,7 +15323,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında bulaşma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Virüsün veya finansal krizin komşu ülkelere sıçramasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"infection / transmission\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bulaşma, sirayet, salgın\"."
   },
   {
     "id": "w662",
@@ -14685,7 +15346,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında iddia kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Point of contention' (anlaşmazlık konusu) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"iddia, münakaşa, çekişme\" kavramını temsil eder."
   },
   {
     "id": "w663",
@@ -14707,7 +15369,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında beklenmedik durum kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Contingency plan' (B planı/acil durum planı) standarttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"eventuality / possibility\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"beklenmedik durum, ihtimal, olasılık\"."
   },
   {
     "id": "w664",
@@ -14729,7 +15392,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında çelişki kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Mantıksal tutarsızlık veya tezatlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"çelişki, tezat, tutarsızlık\" kavramını temsil eder."
   },
   {
     "id": "w665",
@@ -14751,7 +15415,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında tartışma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toplumda infial yaratan tartışmalı konulardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"debate / dispute\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tartışma, polemik, anlaşmazlık\"."
   },
   {
     "id": "w666",
@@ -14773,7 +15438,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yakınsama kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Farklı alanların bir noktada birleşmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"meeting / merging\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yakınsama, birleşme, benzeşme\"."
   },
   {
     "id": "w667",
@@ -14795,7 +15461,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında korelasyon kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Correlation does not imply causation' bilimsel kuralıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"korelasyon, karşılıklı ilişki, bağıntı\" kavramını temsil eder."
   },
   {
     "id": "w668",
@@ -14817,7 +15484,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında güvenilirlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Araştırmanın veya basının inandırıcılığıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reliability / trustworthiness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"güvenilirlik, inandırıcılık, itibar\"."
   },
   {
     "id": "w669",
@@ -14839,7 +15507,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında kriter kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Çoğulu 'criteria'dır; karşılanması gereken ölçüttür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"standard / benchmark\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kriter, ölçüt, kıstas\"."
   },
   {
     "id": "w670",
@@ -14861,7 +15530,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında zirve kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Yıllar süren emeğin ulaştığı nihai zirvedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"zirve, doruk noktası, nihayet\" kavramını temsil eder."
   },
   {
     "id": "w671",
@@ -14883,7 +15553,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında kısma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Harcamaların veya hakların kısılmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reduction / restriction\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısma, azaltma, kısıtlama\"."
   },
   {
     "id": "w672",
@@ -14905,7 +15576,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında bütçe açığı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Cari açık veya bütçe açığı için kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"shortfall / debt\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bütçe açığı, noksan, eksi\"."
   },
   {
     "id": "w673",
@@ -14927,7 +15599,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında çöküş kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İmparatorlukların veya türlerin çöküşüdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"collapse / death\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çöküş, vefat, son bulma\"."
   },
   {
     "id": "w674",
@@ -14949,7 +15622,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında tükenme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Ozon tabakasının incelmesi veya petrolün tükenmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"tükenme, boşalma, azalma\" kavramını temsil eder."
   },
   {
     "id": "w675",
@@ -14971,7 +15645,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yoksunluk kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Uykusuzluk veya yoksulluk metinlerinde standarttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yoksunluk, mahrumiyet, sefalet\" kavramını temsil eder."
   },
   {
     "id": "w676",
@@ -14993,7 +15668,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında ikilik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Birbiriyle çatışan iki zıt kutup halidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"division / split\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ikilik, dikotomi, çatal\"."
   },
   {
     "id": "w677",
@@ -15015,7 +15691,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında boyut kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Problemin yeni bir boyut kazanmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"boyut, ebat, yön\" kavramını temsil eder."
   },
   {
     "id": "w678",
@@ -15037,7 +15714,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında çelişki kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Rakamlar veya veriler arasındaki tutarsızlıktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"crepancy\". Durumun tersine dönmesi: \"çelişki, uyuşmazlık, tutarsızlık\"."
   },
   {
     "id": "w679",
@@ -15059,7 +15737,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında mizaç kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kişinin karakteri veya genetik eğilimidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"position\". Durumun tersine dönmesi: \"mizaç, yaradılış, eğilim\"."
   },
   {
     "id": "w680",
@@ -15081,7 +15760,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında aksama kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Tedarik zincirindeki büyük aksamalardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"ruption\". Durumun tersine dönmesi: \"aksama, bozulma, sekte\"."
   },
   {
     "id": "w681",
@@ -15103,7 +15783,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında ayrım kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İki kavram arasındaki net ayrımdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"tinction\". Durumun tersine dönmesi: \"ayrım, fark, üstünlük\"."
   },
   {
     "id": "w682",
@@ -15125,7 +15806,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında çeşitlilik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Biyolojik veya kültürel zenginliktir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"variety / heterogeneity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çeşitlilik, farklılık\"."
   },
   {
     "id": "w683",
@@ -15147,7 +15829,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında etkililik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Aşının veya ilacın klinik deneylerdeki tesiridir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"effectiveness / potency\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"etkililik, tesir, yararlılık\"."
   },
   {
     "id": "w684",
@@ -15169,7 +15852,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında eleme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hastalık veya yoksulluğun tamamen silinmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"eleme, ortadan kaldırma, yok etme\" kavramını temsil eder."
   },
   {
     "id": "w685",
@@ -15191,7 +15875,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında salınım kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Karbon salınımı metinlerinin en önemli ismidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"salınım, yayılma, emisyon\" kavramını temsil eder."
   },
   {
     "id": "w686",
@@ -15213,7 +15898,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında vurgu kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Place emphasis on' (-e vurgu yapmak) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"stress / priority\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"vurgu, önem, altını çizme\"."
   },
   {
     "id": "w687",
@@ -15235,7 +15921,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yasalaşma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Yeni kanunların meclisten geçmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"legislation / passage\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yasalaşma, yürürlüğe koyma\"."
   },
   {
     "id": "w688",
@@ -15257,7 +15944,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında çaba kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İnsanlığın bilimsel veya felsefi büyük gayretidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"effort / venture\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çaba, gayret, girişim\"."
   },
   {
     "id": "w689",
@@ -15279,7 +15967,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında geliştirme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Enhance' fiilinin isim halidir; pozitif (+) terimdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"improvement / upgrade\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geliştirme, yükseltme, artırma\"."
   },
   {
     "id": "w690",
@@ -15301,7 +15990,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında denge kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Doğanın veya piyasanın denge durumudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"balance / stability\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"denge, istikrar, sukunet\"."
   },
   {
     "id": "w691",
@@ -15323,7 +16013,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hakkaniyet kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toplumsal adalet veya şirket hisse değeridir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fairness / justice\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hakkaniyet, adalet, özsermaye\"."
   },
   {
     "id": "w692",
@@ -15344,7 +16035,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında kökünü kazıma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Eradicate' fiilinin isim halidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"kökünü kazıma, yok etme\" kavramını temsil eder."
   },
   {
     "id": "w693",
@@ -15366,7 +16058,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında tırmanma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Savaş veya krizin şiddetlenmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"tırmanma, artış, gerilim yükselmesi\" kavramını temsil eder."
   },
   {
     "id": "w694",
@@ -15388,7 +16081,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında değerlendirme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Ampirik araştırmanın sonuç değerlendirmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"değerlendirme, takdir, paha biçme\" kavramını temsil eder."
   },
   {
     "id": "w695",
@@ -15410,7 +16104,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında evrim kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Canlıların evrimi veya teknolojinin gelişimidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"evrim, gelişim, aşamalı değişim\" kavramını temsil eder."
   },
   {
     "id": "w696",
@@ -15431,7 +16126,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında kötüleşme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hastalığın alevlenmesi veya krizin azmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"kötüleşme, alevlenme, vahimleşme\" kavramını temsil eder."
   },
   {
     "id": "w697",
@@ -15453,7 +16149,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında uygulama kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Stratejinin sahaya tatbiki veya idam infazıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"uygulama, icra etme, infaz\" kavramını temsil eder."
   },
   {
     "id": "w698",
@@ -15475,7 +16172,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında genişleme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Evrenin veya ekonominin büyümesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"genişleme, büyüme, yayılma\" kavramını temsil eder."
   },
   {
     "id": "w699",
@@ -15497,7 +16195,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında harcama kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Devletin veya kurumun bütçe harcamalarıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"spending / outlay\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"harcama, masraf, gider\"."
   },
   {
     "id": "w700",
@@ -15519,7 +16218,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında sömürü kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İşçi sömürüsü veya kaynaklardan yararlanmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"sömürü, istismar, faydalanma\" kavramını temsil eder."
   },
   {
     "id": "w701",
@@ -15541,7 +16241,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında maruz kalma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Exposure to' (-e maruz kalma) sınavın baş tacıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vulnerability / disclosure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"maruz kalma, ifşa, teşhir\"."
   },
   {
     "id": "w702",
@@ -15563,7 +16264,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında kolaylaştırma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Süreçlerin pürüzsüz işlemesini sağlamadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"kolaylaştırma, aracılık etme\" kavramını temsil eder."
   },
   {
     "id": "w703",
@@ -15584,7 +16286,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yapılabilirlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Feasibility study' (fizibilite raporu) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"viability / practicability\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yapılabilirlik, uygulanabilirlik, fizibilite\"."
   },
   {
     "id": "w704",
@@ -15606,7 +16309,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında dalgalanma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Borsadaki veya iklimdeki dalgalanmalardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"dalgalanma, iniş çıkış, istikrarsızlık\" kavramını temsil eder."
   },
   {
     "id": "w705",
@@ -15628,7 +16332,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında çerçeve kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Within the framework of' (-in çerçevesinde) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"structure / scheme\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çerçeve, yapı, iskelet\"."
   },
   {
     "id": "w706",
@@ -15650,7 +16355,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında sürtünme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Fizikte sürtünme kuvveti, siyasette diplomatik gerilimdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"sürtünme, uyuşmazlık, sürtüşme\" kavramını temsil eder."
   },
   {
     "id": "w707",
@@ -15672,7 +16378,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hiyerarşi kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toplumdaki veya şirketteki makam basamaklarıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ranking / pecking order\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hiyerarşi, aşama sırası, basamak\"."
   },
   {
     "id": "w708",
@@ -15694,7 +16401,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hipotez kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Çoğulu 'hypotheses'dir; bilimsel deneyle test edilendir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"theory / premise\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hipotez, varsayım, önerme\"."
   },
   {
     "id": "w709",
@@ -15716,7 +16424,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında teşvik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Yatırımı veya çalışmayı artıran teşviklerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"motivation / inducement\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"teşvik, özendirici prim, güdü\"."
   },
   {
     "id": "w710",
@@ -15738,7 +16447,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında görülme sıklığı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Tıpta kanser veya enfeksiyon görülme oranıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"frequency / occurrence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"görülme sıklığı, vaka oranı\"."
   },
   {
     "id": "w711",
@@ -15760,7 +16470,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında altyapı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Yol, köprü, su ve enerji şebekesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"framework / substructure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"altyapı, temel donanım\"."
   },
   {
     "id": "w712",
@@ -15782,7 +16493,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında girişim kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Take the initiative' (inisiyatif almak) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"enterprise / venture\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"girişim, inisiyatif, teşebbüs\"."
   },
   {
     "id": "w713",
@@ -15804,7 +16516,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yenilik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Pozitif kalkınma metinlerinin anahtar kelimesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yenilik, buluş, inovasyon\" kavramını temsil eder."
   },
   {
     "id": "w714",
@@ -15826,7 +16539,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında derin kavrayış kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Gain insight into' (-i derinden kavramak) edatıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"understanding / perception\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"derin kavrayış, içgörü, sezgi\"."
   },
   {
     "id": "w715",
@@ -15848,7 +16562,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında dürüstlük kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toprak bütünlüğü veya ahlaki dürüstlüktür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"honesty / wholeness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dürüstlük, bütünlük, sağlamlık\"."
   },
   {
     "id": "w716",
@@ -15870,7 +16585,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında müdahale kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Tıbbi tedavi veya askeri müdahaledir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"müdahale, araya girme\" kavramını temsil eder."
   },
   {
     "id": "w717",
@@ -15892,7 +16608,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında mevzuat kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Meclisten çıkan çevre veya ceza yasalarıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"mevzuat, kanun, yasama\" kavramını temsil eder."
   },
   {
     "id": "w718",
@@ -15914,7 +16631,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında tezahür kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hastalığın veya krizin dışa vuran belirtisidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"tezahür, belirti, gösterge\" kavramını temsil eder."
   },
   {
     "id": "w719",
@@ -15936,7 +16654,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hafifletme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Küresel ısınmanın veya risklerin azaltılmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"hafifletme, yatıştırma, azaltma\" kavramını temsil eder."
   },
   {
     "id": "w720",
@@ -15958,7 +16677,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hız kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Gain momentum' (ivme/güç kazanmak) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"impetus / drive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hız, ivme, hareket gücü\"."
   },
   {
     "id": "w721",
@@ -15980,7 +16700,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında zorunluluk kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Out of necessity' (mecburiyetten) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"requirement / essential\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zorunluluk, gereklilik, ihtiyaç\"."
   },
   {
     "id": "w722",
@@ -16002,7 +16723,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yükümlülük kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hukuki veya ahlaki sorumluluktur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yükümlülük, mecburiyet, ödev\" kavramını temsil eder."
   },
   {
     "id": "w723",
@@ -16024,7 +16746,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında meydana gelme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Doğa olaylarının vuku bulmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"incident / event\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"meydana gelme, vaka, olay\"."
   },
   {
     "id": "w724",
@@ -16046,7 +16769,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında paradoks kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İçinde zıtlık barındıran durumdur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"contradiction / anomaly\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"paradoks, çelişki, görünürde saçmalık\"."
   },
   {
     "id": "w725",
@@ -16068,7 +16792,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında parametre kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Bilimsel araştırmanın çerçeve kriterleridir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"variable / criterion\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"parametre, değişken, ölçüt\"."
   },
   {
     "id": "w726",
@@ -16090,7 +16815,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında fenomen kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Çoğulu 'phenomena'dır; incelenen doğa olgusudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"occurrence / marvel\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fenomen, olağanüstü olay, olgu\"."
   },
   {
     "id": "w727",
@@ -16112,7 +16838,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında akla yatkınlık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Teorinin akla ve mantığa uygunluğudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"credibility / feasibility\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"akla yatkınlık, mantıklılık\"."
   },
   {
     "id": "w728",
@@ -16133,7 +16860,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında önlem kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Take precautions against' (-e karşı önlem almak).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"önlem, tedbir, ihtiyat\" kavramını temsil eder."
   },
   {
     "id": "w729",
@@ -16155,7 +16883,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında öncü kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Bir devrimi veya keşfi önceleyen öncüdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"forerunner / predecessor\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öncü, haberci, müjdeci\"."
   },
   {
     "id": "w730",
@@ -16176,7 +16905,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında selef kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Successor' (halef) zıttıdır; önceki makam sahibidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ancestor / forerunner\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"selef, önceki, öncül\"."
   },
   {
     "id": "w731",
@@ -16197,7 +16927,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında önyargı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Bias' ile birebir eşleşir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"bias / preconception\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"önyargı, peşin hüküm\"."
   },
   {
     "id": "w732",
@@ -16219,7 +16950,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında öncül kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Mantıksal argümanın dayandığı temel önermedir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"assumption / foundation\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öncül, temel dayanak, varsayım\"."
   },
   {
     "id": "w733",
@@ -16241,7 +16973,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yaygınlık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Toplumda hastalığın veya inancın yaygınlığıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"commonness / currency\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yaygınlık, hakim olma, geçerlilik\"."
   },
   {
     "id": "w734",
@@ -16262,7 +16995,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında öncelik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Give priority to' (-e öncelik vermek) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"precedence / primary concern\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öncelik, yeğlik\"."
   },
   {
     "id": "w735",
@@ -16283,7 +17017,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hızlı çoğalma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Nükleer silahların veya hücrelerin kontrolsüz yayılmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"hızlı çoğalma, üreme, yayılma\" kavramını temsil eder."
   },
   {
     "id": "w736",
@@ -16305,7 +17040,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında oran kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'In proportion to' (-e oranla/nispetle) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"oran, nispet, orantı\" kavramını temsil eder."
   },
   {
     "id": "w737",
@@ -16327,7 +17063,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında refah kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Ekonomik bolluk ve zenginlik halidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wealth / affluence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"refah, zenginlik, bayındırlık\"."
   },
   {
     "id": "w738",
@@ -16349,7 +17086,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yakınlık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'In close proximity to' (-in çok yakınında) edatıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"closeness / vicinity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yakınlık, civar, komşuluk\"."
   },
   {
     "id": "w739",
@@ -16371,7 +17109,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında uzlaşma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Savaş sonrası tarafların barışmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"uzlaşma, barışma, bağdaştırma\" kavramını temsil eder."
   },
   {
     "id": "w740",
@@ -16393,7 +17132,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında fazlalık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Metinde gereksiz tekrar veya işsizliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"superfluity / excess\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fazlalık, lüzumsuzluk, işten çıkarma\"."
   },
   {
     "id": "w741",
@@ -16415,7 +17155,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında düzenleme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Piyasayı denetleyen devlet kurallarıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"düzenleme, mevzuat, yönetmelik\" kavramını temsil eder."
   },
   {
     "id": "w742",
@@ -16437,7 +17178,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında baskı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Otoriter rejimlerin halka uyguladığı baskıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"baskı, sindirme, zorbalık\" kavramını temsil eder."
   },
   {
     "id": "w743",
@@ -16459,7 +17201,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında itibar kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kurumun veya kişinin toplumdaki saygınlığıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"itibar, şöhret, nam\" kavramını temsil eder."
   },
   {
     "id": "w744",
@@ -16481,7 +17224,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında gereksinim kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Meet the requirements' (koşulları yerine getirmek).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"necessity / criterion\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gereksinim, şart, koşul\"."
   },
   {
     "id": "w745",
@@ -16503,7 +17247,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında direnç kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kriz ve travmalardan sonra hızla ayağa kalkabilmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"toughness / adaptability\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"direnç, çabuk toparlanma yeteneği\"."
   },
   {
     "id": "w746",
@@ -16525,7 +17270,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yaptırım kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Ülkelere uygulanan ekonomik veya askeri yaptırımlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yaptırım, müeyyide, onay\" kavramını temsil eder."
   },
   {
     "id": "w747",
@@ -16547,7 +17293,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yakın inceleme kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Come under close scrutiny' (mercek altına alınmak).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"SKOR-İNCELEME\". Hakem tartışmalı pozisyonu SCRUTINY altına aldı (kılı kırk yararcasına inceledi)."
   },
   {
     "id": "w748",
@@ -16569,7 +17316,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında eksiklik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Sistemin veya teorinin kusurlarıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"defect / flaw\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eksiklik, noksan, kusur\"."
   },
   {
     "id": "w749",
@@ -16591,7 +17339,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında önem kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Of great significance' (büyük öneme sahip) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"importance / meaning\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"önem, anlam, ehemmiyet\"."
   },
   {
     "id": "w750",
@@ -16613,7 +17362,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında durgunluk kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Büyümenin sıfıra indiği kriz dönemleridir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"durgunluk, yerinde sayma, hareketsizlik\" kavramını temsil eder."
   },
   {
     "id": "w751",
@@ -16635,7 +17385,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında uyarıcı kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Ekonomiyi canlandırmak için verilen teşvik paketidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"incentive / spur\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uyarıcı, teşvik, tahrik\"."
   },
   {
     "id": "w752",
@@ -16657,7 +17408,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında şart kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Sözleşmede yer alan özel şarttır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"şart, koşul, akit maddesi\" kavramını temsil eder."
   },
   {
     "id": "w753",
@@ -16679,7 +17431,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında gözetim kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Kameralı takip veya istihbarat gözetimidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"monitoring / observation\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gözetim, takip, tarassut\"."
   },
   {
     "id": "w754",
@@ -16700,7 +17453,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında duyarlılık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hastalığa yakalanma meylidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vulnerability / sensitivity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"duyarlılık, yatkınlık, hassasiyet\"."
   },
   {
     "id": "w755",
@@ -16721,7 +17475,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında sürdürülebilirlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Doğal kaynakları yok etmeden geleceğe taşımaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"viability / endurance\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sürdürülebilirlik, kalıcılık\"."
   },
   {
     "id": "w756",
@@ -16743,7 +17498,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında semptom kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Hastalığın bedendeki göstergesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sign / indication\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"semptom, belirti, işaret\"."
   },
   {
     "id": "w757",
@@ -16764,7 +17520,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında sinerji kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "İki unsurun birleşince yarattığı ekstra güçtür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"collaboration / combined effort\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sinerji, ortak güç, işbirliği etkisi\"."
   },
   {
     "id": "w758",
@@ -16786,7 +17543,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yörünge kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Gezegenin rotası veya ekonominin gidişatıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"path / course\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yörünge, gidişat, seyir rotası\"."
   },
   {
     "id": "w759",
@@ -16807,7 +17565,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında dönüşüm kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Sistemin bütünüyle değişmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"dönüşüm, başkalaşım, köklü değişim\" kavramını temsil eder."
   },
   {
     "id": "w760",
@@ -16829,7 +17588,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında bulaşma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Virüsün insana geçmesi veya veri aktarımıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"bulaşma, iletim, yayılma\" kavramını temsil eder."
   },
   {
     "id": "w761",
@@ -16851,7 +17611,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında şeffaflık kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Yolsuzluğu önleyen hesap verebilir yönetimdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"openness / candor\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şeffaflık, açıklık, hesap verebilirlik\"."
   },
   {
     "id": "w762",
@@ -16873,7 +17634,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında belirsizlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Geleceğin tahmin edilememesi durumudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"certainty\". \"certainty\" kökünün zıddı olarak \"belirsizlik, tereddüt\" anlamına gelir."
   },
   {
     "id": "w763",
@@ -16895,7 +17657,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında girişim kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Büyük ve riskli projeler içindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"dertaking\". \"dertaking\" kökünün zıddı olarak \"girişim, taahhüt, üstlenilen iş\" anlamına gelir."
   },
   {
     "id": "w764",
@@ -16917,7 +17680,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yararlanma kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'Use' kelimesinin akademik eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yararlanma, kullanım, istifade\" kavramını temsil eder."
   },
   {
     "id": "w765",
@@ -16939,7 +17703,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında geçerlilik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Bilimsel testin veya tezin geçerliliğidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"legitimacy / authenticity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geçerlilik, doğruluk, sağlamlık\"."
   },
   {
     "id": "w766",
@@ -16961,7 +17726,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında varyasyon kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Genetik farklılık veya mevsimsel değişimdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"varyasyon, farklılık, çeşitlilik\" kavramını temsil eder."
   },
   {
     "id": "w767",
@@ -16983,7 +17749,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında hız kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Fizikte yönlü sürattir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"speed / pace\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hız, sürat\"."
   },
   {
     "id": "w768",
@@ -17004,7 +17771,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında yaşayabilirlik kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "Projenin hayatta kalabilme ve kar etme gücüdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"feasibility / sustainability\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yaşayabilirlik, uygulanabilirlik\"."
   },
   {
     "id": "w769",
@@ -17026,7 +17794,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası istatistiki değerlendirmeler, modern eğitim kurumlarında civar kavramının hayati önemini doğrulamaktadır.",
     "ydsTip": "'In the vicinity of' (-in civarında/yakınında) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"neighborhood / proximity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"civar, civar bölge, yakın çevre\"."
   },
   {
     "id": "w770",
@@ -17047,7 +17816,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini aniden etkilemiştir.",
     "ydsTip": "Beklenmedik keskin sonlar için kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"abrupt\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"aniden, pat diye, ansızın\"."
   },
   {
     "id": "w771",
@@ -17068,7 +17838,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini yeterli derecede etkilemiştir.",
     "ydsTip": "'Inadequately' zıttıdır; kaynakların yeterliliğidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"adequate\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"yeterli derecede, layıkıyla\"."
   },
   {
     "id": "w772",
@@ -17089,7 +17860,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini olumsuz yönde etkilemiştir.",
     "ydsTip": "'Adversely affect' (olumsuz yönde etkilemek) YDS'nin 1 numaralı collocation'ıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"adverse\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"olumsuz yönde, kötü bir şekilde\"."
   },
   {
     "id": "w773",
@@ -17110,7 +17882,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini iddia edildiğine göre etkilemiştir.",
     "ydsTip": "Hukuk ve haber metinlerinde kesinleşmemiş iddialardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"alleged\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"iddia edildiğine göre, sözde\"."
   },
   {
     "id": "w774",
@@ -17131,7 +17904,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini görünüşe göre etkilemiştir.",
     "ydsTip": "İlk bakışta öyle görünen durumlar içindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"apparent\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"görünüşe göre, anlaşılan\"."
   },
   {
     "id": "w775",
@@ -17152,7 +17926,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini muhtemelen etkilemiştir.",
     "ydsTip": "Akademik makalelerde tez savunurken yumuşatma zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"arguab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"muhtemelen, iddia edilebileceği gibi\"."
   },
   {
     "id": "w776",
@@ -17173,7 +17948,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini kronolojik olarak etkilemiştir.",
     "ydsTip": "Tarihi olayların zamana göre dizilimidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"chronological\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"kronolojik olarak, zaman sırasıyla\"."
   },
   {
     "id": "w777",
@@ -17194,7 +17970,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini tesadüfen etkilemiştir.",
     "ydsTip": "Aynı zamana tesadüf eden olaylardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"coincidental\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"tesadüfen, rastlantı eseri\"."
   },
   {
     "id": "w778",
@@ -17215,7 +17992,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini nispeten etkilemiştir.",
     "ydsTip": "'Relatively' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"comparative\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"nispeten, oranla, karşılaştırmalı olarak\"."
   },
   {
     "id": "w779",
@@ -17236,7 +18014,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini etraflıca etkilemiştir.",
     "ydsTip": "Derinlemesine incelemedir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"comprehensive\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"etraflıca, kapsamlı bir şekilde\"."
   },
   {
     "id": "w780",
@@ -17257,7 +18036,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini eşzamanlı olarak etkilemiştir.",
     "ydsTip": "'Simultaneously' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"concurrent\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"eşzamanlı olarak, aynı anda\"."
   },
   {
     "id": "w781",
@@ -17278,7 +18058,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini oldukça etkilemiştir.",
     "ydsTip": "'Significantly / substantially' ile tam eşleşir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"considerab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"oldukça, bir hayli, epeyce\"."
   },
   {
     "id": "w782",
@@ -17299,7 +18080,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini tutarlı şekilde etkilemiştir.",
     "ydsTip": "Değişmeyen istikrarlı durumları niteler.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"consistent\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"tutarlı şekilde, istikrarla, durmaksızın\"."
   },
   {
     "id": "w783",
@@ -17320,7 +18102,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini göze çarpar biçimde etkilemiştir.",
     "ydsTip": "Açıkça ortada olma halidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"conspicuous\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"göze çarpar biçimde, bariz olarak\"."
   },
   {
     "id": "w784",
@@ -17341,7 +18124,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini aksine etkilemiştir.",
     "ydsTip": "Zıtlık bildiren geçiş zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"converse\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"aksine, tersine, diğer taraftan\"."
   },
   {
     "id": "w785",
@@ -17362,7 +18146,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini hayati derecede etkilemiştir.",
     "ydsTip": "Anahtar noktayı vurgularken kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"crucial\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"hayati derecede, son derece önemli olarak\"."
   },
   {
     "id": "w786",
@@ -17383,7 +18168,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini kasten etkilemiştir.",
     "ydsTip": "'Accidentally' zıttıdır; kasıtlı eylemleri niteler.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"deliberate\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"kasten, bilerek, taammüden\"."
   },
   {
     "id": "w787",
@@ -17404,7 +18190,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini etkili biçimde etkilemiştir.",
     "ydsTip": "Sonuç alıcı şekilde yapılan işlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"effective\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"etkili biçimde, fiilen, pratikte\"."
   },
   {
     "id": "w788",
@@ -17425,7 +18212,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini özenle etkilemiştir.",
     "ydsTip": "İnce işçilik ve planlama içindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"elaborate\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"özenle, inceden inceye, ayrıntılı olarak\"."
   },
   {
     "id": "w789",
@@ -17446,7 +18234,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini özünde etkilemiştir.",
     "ydsTip": "Konunun özünü anlatırken kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"essential\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"özünde, esasen, temelde\"."
   },
   {
     "id": "w790",
@@ -17467,7 +18256,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini eninde sonunda etkilemiştir.",
     "ydsTip": "'Ultimately' ile birebir eştir; zaman akışının sonudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"eventual\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"eninde sonunda, nihayetinde\"."
   },
   {
     "id": "w791",
@@ -17488,7 +18278,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini anlaşılan etkilemiştir.",
     "ydsTip": "Kanıtlara dayanan bariz durumu anlatır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"evident\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"anlaşılan, besbelli, açıkça\"."
   },
   {
     "id": "w792",
@@ -17510,7 +18301,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini sadece etkilemiştir.",
     "ydsTip": "'Solely / only' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"exclusive\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"sadece, yalnızca, münhasıran\"."
   },
   {
     "id": "w793",
@@ -17531,7 +18323,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini açıkça etkilemiştir.",
     "ydsTip": "'Implicitly' (üstü kapalı) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"explicit\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"açıkça, net bir şekilde, lafı dolandırmadan\"."
   },
   {
     "id": "w794",
@@ -17552,7 +18345,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini kapsamlı şekilde etkilemiştir.",
     "ydsTip": "Geniş çapta incelenmiş veya kullanılmış olandır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"extensive\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"kapsamlı şekilde, yaygın olarak\"."
   },
   {
     "id": "w795",
@@ -17573,7 +18367,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini esas itibariyle etkilemiştir.",
     "ydsTip": "İki şeyin kökten farklı olduğunu anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"fundamental\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"esas itibariyle, kökünden, temelde\"."
   },
   {
     "id": "w796",
@@ -17594,7 +18389,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini kademeli olarak etkilemiştir.",
     "ydsTip": "Zamanla aşama aşama gerçekleşen değişimdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"gradual\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"kademeli olarak, yavaş yavaş\"."
   },
   {
     "id": "w797",
@@ -17615,7 +18411,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini derhal etkilemiştir.",
     "ydsTip": "Gecikmeksizin yapılan eylemlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"immediate\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"derhal, hemen, anında\"."
   },
   {
     "id": "w798",
@@ -17636,7 +18433,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini muazzam derecede etkilemiştir.",
     "ydsTip": "Çok yüksek dereceyi niteler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"immense\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"muazzam derecede, fevkalade\"."
   },
   {
     "id": "w799",
@@ -17657,7 +18455,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini üstü kapalı olarak etkilemiştir.",
     "ydsTip": "Sözle açıkça söylenmeden kabul edilendir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"implicit\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"üstü kapalı olarak, dolaylı yoldan\"."
   },
   {
     "id": "w800",
@@ -17678,7 +18477,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini sehven etkilemiştir.",
     "ydsTip": "'Deliberately' (kasten) zıttıdır; YDS'nin favorisidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"inadvertent\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"sehven, kazara, istemeyerek\"."
   },
   {
     "id": "w801",
@@ -17699,7 +18499,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini giderek artan biçimde etkilemiştir.",
     "ydsTip": "Gittikçe zorlaşan durumları anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"increasing\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"giderek artan biçimde, gitgide\"."
   },
   {
     "id": "w802",
@@ -17720,7 +18521,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini vazgeçilmez şekilde etkilemiştir.",
     "ydsTip": "Birbirinden ayrılamaz bağları niteler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"indispensab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"vazgeçilmez şekilde, zorunlu olarak\"."
   },
   {
     "id": "w803",
@@ -17741,7 +18543,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini doğası gereği etkilemiştir.",
     "ydsTip": "Bir şeyin doğasında var olan riski anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"inherent\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"doğası gereği, fıtraten, aslen\"."
   },
   {
     "id": "w804",
@@ -17762,7 +18565,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini başlangıçta etkilemiştir.",
     "ydsTip": "'Later' veya 'however' ile tezat cümle kurar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"initial\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"başlangıçta, ilk etapta\"."
   },
   {
     "id": "w805",
@@ -17783,7 +18587,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini istisnasız etkilemiştir.",
     "ydsTip": "Asla şaşmayan sonuçları niteler.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"invariab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"istisnasız, her defasında, daima\"."
   },
   {
     "id": "w806",
@@ -17803,7 +18608,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini işin garibi etkilemiştir.",
     "ydsTip": "Beklenenin tam tersi sonuç doğuran olaylardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"ironical\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"işin garibi, ironik bir şekilde\"."
   },
   {
     "id": "w807",
@@ -17825,7 +18631,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini büyük ölçüde etkilemiştir.",
     "ydsTip": "'Largely due to' (-büyük ölçüde ... yüzünden) çok sevilir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"large\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"büyük ölçüde, çoğunlukla\"."
   },
   {
     "id": "w808",
@@ -17846,7 +18653,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini belirgin şekilde etkilemiştir.",
     "ydsTip": "İki durum arasındaki belirgin farkı anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"marked\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"belirgin şekilde, göze çarpar biçimde\"."
   },
   {
     "id": "w809",
@@ -17867,7 +18675,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini titizlikle etkilemiştir.",
     "ydsTip": "Araştırmacının titizliğini niteler.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"meticulous\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"titizlikle, kılı kırk yararak\"."
   },
   {
     "id": "w810",
@@ -17888,7 +18697,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini orta derecede etkilemiştir.",
     "ydsTip": "Aşırıya kaçmayan derecelerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"moderate\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"orta derecede, ılımlı olarak\"."
   },
   {
     "id": "w811",
@@ -17909,7 +18719,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini karşılıklı olarak etkilemiştir.",
     "ydsTip": "'Mutually beneficial' (karşılıklı fayda sağlayan) kalıptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"mutual\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"karşılıklı olarak, müştereken\"."
   },
   {
     "id": "w812",
@@ -17930,7 +18741,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini ezici bir çoğunlukla etkilemiştir.",
     "ydsTip": "Ezici oy çokluğunu veya desteği anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OVER (aşırı/üstünde)\" + \"whelmingly\". Sınırları aşıp üstün gelmek: \"ezici bir çoğunlukla, ağırlıklı olarak\"."
   },
   {
     "id": "w813",
@@ -17951,7 +18763,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini çelişkili biçimde etkilemiştir.",
     "ydsTip": "Mantığa ters görünen ama doğru olan gerçektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"paradoxical\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"çelişkili biçimde, paradoksal olarak\"."
   },
   {
     "id": "w814",
@@ -17972,7 +18785,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini düzenli aralıklarla etkilemiştir.",
     "ydsTip": "Belirli zaman dilimlerinde tekrarlanan kontroldür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"periodical\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"düzenli aralıklarla, periyodik olarak\"."
   },
   {
     "id": "w815",
@@ -17993,7 +18807,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini kalıcı olarak etkilemiştir.",
     "ydsTip": "'Temporarily' (geçici olarak) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"permanent\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"kalıcı olarak, temelli\"."
   },
   {
     "id": "w816",
@@ -18014,7 +18829,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini akla yatkın bir şekilde etkilemiştir.",
     "ydsTip": "Mantıklı ve ikna edici açıklamadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"plausib\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"akla yatkın bir şekilde, makul olarak\"."
   },
   {
     "id": "w817",
@@ -18035,7 +18851,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini potansiyel olarak etkilemiştir.",
     "ydsTip": "Gelecekte felakete yol açabilecek durumlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"potential\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"potansiyel olarak, muhtemelen\"."
   },
   {
     "id": "w818",
@@ -18056,7 +18873,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini tahminen etkilemiştir.",
     "ydsTip": "Mevcut delillere göre yapılan güçlü tahmindir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"presumab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"tahminen, büyük ihtimalle, herhalde\"."
   },
   {
     "id": "w819",
@@ -18078,7 +18896,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini öncelikle etkilemiştir.",
     "ydsTip": "'Mainly / chiefly' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"primari\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"öncelikle, esasen, başlıca\"."
   },
   {
     "id": "w820",
@@ -18099,7 +18918,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini derinden etkilemiştir.",
     "ydsTip": "Bir olayın insanı veya toplumu derinden sarsmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"profound\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"derinden, köklü biçimde, fazlasıyla\"."
   },
   {
     "id": "w821",
@@ -18120,7 +18940,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini kökten etkilemiştir.",
     "ydsTip": "Eski düzeni temelden değiştirmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"radical\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"kökten, radikal biçimde, tamamen\"."
   },
   {
     "id": "w822",
@@ -18141,7 +18962,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini rastgele etkilemiştir.",
     "ydsTip": "Bilimsel deneyde deneklerin rastgele seçilmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"random\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"rastgele, gelişigüzel\"."
   },
   {
     "id": "w823",
@@ -18163,7 +18985,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini hızla etkilemiştir.",
     "ydsTip": "'Grow / increase / decline rapidly' standarttır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"rapid\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"hızla, çabucak, süratle\"."
   },
   {
     "id": "w824",
@@ -18184,7 +19007,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini amansızca etkilemiştir.",
     "ydsTip": "Asla pes etmeyen ısrarlı çalışmadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"relentless\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"amansızca, dur durak bilmeden\"."
   },
   {
     "id": "w825",
@@ -18205,7 +19029,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini dikkate değer biçimde etkilemiştir.",
     "ydsTip": "İnsanı şaşırtacak kadar başarılı sonuçtur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"remarkab\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"dikkate değer biçimde, olağanüstü şekilde\"."
   },
   {
     "id": "w826",
@@ -18227,7 +19052,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini sıkı sıkıya etkilemiştir.",
     "ydsTip": "Laboratuvar testlerinin titizliğidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"rigorous\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"sıkı sıkıya, büyük bir titizlikle\"."
   },
   {
     "id": "w827",
@@ -18248,7 +19074,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini neredeyse hiç etkilemiştir.",
     "ydsTip": "'Hardly / barely / scarcely' olumsuzluk anlamı katar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"scarce\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"neredeyse hiç, hemen hemen hiç\"."
   },
   {
     "id": "w828",
@@ -18270,7 +19097,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini keskin bir şekilde etkilemiştir.",
     "ydsTip": "Grafiklerdeki keskin düşüş veya sert eleştiridir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"sharp\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"keskin bir şekilde, sertçe\"."
   },
   {
     "id": "w829",
@@ -18291,7 +19119,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini önemli ölçüde etkilemiştir.",
     "ydsTip": "İstatistiksel ve bilimsel metinlerin en çok çıkan zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"significant\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"önemli ölçüde, belirgin biçimde\"."
   },
   {
     "id": "w830",
@@ -18312,7 +19141,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini eşzamanlı olarak etkilemiştir.",
     "ydsTip": "'Concurrently' ile birebir eşleşir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"simultaneous\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"eşzamanlı olarak, aynı anda\"."
   },
   {
     "id": "w831",
@@ -18333,7 +19163,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini yalnızca etkilemiştir.",
     "ydsTip": "'Exclusively / only' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"sole\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"yalnızca, sadece, sırf\"."
   },
   {
     "id": "w832",
@@ -18354,7 +19185,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini büyük ölçüde etkilemiştir.",
     "ydsTip": "'Significantly / considerably' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"stantially\". Temelde yer alıp: \"büyük ölçüde, esaslı surette, önemli derecede\"."
   },
   {
     "id": "w833",
@@ -18375,7 +19207,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini ince bir şekilde etkilemiştir.",
     "ydsTip": "Fark edilmesi güç küçük dokunuşlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"tly\". Temelde yer alıp: \"ince bir şekilde, belli belirsiz\"."
   },
   {
     "id": "w834",
@@ -18396,7 +19229,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini geçici olarak etkilemiştir.",
     "ydsTip": "'Permanently' (kalıcı) zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"temporari\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"geçici olarak, bir süreliğine\"."
   },
   {
     "id": "w835",
@@ -18417,7 +19251,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini teorik olarak etkilemiştir.",
     "ydsTip": "Pratikte (practically) tam karşılığı olmayabilir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"theoretical\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"teorik olarak, kağıt üzerinde\"."
   },
   {
     "id": "w836",
@@ -18439,7 +19274,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini baştan sona etkilemiştir.",
     "ydsTip": "Eksiksiz yapılan araştırmalardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"thorough\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"baştan sona, etraflıca, tamamen\"."
   },
   {
     "id": "w837",
@@ -18460,7 +19296,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini muazzam derecede etkilemiştir.",
     "ydsTip": "Çok yüksek etki derecesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"tremendous\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"muazzam derecede, fevkalade\"."
   },
   {
     "id": "w838",
@@ -18481,7 +19318,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini nihayetinde etkilemiştir.",
     "ydsTip": "'Eventually' eşanlamlısıdır; sonuç paragrafında çıkar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"ultimate\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"nihayetinde, sonuçta, eninde sonunda\"."
   },
   {
     "id": "w839",
@@ -18502,7 +19340,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini oybirliğiyle etkilemiştir.",
     "ydsTip": "Tüm üyelerin kabul oyudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"animously\". \"animously\" kökünün zıddı olarak \"oybirliğiyle, ittifakla\" anlamına gelir."
   },
   {
     "id": "w840",
@@ -18523,7 +19362,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini inkar edilemez biçimde etkilemiştir.",
     "ydsTip": "Şüphe götürmeyen gerçekliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"deniably\". \"deniably\" kökünün zıddı olarak \"inkar edilemez biçimde, kesinlikle\" anlamına gelir."
   },
   {
     "id": "w841",
@@ -18544,7 +19384,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini beklenmedik şekilde etkilemiştir.",
     "ydsTip": "Sürpriz gelişmeleri niteler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"expectedly\". \"expectedly\" kökünün zıddı olarak \"beklenmedik şekilde, aniden\" anlamına gelir."
   },
   {
     "id": "w842",
@@ -18565,7 +19406,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini tekdüze şekilde etkilemiştir.",
     "ydsTip": "Eşit ve homojen dağılımdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"iformly\". \"iformly\" kökünün zıddı olarak \"tekdüze şekilde, homojen olarak, eşitçe\" anlamına gelir."
   },
   {
     "id": "w843",
@@ -18586,7 +19428,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini daha önce görülmemiş şekilde etkilemiştir.",
     "ydsTip": "Tarihte ilk defa bu denli yüksek olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"precedentedly\". \"precedentedly\" kökünün zıddı olarak \"daha önce görülmemiş şekilde\" anlamına gelir."
   },
   {
     "id": "w844",
@@ -18607,7 +19450,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini acil olarak etkilemiştir.",
     "ydsTip": "Gecikmeye tahammülü olmayan durumlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"urgent\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"acil olarak, ivedilikle\"."
   },
   {
     "id": "w845",
@@ -18628,7 +19472,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İletişimdeki teknolojik gelişmeler, küresel düzeyde işbirlikçi eğitim metodolojilerini büyük ölçüde etkilemiştir.",
     "ydsTip": "İki şey arasındaki devasa farkı vurgular.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ZARF KODU: \"vast\" sıfatının zarf halidir. Cümlede fiilin nasıl yapıldığını belirtir: \"büyük ölçüde, muazzam derecede\"."
   },
   {
     "id": "w846",
@@ -18649,7 +19494,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri etkilemek gerektiğini vurgulamaktadır.",
     "ydsTip": "Tavsiyeye göre davranmak veya ilacın etki etmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ACT\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"etkilemek, harekete geçmek (tavsiye üzerine)\"."
   },
   {
     "id": "w847",
@@ -18670,7 +19516,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ima etmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Metinde bir olaya dolaylı yoldan gönderme yapmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ALLUDE\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"ima etmek, üstü kapalı değinmek\"."
   },
   {
     "id": "w848",
@@ -18691,7 +19538,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri hesaba katmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Take into consideration' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ALLOW\" fiili \"FOR\" edatıyla birleşerek özel bir kalıp oluşturur: \"hesaba katmak, göz önünde bulundurmak\"."
   },
   {
     "id": "w849",
@@ -18713,7 +19561,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri tutmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Mali miktarın bir rakama ulaşması veya eşdeğer olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"AMOUNT\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"tutmak, -e varmak, anlamına gelmek\"."
   },
   {
     "id": "w850",
@@ -18734,7 +19583,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri uygulanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Apply to' (geçerli olmak), 'apply for' (başvurmak).",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"APPLY\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"uygulanmak, geçerli olmak, başvurmak\"."
   },
   {
     "id": "w851",
@@ -18755,7 +19605,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri onaylamak gerektiğini vurgulamaktadır.",
     "ydsTip": "Ahlaken veya idari olarak uygun bulmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"APPROVE\" fiili \"OF\" edatıyla birleşerek özel bir kalıp oluşturur: \"onaylamak, uygun bulmak, tasvip etmek\"."
   },
   {
     "id": "w852",
@@ -18776,7 +19627,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kaynaklanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Result from / stem from' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ARISE\" fiili \"FROM\" edatıyla birleşerek özel bir kalıp oluşturur: \"kaynaklanmak, -den ileri gelmek\"."
   },
   {
     "id": "w853",
@@ -18797,7 +19649,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri geri adım atmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Müzakerelerde veya tehdit karşısında geri çekilmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BACK\" fiili \"DOWN\" edatıyla birleşerek özel bir kalıp oluşturur: \"geri adım atmak, caymak\"."
   },
   {
     "id": "w854",
@@ -18819,7 +19672,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri desteklemek gerektiğini vurgulamaktadır.",
     "ydsTip": "İddiaları kanıtla desteklemek veya veri yedeklemektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BACK\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"desteklemek, yedeklemek, arka çıkmak\"."
   },
   {
     "id": "w855",
@@ -18840,7 +19694,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kurtarmak (mali olarak) gerektiğini vurgulamaktadır.",
     "ydsTip": "Hükümetin batmakta olan şirketleri kurtarmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BAIL\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"kurtarmak (mali olarak), kefaletle çıkarmak\"."
   },
   {
     "id": "w856",
@@ -18862,7 +19717,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri doğrulamak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Confirm / substantiate' phrasal verb karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BEAR\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"doğrulamak, teyit etmek, haklı çıkarmak\"."
   },
   {
     "id": "w857",
@@ -18883,7 +19739,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri patlamak gerektiğini vurgulamaktadır.",
     "ydsTip": "Fiziksel patlama veya aniden öfkelenmedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BLOW\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"patlamak, infilak etmek, öfkelenmek\"."
   },
   {
     "id": "w858",
@@ -18905,7 +19762,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri bozulmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Makinelerin bozulması veya kimyasal parçalanmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BREAK\" fiili \"DOWN\" edatıyla birleşerek özel bir kalıp oluşturur: \"bozulmak, çökmek, parçalamak\"."
   },
   {
     "id": "w859",
@@ -18927,7 +19785,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri zorla girmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Hırsızın eve girmesi veya söze müdahaledir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BREAK\" fiili \"IN\" edatıyla birleşerek özel bir kalıp oluşturur: \"zorla girmek, lafa karışmak\"."
   },
   {
     "id": "w860",
@@ -18948,7 +19807,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri patlak vermek (savaş/yangın/salgın) gerektiğini vurgulamaktadır.",
     "ydsTip": "Savaş, yangın veya salgının aniden başlamasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BREAK\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"patlak vermek (savaş/yangın/salgın)\"."
   },
   {
     "id": "w861",
@@ -18969,7 +19829,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri yarmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Breakthrough' (çığır açıcı buluş) köküdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BREAK\" fiili \"THROUGH\" edatıyla birleşerek özel bir kalıp oluşturur: \"yarmak, engeli aşmak, çığır açmak\"."
   },
   {
     "id": "w862",
@@ -18991,7 +19852,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ayrılmak gerektiğini vurgulamaktadır.",
     "ydsTip": "İmparatorluğun dağılması veya ilişkilerin bitmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BREAK\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"ayrılmak, dağılmak, parçalanmak\"."
   },
   {
     "id": "w863",
@@ -19012,7 +19874,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri öne çekmek (tarihi) gerektiğini vurgulamaktadır.",
     "ydsTip": "Tarihi erkene almak veya öneri sunmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BRING\" fiili \"FORWARD\" edatıyla birleşerek özel bir kalıp oluşturur: \"öne çekmek (tarihi), ileri sürmek\"."
   },
   {
     "id": "w864",
@@ -19034,7 +19897,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri çocuk büyütmek gerektiğini vurgulamaktadır.",
     "ydsTip": "1. Çocuk yetiştirmek; 2. Konuyu gündeme getirmek.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BRING\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"çocuk büyütmek, gündeme getirmek\"."
   },
   {
     "id": "w865",
@@ -19055,7 +19919,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri birikmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Bağışıklık geliştirmek veya gerilimin tırmanmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BUILD\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"birikmek, geliştirmek, artırmak\"."
   },
   {
     "id": "w866",
@@ -19076,7 +19941,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri tükenmek gerektiğini vurgulamaktadır.",
     "ydsTip": "İş yerinde aşırı stresten tükenme sendromudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BURN\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"tükenmek, gücü kalmamak, yanıp sönmek\"."
   },
   {
     "id": "w867",
@@ -19098,7 +19964,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ziyaret etmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Hükümete veya halka resmi çağrı yapmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CALL\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"ziyaret etmek, çağrıda bulunmak, rica etmek\"."
   },
   {
     "id": "w868",
@@ -19120,7 +19987,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri devam etmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Continue' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CARRY\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"devam etmek, sürdürmek\"."
   },
   {
     "id": "w869",
@@ -19141,7 +20009,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri popüler olmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Modanın tutulması veya bir fikrin anlaşılmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CATCH\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"popüler olmak, tutulmak, kavramak\"."
   },
   {
     "id": "w870",
@@ -19162,7 +20031,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri yetişmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Rakiplerin gerisinde kalmayıp seviyeyi yakalamaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CATCH\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"yetişmek, aynı seviyeye gelmek\"."
   },
   {
     "id": "w871",
@@ -19184,7 +20054,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ihtiyacını karşılamak gerektiğini vurgulamaktadır.",
     "ydsTip": "Belli bir kitlenin taleplerine hizmet sunmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CATER\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"ihtiyacını karşılamak, hitap etmek\"."
   },
   {
     "id": "w872",
@@ -19206,7 +20077,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri açıklığa kavuşturmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Yanlış anlaşılmayı gidermek veya enfeksiyonun geçmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CLEAR\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"açıklığa kavuşturmak, havanın açması, iyileşmek\"."
   },
   {
     "id": "w873",
@@ -19227,7 +20099,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kapatmak (şirketi/fabrikayı) gerektiğini vurgulamaktadır.",
     "ydsTip": "Tesislerin veya işletmelerin kalıcı kapatılmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CLOSE\" fiili \"DOWN\" edatıyla birleşerek özel bir kalıp oluşturur: \"kapatmak (şirketi/fabrikayı), iflas etmek\"."
   },
   {
     "id": "w874",
@@ -19248,7 +20121,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri karşılaşmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Encounter / run into' rastlantısal karşılaşmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COME\" fiili \"ACROSS\" edatıyla birleşerek özel bir kalıp oluşturur: \"karşılaşmak, denk gelmek, intiba bırakmak\"."
   },
   {
     "id": "w875",
@@ -19269,7 +20143,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ortaya çıkmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Projenin yolunda gitmesi veya fırsatın çıkmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COME\" fiili \"ALONG\" edatıyla birleşerek özel bir kalıp oluşturur: \"ortaya çıkmak, gelişmek, eşlik etmek\"."
   },
   {
     "id": "w876",
@@ -19291,7 +20166,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri elde etmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Hard to come by' (elde edilmesi çok zor/nadir bulunan).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COME\" fiili \"BY\" edatıyla birleşerek özel bir kalıp oluşturur: \"elde etmek, ele geçirmek, uğramak\"."
   },
   {
     "id": "w877",
@@ -19312,7 +20188,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri hastalığa yakalanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Grip veya zatürreye yakalanmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COME\" fiili \"DOWN\" edatıyla birleşerek özel bir kalıp oluşturur: \"hastalığa yakalanmak, yatağa düşmek\"."
   },
   {
     "id": "w878",
@@ -19333,7 +20210,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri mirasa konmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Come into force' (yürürlüğe girmek) ve mirasa konmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COME\" fiili \"INTO\" edatıyla birleşerek özel bir kalıp oluşturur: \"mirasa konmak, girmek (yürürlüğe)\"."
   },
   {
     "id": "w879",
@@ -19354,7 +20232,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ortaya çıkmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Gerçeklerin aydınlanması veya kitabın basılmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COME\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"ortaya çıkmak, piyasaya çıkmak, yayınlanmak\"."
   },
   {
     "id": "w880",
@@ -19376,7 +20255,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri bulmak (fikir/çözüm) gerektiğini vurgulamaktadır.",
     "ydsTip": "Zekice bir çözüm veya fikir üretmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COME\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"bulmak (fikir/çözüm), ileri sürmek\"."
   },
   {
     "id": "w881",
@@ -19397,7 +20277,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri onay vermek gerektiğini vurgulamaktadır.",
     "ydsTip": "Tıbbi ameliyata veya anlaşmaya rıza göstermektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CONSENT\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"onay vermek, rıza göstermek\"."
   },
   {
     "id": "w882",
@@ -19418,7 +20299,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri -den oluşmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Be composed of / comprise' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CONSIST\" fiili \"OF\" edatıyla birleşerek özel bir kalıp oluşturur: \"-den oluşmak, meydana gelmek\"."
   },
   {
     "id": "w883",
@@ -19440,7 +20322,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri güvenmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Rely on / depend on' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"COUNT\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"güvenmek, bel bağlamak\"."
   },
   {
     "id": "w884",
@@ -19462,7 +20345,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kısmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Harcamaları veya tüketimi kısmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CUT\" fiili \"BACK\" edatıyla birleşerek özel bir kalıp oluşturur: \"kısmak, azaltmak, tasarruf etmek\"."
   },
   {
     "id": "w885",
@@ -19483,7 +20367,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri azaltmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Cut back on' ile tam eştir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CUT\" fiili \"DOWN\" edatıyla birleşerek özel bir kalıp oluşturur: \"azaltmak, kısmak\"."
   },
   {
     "id": "w886",
@@ -19505,7 +20390,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kesmek (elektrik/gaz) gerektiğini vurgulamaktadır.",
     "ydsTip": "Enerjinin kesilmesi veya dünyanın geri kalanından soyutlanmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"CUT\" fiili \"OFF\" edatıyla birleşerek özel bir kalıp oluşturur: \"kesmek (elektrik/gaz), ilişiğini kesmek, izole etmek\"."
   },
   {
     "id": "w887",
@@ -19527,7 +20413,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ele almak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Cope with / handle' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DEAL\" fiili \"WITH\" edatıyla birleşerek özel bir kalıp oluşturur: \"ele almak, ilgilenmek, başa çıkmak\"."
   },
   {
     "id": "w888",
@@ -19549,7 +20436,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri bağlı olmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Hinge on / rely on' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DEPEND\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"bağlı olmak, güvenmek\"."
   },
   {
     "id": "w889",
@@ -19570,7 +20458,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri nesli tükenmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Dinozorların veya geleneklerin yok olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DIE\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"nesli tükenmek, yok olmak, silinmek\"."
   },
   {
     "id": "w890",
@@ -19592,7 +20481,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri elden çıkarmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Zehirli atıkların imhasında 1 numaradır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"pose of\". Durumun tersine dönmesi: \"elden çıkarmak, imha etmek, kurtulmak\"."
   },
   {
     "id": "w891",
@@ -19614,7 +20504,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri yürürlükten kaldırmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Abolish / eliminate' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DO\" fiili \"AWAY\" edatıyla birleşerek özel bir kalıp oluşturur: \"yürürlükten kaldırmak, ortadan kaldırmak\"."
   },
   {
     "id": "w892",
@@ -19636,7 +20527,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri yararlanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Geçmiş tecrübelerden veya kaynaklardan istifade etmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DRAW\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"yararlanmak, faydalanmak, kullanmak\"."
   },
   {
     "id": "w893",
@@ -19658,7 +20550,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri hazırlamak gerektiğini vurgulamaktadır.",
     "ydsTip": "Hukuki sözleşme veya plan hazırlamaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DRAW\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"hazırlamak, kaleme almak (plan/sözleşme)\"."
   },
   {
     "id": "w894",
@@ -19679,7 +20572,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri bırakmak (okulu) gerektiğini vurgulamaktadır.",
     "ydsTip": "Okulu yarıda bırakıp ayrılmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DROP\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"bırakmak (okulu), terk etmek, çekilmek\"."
   },
   {
     "id": "w895",
@@ -19700,7 +20594,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri -ile sonuçlanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Başarısızlıkla veya felaketle sonuçlanmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"END\" fiili \"IN\" edatıyla birleşerek özel bir kalıp oluşturur: \"-ile sonuçlanmak, son bulmak\"."
   },
   {
     "id": "w896",
@@ -19721,7 +20616,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kendini ...-de bulmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Beklenmedik bir sonuçla karşılaşmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"END\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"kendini ...-de bulmak, neticelenmek\"."
   },
   {
     "id": "w897",
@@ -19742,7 +20638,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri meşgul olmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Participate in' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ENGAGE\" fiili \"IN\" edatıyla birleşerek özel bir kalıp oluşturur: \"meşgul olmak, girişmek, yer almak\"."
   },
   {
     "id": "w898",
@@ -19763,7 +20660,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kabullenmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Acı gerçekleri inkar etmeyip kabullenmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"FACE\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"kabullenmek, yüzleşmek, göğüs germek\"."
   },
   {
     "id": "w899",
@@ -19784,7 +20682,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri parçalanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Sistemin veya planların tuzla buz olmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"FALL\" fiili \"APART\" edatıyla birleşerek özel bir kalıp oluşturur: \"parçalanmak, dağılmak, çökmek\"."
   },
   {
     "id": "w900",
@@ -19805,7 +20704,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri son çare olarak başvurmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Zor günde birikimlere veya B planına sığınmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"FALL\" fiili \"BACK\" edatıyla birleşerek özel bir kalıp oluşturur: \"son çare olarak başvurmak\"."
   },
   {
     "id": "w901",
@@ -19826,7 +20726,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri gerisinde kalmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Yarışta veya borç ödemede geriye düşmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"FALL\" fiili \"BEHIND\" edatıyla birleşerek özel bir kalıp oluşturur: \"gerisinde kalmak, ayak uyduramamak\"."
   },
   {
     "id": "w902",
@@ -19848,7 +20749,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri halletmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Karmaşık bir problemi çözüme kavuşturmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"FIGURE (şekil/sayı)\". Sayıların içinden çıkıp gizemi çözmek, kavramak."
   },
   {
     "id": "w903",
@@ -19870,7 +20772,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri öğrenmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Discover / learn' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"FIND\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"öğrenmek, keşfetmek, ortaya çıkarmak\"."
   },
   {
     "id": "w904",
@@ -19891,7 +20794,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri odaklanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Concentrate on' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"FOCUS\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"odaklanmak, yoğunlaşmak\"."
   },
   {
     "id": "w905",
@@ -19912,7 +20816,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri anlatabilmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Fikrini veya mesajını karşı tarafa başarıyla aktarmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GET\" fiili \"ACROSS\" edatıyla birleşerek özel bir kalıp oluşturur: \"anlatabilmek, aktarmak, iletmek\"."
   },
   {
     "id": "w906",
@@ -19933,7 +20838,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri iyi geçinmek gerektiğini vurgulamaktadır.",
     "ydsTip": "İş arkadaşlarıyla uyumlu olmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GET\" fiili \"ALONG\" edatıyla birleşerek özel bir kalıp oluşturur: \"iyi geçinmek, anlaşmak\"."
   },
   {
     "id": "w907",
@@ -19953,7 +20859,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri yanına kar kalmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Suç işleyip ceza almadan sıyrılmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GET\" fiili \"AWAY\" edatıyla birleşerek özel bir kalıp oluşturur: \"yanına kar kalmak, cezasız kurtulmak\"."
   },
   {
     "id": "w908",
@@ -19974,7 +20881,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kıt kanaat geçinmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Az parayla yaşamını idame ettirmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GET\" fiili \"BY\" edatıyla birleşerek özel bir kalıp oluşturur: \"kıt kanaat geçinmek, idare etmek\"."
   },
   {
     "id": "w909",
@@ -19995,7 +20903,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri atlatmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Hastalığı veya yası geride bırakmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GET\" fiili \"OVER\" edatıyla birleşerek özel bir kalıp oluşturur: \"atlatmak, iyileşmek, üstesinden gelmek\"."
   },
   {
     "id": "w910",
@@ -20017,7 +20926,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kurtulmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Dispose of' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GET\" fiili \"RID\" edatıyla birleşerek özel bir kalıp oluşturur: \"kurtulmak, başından savmak, atmak\"."
   },
   {
     "id": "w911",
@@ -20039,7 +20949,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri teslim olmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Baskıya veya ısrara boyun eğmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GIVE\" fiili \"IN\" edatıyla birleşerek özel bir kalıp oluşturur: \"teslim olmak, boyun eğmek, razı olmak\"."
   },
   {
     "id": "w912",
@@ -20061,7 +20972,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri salmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Emit / release' karşılığı olan phrasal verb'dür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GIVE\" fiili \"OFF\" edatıyla birleşerek özel bir kalıp oluşturur: \"salmak, yaymak (koku/gaz/ısı)\"."
   },
   {
     "id": "w913",
@@ -20083,7 +20995,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri bırakmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Alışkanlığı bırakmak veya pes etmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GIVE\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"bırakmak, pes etmek, vazgeçmek\"."
   },
   {
     "id": "w914",
@@ -20105,7 +21018,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri yaşamak gerektiğini vurgulamaktadır.",
     "ydsTip": "Zor dönemlerden geçmek veya evrak incelemektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"GO\" fiili \"THROUGH\" edatıyla birleşerek özel bir kalıp oluşturur: \"yaşamak, geçirmek (zorluk), incelemek\"."
   },
   {
     "id": "w915",
@@ -20127,7 +21041,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kuşaktan kuşağa aktarmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Geleneklerin nesilden nesile devredilmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"HAND\" fiili \"DOWN\" edatıyla birleşerek özel bir kalıp oluşturur: \"kuşaktan kuşağa aktarmak, miras bırakmak\"."
   },
   {
     "id": "w916",
@@ -20149,7 +21064,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri tutmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Gözyaşını tutmak veya gelişmeyi frenlemektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"HOLD\" fiili \"BACK\" edatıyla birleşerek özel bir kalıp oluşturur: \"tutmak, gizlemek, engellemek\"."
   },
   {
     "id": "w917",
@@ -20170,7 +21086,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ayak uydurmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Gelişen teknolojiye ve değişime ayak uydurmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"KEEP\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"ayak uydurmak, gerisinde kalmamak\"."
   },
   {
     "id": "w918",
@@ -20192,7 +21109,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri yol açmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Cause / bring about / result in' temel sebep-sonuç fiilidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"LEAD\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"yol açmak, sebep olmak\"."
   },
   {
     "id": "w919",
@@ -20214,7 +21132,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri hor görmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Başkalarını aşağılamak veya küçümsemektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"LOOK\" fiili \"DOWN\" edatıyla birleşerek özel bir kalıp oluşturur: \"hor görmek, tepeden bakmak, küçümsemek\"."
   },
   {
     "id": "w920",
@@ -20234,7 +21153,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri dört gözle beklemek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Look forward to + V-ing' yapısıyla sınav gramerinin klasiğidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"LOOK\" fiili \"FORWARD\" edatıyla birleşerek özel bir kalıp oluşturur: \"dört gözle beklemek\"."
   },
   {
     "id": "w921",
@@ -20256,7 +21176,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri araştırmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Investigate / probe' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"LOOK\" fiili \"INTO\" edatıyla birleşerek özel bir kalıp oluşturur: \"araştırmak, soruşturmak, incelemek\"."
   },
   {
     "id": "w922",
@@ -20278,7 +21199,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri hayranlık duymak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Respect / admire' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"LOOK\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"hayranlık duymak, saygı beslemek, örnek almak\"."
   },
   {
     "id": "w923",
@@ -20299,7 +21221,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri vefat etmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Die' kelimesinin kibar halidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"PASS\" fiili \"AWAY\" edatıyla birleşerek özel bir kalıp oluşturur: \"vefat etmek, hayata gözlerini yummak\"."
   },
   {
     "id": "w924",
@@ -20320,7 +21243,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri borcunu kapatmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Verilen emeklerin karşılığını vermesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"PAY\" fiili \"OFF\" edatıyla birleşerek özel bir kalıp oluşturur: \"borcunu kapatmak, meyvesini vermek, iyi sonuçlanmak\"."
   },
   {
     "id": "w925",
@@ -20341,7 +21265,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kademeli olarak durdurmak/kaldırmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Kömür veya zehirli kimyasalları aşamalı olarak yasaklamaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"PHASE\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"kademeli olarak durdurmak/kaldırmak\"."
   },
   {
     "id": "w926",
@@ -20363,7 +21288,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri belirtmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Araştırmacının makalede bir gerçeğe dikkat çekmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"POINT\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"belirtmek, işaret etmek, dikkat çekmek\"."
   },
   {
     "id": "w927",
@@ -20385,7 +21311,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri ertelemek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Postpone / delay' karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"PUT\" fiili \"OFF\" edatıyla birleşerek özel bir kalıp oluşturur: \"ertelemek, soğutmak\"."
   },
   {
     "id": "w928",
@@ -20406,7 +21333,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri söndürmek (yangın/sigara) gerektiğini vurgulamaktadır.",
     "ydsTip": "'Extinguish' ile tam eştir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"PUT\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"söndürmek (yangın/sigara)\"."
   },
   {
     "id": "w929",
@@ -20428,7 +21356,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri tahammül etmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Tolerate / endure' karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"PUT\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"tahammül etmek, katlanmak, sineye çekmek\"."
   },
   {
     "id": "w930",
@@ -20450,7 +21379,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri güvenmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Depend on / count on' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"RELY\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"güvenmek, bel bağlamak, muhtaç olmak\"."
   },
   {
     "id": "w931",
@@ -20471,7 +21401,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri son çare olarak başvurmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Resort to violence' (şiddete başvurmak) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"RESORT\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"son çare olarak başvurmak\"."
   },
   {
     "id": "w932",
@@ -20492,7 +21423,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri -den kaynaklanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Sebep arkadan gelir: Sonuç + result from + Sebep.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"RESULT\" fiili \"FROM\" edatıyla birleşerek özel bir kalıp oluşturur: \"-den kaynaklanmak, ileri gelmek\"."
   },
   {
     "id": "w933",
@@ -20514,7 +21446,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri -ile sonuçlanmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Sonuç önden gelir: Sebep + result in + Sonuç.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"RESULT\" fiili \"IN\" edatıyla birleşerek özel bir kalıp oluşturur: \"-ile sonuçlanmak, sebep olmak\"."
   },
   {
     "id": "w934",
@@ -20535,7 +21468,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri tükenmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Zamanın veya suyun tükenmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"RUN\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"tükenmek, bitmek (kaynak)\"."
   },
   {
     "id": "w935",
@@ -20557,7 +21491,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri tetiklemek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Trigger / spark' anlamında olayları başlatmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"SET\" fiili \"OFF\" edatıyla birleşerek özel bir kalıp oluşturur: \"tetiklemek, yola çıkmak, patlatmak\"."
   },
   {
     "id": "w936",
@@ -20579,7 +21514,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri kurmak gerektiğini vurgulamaktadır.",
     "ydsTip": "'Establish / found' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"SET\" fiili \"UP\" edatıyla birleşerek özel bir kalıp oluşturur: \"kurmak, tesis etmek, oluşturmak\"."
   },
   {
     "id": "w937",
@@ -20601,7 +21537,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri temsil etmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Kısaltmaların açılımı veya sembolizmdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"STAND\" fiili \"FOR\" edatıyla birleşerek özel bir kalıp oluşturur: \"temsil etmek, anlamına gelmek, hoşgörmek\"."
   },
   {
     "id": "w938",
@@ -20621,7 +21558,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri çekmek (aile büyüğüne) gerektiğini vurgulamaktadır.",
     "ydsTip": "Karakter veya tip olarak ebeveynine benzemektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"TAKE\" fiili \"AFTER\" edatıyla birleşerek özel bir kalıp oluşturur: \"çekmek (aile büyüğüne), benzemek\"."
   },
   {
     "id": "w939",
@@ -20643,7 +21581,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri üstlenmek (sorumluluk) gerektiğini vurgulamaktadır.",
     "ydsTip": "Büyük bir görevi veya sorumluluğu üzerine almaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"TAKE\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"üstlenmek (sorumluluk), işe almak, meydan okumak\"."
   },
   {
     "id": "w940",
@@ -20664,7 +21603,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri devralmak gerektiğini vurgulamaktadır.",
     "ydsTip": "Şirketi devralmak veya kontrolü ele geçirmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"TAKE\" fiili \"OVER\" edatıyla birleşerek özel bir kalıp oluşturur: \"devralmak, yönetimi ele geçirmek\"."
   },
   {
     "id": "w941",
@@ -20686,7 +21626,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri reddetmek gerektiğini vurgulamaktadır.",
     "ydsTip": "'Reject / refuse' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: Başını \"DOWN (aşağı)\" eğip teklifi geri çevirmek, reddetmek."
   },
   {
     "id": "w942",
@@ -20708,7 +21649,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Uluslararası düzenleyici kurumlar, hükümetlerin kalıcı sosyoekonomik eşitsizlikleri çözmek gerektiğini vurgulamaktadır.",
     "ydsTip": "Plan geliştirmek veya spor yapmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"WORK\" fiili \"OUT\" edatıyla birleşerek özel bir kalıp oluşturur: \"çözmek, antrenman yapmak, hesaplamak\"."
   },
   {
     "id": "w943",
@@ -20729,7 +21671,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -e rağmen çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Vurgulu zıtlık bağlacıdır; arkasından cümle alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"EVEN\" fiili \"THOUGH\" edatıyla birleşerek özel bir kalıp oluşturur: \"-e rağmen, -se bile (+ Cümle)\"."
   },
   {
     "id": "w944",
@@ -20750,7 +21693,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -e rağmen çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Despite ile birebir aynıdır; isim veya V-ing alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"IN\" fiili \"SPITE\" edatıyla birleşerek özel bir kalıp oluşturur: \"-e rağmen, karşın (+ İsim / V-ing)\"."
   },
   {
     "id": "w945",
@@ -20771,7 +21715,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -e rağmen çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Resmi dilde 'despite' yerine geçen akademik bağlaçtır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"despite / in spite of\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"-e rağmen, karşın (+ İsim / Cümle)\"."
   },
   {
     "id": "w946",
@@ -20793,7 +21738,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; ancak çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Geçiş zarfıdır; iki bağımsız cümle arasında noktalama ile kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nevertheless / nonetheless\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ancak, lakin, fakat, yine de\"."
   },
   {
     "id": "w947",
@@ -20815,7 +21761,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; yine de çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Akademik metinlerde zıtlığı pekiştiren geçiş zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nevertheless / however\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yine de, buna karşın, bununla beraber\"."
   },
   {
     "id": "w948",
@@ -20836,7 +21783,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; bilakis çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Önceki olumsuz ifadeyi düzeltip tam tersini vurgular.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ON\" fiili \"THE\" edatıyla birleşerek özel bir kalıp oluşturur: \"bilakis, tam tersine\"."
   },
   {
     "id": "w949",
@@ -20857,7 +21805,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; buna karşılık çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'In contrast to + Noun' veya 'In contrast, + Cümle' şeklinde kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"IN\" fiili \"CONTRAST\" edatıyla birleşerek özel bir kalıp oluşturur: \"buna karşılık, tezat olarak\"."
   },
   {
     "id": "w950",
@@ -20879,7 +21828,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -yüzünden çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Sebep bildirir; arkasından sadece isim alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"BECAUSE\" fiili \"OF\" edatıyla birleşerek özel bir kalıp oluşturur: \"-yüzünden, nedeniyle (+ İsim)\"."
   },
   {
     "id": "w951",
@@ -20901,7 +21851,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -den dolayı çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "ÖSYM'nin en sevdiği sebep edatıdır; + İsim alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"DUE\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"-den dolayı, nedeniyle (+ İsim)\"."
   },
   {
     "id": "w952",
@@ -20923,7 +21874,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -den dolayı çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'Due to' ile birebir eşanlamlıdır; + İsim alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"OWING\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"-den dolayı, sebebiyle (+ İsim)\"."
   },
   {
     "id": "w953",
@@ -20944,7 +21896,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -den ötürü çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Sebep bildiren resmi edat öbeğidir; + İsim alır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"ON\" fiili \"ACCOUNT\" edatıyla birleşerek özel bir kalıp oluşturur: \"-den ötürü, hesabiyle (+ İsim)\"."
   },
   {
     "id": "w954",
@@ -20965,7 +21918,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; sayesinde çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Genellikle olumlu sonuçlarda 'sayesinde' olarak kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"THANKS\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"sayesinde, nedeniyle (+ İsim)\"."
   },
   {
     "id": "w955",
@@ -20987,7 +21941,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; bu nedenle çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Sonuç bildiren en yaygın geçiş zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"thus / hence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bu nedenle, dolayısıyla, bu yüzden\"."
   },
   {
     "id": "w956",
@@ -21009,7 +21964,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; böylece çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "1. Sonuç zarfı (+ Cümle); 2. 'thus + V-ing' (böylelikle yaparak).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"thereby / hence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"böylece, bu sebeple, dolayısıyla\"."
   },
   {
     "id": "w957",
@@ -21031,7 +21987,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; bu yüzden çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Kısa ve öz sonuç bildiren akademik geçiş zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"therefore / thus\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bu yüzden, bundan dolayı\"."
   },
   {
     "id": "w958",
@@ -21052,7 +22009,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; böylelikle çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'Thereby + V-ing' sınavın altın gramer kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ALTIN FORMÜL: Virgülün arkasından \\"
   },
   {
     "id": "w959",
@@ -21073,7 +22031,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; bu doğrultuda çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Önceki duruma uygun davranmayı ve sonucu belirtir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"therefore / consequently\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bu doğrultuda, buna göre, dolayısıyla\"."
   },
   {
     "id": "w960",
@@ -21095,7 +22054,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; şartıyla çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'If' yerine geçen şart bağlacıdır; + Cümle alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 FORMÜL: \\"
   },
   {
     "id": "w961",
@@ -21116,7 +22076,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -dığı sürece çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Zaman veya şart bildiren temel bağlaçtır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"AS\" fiili \"LONG\" edatıyla birleşerek özel bir kalıp oluşturur: \"-dığı sürece, şartıyla (+ Cümle)\"."
   },
   {
     "id": "w962",
@@ -21137,7 +22098,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; ihtimaline karşı çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Tedbir bağlacıdır; yangın çıkar diye önlem almaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"IN\" fiili \"CASE\" edatıyla birleşerek özel bir kalıp oluşturur: \"ihtimaline karşı, -erse diye (+ Cümle)\"."
   },
   {
     "id": "w963",
@@ -21157,7 +22119,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; halinde çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'In case' cümle alır; 'In case of' isim alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"IN\" fiili \"CASE\" edatıyla birleşerek özel bir kalıp oluşturur: \"halinde, durumunda (+ İsim)\"."
   },
   {
     "id": "w964",
@@ -21178,7 +22141,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -sın diye çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'So that' eşanlamlısıdır; amaç bildirir, arkasından modal alır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"IN\" fiili \"ORDER\" edatıyla birleşerek özel bir kalıp oluşturur: \"-sın diye, amacıyla (+ Cümle)\"."
   },
   {
     "id": "w965",
@@ -21199,7 +22163,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -sın diye çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Amaç cümlesidir; arkasından genellikle 'can / could / may' gelir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"SO\" fiili \"THAT\" edatıyla birleşerek özel bir kalıp oluşturur: \"-sın diye, amacıyla (+ Cümle)\"."
   },
   {
     "id": "w966",
@@ -21220,7 +22185,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -mek amacıyla çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'In order to + V1' mastar yapısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"IN\" fiili \"ORDER\" edatıyla birleşerek özel bir kalıp oluşturur: \"-mek amacıyla, için (+ V1)\"."
   },
   {
     "id": "w967",
@@ -21241,7 +22207,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; amacıyla çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'With a view to + V-ing' sınav tuzaklarında doğru cevaptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"WITH\" fiili \"A\" edatıyla birleşerek özel bir kalıp oluşturur: \"amacıyla, gayesiyle (+ V-ing)\"."
   },
   {
     "id": "w968",
@@ -21263,7 +22230,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; dahası çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Ek bilgi veren pozitif geçiş zarfıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"furthermore / in addition\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dahası, ayrıca, üstelik\"."
   },
   {
     "id": "w969",
@@ -21285,7 +22253,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; ayrıca çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Argümanı güçlendirmek için ek delil sunar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"moreover / in addition\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayrıca, bundan başka, dahası\"."
   },
   {
     "id": "w970",
@@ -21307,7 +22276,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; -e ek olarak çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Arkasından isim veya V-ing alır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"IN\" fiili \"ADDITION\" edatıyla birleşerek özel bir kalıp oluşturur: \"-e ek olarak, yanı sıra (+ İsim / V-ing)\"."
   },
   {
     "id": "w971",
@@ -21328,7 +22298,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; yanı sıra çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Hem A hem de B'yi birbirine bağlayan ekleme öbeğidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"AS\" fiili \"WELL\" edatıyla birleşerek özel bir kalıp oluşturur: \"yanı sıra, -e ek olarak\"."
   },
   {
     "id": "w972",
@@ -21348,7 +22319,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; sadece ... değil çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Cümle başında gelirse DEVRİK CÜMLE yapar (Inversion).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"NOT\" fiili \"ONLY\" edatıyla birleşerek özel bir kalıp oluşturur: \"sadece ... değil, aynı zamanda ...\"."
   },
   {
     "id": "w973",
@@ -21368,7 +22340,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; ya ... ya da ... çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "İki seçenekten birini seçtiren ikili bağlaçtır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"EITHER\" fiili \"OR\" edatıyla birleşerek özel bir kalıp oluşturur: \"ya ... ya da ...\"."
   },
   {
     "id": "w974",
@@ -21388,7 +22361,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; ne ... ne de ... çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "İki seçeneği de reddeden olumsuz ikili bağlaçtır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"NEITHER\" fiili \"NOR\" edatıyla birleşerek özel bir kalıp oluşturur: \"ne ... ne de ...\"."
   },
   {
     "id": "w975",
@@ -21409,7 +22383,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; benzer şekilde çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "İki durum arasındaki paralelliği vurgular.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"likewise / in the same way\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"benzer şekilde, aynı biçimde\"."
   },
   {
     "id": "w976",
@@ -21430,7 +22405,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; aynı şekilde çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'Similarly' ile birebir eşleşir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"similarly / in like manner\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aynı şekilde, keza, bilmükabele\"."
   },
   {
     "id": "w977",
@@ -21451,7 +22427,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; örneğin çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "'For example' ile tam eştir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 PHRASAL KODU: \"FOR\" fiili \"INSTANCE\" edatıyla birleşerek özel bir kalıp oluşturur: \"örneğin, mesela\"."
   },
   {
     "id": "w978",
@@ -21471,7 +22448,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmekte olan ekonomiler serpilmeye devam etti; şöyle ki çevresel zorluklar öngörülemeyen yapısal sürtüşmeler yarattı.",
     "ydsTip": "Önceki genel ifadeyi tek tek isim vererek açar.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"that is to say / specifically\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şöyle ki, yani, bilhassa\"."
   },
   {
     "id": "w979",
@@ -21493,7 +22471,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl güçlendirmek gözlemlemektedir.",
     "ydsTip": "Etkiyi veya sesi artırmada pozitif (+) fiildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"boost / magnify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"güçlendirmek, sesini açmak, artırmak\"."
   },
   {
     "id": "w980",
@@ -21515,7 +22494,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl değer biçmek gözlemlemektedir.",
     "ydsTip": "Gayrimenkule veya projeye değer biçmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"assess / evaluate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"değer biçmek, kıymetini belirlemek\"."
   },
   {
     "id": "w981",
@@ -21537,7 +22517,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yatıştırmak gözlemlemektedir.",
     "ydsTip": "'Alleviate / soothe' eşanlamlısıdır; korkuyu dindirir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"soothe / alleviate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yatıştırmak, dindirmek, hafifletmek\"."
   },
   {
     "id": "w982",
@@ -21559,7 +22540,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl küçümsemek gözlemlemektedir.",
     "ydsTip": "Eksi (-) duygu taşır; başarıları değersizleştirmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"disparage / downplay\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"küçümsemek, hafife almak\"."
   },
   {
     "id": "w983",
@@ -21581,7 +22563,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl desteklemek gözlemlemektedir.",
     "ydsTip": "'Reinforce / strengthen' ile birebir eşleşir; + fiildir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reinforce / boost\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"desteklemek, güçlendirmek, takviye etmek\"."
   },
   {
     "id": "w984",
@@ -21603,7 +22586,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl etrafından dolanmak gözlemlemektedir.",
     "ydsTip": "Yasaları veya kısıtlamaları kurnazca atlatmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"bypass / evade\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"etrafından dolanmak, atlatmak, bertaraf etmek\"."
   },
   {
     "id": "w985",
@@ -21625,7 +22609,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl birleşmek gözlemlemektedir.",
     "ydsTip": "Fikirlerin veya grupların birleşip güçlenmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"merge / unite\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"birleşmek, tek vücut olmak, kaynaşmak\"."
   },
   {
     "id": "w986",
@@ -21646,7 +22631,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl taziye bildirmek gözlemlemektedir.",
     "ydsTip": "'Sympathize with' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sympathize / condole\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"taziye bildirmek, derdine ortak olmak\"."
   },
   {
     "id": "w987",
@@ -21668,7 +22654,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl göz yummak gözlemlemektedir.",
     "ydsTip": "Genellikle 'cannot condone' (şiddete göz yumamayız) şeklinde eksi kalıptır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"tolerate / overlook\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"göz yummak, hoşgörmek, onaylamak\"."
   },
   {
     "id": "w988",
@@ -21690,7 +22677,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl el koymak gözlemlemektedir.",
     "ydsTip": "Kaçak mallara veya mülke devletin el koymasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"seize / appropriate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"el koymak, müsadere etmek, haczetmek\"."
   },
   {
     "id": "w989",
@@ -21712,7 +22700,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl korozyona uğramak gözlemlemektedir.",
     "ydsTip": "Metali paslandırmak veya güveni aşındırmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"rust / erode\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"korozyona uğramak, paslanmak, aşındırmak\"."
   },
   {
     "id": "w990",
@@ -21734,7 +22723,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl güçten düşürmek gözlemlemektedir.",
     "ydsTip": "Hastalığın bedeni veya krizin ekonomiyi çökertmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"weaken / enfeeble\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"güçten düşürmek, takatsiz bırakmak\"."
   },
   {
     "id": "w991",
@@ -21756,7 +22746,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl alçaltmak gözlemlemektedir.",
     "ydsTip": "Çevrenin tahribatı veya doğada biyolojik ayrışmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deteriorate / humiliate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"alçaltmak, itibarını düşürmek, ayrışmak\"."
   },
   {
     "id": "w992",
@@ -21778,7 +22769,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl sınırlarını çizmek gözlemlemektedir.",
     "ydsTip": "'Delineate' ile yakın akrabadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"demarcate / bound\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sınırlarını çizmek, hudut koymak\"."
   },
   {
     "id": "w993",
@@ -21800,7 +22792,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl karşı çıkmak gözlemlemektedir.",
     "ydsTip": "Kendini tiye alma veya şiddeti kınamadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"disapprove / deplore\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karşı çıkmak, kınamak, değersizleştirmek\"."
   },
   {
     "id": "w994",
@@ -21822,7 +22815,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl alay etmek gözlemlemektedir.",
     "ydsTip": "'Mock / ridicule' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mock / ridicule\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"alay etmek, dalga geçmek, küçümsemek\"."
   },
   {
     "id": "w995",
@@ -21844,7 +22838,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl değerini düşürmek gözlemlemektedir.",
     "ydsTip": "'Detract from' (-in değerini eksiltmek) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"diminish / lessen\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"değerini düşürmek, gölge düşürmek\"."
   },
   {
     "id": "w996",
@@ -21866,7 +22861,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl dağıtmak gözlemlemektedir.",
     "ydsTip": "Ordunun terhisi veya komitenin dağıtılmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"band\". Durumun tersine dönmesi: \"dağıtmak, terhis etmek, feshetmek\"."
   },
   {
     "id": "w997",
@@ -21887,7 +22883,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl oy hakkından mahrum bırakmak gözlemlemektedir.",
     "ydsTip": "Azınlıkların oy hakkını veya gücünü elinden almaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"enfranchise\". Durumun tersine dönmesi: \"oy hakkından mahrum bırakmak, dışlamak\"."
   },
   {
     "id": "w998",
@@ -21909,7 +22906,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl kötülemek gözlemlemektedir.",
     "ydsTip": "'Belittle' eşanlamlısı eksi (-) fiildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"parage\". Durumun tersine dönmesi: \"kötülemek, yermek, değersiz kılmak\"."
   },
   {
     "id": "w999",
@@ -21931,7 +22929,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl kadavra kesmek gözlemlemektedir.",
     "ydsTip": "Biyolojide diseksiyon, edebiyatta ayrıntılı tahlildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"sect\". Durumun tersine dönmesi: \"kadavra kesmek, didik didik incelemek\"."
   },
   {
     "id": "w1000",
@@ -21953,7 +22952,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl dağılmak gözlemlemektedir.",
     "ydsTip": "Korkuların dağılması veya servetin heba edilmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"sipate\". Durumun tersine dönmesi: \"dağılmak, buharlaşıp kaybolmak, israf etmek\"."
   },
   {
     "id": "w1001",
@@ -21975,7 +22975,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl ifşa etmek gözlemlemektedir.",
     "ydsTip": "'Disclose / reveal' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reveal / disclose\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ifşa etmek, açığa vurmak, sırrı yaymak\"."
   },
   {
     "id": "w1002",
@@ -21997,7 +22998,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl özgürlüğüne kavuşturmak gözlemlemektedir.",
     "ydsTip": "Köleleri azat etmek veya kadını özgürleştirmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"liberate / free\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özgürlüğüne kavuşturmak, azat etmek\"."
   },
   {
     "id": "w1003",
@@ -22019,7 +23021,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl örnek almak gözlemlemektedir.",
     "ydsTip": "Başarılı bir lideri veya modeli örnek almaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"imitate / mirror\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"örnek almak, gıpta etmek, taklit etmek\"."
   },
   {
     "id": "w1004",
@@ -22041,7 +23044,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl sağlamlaştırmak gözlemlemektedir.",
     "ydsTip": "Kökleşmiş inançları veya mevzilenmiş güçleri anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"establish / embed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sağlamlaştırmak, kökleştirmek, mevzilenmek\"."
   },
   {
     "id": "w1005",
@@ -22063,7 +23067,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl temsil etmek gözlemlemektedir.",
     "ydsTip": "'Exemplify' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"exemplify / embody\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"temsil etmek, tam bir örneği olmak\"."
   },
   {
     "id": "w1006",
@@ -22085,7 +23090,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl benimsemek gözlemlemektedir.",
     "ydsTip": "'Adopt / advocate' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"adopt / embrace\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"benimsemek, arka çıkmak, savunmak\"."
   },
   {
     "id": "w1007",
@@ -22107,7 +23113,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yüceltmek gözlemlemektedir.",
     "ydsTip": "Liderleri veya idealleri övgüyle yüceltmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"praise / laud\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yüceltmek, övmek, göklere çıkarmak\"."
   },
   {
     "id": "w1008",
@@ -22129,7 +23136,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl çileden çıkarmak gözlemlemektedir.",
     "ydsTip": "Uzayan gecikmelerin insanı çileden çıkarmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"irritate / infuriate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çileden çıkarmak, fena halde kızdırmak\"."
   },
   {
     "id": "w1009",
@@ -22151,7 +23159,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl aklamak gözlemlemektedir.",
     "ydsTip": "'Exonerate from' suçsuzluğunu kanıtlamaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"acquit / vindicate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aklamak, temize çıkarmak, beraat ettirmek\"."
   },
   {
     "id": "w1010",
@@ -22173,7 +23182,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl etraflıca izah etmek gözlemlemektedir.",
     "ydsTip": "Bir felsefeyi veya teoriyi derinlemesine anlatmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"explain / elucidate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"etraflıca izah etmek, şerh düşmek\"."
   },
   {
     "id": "w1011",
@@ -22195,7 +23205,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl öve öve bitirememek gözlemlemektedir.",
     "ydsTip": "'Praise enthusiastically' karşılığı pozitif fiildir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"praise / laud\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öve öve bitirememek, methetmek\"."
   },
   {
     "id": "w1012",
@@ -22217,7 +23228,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl tahmin yürütmek gözlemlemektedir.",
     "ydsTip": "Mevcut verilerden geleceğe yönelik kestirim yapmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"infer / project\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tahmin yürütmek, eldeki veriden genellemek\"."
   },
   {
     "id": "w1013",
@@ -22239,7 +23251,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl akıl sır erdirmek gözlemlemektedir.",
     "ydsTip": "Anlaşılması güç gizemleri kavramaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"comprehend / grasp\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"akıl sır erdirmek, derinine inip anlamak\"."
   },
   {
     "id": "w1014",
@@ -22261,7 +23274,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl mayalanmak gözlemlemektedir.",
     "ydsTip": "Şarabın mayalanması veya siyasi kaynaşmadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"brew / bubble\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"mayalanmak, kaynaşmak, huzursuzluk olmak\"."
   },
   {
     "id": "w1015",
@@ -22283,7 +23297,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl kışkırtmak gözlemlemektedir.",
     "ydsTip": "İsyanı veya nefreti kışkırtmada eksi (-) fiildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"instigate / incite\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kışkırtmak, alevlendirmek, tahrik etmek\"."
   },
   {
     "id": "w1016",
@@ -22305,7 +23320,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl harekete geçirmek gözlemlemektedir.",
     "ydsTip": "Halkı veya topluluğu acil eyleme geçirmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"stimulate / electrify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"harekete geçirmek, canlandırmak, şevklendirmek\"."
   },
   {
     "id": "w1017",
@@ -22327,7 +23343,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl toplamak gözlemlemektedir.",
     "ydsTip": "Farklı kaynaklardan parça parça bilgi edinmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"gather / extract\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"toplamak, derlemek, azar azar öğrenmek\"."
   },
   {
     "id": "w1018",
@@ -22349,7 +23366,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl boğuşmak gözlemlemektedir.",
     "ydsTip": "'Grapple with' (-ile boğuşmak) sınavda çok sevilir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"struggle / tackle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"boğuşmak, göğüs germek, mücadele etmek\"."
   },
   {
     "id": "w1019",
@@ -22371,7 +23389,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl kulak vermek gözlemlemektedir.",
     "ydsTip": "Trafik veya salgın uyarılarına kulak asmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"listen to / pay attention to\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kulak vermek, dikkate almak, dinlemek\"."
   },
   {
     "id": "w1020",
@@ -22393,7 +23412,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl açılışını yapmak gözlemlemektedir.",
     "ydsTip": "Cumhurbaşkanının göreve başlaması veya köprü açılışıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"launch / open\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"açılışını yapmak, göreve başlatmak\"."
   },
   {
     "id": "w1021",
@@ -22415,7 +23435,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yetersiz kılmak gözlemlemektedir.",
     "ydsTip": "Felç veya yaralanma sonucu iş göremez hale gelmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"debilitate / disable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yetersiz kılmak, aciz bırakmak, sakatlamak\"."
   },
   {
     "id": "w1022",
@@ -22437,7 +23458,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl hapsetmek gözlemlemektedir.",
     "ydsTip": "Hukuk parçalarında mahkumları hapse atmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"imprison / jail\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hapsetmek, cezaevine koymak\"."
   },
   {
     "id": "w1023",
@@ -22459,7 +23481,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl kışkırtmak gözlemlemektedir.",
     "ydsTip": "Şiddeti veya nefreti körüklemektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"provoke / instigate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kışkırtmak, körüklemek, teşvik etmek (suça)\"."
   },
   {
     "id": "w1024",
@@ -22481,7 +23504,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl beyin yıkamak gözlemlemektedir.",
     "ydsTip": "Propaganda yoluyla ideoloji aşılamaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"brainwash / inculcate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"beyin yıkamak, aşılamak, doktrine etmek\"."
   },
   {
     "id": "w1025",
@@ -22503,7 +23527,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl aşılamak gözlemlemektedir.",
     "ydsTip": "Çocuklara güven veya disiplin aşılamaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inculcate / impart\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aşılamak, telkin etmek, yavaş yavaş vermek\"."
   },
   {
     "id": "w1026",
@@ -22525,7 +23550,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl sel basmak gözlemlemektedir.",
     "ydsTip": "Mecazi olarak 'talep yağmuruna tutulmak' demektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"flood / submerge\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sel basmak, su altında bırakmak, boğmak\"."
   },
   {
     "id": "w1027",
@@ -22547,7 +23573,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl canlandırmak gözlemlemektedir.",
     "ydsTip": "Ekonomiye can suyu vermek veya temiz havanın dinçleştirmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"energize / revitalize\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"canlandırmak, dinçleştirmek, güç katmak\"."
   },
   {
     "id": "w1028",
@@ -22569,7 +23596,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl ağıt yakmak gözlemlemektedir.",
     "ydsTip": "Kayıpların ardından duyulan derin üzüntüdür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mourn / grieve\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ağıt yakmak, hayıflanmak, feryat etmek\"."
   },
   {
     "id": "w1029",
@@ -22591,7 +23619,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl büyütmek gözlemlemektedir.",
     "ydsTip": "Mikroskopla büyütmek veya sorunu büyütmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"enlarge / amplify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"büyütmek, abartmak, büyütülerek göstermek\"."
   },
   {
     "id": "w1030",
@@ -22613,7 +23642,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl taklit etmek gözlemlemektedir.",
     "ydsTip": "Biyomimikri (doğayı taklit eden teknoloji) parçalarında çıkar.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"imitate / copy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"taklit etmek, aynısını yapmak\"."
   },
   {
     "id": "w1031",
@@ -22635,7 +23665,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl seferber etmek gözlemlemektedir.",
     "ydsTip": "Kaynakları veya halkı acil bir amaç için toplamak.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"rally / assemble\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"seferber etmek, harekete geçirmek\"."
   },
   {
     "id": "w1032",
@@ -22657,7 +23688,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yatıştırmak gözlemlemektedir.",
     "ydsTip": "Kızgın eleştirmenleri veya öfkeyi dindirmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"placate / pacify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yatıştırmak, gönlünü almak, sakinleştirmek\"."
   },
   {
     "id": "w1033",
@@ -22679,7 +23711,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl ortadan kaldırmak gözlemlemektedir.",
     "ydsTip": "'Obviate the need for' (-e olan ihtiyacı ortadan kaldırmak).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"preclude / prevent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ortadan kaldırmak, gereksiz kılmak, önlemek\"."
   },
   {
     "id": "w1034",
@@ -22701,7 +23734,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl salınmak gözlemlemektedir.",
     "ydsTip": "Fikirler arasında gidip gelmek veya salınmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"swing / fluctuate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"salınmak, bir o yana bir bu yana gitmek\"."
   },
   {
     "id": "w1035",
@@ -22723,7 +23757,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl nüfuz etmek gözlemlemektedir.",
     "ydsTip": "Fikrin topluma veya suyun toprağa işlemesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"penetrate / pervade\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nüfuz etmek, içine işlemek, yayılmak\"."
   },
   {
     "id": "w1036",
@@ -22745,7 +23780,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yatıştırmak gözlemlemektedir.",
     "ydsTip": "Protestocuları yatıştırmak için taviz vermektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"appease / pacify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yatıştırmak, gönlünü etmek, dindirmek\"."
   },
   {
     "id": "w1037",
@@ -22767,7 +23803,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl enikonu düşünmek gözlemlemektedir.",
     "ydsTip": "'Contemplate / consider' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"contemplate / reflect on\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"enikonu düşünmek, kafa yormak\"."
   },
   {
     "id": "w1038",
@@ -22789,7 +23826,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl çoğaltmak gözlemlemektedir.",
     "ydsTip": "Bitkileri çoğaltmak veya fikirleri yaymaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"spread / breed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çoğaltmak, yaymak, üretmek\"."
   },
   {
     "id": "w1039",
@@ -22811,7 +23849,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl bastırmak gözlemlemektedir.",
     "ydsTip": "İsyanı zorla bastırmak veya korkuyu yatıştırmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"suppress / quash\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bastırmak, dindirmek, yatıştırmak\"."
   },
   {
     "id": "w1040",
@@ -22833,7 +23872,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl gençleştirmek gözlemlemektedir.",
     "ydsTip": "Cildi gençleştirmek veya eski mahalleleri ihya etmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"juvenate\". Eylemi yineleyip pekiştirmek: \"gençleştirmek, yenilemek, canlandırmak\"."
   },
   {
     "id": "w1041",
@@ -22855,7 +23895,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl küme düşürmek gözlemlemektedir.",
     "ydsTip": "Geri plana veya alt lige düşürülmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"legate\". Eylemi yineleyip pekiştirmek: \"küme düşürmek, geri plana itmek, alt kademeye vermek\"."
   },
   {
     "id": "w1042",
@@ -22877,7 +23918,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yankılanmak gözlemlemektedir.",
     "ydsTip": "Krizin küresel çapta derin yankı bulmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (yeniden/tekrar)\" + \"verberate\". Eylemi yineleyip pekiştirmek: \"yankılanmak, derin yankı uyandırmak\"."
   },
   {
     "id": "w1043",
@@ -22899,7 +23941,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl kurtarmak (enkazdan/batan gemiden) gözlemlemektedir.",
     "ydsTip": "Batık gemiyi veya zedelenen itibarı kurtarmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"rescue / recover\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kurtarmak (enkazdan/batan gemiden)\"."
   },
   {
     "id": "w1044",
@@ -22921,7 +23964,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl uzak durmak gözlemlemektedir.",
     "ydsTip": "Toplum tarafından dışlanmak veya medyadan kaçınmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"avoid / evade\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uzak durmak, kaçınmak, dışlamak\"."
   },
   {
     "id": "w1045",
@@ -22943,7 +23987,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl çarçur etmek gözlemlemektedir.",
     "ydsTip": "Fırsatları veya serveti bilinçsizce harcamaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"waste / dissipate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çarçur etmek, heba etmek, savurmak\"."
   },
   {
     "id": "w1046",
@@ -22965,7 +24010,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl boğmak gözlemlemektedir.",
     "ydsTip": "Yenilikçiliği veya tartışmayı boğup engellemektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"suppress / suffocate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"boğmak, bastırmak, önünü tıkamak\"."
   },
   {
     "id": "w1047",
@@ -22987,7 +24033,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yerini almak gözlemlemektedir.",
     "ydsTip": "'Replace / supersede' eşanlamlısıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"replace / supersede\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yerini almak, tahtından etmek\"."
   },
   {
     "id": "w1048",
@@ -23008,7 +24055,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl aşmak gözlemlemektedir.",
     "ydsTip": "'Overcome' eşanlamlısıdır; zorlukları aşmaktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"overcome / conquer\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"aşmak, üstesinden gelmek, yenmek\"."
   },
   {
     "id": "w1049",
@@ -23030,7 +24078,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl meydana gelmek gözlemlemektedir.",
     "ydsTip": "'Occur / happen' yerine geçen edebi/resmi fiildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"occur / happen\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"meydana gelmek, açığa çıkmak, terlemek\"."
   },
   {
     "id": "w1050",
@@ -23052,7 +24101,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl kısmak gözlemlemektedir.",
     "ydsTip": "Metni veya süreyi kırpmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"shorten / curtail\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısmak, budamak, yarıda kesmek\"."
   },
   {
     "id": "w1051",
@@ -23074,7 +24124,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl altüst etmek gözlemlemektedir.",
     "ydsTip": "Gelenekleri veya piyasayı kökünden sarsmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"overturn / disrupt\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"altüst etmek, tepetaklak etmek\"."
   },
   {
     "id": "w1052",
@@ -23096,7 +24147,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl bocalamak gözlemlemektedir.",
     "ydsTip": "İki seçenek arasında kararsız kalıp bocalamaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"waver / hesitate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bocalamak, tereddüt etmek, kararsız kalmak\"."
   },
   {
     "id": "w1053",
@@ -23118,7 +24170,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl saygı duymak gözlemlemektedir.",
     "ydsTip": "Atalara veya kutsal değerlere derin saygı beslemektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"revere / honor\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"saygı duymak, tazim etmek, yüceltmek\"."
   },
   {
     "id": "w1054",
@@ -23140,7 +24193,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl azalmak gözlemlemektedir.",
     "ydsTip": "Etkinin veya ayın hilale doğru küçülmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"diminish / decline\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"azalmak, zayıflamak, küçülmek (ay)\"."
   },
   {
     "id": "w1055",
@@ -23162,7 +24216,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Tarihçiler, kurumsal reformların geniş çağlar boyunca temel toplumsal yapıları nasıl yol açmak (yıkıma) gözlemlemektedir.",
     "ydsTip": "'Wreak havoc on' (altüst etmek/büyük yıkım yaratmak) kalıptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inflict / cause\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yol açmak (yıkıma), başa bela açmak\"."
   },
   {
     "id": "w1056",
@@ -23184,7 +24239,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece iğneleyici olarak nitelendirmektedir.",
     "ydsTip": "Keskin ve iğneleyici eleştiriler içindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sharp / biting\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iğneleyici, zehir zemberek, keskin\"."
   },
   {
     "id": "w1057",
@@ -23206,7 +24262,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece hünerli olarak nitelendirmektedir.",
     "ydsTip": "Krizleri ustalıkla yöneten mahir liderlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"skillful / adept\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hünerli, becerikli, mahir\"."
   },
   {
     "id": "w1058",
@@ -23228,7 +24285,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece endişe verici olarak nitelendirmektedir.",
     "ydsTip": "Korkutan artış oranları veya eğilimlerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"worrying / frightening\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"endişe verici, korkutucu, ürkütücü\"."
   },
   {
     "id": "w1059",
@@ -23250,7 +24308,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece özgecil olarak nitelendirmektedir.",
     "ydsTip": "Kendi çıkarını düşünmeyen hayırsever tavırdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"selfless / philanthropic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özgecil, fedakar, başkalarını düşünen\"."
   },
   {
     "id": "w1060",
@@ -23272,7 +24331,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece anormal olarak nitelendirmektedir.",
     "ydsTip": "Normdan sapan aykırı bilimsel verilerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"irregular / abnormal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"anormal, kuraldışı, sapmalı\"."
   },
   {
     "id": "w1061",
@@ -23294,7 +24354,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece çağdışı olarak nitelendirmektedir.",
     "ydsTip": "'Obsolete' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"outdated / obsolete\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çağdışı, köhne, çok eski\"."
   },
   {
     "id": "w1062",
@@ -23316,7 +24377,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kayıtsız olarak nitelendirmektedir.",
     "ydsTip": "Toplumsal olaylara ilgisiz seçmendir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"indifferent / unconcerned\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kayıtsız, duygusuz, ilgisiz\"."
   },
   {
     "id": "w1063",
@@ -23338,7 +24400,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece ateşli olarak nitelendirmektedir.",
     "ydsTip": "Tutkulu destekçileri anlatır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"passionate / fervent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ateşli, hevesli, coşkulu\"."
   },
   {
     "id": "w1064",
@@ -23360,7 +24423,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kurak olarak nitelendirmektedir.",
     "ydsTip": "Yağış almayan çöl iklimlerini anlatır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dry / barren\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kurak, çorak, verimsiz\"."
   },
   {
     "id": "w1065",
@@ -23382,7 +24446,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece cüretkar olarak nitelendirmektedir.",
     "ydsTip": "Büyük riskler içeren cüretkar projedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"bold / daring\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"cüretkar, cesur, küstahça cesur\"."
   },
   {
     "id": "w1066",
@@ -23404,7 +24469,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece otoriter olarak nitelendirmektedir.",
     "ydsTip": "Demokrasi zıttı baskıcı rejimlerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"autocratic / dictatorial\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"otoriter, baskıcı, diktatoryal\"."
   },
   {
     "id": "w1067",
@@ -23426,7 +24492,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece savaşçı olarak nitelendirmektedir.",
     "ydsTip": "Savaşa hevesli saldırgan tavırlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"aggressive / hostile\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"savaşçı, kavgacı, saldırgan\"."
   },
   {
     "id": "w1068",
@@ -23448,7 +24515,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece hayırsever olarak nitelendirmektedir.",
     "ydsTip": "'Malevolent' (kötü niyetli) zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"kind / generous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hayırsever, sevecen, iyiliksever\"."
   },
   {
     "id": "w1069",
@@ -23470,7 +24538,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece karamsar olarak nitelendirmektedir.",
     "ydsTip": "Geleceğe dair umut vermeyen tablodur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"grim / dismal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karamsar, kasvetli, umutsuz\"."
   },
   {
     "id": "w1070",
@@ -23492,7 +24561,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece nasırlı olarak nitelendirmektedir.",
     "ydsTip": "Başkalarının acısına karşı duyarsız kalmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"heartless / unfeeling\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nasırlı, duygusuz, taş kalpli\"."
   },
   {
     "id": "w1071",
@@ -23514,7 +24584,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece dobra olarak nitelendirmektedir.",
     "ydsTip": "Gizlemeden dosdoğru konuşmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"frank / honest\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dobra, içten, samimi, açık sözlü\"."
   },
   {
     "id": "w1072",
@@ -23536,7 +24607,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece ikna edici olarak nitelendirmektedir.",
     "ydsTip": "'Compelling' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"convincing / compelling\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ikna edici, tutarlı, sağlam\"."
   },
   {
     "id": "w1073",
@@ -23558,7 +24630,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece rehavete kapılmış olarak nitelendirmektedir.",
     "ydsTip": "Tehlike yokmuş gibi rehavete girmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"smug / self-satisfied\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"rehavete kapılmış, kendinden hoşnut\"."
   },
   {
     "id": "w1074",
@@ -23580,7 +24653,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece üstünkörü olarak nitelendirmektedir.",
     "ydsTip": "'Thorough' (etraflı) tam zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"superficial / hasty\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üstünkörü, aceleye getirilmiş, gelişigüzel\"."
   },
   {
     "id": "w1075",
@@ -23602,7 +24676,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece göz korkutucu olarak nitelendirmektedir.",
     "ydsTip": "Zorluğundan ötürü insanı ürküten görevdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"intimidating / formidable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"göz korkutucu, yıldırıcı\"."
   },
   {
     "id": "w1076",
@@ -23624,7 +24699,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece becerikli olarak nitelendirmektedir.",
     "ydsTip": "Parmak veya yönetim ustalığıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"skillful / adroit\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"becerikli, çevik, hünerli\"."
   },
   {
     "id": "w1077",
@@ -23646,7 +24722,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece muhtaç olarak nitelendirmektedir.",
     "ydsTip": "Aşırı yoksulluk içinde olan kimselerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"penniless / impoverished\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"muhtaç, fakruzaruret içinde, yoksun\"."
   },
   {
     "id": "w1078",
@@ -23668,7 +24745,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece öğretici olarak nitelendirmektedir.",
     "ydsTip": "Ders vermeyi amaçlayan edebi eserlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"instructive / educational\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öğretici, didaktik, nasihat verici\"."
   },
   {
     "id": "w1079",
@@ -23690,7 +24768,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece ağzı sıkı olarak nitelendirmektedir.",
     "ydsTip": "'Discrete' (ayrık) ile karıştırılmamalıdır! 'Ketum' demektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"creet\". Durumun tersine dönmesi: \"ağzı sıkı, temkinli, ketum\"."
   },
   {
     "id": "w1080",
@@ -23712,7 +24791,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece ayrık olarak nitelendirmektedir.",
     "ydsTip": "Birbiriyle birleşmeyen bağımsız birimlerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"crete\". Durumun tersine dönmesi: \"ayrık, birbirinden bağımsız, münferit\"."
   },
   {
     "id": "w1081",
@@ -23734,7 +24814,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece çok sert olarak nitelendirmektedir.",
     "ydsTip": "Aşırı acımasız ve sert devlet cezalarıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"harsh / severe\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çok sert, zalimce, drakonvari (kanun)\"."
   },
   {
     "id": "w1082",
@@ -23756,7 +24837,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece coşkulu olarak nitelendirmektedir.",
     "ydsTip": "Taşan bir enerji ve neşedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"exuberant / enthusiastic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"coşkulu, hayat dolu, kaynayan\"."
   },
   {
     "id": "w1083",
@@ -23778,7 +24860,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece eklektik olarak nitelendirmektedir.",
     "ydsTip": "Farklı kaynaklardan en iyileri harmanlamaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"diverse / broad-ranging\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eklektik, seçmeci, derleme\"."
   },
   {
     "id": "w1084",
@@ -23800,7 +24883,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece fahiş olarak nitelendirmektedir.",
     "ydsTip": "Kabul edilemeyecek büyüklükteki fahiş hatadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"glaring / shocking\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fahiş, akıllara zarar, affedilmez (hata)\"."
   },
   {
     "id": "w1085",
@@ -23822,7 +24906,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece esrarengiz olarak nitelendirmektedir.",
     "ydsTip": "Mona Lisa gülüşü gibi çözülemeyen gizemdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mysterious / cryptic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"esrarengiz, gizemli, anlaşılmaz\"."
   },
   {
     "id": "w1086",
@@ -23844,7 +24929,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece dengeli olarak nitelendirmektedir.",
     "ydsTip": "Aşırı sıcak veya soğuk olmayan ılıman iklimdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"equ\" köküne gelerek: \"dengeli, ılıman, sakin\"."
   },
   {
     "id": "w1087",
@@ -23866,7 +24952,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece bilgili olarak nitelendirmektedir.",
     "ydsTip": "Çok okumuş bilgili akademisyendir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"scholarly / learned\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bilgili, alim, mürekkep yalamış\"."
   },
   {
     "id": "w1088",
@@ -23888,7 +24975,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sadece uzmanların anladığı olarak nitelendirmektedir.",
     "ydsTip": "Dar bir çevreye hitap eden anlaşılması güç bilgidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"obscure / abstruse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sadece uzmanların anladığı, gizli ilim\"."
   },
   {
     "id": "w1089",
@@ -23910,7 +24998,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece uçucu olarak nitelendirmektedir.",
     "ydsTip": "'Ephemeral' ile birebir eşleşir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fleeting / transient\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uçucu, çabuk kaybolan, fani\"."
   },
   {
     "id": "w1090",
@@ -23932,7 +25021,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece fahiş olarak nitelendirmektedir.",
     "ydsTip": "Piyasa rayicinin çok üzerindeki fahiş fiyattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"excessive / extravagant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fahiş, aşırı yüksek (fiyat)\"."
   },
   {
     "id": "w1091",
@@ -23954,7 +25044,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece yersiz şaka yapan olarak nitelendirmektedir.",
     "ydsTip": "Ciddi bir ortamda münasebetsiz şaka yapmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"flippant / joking\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yersiz şaka yapan, ciddiyetsiz\"."
   },
   {
     "id": "w1092",
@@ -23976,7 +25067,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece titiz olarak nitelendirmektedir.",
     "ydsTip": "Her şeye burun kıvıran aşırı titiz insandır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"meticulous / particular\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"titiz, güç beğenen, aşırı özenli\"."
   },
   {
     "id": "w1093",
@@ -23998,7 +25090,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece hararetli olarak nitelendirmektedir.",
     "ydsTip": "Yürekten gelen samimi ve ateşli inançtır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ardent / passionate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hararetli, coşkulu, samimi\"."
   },
   {
     "id": "w1094",
@@ -24020,7 +25113,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece bariz olarak nitelendirmektedir.",
     "ydsTip": "'Blatant' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"blatant / glaring\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bariz, aleni, yüzsüzce (suç/ihlal)\"."
   },
   {
     "id": "w1095",
@@ -24042,7 +25136,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece şans eseri olarak nitelendirmektedir.",
     "ydsTip": "İnsana hayır getiren güzel tesadüftür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lucky / serendipitous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şans eseri, tesadüfi ve olumlu\"."
   },
   {
     "id": "w1096",
@@ -24064,7 +25159,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece boş olarak nitelendirmektedir.",
     "ydsTip": "Önemsiz ve ciddiyetten uzak davalar veya harcamalardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"trivial / silly\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"boş, ciddiyetsiz, havai, gereksiz\"."
   },
   {
     "id": "w1097",
@@ -24086,7 +25182,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece çenesi düşük olarak nitelendirmektedir.",
     "ydsTip": "Boş yere çok konuşan tipler içindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"talkative / loquacious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çenesi düşük, geveze, laf ebesi\"."
   },
   {
     "id": "w1098",
@@ -24108,7 +25205,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece görkemli görünen olarak nitelendirmektedir.",
     "ydsTip": "Gerçekleşmesi zor iddialı ve abartılı projelerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"magnificent / pompous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"görkemli görünen, abartılı, heybetli\"."
   },
   {
     "id": "w1099",
@@ -24130,7 +25228,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sebepsiz olarak nitelendirmektedir.",
     "ydsTip": "Gereksiz yere yapılan şiddet veya tavsiyedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unjustified / unwarranted\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sebepsiz, lüzumsuz, bedava\"."
   },
   {
     "id": "w1100",
@@ -24152,7 +25251,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sürü halinde yaşayan olarak nitelendirmektedir.",
     "ydsTip": "Topluluk seven canlılar veya dışa dönük insanlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sociable / companionable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sürü halinde yaşayan, sosyal, cana yakın\"."
   },
   {
     "id": "w1101",
@@ -24174,7 +25274,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece gelişigüzel olarak nitelendirmektedir.",
     "ydsTip": "Plansız ve düzensiz şehirleşme veya eylemdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"random / disorganized\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gelişigüzel, rastgele, baştan savma\"."
   },
   {
     "id": "w1102",
@@ -24196,7 +25297,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kibirli olarak nitelendirmektedir.",
     "ydsTip": "Başkalarını küçümseyen mağrur tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"arrogant / condescending\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kibirli, burnu havada, kendini beğenmiş\"."
   },
   {
     "id": "w1103",
@@ -24217,7 +25319,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece hazcı olarak nitelendirmektedir.",
     "ydsTip": "Tek amacı zevk almak olan yaşam biçimidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"pleasure-seeking / self-indulgent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hazcı, hedonist, zevkine düşkün\"."
   },
   {
     "id": "w1104",
@@ -24239,7 +25342,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece hava sızdırmaz olarak nitelendirmektedir.",
     "ydsTip": "Dış dünyayla bağı tamamen kopmuş kapalı sistemdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"airtight / sealed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hava sızdırmaz, hermetik, dışa kapalı\"."
   },
   {
     "id": "w1105",
@@ -24260,7 +25364,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece türdeş olarak nitelendirmektedir.",
     "ydsTip": "'Heterogeneous' (farklı yapılardan oluşan) zıttıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"uniform / consistent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"türdeş, homojen, aynı yapıda\"."
   },
   {
     "id": "w1106",
@@ -24281,7 +25386,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece mübalağalı olarak nitelendirmektedir.",
     "ydsTip": "'Exaggerated' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"exaggerated / overstated\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"mübalağalı, aşırı abartılı\"."
   },
   {
     "id": "w1107",
@@ -24303,7 +25409,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kendine has olarak nitelendirmektedir.",
     "ydsTip": "Sadece o kişiye veya türe özgü tuhaf alışkanlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"peculiar / distinctive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kendine has, nev-i şahsına münhasır\"."
   },
   {
     "id": "w1108",
@@ -24325,7 +25432,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kusursuz olarak nitelendirmektedir.",
     "ydsTip": "En ufak pürüzü olmayan mükemmel performanstır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"impecc\" köküne gelerek: \"kusursuz, lekesiz, hatasız\"."
   },
   {
     "id": "w1109",
@@ -24347,7 +25455,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece fevri olarak nitelendirmektedir.",
     "ydsTip": "Sonunu düşünmeden anlık heyecanla yapılan iştir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"impulsive / rash\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fevri, düşüncesizce acele eden\"."
   },
   {
     "id": "w1110",
@@ -24369,7 +25478,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece yatıştırılamaz olarak nitelendirmektedir.",
     "ydsTip": "Barışa yanaşmayan azılı düşmandır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"implac\" köküne gelerek: \"yatıştırılamaz, amansız, tavizsiz\"."
   },
   {
     "id": "w1111",
@@ -24391,7 +25501,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece henüz yeni başlamış olarak nitelendirmektedir.",
     "ydsTip": "Henüz şekil almamış başlangıç evresidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"choate\". Sınavda şık elerken zıt duygu (-) bildirir: \"henüz yeni başlamış, olgunlaşmamış, taslak\"."
   },
   {
     "id": "w1112",
@@ -24413,7 +25524,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece keskin zekalı olarak nitelendirmektedir.",
     "ydsTip": "Olayın tam kalbine inen derin ve keskin analizdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"cisive\". Sınavda şık elerken zıt duygu (-) bildirir: \"keskin zekalı, can alıcı, isabetli\"."
   },
   {
     "id": "w1113",
@@ -24435,7 +25547,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece tembel olarak nitelendirmektedir.",
     "ydsTip": "Tıpta yavaş yayılan tümör, sosyolojide tembelliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"dolent\". Sınavda şık elerken zıt duygu (-) bildirir: \"tembel, uyuşuk, yavaş ilerleyen (tümör)\"."
   },
   {
     "id": "w1114",
@@ -24457,7 +25570,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kelimelerle tarif edilemez olarak nitelendirmektedir.",
     "ydsTip": "Güzelliğin veya sevincin dilin sınırlarını aşmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"effable\". Sınavda şık elerken zıt duygu (-) bildirir: \"kelimelerle tarif edilemez, anlatılmaz\"."
   },
   {
     "id": "w1115",
@@ -24479,7 +25593,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece zararlı olarak nitelendirmektedir.",
     "ydsTip": "'Detrimental to' eşanlamlısı olarak kullanılır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"imical\". Sınavda şık elerken zıt duygu (-) bildirir: \"zararlı, düşmanca, aleyhte\"."
   },
   {
     "id": "w1116",
@@ -24501,7 +25616,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece doymak bilmez olarak nitelendirmektedir.",
     "ydsTip": "Para veya güce asla doymayan açgözlülüktür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"satiable\". Sınavda şık elerken zıt duygu (-) bildirir: \"doymak bilmez, gözü doymaz, obur\"."
   },
   {
     "id": "w1117",
@@ -24523,7 +25639,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece korkusuz olarak nitelendirmektedir.",
     "ydsTip": "Tehlikelerden yılmayan cesur kaşiftir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"trepid\". Sınavda şık elerken zıt duygu (-) bildirir: \"korkusuz, cesur, yiğit\"."
   },
   {
     "id": "w1118",
@@ -24545,7 +25662,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece alışkın olarak nitelendirmektedir.",
     "ydsTip": "'Inured to' acıya veya zorluğa alışıp hissizleşmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"ured\". Sınavda şık elerken zıt duygu (-) bildirir: \"alışkın, nasırlaşmış, duyarsızlaşmış\"."
   },
   {
     "id": "w1119",
@@ -24567,7 +25685,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece çabuk parlayan olarak nitelendirmektedir.",
     "ydsTip": "Küçük şeylere hemen öfkelenen mizaçtır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"irasc\" köküne gelerek: \"çabuk parlayan, asabi, hırçın\"."
   },
   {
     "id": "w1120",
@@ -24589,7 +25708,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece öz ve kısa konuşan olarak nitelendirmektedir.",
     "ydsTip": "Lafı uzatmadan tek kelimeyle cevap vermektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"concise / terse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öz ve kısa konuşan, veciz\"."
   },
   {
     "id": "w1121",
@@ -24611,7 +25731,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece övgüye değer olarak nitelendirmektedir.",
     "ydsTip": "Toplum yararına olan takdire şayan gayretlerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"laud\" köküne gelerek: \"övgüye değer, takdire şayan\"."
   },
   {
     "id": "w1122",
@@ -24633,7 +25754,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece uyuşuk olarak nitelendirmektedir.",
     "ydsTip": "Kişinin veya bürokrasinin hantallığıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"sluggish / apathetic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uyuşuk, halsiz, miskin\"."
   },
   {
     "id": "w1123",
@@ -24655,7 +25777,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece geveze olarak nitelendirmektedir.",
     "ydsTip": "'Garrulous' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"garrulous / talkative\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"geveze, konuşkan\"."
   },
   {
     "id": "w1124",
@@ -24677,7 +25800,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece berrak olarak nitelendirmektedir.",
     "ydsTip": "Tıpta komadan çıkan hastanın bilincinin açık olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"clear / coherent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"berrak, açık seçik, aklı başında\"."
   },
   {
     "id": "w1125",
@@ -24699,7 +25823,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece gülünç olarak nitelendirmektedir.",
     "ydsTip": "Ciddiye alınamayacak kadar saçma olandır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ridiculous / absurd\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gülünç, absürt, saçma sapan\"."
   },
   {
     "id": "w1126",
@@ -24721,7 +25846,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kasvetli olarak nitelendirmektedir.",
     "ydsTip": "Cenaze havası gibi ağır ve hüzünlü ortamdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mournful / gloomy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kasvetli, hüzünlü, kederli\"."
   },
   {
     "id": "w1127",
@@ -24743,7 +25869,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece alicenap olarak nitelendirmektedir.",
     "ydsTip": "Zaferden sonra yenilene merhamet gösteren büyüklüktür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"generous / forgiving\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"alicenap, yüce gönüllü, bağışlayıcı\"."
   },
   {
     "id": "w1128",
@@ -24765,7 +25892,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kötü niyetli olarak nitelendirmektedir.",
     "ydsTip": "'Benevolent' (iyiliksever) tam zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"malicious / spiteful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kötü niyetli, hain, fenalık isteyen\"."
   },
   {
     "id": "w1129",
@@ -24787,7 +25915,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece dövülebilir olarak nitelendirmektedir.",
     "ydsTip": "Demirin dövülmesi veya çocuk zihninin şekillendirilmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"malle\" köküne gelerek: \"dövülebilir, şekil verilebilir, kolay yönlendirilen\"."
   },
   {
     "id": "w1130",
@@ -24809,7 +25938,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece yalancı olarak nitelendirmektedir.",
     "ydsTip": "Yalan ve aldatmacayla dolu haberlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"untruthful / deceitful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yalancı, sahte, uydurma\"."
   },
   {
     "id": "w1131",
@@ -24831,7 +25961,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sağı solu belli olmayan olarak nitelendirmektedir.",
     "ydsTip": "Duyguları veya havası bir anda değişen yapıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"volatile / capricious\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sağı solu belli olmayan, değişken, cıva gibi\"."
   },
   {
     "id": "w1132",
@@ -24853,7 +25984,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece asık suratlı olarak nitelendirmektedir.",
     "ydsTip": "Etrafına neşe vermeyen suratsız tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"gloomy / sullen\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"asık suratlı, aksi, huysuz\"."
   },
   {
     "id": "w1133",
@@ -24875,7 +26007,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece cömert olarak nitelendirmektedir.",
     "ydsTip": "Milyonlarca lira bağışlayan hayırsever cömertliğidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"generous / bountiful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"cömert, eli açık, bol bağış yapan\"."
   },
   {
     "id": "w1134",
@@ -24896,7 +26029,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece miyop olarak nitelendirmektedir.",
     "ydsTip": "Geleceği planlayamayan dar görüşlü politikalardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nearsighted / short-sighted\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"miyop, uzağı göremeyen, dar görüşlü\"."
   },
   {
     "id": "w1135",
@@ -24918,7 +26052,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece bulutsu olarak nitelendirmektedir.",
     "ydsTip": "Sınırları tam netleşmemiş puslu fikirlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vague / hazy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bulutsu, belirsiz, puslu, muğlak\"."
   },
   {
     "id": "w1136",
@@ -24940,7 +26075,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece alçakça olarak nitelendirmektedir.",
     "ydsTip": "Topluma zarar veren karanlık ve şeytani planlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wicked / evil\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"alçakça, haince, şeytani\"."
   },
   {
     "id": "w1137",
@@ -24962,7 +26098,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece nüanslı olarak nitelendirmektedir.",
     "ydsTip": "Siyah-beyaz bakmayan, ara tonları gören tahlildir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"subtle / complex\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nüanslı, incelikli, çok yönlü\"."
   },
   {
     "id": "w1138",
@@ -24984,7 +26121,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece taş yürekli olarak nitelendirmektedir.",
     "ydsTip": "Asla geri adım atmayan katı inattır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"stubborn / unyielding\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"taş yürekli, inatçı, yola gelmez\"."
   },
   {
     "id": "w1139",
@@ -25006,7 +26144,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece dalkavuk olarak nitelendirmektedir.",
     "ydsTip": "Makam sahiplerine aşırı eğilip bükülen tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"servile / sycophantic\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dalkavuk, yağcı, yalakaca itaatkar\"."
   },
   {
     "id": "w1140",
@@ -25027,7 +26166,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece panoramik olarak nitelendirmektedir.",
     "ydsTip": "Geniş açılı manzara veya etraflı taramadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"comprehensive / wide-angle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"panoramik, kuşbakışı, her yönü gören\"."
   },
   {
     "id": "w1141",
@@ -25048,7 +26188,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece ukala olarak nitelendirmektedir.",
     "ydsTip": "Kitabi kurallara körü körüne takılan kişidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fussy / over-scrupulous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ukala, gereksiz ayrıntılara takılan\"."
   },
   {
     "id": "w1142",
@@ -25070,7 +26211,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece pişman olarak nitelendirmektedir.",
     "ydsTip": "Hatasından ötürü derin pişmanlık duymaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"repentant / remorseful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"pişman, nedamet getiren, tövbekar\"."
   },
   {
     "id": "w1143",
@@ -25092,7 +26234,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece baştan savma olarak nitelendirmektedir.",
     "ydsTip": "Özen göstermeden formalite icabı yapılan iştir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"cursory / mechanical\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"baştan savma, laf olsun diye yapılan\"."
   },
   {
     "id": "w1144",
@@ -25114,7 +26257,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sinsi ve ölümcül olarak nitelendirmektedir.",
     "ydsTip": "Tıpta öldürücü anemi veya sinsi zararlı etkidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"destructive / harmful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sinsi ve ölümcül, çok zararlı\"."
   },
   {
     "id": "w1145",
@@ -25136,7 +26280,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece keskin görüşlü olarak nitelendirmektedir.",
     "ydsTip": "Görünmeyeni sezen üstün ferasettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"shrewd / astute\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"keskin görüşlü, basiretli, ferasetli\"."
   },
   {
     "id": "w1146",
@@ -25158,7 +26303,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece soğukkanlı olarak nitelendirmektedir.",
     "ydsTip": "Kriz anında bile paniğe kapılmayan sakin mizaçtır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"calm / unflappable\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"soğukkanlı, kolay heyecanlanmayan, flegmatik\"."
   },
   {
     "id": "w1147",
@@ -25180,7 +26326,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece özlü olarak nitelendirmektedir.",
     "ydsTip": "Az kelimeyle çok derin anlam veren sözdür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"concise / succinct\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özlü, veciz, can alıcı\"."
   },
   {
     "id": "w1148",
@@ -25202,7 +26349,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece durgun olarak nitelendirmektedir.",
     "ydsTip": "Dalgalanmayan çarşaf gibi göl veya sakin huydur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"peaceful / tranquil\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"durgun, sakin, huzurlu\"."
   },
   {
     "id": "w1149",
@@ -25224,7 +26372,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece polemik yaratan olarak nitelendirmektedir.",
     "ydsTip": "Fikri tartışmayı sertleştiren yazılardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"contentious / controversial\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"polemik yaratan, tartışmacı, kavgacı\"."
   },
   {
     "id": "w1150",
@@ -25246,7 +26395,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece müsrif olarak nitelendirmektedir.",
     "ydsTip": "Parayı düşüncesizce çarçur etmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wasteful / extravagant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"müsrif, savurgan, mirasyedi\"."
   },
   {
     "id": "w1151",
@@ -25268,7 +26418,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sıradan olarak nitelendirmektedir.",
     "ydsTip": "Düz yazı gibi sade ve sıkıcı günlük hayattır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mundane / ordinary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sıradan, yavan, şiirsellikten uzak\"."
   },
   {
     "id": "w1152",
@@ -25290,7 +26441,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kavgacı olarak nitelendirmektedir.",
     "ydsTip": "'Belligerent' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"combative / aggressive\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kavgacı, kavgaya hazır, hırçın\"."
   },
   {
     "id": "w1153",
@@ -25312,7 +26464,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kuralcı olarak nitelendirmektedir.",
     "ydsTip": "Görgü kurallarında zerre taviz vermeyen titizliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"meticulous / scrupulous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kuralcı, adaba aşırı riayet eden, titiz\"."
   },
   {
     "id": "w1154",
@@ -25334,7 +26487,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece donkişotça olarak nitelendirmektedir.",
     "ydsTip": "Gerçekleşmesi imkansız romantik ideallerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"idealistic / impractical\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"donkişotça, hayalperest, imkansızın peşinde\"."
   },
   {
     "id": "w1155",
@@ -25356,7 +26510,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece gündelik olarak nitelendirmektedir.",
     "ydsTip": "Her gün yaşanan sıradan olaylardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"daily / everyday\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gündelik, sıradan, her günkü\"."
   },
   {
     "id": "w1156",
@@ -25378,7 +26533,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece dik başlı olarak nitelendirmektedir.",
     "ydsTip": "Tedaviyi veya disiplini reddeden dik kafalı tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"uncooperative / defiant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dik başlı, inatçı, kurallara uymayan\"."
   },
   {
     "id": "w1157",
@@ -25400,7 +26556,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece derin olarak nitelendirmektedir.",
     "ydsTip": "Sadece birkaç uzmanın bildiği derin konulardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"obscure / abstruse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"derin, anlaşılması güç, gizli kalmış\"."
   },
   {
     "id": "w1158",
@@ -25422,7 +26579,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece ketum olarak nitelendirmektedir.",
     "ydsTip": "Duygularını paylaşmaktan çekinen çekingen mizaçtır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reserved / taciturn\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ketum, sessiz, duygularını açmayan\"."
   },
   {
     "id": "w1159",
@@ -25444,7 +26602,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece bilge olarak nitelendirmektedir.",
     "ydsTip": "Yılların tecrübesine dayanan bilgece öğüttür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wise / shrewd\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bilge, ferasetli, sağduyulu\"."
   },
   {
     "id": "w1160",
@@ -25466,7 +26625,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sağlığa yararlı olarak nitelendirmektedir.",
     "ydsTip": "Dağ veya deniz havasının şifalı olmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"healthy / wholesome\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sağlığa yararlı, şifalı, temiz (hava)\"."
   },
   {
     "id": "w1161",
@@ -25488,7 +26648,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kendini beğenmiş dindar olarak nitelendirmektedir.",
     "ydsTip": "Başkalarını kınayıp kendini ermiş gibi gösteren tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"self-righteous / holier-than-thou\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kendini beğenmiş dindar, riyakarca ahlakçı\"."
   },
   {
     "id": "w1162",
@@ -25510,7 +26671,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece iyimser olarak nitelendirmektedir.",
     "ydsTip": "'Optimistic' eşanlamlısı pozitif (+) sıfattır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"optimistic / hopeful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iyimser, umutlu, kanlı canlı\"."
   },
   {
     "id": "w1163",
@@ -25532,7 +26694,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece zehir zemberek olarak nitelendirmektedir.",
     "ydsTip": "Yerle bir eden çok ağır eleştiridir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"severe / harsh\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zehir zemberek, çok sert, ezici (eleştiri)\"."
   },
   {
     "id": "w1164",
@@ -25554,7 +26717,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sadık olarak nitelendirmektedir.",
     "ydsTip": "Kriz anında bile terk etmeyen sarsılmaz müttefiktir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"loyal / faithful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sadık, sarsılmaz, cansiperane\"."
   },
   {
     "id": "w1165",
@@ -25576,7 +26740,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece tırmalayıcı olarak nitelendirmektedir.",
     "ydsTip": "Kulağı tırmalayan ses veya tavizsiz sert muhalefettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"harsh / shrill\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tırmalayıcı, tiz, saldırgan ve ısrarlı\"."
   },
   {
     "id": "w1166",
@@ -25598,7 +26763,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece tepeden bakan olarak nitelendirmektedir.",
     "ydsTip": "Başkalarına hor bakan kibirli tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"arrogant / condescending\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tepeden bakan, kibirli, küçümseyici\"."
   },
   {
     "id": "w1167",
@@ -25620,7 +26786,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece gizli kapaklı olarak nitelendirmektedir.",
     "ydsTip": "Kimseye fark ettirmeden gizlice yapılan iştir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"secret / clandestine\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gizli kapaklı, el altından yapılan, kaçamak\"."
   },
   {
     "id": "w1168",
@@ -25642,7 +26809,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece dalkavuk olarak nitelendirmektedir.",
     "ydsTip": "Menfaat için güçlüye yağ çeken tavırdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fawning / servile\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dalkavuk, çanak yalayıcı, yağcı\"."
   },
   {
     "id": "w1169",
@@ -25664,7 +26832,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece zımni olarak nitelendirmektedir.",
     "ydsTip": "Söz dökülmeden bakışlarla anlaşılmış onamdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"implicit / unspoken\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zımni, üstü kapalı kabul edilen, sessiz\"."
   },
   {
     "id": "w1170",
@@ -25686,7 +26855,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece sessiz olarak nitelendirmektedir.",
     "ydsTip": "Ağzından cımbızla laf alınan insandır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"uncommunicative / reticent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sessiz, az konuşan, ketum\"."
   },
   {
     "id": "w1171",
@@ -25707,7 +26877,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece eşdeğer olarak nitelendirmektedir.",
     "ydsTip": "'Tantamount to' (-ile eşdeğer/aynı kapıya çıkan).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"equivalent / equal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eşdeğer, aynı kapıya çıkan, denk\"."
   },
   {
     "id": "w1172",
@@ -25729,7 +26900,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece inatçı olarak nitelendirmektedir.",
     "ydsTip": "Asla bırakmayan güçlü pençe veya pes etmeyen azimdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"persistent / determined\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"inatçı, azimli, sımsıkı yapışan\"."
   },
   {
     "id": "w1173",
@@ -25751,7 +26923,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece zayıf olarak nitelendirmektedir.",
     "ydsTip": "Kanıtlar arasındaki bağın çok zayıf olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"flimsy / weak\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zayıf, pamuk ipliğine bağlı, cılız\"."
   },
   {
     "id": "w1174",
@@ -25773,7 +26946,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece uyuşuk olarak nitelendirmektedir.",
     "ydsTip": "Soğuktan veya tembellikten hareket edememe halidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lethargic / sluggish\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uyuşuk, hareketsiz, kış uykusunda gibi\"."
   },
   {
     "id": "w1175",
@@ -25795,7 +26969,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece dolambaçlı olarak nitelendirmektedir.",
     "ydsTip": "Kıvrımlı dağ yolu veya uzayıp giden çetrefilli müzakerelerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"winding / twisting\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dolambaçlı, kıvrımlı, karmaşık\"."
   },
   {
     "id": "w1176",
@@ -25817,7 +26992,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece keskin olarak nitelendirmektedir.",
     "ydsTip": "Sorunun özüne inen can alıcı tahlildir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"incisive / penetrating\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"keskin, etkili, can alıcı, sivri dilli\"."
   },
   {
     "id": "w1177",
@@ -25839,7 +27015,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece hırçın olarak nitelendirmektedir.",
     "ydsTip": "Sürekli kavga çıkarmaya hazır ruh halidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"belligerent / defiant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hırçın, kavgacı, saldırgan\"."
   },
   {
     "id": "w1178",
@@ -25861,7 +27038,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece yağcı olarak nitelendirmektedir.",
     "ydsTip": "Aşırı yapmacık ve çıkarcı nezakettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"ctuous\". \"ctuous\" kökünün zıddı olarak \"yağcı, riyakar, yapmacık nezaketli\" anlamına gelir."
   },
   {
     "id": "w1179",
@@ -25883,7 +27061,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kesin olarak nitelendirmektedir.",
     "ydsTip": "İki anlama çekilemeyecek kadar net ifadedir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"UN- (olumsuzluk eki)\" + \"equivocal\". \"equivocal\" kökünün zıddı olarak \"kesin, net, tartışmasız, su götürmez\" anlamına gelir."
   },
   {
     "id": "w1180",
@@ -25905,7 +27084,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece boş olarak nitelendirmektedir.",
     "ydsTip": "İçinde zeka kırıntısı olmayan boş bakıştır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"empty / mindless\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"boş, anlamsız, ahmakça\"."
   },
   {
     "id": "w1181",
@@ -25927,7 +27107,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece yavan olarak nitelendirmektedir.",
     "ydsTip": "Heyecan vermeyen sığ ve sıradan muhabbettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dull / uninspired\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yavan, tatsız tuzsuz, sığ\"."
   },
   {
     "id": "w1182",
@@ -25949,7 +27130,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece şiddetli olarak nitelendirmektedir.",
     "ydsTip": "Karşı çıkışın veya reddin çok sert olmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"forceful / passionate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şiddetli, hararetli, çok sert\"."
   },
   {
     "id": "w1183",
@@ -25971,7 +27153,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece saygıdeğer olarak nitelendirmektedir.",
     "ydsTip": "Tarihinden veya ilminden ötürü hürmet edilen kurumdur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 AKILDA TUT: \"-ABLE / -IBLE (-ebilen, yetenek)\". \"vener\" köküne gelerek: \"saygıdeğer, muhterem, kadim\"."
   },
   {
     "id": "w1184",
@@ -25993,7 +27176,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece lafı uzatan olarak nitelendirmektedir.",
     "ydsTip": "Kısa söylenebilecek şeyi uzatıp durmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wordy / prolix\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"lafı uzatan, çok kelimeli, ağdalı\"."
   },
   {
     "id": "w1185",
@@ -26015,7 +27199,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece can sıkıcı olarak nitelendirmektedir.",
     "ydsTip": "Hukukta insanı bezdirmek için açılan gereksiz davadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"annoying / troublesome\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"can sıkıcı, usandırıcı, tacizkar\"."
   },
   {
     "id": "w1186",
@@ -26036,7 +27221,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece vekaleten yaşanan olarak nitelendirmektedir.",
     "ydsTip": "Başkası yaşarken kendisi yaşamış gibi hissetmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"indirect / substitute\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"vekaleten yaşanan, başkasının yerine hissetme\"."
   },
   {
     "id": "w1187",
@@ -26058,7 +27244,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece intikamcı olarak nitelendirmektedir.",
     "ydsTip": "Öç almak için fırsat kollayan kindarlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vengeful / spiteful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"intikamcı, kinci, kindar\"."
   },
   {
     "id": "w1188",
@@ -26080,7 +27267,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece son derece bulaşıcı/öldürücü olarak nitelendirmektedir.",
     "ydsTip": "Biyolojide ölümcül virüs, siyasette zehirli dildir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deadly / lethal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"son derece bulaşıcı/öldürücü, zehirli, kindar\"."
   },
   {
     "id": "w1189",
@@ -26102,7 +27290,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece obur olarak nitelendirmektedir.",
     "ydsTip": "Kitap kurdu veya gözü doymayan iştah içindir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"insatiable / ravenous\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"obur, doymak bilmez, iştahlı\"."
   },
   {
     "id": "w1190",
@@ -26124,7 +27313,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece temkinli olarak nitelendirmektedir.",
     "ydsTip": "'Wary of' (-e karşı temkinli olmak) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"cautious / careful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"temkinli, tedbirli, uyanık\"."
   },
   {
     "id": "w1191",
@@ -26146,7 +27336,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çağdaş araştırmacılar, bu biyolojik örüntüyü modern yaşam alanları genelinde son derece kaprisli olarak nitelendirmektedir.",
     "ydsTip": "Mantıktan ziyade hayal gücüne dayalı muzip durumdur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"playful / fanciful\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kaprisli, çocuksu, muzip, garip\"."
   },
   {
     "id": "w1192",
@@ -26168,7 +27359,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sapma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Genel normdan sapan istisnai durumdur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"sapma, kuraldışılık, sapkınlık\" kavramını temsil eder."
   },
   {
     "id": "w1193",
@@ -26190,7 +27382,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, keskin zeka kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Piyasa veya politikadaki üstün zeka ve basirettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"shrewdness / acuteness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"keskin zeka, basiret, kavrayış gücü\"."
   },
   {
     "id": "w1194",
@@ -26212,7 +27405,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, güçlük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Zorluklar ve badirelerle mücadele etmektir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hardship / misfortune\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"güçlük, talihsizlik, sıkıntı\"."
   },
   {
     "id": "w1195",
@@ -26234,7 +27428,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yakınlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Biyolojide kimyasal çekim, sosyolojide yakınlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"attraction / kinship\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yakınlık, sempati, benzeşme\"."
   },
   {
     "id": "w1196",
@@ -26256,7 +27451,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çeviklik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Zihinsel kıvraklık veya bedensel çevikliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"nimbleness / dexterity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çeviklik, ataklık, kıvraklık\"."
   },
   {
     "id": "w1197",
@@ -26278,7 +27474,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yabancılaşma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Sosyolojide bireyin toplumdan kopuşudur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yabancılaşma, tecrit, uzaklaşma\" kavramını temsil eder."
   },
   {
     "id": "w1198",
@@ -26300,7 +27497,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, bağlılık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Vatandaşın devletine veya liderine sadakatidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"loyalty / faithfulness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bağlılık, sadakat, biat\"."
   },
   {
     "id": "w1199",
@@ -26322,7 +27520,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, düşmanlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Gruplar arasındaki kökleşmiş düşmanlıktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hostility / antagonism\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"düşmanlık, husumet, hınç\"."
   },
   {
     "id": "w1200",
@@ -26344,7 +27543,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, antitez kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Bir tezin tam zıddı olan kutuptur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"opposite / contrary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"antitez, taban tabana zıtlık\"."
   },
   {
     "id": "w1201",
@@ -26366,7 +27566,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kayıtsızlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Toplumun sorunlara karşı tepkisiz kalmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"indifference / lethargy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kayıtsızlık, ilgisizlik, tepkisizlik\"."
   },
   {
     "id": "w1202",
@@ -26388,7 +27589,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, doruk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kariyerin zirvesi veya besin zincirinin tepesindeki yırtıcıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"peak / pinnacle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doruk, tepe noktası, zirve\"."
   },
   {
     "id": "w1203",
@@ -26410,7 +27612,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yatıştırma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Tarihte Hitler'e verilen taviz politikasıyla meşhurdur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"conciliation / pacification\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yatıştırma, taviz vererek barış sağlama\"."
   },
   {
     "id": "w1204",
@@ -26432,7 +27635,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, tahkim kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Uluslararası ticaret anlaşmazlıklarının mahkemesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"tahkim, hakemlik, arabuluculuk\" kavramını temsil eder."
   },
   {
     "id": "w1205",
@@ -26454,7 +27658,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kibir kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Humility' (tevazu) zıttıdır; yıkıcı kibirdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hubris / haughtiness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kibir, gurur, küstahlık\"."
   },
   {
     "id": "w1206",
@@ -26476,7 +27681,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hile kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Aldatıcı kurnazlık veya ince ustalıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"trickery / deception\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hile, kurnazlık, ustalık\"."
   },
   {
     "id": "w1207",
@@ -26498,7 +27704,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, üstünlük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Bir gücün diğerine üstünlük kurmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dominance / supremacy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"üstünlük, hakimiyet, baskınlık\"."
   },
   {
     "id": "w1208",
@@ -26520,7 +27727,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çalışkanlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Akademik titizlik ve durmaksızın çalışmadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"diligence / industry\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çalışkanlık, sebat, devamlı gayret\"."
   },
   {
     "id": "w1209",
@@ -26542,7 +27750,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, vahşet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Savaş suçları ve insanlık dışı katliamlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"outrage / cruelty\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"vahşet, canavarlık, büyük zulüm\"."
   },
   {
     "id": "w1210",
@@ -26564,7 +27773,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, cüret kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Görülmemiş bir cesaret veya yüzsüzlüktür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"boldness / nerve\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"cüret, küstahlık, cesaret\"."
   },
   {
     "id": "w1211",
@@ -26586,7 +27796,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kemer sıkma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Ekonomik krizlerde devletin harcamaları kısmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"frugality / strictness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kemer sıkma, tasarruf, sadelik\"."
   },
   {
     "id": "w1212",
@@ -26608,7 +27819,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, açgözlülük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Doymak bilmeyen mal ve para hırsıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"greed / cupidity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"açgözlülük, hırs, para tutkusu\"."
   },
   {
     "id": "w1213",
@@ -26630,7 +27842,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, afet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Boon' (nimet/lütuf) zıttıdır; baş belasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"curse / blight\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"afet, bela, felaket sebebi\"."
   },
   {
     "id": "w1214",
@@ -26652,7 +27865,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, savaşçılık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Savaşa ve kavgaya hazır olma durumudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"aggression / hostility\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"savaşçılık, saldırganlık, hırçınlık\"."
   },
   {
     "id": "w1215",
@@ -26674,7 +27888,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hayırsever kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Eğitim veya sağlığa milyonlar bağışlayan kimsedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"patron / donor\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hayırsever, bağışçı, velinimet\"."
   },
   {
     "id": "w1216",
@@ -26696,7 +27911,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, iyilikseverlik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İnsanlığa karşılıksız fayda sağlama erdemidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"kindness / goodwill\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iyilikseverlik, cömertlik, şefkat\"."
   },
   {
     "id": "w1217",
@@ -26718,7 +27934,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, afet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Şehirlerin çöküntüye uğraması veya tarım felaketidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"scourge / curse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"afet, mahvolma, bitki pası\"."
   },
   {
     "id": "w1218",
@@ -26740,7 +27957,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, büyük nimet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Bane' zıttıdır; teknoloji veya barışın getirdiği nimettir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"blessing / benefit\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"büyük nimet, lütuf, fayda\"."
   },
   {
     "id": "w1219",
@@ -26762,7 +27980,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kısalık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Lafı uzatmadan anlatma maharetidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"conciseness / succinctness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kısalık, özlülük, az ve öz oluş\"."
   },
   {
     "id": "w1220",
@@ -26783,7 +28002,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, bürokrasi kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Devlet çarklarının yavaş işlemesi ve kırtasiyeciliktir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"red tape / administration\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bürokrasi, kırtasiyecilik, memur hakimiyeti\"."
   },
   {
     "id": "w1221",
@@ -26805,7 +28025,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kakofoni kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kulağı tırmalayan gürültü ve ses karmaşasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dissonance / discord\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kakofoni, çirkin ve uyumsuz ses karmaşası\"."
   },
   {
     "id": "w1222",
@@ -26827,7 +28048,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, içtenlik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hiçbir şeyi gizlemeden dürüstçe konuşmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"frankness / honesty\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"içtenlik, dürüstlük, dobralık\"."
   },
   {
     "id": "w1223",
@@ -26849,7 +28071,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, büyük tufan kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Dünya tarihini değiştiren meteor veya volkan felaketidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"catastrophe / disaster\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"büyük tufan, yıkıcı afet, sarsıntı\"."
   },
   {
     "id": "w1224",
@@ -26871,7 +28094,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kınama kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Meclisin veya kurulun verdiği resmi kınama cezasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"condemnation / reprimand\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kınama, şiddetli eleştiri, azar\"."
   },
   {
     "id": "w1225",
@@ -26893,7 +28117,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, düzenbazlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hukuk veya siyasette yapılan entrikalardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"trickery / deception\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"düzenbazlık, hilekarlık, ayak oyunu\"."
   },
   {
     "id": "w1226",
@@ -26915,7 +28140,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, gürültülü talep kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Halkın reform için meydanlarda bağırmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"uproar / outcry\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gürültülü talep, feryat, bağırış çağırış\"."
   },
   {
     "id": "w1227",
@@ -26937,7 +28163,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, merhamet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Mahkuma ceza indirimi veya af göstermektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mercy / leniency\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"merhamet, af, hoşgörü\"."
   },
   {
     "id": "w1228",
@@ -26959,7 +28186,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, koalisyon kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Partilerin veya devletlerin ortak hedefte birleşmesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"koalisyon, birlik, ittifak\" kavramını temsil eder."
   },
   {
     "id": "w1229",
@@ -26981,7 +28209,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kohort kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İstatistikte aynı yılda doğmuş veya deney grubudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"group / generation\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kohort, benzer grup, yandaş\"."
   },
   {
     "id": "w1230",
@@ -27003,7 +28232,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, gizli anlaşma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Rakiplerin fiyat sabitlemek için gizlice anlaşmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"gizli anlaşma, danışıklı dövüş, komplo\" kavramını temsil eder."
   },
   {
     "id": "w1231",
@@ -27025,7 +28255,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, büyük yangın kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Ormanları veya şehirleri kül eden devasa yangındır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"büyük yangın, alevler içinde kalma\" kavramını temsil eder."
   },
   {
     "id": "w1232",
@@ -27047,7 +28278,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, uzman kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Sanatın veya şarabın inceliklerini bilen kimsedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"expert / authority\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uzman, eksper, sanat erbabı\"."
   },
   {
     "id": "w1233",
@@ -27069,7 +28301,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, büyük şaşkınlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Beklenmedik felaket karşısında donakalmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"büyük şaşkınlık, dehşet, afallama\" kavramını temsil eder."
   },
   {
     "id": "w1234",
@@ -27091,7 +28324,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, pişmanlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İşlenen günahtan veya suçtan duyulan içten pişmanlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"pişmanlık, nedamet, vicdan azabı\" kavramını temsil eder."
   },
   {
     "id": "w1235",
@@ -27113,7 +28347,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çözülmesi zor problem kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İçinden çıkılması güç ahlaki veya mantıksal ikilemdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dilemma / enigma\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çözülmesi zor problem, muamma, bilmece\"."
   },
   {
     "id": "w1236",
@@ -27135,7 +28370,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, inanç kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "1. Sarsılmaz derin inanç; 2. Mahkeme mahkumiyetidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"inanç, kanaat, mahkumiyet\" kavramını temsil eder."
   },
   {
     "id": "w1237",
@@ -27157,7 +28393,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, doğal sonuç kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Bir önermenin arkasından mantıken gelen neticedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"consequence / result\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doğal sonuç, kaçınılmaz netice\"."
   },
   {
     "id": "w1238",
@@ -27179,7 +28416,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, can alıcı nokta kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'At the crux of the problem' (sorunun tam merkezinde) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"essence / core\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"can alıcı nokta, meselenin özü, düğüm\"."
   },
   {
     "id": "w1239",
@@ -27201,7 +28439,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kıtlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Dürth' (kıtlık) = scarcity = shortage; delil yetersizliğidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"scarcity / lack\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kıtlık, noksanlık, yetersizlik\"."
   },
   {
     "id": "w1240",
@@ -27223,7 +28462,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hezimet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Büyük beklentiyle girilip rezil olunan fiyaskodur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fiasco / catastrophe\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hezimet, fiyasko, tam çöküş\"."
   },
   {
     "id": "w1241",
@@ -27245,7 +28485,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, enkaz kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Deprem enkazı veya uzay çöpleridir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"rubble / ruins\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"enkaz, kalıntı, döküntü\"."
   },
   {
     "id": "w1242",
@@ -27267,7 +28508,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, edep kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Meclis veya cemiyet kurallarına uygun terbiyeli davranmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"propriety / decency\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"edep, adabımuaşeret, terbiye\"."
   },
   {
     "id": "w1243",
@@ -27289,7 +28531,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, saygı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'In deference to' (-e hürmeten/saygıdan ötürü) kalıbıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"respect / reverence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"saygı, hürmet, baş eğme\"."
   },
   {
     "id": "w1244",
@@ -27311,7 +28554,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, meydan okuma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Otoriteye veya yasalara açıkça karşı çıkmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"resistance / rebellion\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"meydan okuma, itaatsizlik, karşı gelme\"."
   },
   {
     "id": "w1245",
@@ -27333,7 +28577,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ayrıntılı tasvir kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Görev veya sınırların net çizgilerle belirlenmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"ayrıntılı tasvir, sınır çizme, profil\" kavramını temsil eder."
   },
   {
     "id": "w1246",
@@ -27355,7 +28600,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sanrı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Büyüklük sanrısı veya gerçek dışı inançtır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"sanrı, hezeyan, yanılsama\" kavramını temsil eder."
   },
   {
     "id": "w1247",
@@ -27376,7 +28622,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, demagog kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Halkın önyargılarını ve korkularını sömüren hatip.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"rabble-rouser / agitator\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"demagog, halk avcısı, kışkırtıcı lider\"."
   },
   {
     "id": "w1248",
@@ -27398,7 +28645,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yıkım kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Eski yapıların iş makineleriyle yerle bir edilmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yıkım, tahrip, yerle bir etme\" kavramını temsil eder."
   },
   {
     "id": "w1249",
@@ -27419,7 +28667,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, alenen kınama kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hükümetin veya aydınların savaşı alenen kınamasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"alenen kınama, ihbar, lanetleme\" kavramını temsil eder."
   },
   {
     "id": "w1250",
@@ -27441,7 +28690,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ahlaksızlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Ahlakın tamamen çürümesi ve yozlaşmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wickedness / corruption\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ahlaksızlık, yozlaşma, sapkınlık\"."
   },
   {
     "id": "w1251",
@@ -27463,7 +28713,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, alay kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Toplum önünde alay konusu edilmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"alay, alay konusu olma, istihza\" kavramını temsil eder."
   },
   {
     "id": "w1252",
@@ -27485,7 +28736,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, türeme kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kelimenin etimolojik kökeni veya formül çıkarımıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"türeme, köken, elde etme\" kavramını temsil eder."
   },
   {
     "id": "w1253",
@@ -27507,7 +28759,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ıssızlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Savaş veya afetten sonra kalan bomboş viranedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"ıssızlık, viranelik, yapayalnızlık\" kavramını temsil eder."
   },
   {
     "id": "w1254",
@@ -27529,7 +28782,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, despotluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hukuk tanımayan tek adam diktasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"tyranny / autocracy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"despotluk, tiranlık, mutlakıyet\"."
   },
   {
     "id": "w1255",
@@ -27551,7 +28805,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, aşırı yoksulluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Ekmek parası bile bulamama durumudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"aşırı yoksulluk, fakruzaruret, sefalet\" kavramını temsil eder."
   },
   {
     "id": "w1256",
@@ -27572,7 +28827,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, caydırıcılık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Düşmanın saldırmasını önleyen nükleer güçtür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"prevention / intimidation\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"caydırıcılık, önleyicilik\"."
   },
   {
     "id": "w1257",
@@ -27594,7 +28850,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, zarar kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'To the detriment of' (-in zararına/aleyhine) altın kalıptır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"harm / damage\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zarar, ziyan, hasar\"."
   },
   {
     "id": "w1258",
@@ -27616,7 +28873,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sapma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İstatistikte standart sapma veya kuraldan sapmadır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"sapma, yön değiştirme, ayrılma\" kavramını temsil eder."
   },
   {
     "id": "w1259",
@@ -27638,7 +28896,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, el becerisi kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Cerrahın veya zanaatkarın ince el maharetidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"skill / adroitness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"el becerisi, maharet, ustalık\"."
   },
   {
     "id": "w1260",
@@ -27660,7 +28919,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, zehir zemberek nutuk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Birine karşı atıp tutulan uzun ve öfkeli konuşmadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"tirade / harangue\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zehir zemberek nutuk, yergi, sert eleştiri\"."
   },
   {
     "id": "w1261",
@@ -27682,7 +28942,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, harabelik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Bakımsızlıktan çökmek üzere olan bina durumudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"harabelik, döküntülük, bakımsızlık\" kavramını temsil eder."
   },
   {
     "id": "w1262",
@@ -27704,7 +28965,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, gayret kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Due diligence' (durum tespiti/özen yükümlülüğü) hukuk terimidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"carefulness / industry\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gayret, özen, çalışkanlık\"."
   },
   {
     "id": "w1263",
@@ -27726,7 +28988,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ödeme kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Banka kredisinin veya devlet fonunun hak sahibine ödenmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"bursement\". Durumun tersine dönmesi: \"ödeme, para çıkarma, sarfiyat\"."
   },
   {
     "id": "w1264",
@@ -27748,7 +29011,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, feraset kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Doğru ile yanlışı şipşak ayırt edebilme zekasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"cernment\". Durumun tersine dönmesi: \"feraset, basiret, ayırt etme yetisi\"."
   },
   {
     "id": "w1265",
@@ -27770,7 +29034,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, uyumsuzluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Toplum veya aile arasına nifak sokmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"cord\". Durumun tersine dönmesi: \"uyumsuzluk, nifak, ahenksizlik\"."
   },
   {
     "id": "w1266",
@@ -27792,7 +29057,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, takdir yetkisi kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'At the discretion of' (-in takdirine bağlı olarak) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"cretion\". Durumun tersine dönmesi: \"takdir yetkisi, basiret, ketumiyet\"."
   },
   {
     "id": "w1267",
@@ -27814,7 +29080,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hor görme kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Treat with disdain' (tepeden bakmak/aşağılamak).",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"dain\". Durumun tersine dönmesi: \"hor görme, küçümseme, tenezzül etmeme\"."
   },
   {
     "id": "w1268",
@@ -27836,7 +29103,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, dağıtım kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Adaletin dağıtılması veya özel kural muafiyetidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"pensation\". Durumun tersine dönmesi: \"dağıtım, bağışıklık, muafiyet\"."
   },
   {
     "id": "w1269",
@@ -27858,7 +29126,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, muhalefet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Otoriteye karşı çıkan muhalif seslerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"sent\". Durumun tersine dönmesi: \"muhalefet, karşı görüş, uyuşmazlık\"."
   },
   {
     "id": "w1270",
@@ -27880,7 +29149,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, dağılma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Meclisin feshi veya imparatorluğun dağılmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"solution\". Durumun tersine dönmesi: \"dağılma, fesih, erime\"."
   },
   {
     "id": "w1271",
@@ -27902,7 +29172,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, uyumsuzluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Cognitive dissonance' (bilişsel çelişki) psikoloji terimidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"sonance\". Durumun tersine dönmesi: \"uyumsuzluk, ahenksizlik, çelişki\"."
   },
   {
     "id": "w1272",
@@ -27924,7 +29195,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çarpıtma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Gerçeklerin bilerek çarpıtılmasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"tortion\". Durumun tersine dönmesi: \"çarpıtma, bozulma, saptırma\"."
   },
   {
     "id": "w1273",
@@ -27946,7 +29218,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, dogma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Eleştiriye kapalı körü körüne inanılan kuraldır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"doctrine / creed\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dogma, nass, sorgulanmaz inanç\"."
   },
   {
     "id": "w1274",
@@ -27968,7 +29241,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, angarya kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Makineler olmadan yapılan yorucu ve tekdüze işlerdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"toil / labor\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"angarya, amelelik, bıktırıcı ağır iş\"."
   },
   {
     "id": "w1275",
@@ -27990,7 +29264,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, iki yüzlülük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Arkadan iş çeviren iki yüzlü sahtekarlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deceit / deception\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"iki yüzlülük, riyakarlık, aldatmaca\"."
   },
   {
     "id": "w1276",
@@ -28012,7 +29287,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yüzsüzlük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Utanmadan herkesin gözünün içine baka baka yapılan saygısızlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"audacity / insolence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yüzsüzlük, küstahlık, arsızlık\"."
   },
   {
     "id": "w1277",
@@ -28033,7 +29309,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, eşitlikçilik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Herkesin eşit haklara sahip olmasını savunan felsefedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"equality / fairness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"eşitlikçilik, insan eşitliği öğretisi\"."
   },
   {
     "id": "w1278",
@@ -28055,7 +29332,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, muamma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Çözülemeyen tarihi veya bilimsel gizemdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mystery / puzzle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"muamma, gizem, anlaşılmaz kimse\"."
   },
   {
     "id": "w1279",
@@ -28077,7 +29355,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, düşmanlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Yüzyıllar süren kan davası ve husumettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"hostility / animosity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"düşmanlık, husumet, adavet\"."
   },
   {
     "id": "w1280",
@@ -28099,7 +29378,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, mükemmel örnek kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Zarafetin veya başarının ete kemiğe bürünmüş halidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"embodiment / personification\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"mükemmel örnek, timsal, abide\"."
   },
   {
     "id": "w1281",
@@ -28121,7 +29401,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, itidal kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Büyük felaket anında bile istifini bozmayan sükunettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"calmness / composure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"itidal, sükunet, soğukkanlılık\"."
   },
   {
     "id": "w1282",
@@ -28142,7 +29423,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, etimoloji kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kelimelerin tarih içindeki kök gelişimini inceler.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"word history / linguistics\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"etimoloji, kökenbilim\"."
   },
   {
     "id": "w1283",
@@ -28163,7 +29445,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hüsnütabir kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kaba veya nahoş sözcüğü kibarlaştırmaktır ('vefat etti' gibi).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"polite term / understatement\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hüsnütabir, yumuşatma sözü\"."
   },
   {
     "id": "w1284",
@@ -28185,7 +29468,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, öfori kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Zaferden sonra duyulan kontrolsüz mutluluk patlamasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"ecstasy / elation\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öfori, aşırı coşku, vecd hali\"."
   },
   {
     "id": "w1285",
@@ -28207,7 +29491,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, toplu göç kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Savaş veya kıtlık yüzünden milyonların ülkeyi terk etmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mass departure / migration\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"toplu göç, firar, çıkış\"."
   },
   {
     "id": "w1286",
@@ -28229,7 +29514,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, amaca uygunluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Ahlaktan ziyade anlık çıkara göre hareket etmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"convenience / pragmatism\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"amaca uygunluk, menfaatçilik, faydacılık\"."
   },
   {
     "id": "w1287",
@@ -28251,7 +29537,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, uzmanlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Yıllar içinde kazanılmış üst düzey uzmanlıktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"skill / know-how\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uzmanlık, ihtisas, maharet\"."
   },
   {
     "id": "w1288",
@@ -28273,7 +29560,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ön cephe kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Gerçek kötülüğü gizleyen cilalı dış maskedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"front / exterior\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ön cephe, maske, dış görünüş\"."
   },
   {
     "id": "w1289",
@@ -28295,7 +29583,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, safsata kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Mantıksal olarak hatalı ve aldatıcı akıl yürütmedir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"misconception / delusion\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"safsata, yanılgı, mantık hatası\"."
   },
   {
     "id": "w1290",
@@ -28317,7 +29606,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hararet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Millet veya din uğruna duyulan alevli coşkudur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"passion / zeal\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hararet, coşku, ateşli şevk\"."
   },
   {
     "id": "w1291",
@@ -28339,7 +29629,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sadakat kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Orijinal sese bağlılık veya evlilik sadakatidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"loyalty / faithfulness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sadakat, doğruluk, aslına uygunluk\"."
   },
   {
     "id": "w1292",
@@ -28361,7 +29652,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, fiyasko kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Yüz karası bir hüsranla sonuçlanan girişimdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"debacle / failure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"fiyasko, tam başarısızlık, rezalet\"."
   },
   {
     "id": "w1293",
@@ -28383,7 +29675,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, incelik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Zor durumları zarafet ve ustalıkla yönetmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"skill / subtlety\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"incelik, ustalık, hüner\"."
   },
   {
     "id": "w1294",
@@ -28405,7 +29698,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sürekli akış kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Asla sabit kalmayan sürekli devinim halidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"instability / transition\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sürekli akış, durmaksızın değişim\"."
   },
   {
     "id": "w1295",
@@ -28427,7 +29721,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sabır kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Öfkelenmek yerine sabır ve hoşgörü göstermektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"patience / tolerance\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sabır, müsamaha, tahammül\"."
   },
   {
     "id": "w1296",
@@ -28449,7 +29744,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, öngörü kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Gelecekteki tehlikeleri önceden kestirme dehasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"anticipation / prudence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öngörü, basiret, uzak görüşlülük\"."
   },
   {
     "id": "w1297",
@@ -28471,7 +29767,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, metanet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Büyük acılara ve felaketlere karşı dimdik durmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"courage / resilience\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"metanet, dayanma gücü, cesaret\"."
   },
   {
     "id": "w1298",
@@ -28493,7 +29790,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sonuçlanma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Come to fruition' (meyvelerini vermek/gerçekleşmek) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"sonuçlanma, meyvesini verme, gerçekleşme\" kavramını temsil eder."
   },
   {
     "id": "w1299",
@@ -28515,7 +29813,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, beyhudelik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Sonuç getirmeyen savaşın boşunalığıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"uselessness / pointlessness\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"beyhudelik, nafilelik, boşunalık\"."
   },
   {
     "id": "w1300",
@@ -28537,7 +29836,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yaratılış kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Bir fikrin veya hastalığın ilk ortaya çıkış kökenidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"origin / inception\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yaratılış, başlangıç, doğuş\"."
   },
   {
     "id": "w1301",
@@ -28559,7 +29859,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ağırlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Devlet adamına yakışan saygın vakar ve ağırlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dignity / solemnity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ağırlık, ciddiyet, vakar\"."
   },
   {
     "id": "w1302",
@@ -28581,7 +29882,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, şikayet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Halkın devlete veya işçinin patrona sunduğu şikayetlerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"complaint / injustice\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şikayet, dert, haksızlık duygusu\"."
   },
   {
     "id": "w1303",
@@ -28603,7 +29905,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ayırt edici özellik kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Bir medeniyetin veya kurumun en belirgin alametifarikasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"trademark / signature\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayırt edici özellik, damga, marka\"."
   },
   {
     "id": "w1304",
@@ -28625,7 +29928,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, zorluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Endure hardship' (meşakkate göğüs germek) tamlamasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"adversity / privation\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"zorluk, darlık, çile, meşakkat\"."
   },
   {
     "id": "w1305",
@@ -28647,7 +29951,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hegemonya kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Büyük bir devletin dünyadaki baskın kontrolüdür.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dominance / supremacy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hegemonya, üstünlük, tahakküm\"."
   },
   {
     "id": "w1306",
@@ -28669,7 +29974,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, engel kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Obstacle / barrier' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"obstacle / impediment\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"engel, köstek, ayak bağı\"."
   },
   {
     "id": "w1307",
@@ -28689,7 +29995,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sonradan anlama kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'In hindsight' (geriye dönüp bakıldığında) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"retrospect\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sonradan anlama, akıl başa gelme\"."
   },
   {
     "id": "w1308",
@@ -28711,7 +30018,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kibir kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Yunan trajedilerinde kahramanı çökerten aşırı kibirdir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"arrogance / pride\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kibir, haddini aşma, tanrısal küstahlık\"."
   },
   {
     "id": "w1309",
@@ -28733,7 +30041,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ikiyüzlülük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Söylediğiyle yaptığı birbirini tutmayan samimiyetsizliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"duplicity / insincerity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ikiyüzlülük, riyakarlık\"."
   },
   {
     "id": "w1310",
@@ -28755,7 +30064,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kendine has tuhaflık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kişiye özgü zararsız garip alışkanlıktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"quirk / eccentricity\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kendine has tuhaflık, şahsi alışkanlık\"."
   },
   {
     "id": "w1311",
@@ -28777,7 +30087,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, rezalet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Toplum karşısında yaşanan büyük utanç ve rezilliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"disgrace / shame\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"rezalet, yüz karalığı, utanç\"."
   },
   {
     "id": "w1312",
@@ -28799,7 +30110,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çıkmaz kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Deadlock / stalemate' eşanlamlısıdır; müzakereler kilitlenince kullanılır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deadlock / stalemate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çıkmaz, kördüğüm, tıkanıklık\"."
   },
   {
     "id": "w1313",
@@ -28821,7 +30133,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, itici güç kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Give impetus to' (-e itici güç kazandırmak).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"momentum / stimulus\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"itici güç, şevk, ivme, dürtü\"."
   },
   {
     "id": "w1314",
@@ -28842,7 +30155,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, cezasızlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Suç işleyip yanına kar kalması, ceza almamasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"immunity / freedom from punishment\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"cezasızlık, yaptırımsızlık\"."
   },
   {
     "id": "w1315",
@@ -28864,7 +30178,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hiddet kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Büyük bir haksızlık karşısında milletin duyduğu öfkedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"hiddet, öfke, infial (haksızlığa karşı)\" kavramını temsil eder."
   },
   {
     "id": "w1316",
@@ -28886,7 +30201,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ihlal kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Telif hakkı veya patent ihlalidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"violation / breach\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ihlal, çiğneme, tecavüz (hakka)\"."
   },
   {
     "id": "w1317",
@@ -28908,7 +30224,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ima kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Açıkça söylemeyip çamur atma amaçlı kinayedir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"insinuation / hint\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ima, üstü kapalı dokundurma, kinaye\"."
   },
   {
     "id": "w1318",
@@ -28930,7 +30247,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, adli soruşturma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Şüpheli ölümlerin ardından yapılan resmi soruşturmadır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"investigation / inquiry\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"adli soruşturma, tahkikat, otopsi\"."
   },
   {
     "id": "w1319",
@@ -28952,7 +30270,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, mali aciz kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Şirketin borçlarını karşılayamaz hale gelmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"bankruptcy / ruin\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"mali aciz, borcunu ödeyememe, batık hali\"."
   },
   {
     "id": "w1320",
@@ -28974,7 +30293,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, seyahat planı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Gezide takip edilecek durakların listesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"route / schedule\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"seyahat planı, gezi güzergahı\"."
   },
   {
     "id": "w1321",
@@ -28996,7 +30316,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kritik an kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'At this juncture' (bu kritik aşamada) kalıbıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"crossroads / point in time\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kritik an, dönüm noktası, kavşak\"."
   },
   {
     "id": "w1322",
@@ -29018,7 +30339,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yargı yetkisi kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Mahkemenin veya polisin hukuki sınırlarıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yargı yetkisi, yetki alanı\" kavramını temsil eder."
   },
   {
     "id": "w1323",
@@ -29040,7 +30362,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yan yana koyma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Resimde veya edebiyatta zıt unsurları yan yana getirmektir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yan yana koyma, tezat yaratacak şekilde dizme\" kavramını temsil eder."
   },
   {
     "id": "w1324",
@@ -29062,7 +30385,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, labirent kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Karmaşık sokaklar veya içinden çıkılmaz bürokrasidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"maze / tangle\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"labirent, içinden çıkılmaz karmaşa\"."
   },
   {
     "id": "w1325",
@@ -29084,7 +30408,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, hoşgörü kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hakimin suçluya hafif ceza vermesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mercy / clemency\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"hoşgörü, merhamet, cezada yumuşaklık\"."
   },
   {
     "id": "w1326",
@@ -29106,7 +30431,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kaldıraç gücü kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Pazarlık masasında eldeki en büyük güç ve kozdur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"influence / advantage\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kaldıraç gücü, nüfuz, koz, etki\"."
   },
   {
     "id": "w1327",
@@ -29128,7 +30454,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, sorumluluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "1. Hukuki sorumluluk; 2. Sırtındaki ayak bağı yük.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"obligation / handicap\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sorumluluk, yükümlülük, dezavantaj, borç\"."
   },
   {
     "id": "w1328",
@@ -29150,7 +30477,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, dava süreci kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Yıllarca süren pahalı mahkeme davalarıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"dava süreci, mahkemelik olma, dava açma\" kavramını temsil eder."
   },
   {
     "id": "w1329",
@@ -29172,7 +30500,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, uzun ömürlülük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İnsanların veya ürünlerin uzun yıllar yaşamasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"long life / durability\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"uzun ömürlülük, kalıcılık\"."
   },
   {
     "id": "w1330",
@@ -29194,7 +30523,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, berraklık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Karmaşık konuyu pırıl pırıl net anlatan üsluptur.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"clarity / coherence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"berraklık, açıklık, zihin netliği\"."
   },
   {
     "id": "w1331",
@@ -29216,7 +30546,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, huzursuzluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Topluma veya bedene çöken sebebini bilmediğin halsizliktir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"unease / discontent\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"huzursuzluk, rahatsızlık, keyifsizlik\"."
   },
   {
     "id": "w1332",
@@ -29238,7 +30569,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, görevi kötüye kullanma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Devlet memurunun veya şirket yöneticisinin yasadışı eylemidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"wrongdoing / misconduct\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"görevi kötüye kullanma, yolsuzluk\"."
   },
   {
     "id": "w1333",
@@ -29260,7 +30592,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kasıt kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Birisini kasten yaralama veya iftira atma gayesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"spite / malevolence\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kasıt, kemlik, kötülük besleme\"."
   },
   {
     "id": "w1334",
@@ -29281,7 +30614,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, bildiri kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Siyasi partinin hedeflerini duyurduğu açık metindir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"declaration / policy statement\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bildiri, manifesto, beyanname\"."
   },
   {
     "id": "w1335",
@@ -29303,7 +30637,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, matris kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İçinde bir şeylerin büyüyüp geliştiği zemin yapıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"framework / grid\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"matris, dölyatağı, kaynak zemin\"."
   },
   {
     "id": "w1336",
@@ -29325,7 +30660,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, özdeyiş kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hayata yön veren altın öğüttür.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"proverb / adage\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"özdeyiş, vecize, temel ilke\"."
   },
   {
     "id": "w1337",
@@ -29347,7 +30683,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, dönüm noktası kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kariyerde veya bilimde büyük aşama kaydedilen duraktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"landmark / turning point\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dönüm noktası, kilometre taşı\"."
   },
   {
     "id": "w1338",
@@ -29369,7 +30706,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yanlış kanı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Toplumda doğru sanılan yaygın yanlışlardır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"yanlış kanı, yanlış anlama, hurafe\" kavramını temsil eder."
   },
   {
     "id": "w1339",
@@ -29391,7 +30729,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, borç tecili kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Balina avcılığına veya borçlara geçici askı koymaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"freeze / suspension\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"borç tecili, geçici durdurma, erteleme\"."
   },
   {
     "id": "w1340",
@@ -29413,7 +30752,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çokluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'A multitude of' (sayısız/pek çok) tamlamasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"abundance / host\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çokluk, kalabalık, yığın\"."
   },
   {
     "id": "w1341",
@@ -29434,7 +30774,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, mutasyon kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "DNA dizilimindeki ani değişikliktir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"mutasyon, genetik başkalaşım\" kavramını temsil eder."
   },
   {
     "id": "w1342",
@@ -29456,7 +30797,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, dip noktası kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Zenith' (zirve) tam zıttıdır; kariyerin en dip anıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"lowest point / bottom\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"dip noktası, en kötü aşama, çöküş tabanı\"."
   },
   {
     "id": "w1343",
@@ -29478,7 +30820,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, anlatı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Tarihte veya medyada halka sunulan ana söylemdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"story / account\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"anlatı, hikaye, söylem\"."
   },
   {
     "id": "w1344",
@@ -29500,7 +30843,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, bağlantı noktası kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İki veya daha çok karmaşık konunun kesişim kavşağıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"junction / link\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"bağlantı noktası, odak, merkez düğüm\"."
   },
   {
     "id": "w1345",
@@ -29522,7 +30866,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, niş kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Biyolojide canlının yuvası, ekonomide özel müşteri kitlesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"specialty / habitat\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"niş, uygun yer, ekolojik yuva\"."
   },
   {
     "id": "w1346",
@@ -29543,7 +30888,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, nostalji kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Eski güzel günlere duyulan hasrettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reminiscence / yearning\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nostalji, geçmişe özlem, sıla hasreti\"."
   },
   {
     "id": "w1347",
@@ -29565,7 +30911,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, nüans kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Sıradan gözün fark edemediği ince detay farkıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"subtlety / refinement\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"nüans, ince fark, küçük ayrıntı\"."
   },
   {
     "id": "w1348",
@@ -29587,7 +30934,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, baş belası kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Gürültü veya sivrisinek gibi insanı canından bezdiren şeydir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"annoyance / pest\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"baş belası, dert, huzur kaçıran şey\"."
   },
   {
     "id": "w1349",
@@ -29609,7 +30957,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, amansız saldırı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Düşmanın veya turistlerin amansız akınıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"assault / attack\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"amansız saldırı, hücum, akın\"."
   },
   {
     "id": "w1350",
@@ -29631,7 +30980,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, büyük çile kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İnsanın ruhunu ve bedenini yıpratan korkunç sınavdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"tribulation / nightmare\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"büyük çile, sınav, azap dolu deneyim\"."
   },
   {
     "id": "w1351",
@@ -29653,7 +31003,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, paradigma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Paradigm shift' (paradigma kayması/köklü anlayış değişimi).",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"framework / model\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"paradigma, model, değerler dizisi\"."
   },
   {
     "id": "w1352",
@@ -29675,7 +31026,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kıtlık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Dearth / scarcity' eşanlamlısıdır; kaynak azlığıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"scarcity / dearth\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kıtlık, azlık, noksanlık\"."
   },
   {
     "id": "w1353",
@@ -29697,7 +31049,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, düşkünlük kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Have a penchant for' (-e aşırı düşkün olmak/zaafı olmak).",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"inclination / predilection\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"düşkünlük, meyil, özel zaaf\"."
   },
   {
     "id": "w1354",
@@ -29719,7 +31072,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, doruk noktası kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Peak / summit' eşanlamlısıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"zenith / apex\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doruk noktası, zirve, taç\"."
   },
   {
     "id": "w1355",
@@ -29741,7 +31095,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çıkmaz kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İki ucu boklu değnek kabilinden zor vaziyettir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"plight / quandary\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çıkmaz, güç durum, içinden çıkılmaz hal\"."
   },
   {
     "id": "w1356",
@@ -29763,7 +31118,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ağırlık basma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Preponderance of evidence' (delillerin ezici ağırlığı).",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"majority / dominance\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ağırlık basma, ekseriyet, üstünlük\"."
   },
   {
     "id": "w1357",
@@ -29785,7 +31141,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, tereddüt kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Ne yapacağını bilememe şaşkınlığı ve ikilemidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"dilemma / predicament\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"tereddüt, çıkmaz, ikilem\"."
   },
   {
     "id": "w1358",
@@ -29807,7 +31164,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, doğuracağı sonuçlar kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Kararın zincirleme doğuracağı karmaşık yan etkilerdir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"doğuracağı sonuçlar, dallanıp budaklanma\" kavramını temsil eder."
   },
   {
     "id": "w1359",
@@ -29828,7 +31186,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, yakınlaşma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İki düşman devletin yeniden masaya oturup yakınlaşmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"reconciliation / detente\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yakınlaşma, arayı düzeltme, barışma\"."
   },
   {
     "id": "w1360",
@@ -29849,7 +31208,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, karşılıklılık kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Uluslararası ilişkilerde 'sen bana ne yaparsan ben de sana yaparım'dır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"mutual exchange / reciprocal action\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"karşılıklılık, mütekabiliyet ilkesi\"."
   },
   {
     "id": "w1361",
@@ -29871,7 +31231,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kurtuluş kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Yapılan büyük hatayı telafi edip vicdanen kurtulmaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"kurtuluş, kefaret, günahlardan arınma\" kavramını temsil eder."
   },
   {
     "id": "w1362",
@@ -29893,7 +31254,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kalıntı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Geçmişten geriye kalan son taş veya kalıntılardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"vestige / remainder\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kalıntı, bakiye, tortu\"."
   },
   {
     "id": "w1363",
@@ -29915,7 +31277,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, felaket kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "İnsanlığı kasıp kavuran savaş veya kıtlık belasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"plague / curse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"felaket, afet, büyük bela\"."
   },
   {
     "id": "w1364",
@@ -29937,7 +31300,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, pat durumu kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Satrançta veya siyasette kimsenin hamle yapamamasıdır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"deadlock / impasse\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"pat durumu, kördüğüm, kilitlenme\"."
   },
   {
     "id": "w1365",
@@ -29959,7 +31323,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, boyun eğdirme kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Bir halkın zorla köleleştirilmesidir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"SUB- (alt/altta kalan)\" + \"jugation\". Temelde yer alıp: \"boyun eğdirme, tahakküm altına alma\"."
   },
   {
     "id": "w1366",
@@ -29981,7 +31346,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, çile kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hayatta çekilen büyük ıstırap ve imtihanlardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"çile, büyük dert, cefa\" kavramını temsil eder."
   },
   {
     "id": "w1367",
@@ -30003,7 +31369,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, büyük çalkantı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Toplumu kökünden sarsan devrim veya karışıklıktır.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"turmoil / revolution\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"büyük çalkantı, kargaşa, altüst oluş\"."
   },
   {
     "id": "w1368",
@@ -30024,7 +31391,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, ütopya kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Dystopia' (korku toplumu) tam zıttıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"paradise / ideal society\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ütopya, hayali mükemmel toplum\"."
   },
   {
     "id": "w1369",
@@ -30046,7 +31414,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, doğruluk kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Belgenin veya ifadenin doğruluğunu sorgulamaktır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"truthfulness / accuracy\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doğruluk, dürüstlük, hakikat\"."
   },
   {
     "id": "w1370",
@@ -30068,7 +31437,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, kalıntı kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Eski büyüklükten geriye kalan son kırıntılardır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"trace / remnant\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kalıntı, iz, son emare\"."
   },
   {
     "id": "w1371",
@@ -30089,7 +31459,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, talihin dönekliği kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Hayatın sürprizlerle dolu iyi ve kötü dönemleridir.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"fluctuation / change of fortune\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"talihin dönekliği, hayatın iniş çıkışları\"."
   },
   {
     "id": "w1372",
@@ -30111,7 +31482,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, aklanma kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "Zamanın ve delillerin insanı tamamen haklı çıkarmasıdır.",
     "frequency": "high",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 İSİM KÖKÜ: Fiilden türeyen isim formudur. \"aklanma, haklı çıkma, temize çıkış\" kavramını temsil eder."
   },
   {
     "id": "w1373",
@@ -30133,7 +31505,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çok taraflı akademik kurumlar, doruk noktası kavramının modern ampirik çerçeveler genelinde oynadığı kritik rolün altını çizmektedir.",
     "ydsTip": "'Nadir' (en dip çöküş) tam zıttıdır; imparatorluğun zirvesidir.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"pinnacle / apex\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"doruk noktası, zirve, en parlak çağ\"."
   },
   {
     "id": "w1374",
@@ -30156,7 +31529,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Toksik kimyasallar zamanla deniz hayvanlarının yağ dokularında birikme eğilimi gösterir.",
     "ydsTip": "Fen ve çevre paragraflarında \"birikmek / yığılmak\" anlamında ÖSYM'nin en sık sorduğu değişim fiilidir.",
     "frequency": "ultra",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"AKÜ-MÜLATÖR\". Akümülatör elektrik enerjisini ACCUMULATE eder (biriktirir, toplar)."
   },
   {
     "id": "w1375",
@@ -30179,7 +31553,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çocuklar anadillerini sürekli maruz kalma ve etkileşim yoluyla doğal bir şekilde edinirler.",
     "ydsTip": "Dilbilim ve eğitim metinlerinde \"language acquisition\" tamlaması ile vazgeçilmez bir sorudur.",
     "frequency": "ultra",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"AK-KOYUN\". Çok çalışıp kendine yeni bir sermaye ve yetenek ACQUIRE etti (edindi, kazandı)."
   },
   {
     "id": "w1376",
@@ -30202,7 +31577,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Birçok insan tozlaştırıcıların küresel gıda güvenliğinde oynadığı kritik rolün değerini anlayamamaktadır.",
     "ydsTip": "Ekonomi metinlerinde para biriminin değer kazanması (appreciate) olarak da karşımıza çıkar.",
     "frequency": "ultra",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"APRE (parlatmak)\". Bir şeyin değerini bilip parlatmak, takdir etmek."
   },
   {
     "id": "w1377",
@@ -30225,7 +31601,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Polis memurları uluslararası zanlıyı uçağa binemeden yakalamayı başardı.",
     "ydsTip": "İsim hali \"apprehension\" (kaygı / endişe / tutuklama) çeldirici olarak sıkça yoklanır.",
     "frequency": "high",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"capture / arrest\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"1. yakalamak, tutuklamak 2. kavramak, anlamak\"."
   },
   {
     "id": "w1378",
@@ -30248,7 +31625,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Birçok genç bilim insanı, evren anlayışımızı temelden değiştirecek keşifler yapmayı arzular.",
     "ydsTip": "\"aspire to\" yapısı hedef bildiren cümlelerde \"aim at / strive for\" ile eşanlamlıdır.",
     "frequency": "high",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 PHRASAL KODU: \"ASPIRE\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"can atmak, arzulamak, gözü yüksekte olmak\"."
   },
   {
     "id": "w1379",
@@ -30271,7 +31649,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yaklaşan bir insani felaketi önlemek için hızlı uluslararası müdahale hayati önem taşıyordu.",
     "ydsTip": "Kriz, savaş veya felaket isimlerinin hemen önünde \"krizi önlemek / savuşturmak\" kalıbıyla sorulur.",
     "frequency": "ultra",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"AVRET / ÇEVİR\". Gözünü ve rotayı tehlikeden başka yöne çevirip kazayı AVERT etti (önledi, savuşturdu)."
   },
   {
     "id": "w1380",
@@ -30294,7 +31673,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yeterli yaşam alanı koruması olmadan, nesli tükenmekte olan birçok tür birkaç on yıl içinde yok olacaktır.",
     "ydsTip": "\"Ceasefire\" (ateşkes) ve \"cease to exist\" (yok olmak) kalıpları YDS okuma parçalarının demirbaşıdır.",
     "frequency": "ultra",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"SES-İ KES\". Ateşi ve gürültüyü CEASE etti (durdurdu, sona erdirdi)."
   },
   {
     "id": "w1381",
@@ -30317,7 +31697,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Rapor, salgının başlıca nedenleri olarak yetersiz hijyen koşullarını ve kirlenmiş suyu gösterdi.",
     "ydsTip": "Akademik makale çevirilerinde \"delil göstermek / kaynak olarak zikretmek\" anlamıyla teste tabi tutulur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"SİTE / CİTATION\". Makalede güvenilir bir internet sitesini kaynak CITE etti (alıntıladı, zikretti)."
   },
   {
     "id": "w1382",
@@ -30339,7 +31720,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yeni iklim raporunun yayımlanması uluslararası zirve ile aynı zamana denk gelecek şekilde planlandı.",
     "ydsTip": "Edatı \"with\"tir. Tarihsel olaylar veya iki eşzamanlı fenomen anlatılırken sıkça test edilir.",
     "frequency": "ultra",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KO-İNSİDANS (denk gelme)\". İki olayın aynı zamana denk gelmesi, örtüşmesi."
   },
   {
     "id": "w1383",
@@ -30362,7 +31744,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Modern internet başlangıçta merkezi olmayan bir askeri iletişim ağı olarak tasarlanmıştı.",
     "ydsTip": "Sıfat hali \"conceivable\" (akla yatkın) veya zıt anlamlısı \"inconceivable\" (akıl almaz) çok çıkar.",
     "frequency": "ultra",
-    "groupDay": 3
+    "groupDay": 3,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"KONSEPT (concept)\". Zihinde yeni bir konsept tasarlamak, fikir geliştirmek."
   },
   {
     "id": "w1384",
@@ -30385,7 +31768,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Çoğu uluslararası iklimbilimci, insan kaynaklı emisyonların küresel ısınmanın başlıca tetikleyicisi olduğu konusunda hemfikirdir.",
     "ydsTip": "\"agree with\" yerine akademik metinlerde \"concur with\" kullanılır. Zıt anlamlısı \"differ / disagree\"dir.",
     "frequency": "high",
-    "groupDay": 4
+    "groupDay": 4,
+    "mnemonic": "💡 PHRASAL KODU: \"CONCUR\" fiili \"WITH\" edatıyla birleşerek özel bir kalıp oluşturur: \"hemfikir olmak, aynı fikirde olmak, onaylamak\"."
   },
   {
     "id": "w1385",
@@ -30408,7 +31792,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Birleşmiş Milletler Güvenlik Konseyi, yasadışı toprak ilhakını kınayan bir karar yayımladı.",
     "ydsTip": "Uluslararası ilişkiler metinlerinde \"şiddetle kınamak\" anlamında \"strongly condemn\" kalıbıyla çıkar.",
     "frequency": "ultra",
-    "groupDay": 5
+    "groupDay": 5,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"denounce / censure\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kınamak, mahkum etmek, lanetlemek\"."
   },
   {
     "id": "w1386",
@@ -30431,7 +31816,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Şirket, Asya'daki pazar payını pekiştirmek için agresif bir pazarlama kampanyası başlattı.",
     "ydsTip": "Siyasi ve ekonomik metinlerde gücü veya konumu sağlamlaştırmak (reinforce) anlamında sıkça sorulur.",
     "frequency": "ultra",
-    "groupDay": 6
+    "groupDay": 6,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"strengthen / reinforce\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"güçlendirmek, sağlamlaştırmak, pekiştirmek\"."
   },
   {
     "id": "w1387",
@@ -30454,7 +31840,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yeni deneysel bulgular, uzun süredir kabul gören kuramsal paradigma ile doğrudan çelişmektedir.",
     "ydsTip": "Sıfat hali \"contradictory\" (çelişkili - contradictory reports) ve ismi \"contradiction\" paragraf sorularının ana fikridir.",
     "frequency": "ultra",
-    "groupDay": 7
+    "groupDay": 7,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"oppose / refute\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"çelişmek, aksini iddia etmek, yalanlamak\"."
   },
   {
     "id": "w1388",
@@ -30477,7 +31864,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Bilim insanları fosillerin kimyasal analizinden yola çıkarak yaratığın yalnızca otobur olduğu sonucunu çıkardılar.",
     "ydsTip": "\"İnfer from\" ile birebir eşanlamlıdır. Edat olarak genellikle \"from\" alır.",
     "frequency": "ultra",
-    "groupDay": 8
+    "groupDay": 8,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DE-DUCE (aşağı çekmek)\". Eldeki delillerden mantıksal bir sonuç çıkarmak."
   },
   {
     "id": "w1389",
@@ -30500,7 +31888,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Müfettişlerin yapısal olarak güvensiz addetmesinin ardından köprü araç trafiğine kapatıldı.",
     "ydsTip": "\"deem necessary\" (gerekli görmek) ve \"deem appropriate\" (uygun bulmak) en sık çıkan akademik kalıplarıdır.",
     "frequency": "ultra",
-    "groupDay": 9
+    "groupDay": 9,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"consider / regard as\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"saymak, addetmek, kabul etmek\"."
   },
   {
     "id": "w1390",
@@ -30523,7 +31912,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Şartname, yürütme ve yasama organlarının görev ve yetkilerini açıkça sınırlarını çizerek betimlemektedir.",
     "ydsTip": "Hukuk ve siyaset parçalarında \"görev ve sınırları net biçimde belirlemek\" anlamında cevaptır.",
     "frequency": "high",
-    "groupDay": 10
+    "groupDay": 10,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"describe / outline\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"ayrıntılarıyla betimlemek, sınırlarını çizmek\"."
   },
   {
     "id": "w1391",
@@ -30546,7 +31936,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "İnsan hakları aktivistleri polis şiddetini alenen kınamak için meydanda toplandı.",
     "ydsTip": "\"Condemn\" fiilinin en kuvvetli eş anlamlısıdır. Kınama sorularında doğru şıktır.",
     "frequency": "high",
-    "groupDay": 11
+    "groupDay": 11,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"condemn / criticize\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"şiddetle kınamak, ihbar etmek, suçlamak\"."
   },
   {
     "id": "w1392",
@@ -30569,7 +31960,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Kronik uykusuzluk insan beynini temel onarıcı hücresel süreçlerden mahrum bırakabilir.",
     "ydsTip": "Yanındaki \"of\" edatı doğrudan sorulur. \"Deprive somebody of something\" kalıbını unutmayın!",
     "frequency": "ultra",
-    "groupDay": 12
+    "groupDay": 12,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DE-PRIVATE (özeli elinden almak)\". Haklarından mahrum bırakmak, yoksun etmek."
   },
   {
     "id": "w1393",
@@ -30592,7 +31984,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Biyomedikal mühendisleri, kan şekeri düzeylerini sürekli izlemek için cerrahi olmayan bir cihaz geliştirdiler.",
     "ydsTip": "Bilimsel yenilik metinlerinde \"yeni bir yöntem/plan geliştirmek\" anlamında \"devise a strategy\" şeklinde çıkar.",
     "frequency": "ultra",
-    "groupDay": 13
+    "groupDay": 13,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DEVICE (cihaz)\". Yeni bir cihaz tasarlamak, akıllıca bir yöntem geliştirmek."
   },
   {
     "id": "w1394",
@@ -30615,7 +32008,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gelişmiş uydu görüntüleri sayesinde meteorologlar bitki örtüsü sağlığındaki ince değişiklikleri kolayca fark edebilmektedir.",
     "ydsTip": "Sıfat hali \"discernible\" (fark edilebilir, bariz) sıfat sorularında sıkça şıklar arasına konur.",
     "frequency": "ultra",
-    "groupDay": 14
+    "groupDay": 14,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DESEN\". Karmaşık tablodaki ince desenleri DISCERN etti (fark etti, ayırt etti)."
   },
   {
     "id": "w1395",
@@ -30638,7 +32032,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Yetkililer yasadışı kaçakçılık ağını ortadan kaldırmak için uluslararası kuruluşlarla işbirliği içinde çalıştı.",
     "ydsTip": "Hem fiziksel bir makineyi sökmek hem de bir suç örgütünü/yasayı lağvetmek anlamında mecazen kullanılır.",
     "frequency": "high",
-    "groupDay": 15
+    "groupDay": 15,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"mantle\". Durumun tersine dönmesi: \"sökmek, parçalara ayırmak, ortadan kaldırmak\"."
   },
   {
     "id": "w1396",
@@ -30660,7 +32055,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ailesi, onu riskli bir girişim peşinde koşmak için düzenli işini bırakmaktan vazgeçirmeye çalıştı.",
     "ydsTip": "\"Persuade\" (ikna etmek) fiilinin tam zıttıdır ve daima \"from\" edatıyla kullanılır.",
     "frequency": "high",
-    "groupDay": 16
+    "groupDay": 16,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"DIS- (ayırma/uzaklaşma)\" + \"suade from\". Durumun tersine dönmesi: \"caydırmak, aklını çelmek, vazgeçirmek\"."
   },
   {
     "id": "w1397",
@@ -30683,7 +32079,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Mühendisler sel sularını yoğun nüfuslu bölgelerden uzaklaştırmak amacıyla bir dizi kanal inşa ettiler.",
     "ydsTip": "\"divert attention from\" (dikkatleri başka yöne çekmek) ve \"divert traffic\" en bilinen eşleşmeleridir.",
     "frequency": "ultra",
-    "groupDay": 17
+    "groupDay": 17,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"redirect / deflect\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yönünü değiştirmek, başka tarafa çekmek\"."
   },
   {
     "id": "w1398",
@@ -30706,7 +32103,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Psikologlar geçmişteki başarısızlıklar üzerinde takılıp kalmamamız, aksine gelecekteki fırsatlara odaklanmamız gerektiğini tavsiye ederler.",
     "ydsTip": "\"Dwell\" tek başına yaşamak/ikamet etmek iken, \"dwell on\" üzerinde takılıp kalmak anlamında phrasal verb'dür.",
     "frequency": "high",
-    "groupDay": 18
+    "groupDay": 18,
+    "mnemonic": "💡 PHRASAL KODU: \"DWELL\" fiili \"ON\" edatıyla birleşerek özel bir kalıp oluşturur: \"üzerinde durmak, kafa yormak, uzatmak\"."
   },
   {
     "id": "w1399",
@@ -30729,7 +32127,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Milli müzenin modern mimarisi cumhuriyetin kültürel çeşitliliğini somutlaştırmayı amaçlamaktadır.",
     "ydsTip": "Soyut bir değeri ya da felsefeyi bünyesinde temsil etmek anlamında sanat ve tarih metinlerinde çıkar.",
     "frequency": "high",
-    "groupDay": 19
+    "groupDay": 19,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"personify / exemplify\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"somutlaştırmak, bünyesinde barındırmak, simgelemek\"."
   },
   {
     "id": "w1400",
@@ -30752,7 +32151,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Önde gelen tıp dernekleri yeni geliştirilen grip aşısını resmi olarak onayladı.",
     "ydsTip": "Siyasette ve tıpta bir adayı veya ilacı açıkça desteklemek/onaylamak anlamında kullanılır.",
     "frequency": "ultra",
-    "groupDay": 20
+    "groupDay": 20,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"support / back\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"onaylamak, desteklemek, arka çıkmak\"."
   },
   {
     "id": "w1401",
@@ -30775,7 +32175,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Önüne geçilmeyen sosyal eşitsizlik, yaygın toplumsal kızgınlığa ve siyasi istikrarsızlığa yol açabilir.",
     "ydsTip": "\"Cause, trigger, lead to, bring about\" fiillerinin en üst düzey akademik karşılığıdır.",
     "frequency": "ultra",
-    "groupDay": 21
+    "groupDay": 21,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"cause / generate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"yol açmak, doğurmak, neden olmak\"."
   },
   {
     "id": "w1402",
@@ -30798,7 +32199,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Mars'a derin uzay yolculuğuna çıkmak, daha önce görülmemiş psikolojik ve fiziksel riskler gerektirecektir.",
     "ydsTip": "Bir projenin ya da kararın doğal olarak getirdiği yükümlülük ve riskleri anlatırken \"entail risks\" şeklinde sorulur.",
     "frequency": "ultra",
-    "groupDay": 22
+    "groupDay": 22,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"involve / necessitate\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"gerektirmek, zorunlu kılmak, kapsamak\"."
   },
   {
     "id": "w1403",
@@ -30821,7 +32223,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Zengin şirketler genellikle kurumlar vergisinden kaçınmak için kıyı ötesi yasal boşlukları istismar ederler.",
     "ydsTip": "\"Tax evasion\" (vergi kaçırma) ve \"evade responsibility\" en yaygın ÖSYM soru kalıplarıdır.",
     "frequency": "ultra",
-    "groupDay": 23
+    "groupDay": 23,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"avoid / escape\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"kaçınmak, kurtulmak, yan çizmek\"."
   },
   {
     "id": "w1404",
@@ -30843,7 +32246,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Akademisyenler, antik imparatorluğun dramatik çöküşünü uzun süreli iklimsel değişimlere bağlama eğilimindedir.",
     "ydsTip": "Sıfat hali \"inclined to\" (eğilimli) kalıbı \"prone to / susceptible to\" ile çok sık karşılaştırılır.",
     "frequency": "high",
-    "groupDay": 24
+    "groupDay": 24,
+    "mnemonic": "💡 PHRASAL KODU: \"INCLINE\" fiili \"TO\" edatıyla birleşerek özel bir kalıp oluşturur: \"eğilimli olmak, meyilli olmak\"."
   },
   {
     "id": "w1405",
@@ -30865,7 +32269,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Aşırı milliyetçilik, uyumlu bir küresel entegrasyonun ilkeleriyle temelde bağdaşmazdır.",
     "ydsTip": "Edatı daima \"with\"tir. Zıttı \"compatible with\" (uyumlu) dur.",
     "frequency": "ultra",
-    "groupDay": 25
+    "groupDay": 25,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"compatible with\". Sınavda şık elerken zıt duygu (-) bildirir: \"uyumsuz, bağdaşmaz, çelişen\"."
   },
   {
     "id": "w1406",
@@ -30888,7 +32293,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Her tıbbi cerrahi operasyon, steril önlemlere bakılmaksızın doğasında var olan bir enfeksiyon riski taşır.",
     "ydsTip": "\"inherent in\" kalıbıyla sorulur. Bir şeyin fıtratında/yapısında olan niteliği belirtir.",
     "frequency": "ultra",
-    "groupDay": 26
+    "groupDay": 26,
+    "mnemonic": "💡 KÖK BİLGİSİ: \"IN- (olumsuzluk)\" + \"herent in\". Sınavda şık elerken zıt duygu (-) bildirir: \"doğasında olan, özünde var olan, ayrılmaz\"."
   },
   {
     "id": "w1407",
@@ -30910,7 +32316,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Deniz seyrüseferinde acil durum tehlike sinyalleri her zaman olağan ticari yayınlara karşı öncelik taşır.",
     "ydsTip": "\"Take precedence over\" (–e göre öncelik taşımak) kalıbı doğrudan sınav sorusudur.",
     "frequency": "ultra",
-    "groupDay": 27
+    "groupDay": 27,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"priority / preference\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"öncelik, üstünlük\"."
   },
   {
     "id": "w1408",
@@ -30933,7 +32340,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Gökbilimciler görünmeyen bir gezegenin varlığına işaret eden açıklanamayan bir yerçekimi sapması tespit ettiler.",
     "ydsTip": "Fen metinlerinde normalden sapan veriler veya tıpta genetik anormallikler için kullanılır.",
     "frequency": "high",
-    "groupDay": 28
+    "groupDay": 28,
+    "mnemonic": "💡 HAFIZA KODU: Zihinde \"irregularity / abnormality\" kelimeleriyle eşleştirin. ÖSYM sınavlarındaki net karşılığı: \"sapma, kural dışılık, gariplik\"."
   },
   {
     "id": "w1409",
@@ -30953,7 +32361,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Hızlı sanayileşme, çevresel sürdürülebilirliğin zararına (pahasına) yürütülmemelidir.",
     "ydsTip": "Bademci sözlüğünün ilk sayfasındaki en kritik edat kalıplarından biridir. \"Zararına / pahasına\" demektir.",
     "frequency": "ultra",
-    "groupDay": 29
+    "groupDay": 29,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"EXPENSE (masraf/harcama)\". Bir şeyi diğerinin zararına/pahasına harcamak."
   },
   {
     "id": "w1410",
@@ -30975,7 +32384,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Ağır yaşam alanı kaybı nedeniyle dağ gorili bir zamanlar tamamen yok olmanın eşiğindeydi.",
     "ydsTip": "\"on the brink of\" ile birebir aynıdır. \"Yok olmanın / çöküşün eşiğinde\" olarak çok sorulur.",
     "frequency": "ultra",
-    "groupDay": 30
+    "groupDay": 30,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"VERGE (kenar/sınır)\". Uçurumun kenarında olmak, -in eşiğinde bulunmak."
   },
   {
     "id": "w1411",
@@ -30997,7 +32407,8 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Enerji verimliliği açısından elektrikli araçlar içten yanmalı motorlardan önemli ölçüde üstündür.",
     "ydsTip": "Cümle başında \"açısından / bakımından\" anlamıyla iki durumu karşılaştırırken çok sık sorulur.",
     "frequency": "ultra",
-    "groupDay": 1
+    "groupDay": 1,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"TERM (kavram/terim)\". Bu terim/kavram açısından, bakımından."
   },
   {
     "id": "w1412",
@@ -31018,6 +32429,7 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
     "exampleTr": "Denizaltılar okyanus çukurlarında gelişmiş aktif sonar teknolojisi vasıtasıyla yol alır.",
     "ydsTip": "Yöntem ve araç belirten cümlelerde \"aracılığıyla / vasıtasıyla\" anlamıyla cevap anahtarıdır.",
     "frequency": "ultra",
-    "groupDay": 2
+    "groupDay": 2,
+    "mnemonic": "💡 ÇAĞRIŞIM: \"MEANS (araç/vasıta)\". O aracın yardımıyla, vasıtasıyla."
   }
 ];
