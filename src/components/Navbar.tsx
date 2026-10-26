@@ -1,11 +1,13 @@
 import React from 'react';
-import { Flame, Moon, Sun, Smartphone, Cloud } from 'lucide-react';
+import { Flame, Moon, Sun, Smartphone, Cloud, Eye } from 'lucide-react';
 import { UserStats } from '../types';
 
 interface NavbarProps {
   stats: UserStats;
   darkMode: boolean;
   setDarkMode: (val: boolean) => void;
+  eyeCareMode?: boolean;
+  onToggleEyeCare?: () => void;
   onOpenInstallModal: () => void;
   onOpenSyncModal?: () => void;
   activeTab: string;
@@ -16,6 +18,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   stats,
   darkMode,
   setDarkMode,
+  eyeCareMode,
+  onToggleEyeCare,
   onOpenInstallModal,
   onOpenSyncModal,
   activeTab,
@@ -118,6 +122,21 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Flame className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
             <span>{stats.streak} Gün</span>
           </div>
+
+          {/* Eye-Care / Warm Reading Mode */}
+          {onToggleEyeCare && (
+            <button
+              onClick={onToggleEyeCare}
+              title={eyeCareMode ? 'Göz Dinlendirme Açık (Sıcak Sepya / Mavi Işık Filtresi)' : 'Göz Dinlendirme Modunu Aç'}
+              className={`p-2 rounded-xl transition-colors ${
+                eyeCareMode
+                  ? 'bg-amber-100 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border border-amber-300/60 dark:border-amber-700/60'
+                  : 'text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400 hover:text-amber-600'
+              }`}
+            >
+              <Eye className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+            </button>
+          )}
 
           {/* Progress Sync / Backup Modal */}
           {onOpenSyncModal && (

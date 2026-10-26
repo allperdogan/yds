@@ -24,6 +24,9 @@ export const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     return localStorage.getItem('yds_dark_mode') === 'true';
   });
+  const [eyeCareMode, setEyeCareMode] = useState<boolean>(() => {
+    return localStorage.getItem('yds_eyecare_mode') === 'true';
+  });
 
   const [stats, setStats] = useState<UserStats>(() => StorageService.loadStats());
   const [srsData, setSrsData] = useState<Record<string, SRSItem>>(() => SRSEngine.loadSRSData());
@@ -52,6 +55,16 @@ export const App: React.FC = () => {
     }
     localStorage.setItem('yds_dark_mode', darkMode ? 'true' : 'false');
   }, [darkMode]);
+
+  // Apply eye-care sepia / anti-blue-light mode
+  useEffect(() => {
+    if (eyeCareMode) {
+      document.documentElement.classList.add('theme-eyecare');
+    } else {
+      document.documentElement.classList.remove('theme-eyecare');
+    }
+    localStorage.setItem('yds_eyecare_mode', eyeCareMode ? 'true' : 'false');
+  }, [eyeCareMode]);
 
   // Persist stats whenever changed
   useEffect(() => {
@@ -209,12 +222,14 @@ export const App: React.FC = () => {
   const dueCount = Object.values(srsData).filter((item) => SRSEngine.isDueToday(item)).length;
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
       {/* Top Navigation */}
       <Navbar
         stats={stats}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
+        eyeCareMode={eyeCareMode}
+        onToggleEyeCare={() => setEyeCareMode(!eyeCareMode)}
         onOpenInstallModal={() => setIsInstallModalOpen(true)}
         onOpenSyncModal={() => setIsSyncModalOpen(true)}
         activeTab={activeTab}

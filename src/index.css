@@ -3,11 +3,103 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
+}
+
+/* ==========================================================
+   GÖZ DİNLENDİRME & GÖZÜ YORMAYAN ERGONOMİK TEMA MOTORU
+   ========================================================== */
+
+/* 1. Gündüz / Kağıt Ergonomisi (Standard Soft Light) */
+html:not(.dark):not(.theme-eyecare) body {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* 2. Gece / Dinlendirici Grafit Arduvaz (Eye-Friendly Soft Slate Dark) */
+html.dark:not(.theme-eyecare) body {
+  background-color: #0b0f19;
+  color: #e2e8f0;
+}
+
+/* 3. Göz Dinlendirme Modu (Eye-Care Sepia & Warm Paper Mode) */
+/* Apple Books / Kindle Paperwhite Parşömen & Mavi Işık Azaltıcı Ton */
+html.theme-eyecare:not(.dark) body {
+  background-color: #fbf7ee !important;
+  color: #2d2621 !important;
+}
+
+html.theme-eyecare:not(.dark) .bg-white {
+  background-color: #fffdf9 !important;
+  border-color: #e8ded0 !important;
+}
+
+html.theme-eyecare:not(.dark) .bg-slate-50 {
+  background-color: #f5efe3 !important;
+}
+
+html.theme-eyecare:not(.dark) .bg-slate-100 {
+  background-color: #ede4d5 !important;
+}
+
+html.theme-eyecare:not(.dark) .border-slate-200 {
+  border-color: #e4d8c5 !important;
+}
+
+html.theme-eyecare:not(.dark) .text-slate-900 {
+  color: #221c18 !important;
+}
+
+html.theme-eyecare:not(.dark) .text-slate-600,
+html.theme-eyecare:not(.dark) .text-slate-500 {
+  color: #6a5d52 !important;
+}
+
+/* Eye-Care Warm Dark (Sıcak Koyu Gece Modu - Mavi ışıksız) */
+html.theme-eyecare.dark body {
+  background-color: #181412 !important;
+  color: #ede8e3 !important;
+}
+
+html.theme-eyecare.dark .bg-slate-900,
+html.theme-eyecare.dark .bg-slate-950 {
+  background-color: #221c19 !important;
+  border-color: #382e29 !important;
+}
+
+html.theme-eyecare.dark .bg-slate-800,
+html.theme-eyecare.dark .bg-slate-850 {
+  background-color: #2b2420 !important;
+  border-color: #40352f !important;
+}
+
+html.theme-eyecare.dark .bg-slate-700 {
+  background-color: #38302a !important;
+}
+
+html.theme-eyecare.dark .border-slate-800,
+html.theme-eyecare.dark .border-slate-700 {
+  border-color: #3d332c !important;
+}
+
+html.theme-eyecare.dark .text-slate-100,
+html.theme-eyecare.dark .text-white {
+  color: #f2eee9 !important;
+}
+
+html.theme-eyecare.dark .text-slate-400,
+html.theme-eyecare.dark .text-slate-500 {
+  color: #a3978c !important;
 }
 
 /* iOS Safe Area Padding Support */
@@ -19,7 +111,7 @@
   padding-top: env(safe-area-inset-top, 1rem);
 }
 
-/* Custom Scrollbar */
+/* Custom Eye-Friendly Soft Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -30,12 +122,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.3);
+  background: rgba(148, 163, 184, 0.25);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(148, 163, 184, 0.5);
+  background: rgba(148, 163, 184, 0.45);
 }
 
 .scrollbar-none::-webkit-scrollbar {
