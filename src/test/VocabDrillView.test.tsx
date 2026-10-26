@@ -294,4 +294,32 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     expect(screen.queryByText(/ÖSYM Altın Fiil, Bağlaç & Sıfat Atlası/i)).not.toBeInTheDocument();
   });
+
+  it('switches between "1. Adım: Günün Kelimelerini Öğren" and "2. Adım: Günün Testini Çöz"', () => {
+    render(
+      <VocabDrillView
+        knownVocabIds={[]}
+        pendingReviewVocabIds={[]}
+        initialDay={1}
+        onMarkKnown={vi.fn()}
+        onMarkPendingReview={vi.fn()}
+        onRemovePendingReview={vi.fn()}
+      />
+    );
+
+    // Switch to Learn mode
+    const learnTabBtn = screen.getByRole('button', { name: /1\. Adım: Günün Kelimelerini Öğren/i });
+    fireEvent.click(learnTabBtn);
+
+    // Verify learning card displays Day 1 vocabulary preview and mnemonic
+    expect(screen.getByText(/GÜN 1 KELİME ÖN HAZIRLIĞI/i)).toBeInTheDocument();
+    expect(screen.getByText(/Hafıza Kodu & Zihinsel Çağrışım/i)).toBeInTheDocument();
+
+    // Click "Kelimeleri İnceledim, Günün Testini Başlat!"
+    const startTestBtn = screen.getByText(/Kelimeleri İnceledim, Günün Testini Başlat!/i);
+    fireEvent.click(startTestBtn);
+
+    // Should return to test mode with blank question
+    expect(screen.getByText(/_____/)).toBeInTheDocument();
+  });
 });

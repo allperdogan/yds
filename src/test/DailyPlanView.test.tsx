@@ -112,4 +112,26 @@ describe('DailyPlanView Functional & Button Tests', () => {
     fireEvent.click(practiceBtn);
     expect(onNavigateToPractice).toHaveBeenCalledWith(1);
   });
+
+  it('calls onResetProgress when 0. Güne Sıfırla button is clicked and confirmed', () => {
+    const onResetProgress = vi.fn();
+    const confirmSpy = vi.spyOn(window, 'confirm').mockReturnValue(true);
+
+    render(
+      <DailyPlanView
+        completedDays={[1, 2, 3]}
+        onToggleDayCompleted={vi.fn()}
+        onNavigateToVocabDay={vi.fn()}
+        onNavigateToTactic={vi.fn()}
+        onNavigateToPractice={vi.fn()}
+        onResetProgress={onResetProgress}
+      />
+    );
+
+    const resetBtn = screen.getByTitle(/İlerlemeyi Sıfırla \(0\. Güne Dön\)/i);
+    fireEvent.click(resetBtn);
+
+    expect(onResetProgress).toHaveBeenCalledTimes(1);
+    confirmSpy.mockRestore();
+  });
 });

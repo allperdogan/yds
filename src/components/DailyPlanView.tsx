@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckCircle2, Circle, ArrowRight, Zap, Target, BookOpen, Sparkles, ChevronRight } from 'lucide-react';
+import { CheckCircle2, Circle, ArrowRight, Zap, Target, BookOpen, Sparkles, ChevronRight, RotateCcw } from 'lucide-react';
 import { DailyMission } from '../types';
 import { YDS_30_DAY_CURRICULUM } from '../data/ydsCurriculum';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
@@ -10,6 +10,7 @@ interface DailyPlanViewProps {
   onNavigateToVocabDay: (day: number) => void;
   onNavigateToTactic: (tacticType: string) => void;
   onNavigateToPractice: (day?: number) => void;
+  onResetProgress?: () => void;
 }
 
 export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
@@ -17,7 +18,8 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
   onToggleDayCompleted,
   onNavigateToVocabDay,
   onNavigateToTactic,
-  onNavigateToPractice
+  onNavigateToPractice,
+  onResetProgress
 }) => {
   const [selectedWeek, setSelectedWeek] = useState<number>(1);
   const [activeDay, setActiveDay] = useState<number>(1);
@@ -85,6 +87,21 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
               <p className="text-[11px] text-amber-300 font-medium">
                 {30 - completedCount} gün kaldı
               </p>
+              {onResetProgress && (
+                <button
+                  onClick={() => {
+                    if (window.confirm('Tüm tamamlanan günler ve ilerlemeniz sıfırlanıp 0. Güne dönülecektir. Baştan başlamak istediğinize emin misiniz?')) {
+                      onResetProgress();
+                      setActiveDay(1);
+                    }
+                  }}
+                  title="İlerlemeyi Sıfırla (0. Güne Dön)"
+                  className="mt-2 text-[10px] bg-white/15 hover:bg-white/25 px-2.5 py-1 rounded-md text-white font-bold transition-colors inline-flex items-center gap-1 border border-white/20 shadow-xs"
+                >
+                  <RotateCcw className="w-3 h-3" />
+                  <span>0. Güne Sıfırla</span>
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -109,6 +126,54 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
               {w.label}
             </button>
           ))}
+        </div>
+      </div>
+
+      {/* 0. GÜN: SIFIR NOKTASI & YDS BAŞLANGIÇ ORYANTASYONU */}
+      <div className="bg-gradient-to-r from-amber-500/10 via-sky-500/10 to-indigo-500/10 border-2 border-amber-300/80 dark:border-amber-800/80 rounded-2xl p-5 space-y-3">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-black uppercase px-2.5 py-0.5 rounded-full bg-amber-500 text-white shadow-xs">
+              0. GÜN
+            </span>
+            <h3 className="text-sm md:text-base font-black text-slate-900 dark:text-white">
+              Sıfır Noktası: YDS Kampı Başlangıç ve Kondisyon Protokolü
+            </h3>
+          </div>
+          <span className="text-[11px] font-bold text-amber-700 dark:text-amber-400 hidden sm:inline">
+            🎯 Hedef: 80 - 90+
+          </span>
+        </div>
+
+        <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+          Kampa başlarken bilmeniz gereken altın formül: <strong>Önce kelimeyi zihninde kodla (1. Adım), ardından hemen testini çözüp pekiştir (2. Adım).</strong> Sınavda 180 dakika boyunca dikkatin dağılmaması için her gün planlanan 45-50 kelimelik dozu aşmadan, aralıklı tekrarla (SRS) ilerleyin.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 pt-1 text-xs">
+          <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800">
+            <span className="font-extrabold text-amber-600 dark:text-amber-400 block mb-0.5">
+              1. Önce Kelimeleri Öğren
+            </span>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400">
+              Teste girmeden o günün kelimelerini, fonetiğini ve Türkçe çağrışım kodlarını incele.
+            </span>
+          </div>
+          <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800">
+            <span className="font-extrabold text-sky-600 dark:text-sky-400 block mb-0.5">
+              2. Günün Testini Çöz
+            </span>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400">
+              Hemen ardından 4 şıklı akademik cümle testinde o kelimeleri görerek refleks kazan.
+            </span>
+          </div>
+          <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800">
+            <span className="font-extrabold text-emerald-600 dark:text-emerald-400 block mb-0.5">
+              3. Yanlışları Tekrar Et
+            </span>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400">
+              Yanlış yapılanlar otomatik Hata Defterine gider; SM-2 algoritmasıyla kalıcılaşır.
+            </span>
+          </div>
         </div>
       </div>
 

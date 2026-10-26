@@ -190,6 +190,15 @@ export const App: React.FC = () => {
     }));
   };
 
+  // Reset entire progress to Day 0
+  const handleResetProgress = () => {
+    const fresh = StorageService.getInitialStats();
+    setStats(fresh);
+    StorageService.saveStats(fresh);
+    setSrsData({});
+    SRSEngine.saveSRSData({});
+  };
+
   // Vocab Drill Handlers
   const handleMarkKnown = (wordId: string) => {
     setStats((prev) => {
@@ -242,6 +251,7 @@ export const App: React.FC = () => {
           <DailyPlanView
             completedDays={stats.completedDays}
             onToggleDayCompleted={handleToggleDayCompleted}
+            onResetProgress={handleResetProgress}
             onNavigateToVocabDay={(day) => {
               setVocabDayFilter(day);
               setActiveTab('vocab');
@@ -271,6 +281,7 @@ export const App: React.FC = () => {
 
         {activeTab === 'vocab_drill' && (
           <VocabDrillView
+            initialDay={vocabDayFilter}
             knownVocabIds={stats.knownVocabIds}
             pendingReviewVocabIds={stats.pendingReviewVocabIds}
             bookmarkedWordIds={stats.bookmarkedWords}

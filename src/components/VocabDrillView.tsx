@@ -1,8 +1,9 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   Volume2,
   Check,
   ArrowRight,
+  ArrowLeft,
   HelpCircle,
   CheckCircle2,
   RotateCcw,
@@ -27,6 +28,8 @@ interface VocabDrillViewProps {
   knownVocabIds: string[];
   pendingReviewVocabIds: string[];
   bookmarkedWordIds?: string[];
+  initialDay?: number;
+  initialStage?: 'learn' | 'test';
   onMarkKnown: (wordId: string) => void;
   onMarkPendingReview: (wordId: string) => void;
   onRemovePendingReview: (wordId: string) => void;
@@ -40,6 +43,8 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   knownVocabIds,
   pendingReviewVocabIds,
   bookmarkedWordIds = [],
+  initialDay,
+  initialStage,
   onMarkKnown,
   onMarkPendingReview,
   onRemovePendingReview,
@@ -55,7 +60,32 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<
     'all' | 'vocab' | 'verb' | 'adjective' | 'noun' | 'conjunction' | 'phrasal_verb' | 'adverb' | 'grammar'
   >('all');
-  const [selectedDay, setSelectedDay] = useState<number | 'all'>('all');
+  const [selectedDay, setSelectedDay] = useState<number | 'all'>(initialDay || 'all');
+
+  // Pedagogical 2-Step Stage: 1. Önce Kelimeleri Öğren (Walkthrough) vs 2. Testini Çöz (Cloze Test)
+  const [studyStage, setStudyStage] = useState<'learn' | 'test'>(initialStage || 'test');
+  const [learningWordIndex, setLearningWordIndex] = useState<number>(0);
+
+  useEffect(() => {
+    if (initialDay) {
+      setSelectedDay(initialDay);
+      setDrillSource('infinite');
+    }
+  }, [initialDay]);
+
+  useEffect(() => {
+    if (initialStage) {
+      setStudyStage(initialStage);
+    }
+  }, [initialStage]);
+
+  // Active pool of words to teach for the selected day
+  const activeDayNumber = selectedDay === 'all' ? 1 : selectedDay;
+  const currentDayWords = useMemo(() => {
+    return YDS_VOCABULARY_LIST.filter((w) => w.groupDay === activeDayNumber);
+  }, [activeDayNumber]);
+
+  const activeLearningWord = currentDayWords[learningWordIndex] || currentDayWords[0] || YDS_VOCABULARY_LIST[0];
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [drillAnswers, setDrillAnswers] = useState<Record<string, string | null>>({});
@@ -489,8 +519,233 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
         ))}
       </div>
 
-      {/* 5. CLEAN STATUS BAR WITH "ÖĞRENDİKLERİM" & "ATLAS" */}
-      <div className="flex items-center justify-between bg-white dark:bg-slate-900 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-xs font-bold">
+      {/* 2-STEP PEDAGOGICAL WORKFLOW: 1. ÖNCE ÖĞREN (ÖN HAZIRLIK) -> 2. TEST ÇÖZ */}
+      <div className="flex items-center justify-between gap-2 bg-gradient-to-r from-amber-500/10 via-sky-500/10 to-indigo-500/10 p-1.5 rounded-2xl border border-slate-200 dark:border-slate-800 text-xs font-bold">
+        <button
+          onClick={() => setStudyStage('learn')}
+          className={`flex-1 py-2.5 rounded-xl transition-all flex items-center justify-center gap-2 ${
+            studyStage === 'learn'
+              ? 'bg-amber-600 text-white shadow-md font-extrabold scale-[1.01]'
+              : 'text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-slate-800/60'
+          }`}
+        >
+          <BookOpen className="w-4 h-4" />
+          <span>📖 1. Adım: Günün Kelimelerini Öğren ({currentDayWords.length} Kelime)</span>
+        </button>
+
+        <button
+          onClick={() => setStudyStage('test')}
+          className={`flex-1 py-2.5 rounded-xl transition-all flex items-center justify-center gap-2 ${
+            studyStage === 'test'
+              ? 'bg-sky-600 text-white shadow-md font-extrabold scale-[1.01]'
+              : 'text-slate-700 dark:text-slate-300 hover:bg-white/60 dark:hover:bg-slate-800/60'
+          }`}
+        >
+          <Zap className="w-4 h-4" />
+          <span>⚡ 2. Adım: Günün Testini Çöz ({activeQuestions.length} Soru)</span>
+        </button>
+      </div>
+
+      {/* ========================================================================= */}
+      {/* STAGE 1: GÜNÜN KELİMELERİNİ ÖĞRENME KARTI (PRE-DRILL WALKTHROUGH DECK)   */}
+      {/* ========================================================================= */}
+      {studyStage === 'learn' && activeLearningWord && (
+        <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm space-y-6">
+          {/* Card Top Meta */}
+          <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/80 px-2.5 py-1 rounded-lg border border-amber-200 dark:border-amber-800">
+                GÜN {activeDayNumber} KELİME ÖN HAZIRLIĞI
+              </span>
+              <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                Kelime {learningWordIndex + 1} / {currentDayWords.length}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              {onToggleBookmark && (
+                <button
+                  onClick={() => onToggleBookmark(activeLearningWord.id)}
+                  title="Kelimeyi Yıldızla / Kaydet"
+                  className="p-2 rounded-xl text-slate-400 hover:text-amber-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  <Bookmark
+                    className={`w-4 h-4 ${
+                      bookmarkedWordIds.includes(activeLearningWord.id)
+                        ? 'fill-amber-500 text-amber-500'
+                        : ''
+                    }`}
+                  />
+                </button>
+              )}
+              <button
+                onClick={() => {
+                  onMarkKnown(activeLearningWord.id);
+                  onRemovePendingReview(activeLearningWord.id);
+                  if (learningWordIndex < currentDayWords.length - 1) {
+                    setLearningWordIndex((prev) => prev + 1);
+                  }
+                }}
+                className={`text-xs font-bold px-3 py-1.5 rounded-xl border transition-all flex items-center gap-1.5 ${
+                  knownVocabIds.includes(activeLearningWord.id)
+                    ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-300 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300'
+                    : 'bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200'
+                }`}
+              >
+                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <span>{knownVocabIds.includes(activeLearningWord.id) ? 'Biliyorum ✓' : 'Biliyorum Olarak İşaretle'}</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Word & Pronunciation Hero */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <div className="flex items-baseline gap-3 flex-wrap">
+                <h3 className="text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+                  {activeLearningWord.word}
+                </h3>
+                {activeLearningWord.phonetic && (
+                  <span className="font-mono text-sm text-slate-400 dark:text-slate-500 tracking-wide">
+                    {activeLearningWord.phonetic}
+                  </span>
+                )}
+              </div>
+              <button
+                onClick={() => playAudio(activeLearningWord.word)}
+                title="Sesli Dinle (Web Speech)"
+                className="p-3 rounded-2xl bg-sky-50 dark:bg-sky-950/80 text-sky-600 dark:text-sky-400 hover:bg-sky-100 dark:hover:bg-sky-900 transition-colors shadow-xs"
+              >
+                <Volume2 className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="flex items-center gap-2 pt-1">
+              <span className="text-[11px] font-black uppercase px-2.5 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                {activeLearningWord.type}
+              </span>
+              <span
+                className={`text-[11px] font-black uppercase px-2.5 py-0.5 rounded-md ${
+                  activeLearningWord.frequency === 'ultra'
+                    ? 'bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300'
+                    : 'bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300'
+                }`}
+              >
+                {activeLearningWord.frequency === 'ultra' ? '★ Ultra Frekans' : '● Yüksek Frekans'}
+              </span>
+            </div>
+          </div>
+
+          {/* Turkish Meaning */}
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800">
+            <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-1">
+              Türkçe Anlamı
+            </span>
+            <p className="text-lg font-black text-slate-900 dark:text-white">
+              {activeLearningWord.meaning}
+            </p>
+          </div>
+
+          {/* Mnemonic / Çağrışım Box */}
+          {activeLearningWord.mnemonic && (
+            <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/25 space-y-1">
+              <div className="flex items-center gap-1.5 text-xs font-black text-amber-800 dark:text-amber-300 uppercase tracking-wide">
+                <Lightbulb className="w-4 h-4 text-amber-500" />
+                <span>Hafıza Kodu & Zihinsel Çağrışım</span>
+              </div>
+              <p className="text-xs md:text-sm font-semibold text-amber-950 dark:text-amber-100 leading-relaxed">
+                {activeLearningWord.mnemonic}
+              </p>
+            </div>
+          )}
+
+          {/* Academic Example & Turkish Translation */}
+          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 space-y-2">
+            <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block">
+              ÖSYM / Akademik Örnek Cümle
+            </span>
+            <p className="text-sm font-medium text-slate-800 dark:text-slate-200 leading-relaxed italic">
+              "{activeLearningWord.exampleEn}"
+            </p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 pt-1 border-t border-slate-200/60 dark:border-slate-700/60">
+              💡 {activeLearningWord.exampleTr}
+            </p>
+          </div>
+
+          {/* Collocations & Synonyms */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            {activeLearningWord.collocations && activeLearningWord.collocations.length > 0 && (
+              <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 space-y-1">
+                <span className="font-bold text-sky-700 dark:text-sky-300 block">
+                  Birlikte Kullanımlar (Collocations):
+                </span>
+                <span className="text-slate-700 dark:text-slate-300 font-medium">
+                  {activeLearningWord.collocations.join(' · ')}
+                </span>
+              </div>
+            )}
+            {activeLearningWord.synonyms && activeLearningWord.synonyms.length > 0 && (
+              <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 space-y-1">
+                <span className="font-bold text-indigo-700 dark:text-indigo-300 block">
+                  Eş Anlamlılar (Synonyms):
+                </span>
+                <span className="text-slate-700 dark:text-slate-300 font-medium">
+                  {activeLearningWord.synonyms.join(', ')}
+                </span>
+              </div>
+            )}
+          </div>
+
+          {/* Stepper Navigation Buttons */}
+          <div className="pt-2 flex items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-800">
+            <button
+              onClick={() => setLearningWordIndex((prev) => Math.max(0, prev - 1))}
+              disabled={learningWordIndex === 0}
+              className="px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-xs font-bold disabled:opacity-30 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1.5"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Önceki Kelime</span>
+            </button>
+
+            <button
+              onClick={() => {
+                if (learningWordIndex < currentDayWords.length - 1) {
+                  setLearningWordIndex((prev) => prev + 1);
+                } else {
+                  setStudyStage('test');
+                }
+              }}
+              className="px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold transition-colors flex items-center gap-1.5"
+            >
+              <span>{learningWordIndex < currentDayWords.length - 1 ? 'Sonraki Kelime' : 'Testi Başlat'}</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+
+          {/* Big CTA: Kelimeleri İnceledim, Teste Geç */}
+          <div className="pt-2">
+            <button
+              onClick={() => {
+                setStudyStage('test');
+                setCurrentIndex(0);
+              }}
+              className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-600 to-sky-600 hover:from-emerald-500 hover:to-sky-500 text-white font-black text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 active:scale-[0.99] transition-all"
+            >
+              <Zap className="w-5 h-5" />
+              <span>Kelimeleri İnceledim, Günün Testini Başlat! ({activeQuestions.length} Soru)</span>
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* STAGE 2: GÜNÜN TESTİ VE SORU ÇÖZÜCÜ                                       */}
+      {/* ========================================================================= */}
+      {studyStage === 'test' && (
+        <>
+          {/* 5. CLEAN STATUS BAR WITH "ÖĞRENDİKLERİM" & "ATLAS" */}
+          <div className="flex items-center justify-between bg-white dark:bg-slate-900 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-xs font-bold">
         <div className="flex items-center gap-2">
           {/* Clickable Mastered Count Button */}
           <button
@@ -802,6 +1057,8 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             Tüm 1.412 Kelimeyi Aç
           </button>
         </div>
+      )}
+        </>
       )}
 
       {/* 8. MASTERED WORDS VAULT MODAL (Öğrendiğim Kelimeler Kasası) */}
