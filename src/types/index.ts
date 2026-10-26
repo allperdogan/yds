@@ -88,6 +88,18 @@ export interface YdsQuestion {
   dayAssigned?: number;
 }
 
+export interface GrammarDrillQuestion extends YdsQuestion {
+  grammarCategory:
+    | 'tenses_time_clauses'
+    | 'conjunctions_transitions'
+    | 'prepositions'
+    | 'reductions_participles'
+    | 'modals'
+    | 'relative_noun_clauses'
+    | 'inversion_conditionals';
+  grammarTopicTitle: string;
+}
+
 export interface TacticSampleQuestion {
   question: string;
   passage?: string;

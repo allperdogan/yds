@@ -1,18 +1,9 @@
-import { YdsQuestion } from '../types';
+import { GrammarDrillQuestion } from '../types';
+import { EXTENDED_GRAMMAR_BANK } from './grammarBankExtended';
 
-export interface GrammarDrillQuestion extends YdsQuestion {
-  grammarCategory:
-    | 'tenses_time_clauses'
-    | 'conjunctions_transitions'
-    | 'prepositions'
-    | 'reductions_participles'
-    | 'modals'
-    | 'relative_noun_clauses'
-    | 'inversion_conditionals';
-  grammarTopicTitle: string;
-}
+export type { GrammarDrillQuestion };
 
-export const YDS_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
+const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
   // =========================================================================
   // 1. TENSES & TIME CLAUSES (ZAMANLAR VE ZAMAN BAĞLAÇLARI)
   // =========================================================================
@@ -804,4 +795,9 @@ export const YDS_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     trapWarning: 'Sonuç cümlesine dikkat: "would completely strip away" (Type 2 Conditional - would + V1). Eğer geçmiş olsaydı "would have stripped" (Type 3) olurdu.',
     explanation: '🎯 FORMÜL: "Were it not for + İsim" = "If it were not for + İsim" (Dünya çekirdeğinin manyetik kalkanı olmasa, güneş rüzgarları atmosferimizi süpürüp yok ederdi). Sonuç cümlesi "would strip" (Type 2) olduğu için "Were it not for" kullanılır. Doğru cevap A.'
   }
+];
+
+export const YDS_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
+  ...BASE_GRAMMAR_DRILL_BANK,
+  ...EXTENDED_GRAMMAR_BANK
 ];

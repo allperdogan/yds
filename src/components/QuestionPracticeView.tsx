@@ -55,6 +55,7 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
 
   const filteredQuestions: YdsQuestion[] = YDS_QUESTIONS_DATA.filter((q) => {
     if (selectedTypeFilter === 'all') return true;
+    if (selectedTypeFilter === 'preposition_reflex') return q.id.startsWith('prep_');
     return q.type === selectedTypeFilter;
   });
 
@@ -121,7 +122,8 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
           {[
             { id: 'all', label: 'Tüm Soru Tipleri' },
             { id: 'vocabulary', label: 'Kelime (1-6)' },
-            { id: 'grammar', label: 'Gramer (7-16)' },
+            { id: 'grammar', label: 'Gramer Bankası (120+ Soru)' },
+            { id: 'preposition_reflex', label: '🎯 Edat Refleksi (10+ Soru)' },
             { id: 'sentence_completion', label: 'Cümle Tamamlama (27-36)' },
             { id: 'translation_en_tr', label: 'İng-Tr Çeviri (37-39)' },
             { id: 'translation_tr_en', label: 'Tr-İng Çeviri (40-42)' },

@@ -1,5 +1,6 @@
 import { YdsQuestion } from '../types';
 import { YDS_GRAMMAR_DRILL_BANK } from './ydsGrammarBank';
+import { PREPOSITION_REFLEX_QUESTIONS } from './ydsPrepositions';
 
 const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
   // 1. KELİME SORUSU (Vocabulary)
@@ -272,7 +273,8 @@ Dr. Wright: Precisely. Without modifying the dosing regimen or introducing prote
 
 export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
   ...BASE_YDS_QUESTIONS_DATA,
-  ...YDS_GRAMMAR_DRILL_BANK
+  ...YDS_GRAMMAR_DRILL_BANK,
+  ...PREPOSITION_REFLEX_QUESTIONS
 ];
 
 import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam';
