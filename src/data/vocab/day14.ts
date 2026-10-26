@@ -2,7 +2,7 @@ import { YdsWord } from '../../types';
 
 export const day14Words: YdsWord[] = [
   {
-    "id": "w105",
+    "id": "w44",
     "word": "allocate",
     "type": "verb",
     "meaning": "tahsis etmek, paylaştırmak, ödenek ayırmak",
@@ -92,7 +92,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'ARGUE (Tartışmak/İddia etmek)' -> Mantıken ve delillerle iddia edilebileceği üzere: ARGUABLY (tartışmasız denebilir ki, muhtemelen)."
   },
   {
-    "id": "w1217",
+    "id": "w1208",
     "word": "assiduity",
     "type": "noun",
     "meaning": "sebat, çalışkanlık, dikkat ve özen, gayret",
@@ -123,7 +123,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'AS-İ-DUİT (As you do it / İşi hakkıyla yap)' -> Sabah akşam yılmadan çalışarak gösterilen sebat ve gayret: ASSIDUITY (çalışkanlık, sebat)."
   },
   {
-    "id": "w1218",
+    "id": "w636",
     "word": "aversion",
     "type": "noun",
     "meaning": "nefret, tiksinti, şiddetli hoşnutsuzluk, çekinme",
@@ -155,7 +155,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'A-VERSION (Farklı versiyon)' -> O versiyondan hiç hoşlanmayıp yüzünü çevirmek: AVERSION TO (şiddetli hoşnutsuzluk, nefret)."
   },
   {
-    "id": "w946",
+    "id": "w950",
     "word": "because of",
     "type": "conjunction",
     "meaning": "yüzünden, nedeniyle, -den ötürü (+ Noun)",
@@ -770,7 +770,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İDENTİTY (Kimlik)' -> Kimlikleri ve özellikleri birbirinden ayırt edilemeyecek kadar birbiriyle IDENTICAL (birebir aynı, özdeş)."
   },
   {
-    "id": "w1310",
+    "id": "w299",
     "word": "inflict",
     "type": "verb",
     "meaning": "(zarar/acı/ceza) vermek, uğratmak, reva görmek",
@@ -801,7 +801,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İN-FLİKT (İnletmek)' -> Karşı tarafı acıdan inleterek büyük zarar ve acı vermek: INFLICT DAMAGE/PAIN (zarara uğratmak, acı vermek)."
   },
   {
-    "id": "w898",
+    "id": "w517",
     "word": "intrinsic",
     "type": "adjective",
     "meaning": "içsel, özünde olan, yaratılıştan gelen, asli",
@@ -833,7 +833,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İN- (İçinde)' -> Dışarıdan zorlamayla değil, tam da nesnenin kendi içinde ve özünde var olan: INTRINSIC (içsel, özünde olan)."
   },
   {
-    "id": "w185",
+    "id": "w805",
     "word": "invariably",
     "type": "adverb",
     "meaning": "istisnasız, her zaman, kesinlikle, şaşmaz biçimde",
@@ -864,7 +864,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'IN- (olumsuzluk) + VARIABLE (değişken)' -> Değişmeyen, hiçbir sapma göstermeden her zaman aynı olan: INVARIABLY (istisnasız, şaşmaz şekilde)."
   },
   {
-    "id": "w1023",
+    "id": "w1328",
     "word": "litigation",
     "type": "noun",
     "meaning": "dava açma, hukuki ihtilaf, mahkeme süreci",
@@ -895,7 +895,7 @@ export const day14Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'LİTİGATÖR (Avukat)' -> Mahkemede davayı yürüten avukatların girdiği duruşma ve dava süreci: LITIGATION (dava, mahkeme süreci)."
   },
   {
-    "id": "w803",
+    "id": "w1135",
     "word": "nebulous",
     "type": "adjective",
     "meaning": "belirsiz, muğlak, bulutlu/puslu, sınırları çizilmemiş",

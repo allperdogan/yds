@@ -2,7 +2,7 @@ import { YdsWord } from '../../types';
 
 export const day17Words: YdsWord[] = [
   {
-    "id": "w1169",
+    "id": "w245",
     "word": "abrupt",
     "type": "adjective",
     "meaning": "ani, beklenmedik, sert/kaba",
@@ -34,7 +34,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'A-BRUPT (Kırılmak/Patlamak)' -> Pat diye aniden meydana gelen: ABRUPT (ani, beklenmedik)."
   },
   {
-    "id": "w416",
+    "id": "w76",
     "word": "ambiguous",
     "type": "adjective",
     "meaning": "muğlak, belirsiz, birden fazla anlama gelen",
@@ -95,7 +95,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'APPROVE + OF' -> Bir davranışı veya kararı tasvip edip arkasında durmak: APPROVE OF (onaylamak, tasvip etmek)."
   },
   {
-    "id": "w1221",
+    "id": "w1211",
     "word": "austerity",
     "type": "noun",
     "meaning": "kemer sıkma (politikası), sadelik, sıkılık",
@@ -126,7 +126,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'AUSTERE (Sert/Sade)' -> Lüksü bırakıp kemerleri son deliğine kadar sıkma politikası: AUSTERITY (kemer sıkma, tasarruf)."
   },
   {
-    "id": "w646",
+    "id": "w639",
     "word": "bias",
     "type": "noun",
     "meaning": "önyargı, taraflılık, meyil",
@@ -185,7 +185,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'COMPARE (Karşılaştırmak)' zarf hali -> Kıyas yapıldığında öne çıkan: COMPARATIVELY (nispeten, kıyasla)."
   },
   {
-    "id": "w881",
+    "id": "w138",
     "word": "conform to",
     "type": "phrasal_verb",
     "meaning": "-e uymak, riayet etmek, uyum sağlamak",
@@ -217,7 +217,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'CONFORMIST (Uyumlu)' -> Kurallara ve standartlara uyum sağlayıp harfiyen riayet etmek: CONFORM TO (-e uymak)."
   },
   {
-    "id": "w107",
+    "id": "w881",
     "word": "consent to",
     "type": "verb",
     "meaning": "razı olmak, onay vermek, kabul etmek",
@@ -334,7 +334,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'DE-BRİ (Yıkılmış binalar)' -> Patlama veya deprem sonrası yerdeki moloz yığını: DEBRIS (enkaz, moloz yığını)."
   },
   {
-    "id": "w993",
+    "id": "w992",
     "word": "delimit",
     "type": "verb",
     "meaning": "sınırlarını çizmek/belirlemek, tahdit etmek",
@@ -419,7 +419,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'DİS-SONANS (Ahenksiz ses)' -> Kulak tırmalayan uyumsuz nota veya zihindeki iç çelişki: DISSONANCE (uyumsuzluk, ahenksizlik)."
   },
   {
-    "id": "w1108",
+    "id": "w460",
     "word": "empirical",
     "type": "adjective",
     "meaning": "deneysel, gözlemsel, ampirik",
@@ -451,7 +451,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'AMPİRİK / EMPİRİK' -> Sadece felsefe değil, bizzat deney ve gözleme dayanan: EMPIRICAL (deneysel, ampirik)."
   },
   {
-    "id": "w1400",
+    "id": "w168",
     "word": "enact",
     "type": "verb",
     "meaning": "yasalaştırmak, kanunlaştırmak, sahneye koymak",
@@ -483,7 +483,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'ACT (Yasa/Kanun)' -> Yasa haline getirmek, kanunlaştırmak: ENACT (yasalaştırmak, yürürlüğe koymak)."
   },
   {
-    "id": "w460",
+    "id": "w1400",
     "word": "endorse",
     "type": "verb",
     "meaning": "onaylamak, arka çıkmak, desteklemek, ciro etmek",
@@ -546,7 +546,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'EXPENSE (Masraf)' -> Kasadan çıkan harcama kalemi: EXPENDITURE (harcama, masraf)."
   },
   {
-    "id": "w1301",
+    "id": "w47",
     "word": "facilitate",
     "type": "verb",
     "meaning": "kolaylaştırmak, önünü açmak, rahatlatmak",
@@ -608,7 +608,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'GIVE IN TO (İçeri vermek/Boyun eğmek)' -> Karşı tarafın baskısına direnemeyip pes etmek: GIVE IN (teslim olmak, boyun eğmek)."
   },
   {
-    "id": "w1330",
+    "id": "w1301",
     "word": "gravitas",
     "type": "noun",
     "meaning": "ciddiyet, vakar, ağırlık",
@@ -668,7 +668,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'ILLUSTRATE / ILLUMINATE (Işık saçan)' -> Tarihe ışık saçan başarılarla dolu şanlı geçmiş: ILLUSTRIOUS (şanlı, güzide, parlak)."
   },
   {
-    "id": "w1079",
+    "id": "w1108",
     "word": "impeccable",
     "type": "adjective",
     "meaning": "kusursuz, lekesiz, hatasız",
@@ -700,7 +700,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İM-PEK-İYİ' -> Notu 'pek iyi'den de öte kusursuz, tek bir lekesi dahi olmayan: IMPECCABLE (kusursuz, hatasız)."
   },
   {
-    "id": "w1401",
+    "id": "w1022",
     "word": "incarcerate",
     "type": "verb",
     "meaning": "hapsetmek, cezaevine koymak",
@@ -731,7 +731,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İÇERİ TIKMAK' -> Dört duvar arasına kapatıp zindana atmak: INCARCERATE (hapsetmek, cezaevine koymak)."
   },
   {
-    "id": "w168",
+    "id": "w302",
     "word": "inquire",
     "type": "verb",
     "meaning": "sormak, soruşturmak, araştırmak",
@@ -760,7 +760,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İNQUIRY (Soruşturma)' -> Konunun derinine inip resmi sorular sorarak araştırmak: INQUIRE (soruşturmak, araştırmak)."
   },
   {
-    "id": "w806",
+    "id": "w520",
     "word": "irrevocable",
     "type": "adjective",
     "meaning": "geri dönülemez, iptal edilemez, nihai",
@@ -791,7 +791,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'REVOKE (İptal etmek)' -> Başına IR- gelince: Asla iptal edilemez, geri alınamaz: IRREVOCABLE (geri dönülemez, kesin)."
   },
   {
-    "id": "w1362",
+    "id": "w1331",
     "word": "malaise",
     "type": "noun",
     "meaning": "huzursuzluk, keyifsizlik, bunalım, dermansızlık",
@@ -822,7 +822,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'MAL- (Kötü) + EASE (Huzur)' -> İç huzurun kaybolması, genel bir dermansızlık ve bunalım hali: MALAISE (huzursuzluk, bunalım, dermansızlık)."
   },
   {
-    "id": "w839",
+    "id": "w808",
     "word": "markedly",
     "type": "adverb",
     "meaning": "belirgin şekilde, göze çarpar biçimde",
@@ -853,7 +853,7 @@ export const day17Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'MARK (İşaret)' -> Parmağını basıp işaret edecek kadar bariz ve göze çarpar biçimde: MARKEDLY (belirgin şekilde)."
   },
   {
-    "id": "w1021",
+    "id": "w332",
     "word": "nurture",
     "type": "verb",
     "meaning": "beslemek, yetiştirmek, büyütmek, geliştirmek",

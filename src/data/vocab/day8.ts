@@ -82,7 +82,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'BOL-STAR' -> Kadrosuna bol bol yıldız (star) futbolcu alarak takımını takviye eden, BOLSTER eden (güçlendiren) kulüp."
   },
   {
-    id: "w434",
+    id: "w421",
     word: "catastrophic",
     type: "adjective",
     meaning: "felaket getiren, yıkıcı, feci",
@@ -98,7 +98,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KATASTROF' -> Jeolojideki büyük felaketler ve kıyamet senaryoları katastrofiktir (yıkıcı, felaket getiren)."
   },
   {
-    id: "w868",
+    id: "w872",
     word: "clear up",
     type: "phrasal_verb",
     meaning: "açıklığa kavuşturmak, çözmek, (havanın) açması",
@@ -114,7 +114,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CLEAR (temiz/açık)' + 'UP' -> Masanın üzerini ve zihindeki şüpheleri temizleyip açık hale getirmek (clear up)."
   },
   {
-    id: "w1231",
+    id: "w1232",
     word: "connoisseur",
     type: "noun",
     meaning: "uzman, eksper, sanat erbabı, anlayan kişi",
@@ -130,7 +130,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KONUŞUR' -> Konunun uzmanı olan, işin püf noktalarını bildiği için otorite gibi konuşan kişi: CONNOISSEUR (eksper, uzman)."
   },
   {
-    id: "w656",
+    id: "w660",
     word: "constraint",
     type: "noun",
     meaning: "kısıtlama, engel, baskı, sınırlandırma",
@@ -146,7 +146,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CON-STRICT' (Sıkmak, daraltmak) -> İnsanın etrafını daraltan, hareket alanını sıkan CONSTRAINT (kısıtlama, engel)."
   },
   {
-    id: "w159",
+    id: "w8",
     word: "curb",
     type: "verb",
     meaning: "dizginlemek, frenlemek, kısıtlamak, zapt etmek",
@@ -162,7 +162,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KURBAN' olma -> Arabanın hızını frenleyip dizginlemezsen kaza kurbanı olursun; atın gemini çekip CURB et (dizginle)!"
   },
   {
-    id: "w168",
+    id: "w1391",
     word: "denounce",
     type: "verb",
     meaning: "şiddetle kınamak, ihbar etmek, suçlamak",
@@ -178,7 +178,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DE-ANNOUNCE' -> Birinin yaptığı suçu ve ayıbı herkese anons ederek şiddetle kınamak (denounce)."
   },
   {
-    id: "w1248",
+    id: "w1262",
     word: "diligence",
     type: "noun",
     meaning: "özen, gayret, çalışkanlık, sebat",
@@ -194,7 +194,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DİL-İĞNE' -> İğneyle kuyu kazar gibi büyük bir sabır, özen ve çalışkanlıkla (diligence) emek vermek."
   },
   {
-    id: "w176",
+    id: "w159",
     word: "disseminate",
     type: "verb",
     meaning: "yaymak, dağıtmak (bilgi, fikir, tohum)",
@@ -210,7 +210,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SEMEN / SEMİNER' (tohum / bilgi) -> Bilgi tohumlarını dört bir yana saçıp seminerlerle topluma yaymak (disseminate)."
   },
   {
-    id: "w1084",
+    id: "w451",
     word: "distinct",
     type: "adjective",
     meaning: "belirgin, farklı, ayrı, net",
@@ -226,7 +226,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DİSTİNK (Dıştan belli)' -> Diğerlerinden ayrılan, dıştan bakıldığında hemen fark edilen belirgin ve ayrı (distinct) özellik."
   },
   {
-    id: "w178",
+    id: "w38",
     word: "distort",
     type: "verb",
     meaning: "çarpıtmak, saptırmak, şeklini/anlamını bozmak",
@@ -242,7 +242,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'TORTE / DİS-TORT' -> Gitar sesini bozan distortion pedalı gibi, gerçeğin orijinal biçimini bozup yamultmak, çarpıtmak (distort)."
   },
   {
-    id: "w676",
+    id: "w690",
     word: "equilibrium",
     type: "noun",
     meaning: "denge, istikrar, sukunet",
@@ -258,7 +258,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'EQUAL' (eşit) + 'LIBRA' (terazi) -> Terazinin iki kefesinin eşit olması, mükemmel denge ve istikrar (EQUILIBRIUM)."
   },
   {
-    id: "w1268",
+    id: "w1013",
     word: "fathom",
     type: "verb",
     meaning: "akıl sır erdirmek, derinine inip anlamak, idrak etmek",
@@ -274,7 +274,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FATİH / DERİN SU' -> Denizcilikte derinlik ölçüsüdür (kulaç). Suyun en dibine inip o derinliğe akıl sır erdirmek, kavramak (fathom)."
   },
   {
-    id: "w1271",
+    id: "w1292",
     word: "fiasco",
     type: "noun",
     meaning: "fiyasko, tam bir başarısızlık, rezalet",
@@ -290,7 +290,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Türkçeye geçmiş 'FİYASKO' kelimesinin aynısıdır! Büyük umutlarla başlayıp hüsranla biten rezalet ve tam bir fiyasko (fiasco)."
   },
   {
-    id: "w886",
+    id: "w902",
     word: "figure out",
     type: "phrasal_verb",
     meaning: "çözmek, anlamak, halletmek, işin içinden çıkmak",
@@ -306,7 +306,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FİGÜR' + 'OUT' -> Karmaşık geometrik figürlerin sırrını dışarı çıkarıp denklemi FIGURE OUT etmek (çözmek, halletmek)."
   },
   {
-    id: "w485",
+    id: "w481",
     word: "formidable",
     type: "adjective",
     meaning: "yenilmesi/aşılması güç, ürkütücü, heybetli, zorlu",
@@ -322,7 +322,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FORMA / FORMUNDA' -> Rakip o kadar formunda ve heybetli ki karşısında yenilmesi güç, ürkütücü ve zorlu (formidable) bir güç var."
   },
   {
-    id: "w1282",
+    id: "w1099",
     word: "gratuitous",
     type: "adjective",
     meaning: "sebepsiz, lüzumsuz, gereksiz, karşılıksız",
@@ -338,7 +338,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'GRATIS' (ücretsiz/karşılıksız) kökünden gelir -> Ortada hiçbir sebep yokken, havadan, lüzumsuz yere yapılan şey (gratuitous)."
   },
   {
-    id: "w365",
+    id: "w799",
     word: "implicitly",
     type: "adverb",
     meaning: "üstü kapalı olarak, dolaylı yoldan, zımnen",
@@ -354,7 +354,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'İMA-PLICIT' -> Açıkça söylemeyip ima ederek, üstü kapalı ve dolaylı bir biçimde (implicitly) aktarmak."
   },
   {
-    id: "w212",
+    id: "w293",
     word: "imply",
     type: "verb",
     meaning: "ima etmek, anlamına gelmek, sezgisel olarak belirtmek",
@@ -370,7 +370,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'İMA' kelimesiyle doğrudan sesdeştir -> Sözü dolandırıp bir durumu İMA etmek (imply)."
   },
   {
-    id: "w778",
+    id: "w944",
     word: "in spite of",
     type: "conjunction",
     meaning: "-e rağmen, karşın (+ İsim / V-ing)",
@@ -386,7 +386,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'İNAT' -> İnadına rağmen! Karşılaştığı tüm zorlukların inadına, onlara İN SPITE OF (rağmen) yoluna devam etti."
   },
   {
-    id: "w505",
+    id: "w511",
     word: "innovative",
     type: "adjective",
     meaning: "yenilikçi, çığır açan, inovatif",
@@ -402,7 +402,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Türkçeye geçmiş 'İNOVASYON' kelimesi -> Yeni, çığır açıcı fikirler üreten yenilikçi (innovative) zihin."
   },
   {
-    id: "w217",
+    id: "w189",
     word: "instigate",
     type: "verb",
     meaning: "kışkırtmak, körüklemek, başlatmak",
@@ -418,7 +418,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'İSYAN-TETİK' -> İnsanları gaza getirip isyanı körükleyen, fitili INSTIGATE eden (kışkırtıp başlatan) provokatör."
   },
   {
-    id: "w697",
+    id: "w1322",
     word: "jurisdiction",
     type: "noun",
     meaning: "yargı yetkisi, yetki alanı, adli alan",
@@ -434,7 +434,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'JÜRİ' + 'DICTION' -> Jürinin kanunları dikte ettiği, adalet dağıttığı resmi alan: JURISDICTION (yargı yetkisi)."
   },
   {
-    id: "w1099",
+    id: "w67",
     word: "lucrative",
     type: "adjective",
     meaning: "kazançlı, karlı, yüksek getirili",
@@ -450,7 +450,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'LÜKS-LİRA' -> Kasasına bolca lira ve lüks getiren, son derece kazançlı ve karlı (lucrative) bir yatırım."
   },
   {
-    id: "w1303",
+    id: "w1129",
     word: "malleable",
     type: "adjective",
     meaning: "kolay şekil verilebilir, dövülebilir, yönlendirilebilir",
@@ -466,7 +466,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MALZEME-MEYİLLİ' -> Çekiçle vurulunca şekil almaya meyilli, dövülebilir yumuşak MALZEME (malleable)."
   },
   {
-    id: "w1309",
+    id: "w323",
     word: "modulate",
     type: "verb",
     meaning: "ayarlamak, düzenlemek, tonlamak, uyarlamak",
@@ -482,7 +482,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MOD' + 'AYAR' -> Radyonun veya sesin modunu ayarlamak, aşırılıktan kaçınıp dengeli seviyeye getirmek (modulate)."
   },
   {
-    id: "w710",
+    id: "w720",
     word: "momentum",
     type: "noun",
     meaning: "hız, ivme, hareket gücü",
@@ -498,7 +498,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Fizikten bilinen MOMENTUM -> Yuvarlanan bir taşın ya da hızla ilerleyen bir trenin durdurulamaz hareket gücü ve ivmesi."
   },
   {
-    id: "w784",
+    id: "w974",
     word: "neither nor",
     type: "conjunction",
     meaning: "ne ... ne de ... (ikisi de değil)",
@@ -514,7 +514,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'NO + EITHER' -> 'NE o NOR öbürü' = İkisi de değil, her ikisini de birden reddeden bağlaç (neither ... nor)."
   },
   {
-    id: "w527",
+    id: "w541",
     word: "oblivious",
     type: "adjective",
     meaning: "habersiz, bihaber, kayıtsız, farkında olmayan",
@@ -530,7 +530,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'O-BİLMİYORUZ' -> O çevresinde olan biteni bilmiyor, her şeyden bihaber, dünyaya karşı OBLIVIOUS (kayıtsız, habersiz)."
   },
   {
-    id: "w1320",
+    id: "w1352",
     word: "paucity",
     type: "noun",
     meaning: "kıtlık, azlık, noksanlık, yetersizlik",
@@ -546,7 +546,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'POOR-CITY' (Fakir şehir) -> Kaynakların çok az olduğu, kıtlık ve noksanlığın (paucity) hüküm sürdüğü yoksul kent."
   },
   {
-    id: "w249",
+    id: "w353",
     word: "predict",
     type: "verb",
     meaning: "öngörmek, tahmin etmek",
@@ -562,7 +562,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'PRE' (önceden) + 'DICT' (söylemek) -> Bir olayı henüz gerçekleşmeden evvel önceden söylemek, tahmin etmek (PREDICT)."
   },
   {
-    id: "w385",
+    id: "w277",
     word: "predominantly",
     type: "adverb",
     meaning: "ağırlıklı olarak, çoğunlukla, başlıca",
@@ -578,7 +578,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DOMİNANT' kökünden -> Bir şeyin baskın (dominant) olması, yani ağırlıklı ve çoğunlukla (predominantly) bulunması."
   },
   {
-    id: "w549",
+    id: "w571",
     word: "reluctant",
     type: "adjective",
     meaning: "isteksiz, gönülsüz, tereddütlü",
@@ -594,7 +594,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'RAHATSIZ-GÖNÜLSÜZ' -> İşi yapmaktan rahatsızlık duyan, ayaklarını sürüyen, gönülsüz ve isteksiz (reluctant) tavır."
   },
   {
-    id: "w918",
+    id: "w932",
     word: "result from",
     type: "phrasal_verb",
     meaning: "-den kaynaklanmak, ileri gelmek, sebebi olmak",
@@ -610,7 +610,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FROM (-den)' takısı yön bildirir -> Kaynağın içinden çıkıp gelmek, o nedenden ileri gelmek (result FROM)."
   },
   {
-    id: "w919",
+    id: "w112",
     word: "rule out",
     type: "phrasal_verb",
     meaning: "ihtimal dışı bırakmak, elemek, göz ardı etmek",
@@ -626,7 +626,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'RULE (kural)' + 'OUT (dışarı)' -> Kural gereği çemberin dışına fırlatıp atmak, ihtimal dışı bırakıp elemek (rule out)."
   },
   {
-    id: "w265",
+    id: "w383",
     word: "safeguard",
     type: "verb",
     meaning: "korumak, güvenceye almak, emniyete almak",
@@ -642,7 +642,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SAFE (güvenli)' + 'GUARD (muhafız/koruma)' -> Bir muhafız gibi nöbet tutarak tehlikelerden korumak ve SAFEGUARD etmek (güvenceye almak)."
   },
   {
-    id: "w1334",
+    id: "w1159",
     word: "sagacious",
     type: "adjective",
     meaning: "bilge, ferasetli, sağduyulu, basiretli",
@@ -658,7 +658,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SAĞ-GÖRÜŞ' -> Sağduyulu, feraseti açık, doğru kararlar veren bilge (sagacious) insan."
   },
   {
-    id: "w266",
+    id: "w1043",
     word: "salvage",
     type: "verb",
     meaning: "kurtarmak (enkazdan/batan gemiden/krizden)",
@@ -674,7 +674,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SAL-VAGON' -> Batan gemiden tahta bir sal üstüne yükleyerek eşyaları kurtarmak (salvage)."
   },
   {
-    id: "w560",
+    id: "w236",
     word: "sheer",
     type: "adjective",
     meaning: "katıksız, tam, sırf (azim/şans), sarp/dimdik",
@@ -690,7 +690,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ŞİİR gibi tam/katıksız' -> İçine hiçbir yapaylık girmemiş, katıksız, saf bir azim: SHEER determination."
   },
   {
-    id: "w400",
+    id: "w829",
     word: "significantly",
     type: "adverb",
     meaning: "önemli ölçüde, belirgin biçimde",
@@ -706,7 +706,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SİGNİFİCANT (önemli)' -> İstatistiksel olarak göze çarpan, kayda değer ve önemli ölçüde (significantly) olan fark."
   },
   {
-    id: "w745",
+    id: "w750",
     word: "stagnation",
     type: "noun",
     meaning: "durgunluk, yerinde sayma, hareketsizlik",
@@ -722,7 +722,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'STAGNANT WATER' (Durgun su) -> Akmayan, yerinde sayıp yosun tutan su gibi hiçbir canlılık göstermeyen durgunluk hali: STAGNATION."
   },
   {
-    id: "w283",
+    id: "w219",
     word: "subsidize",
     type: "verb",
     meaning: "sübvanse etmek, mali olarak desteklemek, prim vermek",
@@ -738,7 +738,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Türkçeye geçen 'SÜBVANSE' kelimesi -> Devletin vatandaşa veya üreticiye alttan sağladığı para desteği (subsidize)."
   },
   {
-    id: "w573",
+    id: "w601",
     word: "tentative",
     type: "adjective",
     meaning: "kesin olmayan, geçici, deneme niteliğinde, tereddütlü",
@@ -754,7 +754,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'TENT (Çadır)' -> Çadır geçicidir, beton bina gibi kalıcı değildir; henüz kesinleşmemiş, geçici durumlar TENTATIVE'dir."
   },
   {
-    id: "w758",
+    id: "w99",
     word: "turmoil",
     type: "noun",
     meaning: "kargaşa, çalkantı, kaos, hengame",
@@ -770,7 +770,7 @@ export const day8Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'TUR / MEYİL' -> Her şey tersine dönmüş, teker gibi dönüp altüst olmuş; ortalık fırıl fırıl dönen bir kargaşa ve hengame (TURMOIL)."
   },
   {
-    id: "w1368",
+    id: "w1189",
     word: "voracious",
     type: "adjective",
     meaning: "obur, doymak bilmez, aşırı iştahlı",

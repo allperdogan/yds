@@ -122,7 +122,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'AP-AŞİKAR' -> Durum o kadar apaçık ve bariz ki, APPARENTLY (görünüşe göre / anlaşılan) herkes sonucu tahmin edebiliyor."
   },
   {
-    "id": "w1216",
+    "id": "w1207",
     "word": "ascendancy",
     "type": "noun",
     "meaning": "üstünlük, egemenlik, hakimiyet, baskınlık",
@@ -152,7 +152,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'A-SEND' (Yukarı tırmanmak/Asansör) -> Zirveye tırmanıp (ascend) tahta çıkan krallık rakiplerine karşı ASCENDANCY (üstünlük, egemenlik) kazandı."
   },
   {
-    "id": "w945",
+    "id": "w1409",
     "word": "at the expense of",
     "type": "conjunction",
     "meaning": "-in pahasına, -in zararına, aleyhine",
@@ -179,7 +179,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'EXPENSE (masraf/harcama)' -> Bedelini diğer tarafa fatura etmek: AT THE EXPENSE OF (kendi kazanırken diğerinin pahasına/zararına)."
   },
   {
-    "id": "w643",
+    "id": "w635",
     "word": "autonomy",
     "type": "noun",
     "meaning": "özerklik, bağımsızlık, kendi kendini yönetme",
@@ -769,7 +769,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'GRİEF (Matem/Keder)' -> İnsanı yasa boğan, yürek yakan olay: GRIEVOUS (ağır, vahim, keder verici kayıp veya hata)."
   },
   {
-    "id": "w1309",
+    "id": "w1104",
     "word": "hermetic",
     "type": "adjective",
     "meaning": "hava sızdırmaz, hava geçirmez; dışa tamamen kapalı, ezoterik",
@@ -800,7 +800,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'HER-METRE-TİK (Heryeri tıkalı)' -> Bir milim bile hava almayacak şekilde her tarafı tıkanmış: HERMETIC (hava sızdırmaz, dışa kapalı)."
   },
   {
-    "id": "w897",
+    "id": "w949",
     "word": "in contrast",
     "type": "conjunction",
     "meaning": "buna karşılık, tezat olarak, aksine, bilakis",
@@ -829,7 +829,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 FORMÜL: 'KONTRAST' -> Fotoğraftaki siyah-beyaz zıtlığı (kontrast) gibi iki zıt durumu birbirine bağlar: IN CONTRAST (buna karşılık, aksine)."
   },
   {
-    "id": "w184",
+    "id": "w298",
     "word": "incur",
     "type": "verb",
     "meaning": "maruz kalmak, (zarar/borç/ceza) üstlenmek, üzerine çekmek",
@@ -862,7 +862,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İN-KÂR (Kârın zıttı: Zarar)' -> Şirket kâr beklerken yanlış yatırımla büyük zararlara maruz kaldı, borçlandı: INCUR (zarara/borca uğramak)."
   },
   {
-    "id": "w1022",
+    "id": "w43",
     "word": "inhibit",
     "type": "verb",
     "meaning": "engellemek, dizginlemek, baskılamak, yavaşlatmak",
@@ -895,7 +895,7 @@ export const day13Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: Kimyadaki ve biyolojideki 'İNHİBİTÖR' -> Tepkimeyi frenleyip engelleyen madde. INHIBIT: Baskılamak, engellemek."
   },
   {
-    "id": "w802",
+    "id": "w804",
     "word": "initially",
     "type": "adverb",
     "meaning": "başlangıçta, ilk etapta, önceleri",

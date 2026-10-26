@@ -2,7 +2,7 @@ import { YdsWord } from '../../types';
 
 export const day9Words: YdsWord[] = [
   {
-    id: "w344",
+    id: "w770",
     word: "abruptly",
     type: "adverb",
     meaning: "aniden, ansızın, pat diye",
@@ -18,7 +18,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'A-RUPT (patlamak)' -> Bankrupt (iflas) gibi 'rupt' kökü kırmak, patlatmaktır. Bir anda pat diye ortaya çıkan, ansızın gelişen durum (ABRUPTLY)."
   },
   {
-    id: "w112",
+    id: "w39",
     word: "accommodate",
     type: "verb",
     meaning: "barındırmak, yer sağlamak; uyum sağlamak, karşılamak",
@@ -34,7 +34,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KOMODİN / ODA' -> Misafire oda ve komodin tahsis ederek onu evde barındırmak, ihtiyacını karşılamak (accommodate)."
   },
   {
-    id: "w1201",
+    id: "w1203",
     word: "appeasement",
     type: "noun",
     meaning: "yatıştırma politikası, taviz vererek barış sağlama",
@@ -50,7 +50,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'PEACE (Barış)' kökünden -> Karşıdaki öfkeli güce sürekli taviz verip sahte bir barış (peace) ortamı yaratmaya çalışma: APPEASEMENT (yatıştırma)."
   },
   {
-    id: "w629",
+    id: "w631",
     word: "assimilation",
     type: "noun",
     meaning: "özümseme, sindirme, asimilasyon, kaynaşma",
@@ -66,7 +66,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SİMİLE / BENZER' -> Farklı olanı kendine benzetmek, sindirip kendi kültürüne özümsetmek (assimilation)."
   },
   {
-    id: "w131",
+    id: "w130",
     word: "augment",
     type: "verb",
     meaning: "artırmak, çoğaltmak, büyütmek",
@@ -82,7 +82,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'AĞ-MENTEŞE / AUGMENTED' -> Kapıya ek menteşe takarak sağlamlığını artırmak, boyutu çoğaltmak (augment)."
   },
   {
-    id: "w1216",
+    id: "w1070",
     word: "callous",
     type: "adjective",
     meaning: "duygusuz, taş kalpli, nasırlı, duyarsız",
@@ -98,7 +98,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KALP-İS' -> Kalbi pas ve is bağlamış, nasır tutmuş, kimseye acımayan duygusuz ve taş kalpli (callous) insan."
   },
   {
-    id: "w1222",
+    id: "w100",
     word: "catalyst",
     type: "noun",
     meaning: "katalizör, tetikleyici etken, hızlandırıcı unsur",
@@ -114,7 +114,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Kimyadan bildiğimiz 'KATALİZÖR' -> Reaksiyona girip süreci hızlandıran, değişimi tetikleyen güç (catalyst)."
   },
   {
-    id: "w143",
+    id: "w984",
     word: "circumvent",
     type: "verb",
     meaning: "etrafından dolanmak, kurnazlıkla atlatmak, bertaraf etmek",
@@ -130,7 +130,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CIRCUM (çember)' + 'VENT (gitmek)' -> Düz yoldan değil, çember çizerek engelin etrafından dolanıp kurnazca atlatmak (circumvent)."
   },
   {
-    id: "w869",
+    id: "w873",
     word: "close down",
     type: "phrasal_verb",
     meaning: "kapatmak (işletmeyi/şirketi), iflas etmek/kapanmak",
@@ -146,7 +146,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CLOSE (kapatmak)' + 'DOWN (aşağı)' -> Şirketin kepenklerini aşağı indirip kalıcı olarak kapısına kilit vurmak (close down)."
   },
   {
-    id: "w439",
+    id: "w422",
     word: "coherent",
     type: "adjective",
     meaning: "tutarlı, ahenkli, mantıklı, anlaşılır",
@@ -162,7 +162,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CO-HERE (Birlikte yapışık)' -> Parçaları birbirine sımsıkı tutunmuş, birbiriyle çelişmeyen, mantıklı ve tutarlı (coherent) fikirler."
   },
   {
-    id: "w1383",
+    id: "w9",
     word: "comply with",
     type: "verb",
     meaning: "uymak, riayet etmek, gereğini yerine getirmek",
@@ -178,7 +178,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KOMPLE UY' -> Kanunlara ve kurallara komple riayet edip COMPLY WITH etmek (uymak)."
   },
   {
-    id: "w1232",
+    id: "w1233",
     word: "consternation",
     type: "noun",
     meaning: "büyük şaşkınlık, dehşet, afallama, panik",
@@ -194,7 +194,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KORKSANA-TEN' -> İnsanın korku ve dehşetten teninin renginin atması, büyük bir şaşkınlık ve afallama hali (consternation)."
   },
   {
-    id: "w657",
+    id: "w661",
     word: "contagion",
     type: "noun",
     meaning: "bulaşma, sirayet, salgın; finansal yayılma",
@@ -210,7 +210,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CONTACT (Temas)' -> Temas yoluyla birinden diğerine hızla bulaşan, yayılan hastalık ya da kriz (CONTAGION)."
   },
   {
-    id: "w1394",
+    id: "w1392",
     word: "deprive of",
     type: "verb",
     meaning: "-den mahrum etmek, yoksun bırakmak",
@@ -226,7 +226,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DE-PRİVATE' -> Bir kimsenin elindeki özel (private) hakları çekip alarak onu o haklardan yoksun bırakmak (deprive of)."
   },
   {
-    id: "w1249",
+    id: "w1263",
     word: "disbursement",
     type: "noun",
     meaning: "ödeme, para çıkarma, harcama, sarfiyat",
@@ -242,7 +242,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'BURS' kökü -> Kasadan burs ve ödenekleri çıkarıp hak sahiplerine dağıtmak, para ödemesi yapmak (disbursement)."
   },
   {
-    id: "w177",
+    id: "w160",
     word: "diverge",
     type: "verb",
     meaning: "ayrılmak, farklılaşmak, sapmak, uzaklaşmak",
@@ -258,7 +258,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DİVERJAN / DİVERSE' -> Çeşitlenmek ve iki ayrı kola ayrılarak farklı yönlere gitmek, yolları ayırmak (diverge)."
   },
   {
-    id: "w458",
+    id: "w452",
     word: "diverse",
     type: "adjective",
     meaning: "çeşitli, türlü türlü, farklı",
@@ -274,7 +274,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DİVERSİTE / ÇEŞİT' -> Türkçede de kullanılan biyolojik çeşitlilik (diversity) kökünden; türlü türlü ve farklı (diverse)."
   },
   {
-    id: "w675",
+    id: "w691",
     word: "equity",
     type: "noun",
     meaning: "hakkaniyet, adalet; hisse senedi, özsermaye",
@@ -290,7 +290,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'EQUAL (Eşit)' kökünden -> Herkese hakkını eşit ve adil bir şekilde dağıtma ilkesi: EQUITY (hakkaniyet, adalet)."
   },
   {
-    id: "w192",
+    id: "w1014",
     word: "ferment",
     type: "verb",
     meaning: "mayalanmak; kaynaşmak, çalkalanmak (huzursuzluk)",
@@ -306,7 +306,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FERMANTASYON' -> Mayalanarak köpüren hamur gibi, halkın öfkesinin alttan alta mayalanıp çalkalanması (ferment)."
   },
   {
-    id: "w887",
+    id: "w903",
     word: "find out",
     type: "phrasal_verb",
     meaning: "öğrenmek, keşfetmek, ortaya çıkarmak",
@@ -322,7 +322,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FIND (bulmak)' + 'OUT (ortaya)' -> Gizli saklı olan bir bilgiyi arayıp gün ışığına çıkarmak, gerçeği FIND OUT etmek (öğrenmek)."
   },
   {
-    id: "w1272",
+    id: "w1293",
     word: "finesse",
     type: "noun",
     meaning: "incelik, ustalık, hüner, kıvrak zeka",
@@ -338,7 +338,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FINE (Zarif/İnce)' -> Olayları kaba kuvvetle değil, gayet ince ve ustaca yöneten kıvrak zeka ve hüner: FINESSE."
   },
   {
-    id: "w487",
+    id: "w482",
     word: "fundamental",
     type: "adjective",
     meaning: "temel, asıl, esas, köklü",
@@ -354,7 +354,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FONDA / FUNDAMENT' -> Bir binanın sağlam temeli, tabanı; her şeyin dayandığı en esas ve temel (fundamental) unsur."
   },
   {
-    id: "w1284",
+    id: "w1100",
     word: "gregarious",
     type: "adjective",
     meaning: "sürü halinde yaşayan; sosyal, cana yakın, sokulgan",
@@ -370,7 +370,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'GARK-ARYA / GRUP' -> Yalnızlığı sevmeyen, daima bir grup ve sürü içinde yaşayan, cana yakın ve sosyal (gregarious) karakter."
   },
   {
-    id: "w495",
+    id: "w68",
     word: "hazardous",
     type: "adjective",
     meaning: "tehlikeli, riskli, sağlığa zararlı",
@@ -386,7 +386,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'HAZAR / HASAR' -> Çevresine büyük hasar veren, her an felakete yol açabilecek tehlikeli ve riskli (hazardous) madde."
   },
   {
-    id: "w208",
+    id: "w294",
     word: "impose",
     type: "verb",
     meaning: "dayatmak, yüklemek, zorla kabul ettirmek, yürürlüğe koymak",
@@ -402,7 +402,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'EMPOZE ETMEK' -> Türkçede kullandığımız empoze etmek; kendi fikrini veya cezasını başkasına zorla kabul ettirmek (impose)."
   },
   {
-    id: "w368",
+    id: "w800",
     word: "inadvertently",
     type: "adverb",
     meaning: "sehven, kazara, istemeyerek, farkında olmadan",
@@ -418,7 +418,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'İN-ADVERT (reklamsız/dikkat çekmeden)' -> Bilerek ve isteyerek değil, dikkatsizlik sonucu sehven ve kazara (inadvertently) yapmak."
   },
   {
-    id: "w504",
+    id: "w512",
     word: "insidious",
     type: "adjective",
     meaning: "sinsi, gizlice ilerleyen, tehlikeli",
@@ -434,7 +434,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Korku filmi 'INSIDIOUS (Ruhlar Bölgesi)' -> İçeriye sessizce ve sinsice sızan, kendini hiç belli etmeyen tehlike (insidious)."
   },
   {
-    id: "w508",
+    id: "w237",
     word: "intact",
     type: "adjective",
     meaning: "bozulmamış, zarar görmemiş, sapasağlam, bütün",
@@ -450,7 +450,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'IN-TACT (Dokunulmamış)' -> Hiç kimsenin eli değmemiş, temas edilmemiş, sapasağlam ve el değmemiş duran nesne (intact)."
   },
   {
-    id: "w1404",
+    id: "w190",
     word: "intervene in",
     type: "verb",
     meaning: "müdahale etmek, araya girmek",
@@ -466,7 +466,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'İNTER-VEN (araya gelmek)' -> İki kavgalı tarafın arasına girip olaya müdahale etmek, durumu kontrol altına almak (intervene in)."
   },
   {
-    id: "w1298",
+    id: "w1323",
     word: "juxtaposition",
     type: "noun",
     meaning: "yan yana koyma, tezat oluşturacak şekilde yan yana dizme",
@@ -482,7 +482,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'YUKARI-POZİSYON / YAN YANA' -> İki zıt resmi yan yana koyup aralarındaki tezat pozisyonu sergilemek: JUXTAPOSITION."
   },
   {
-    id: "w1306",
+    id: "w1130",
     word: "mendacious",
     type: "adjective",
     meaning: "yalancı, sahte, gerçeğe aykırı, uydurma",
@@ -498,7 +498,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MANDACI / MENDİLLİ YALANCI' -> Göz göre göre uydurma masallar anlatan, mendil sallayıp halkı aldatan yalancı (mendacious)."
   },
   {
-    id: "w234",
+    id: "w324",
     word: "monitor",
     type: "verb",
     meaning: "izlemek, gözlemlemek, denetlemek, takip etmek",
@@ -514,7 +514,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Bilgisayar MONİTÖRÜ -> Her şeyi ekran üzerinden anbean izleyen ve gözlemleyen cihaz gibi dikkatle takip etmek (monitor)."
   },
   {
-    id: "w713",
+    id: "w721",
     word: "necessity",
     type: "noun",
     meaning: "zorunluluk, gereklilik, temel ihtiyaç",
@@ -530,7 +530,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'NECESSARY' (gerekli) kökünden -> İnsanın yaşaması için olmazsa olmaz olan şey: NECESSITY (zorunluluk, ihtiyaç)."
   },
   {
-    id: "w787",
+    id: "w945",
     word: "notwithstanding",
     type: "conjunction",
     meaning: "-e rağmen, karşın (+ İsim veya Cümle)",
@@ -546,7 +546,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'NOT-WITH-STAND' -> Karşıda duran engele dayanıp boyun eğmeyerek, ona RAĞMEN (notwithstanding) dimdik durmak."
   },
   {
-    id: "w526",
+    id: "w542",
     word: "obstinate",
     type: "adjective",
     meaning: "inatçı, dik kafalı, dirençli, boyun eğmeyen",
@@ -562,7 +562,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'OBSTACLE (Engel)' köküyle akrabadır -> Önüne engel çıkarsan bile fikrinden dönmeyen dik kafalı ve inatçı (obstinate) kişi."
   },
   {
-    id: "w1321",
+    id: "w1353",
     word: "penchant",
     type: "noun",
     meaning: "düşkünlük, meyil, özel eğilim, zaaf",
@@ -578,7 +578,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'PEK-CAN' -> Cana pek yakın gelen, kalbin bir şeye aşırı derecede meyletmesi ve düşkün olması: PENCHANT (meyil, düşkünlük)."
   },
   {
-    id: "w251",
+    id: "w354",
     word: "preserve",
     type: "verb",
     meaning: "korumak, muhafaza etmek, saklamak",
@@ -594,7 +594,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'PRE-SERVE' -> Bozulmasın diye önceden korumaya almak; konserveler gibi yiyeceği ve tarihi muhafaza etmek (preserve)."
   },
   {
-    id: "w548",
+    id: "w572",
     word: "remarkable",
     type: "adjective",
     meaning: "dikkate değer, olağanüstü, kayda değer, çarpıcı",
@@ -610,7 +610,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MARK (işaret koymak)' -> Üzerine işaret koymaya, not düşmeye değecek kadar göze çarpan, olağanüstü (remarkable) durum."
   },
   {
-    id: "w917",
+    id: "w933",
     word: "result in",
     type: "phrasal_verb",
     meaning: "ile sonuçlanmak, yol açmak, sebep olmak",
@@ -626,7 +626,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'IN (içine)' -> Sürecin bir felaketin İÇİNE doğru sürüklenmesi, o neticeyle sonuçlanması (result IN = sebep olmak)."
   },
   {
-    id: "w1335",
+    id: "w1160",
     word: "salubrious",
     type: "adjective",
     meaning: "sağlığa yararlı, şifalı, temiz/ferah (hava, çevre)",
@@ -642,7 +642,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SALUTE (Sağlık)' -> İspanyolca/Latince 'salud/salus' (sağlık) kökünden; insana sıhhat veren, sağlığa yararlı (salubrious) hava."
   },
   {
-    id: "w273",
+    id: "w384",
     word: "sever",
     type: "verb",
     meaning: "kesip ayırmak, koparmak, ilişiğini kesmek",
@@ -658,7 +658,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SEV-ER (Sevenleri ayırmak)' -> Bıçakla ikiye kesip koparmak, sevenlerin bağlarını koparıp kesmek (sever)."
   },
   {
-    id: "w1341",
+    id: "w1044",
     word: "shun",
     type: "verb",
     meaning: "uzak durmak, kaçınmak, dışlamak",
@@ -674,7 +674,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ŞUTLA / UZAKLAŞ' -> Kendini o çevreden dışarı şutlayıp uzak tutmak, kötü ortamlardan kaçınmak (shun)."
   },
   {
-    id: "w792",
+    id: "w975",
     word: "similarly",
     type: "conjunction",
     meaning: "benzer şekilde, aynı biçimde",
@@ -690,7 +690,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SIMILAR (Benzer)' -> Benzer bir mantıkla ve aynı biçimde (similarly) diğer tarafta da durumun öyle olması."
   },
   {
-    id: "w401",
+    id: "w830",
     word: "simultaneously",
     type: "adverb",
     meaning: "eşzamanlı olarak, aynı anda",
@@ -706,7 +706,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SİMÜLTANE ÇEVİRİ' -> Konuşmacıyla aynı anda yapılan eşzamanlı çeviri gibi, tam aynı anda gerçekleşen (simultaneously)."
   },
   {
-    id: "w747",
+    id: "w751",
     word: "stimulus",
     type: "noun",
     meaning: "uyarıcı, dürtü, teşvik, kamçılayıcı unsur",
@@ -722,7 +722,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'STİMÜLE ETMEK' -> Uyarmak, canlandırmak; durağan bir sistemi harekete geçiren dürtü ve teşvik (stimulus)."
   },
   {
-    id: "w1428",
+    id: "w220",
     word: "succumb to",
     type: "verb",
     meaning: "yenik düşmek, boyun eğmek, dayanamayıp ölmek/teslim olmak",
@@ -738,7 +738,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SÜKUT / BOYUN BÜKÜM' -> Artık direnecek takati kalmayıp boynunu bükmek, teslim olup yenik düşmek (succumb to)."
   },
   {
-    id: "w575",
+    id: "w602",
     word: "thorough",
     type: "adjective",
     meaning: "etraflı, eksiksiz, titiz, derinlemesine",
@@ -754,7 +754,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'TORU-TOPU DEĞİL, TAM' -> Üstünkörü değil, baştan ayağa her ayrıntıyı kapsayan titiz ve eksiksiz (thorough) araştırma."
   },
   {
-    id: "w593",
+    id: "w1190",
     word: "wary",
     type: "adjective",
     meaning: "temkinli, tedbirli, uyanık, şüpheci",
@@ -770,7 +770,7 @@ export const day9Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'AWARE (Farkında)' -> Tehlikenin farkında olan, gözünü dört açmış, dikkatli ve temkinli (wary) kişi."
   },
   {
-    id: "w938",
+    id: "w113",
     word: "wipe out",
     type: "phrasal_verb",
     meaning: "yok etmek, silip süpürmek, kökünü kazımak",

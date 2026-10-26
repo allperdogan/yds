@@ -82,7 +82,7 @@ export const day19Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: Bir tapınakta (TEMPLE) bilgelerin sessizce oturup kainat üzerine DERİN DÜŞÜNMESİ: CONTEMPLATE."
   },
   {
-    "id": "w442",
+    "id": "w432",
     "word": "contentious",
     "type": "adjective",
     "meaning": "tartışmalı, çekişmeli, kavgacı",

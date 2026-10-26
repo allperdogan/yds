@@ -29,7 +29,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'AMOUNT (Miktar)' -> Bütün paraları toplayınca ortaya çıkan yekün: AMOUNT TO (-e ulaşmak, tutmak)."
   },
   {
-    "id": "w1219",
+    "id": "w1209",
     "word": "atrocity",
     "type": "noun",
     "meaning": "vahşet, gaddarlık, canavarlık",
@@ -60,7 +60,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'A-TROCİTY (Tersine dönen insanlık/Acımasızlık)' -> İnsanlık onurunu ayaklar altına alan korkunç canavarlık: ATROCITY (vahşet, canavarlık)."
   },
   {
-    "id": "w644",
+    "id": "w637",
     "word": "barrier",
     "type": "noun",
     "meaning": "engel, bariyer, set",
@@ -148,7 +148,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'COME OUT (Dışarı çıkmak)' -> Kapalı kapılar ardından günyüzüne çıkmak veya kitabın baskıdan çıkması: COME OUT (yayımlanmak, ortaya çıkmak)."
   },
   {
-    "id": "w106",
+    "id": "w136",
     "word": "confer",
     "type": "verb",
     "meaning": "danışmak, görüşmek; bahşetmek, unvan/derece vermek",
@@ -765,7 +765,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İN-AUGURATE (Açılış kurdelesi kesmek)' -> Büyük bir projeyi ya da devlet başkanının görevini törenle başlatmak: INAUGURATE (açılışını yapmak, göreve başlatmak)."
   },
   {
-    "id": "w517",
+    "id": "w74",
     "word": "indispensable",
     "type": "adjective",
     "meaning": "vazgeçilmez, elzem, zorunlu",
@@ -797,7 +797,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'DISPENSE WITH (Vazgeçmek)' -> Başına IN- gelince: Vazgeçilmesi asla mümkün olmayan, can damarı: INDISPENSABLE (vazgeçilmez, elzem)."
   },
   {
-    "id": "w1328",
+    "id": "w300",
     "word": "inhabit",
     "type": "verb",
     "meaning": "ikamet etmek, yaşamak, mesken tutmak",
@@ -826,7 +826,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'HABITAT (Yaşam alanı)' -> Bir canlının doğal yaşam alanında mesken tutması: INHABIT (ikamet etmek, mesken tutmak)."
   },
   {
-    "id": "w1135",
+    "id": "w518",
     "word": "invaluable",
     "type": "adjective",
     "meaning": "paha biçilmez, son derece kıymetli",
@@ -856,7 +856,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 DİKKAT TUZAĞI: Başına 'IN-' gelmesine rağmen 'değersiz' DEĞİL! 'Değeri ölçülemeyecek kadar paha biçilmez' demektir: INVALUABLE (paha biçilmez)."
   },
   {
-    "id": "w804",
+    "id": "w806",
     "word": "ironically",
     "type": "adverb",
     "meaning": "ironik bir şekilde, ne gariptir ki",
@@ -883,7 +883,7 @@ export const day15Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İRONİK' -> Tam tersi bir sonuç çıkınca hissedilen şaşkınlık: IRONICALLY (ne gariptir ki, ironik olarak)."
   },
   {
-    "id": "w728",
+    "id": "w1329",
     "word": "longevity",
     "type": "noun",
     "meaning": "uzun ömürlülük, uzun yaşama, kalıcılık",

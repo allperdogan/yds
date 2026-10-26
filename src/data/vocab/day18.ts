@@ -30,7 +30,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'ARİSE (Yükselmek/Doğmak) + FROM' -> Bir kaynaktan kök alıp yukarı fışkırmak: ARISE FROM (-den kaynaklanmak, ileri gelmek)."
   },
   {
-    "id": "w1222",
+    "id": "w1212",
     "word": "avarice",
     "type": "noun",
     "meaning": "açgözlülük, hırs, doymak bilmezlik",
@@ -59,7 +59,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'AV-ARİCE (Ava doymayan açgözlü)' -> Dünyayı yese doymayan aşırı para hırsı: AVARICE (açgözlülük, hırs)."
   },
   {
-    "id": "w647",
+    "id": "w640",
     "word": "calamity",
     "type": "noun",
     "meaning": "felaket, facia, büyük yıkım",
@@ -118,7 +118,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'COMPREHENSIVE (Kapsamlı)' zarf hali -> Baştan ayağa her ayrıntıyı içine alan: COMPREHENSIVELY (kapsamlı şekilde, etraflıca)."
   },
   {
-    "id": "w169",
+    "id": "w48",
     "word": "conceal",
     "type": "verb",
     "meaning": "gizlemek, örtbas etmek, saklamak",
@@ -150,7 +150,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: Kozmetikteki 'CONCEALER (Kapatıcı)' -> Yüzdeki lekeleri örten makyaj gibi ayıpları gizlemek: CONCEAL (gizlemek, saklamak)."
   },
   {
-    "id": "w882",
+    "id": "w139",
     "word": "confront",
     "type": "verb",
     "meaning": "yüzleşmek, karşısına çıkmak, göğüs germek",
@@ -180,7 +180,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'FRONT (Ön/Cephe)' -> Cephe cepheye, göz göze gelip yüzleşmek: CONFRONT (yüzleşmek, göğüs germek)."
   },
   {
-    "id": "w853",
+    "id": "w882",
     "word": "consist of",
     "type": "phrasal_verb",
     "meaning": "-den oluşmak, meydana gelmek",
@@ -237,7 +237,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'CON- (Birlikte) + TEMPO (Zaman)' -> Aynı zaman dilimini paylaşan, günümüze ait: CONTEMPORARY (çağdaş, güncel)."
   },
   {
-    "id": "w1242",
+    "id": "w670",
     "word": "culmination",
     "type": "noun",
     "meaning": "zirve noktası, doruk, nihai sonuç, taçlanma",
@@ -267,7 +267,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'KULMİNASYON / ZİRVE' -> Bir dağın veya sürecin en tepesine, doruk noktasına çıkması: CULMINATION (zirve noktası, doruk)."
   },
   {
-    "id": "w1272",
+    "id": "w1242",
     "word": "decorum",
     "type": "noun",
     "meaning": "adabımuaşeret, terbiye, görgü kurallarına uygunluk",
@@ -297,7 +297,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'DEKOR / DEKORUM' -> Salona yakışır şekilde edepli ve terbiyeli davranma hali: DECORUM (adabımuaşeret, terbiye, görgü)."
   },
   {
-    "id": "w994",
+    "id": "w993",
     "word": "deprecate",
     "type": "verb",
     "meaning": "kınamak, karşı çıkmak, küçümsemek/değersizleştirmek",
@@ -327,7 +327,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'DE-PRECIATE (Değerini düşürmek)' köküne yakın -> Bir davranışı hor görüp kınamak, değersizleştirmek: DEPRECATE (kınamak, karşı çıkmak)."
   },
   {
-    "id": "w1080",
+    "id": "w1079",
     "word": "discreet",
     "type": "adjective",
     "meaning": "ağzı sıkı, temkinli, ketum, sağduyulu",
@@ -358,7 +358,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 DİKKAT YAZILIŞ FARKI: 'Discrete' (ayrık/farklı) ile karıştırma! Çift 'ee' yan yana birbirine sır verir gibi: DISCREET (ağzı sıkı, temkinli, ketum)."
   },
   {
-    "id": "w670",
+    "id": "w1272",
     "word": "distortion",
     "type": "noun",
     "meaning": "çarpıtma, tahrifat, şekil bozukluğu",
@@ -389,7 +389,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: Müzikteki 'DISTORTION (Ses bozulması)' -> Sesin veya gerçeğin şeklinin eğrilip bükülmesi: DISTORTION (çarpıtma, tahrifat)."
   },
   {
-    "id": "w108",
+    "id": "w169",
     "word": "encounter",
     "type": "verb",
     "meaning": "karşılaşmak, rastlamak, yüz yüze gelmek",
@@ -448,7 +448,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'ENDEMİK BİTKİ / HASTALIK' -> Yalnızca belirli bir coğrafyaya hapsolmuş yerel tür veya hastalık: ENDEMIC (yöreye özgü, yerel)."
   },
   {
-    "id": "w1022",
+    "id": "w1401",
     "word": "engender",
     "type": "verb",
     "meaning": "doğurmak, meydana getirmek, yol açmak, sebep olmak",
@@ -628,7 +628,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İMPULSE (Dürtü)' -> Sonunu düşünmeden dürtüleriyle fevri hareket eden: IMPETUOUS (fevri, aceleci, düşüncesiz)."
   },
   {
-    "id": "w1402",
+    "id": "w1023",
     "word": "incite",
     "type": "verb",
     "meaning": "kışkırtmak, teşvik etmek, körüklemek, tahrik etmek",
@@ -660,7 +660,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İTMEK / ATEŞE SÜRMEK' -> Kalabalıkları galeyana getirip suça itmek: INCITE (kışkırtmak, körüklemek)."
   },
   {
-    "id": "w187",
+    "id": "w303",
     "word": "inspire",
     "type": "verb",
     "meaning": "ilham vermek, esinlendirmek, teşvik etmek",
@@ -690,7 +690,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'İNSFİRASYON / İLHAM' -> İnsanın içine yaratıcı bir soluk üflemek: INSPIRE (ilham vermek, esinlendirmek)."
   },
   {
-    "id": "w1139",
+    "id": "w521",
     "word": "judicious",
     "type": "adjective",
     "meaning": "sağduyulu, makul, basiretli, yerinde",
@@ -721,7 +721,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'JUDGE (Yargıç/Hakim)' kökünden -> Bir yargıç gibi ölçüp biçen, sağduyulu ve adil: JUDICIOUS (sağduyulu, basiretli, makul)."
   },
   {
-    "id": "w1363",
+    "id": "w1332",
     "word": "malfeasance",
     "type": "noun",
     "meaning": "görev suistimali, kamu görevinde yolsuzluk/suç",
@@ -751,7 +751,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'MAL- (Kötü) + FEASANCE (Yapılan iş)' -> Görevini kötüye kullanarak yapılan yasa dışı usulsüzlük: MALFEASANCE (görev suistimali, yolsuzluk)."
   },
   {
-    "id": "w840",
+    "id": "w809",
     "word": "meticulously",
     "type": "adverb",
     "meaning": "kılı kırk yararcasına, titizlikle, özenle",
@@ -781,7 +781,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'METİKÜLOZ / TİTİZ' -> En küçük toz zerresine bile dikkat eden: METICULOUSLY (titizlikle, kılı kırk yararak)."
   },
   {
-    "id": "w332",
+    "id": "w333",
     "word": "obliterate",
     "type": "verb",
     "meaning": "tamamen yok etmek, yerle bir etmek, kökünü kazımak",
@@ -812,7 +812,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'O-BİTTİ-LATE (Yok olup gitti)' -> Geride tek bir taş bile bırakmadan haritadan silmek: OBLITERATE (tamamen yok etmek, yerle bir etmek)."
   },
   {
-    "id": "w1170",
+    "id": "w1139",
     "word": "obsequious",
     "type": "adjective",
     "meaning": "yaltakçı, kölece boyun eğen, dalkavuk",
@@ -993,7 +993,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'PURSUIT OF HAPPINESS' filminden -> Bir hedefin veya kariyerin peşinden koşmak: PURSUE (takip etmek, peşinden koşmak)."
   },
   {
-    "id": "w1364",
+    "id": "w1362",
     "word": "remnant",
     "type": "noun",
     "meaning": "kalıntı, bakiye, artık, tortu",
@@ -1113,7 +1113,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'SURRENDER -> TESLİM OLMAK' -> Beyaz bayrak çekip kılıcını düşmana vermek: SURRENDER (teslim olmak, vazgeçmek)."
   },
   {
-    "id": "w1171",
+    "id": "w1169",
     "word": "tacit",
     "type": "adjective",
     "meaning": "zımni, üstü kapalı kabul edilen, sözsüz",
@@ -1259,7 +1259,7 @@ export const day18Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: Silahın 'TETİK' (Trigger) mekanizması -> Tetiği çekip patlamayı başlatmak: TRIGGER (tetiklemek, başlatmak)."
   },
   {
-    "id": "w841",
+    "id": "w839",
     "word": "unanimously",
     "type": "adverb",
     "meaning": "oybirliğiyle, ittifakla",

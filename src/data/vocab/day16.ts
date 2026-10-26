@@ -2,7 +2,7 @@ import { YdsWord } from '../../types';
 
 export const day16Words: YdsWord[] = [
   {
-    "id": "w415",
+    "id": "w244",
     "word": "acute",
     "type": "adjective",
     "meaning": "akut, şiddetli, keskin, dar (açı)",
@@ -61,7 +61,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'APPLY (Başvurmak/Uygulamak) + TO' -> Kuralın o gruba da tatbik edilmesi ve geçerli olması: APPLY TO (geçerli olmak, uygulanmak)."
   },
   {
-    "id": "w1220",
+    "id": "w1210",
     "word": "audacity",
     "type": "noun",
     "meaning": "cüret, küstahlık, aşırı cesaret",
@@ -92,7 +92,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'ODA-SİTİ (Odayı başına yıkacak kadar cüretkar)' -> Haddini aşarak küstahça ileri atılmak: AUDACITY (cüret, hadsiz cesaret)."
   },
   {
-    "id": "w645",
+    "id": "w638",
     "word": "beneficiary",
     "type": "noun",
     "meaning": "hak sahibi, yararlanıcı, mirasçı",
@@ -121,7 +121,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'BENE- (İyi) + FIT (Fayda)' -> Bir mirastan veya devlet yardımından faydalanan kişi: BENEFICIARY (yararlanıcı, hak sahibi)."
   },
   {
-    "id": "w947",
+    "id": "w1412",
     "word": "by means of",
     "type": "conjunction",
     "meaning": "vasıtasıyla, aracılığıyla, yoluyla (+ Noun)",
@@ -203,7 +203,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'COME UP (Yukarı fırlamak)' -> Kafanda aniden ampulün yanması, yeni ve parlak bir fikir üretmek: COME UP WITH (fikir/çözüm bulmak)."
   },
   {
-    "id": "w114",
+    "id": "w75",
     "word": "compelling",
     "type": "adjective",
     "meaning": "karşı konulamaz, son derece ikna edici, büyüleyici",
@@ -760,7 +760,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'AMEL-İYAT / İCRAAT' -> Lafı bırakıp işi fiilen hayata geçirmek: IMPLEMENT (uygulamak, hayata geçirmek)."
   },
   {
-    "id": "w992",
+    "id": "w1021",
     "word": "incapacitate",
     "type": "verb",
     "meaning": "yetersiz kılmak, çalışamaz hale getirmek, aciz bırakmak",
@@ -791,7 +791,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'IN- (Olumsuzluk) + CAPACITY (Kapasite)' -> Birinin kapasitesini sıfırlayıp onu aciz ve etkisiz bırakmak: INCAPACITATE (çalışamaz hale getirmek)."
   },
   {
-    "id": "w186",
+    "id": "w301",
     "word": "inherit",
     "type": "verb",
     "meaning": "miras almak, kalıtım yoluyla devralmak",
@@ -821,7 +821,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'HERITAGE (Miras)' kökünden -> Aileden miras veya genetik kod devralmak: INHERIT (miras almak, genetik olarak devralmak)."
   },
   {
-    "id": "w805",
+    "id": "w519",
     "word": "invulnerable",
     "type": "adjective",
     "meaning": "zapt edilemez, yaralanamaz, yenilmez",
@@ -852,7 +852,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'IN- (Olumsuzluk) + VULNERABLE (Savunmasız)' -> Asla vurulamaz ve yaralanamaz olan: INVULNERABLE (yenilmez, zapt edilemez)."
   },
   {
-    "id": "w729",
+    "id": "w807",
     "word": "largely",
     "type": "adverb",
     "meaning": "büyük ölçüde, çoğunlukla, genelde",
@@ -883,7 +883,7 @@ export const day16Words: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: 'LARGE (Büyük)' -> Büyük bir kısmı kapsayan: LARGELY (büyük ölçüde, çoğunlukla)."
   },
   {
-    "id": "w1329",
+    "id": "w1330",
     "word": "lucidity",
     "type": "noun",
     "meaning": "berraklık, açıklık, duruluk, zihin netliği",

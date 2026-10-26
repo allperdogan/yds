@@ -2,7 +2,7 @@ import { YdsWord } from '../../types';
 
 export const day10Words: YdsWord[] = [
   {
-    id: "w345",
+    id: "w771",
     word: "adequately",
     type: "adverb",
     meaning: "yeterli derecede, layıkıyla, gereğince",
@@ -18,7 +18,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ADEQUATE (yeterli)' kökünden -> İhtiyacı tam karşılayacak ölçüde, layıkıyla ve yeterli derecede (adequately) olmak."
   },
   {
-    id: "w627",
+    id: "w1204",
     word: "arbitration",
     type: "noun",
     meaning: "tahkim, hakemlik, arabuluculuk yoluyla çözüm",
@@ -34,7 +34,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ARABULUCU / ARBİTER' -> Tarafsız bir hakemin (arbiter) iki tarafı dinleyip aralarını bulması: ARBITRATION (tahkim)."
   },
   {
-    id: "w631",
+    id: "w632",
     word: "assumption",
     type: "noun",
     meaning: "varsayım, faraziye; üstlenme (sorumluluk)",
@@ -50,7 +50,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ASSUME (farz etmek)' kökünden -> Kesin kanıt olmadan doğru kabul edilen faraziye ve varsayım (assumption)."
   },
   {
-    id: "w1218",
+    id: "w1071",
     word: "candid",
     type: "adjective",
     meaning: "dobra, içten, samimi, açık sözlü",
@@ -66,7 +66,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CANDAN' -> Candan, yapmacıksız, lafı eğip bükmeden açık yüreklilikle konuşan dobra (candid) insan."
   },
   {
-    id: "w145",
+    id: "w985",
     word: "coalesce",
     type: "verb",
     meaning: "birleşmek, tek vücut olmak, kaynaşmak",
@@ -82,7 +82,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KOALİSYON' -> Ayrı partilerin bir koalisyonda kaynaşıp tek bir güç haline gelmesi: COALESCE (birleşmek)."
   },
   {
-    id: "w1075",
+    id: "w423",
     word: "cohesive",
     type: "adjective",
     meaning: "birbirine bağlı, kenetlenmiş, yapışık, uyumlu",
@@ -98,7 +98,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Fizikteki 'KOHEZYON' (su moleküllerinin birbirini tutması) -> Bütün üyeleri birbirine sımsıkı kenetlenmiş (cohesive) yapı."
   },
   {
-    id: "w146",
+    id: "w131",
     word: "coincide",
     type: "verb",
     meaning: "denk gelmek, aynı zamana rastlamak, örtüşmek",
@@ -114,7 +114,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'CO-INCIDENT' -> Tesadüfen aynı anda meydana gelmek, takvimde aynı güne denk düşmek (coincide with)."
   },
   {
-    id: "w872",
+    id: "w874",
     word: "come across",
     type: "phrasal_verb",
     meaning: "karşılaşmak, rastlamak; izlenim bırakmak",
@@ -130,7 +130,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ACROSS (karşı taraf)' -> Yolda karşıdan karşıya geçerken aniden eski bir dostla COME ACROSS etmek (rastlamak)."
   },
   {
-    id: "w658",
+    id: "w662",
     word: "contention",
     type: "noun",
     meaning: "iddia, sav; çekişme, münakaşa",
@@ -162,7 +162,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'KAHROL-İÇTEN' -> Yaptığı hatadan dolayı içten içe kahrolup kıvranmak, derin bir nedamet ve pişmanlık duymak: CONTRITION."
   },
   {
-    id: "w171",
+    id: "w1393",
     word: "devise",
     type: "verb",
     meaning: "tasarlamak, geliştirmek, icat etmek, planlamak",
@@ -178,7 +178,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DEVICE (Cihaz)' -> Kafada yeni bir cihaz, mekanizma veya plan kurgulayıp DEVISE etmek (tasarlamak, geliştirmek)."
   },
   {
-    id: "w1247",
+    id: "w1264",
     word: "discernment",
     type: "noun",
     meaning: "feraset, basiret, ayırt etme yetisi, kavrayış",
@@ -194,7 +194,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DİSK-AYIRT' -> Karışık sinyaller arasından doğru olanı hemen sezen, olayların ardını gören feraset ve basiret: DISCERNMENT."
   },
   {
-    id: "w461",
+    id: "w453",
     word: "dominant",
     type: "adjective",
     meaning: "baskın, egemen, hakim, ağır basan",
@@ -210,7 +210,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Türkçedeki 'DOMİNANT' -> Herkese sözünü geçiren, baskın ve egemen olan güç (dominant)."
   },
   {
-    id: "w181",
+    id: "w161",
     word: "dwindle",
     type: "verb",
     meaning: "giderek azalmak, erimek, tükenmeye yüz tutmak",
@@ -226,7 +226,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'DUMAN-ERİME' -> Mumun eriyip küçülmesi gibi göz göre göre azalan, eriyip DWINDLE eden (tükenen) stoklar."
   },
   {
-    id: "w677",
+    id: "w692",
     word: "eradication",
     type: "noun",
     meaning: "kökünü kazıma, yok etme, tamamen bertaraf etme",
@@ -242,7 +242,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'RADİKAL (Kökten)' -> Radikal bir hamleyle zararlı otun veya mikrobun kökünü kazıyıp ERADICATION yapmak (yok etmek)."
   },
   {
-    id: "w187",
+    id: "w40",
     word: "exploit",
     type: "verb",
     meaning: "1. Sömürmek, istismar etmek; 2. Faydalanmak, yararlanmak",
@@ -258,7 +258,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'İSTİSMAR / EX-PLOT' -> Birinin açığını yakalayıp kurnazca sömürmek veya kaynakları son damlasına kadar EXPLOIT etmek."
   },
   {
-    id: "w680",
+    id: "w1294",
     word: "flux",
     type: "noun",
     meaning: "sürekli akış, durmaksızın değişim, istikrarsızlık",
@@ -274,7 +274,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FLOW (Akış)' kökünden -> Hiç durmadan akan, dünden bugüne sürekli değişen akış ve dalgalanma hali: FLUX."
   },
   {
-    id: "w889",
+    id: "w904",
     word: "focus on",
     type: "phrasal_verb",
     meaning: "odaklanmak, yoğunlaşmak, merkezine almak",
@@ -290,7 +290,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Kameranın 'FOKUS'u -> Lensi tam hedefin üzerine odaklayıp tüm dikkati o noktaya vermek (focus on)."
   },
   {
-    id: "w193",
+    id: "w1015",
     word: "foment",
     type: "verb",
     meaning: "kışkırtmak, alevlendirmek, körüklemek, tahrik etmek",
@@ -306,7 +306,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FOMENT / FERMENT' -> Mayalanıp taşan kazan gibi, alttan alta ateşi körükleyip ortalığı velveleye vermek (foment)."
   },
   {
-    id: "w489",
+    id: "w483",
     word: "genuine",
     type: "adjective",
     meaning: "hakiki, gerçek, samimi, özgün",
@@ -322,7 +322,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'GEN (Soy/Kök)' -> Mayasında ve geninde hiçbir sahtelik bulunmayan, aslına sadık hakiki ve özgün (genuine) nesne."
   },
   {
-    id: "w494",
+    id: "w1101",
     word: "haphazard",
     type: "adjective",
     meaning: "gelişigüzel, rastgele, baştan savma, plansız",
@@ -338,7 +338,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'HAP-HAZARD' -> Başına gelebilecek tehlikeyi (hazard) umursamadan, hap gibi plansız ve gelişigüzel (haphazard) davranmak."
   },
   {
-    id: "w776",
+    id: "w946",
     word: "however",
     type: "conjunction",
     meaning: "ancak, lakin, fakat, yine de; her ne kadar",
@@ -354,7 +354,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: En temel zıtlık bağlacı! İki zıt fikri birbirine bağlayıp 'ancak, yine de' diyen klasik HOWEVER."
   },
   {
-    id: "w213",
+    id: "w295",
     word: "impoverish",
     type: "verb",
     meaning: "yoksullaştırmak; verimsizleştirmek (toprağı)",
@@ -370,7 +370,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'POVERTY (Yoksulluk)' kökünden -> İçindeki zenginlikleri tüketip yoksul ve verimsiz hale getirmek (impoverish)."
   },
   {
-    id: "w369",
+    id: "w801",
     word: "increasingly",
     type: "adverb",
     meaning: "giderek artan biçimde, gitgide, gittikçe",
@@ -386,7 +386,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'INCREASE (Artmak)' -> Her geçen gün bir kat daha artarak, gitgide ve gittikçe (increasingly) çoğalan durum."
   },
   {
-    id: "w506",
+    id: "w513",
     word: "insignificant",
     type: "adjective",
     meaning: "önemsiz, ehemmiyetsiz, kayda değmez",
@@ -402,7 +402,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'IN-SIGNIFICANT' -> 'Significant' (önemli) kelimesinin başına 'in-' olumsuzluk eki gelmiş hali; dikkate değmez ve önemsiz."
   },
   {
-    id: "w695",
+    id: "w101",
     word: "jeopardy",
     type: "noun",
     meaning: "tehlike, risk, tehlikeye girme durumu",
@@ -418,7 +418,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'JEEP + PARDİ' -> Uçurumun kenarında dengesiz giden bir ciptesiniz; her an düşme riski, canınız büyük tehlikede (jeopardy)."
   },
   {
-    id: "w1300",
+    id: "w1324",
     word: "labyrinth",
     type: "noun",
     meaning: "labirent; içinden çıkılmaz karmaşa",
@@ -434,7 +434,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: Türkçeye geçen 'LABİRENT' -> İçine girilince çıkış yolu bulunamayan karmaşık yollar ve bürokratik çıkmazlar (labyrinth)."
   },
   {
-    id: "w781",
+    id: "w976",
     word: "likewise",
     type: "conjunction",
     meaning: "aynı şekilde, keza, bilmükabele, benzer biçimde",
@@ -450,7 +450,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'LIKE (Gibi)' + 'WISE (Şekilde)' -> Diğeri gibi, tam o minvalde, aynı şekilde ve keza (likewise)."
   },
   {
-    id: "w907",
+    id: "w114",
     word: "make up for",
     type: "phrasal_verb",
     meaning: "telafi etmek, açığı kapatmak, bedelini ödemek",
@@ -466,7 +466,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MAKE UP (makyaj / düzeltmek)' -> Eksik ve kusurlu olan yeri kapatıp düzeltmek, aradaki açığı telafi etmek (make up for)."
   },
   {
-    id: "w231",
+    id: "w191",
     word: "manifest",
     type: "verb",
     meaning: "göstermek, ortaya koymak, açıkça belirtmek; tezahür etmek",
@@ -482,7 +482,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MANİFESTO' -> Bir fikri gizlemeyip manifesto yayınlar gibi herkesin gözü önüne sermek, açıkça ortaya koymak (manifest)."
   },
   {
-    id: "w1307",
+    id: "w1131",
     word: "mercurial",
     type: "adjective",
     meaning: "sağı solu belli olmayan, değişken, kararsız, cıva gibi",
@@ -498,7 +498,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MERCURY (Cıva)' -> Avuçta durmayan, sürekli sağa sola kayan cıva gibi, sağı solu belli olmayan ve değişken (mercurial) mizaç."
   },
   {
-    id: "w235",
+    id: "w325",
     word: "motivate",
     type: "verb",
     meaning: "motive etmek, harekete geçirmek, şevklendirmek",
@@ -514,7 +514,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'MOTOR / MOTİVASYON' -> İnsanın içindeki motoru çalıştırıp onu hedefe doğru harekete geçirmek (motivate)."
   },
   {
-    id: "w718",
+    id: "w722",
     word: "obligation",
     type: "noun",
     meaning: "yükümlülük, mecburiyet, yasal/ahlaki görev",
@@ -530,7 +530,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'OBLİGE (mecbur bırakmak)' -> İnsanın boynunun borcu olan, kaçamayacağı yasal mecburiyet ve yükümlülük (obligation)."
   },
   {
-    id: "w528",
+    id: "w543",
     word: "ominous",
     type: "adjective",
     meaning: "uğursuz, meşum, kötüye alamet, tehditkar",
@@ -546,7 +546,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'OMEN (Kehanet / Kara haber)' -> Korku filmlerindeki 'The Omen' gibi; kara bir kehanet taşıyan uğursuz ve meşum (ominous) alamet."
   },
   {
-    id: "w726",
+    id: "w1354",
     word: "pinnacle",
     type: "noun",
     meaning: "doruk noktası, zirve, taç",
@@ -562,7 +562,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'PİN (İğne ucu)' -> Dağın veya kulenin en sivri uç noktası, başarının en tepesi ve doruğu: PINNACLE."
   },
   {
-    id: "w1324",
+    id: "w355",
     word: "preside",
     type: "verb",
     meaning: "başkanlık etmek, yönetmek, idare etmek",
@@ -578,7 +578,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'PRESIDENT (Başkan)' -> Başkanlık koltuğuna oturup oturumu ve meclisi idare etmek, PRESIDE OVER etmek."
   },
   {
-    id: "w1421",
+    id: "w10",
     word: "refrain from",
     type: "verb",
     meaning: "kaçınmak, kendini alıkoymak, sakınmak",
@@ -594,7 +594,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'FREN' -> Kendi arzularına ve öfkesine fren yaptırarak o kötü hareketten kendini alıkoymak, kaçınmak (refrain from)."
   },
   {
-    id: "w552",
+    id: "w238",
     word: "rigid",
     type: "adjective",
     meaning: "sert, esnek olmayan, katı, tavizsiz",
@@ -610,7 +610,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'RİTİM / TAŞ GİBİ SERT' -> Eğilip bükülmeyen, esneklik payı sıfır olan katı ve tavizsiz (rigid) yapı."
   },
   {
-    id: "w554",
+    id: "w573",
     word: "robust",
     type: "adjective",
     meaning: "sağlam, güçlü, dirençli, gürbüz",
@@ -626,7 +626,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ROBOT' gibi sağlam -> Yıkılmayan, dış darbelere karşı dirençli, son derece güçlü ve sağlam (robust) bünye."
   },
   {
-    id: "w921",
+    id: "w934",
     word: "run out of",
     type: "phrasal_verb",
     meaning: "tükenmek, bitmek, tüketmek (kaynak, zaman)",
@@ -642,7 +642,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'RUN (koşmak)' + 'OUT (dışarı)' -> Depodaki son damla da dışarı kaçtı, eldeki her şey bitti ve tükendi (run out of)."
   },
   {
-    id: "w1336",
+    id: "w1161",
     word: "sanctimonious",
     type: "adjective",
     meaning: "kendini beğenmiş dindar, riyakarca ahlak taslayan",
@@ -658,7 +658,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SANCTUARY (Kutsal alan)' -> Kendini ermiş, sütten çıkmış ak kaşık sanıp herkese riyakarca ahlak satan (sanctimonious) kimse."
   },
   {
-    id: "w274",
+    id: "w385",
     word: "shatter",
     type: "verb",
     meaning: "tuzla buz etmek, paramparça etmek, (umutları) yıkmak",
@@ -674,7 +674,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'ŞAT-PAT / ÇATIRTI' -> Yere düşen kristal bir vazonun çatırdayarak tuzla buz olması, umutların paramparça olması (shatter)."
   },
   {
-    id: "w403",
+    id: "w831",
     word: "solely",
     type: "adverb",
     meaning: "yalnızca, sadece, sırf, sadece ve sadece",
@@ -690,7 +690,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SOLO' -> Müzikteki solo gibi, yanında başka hiçbir şey olmadan tek başına, sadece ve yalnızca (solely)."
   },
   {
-    id: "w1349",
+    id: "w1045",
     word: "squander",
     type: "verb",
     meaning: "çarçur etmek, heba etmek, savurmak (para, fırsat)",
@@ -706,7 +706,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SÜNGER-GİBİ-SAVUR' -> Mirasyedi gibi elindeki parayı sağa sola savurup fırsatları çarçur etmek (squander)."
   },
   {
-    id: "w748",
+    id: "w752",
     word: "stipulation",
     type: "noun",
     meaning: "şart, koşul, akit maddesi, bağlayıcı hüküm",
@@ -722,7 +722,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'STİPÜLASYON / TİP-KURAL' -> İmzalanan sözleşmeye konulan bağlayıcı kural ve şart: STIPULATION."
   },
   {
-    id: "w285",
+    id: "w221",
     word: "supersede",
     type: "verb",
     meaning: "yerini almak, tahtından etmek, geçersiz kılmak",
@@ -738,7 +738,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SÜPER-SED' -> Daha süper ve üstün bir model gelerek eskisinin tahtını sallayıp yerini alması (supersede)."
   },
   {
-    id: "w1129",
+    id: "w69",
     word: "susceptible to",
     type: "adjective",
     meaning: "hassas, duyarlı, kolay etkilenen/yakalanan",
@@ -754,7 +754,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'SUS-ÇEPİK (Hassas yapı)' -> Soğukta hemen hasta olan, mikroplara ve tehlikelere karşı korumasız ve hassas (susceptible to) bünye."
   },
   {
-    id: "w581",
+    id: "w603",
     word: "transient",
     type: "adjective",
     meaning: "geçici, fani, kısa süreli",
@@ -770,7 +770,7 @@ export const day10Words: YdsWord[] = [
     mnemonic: "💡 ÇAĞRIŞIM: 'TRANSİT GEÇİŞ' -> Kalıcı olarak yerleşmeyip sadece transit geçip giden, fani ve geçici (transient) durum."
   },
   {
-    id: "w1370",
+    id: "w1191",
     word: "whimsical",
     type: "adjective",
     meaning: "kaprisli, çocuksu, muzip, garip ama sevimli, hevese dayalı",
