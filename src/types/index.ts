@@ -85,7 +85,7 @@ export interface YdsQuestion {
   explanation: string;
   tacticUsed: string;
   trapWarning?: string;
-  difficulty: 'Orta' | 'İleri' | 'YDS Master';
+  difficulty: 'Orta' | 'İleri' | 'Zor';
   dayAssigned?: number;
 }
 

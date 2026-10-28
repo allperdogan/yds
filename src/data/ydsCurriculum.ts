@@ -27,12 +27,12 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   {
     day: 3,
     title: 'Phrasal Verbs Vol. 1: "Bring about" & "Carry out"',
-    subtitle: 'ÖSYM\'nin Her Sınavda Sorduğu Deyimsel Fiiller',
+    subtitle: 'Sınavlarda Sık Sorulan Deyimsel Fiiller',
     focusArea: 'Account for, bring about, carry out, cope with fiillerinin sınavdaki eş anlamlıları ve ipuçları.',
     wordCountTarget: 5,
     tacticType: 'vocabulary',
     targetQuestions: 5,
-    quote: 'Phrasal Verb\'ler YDS\'nin gizli anahtarlarıdır; 1 net sınav sonucunu 500 kişi öne atar.',
+    quote: 'Phrasal Verb\'ler YDS\'de sık sorulur; her doğru 1,25 puandır.',
     completed: false
   },
   {
@@ -48,8 +48,8 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   },
   {
     day: 5,
-    title: 'Çeviri Soruları Masterclass (Özne - Yüklem Taktiği)',
-    subtitle: '30 Saniyede 6 Bedava Net: Metni Okumadan Çözme Sanatı',
+    title: 'Çeviri Soruları (Özne - Yüklem Taktiği)',
+    subtitle: 'Özne ve Yüklemle Şıkları Hızlı Eleme',
     focusArea: 'Türkçe yüklem ile İngilizce ana fiili eşleştirip 3 şıkkı 5 saniyede eleme formülü.',
     wordCountTarget: 5,
     tacticType: 'translation_en_tr',
@@ -84,7 +84,7 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   {
     day: 8,
     title: 'Zıtlık Bağlaçları: Cümle Alanlar vs. İsim Alanlar',
-    subtitle: 'Although vs. Despite - ÖSYM\'nin En Büyük Tuzağı',
+    subtitle: 'Although vs. Despite - Sık Görülen Bir Tuzak',
     focusArea: 'Although, Even though, While, Whereas, Despite, In spite of ayrımı ve tam cümle testi.',
     wordCountTarget: 5,
     tacticType: 'sentence_completion',
@@ -285,8 +285,8 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   },
   {
     day: 26,
-    title: 'Full Kelime & Phrasal Verb Süper Tekrarı',
-    subtitle: 'SRS Veritabanındaki Tüm "Zor" Kartların Eritilmesi',
+    title: 'Kelime ve Phrasal Verb Genel Tekrarı',
+    subtitle: 'Zorlandığın Kartların Tekrarı',
     focusArea: 'Aralıklı tekrar algoritmasının işaretlediği zor kelimeleri kalıcı hafızaya alma.',
     wordCountTarget: 0,
     tacticType: 'vocabulary',
@@ -297,7 +297,7 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   {
     day: 27,
     title: 'Taktiksel Deneme Simülasyonu 1',
-    subtitle: 'Sınav Ortamını Birebir Yaşama',
+    subtitle: 'Sınav Koşullarında Deneme',
     focusArea: 'Soru tipleri arası geçiş hızını ve dikkat konsantrasyonunu test etme.',
     wordCountTarget: 0,
     tacticType: 'reading',
@@ -308,7 +308,7 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   {
     day: 28,
     title: 'Taktiksel Deneme Simülasyonu 2',
-    subtitle: 'Netleri Sabitleme ve Hataları Sıfırlama',
+    subtitle: 'Hataları Analiz Etme',
     focusArea: 'Özellikle Cloze Test ve Cümle Tamamlama hızını artırma alıştırmaları.',
     wordCountTarget: 0,
     tacticType: 'cloze',
@@ -319,7 +319,7 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   {
     day: 29,
     title: 'Hızlı Taktik Kartları & Son Kontrol',
-    subtitle: '10 Soru Tipinin Altın Kurallarının Hızlı Özeti',
+    subtitle: 'Soru Tiplerinin Kurallarının Özeti',
     focusArea: 'Çeviride özne-yüklem, paragrafta soru kökü, cümlede zıtlık, bağlaçta tam cümle kuralı.',
     wordCountTarget: 0,
     tacticType: 'translation_en_tr',
@@ -329,8 +329,8 @@ export const YDS_30_DAY_CURRICULUM: DailyMission[] = [
   },
   {
     day: 30,
-    title: 'Zafer Günü: Sınav Sabahı Kuralları & Zihinsel Odaklanma',
-    subtitle: '180 Dakikada YDS\'yi Fethetme Rehberi',
+    title: 'Sınav Günü: Sabah Kuralları ve Odaklanma',
+    subtitle: '180 Dakikayı Planlama',
     focusArea: 'Şeker/kafein dengesi, optik kodlama ritmi, soru atlama stratejisi ve tam motivasyon.',
     wordCountTarget: 0,
     tacticType: 'reading',

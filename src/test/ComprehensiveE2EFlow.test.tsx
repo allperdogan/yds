@@ -11,80 +11,94 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     vi.clearAllMocks();
   });
 
-  it('verifies all main navigation tabs switch to active views cleanly', async () => {
+  it('verifies all main sections and sub-screens open cleanly', async () => {
     render(<App />);
 
-    // 1. Default view: Kelime Soru Çözücü (vocab_drill)
-    expect(screen.getByText(/kelimelik havuzdan test çöz/i)).toBeInTheDocument();
+    // 1. Default view: Today
+    expect(screen.getByRole('heading', { name: 'Bugün' })).toBeInTheDocument();
 
-    // 2. Navigate to Sınav Taktikleri (tactics)
-    const tacticsTab = screen.getByRole('button', { name: /2\. Soru Tipleri & Taktikler/i });
-    fireEvent.click(tacticsTab);
-    expect(screen.getByText(/10 Soru Tipi İçin Altın Taktik Kılavuzu/i)).toBeInTheDocument();
+    // 2. Study hub lists the vocabulary and every question topic
+    fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
+    expect(screen.getByRole('button', { name: /^Kelime/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Anlamı Bozan Cümle/ })).toBeInTheDocument();
 
-    // 3. Switch between Taktikler and ÖSYM Çeldirici Deşifresi
-    const trapsBtn = screen.getByRole('button', { name: /ÖSYM Çeldirici Deşifresi/i });
-    fireEvent.click(trapsBtn);
+    // 3. A topic links to its tactics, which still offers the trap analysis
+    fireEvent.click(screen.getByRole('button', { name: /Cloze Test/ }));
+    fireEvent.click(screen.getByRole('button', { name: /Taktik/ }));
+    expect(screen.getByText(/Soru Tipleri İçin Taktik Kılavuzu/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /ÖSYM Çeldirici Deşifresi/i }));
     expect(screen.getByText(/ÖSYM Çeldirici Psikolojisi & Son 5 Yıl Çıkmış Soru Deşifresi/i)).toBeInTheDocument();
 
-    // 4. Navigate to Paragraf Labı (reading_lab)
-    const readingTab = screen.getByRole('button', { name: /3\. Paragraf & Cümle Deşifre/i });
-    fireEvent.click(readingTab);
-    expect(screen.getByText(/Akademik Okuma & Ağır Cümle Deşifre Atölyesi/i)).toBeInTheDocument();
-
-    // 5. Navigate to Tam Deneme (mock_exam)
-    const mockExamTab = screen.getByRole('button', { name: /4\. 80 Soruluk Deneme/i });
-    fireEvent.click(mockExamTab);
+    // 4. Mock exam
+    fireEvent.click(screen.getAllByRole('button', { name: 'Deneme' })[0]);
     expect(screen.getByText(/180 Dakika \/ 80 Soruluk Tam YDS Deneme Sınavı/i)).toBeInTheDocument();
-    expect(screen.getByText(/Standart ÖSYM 2024 VIP Simülasyonu/i)).toBeInTheDocument();
+    expect(screen.getByText(/Standart Deneme/i)).toBeInTheDocument();
 
-    // 6. Navigate to 30 Günlük Plan (daily)
-    const dailyTab = screen.getByRole('button', { name: /30 Günlük Plan/i });
-    fireEvent.click(dailyTab);
-    expect(screen.getByText(/30 Günlük YDS Master Yol Haritası/i)).toBeInTheDocument();
+    // 5. 30-day plan opens from Today
+    fireEvent.click(screen.getAllByRole('button', { name: 'Bugün' })[0]);
+    fireEvent.click(screen.getByRole('button', { name: /30 günlük program/i }));
+    expect(screen.getByText('30 Günlük Program')).toBeInTheDocument();
 
-    // 7. Navigate to Hatalarım (mistakes)
-    const mistakesTab = screen.getByRole('button', { name: /Hatalarım/i });
-    fireEvent.click(mistakesTab);
+    // 6. Mistakes
+    fireEvent.click(screen.getAllByRole('button', { name: /Hatalarım/ })[0]);
     expect(screen.getByText(/Hata Defterim & Zayıf Noktalarım/i)).toBeInTheDocument();
   });
 
-  it('verifies mistakes automatically record failed vocabulary words and questions into Hata Defterim', async () => {
+  it('moves a question from "learning" to "learned" once it is answered correctly', () => {
     render(<App />);
+    fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
+    fireEvent.click(screen.getByRole('button', { name: /Cloze Test/ }));
 
-    // In vocab_drill: Answer question incorrectly (undermine is incorrect for enhance)
-    const wrongChoiceBtn = screen.getByRole('button', { name: /undermine/i });
-    fireEvent.click(wrongChoiceBtn);
+    // Pick an option that is not the answer: the feedback names the right one
+    fireEvent.click(screen.getByRole('button', { name: /^A\)/ }));
+    const feedback = screen.getByText(/^(Doğru\.|Yanlış\.)/);
+    let answer = 'A';
+    if (feedback.textContent?.startsWith('Doğru')) {
+      // A was right; answer the next question with a wrong option instead
+      fireEvent.click(screen.getByRole('button', { name: /Sonraki soru/ }));
+      fireEvent.click(screen.getByRole('button', { name: /^A\)/ }));
+      const second = screen.getByText(/^(Doğru\.|Yanlış\.)/);
+      if (second.textContent?.startsWith('Doğru')) {
+        fireEvent.click(screen.getByRole('button', { name: /Sonraki soru/ }));
+        fireEvent.click(screen.getByRole('button', { name: /^B\)/ }));
+      }
+    }
+    const wrong = screen.getByText(/^Yanlış\. Doğru cevap ([A-E])/);
+    answer = wrong.textContent!.match(/Doğru cevap ([A-E])/)![1];
 
-    // Mnemonic learning card opens and shows mistake feedback
-    expect(screen.getByText(/Hata Defterim & Zor Kelimeler/i)).toBeInTheDocument();
+    // It now counts as "öğreniyorum" and is waiting in the review list
+    expect(screen.getByRole('button', { name: /Tekrar et \(1\)/ })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Tekrar et \(1\)/ }));
+    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${answer}\\)`) }));
+    expect(screen.getByText(/^Doğru\./)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Tekrar et \(0\)/ })).toBeInTheDocument();
 
-    // Now go to Hatalarım
-    const mistakesTab = screen.getByRole('button', { name: /Hatalarım/i });
-    fireEvent.click(mistakesTab);
+    // The hub shows nothing left to relearn in this topic
+    fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
+    const clozeRow = screen.getByRole('button', { name: /Cloze Test/ });
+    expect(clozeRow.textContent).toMatch(/0 öğreniyorum/);
+    expect(clozeRow.textContent).toMatch(/[1-9]\d* öğrendim/);
+  });
 
-    // Switch to Zor Kelimeler tab
-    const zorKelimelerTab = screen.getByRole('button', { name: /Zor Kelimeler/i });
-    fireEvent.click(zorKelimelerTab);
+  it('verifies a vocabulary word marked as unknown lands in Hatalarım', async () => {
+    render(<App />);
+    fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
+    fireEvent.click(screen.getByRole('button', { name: /^Kelime/ }));
 
-    // The failed word "enhance" must appear in the list with mistake badge!
-    expect(screen.getByRole('heading', { name: /enhance/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByText(/Bilmiyorum \(Tüm Şıkları Öğret\)/i));
+
+    fireEvent.click(screen.getAllByRole('button', { name: /Hatalarım/ })[0]);
+    fireEvent.click(screen.getByRole('button', { name: /Zor Kelimeler/i }));
     expect(screen.getByText(/Soruda Yanlış Yapıldı/i)).toBeInTheDocument();
 
-    // Click "Öğrendim" button on the card to clear the mistake
-    const ogrendimBtn = screen.getByRole('button', { name: /Öğrendim/i });
-    fireEvent.click(ogrendimBtn);
-
-    // Verify it is removed from mistakes list
+    fireEvent.click(screen.getByRole('button', { name: /Öğrendim/i }));
     expect(screen.queryByText(/Soruda Yanlış Yapıldı/i)).not.toBeInTheDocument();
   });
 
   it('verifies 30-day curriculum day completion toggle updates progress and saves to localStorage', async () => {
     render(<App />);
 
-    // Navigate to Daily Plan
-    const dailyTab = screen.getByRole('button', { name: /30 Günlük Plan/i });
-    fireEvent.click(dailyTab);
+    fireEvent.click(screen.getByRole('button', { name: /30 günlük program/i }));
 
     // Initial completion is 0
     expect(screen.getByText(/0 \/ 30 Gün/i)).toBeInTheDocument();

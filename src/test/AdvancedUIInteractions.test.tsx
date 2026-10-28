@@ -70,9 +70,9 @@ describe('Advanced UI & Untested Flows Verification', () => {
 
       // Verify 3 mock exam cards are rendered
       expect(screen.getByText(/3 Farklı Tam Deneme/i)).toBeInTheDocument();
-      expect(screen.getByText(/Standart ÖSYM 2024 VIP Simülasyonu/i)).toBeInTheDocument();
+      expect(screen.getByText(/Standart Deneme/i)).toBeInTheDocument();
       expect(screen.getByText(/Ağır Akademik Kondisyon Denemesi/i)).toBeInTheDocument();
-      expect(screen.getByText(/Çeldirici & Hız Odaklı Master Deneme/i)).toBeInTheDocument();
+      expect(screen.getByText(/Çeldirici ve Hız Odaklı Deneme/i)).toBeInTheDocument();
 
       // Click Deneme 2 card
       const mock2Card = screen.getByText(/Ağır Akademik Kondisyon Denemesi/i);
@@ -145,7 +145,7 @@ describe('Advanced UI & Untested Flows Verification', () => {
       // Click back to Sınav Taktiği (Bilgi)
       const tacticBtn = screen.getByText(/Sınav Taktiği \(Bilgi\)/i);
       fireEvent.click(tacticBtn);
-      expect(screen.getByText(/Soru Tipinin Altın Kuralları & Formülleri/i)).toBeInTheDocument();
+      expect(screen.getByText(/Soru Tipinin Kuralları ve Formülleri/i)).toBeInTheDocument();
     });
 
     it('expands and collapses step-by-step solution steps', () => {

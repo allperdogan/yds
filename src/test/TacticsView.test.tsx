@@ -9,9 +9,9 @@ describe('TacticsView Functional & Button Tests', () => {
     render(<TacticsView onSelectPracticeType={onSelectPracticeType} />);
 
     expect(screen.getByText(/80 Soruluk YDS Sınav Stratejisi/i)).toBeInTheDocument();
-    expect(screen.getByText(/10 Soru Tipi İçin Altın Taktik Kılavuzu/i)).toBeInTheDocument();
-    expect(screen.getByText(/Altın Sınav Tüyosu/i)).toBeInTheDocument();
-    expect(screen.getByText(/Soru Tipinin Altın Kuralları & Formülleri/i)).toBeInTheDocument();
+    expect(screen.getByText(/Soru Tipleri İçin Taktik Kılavuzu/i)).toBeInTheDocument();
+    expect(screen.getByText(/Sınav İpucu/i)).toBeInTheDocument();
+    expect(screen.getByText(/Soru Tipinin Kuralları ve Formülleri/i)).toBeInTheDocument();
   });
 
   it('switches tactic view when clicking question type pill', () => {

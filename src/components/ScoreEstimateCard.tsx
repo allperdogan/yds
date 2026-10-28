@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { Gauge, Timer, TrendingUp, ArrowRight } from 'lucide-react';
 import { MockExamResult, QuestionType, UserStats } from '../types';
-import { YDS_QUESTIONS_DATA } from '../data/ydsQuestions';
+import { STUDY_TOPICS } from '../services/studyTopics';
 import {
   estimateOverallScore,
   MIN_ANSWERS_FOR_ESTIMATE,
@@ -15,7 +15,7 @@ interface ScoreEstimateCardProps {
   onPracticeType: (type: QuestionType) => void;
 }
 
-const QUESTION_TYPE_BY_ID = new Map(YDS_QUESTIONS_DATA.map((q) => [q.id, q.type]));
+const QUESTION_TYPE_BY_ID = new Map(STUDY_TOPICS.flatMap((t) => t.questions).map((q) => [q.id, q.type]));
 
 export const ScoreEstimateCard: React.FC<ScoreEstimateCardProps> = ({
   solvedQuestions,

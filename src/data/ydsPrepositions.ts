@@ -15,10 +15,10 @@ export interface PrepositionReflexQuestion extends YdsQuestion {
   prepType: 'single_blank' | 'double_blank';
 }
 
-// 1. ÖSYM ALTIN EDAT KOMBİNASYON MATRİSİ (YDS'de En Sık Çıkan 60+ İmza Edat Kalıbı)
+// 1. EDAT KOMBİNASYONLARI (YDS'de En Sık Çıkan 60+ İmza Edat Kalıbı)
 export const YDS_PREPOSITION_MATRIX: PrepositionReflexItem[] = [
   // Fiil + Edat (Verb + Preposition)
-  { id: 'pr1', combination: 'attribute ... to', type: 'verb_prep', meaningTr: '-e bağlamak, -e atfetmek', exampleSentence: 'Scientists attribute global climate shifts to anthropogenic greenhouse emissions.', tip: 'YDS tıp ve çevre paragraflarında %90 doğru cevap olarak çıkar.' },
+  { id: 'pr1', combination: 'attribute ... to', type: 'verb_prep', meaningTr: '-e bağlamak, -e atfetmek', exampleSentence: 'Scientists attribute global climate shifts to anthropogenic greenhouse emissions.', tip: 'YDS tıp ve çevre paragraflarında çoğunlukla doğru cevap olarak çıkar.' },
   { id: 'pr2', combination: 'refrain from', type: 'verb_prep', meaningTr: '-den çekinmek, kaçınmak', exampleSentence: 'Diplomats were instructed to refrain from making provocative statements.', tip: 'Arkasından daima V-ing (isim fiil) alır.' },
   { id: 'pr3', combination: 'comply with', type: 'verb_prep', meaningTr: '-e uymak, riayet etmek', exampleSentence: 'All pharmaceutical companies must strictly comply with international safety regulations.', tip: 'Eş anlamlısı: adhere to / conform to.' },
   { id: 'pr4', combination: 'deprive of', type: 'verb_prep', meaningTr: '-den mahrum bırakmak', exampleSentence: 'Chronic sleep restriction deprives the brain of vital neurochemical restoration.', tip: '"Deprive somebody of something" kalıbıdır.' },
@@ -57,7 +57,7 @@ export const YDS_PREPOSITION_MATRIX: PrepositionReflexItem[] = [
   { id: 'pr31', combination: 'in accordance with', type: 'idiomatic', meaningTr: '-e uygun olarak, uyarınca', exampleSentence: 'The clinical trial was conducted in accordance with international ethical standards.', tip: 'Hukuk ve tıp protokollerinde standart kalıp.' },
   { id: 'pr32', combination: 'with regard to / with respect to', type: 'idiomatic', meaningTr: '-e ilişkin olarak, -e gelince', exampleSentence: 'The report highlights significant disparities with regard to gender wage equality.', tip: 'Paragraf ve cümle tamamlamada çok sevilir.' },
   { id: 'pr33', combination: 'on behalf of', type: 'idiomatic', meaningTr: '-adına, -in namına', exampleSentence: 'The foreign minister addressed the United Nations General Assembly on behalf of the coalition.', tip: 'Temsiliyet bildiren standart kalıp.' },
-  { id: 'pr34', combination: 'in terms of', type: 'idiomatic', meaningTr: 'açısından, bakımından', exampleSentence: 'Solar energy has surpassed fossil fuel alternatives in terms of long-term economic efficiency.', tip: 'Kıyaslama cümlelerinde %95 kullanılır.' },
+  { id: 'pr34', combination: 'in terms of', type: 'idiomatic', meaningTr: 'açısından, bakımından', exampleSentence: 'Solar energy has surpassed fossil fuel alternatives in terms of long-term economic efficiency.', tip: 'Kıyaslama cümlelerinde çoğunlukla kullanılır.' },
   { id: 'pr35', combination: 'by means of', type: 'idiomatic', meaningTr: 'vasıtasıyla, yoluyla', exampleSentence: 'Bats navigate pitch-black subterranean caverns by means of high-frequency echolocation.', tip: 'Eş anlamlısı: via, through.' },
   { id: 'pr36', combination: 'at the expense of', type: 'idiomatic', meaningTr: '-in pahasına, -e zarar vererek', exampleSentence: 'Aggressive industrial expansion often occurs at the expense of fragile local ecosystems.', tip: 'At the cost of ile eşanlamlıdır.' },
   { id: 'pr37', combination: 'with the exception of', type: 'idiomatic', meaningTr: '-hariç, -dışında', exampleSentence: 'All planetary bodies in our inner solar system, with the exception of Mercury, possess atmosphere.', tip: 'Eş anlamlısı: except for, apart from.' },

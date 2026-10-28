@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { CheckCircle2, Circle, ArrowRight, Zap, Target, BookOpen, Sparkles, ChevronRight, RotateCcw } from 'lucide-react';
-import { DailyMission, MockExamResult, QuestionType, UserStats } from '../types';
-import { ScoreEstimateCard } from './ScoreEstimateCard';
+import { DailyMission } from '../types';
 import { YDS_30_DAY_CURRICULUM } from '../data/ydsCurriculum';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 
@@ -12,9 +11,6 @@ interface DailyPlanViewProps {
   onNavigateToTactic: (tacticType: string) => void;
   onNavigateToPractice: (day?: number) => void;
   onResetProgress?: () => void;
-  solvedQuestions?: UserStats['solvedQuestions'];
-  mockExamResults?: MockExamResult[];
-  onPracticeType?: (type: QuestionType) => void;
 }
 
 export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
@@ -23,10 +19,7 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
   onNavigateToVocabDay,
   onNavigateToTactic,
   onNavigateToPractice,
-  onResetProgress,
-  solvedQuestions = {},
-  mockExamResults = [],
-  onPracticeType = () => {}
+  onResetProgress
 }) => {
   const [selectedWeek, setSelectedWeek] = useState<number>(1);
   const [activeDay, setActiveDay] = useState<number>(1);
@@ -55,10 +48,10 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
           <div className="space-y-2 max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-200 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>1 Ayda YDS Full Hedefli Yoğun Kamp Programı</span>
+              <span>30 günlük çalışma programı</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-              30 Günlük YDS Master Yol Haritası
+              30 Günlük Program
             </h1>
             <p className="text-sm text-sky-100/90 leading-relaxed">
               ÖSYM formatında taranmış en sık çıkan kelimeler, soru tipi formülleri ve SM-2 aralıklı tekrar sistemiyle her gün planlı ilerleyin.
@@ -118,7 +111,7 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
           {[
             { week: 1, label: '1. Hafta: Temel & Çeviri (Gün 1-7)' },
             { week: 2, label: '2. Hafta: Bağlaçlar & Cümle (Gün 8-14)' },
-            { week: 3, label: '3. Hafta: Paragraf Fethi (Gün 15-21)' },
+            { week: 3, label: '3. Hafta: Paragraf (Gün 15-21)' },
             { week: 4, label: '4. Hafta: İleri Soru & Simülasyon (Gün 22-30)' }
           ].map((w) => (
             <button
@@ -135,12 +128,6 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
           ))}
         </div>
       </div>
-
-      <ScoreEstimateCard
-        solvedQuestions={solvedQuestions}
-        mockExamResults={mockExamResults}
-        onPracticeType={onPracticeType}
-      />
 
       {/* 0. GÜN: SIFIR NOKTASI & YDS BAŞLANGIÇ ORYANTASYONU */}
       <div className="bg-gradient-to-r from-amber-500/10 via-sky-500/10 to-indigo-500/10 border-2 border-amber-300/80 dark:border-amber-800/80 rounded-2xl p-5 space-y-3">
@@ -353,7 +340,7 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
                       Sınav Çözüm Taktiği
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400 capitalize">
-                      {currentMission.tacticType.replace('_', ' ')} Altın Formülleri
+                      {currentMission.tacticType.replace('_', ' ')} Formülleri
                     </p>
                   </div>
                 </div>

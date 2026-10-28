@@ -108,7 +108,7 @@ export const day23Words: YdsWord[] = [
     "collocations": ["crucial role", "crucial factor", "crucial decision", "crucial to"],
     "exampleEn": "Early diagnostic screening plays a crucial role in improving survival rates among oncology patients.",
     "exampleTr": "Erken tanı taraması, onkoloji hastaları arasındaki hayatta kalma oranlarını artırmada hayati ve belirleyici bir rol oynar.",
-    "ydsTip": "'Play a crucial role in...' yapısı ÖSYM'nin en garanti soru kalıplarından biridir.",
+    "ydsTip": "'Play a crucial role in...' yapısı sınavlarda sık görülen bir kalıptır.",
     "frequency": "ultra",
     "groupDay": 23,
     "mnemonic": "💡 ÇAĞRIŞIM: 'CRUX' (meselenin düğüm noktası); çözülmezse işin batacağı en mühim nokta: HAYATİ, ÇOK ÖNEMLİ."

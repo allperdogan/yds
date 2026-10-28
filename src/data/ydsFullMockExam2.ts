@@ -202,7 +202,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       E: 'while'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Lest / For fear that = -mesin diye / korkusuyla (Lest + S + Verb yalın/should)',
     trapWarning: 'Lest bağlacı kendi içinde olumsuzluk taşır ("damage the circuits" olumlu görünür ama "devrelere zarar vermesin diye" anlamı taşır).',
     explanation: 'Lest: -mesin diye, -mesi tehlikesine karşı (= in case, for fear that). Mühendisler devreler zarar görmesin diye yalıtım battaniyeleri yerleştirdiler.'

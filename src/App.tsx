@@ -11,6 +11,10 @@ import { InstallPromptModal } from './components/InstallPromptModal';
 import { ReadingLabView } from './components/ReadingLabView';
 import { FullMockExamView } from './components/FullMockExamView';
 import { SyncModal } from './components/SyncModal';
+import { TodayView } from './components/TodayView';
+import { StudyHubView } from './components/StudyHubView';
+import { TopicPracticeView } from './components/TopicPracticeView';
+import { getTopicById, topicForType } from './services/studyTopics';
 
 import { UserStats, SRSItem, QuestionType } from './types';
 import { StorageService } from './services/storageService';
@@ -20,7 +24,26 @@ import { getUnifiedQuestionById } from './data/ydsQuestions';
 import { YDS_VOCABULARY_LIST } from './data/ydsVocabulary';
 
 export const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>('vocab_drill');
+  const [activeTab, setActiveTabState] = useState<string>('today');
+  const [studyTopicId, setStudyTopicId] = useState<string | undefined>(undefined);
+
+  // Choosing a main tab always lands on its first screen.
+  const setActiveTab = (tab: string) => {
+    if (tab === 'study') setStudyTopicId(undefined);
+    setActiveTabState(tab);
+    window.scrollTo?.(0, 0);
+  };
+
+  const openTopic = (topicId: string) => {
+    setStudyTopicId(topicId);
+    setActiveTabState('study');
+    window.scrollTo?.(0, 0);
+  };
+
+  const openVocabDrill = () => {
+    setVocabDayFilter(undefined);
+    setActiveTab('vocab_drill');
+  };
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     return localStorage.getItem('yds_dark_mode') === 'true';
   });
@@ -247,17 +270,53 @@ export const App: React.FC = () => {
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 pt-6">
+        {activeTab === 'today' && (
+          <TodayView
+            stats={stats}
+            dueWordCount={dueCount}
+            onOpenTopic={openTopic}
+            onOpenVocab={openVocabDrill}
+            onOpenFlashcards={() => {
+              setVocabInitialViewMode('flashcard');
+              setActiveTab('vocab');
+            }}
+            onOpenPlan={() => setActiveTab('daily')}
+          />
+        )}
+
+        {activeTab === 'study' && !studyTopicId && (
+          <StudyHubView
+            solvedQuestions={stats.solvedQuestions}
+            mistakeQuestionIds={stats.mistakeQuestionIds}
+            knownVocabIds={stats.knownVocabIds}
+            pendingReviewVocabIds={stats.pendingReviewVocabIds}
+            onOpenTopic={openTopic}
+            onOpenVocab={openVocabDrill}
+          />
+        )}
+
+        {activeTab === 'study' && studyTopicId && getTopicById(studyTopicId) && (
+          <TopicPracticeView
+            key={studyTopicId}
+            topic={getTopicById(studyTopicId)!}
+            solvedQuestions={stats.solvedQuestions}
+            mistakeIds={stats.mistakeQuestionIds}
+            onRecordQuestionResult={handleRecordQuestionResult}
+            onAddMistake={handleAddMistake}
+            onRemoveMistake={handleRemoveMistake}
+            onBack={() => setActiveTab('study')}
+            onOpenTactic={(type) => {
+              setTacticFilter(type);
+              setActiveTab('tactics');
+            }}
+          />
+        )}
+
         {activeTab === 'daily' && (
           <DailyPlanView
             completedDays={stats.completedDays}
             onToggleDayCompleted={handleToggleDayCompleted}
             onResetProgress={handleResetProgress}
-            solvedQuestions={stats.solvedQuestions}
-            mockExamResults={stats.mockExamResults || []}
-            onPracticeType={(type) => {
-              setPracticeTypeFilter(type);
-              setActiveTab('practice');
-            }}
             onNavigateToVocabDay={(day) => {
               setVocabDayFilter(day);
               setActiveTab('vocab');
@@ -266,10 +325,7 @@ export const App: React.FC = () => {
               setTacticFilter(type as QuestionType);
               setActiveTab('tactics');
             }}
-            onNavigateToPractice={(day) => {
-              setPracticeTypeFilter(undefined);
-              setActiveTab('practice');
-            }}
+            onNavigateToPractice={() => setActiveTab('study')}
           />
         )}
 
@@ -335,8 +391,8 @@ export const App: React.FC = () => {
             onRemoveMistake={handleRemoveMistake}
             onRecordQuestionResult={handleRecordQuestionResult}
             onSelectPracticeType={(type) => {
-              setPracticeTypeFilter(type);
-              setActiveTab('practice');
+              const topic = topicForType(type);
+              if (topic) openTopic(topic.id);
             }}
           />
         )}
@@ -373,8 +429,8 @@ export const App: React.FC = () => {
                 bookmarkedWords: prev.bookmarkedWords.filter((id) => id !== wId)
               }));
             }}
-            onNavigateToPractice={() => setActiveTab('practice')}
-            onNavigateToVocab={() => setActiveTab('vocab_drill')}
+            onNavigateToPractice={() => setActiveTab('study')}
+            onNavigateToVocab={openVocabDrill}
           />
         )}
       </main>

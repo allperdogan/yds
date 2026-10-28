@@ -61,7 +61,7 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
             Hata Defterim & Zayıf Noktalarım
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-xl">
-            Sınavda 90+ puanı garantileyen en kritik alışkanlık; yanlış yapılan her soruyu ve zorlanılan kelimeleri tekrar tekrar eritip sıfırlamaktır.
+            Yanlış yaptığın soruları ve zorlandığın kelimeleri düzenli tekrar etmek, en verimli çalışma yoludur.
           </p>
         </div>
 

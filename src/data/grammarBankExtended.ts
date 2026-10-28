@@ -37,7 +37,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'had / then'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'No sooner + Had S V3 ... THAN Kalıbı',
     trapWarning: 'B şıkkında "did / when" ve E şıkkında "then" çeldiricileri vardır. No sooner daima THAN ile eşleşir!',
     explanation: '🎯 FORMÜL: "No sooner had + S + V3 ... than + Past Simple (V2)" (Tam lahit gün yüzüne çıkarılmıştı ki sel bastı). No sooner cümle başında devrik "had team unearthed" alır ve bağlacı daima "than"dir. Doğru cevap A.'
@@ -56,7 +56,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'had / that'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Hardly / Scarcely + Had S V3 ... WHEN Kalıbı',
     trapWarning: 'No sooner -> than ile kullanılırken, Hardly / Scarcely daima -> WHEN ile kullanılır!',
     explanation: '🎯 ÖSYM KODU: "Hardly + had S V3 ... when + V2" (Merkez bankası devalüasyonu tam duyurmuştu ki panik patlak verdi). Doğru cevap A.'
@@ -177,7 +177,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     difficulty: 'Orta',
     tacticUsed: 'İsim Öbeği Öncesi Zıtlık: In spite of / Despite + Noun Phrase',
     trapWarning: 'B ve C şıklarındaki "Although / Even though" tam cümle (S + V + O) ister; boşluktan sonra fiil yoktur, sadece isim tamlaması ("the severe sanctions...") vardır!',
-    explanation: '🎯 ALTIN ÖSYM KURALI: Virgüle kadar olan kısımda yüklem (fiil) var mı? Yok! Sadece isim tamlaması var. Dolayısıyla "In spite of" veya "Despite" gelmek zorundadır. Doğru cevap A.'
+    explanation: '🎯 KURAL: Virgüle kadar olan kısımda yüklem (fiil) var mı? Yok! Sadece isim tamlaması var. Dolayısıyla "In spite of" veya "Despite" gelmek zorundadır. Doğru cevap A.'
   },
   {
     id: 'g_c8',
@@ -250,7 +250,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'unless'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Lest / For fear that + (should) V1 = -mesin / -korkusuyla',
     trapWarning: 'Lest arkasından olumlu cümle alır fakat anlamı olumsuzdur ("enflasyon kontrolden çıkmasın diye"). Not kelimesi almaz.',
     explanation: '🎯 AKADEMİK BAĞLAÇ: "lest + S + (should) V1" = -olmasın diye. Enflasyon beklentileri çıpasını kaybetmesin korkusuyla faizler yüksek tutuldu. Doğru cevap A.'
@@ -288,7 +288,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'Consequently'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Much as + Cümle = Although / Even though (Her ne kadar... hayran olsalar da)',
     trapWarning: '"Much as" kalıbı YDS\'de doğrudan "Although" gibi zıtlık bağlacı olarak doğru cevap çıkar.',
     explanation: '🎯 ÖSYM SÜRPRİZ BAĞLACI: "Much as theoretical physicists admire..." = Fizikçiler sicim teorisinin zarafetine her ne kadar hayran olsalar da, kanıtlanamamaktadır. Doğru cevap A.'
@@ -425,7 +425,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'out / for'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'dispose OF + deprive OF Çifti',
     trapWarning: 'Dispose tek f ile "of" alır; deprive da daima "of" alır.',
     explanation: '🎯 ÇİFTE "OF" TESTİ: "dispose of effluents" (atıkları imha etmek/elden çıkarmak) ve "deprive communities of groundwater" (toplulukları yeraltı suyundan mahrum bırakmak). Doğru cevap A (of / of).'
@@ -505,7 +505,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'To be inundated'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Having been V3 = Geçmişte Önceden Meydana Gelen Edilgen Durum',
     trapWarning: 'Kale sular altında bıraktı mı, bırakıldı mı? "By flash floods" ipucu eylemin edilgen (passive) olduğunu kanıtlar.',
     explanation: '🎯 ÖNCELİKLİ EDİLGEN FORMÜL: "Having been inundated three times, the fortress was abandoned" (Üç kez sular altında bırakıldıktan sonra kale terk edildi). Doğru cevap A.'
@@ -669,7 +669,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'Unless there was / would cause'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Had it not been for + İsim , would have V3 (Type 3 Devrik Geçmiş Şart)',
     trapWarning: 'Geçmişte yaşanmış bir petrol sızıntısı ve kurtarma operasyonu anlatılıyor. Type 3 geçmiş hipotezdir: "Had it not been for ... would have caused".',
     explanation: '🎯 GEÇMİŞ DEVRİK ŞART: "Had it not been for [İsim], S + would have V3" (Eğer bariyerler hızlıca konuşlandırılmamış olsaydı, sızıntı onarılamaz toksisiteye yol açmış olacaktı). Doğru cevap A.'
@@ -688,7 +688,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'does not publish / would not operate'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Mixed Conditional: Past Cause (thirty years ago -> had V3) -> Present Result (today -> would V1 / would be V-ing)',
     trapWarning: 'Zaman ipuçlarına dikkat: "thirty years ago" (geçmiş) ve "today" (bugün). Geçmişteki eylemin bugünkü sonucu!',
     explanation: '🎯 MIXED CONDITIONAL FORMÜLÜ: "If + had V3 (30 yıl önce yayımlamamış olsaydı), S + would be V-ing (bugün çalıştırıyor olmazdık)". Doğru cevap A.'
@@ -881,7 +881,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'would / as'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Scarcely had + S + V3 ... WHEN + S + V2 Kalıbı',
     trapWarning: 'No sooner "than" ile kullanılırken, Scarcely ve Hardly DAİMA "when" ile eşleşir!',
     explanation: '🎯 FORMÜL: "Scarcely had + S + V3 ... when + V2" (Kül bulutu stratosfere henüz girmişti ki uçuşlar durduruldu). Cümle başı devriktir ve bağlacı when\'dir. Doğru cevap A.'
@@ -999,7 +999,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'provided that / must suffer'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Lest + S + (should) V1 = -mesin diye, korkusuyla (Cümle anlamca olumsuzdur, not almaz)',
     trapWarning: 'Lest yapısı kendi içinde negatif anlam taşır. B şıkkında "so that will suffer" (bozulsun diye) saçma bir anlam doğurur.',
     explanation: '🎯 AKADEMİK İFADE: "Lest fragile codices should suffer degradation" (Ortaçağ el yazmaları biyolojik bozulmaya uğramasın diye / korkusuyla arşiv nemi kontrol eder). Doğru cevap A.'
@@ -1120,7 +1120,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     difficulty: 'Orta',
     tacticUsed: 'Prone TO / Susceptible TO / Vulnerable TO Üçlüsü',
     trapWarning: 'Türkçedeki "-e karşı meyilli" ifadesinden dolayı "against" tuzağına düşmeyin. İngilizcede eğilim ve hassasiyet sıfatları "to" alır.',
-    explanation: '🎯 ALTIN ÜÇLÜ: "prone to", "susceptible to", "vulnerable to". Olumsuz durumlara açık / yatkın olmak anlamında "to" kullanılır. Doğru cevap A.'
+    explanation: '🎯 SIK ÇIKAN ÜÇLÜ: "prone to", "susceptible to", "vulnerable to". Olumsuz durumlara açık / yatkın olmak anlamında "to" kullanılır. Doğru cevap A.'
   },
   {
     id: 'g_p13',
@@ -1254,7 +1254,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'To have preserved'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Having been V3 = Geçmişte edilgen olarak korunmuş olan (Zaman Önceliği + Edilgenlik)',
     trapWarning: 'Freskler kendi kendini korumaz, "korunur" (Edilgenlik). Ayrıca kazıdan (retained) 2000 yıl önce yaşandığı için öncelik bildirir (Having been preserved).',
     explanation: '🎯 KISALTMA ANALİZİ: Freskler (özne) korunmuştur (Passive: been preserved) ve bu durum kazıdan çok daha önce yüzyıllarca sürmüştür (Öncelik: Having been). Doğru cevap A.'
@@ -1387,7 +1387,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'mitigated'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'With a view to + V-ING (İstisnai To + Gerund Kalıbı)',
     trapWarning: 'ÖSYM\'nin en tehlikeli tuzağıdır! Buradaki "to" mastar eki değil, edattır (preposition). Bu yüzden ardından V1 (mitigate) değil, V-ing (mitigating) gelir!',
     explanation: '🎯 ÖSYM "TO + V-ING" İSTİSNASI: "look forward to + V-ing", "be accustomed to + V-ing", "with a view to + V-ING". Likidite krizlerini hafifletmek amacıyla (with a view to mitigating). Doğru cevap A.'
@@ -1467,7 +1467,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'could not launch'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Needn\'t have V3 = Gerek yoktu ama boşuna yapıldı (Eylem gerçekleşti fakat gereksizdi)',
     trapWarning: 'Helikopterler zaten gönderilmiştir ("dispatched"); yat kendi başına yanaşınca bu operasyonun boşuna yapıldığı anlaşılmıştır. Bu durum "needn\'t have launched" ile ifade edilir.',
     explanation: '🎯 ÖSYM AYIRT EDİCİSİ: "Didn\'t need to do": Gerek yoktu ve yapmadı. "Needn\'t have done": Gerek yoktu ama yaptı (boşuna masraf oldu). Doğru cevap A.'
@@ -1661,7 +1661,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'is maintaining'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Mandate / Demand / Require that + S + (should) V1 (Yalın Fiil - Subjunctive)',
     trapWarning: '"every high-containment facility" tekil bir öznedir; öğrenci otomatik olarak "maintains (Vs)" işaretlemeye meyleder. Oysa MANDATE fiili subjunctive gerektirir, fiil daima YALIN (maintain) kalır!',
     explanation: '🎯 ÖSYM SUBJUNCTIVE TUZAĞI: "mandate / demand / insist / require that S + (should) V1". Özne he/she/it veya tekil olsa dahi fiil -s takısı almaz, yalın kalır (maintain). Doğru cevap A.'
@@ -1798,7 +1798,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
       E: 'As if / would suffer'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'But for + İsim (O olmasaydı) , would have V3 (Type 3 Şart)',
     trapWarning: '"But for" yapısı "If it had not been for" anlamına gelir ve Type 3 sonuç cümlesiyle (would have suffered) tamamlanır.',
     explanation: '🎯 FORMÜL: "But for [İsim], S + would have V3" (Acil durum jeneratörleri olmasaydı, yoğun bakım sistemleri feci bir kapanma yaşamış olacaktı). Doğru cevap A.'

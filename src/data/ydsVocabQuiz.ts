@@ -212,7 +212,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "undermine",
         "meaning": "baltalamak, altını oymak, temelini sarsmak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"UNDER (alt)\" + \"MINE (maden/mayın)\". Bir binanın altını kazıp mayınlayarak temelini sarsmak/baltalamak.",
-        "rootAnalysis": "🔬 Sınav Sırrı: ÖSYM bunu hep \"confidence / stability\" ile sorar."
+        "rootAnalysis": "🔬 Sınav Notu: ÖSYM bunu hep \"confidence / stability\" ile sorar."
       },
       "precede": {
         "word": "precede",
@@ -372,7 +372,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "bring about",
         "meaning": "sebep olmak, yol açmak, meydana getirmek",
         "mnemonic": "💡 ÇAĞRIŞIM: \"BRING (getirmek)\" + \"ABOUT (ortaya)\". Bir olayı ortaya çıkarmak / neden olmak (= CAUSE).",
-        "rootAnalysis": "🔬 ÖSYM Sırrı: Her iki YDS sınavının birinde doğru cevaptır."
+        "rootAnalysis": "🔬 Sınav Notu: Her iki YDS sınavının birinde doğru cevaptır."
       },
       "turn down": {
         "word": "turn down",
@@ -422,7 +422,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "carry out",
         "meaning": "yürütmek, icra etmek, uygulamak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"CARRY (taşımak)\" + \"OUT (dışarı/sahaya)\". Projeyi masadan sahaya taşıyıp uygulamak / yürütmek.",
-        "rootAnalysis": "🔬 Altın Formül: Research, experiment, survey kelimeleriyle %90 CARRY OUT eşleşir."
+        "rootAnalysis": "🔬 Formül: Research, experiment, survey kelimeleriyle çoğunlukla CARRY OUT eşleşir."
       },
       "rule out": {
         "word": "rule out",
@@ -490,7 +490,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "Since",
         "meaning": "1. -dığı için (çünkü), 2. -den beri",
         "mnemonic": "💡 FORMÜL: Sebep anlamında \"Because\" ile aynıdır. Zıtlık kuramaz.",
-        "rootAnalysis": "🔬 Sınav Sırrı: Zaman anlamındaysa ana cümlede have/has V3 ister."
+        "rootAnalysis": "🔬 Sınav Notu: Zaman anlamındaysa ana cümlede have/has V3 ister."
       },
       "Provided that": {
         "word": "Provided that",
@@ -532,7 +532,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "Although",
         "meaning": "-e rağmen (Tam Cümle Alır)",
         "mnemonic": "💡 TUZAK: Although tam cümle ister (S+V). Boşluktan sonra yüklem (fiil) olmadığı için elenir!",
-        "rootAnalysis": "🔬 Altın Ayrım: Although + Cümle / Despite + İsim."
+        "rootAnalysis": "🔬 Ayrım: Although + Cümle / Despite + İsim."
       },
       "Despite": {
         "word": "Despite",
@@ -642,7 +642,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "Unless",
         "meaning": "-mezse, -madıkça (= If not)",
         "mnemonic": "💡 FORMÜL: Unless kendi içinde \"NOT\" taşır. Bağlandığı cümle olumlu yazılır ama anlamı \"olmazsa / yapılmazsa\"dır.",
-        "rootAnalysis": "🔬 ÖSYM Sırrı: Unless olan cümlenin ana cümlesinde genelde olumsuz bir tehlike anlatılır."
+        "rootAnalysis": "🔬 Sınav Notu: Unless olan cümlenin ana cümlesinde genelde olumsuz bir tehlike anlatılır."
       },
       "As long as": {
         "word": "As long as",
@@ -686,7 +686,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
     ],
     "correctAnswer": "discovered / has transformed",
     "meaningTr": "Ever since + Past Simple (V2), Present Perfect (have/has V3)",
-    "explanation": "ÖSYM'nin 1 numaralı değişmez formülü: \"Since / Ever since + Geçmiş Zaman Tarihi/Cümlesi (V2), Present Perfect (have/has V3)\" kuralıdır.",
+    "explanation": "Sık çıkan bir formül: \"Since / Ever since + Geçmiş Zaman Tarihi/Cümlesi (V2), Present Perfect (have/has V3)\" kuralıdır.",
     "synonyms": [
       "Since + Past Simple, Present Perfect"
     ],
@@ -755,7 +755,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "Driven": {
         "word": "Driven (V3)",
         "meaning": "Pasif / Edilgen Sadeleştirme (Doğru Cevap)",
-        "mnemonic": "💡 FORMÜL: Cümle başında kısaltma sorulup arkasından \"BY\" edatı geliyorsa cevap %99 PASİF (V3) seçenektir: \"Driven by... = (Because they are driven by...)\"",
+        "mnemonic": "💡 FORMÜL: Cümle başında kısaltma sorulup arkasından \"BY\" edatı geliyorsa cevap çoğunlukla PASİF (V3) seçenektir: \"Driven by... = (Because they are driven by...)\"",
         "rootAnalysis": "🔬 Kural: Past Participle edilgen anlam verir."
       },
       "Having driven": {
@@ -1032,7 +1032,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "susceptible",
         "meaning": "hassas, savunmasız (-to)",
         "mnemonic": "💡 ÇAĞRIŞIM: \"SÜS BİTKİSİ\" soğuğa karşı çok SUSCEPTIBLE'dır (savunmasızdır, hemen solar).",
-        "rootAnalysis": "🔬 Altın Edat: Susceptible TO / Prone TO / Vulnerable TO üçlüsü."
+        "rootAnalysis": "🔬 Edat: Susceptible TO / Prone TO / Vulnerable TO üçlüsü."
       },
       "impervious": {
         "word": "impervious",
@@ -1203,7 +1203,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "nevertheless",
         "meaning": "yine de, buna rağmen",
         "mnemonic": "💡 KURAL: Eksi (-) duruma rağmen olumlu (+) bir sonuç alındığında kullanılan altın zıtlık zarfı.",
-        "rootAnalysis": "🔬 Eşdeğer: Nonetheless / However ile %100 aynı görevdedir."
+        "rootAnalysis": "🔬 Eşdeğer: Nonetheless / However ile çoğunlukla aynı görevdedir."
       },
       "therefore": {
         "word": "therefore",
@@ -1313,7 +1313,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "thereby": {
         "word": "thereby",
         "meaning": "böylelikle, bu yolla (+ V-ing)",
-        "mnemonic": "💡 ALTIN FORMÜL: Virgülün arkasından \"thereby + V-ing\" gelmesi YDS'nin 1 numaralı imza kalıbıdır.",
+        "mnemonic": "💡 FORMÜL: Virgülün arkasından \"thereby + V-ing\" gelmesi YDS'de sık görülen bir kalıptır.",
         "rootAnalysis": "🔬 Gramer: Eylemin mantıksal sonucunu anlatan zarf."
       },
       "whereas": {
@@ -1428,7 +1428,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "cope with",
         "meaning": "başa çıkmak, üstesinden gelmek",
         "mnemonic": "💡 ÇAĞRIŞIM: \"KOP (Cope)\" gel diyerek zorluğun üstesinden geldi, başa çıktı.",
-        "rootAnalysis": "🔬 Altın Eşdeğer: Deal with / Handle."
+        "rootAnalysis": "🔬 Eşdeğer: Deal with / Handle."
       },
       "account for": {
         "word": "account for",
@@ -1508,7 +1508,7 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "word": "make up for",
         "meaning": "telafi etmek, açığı kapatmak, bedelini ödemek",
         "mnemonic": "💡 ÇAĞRIŞIM: 'MAKE UP (makyaj / düzeltmek)' -> Eksik ve kusurlu olan yeri kapatıp düzeltmek, aradaki açığı telafi etmek (make up for).",
-        "rootAnalysis": "🔬 YDS Notu: ÖSYM phrasal verb sorularının efsanesidir: 'make up for' = 'compensate for' = 'offset'. Kaçırılmaması gereken bir kelimedir!"
+        "rootAnalysis": "🔬 YDS Notu: Sık çıkan bir phrasal verb: 'make up for' = 'compensate for' = 'offset'."
       }
     }
   }

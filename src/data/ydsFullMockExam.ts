@@ -6,9 +6,9 @@ export { YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam3';
 export const YDS_MOCK_EXAMS_LIST = [
   {
     id: 'exam_1',
-    title: '1. Deneme: Standart ÖSYM 2024 VIP Simülasyonu',
+    title: '1. Deneme: Standart Deneme',
     badge: 'ÖSYM Standartı',
-    description: 'Birebir resmi sınav dengesi, standart soru tipleri ve dengeli süre yönetimi.',
+    description: 'Gerçek sınavdaki soru dağılımı ve süresiyle hazırlanmış deneme.',
     questionCount: 80,
     difficulty: 'ÖSYM Düzeyi'
   },
@@ -22,11 +22,11 @@ export const YDS_MOCK_EXAMS_LIST = [
   },
   {
     id: 'exam_3',
-    title: '3. Deneme: Çeldirici & Hız Odaklı Master Deneme',
+    title: '3. Deneme: Çeldirici ve Hız Odaklı Deneme',
     badge: 'Tuzak Deşifresi',
     description: 'ÖSYM soru yazarlarının imza çeldiricileri, ikili bağlaç tuzakları ve zaman baskısı antrenmanı.',
     questionCount: 80,
-    difficulty: 'YDS Master'
+    difficulty: 'Zor'
   }
 ];
 
@@ -119,7 +119,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "difficulty": "Orta",
     "tacticUsed": "Yüzde / Oran Analizi: 'Account for + rakam/oran' (-i oluşturmak)",
     "trapWarning": "'carry out' (yürütmek/gerçekleştirmek) çok popüler olsa da oran/yüzde almaz; deney veya araştırma yürütülür.",
-    "explanation": "Account for: oluşturmak, tekabül etmek (%40'ını oluşturuyor). YDS'de arkasından yüzde, kesir veya oran geliyorsa doğru cevap %99 'account for'dur."
+    "explanation": "Account for: oluşturmak, tekabül etmek (%40'ını oluşturuyor). YDS'de arkasından yüzde, kesir veya oran geliyorsa doğru cevap çoğunlukla 'account for'dur."
   },
   {
     "id": "m_q6",
@@ -137,7 +137,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "difficulty": "Orta",
     "tacticUsed": "İsim-Fiil Uyumu: 'Carry out testing / experiment / research' (uygulamak, yürütmek)",
     "trapWarning": "'put off' ertelemek demektir; güvenlik testi ertelenmez, icra edilir.",
-    "explanation": "Carry out: yürütmek, uygulamak, icra etmek (synonym: conduct, implement, execute). YDS'nin 1 numaralı phrasal verb'üdür."
+    "explanation": "Carry out: yürütmek, uygulamak, icra etmek (synonym: conduct, implement, execute). YDS'de sık çıkan bir phrasal verb'dür."
   },
   {
     "id": "m_q7",
@@ -153,7 +153,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     },
     "answer": "A",
     "difficulty": "Orta",
-    "tacticUsed": "Altın Since Kuralı: Since + V2 (Past Simple), have/has V3 (Present Perfect)",
+    "tacticUsed": "Since Kuralı: Since + V2 (Past Simple), have/has V3 (Present Perfect)",
     "trapWarning": "B şıkkında since'in içine 'has taken' Present Perfect konamaz; since kısmı kesinlikle geçmişte bir nokta (V2) olmalıdır!",
     "explanation": "Since kuralı: 'Since + Past Simple (1954'te ilk nakil gerçekleştiğinden beri), Present Perfect (tanık olmuştur)'. Doğru cevap A'dır."
   },
@@ -630,7 +630,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
       "E": "that their ability to understand meaning has been proven conclusively"
     },
     "answer": "A",
-    "difficulty": "YDS Master",
+    "difficulty": "Zor",
     "tacticUsed": "So + Adverb + Inversion ... that + Cümle (So rapidly have they evolved that...)",
     "trapWarning": "So ... that yapısı: boşluk \"that\" ile başlamalı (B ve D elenir). C zaman olarak tutarsızdır (\"years ago\" ile yakın gelişme), E ise üretim hızından anlama kapasitesine sıçrayan aşırı bir sonuçtur.",
     "explanation": "So + zarf devrik başlangıcının tamlayıcısı 'that' sonucudur. O kadar hızlı geliştiler ki, makine metinlerini insan yazısından ayırt etmek olağanüstü zorlaştı (A şıkkı)."

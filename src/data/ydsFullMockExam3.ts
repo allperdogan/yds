@@ -929,8 +929,8 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Çıkarım: Serotoninin büyük kısmının bağırsakta üretilmesi',
-    trapWarning: 'Metin %90 "peripheral" serotonin der. B "entirely" ve beyin diyerek aşırı genelleme yapar; C GABA\'yı yok sayar; D ve E metindeki ilişkileri karıştırır.',
-    explanation: 'Serotonin hakkında çıkarım: Vücuttaki periferik serotoninin %90 gibi ezici bir çoğunluğu beyinde değil bağırsakta üretilir (A şıkkı).'
+    trapWarning: 'Metin %95 "peripheral" serotonin der. B "entirely" ve beyin diyerek aşırı genelleme yapar; C GABA\'yı yok sayar; D ve E metindeki ilişkileri karıştırır.',
+    explanation: 'Serotonin hakkında çıkarım: Vücuttaki periferik serotoninin %95 gibi ezici bir çoğunluğu beyinde değil bağırsakta üretilir (A şıkkı).'
   },
 
   // PARAGRAF 3: Kuantum Kriptografi (51-54)

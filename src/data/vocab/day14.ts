@@ -1170,7 +1170,7 @@ export const day14Words: YdsWord[] = [
     ],
     "exampleEn": "International educational exchanges serve to promote intercultural understanding and foster lasting diplomatic ties.",
     "exampleTr": "Uluslararası eğitim değişim programları, kültürlerarası anlayışı teşvik etmeye ve kalıcı diplomatik bağlar geliştirmeye hizmet eder.",
-    "ydsTip": "İş yerinde terfi vermek dışında, YDS'de %90 oranında 'teşvik etmek, önünü açmak, desteklemek' anlamıyla ('foster / encourage') sorulur.",
+    "ydsTip": "İş yerinde terfi vermek dışında, YDS'de çoğunlukla 'teşvik etmek, önünü açmak, desteklemek' anlamıyla ('foster / encourage') sorulur.",
     "frequency": "ultra",
     "groupDay": 14,
     "mnemonic": "💡 ÇAĞRIŞIM: 'PROMOSYON' -> Satışları teşvik etmek ve artırmak için yapılan destekleme hamlesi: PROMOTE (teşvik etmek, desteklemek)."

@@ -98,7 +98,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
       E: 'would / had commenced'
     },
     answer: 'B',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'No sooner + Had + S + V3 ... than + S + V2 Kalıbı',
     trapWarning: 'No sooner ile "when" KULLANILMAZ! Sadece "than" ile eşleşir. Hard / Scarcely ise "when" ile eşleşir.',
     explanation: '🎯 FORMÜL: "No sooner had + S + V3 ... than + S + V2" (Tam ... yapmıştı ki ... oldu). İlaç devi ruhsat alır almaz fabrikalar üretime başladı. Doğru cevap B.'
@@ -120,7 +120,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     difficulty: 'Orta',
     tacticUsed: 'Over / In / During + the past/last X years = Present Perfect Zorunluluğu',
     trapWarning: '"Over the past decades" ifadesini görünce "past" kelimesine aldanıp Simple Past (V2) seçmeyin! "Son X yılda" anlamına gelir ve Present Perfect gerektirir.',
-    explanation: '🎯 ÖSYM ALTIN KURALI: "In/Over/During/For the past/last + zaman" kalıbı %100 Present Perfect (have/has V3) çeker. İkinci tarafta ise şu anda devam eden erime "are melting" ile verilir. Doğru cevap B.'
+    explanation: '🎯 KURAL: "In/Over/During/For the past/last + zaman" kalıbı çoğunlukla Present Perfect (have/has V3) çeker. İkinci tarafta ise şu anda devam eden erime "are melting" ile verilir. Doğru cevap B.'
   },
 
   // =========================================================================
@@ -143,7 +143,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     difficulty: 'Orta',
     tacticUsed: 'Virgül ve Yapı Taktiği: İsim Tamlaması Alan Zıtlık Edatı',
     trapWarning: 'A, B ve D şıklarının tümü "zıtlık" verir! Ancak hepsi kendisinden sonra TAM CÜMLE (Özne + Yüklem) ister. Boşluktan sonra ise sadece isim tamlaması ("substantial public investments...") vardır.',
-    explanation: '🎯 ÖSYM ŞIK ELEME HİLESİ: Boşluktan sonra fiil (verb) yok, yalnızca bir isim tamlaması (noun phrase) var! Although / Even though / Much as / Whereas + Cümle (S+V) alır. In spite of / Despite ise İsim Grubu (Noun / V-ing) alır. Doğru cevap C.'
+    explanation: '🎯 ŞIK ELEME: Boşluktan sonra fiil (verb) yok, yalnızca bir isim tamlaması (noun phrase) var! Although / Even though / Much as / Whereas + Cümle (S+V) alır. In spite of / Despite ise İsim Grubu (Noun / V-ing) alır. Doğru cevap C.'
   },
   {
     id: 'g_c2',
@@ -162,7 +162,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     difficulty: 'Orta',
     tacticUsed: 'Sebep Bağlacı: Prepositional Phrase (Because of + Noun Phrase)',
     trapWarning: 'B, C, D ve E şıkları eşanlamlıdır ve hepsi tam cümle (S+V) alır. 4 şık aynı yapıdaysa hiçbiri doğru cevap olamaz; isim alan tek şık A\'dır!',
-    explanation: '🎯 ÖSYM ŞIK ELEME HİLESİ: "because = since = as = inasmuch as" dördü de tam cümle ister. Boşluktan sonra "the unseasonably prolonged heatwaves..." bir isim öbeğidir (heatwaves niteleyen bir relative clause ile devam etmiştir, ana fiil yoktur). İsim alan tek seçenek "because of"dur. Doğru cevap A.'
+    explanation: '🎯 ŞIK ELEME: "because = since = as = inasmuch as" dördü de tam cümle ister. Boşluktan sonra "the unseasonably prolonged heatwaves..." bir isim öbeğidir (heatwaves niteleyen bir relative clause ile devam etmiştir, ana fiil yoktur). İsim alan tek seçenek "because of"dur. Doğru cevap A.'
   },
   {
     id: 'g_c3',
@@ -180,7 +180,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Doğrudan Karşılaştırma / Özne Zıtlığı (Developed nations vs Emerging economies)',
-    trapWarning: 'Özneler karşılaştırılıyorsa (gelişmiş ülkeler vs gelişmekte olan ülkeler) ÖSYM %95 "While" veya "Whereas" arar.',
+    trapWarning: 'Özneler karşılaştırılıyorsa (gelişmiş ülkeler vs gelişmekte olan ülkeler) ÖSYM çoğunlukla "While" veya "Whereas" arar.',
     explanation: '🎯 FORMÜL: Gelişmiş ülkeler temiz enerjiye geçişi finanse edebilirKEN (While), gelişmekte olan ülkeler kömüre bağımlı kalmaktadır. Zıtlık ve karşılaştırma bağlacı "While"dır. Doğru cevap A.'
   },
   {
@@ -261,7 +261,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     difficulty: 'Orta',
     tacticUsed: 'Collocation: Susceptible TO + Süreç Bildiren DURING',
     trapWarning: 'ÖSYM\'de "susceptible, vulnerable, prone, accessible, indifferent, superior" sıfatları DAİMA "TO" edatı ile kullanılır.',
-    explanation: '🎯 ÖSYM ALTIN FORMÜLÜ: "susceptible TO" (-e duyarlı / yatkın). Yağmur mevsimi boyunca / esnasında için "during the rainy season". Doğru cevap B.'
+    explanation: '🎯 FORMÜL: "susceptible TO" (-e duyarlı / yatkın). Yağmur mevsimi boyunca / esnasında için "during the rainy season". Doğru cevap B.'
   },
   {
     id: 'g_p2',
@@ -414,7 +414,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
       E: 'To have shaped'
     },
     answer: 'C',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Zaman Önceliği Olan Pasif Kısaltma (Having been V3)',
     trapWarning: 'Dodo kuşu evrimi şekillendirmedi; adadaki izolasyon tarafından "şekillendirildi" (pasif). Ve bu denizciler gelmeden milyonlarca yıl önce gerçekleşti (öncelik).',
     explanation: '🎯 ÇİFTE KONTROL: 1. Pasif mi? Evet (shaped by isolation). 2. Denizcilerin gelişinden çok daha önce mi? Evet (milyonlarca yıllık öncelik). Bu nedenle "Having been shaped" mükemmel yapıdır. Doğru cevap C.'
@@ -440,7 +440,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     difficulty: 'İleri',
     tacticUsed: 'Kanıta Dayalı Geçmiş Çıkarımı: Must have V3 (Girmiş olmalı)',
     trapWarning: 'B şıkkındaki "should have entered" (girmeliydi ama girmedi) pişmanlık/eleştiri bildirir. Cümlede ise somut bir kanıt ("kapılar sapasağlamdı") üzerinden geçmiş çıkarımı yapılmaktadır.',
-    explanation: '🎯 MODAL FARKI: Kale kapıları sapasağlam olduğuna göre ordu yer altı su kanalından girmiş OLMALI (must have entered). %99 kesin geçmiş tahmini. Doğru cevap A.'
+    explanation: '🎯 MODAL FARKI: Kale kapıları sapasağlam olduğuna göre ordu yer altı su kanalından girmiş OLMALI (must have entered). Güçlü bir geçmiş tahmini. Doğru cevap A.'
   },
   {
     id: 'g_m2',
@@ -501,7 +501,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
     difficulty: 'Orta',
     tacticUsed: 'Edattan (Preposition) Sonra "That" KULLANILMAZ Kuralı',
     trapWarning: 'Boşluktan önce "through" edatı vardır. Edatlardan sonra ASLA "that" gelmez! Cansız/kurum için "which", insan için "whom" gelir.',
-    explanation: '🎯 ÖSYM ALTIN FORMÜLÜ: Edattan sonra sadece "which" (cansız/kurum) veya "whom" (insan) gelebilir. "oversight committees" kurum/komite olduğu için "through which" (vasıtasıyla) doğrudur. Doğru cevap A.'
+    explanation: '🎯 FORMÜL: Edattan sonra sadece "which" (cansız/kurum) veya "whom" (insan) gelebilir. "oversight committees" kurum/komite olduğu için "through which" (vasıtasıyla) doğrudur. Doğru cevap A.'
   },
   {
     id: 'g_cl2',
@@ -791,7 +791,7 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
       E: 'As if it were'
     },
     answer: 'A',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Were it not for = Olmasa / Olmasaydı (Şimdiki Zaman Hipotezi + Would Strip)',
     trapWarning: 'Sonuç cümlesine dikkat: "would completely strip away" (Type 2 Conditional - would + V1). Eğer geçmiş olsaydı "would have stripped" (Type 3) olurdu.',
     explanation: '🎯 FORMÜL: "Were it not for + İsim" = "If it were not for + İsim" (Dünya çekirdeğinin manyetik kalkanı olmasa, güneş rüzgarları atmosferimizi süpürüp yok ederdi). Sonuç cümlesi "would strip" (Type 2) olduğu için "Were it not for" kullanılır. Doğru cevap A.'

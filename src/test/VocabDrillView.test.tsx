@@ -11,6 +11,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={handleMarkKnown}
@@ -40,6 +41,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={handleMarkKnown}
@@ -70,6 +72,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={handleMarkKnown}
@@ -97,6 +100,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={vi.fn()}
@@ -124,6 +128,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     const { rerender } = render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={pendingReviews}
         onMarkKnown={vi.fn()}
@@ -139,7 +144,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     fireEvent.click(nextBtn);
 
     // Now on Question 2: check that we are on Question 2 (Soru 2 / ...)
-    expect(screen.getByText(/Soru 2 \//i)).toBeInTheDocument();
+    expect(screen.getByText(/^2\/\d+$/)).toBeInTheDocument();
 
     // Answer Question 2 incorrectly (deteriorate is wrong for undermine)
     const wrongBtn = screen.getByRole('button', { name: /deteriorate/i });
@@ -148,6 +153,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     // Re-render component with the updated pendingReviewVocabIds (simulating App state update)
     rerender(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={pendingReviews}
         onMarkKnown={vi.fn()}
@@ -157,7 +163,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // CRITICAL ASSERTION: The screen MUST STAY on Question 2! It must NOT jump back to Question 1!
-    expect(screen.getByText(/Soru 2 \//i)).toBeInTheDocument();
+    expect(screen.getByText(/^2\/\d+$/)).toBeInTheDocument();
     expect(screen.queryByText(/Soru 1 \//i)).not.toBeInTheDocument();
   });
 
@@ -168,6 +174,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={handleMarkKnown}
@@ -190,6 +197,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={handleMarkKnown}
@@ -212,6 +220,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={['w1']}
         pendingReviewVocabIds={[]}
         onMarkKnown={handleMarkKnown}
@@ -221,6 +230,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Click the Mastered Words button
+    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
     const openModalBtn = screen.getByText(/1 Öğrendim \(Listele\)/i);
     fireEvent.click(openModalBtn);
 
@@ -245,6 +255,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
 
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={handleMarkKnown}
@@ -254,6 +265,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Switch to "Bağlaçlar" category
+    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
     const conjBtn = screen.getByRole('button', { name: /Bağlaçlar/i });
     fireEvent.click(conjBtn);
 
@@ -273,6 +285,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
   it('toggles the "Fiil & Bağlaç Atlası" reference modal', () => {
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         onMarkKnown={vi.fn()}
@@ -282,22 +295,24 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Open Atlas modal
+    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
     const openAtlasBtn = screen.getByRole('button', { name: /Fiil & Bağlaç Atlası/i });
     fireEvent.click(openAtlasBtn);
 
-    expect(screen.getByText(/ÖSYM Altın Fiil, Bağlaç & Sıfat Atlası/i)).toBeInTheDocument();
+    expect(screen.getByText(/Fiil, Bağlaç ve Sıfat Listesi/i)).toBeInTheDocument();
     expect(screen.getByText(/ZITLIK BAĞLAÇLARI/i)).toBeInTheDocument();
 
     // Close modal
     const closeBtn = screen.getByRole('button', { name: /Anladım, Kapat/i });
     fireEvent.click(closeBtn);
 
-    expect(screen.queryByText(/ÖSYM Altın Fiil, Bağlaç & Sıfat Atlası/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Fiil, Bağlaç ve Sıfat Listesi/i)).not.toBeInTheDocument();
   });
 
   it('switches between "1. Adım: Günün Kelimelerini Öğren" and "2. Adım: Günün Testini Çöz"', () => {
     render(
       <VocabDrillView
+        initialSource="curated"
         knownVocabIds={[]}
         pendingReviewVocabIds={[]}
         initialDay={1}
@@ -308,6 +323,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Switch to Learn mode
+    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
     const learnTabBtn = screen.getByRole('button', { name: /1\. Adım: Günün Kelimelerini Öğren/i });
     fireEvent.click(learnTabBtn);
 

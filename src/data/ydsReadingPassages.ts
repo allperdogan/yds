@@ -93,7 +93,7 @@ Furthermore, this regenerative resilience has profound clinical implications for
           E: 'rely exclusively on surgical procedures rather than natural neuroplasticity'
         },
         answer: 'A',
-        difficulty: 'YDS Master',
+        difficulty: 'Zor',
         tacticUsed: 'Çıkarım (Inference) & Terminoloji Eşleştirme',
         trapWarning: 'D şıkkı tam tersidir; beyin BDNF faktörlerini iyileşmek için daha fazla sentezler.',
         explanation: '3. Paragrafta "exhibit significant compensatory activation in contralateral cortical hemispheres, effectively bypassing damaged neural pathways" ifadesi yer alır. "Contralateral" karşı taraf demektir. Bu da "recruiting intact regions in the opposite brain hemisphere" (karşı yarıküredeki sağlam bölgeleri devreye sokarak) ifadesiyle birebir örtüşür (A şıkkı).'

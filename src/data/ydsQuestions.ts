@@ -50,7 +50,7 @@ const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
     trapWarning: 'D şıkkındaki "looked into (araştırmak, incelemek)" cazip görünebilir ancak bir keşif seferi (expedition) "incelenmez", "yürütülür/gerçekleştirilir".',
     explanation: `🎯 TAKTİK ADIMLARI:
 1. Nesne Analizi: Boşluktan sonra "an unprecedented underwater expedition (benzeri görülmemiş bir su altı seferi)" gelmektedir.
-2. ÖSYM Altın Formülü: İngilizcede "research, experiment, study, expedition, survey, investigation" kelimeleri eyleme dökülürken %95 "carry out" veya "conduct" fiiliyle birleşir.
+2. Formül: İngilizcede "research, experiment, study, expedition, survey, investigation" kelimeleri eyleme dökülürken çoğunlukla "carry out" veya "conduct" fiiliyle birleşir.
 3. Şık Analizi:
    - A) called off (iptal etti)
    - B) carried out (yürüttü, icra etti) -> Doğru cevap!
@@ -200,7 +200,7 @@ const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
       E: 'solely the inability of international organizations like the WHO to draft meaningful health regulations'
     },
     answer: 'B',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Paraphrase (Yeniden İfade) & Extreme Words Çeldirici Eleme',
     trapWarning: 'A ("complete failure"), C ("purely natural / no capacity whatsoever"), D ("total absence") ve E ("solely") şıklarındaki radikal kelimeler (extreme words) ÖSYM\'nin en belirgin tuzaklarıdır!',
     explanation: `🎯 TAKTİK ADIMLARI:
@@ -343,7 +343,7 @@ export const getUnifiedQuestionById = (id: string): YdsQuestion | undefined => {
           E: 'deteriorate'
         },
         answer: 'A',
-        explanation: `Doğru Kelime: ${wordObj.word} (${wordObj.meaning}). Örnek: "${wordObj.exampleEn}" - ${wordObj.exampleTr}. Çağrışım: ${wordObj.mnemonic || 'ÖSYM VIP sözcüğü'}`,
+        explanation: `Doğru Kelime: ${wordObj.word} (${wordObj.meaning}). Örnek: "${wordObj.exampleEn}" - ${wordObj.exampleTr}. Çağrışım: ${wordObj.mnemonic || 'sık çıkan sözcük'}`,
         tacticUsed: 'Kelime Çağrışım ve Soru Çözümü',
         trapWarning: 'Bu kelimede pratik testi sırasında hata yapıldı.',
         difficulty: 'İleri'

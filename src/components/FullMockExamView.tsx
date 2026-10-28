@@ -205,7 +205,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
               180 Dakika / 80 Soruluk Tam YDS Deneme Sınavı
             </h2>
             <p className="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-lg mx-auto">
-              Sınav kondisyonunu ve 3 saatlik zihinsel dayanıklılığı geliştirmek için birebir ÖSYM soru dağılımıyla hazırlanmış eksiksiz simülasyon.
+              Sınav kondisyonunu ve 3 saatlik zihinsel dayanıklılığı geliştirmek için gerçek sınavdaki soru dağılımıyla hazırlanmış deneme.
             </p>
           </div>
 
