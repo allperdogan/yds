@@ -206,7 +206,16 @@ export interface SolvedRecord {
   type: QuestionType;
   isCorrect: boolean;
   seconds?: number;
+  // How much the answer counts as evidence (default 1).
+  weight?: number;
+  // Share of a correct answer credited towards the exam rate (default 1).
+  credit?: number;
 }
+
+// The generated practice banks (ids bank_*) and vocabulary drill questions are easier
+// than real YDS items: they count half as much and a correct answer earns 85%
+// credit, so a perfect record there cannot alone predict a perfect exam.
+export const EASY_PRACTICE = { weight: 0.5, credit: 0.85 };
 
 export interface OverallTypeEstimate {
   type: QuestionType;
@@ -264,9 +273,10 @@ export const estimateOverallScore = (
   solved.forEach((s) => {
     if (!(s.type in YDS_EXAM_DISTRIBUTION)) return;
     const e = get(s.type);
-    e.weight += 1;
+    const w = s.weight ?? 1;
+    e.weight += w;
     e.answered += 1;
-    if (s.isCorrect) e.correct += 1;
+    if (s.isCorrect) e.correct += w * (s.credit ?? 1);
     if (s.seconds && s.seconds > 0) {
       e.timeSum += s.seconds;
       e.timed += 1;

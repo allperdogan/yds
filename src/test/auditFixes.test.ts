@@ -5,7 +5,16 @@ import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { buildVocabOptions } from '../services/vocabOptions';
 import { estimateOverallScore } from '../services/examInsights';
 import { StorageService } from '../services/storageService';
-import { YdsWord } from '../types';
+import { YdsQuestion, YdsWord } from '../types';
+import { TRANSLATION_BANK } from '../data/banks/translationBank';
+
+const KEYS = ['A', 'B', 'C', 'D', 'E'] as const;
+// Share of questions whose correct option is strictly the longest one.
+const longestShare = (qs: YdsQuestion[]) =>
+  qs.filter((q) => {
+    const len = q.options[q.answer].length;
+    return KEYS.every((k) => k === q.answer || q.options[k].length < len);
+  }).length / qs.length;
 
 describe('question ids', () => {
   it('are unique across all study topics', () => {
@@ -20,6 +29,34 @@ describe('mock exams', () => {
       for (const q of exam.filter((x) => x.type === 'cloze' || x.type === 'reading')) {
         expect(q.passage, q.id).toBeTruthy();
       }
+    }
+  });
+});
+
+describe('mock exam answer patterns', () => {
+  const mocks = [YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3];
+
+  it('do not always put the irrelevant sentence at IV', () => {
+    for (const exam of mocks) {
+      const answers = new Set(exam.filter((q) => q.type === 'irrelevant_sentence').map((q) => q.answer));
+      expect(answers.size).toBeGreaterThan(1);
+    }
+  });
+
+  it('do not give away the answer as the longest option', () => {
+    const sentenceTypes = mocks.flat().filter((q) => !['vocabulary', 'grammar', 'cloze', 'irrelevant_sentence'].includes(q.type));
+    expect(longestShare(sentenceTypes)).toBeLessThan(0.3);
+  });
+});
+
+describe('translation bank', () => {
+  it('has 30 questions per direction, balanced letters and no length giveaway', () => {
+    for (const type of ['translation_en_tr', 'translation_tr_en']) {
+      const qs = TRANSLATION_BANK.filter((q) => q.type === type);
+      expect(qs.length).toBe(30);
+      for (const k of KEYS) expect(qs.filter((q) => q.answer === k).length).toBe(6);
+      expect(longestShare(qs)).toBeLessThan(0.3);
+      for (const q of qs) expect(q.explanation).toContain(`Doğru cevap ${q.answer}.`);
     }
   });
 });
@@ -48,6 +85,14 @@ describe('score estimate', () => {
     const once = estimateOverallScore([], [mock('exam_1', 4)]);
     const retaken = estimateOverallScore([], [mock('exam_1', 4), mock('exam_1', 10)]);
     expect(retaken.score).toBe(once.score);
+  });
+});
+
+describe('easy practice credit', () => {
+  it('keeps a perfect record on easy items below a perfect exam estimate', () => {
+    const easy = Array.from({ length: 200 }, () => ({ type: 'grammar' as const, isCorrect: true, weight: 0.5, credit: 0.85 }));
+    const grammar = estimateOverallScore(easy).types.find((t) => t.type === 'grammar')!;
+    expect(grammar.rate).toBeLessThan(0.86);
   });
 });
 

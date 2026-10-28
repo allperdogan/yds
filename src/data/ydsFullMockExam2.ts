@@ -552,7 +552,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       B: 'they remain the most widely installed photovoltaic technology across hot desert regions',
       C: 'their efficiency losses become especially severe during prolonged summer heatwaves',
       D: 'active cooling systems can reduce, but not entirely eliminate, these heat-related losses',
-      E: 'next-generation thin-film modules also suffer measurable declines in output under intense heat'
+      E: 'next-generation thin-film modules also suffer measurable and often permanent declines in electrical output under intense heat'
     },
     answer: 'A',
     difficulty: 'İleri',
@@ -567,7 +567,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Epidemiologists initiated comprehensive wastewater surveillance programs across major transit hubs _____',
     options: {
       A: 'so that emerging viral pathogen variants could be detected weeks before clinical hospitalizations spike.',
-      B: 'even though wastewater samples can reveal emerging variants long before patients seek medical care.',
+      B: 'even though wastewater samples can usually reveal emerging variants long before infected patients seek medical care.',
       C: 'whereas hospital-based testing remains the most reliable way of identifying new viral variants.',
       D: 'as if clinical hospitalizations had already provided sufficiently early warning of new variants.',
       E: 'so that hospitals would no longer need to test patients who present with respiratory symptoms.'
@@ -623,7 +623,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       A: 'As the country was almost entirely dependent on imported raw materials and industrial machinery',
       B: 'Although the country was almost entirely dependent on imported raw materials and machinery',
       C: 'As the country had built up large domestic reserves of raw materials and spare machinery',
-      D: 'Even though the embargo was widely expected to cause severe shortages of industrial inputs',
+      D: 'Even though the embargo had been widely expected to cause severe shortages of essential industrial inputs',
       E: 'Unless the country had been able to secure alternative suppliers of imported machinery'
     },
     answer: 'A',
@@ -641,7 +641,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       A: 'they frequently reproduce systemic socio-economic biases present in their historical training datasets',
       B: 'they have also made consumer supply chains considerably faster and more cost-effective',
       C: 'they are now relied upon by almost every major retailer to manage stock and deliveries',
-      D: 'their speed has allowed companies to respond quickly to sudden shifts in consumer demand',
+      D: 'their remarkable speed has allowed most large companies to respond quickly to sudden and unexpected shifts in consumer demand',
       E: 'they rarely make the kinds of errors that human logistics planners routinely commit'
     },
     answer: 'A',
@@ -659,7 +659,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       A: 'historians have been revising their assumptions regarding metallurgical trade networks in prehistoric Europe',
       B: 'historians revised their assumptions about metallurgical trade in prehistoric Europe',
       C: 'historians will need to reconsider how metal goods were traded across prehistoric Europe',
-      D: 'historians had long believed that the tribe of the chieftain was isolated from regional trade',
+      D: 'historians had long believed that the chieftain\'s tribe was largely isolated from regional and continental metallurgical trade',
       E: 'historians are revising their view of when the burial chambers were originally constructed'
     },
     answer: 'A',
@@ -682,7 +682,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       B: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesinin küresel deniz seviyelerini birkaç metre yükselten geri döndürülemez bir zincirleme süreci tetiklediği konusunda uyarıyor.',
       C: 'Buzulbilimciler, küresel deniz seviyelerinin birkaç metre yükselmesinin Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini hızlandıran geri döndürülemez bir süreci tetikleyebileceği konusunda uyarıyor.',
       D: 'Buzulbilimcilere göre Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesi, küresel deniz seviyelerini birkaç metre yükseltecek geri döndürülemez bir zincirleme süreci mutlaka tetikleyecektir.',
-      E: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini hızlandırabilecek geri döndürülemez bir zincirleme sürecin küresel deniz seviyelerini birkaç metre yükseltebileceği konusunda uyarıyor.'
+      E: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini daha da hızlandırabilecek geri döndürülemez bir zincirleme sürecin küresel deniz seviyelerini birkaç metre yükseltebileceği konusunda uyarıyor.'
     },
     answer: 'A',
     difficulty: 'Orta',
@@ -793,7 +793,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'According to the passage, the primary distinction between classical genetics and epigenetics is that epigenetics _____',
     options: {
       A: 'shows that environmental factors can change how genes are expressed without altering the DNA sequence.',
-      B: 'shows that environmental factors can permanently alter the nucleotide sequence of an organism\'s DNA.',
+      B: 'shows that environmental factors can directly and permanently alter the nucleotide sequence of an organism\'s DNA.',
       C: 'regards the DNA sequence as the only factor that determines an organism\'s development.',
       D: 'focuses mainly on how DNA methylation repairs damage caused by airborne pollutants.',
       E: 'argues that the effects of the environment on genes disappear within a single generation.'
@@ -814,7 +814,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       B: 'how food shortages during the Second World War led to a sharp rise in infant mortality.',
       C: 'why obesity and heart disease are caused mainly by inherited changes in the DNA sequence.',
       D: 'how chronic emotional stress can silence specific genes in adults over several decades.',
-      E: 'why the effects of prenatal starvation tend to disappear once normal nutrition is restored.'
+      E: 'why the effects of prenatal starvation tend to disappear completely within one generation once normal nutrition is restored.'
     },
     answer: 'A',
     difficulty: 'İleri',
@@ -886,7 +886,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Modern historians differ from earlier twentieth-century researchers because modern scholars _____',
     options: {
       A: 'use climate evidence showing that droughts and environmental stress helped cause the collapse.',
-      B: 'believe that the Sea Peoples played no role whatsoever in the fall of these empires.',
+      B: 'believe that the invading Sea Peoples played no role whatsoever in the eventual fall of these great empires.',
       C: 'argue that earthquakes alone were responsible for the destruction of the palaces.',
       D: 'rely mainly on written records left by the Mycenaean and Hittite administrations.',
       E: 'consider internal rebellions to be more important than any environmental factor.'
@@ -907,7 +907,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       B: 'their armies were too weak to defend fortified capitals against nomadic raiders.',
       C: 'their rulers had stopped trading tin and copper with neighbouring kingdoms.',
       D: 'their writing systems were too complex to keep accurate administrative records.',
-      E: 'their populations had grown too large for the region\'s trade networks to support.'
+      E: 'their populations had grown far too large for the region\'s limited trade networks to support.'
     },
     answer: 'A',
     difficulty: 'Orta',
@@ -943,7 +943,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'It is stated in the passage that optical telescopes struggle to observe the earliest stars because _____',
     options: {
       A: 'the expansion of the universe has stretched their light into infrared wavelengths.',
-      B: 'the light from these stars is too faint to be detected by any instrument at all.',
+      B: 'the light from these early stars is far too faint to be detected by any instrument at all.',
       C: 'their light has been shifted from infrared into shorter ultraviolet wavelengths.',
       D: 'optical telescopes are unable to operate at the very low temperatures of space.',
       E: 'the gold-coated mirrors of optical telescopes absorb most infrared radiation.'
@@ -1000,7 +1000,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
       B: 'cautious and doubtful',
       C: 'neutral but critical',
       D: 'enthusiastic but alarmed',
-      E: 'detached and indifferent'
+      E: 'detached, sceptical and indifferent'
     },
     answer: 'A',
     difficulty: 'Orta',
@@ -1054,7 +1054,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'The author suggests that higher education institutions should adapt to AI advancements by _____',
     options: {
       A: 'focusing on human strengths such as empathy, critical reasoning and combining different disciplines.',
-      B: 'training students to program and orchestrate the algorithms that are replacing professionals.',
+      B: 'training all students to program and orchestrate the very algorithms that are now replacing professionals.',
       C: 'reducing the number of students admitted to programs in law, medicine and computing.',
       D: 'teaching students to perform routine intellectual tasks faster and more accurately.',
       E: 'specializing each student in a single discipline rather than in several fields.'
@@ -1073,7 +1073,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     options: {
       A: 'losing one\'s job because it is no longer needed',
       B: 'being moved to a different department',
-      C: 'having to work longer hours for the same pay',
+      C: 'having to work much longer hours for the same amount of pay',
       D: 'retiring early on a reduced pension',
       E: 'being retrained for a more creative role'
     },
@@ -1094,7 +1094,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     options: {
       A: 'carbon dioxide from the atmosphere dissolving in seawater and forming carbonic acid.',
       B: 'rising ocean temperatures that increase the amount of carbonate in seawater.',
-      C: 'the release of carbonate ions from the dissolving shells of marine organisms.',
+      C: 'the gradual release of carbonate ions from the dissolving shells of dead marine organisms.',
       D: 'hydrogen ions being removed from seawater by reef-building corals.',
       E: 'carbonic acid entering the oceans directly from industrial waste water.'
     },
@@ -1112,7 +1112,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     options: {
       A: 'fewer free carbonate ions are available for them to build and maintain their shells.',
       B: 'hydrogen ions attach directly to their shells and make them heavier.',
-      C: 'the excess carbonate ions in acidic water make their shells too thick.',
+      C: 'the excess carbonate ions in acidic water make their shells grow far too thick and heavy to carry.',
       D: 'warmer surface waters force them to move into deeper, darker regions.',
       E: 'carbonic acid prevents them from absorbing enough dissolved oxygen.'
     },
@@ -1129,7 +1129,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'The ecological importance of coral reefs is highlighted by the fact that they _____',
     options: {
       A: 'support about a quarter of marine life even though they cover less than one percent of the seabed.',
-      B: 'cover about a quarter of the seabed and support most of the marine life in the oceans.',
+      B: 'cover about a quarter of the world\'s seabed and therefore support most of the marine life in the oceans.',
       C: 'absorb more than twenty-five percent of the carbon dioxide released by industry.',
       D: 'provide the main source of protein for most of the world\'s population.',
       E: 'are able to rebuild their structures quickly once the water becomes less acidic.'
@@ -1147,7 +1147,7 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'The passage implies that the destruction of coral reef architectures would _____',
     options: {
       A: 'threaten the food supply of coastal communities that depend on reefs for protein.',
-      B: 'reduce the ability of the oceans to absorb carbon dioxide from the atmosphere.',
+      B: 'significantly reduce the ability of the oceans to absorb carbon dioxide from the atmosphere.',
       C: 'mainly affect shellfish and pteropods rather than human communities.',
       D: 'increase the amount of free carbonate available to other marine organisms.',
       E: 'have a greater impact on deep-sea species than on coastal ecosystems.'
@@ -1180,7 +1180,7 @@ Dr. Vane:
 — I hadn't factored in public health and energy savings. If the net economic return offsets the expenditure within five years, city council might approve the bond.`,
     options: {
       A: 'True, but you are ignoring the savings from fewer heatstroke admissions and lower air-conditioning demand.',
-      B: 'True, which is why we should first test the surfaces on a single district before expanding citywide.',
+      B: 'True, which is exactly why we should first test the new surfaces on a single district before expanding citywide.',
       C: 'Perhaps, but residents have also complained that reflective surfaces create uncomfortable glare.',
       D: 'Then we could ask the national government to cover part of the cost through infrastructure grants.',
       E: 'You are right that the cost is high, so the project will probably have to wait another decade.'
@@ -1269,7 +1269,7 @@ Sarah:
       A: 'How could a stored map of someone\'s facial features be more dangerous than a stolen password?',
       B: 'Do you mean that facial scanners can sometimes be fooled by a high-resolution photograph?',
       C: 'Are you worried that customers will find facial scanning slower than typing a password?',
-      D: 'Would combining facial scanning with a one-time code sent by text message reduce that risk?',
+      D: 'Would combining facial scanning with a one-time code sent by text message reduce that particular risk?',
       E: 'Is it because some customers may refuse to share their biometric data with our company?'
     },
     answer: 'A',
@@ -1336,7 +1336,7 @@ Dr. Novak:
     question: 'So intricate is the grammatical architecture of ancient Sanskrit that early comparative linguists mistakenly believed it to be an artificial language engineered by philosophers.',
     options: {
       A: 'The grammar of ancient Sanskrit is so complex that pioneering linguistic scholars wrongly concluded it was a constructed language designed by thinkers.',
-      B: 'Because early comparative linguists found the grammar of Sanskrit so complex, they correctly concluded that it had been invented by philosophers.',
+      B: 'Because early comparative linguists found the grammar of ancient Sanskrit so complex, they correctly concluded that it had been deliberately invented by philosophers.',
       C: 'Early comparative linguists believed that Sanskrit was so complex that philosophers could never have engineered it as an artificial language.',
       D: 'Philosophers deliberately designed the grammar of Sanskrit to be so complex that early linguists would mistake it for a natural language.',
       E: 'The grammar of Sanskrit is less complex than early comparative linguists believed, which is why they wrongly thought it was artificial.'
@@ -1372,7 +1372,7 @@ Dr. Novak:
     question: 'Scarcely had the volcanic ash plume penetrated the upper troposphere when aviation authorities grounded all transcontinental flights across the hemisphere.',
     options: {
       A: 'Aviation officials suspended all transcontinental flights across the hemisphere almost immediately after the volcanic ash entered the upper troposphere.',
-      B: 'Aviation authorities grounded all transcontinental flights some time after the volcanic ash plume had spread across the upper troposphere.',
+      B: 'Aviation authorities grounded all transcontinental flights across the hemisphere only some time after the volcanic ash plume had spread widely across the upper troposphere.',
       C: 'Aviation authorities grounded all transcontinental flights shortly before the volcanic ash plume reached the upper troposphere.',
       D: 'As soon as aviation authorities grounded all transcontinental flights, the volcanic ash plume penetrated the upper troposphere.',
       E: 'The volcanic ash plume had hardly reached the upper troposphere, yet aviation authorities refused to ground transcontinental flights.'
@@ -1394,7 +1394,7 @@ Dr. Novak:
     question: `Throughout the vertebrate tree of life, sleep remains an evolutionary enigma. Engaging in prolonged unconsciousness leaves animals vulnerable to predation and prevents foraging. (_____) Neurobiological investigations reveal that during deep slow-wave sleep, the brain’s glymphatic system expands, flushing out neurotoxic metabolic waste products, such as amyloid-beta proteins, that accumulate during waking hours. Without this nightly biochemical cleansing, cognitive dysfunction and neuronal degeneration inevitably ensue.`,
     options: {
       A: 'Yet, the sheer ubiquity of sleep across species demonstrates that it must serve an indispensable physiological function.',
-      B: 'Some species, such as dolphins, rest only one half of the brain at a time so that they can remain alert.',
+      B: 'Some species, such as dolphins and many migrating birds, rest only one half of the brain at a time so that they can remain alert.',
       C: 'This is why many prey animals sleep in short bursts, often in groups where some members stay awake.',
       D: 'Researchers have also found that the amount of sleep an animal needs varies greatly with its body size.',
       E: 'As a result, sleep has gradually disappeared in species that face constant pressure from predators.'
@@ -1413,7 +1413,7 @@ Dr. Novak:
     options: {
       A: 'Combined with waste heat from cars and air conditioners, this stored energy sharply raises night-time temperatures.',
       B: 'Rural areas, in contrast, are covered mostly by vegetation, which releases moisture and cools the air.',
-      C: 'Green rooftops and reflective pavements are therefore becoming common features of new urban developments.',
+      C: 'Green rooftops and reflective pavements are therefore quickly becoming common features of new urban housing developments.',
       D: 'Some cities, however, have found that heat islands bring benefits such as lower heating costs in winter.',
       E: 'These materials are also cheaper and more durable than most of the natural alternatives available.'
     },
@@ -1467,7 +1467,7 @@ Dr. Novak:
     id: 'm2_q76',
     type: 'irrelevant_sentence',
     title: '76. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Deep-sea hydrothermal vents harbor chemosynthetic biospheres that thrive completely independent of solar energy. (II) These geothermal chimneys expel superheated fluids enriched with toxic hydrogen sulfide directly into the abyssal ocean. (III) Chemosynthetic bacteria oxidize these sulfur compounds, serving as the primary energetic base for giant tubeworms and blind shrimp. (IV) Commercial sport fishing charters along tropical coastlines have reported record-breaking catches of blue marlin this season. (V) Because these benthic ecosystems function without sunlight, astrobiologists study them as models for potential life beneath the ice crust of Jupiter’s moon Europa.`,
+    question: `(I) Deep-sea hydrothermal vents harbor chemosynthetic biospheres that thrive completely independent of solar energy. (II) Hydrothermal vents also release dissolved metals such as copper and zinc, which mining companies now hope to extract from the seabed on a commercial scale. (III) These geothermal chimneys expel superheated fluids enriched with toxic hydrogen sulfide directly into the abyssal ocean. (IV) Chemosynthetic bacteria oxidize these sulfur compounds, serving as the primary energetic base for giant tubeworms and blind shrimp. (V) Because these benthic ecosystems function without sunlight, astrobiologists study them as models for potential life beneath the ice crust of Jupiter’s moon Europa.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1475,17 +1475,17 @@ Dr. Novak:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'B',
     difficulty: 'Orta',
-    tacticUsed: 'Konu Dışı Ticari Balıkçılık Detayı: Paragraf derin deniz hidrotermal bacalarını anlatırken IV. cümle tropik spor balıkçılığından bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri derin deniz hidrotermal ekosistemlerini ve astrobiyolojiyi anlatır. IV alakasızdır.',
-    explanation: 'IV numaralı cümle mavi marlin balığı spor avcılığından bahsederek derin deniz jeotermal bacaları konusunun akışını tamamen bozmaktadır (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf, güneş ışığı olmadan yaşayan kemosentetik ekosistemi ve bunun astrobiyolojideki önemini anlatır. II. cümle de bacalardan söz eder ama konuyu ekosistemden deniz tabanı madenciliğine kaydırır. Doğru cevap B (II).'
   },
   {
     id: 'm2_q77',
     type: 'irrelevant_sentence',
     title: '77. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) During the Renaissance, Venice established its geopolitical dominance through a maritime trade monopoly over luxury Eastern goods. (II) Venetian merchants transported silk, exotic spices, and porcelain from Levantine ports to European consumers at immense profit margins. (III) This lucrative commercial hegemony generated the colossal municipal wealth that funded magnificent canals, palaces, and artistic patronage. (IV) Modern cruise ships entering the Venetian lagoon produce wake erosion that severely degrades the fragile underwater wooden pilings of historical buildings. (V) However, the Portuguese maritime discovery of a direct ocean route to India around the Cape of Good Hope permanently shattered the Venetian trade monopoly.`,
+    question: `(I) During the Renaissance, Venice established its geopolitical dominance through a maritime trade monopoly over luxury Eastern goods. (II) Venetian merchants transported silk, exotic spices, and porcelain from Levantine ports to European consumers at immense profit margins. (III) This lucrative commercial hegemony generated the colossal municipal wealth that funded magnificent canals, palaces, and artistic patronage. (IV) However, the Portuguese maritime discovery of a direct ocean route to India around the Cape of Good Hope permanently shattered the Venetian trade monopoly. (V) Today, Venice's historic centre attracts millions of tourists each year, many of whom come to admire the palaces built during this golden age.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1493,17 +1493,17 @@ Dr. Novak:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'E',
     difficulty: 'İleri',
-    tacticUsed: 'Zaman Kayması / Güncel Turizm Sapması: Paragraf Rönesans dönemi Venedik ticaret tarihini anlatırken IV. cümle günümüz kruvaziyer gemilerine atlar.',
-    trapWarning: 'I, II, III ve V cümleleri Rönesans dönemi tekelini ve Portekizlilerin bu tekeli kırmasını anlatır. IV modern çevre sorunudur.',
-    explanation: 'IV numaralı cümle günümüz lüks yolcu gemilerinin su kanallarına verdiği zarardan bahsederek Rönesans Venedik ticaret tarihi anlatısını bozmaktadır (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf Venedik\'in Rönesans\'taki ticaret tekelinin yükselişini ve Ümit Burnu yolunun bulunmasıyla çöküşünü anlatır. V. cümle Venedik ve saraylarla ilgili görünse de günümüz turizmine geçerek tarihsel akışı bozar. Doğru cevap E (V).'
   },
   {
     id: 'm2_q78',
     type: 'irrelevant_sentence',
     title: '78. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Honeybees perform essential pollination services that sustain both terrestrial wild ecosystems and commercial agricultural crop yields. (II) In recent decades, beekeepers have documented severe colony collapse disorder, losing millions of hives annually. (III) Epidemiological research reveals this crisis is driven by a toxic combination of neonicotinoid pesticides, parasitic Varroa mites, and floral habitat fragmentation. (IV) Gourmet wildflower honey produced in high-altitude volcanic regions frequently wins international culinary tasting competitions. (V) Unless environmental regulators implement stringent restrictions on neurotoxic agricultural chemical sprays, global food security will face catastrophic disruptions.`,
+    question: `(I) Honeybees perform essential pollination services that sustain both terrestrial wild ecosystems and commercial agricultural crop yields. (II) In recent decades, beekeepers have documented severe colony collapse disorder, losing millions of hives annually. (III) Honey production has also become a growing hobby among urban residents, who keep small hives on rooftops and balconies. (IV) Epidemiological research reveals this crisis is driven by a toxic combination of neonicotinoid pesticides, parasitic Varroa mites, and floral habitat fragmentation. (V) Unless environmental regulators implement stringent restrictions on neurotoxic agricultural chemical sprays, global food security will face catastrophic disruptions.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1511,17 +1511,17 @@ Dr. Novak:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'C',
     difficulty: 'Orta',
-    tacticUsed: 'Gurme Gastronomi Sapması: Paragraf arı ölümleri ve tarım ilacı tehdidini anlatırken IV. cümle gurme bal yarışmalarından bahseder.',
-    trapWarning: 'IV cümlede "honey" kelimesi geçse de konu balın lezzeti değil arıların yok olma tehlikesidir.',
-    explanation: 'IV numaralı cümle gurme balın ödül kazanmasından bahsederek arı ölümleri ve ekolojik kriz temasından kopmaktadır (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf arı kolonilerinin çöküşünü, nedenlerini ve gıda güvenliğine etkisini anlatır. III. cümle de arıcılıktan söz eder ama kriz konusundan kentte hobi arıcılığına sapar. Doğru cevap C (III).'
   },
   {
     id: 'm2_q79',
     type: 'irrelevant_sentence',
     title: '79. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) The development of mRNA vaccine technology represents a revolutionary paradigm shift in biomedical therapeutics. (II) Unlike traditional vaccines that introduce attenuated or inactivated pathogens to trigger immunity, mRNA vaccines deliver genetic instructions directly to host ribosomes. (III) Human cells temporarily synthesize the viral spike protein, prompting the immune system to construct robust neutralizing antibodies without risk of viral infection. (IV) Producing clinical glass vials for injectable medications requires specialized high-temperature furnaces manufactured predominantly in Germany. (V) This modular biological platform can be reprogrammed within weeks to target emerging viral mutations or customized oncological neoantigens.`,
+    question: `(I) The development of mRNA vaccine technology represents a revolutionary paradigm shift in biomedical therapeutics. (II) Unlike traditional vaccines that introduce attenuated or inactivated pathogens to trigger immunity, mRNA vaccines deliver genetic instructions directly to host ribosomes. (III) Human cells temporarily synthesize the viral spike protein, prompting the immune system to construct robust neutralizing antibodies without risk of viral infection. (IV) The first vaccine in history was developed by Edward Jenner in 1796, using material taken from cowpox lesions. (V) This modular biological platform can be reprogrammed within weeks to target emerging viral mutations or customized oncological neoantigens.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1531,15 +1531,15 @@ Dr. Novak:
     },
     answer: 'D',
     difficulty: 'Orta',
-    tacticUsed: 'Endüstriyel Cam Şişe Detayı: Paragraf mRNA teknolojisinin biyolojik mekanizmasını anlatırken IV. cümle fırın imalatından bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri mRNA\'nın çalışma prensibini ve hızını anlatır. IV alakasız cam fırını sanayisidir.',
-    explanation: 'IV numaralı cümle ilaç şişelerinin cam fırınlarından bahsederek biyolojik mRNA mekanizmasını bölen ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf mRNA aşılarının nasıl çalıştığını ve yeni varyantlara hızla uyarlanabildiğini anlatır. IV. cümle de aşıyla ilgilidir ama mRNA teknolojisinden aşının tarihine geçerek akışı keser; V. cümledeki "this modular platform" ifadesi III. cümleye bağlanır. Doğru cevap D (IV).'
   },
   {
     id: 'm2_q80',
     type: 'irrelevant_sentence',
     title: '80. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Arctic permafrost acts as a colossal planetary carbon repository, locking away twice as much carbon as is currently present in the global atmosphere. (II) As atmospheric warming accelerates in the polar latitudes, this perpetually frozen soil is thawing at an unprecedented rate. (III) Microbial decomposition of ancient organic matter in thawed permafrost liberates massive volumes of methane and carbon dioxide into the atmosphere. (IV) Ice hockey enthusiasts in northern Canadian communities enjoy outdoor skating tournaments on frozen lakes throughout January. (V) This self-reinforcing greenhouse feedback loop threatens to accelerate runaway planetary temperature increases beyond human mitigation capabilities.`,
+    question: `(I) Arctic permafrost acts as a colossal planetary carbon repository, locking away twice as much carbon as is currently present in the global atmosphere. (II) Permafrost also preserves the remains of extinct animals such as woolly mammoths, which offer scientists valuable genetic material. (III) As atmospheric warming accelerates in the polar latitudes, this perpetually frozen soil is thawing at an unprecedented rate. (IV) Microbial decomposition of ancient organic matter in thawed permafrost liberates massive volumes of methane and carbon dioxide into the atmosphere. (V) This self-reinforcing greenhouse feedback loop threatens to accelerate runaway planetary temperature increases beyond human mitigation capabilities.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1547,11 +1547,11 @@ Dr. Novak:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'B',
     difficulty: 'Orta',
-    tacticUsed: 'Buz Hokeyi Eğlencesi Sapması: Paragraf permafrost erimesi ve metan salınımı tehlikesini anlatırken IV. cümle buz pateni turnuvalarından bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri permafrostun sera gazı salınımı ve iklim geri besleme döngüsüdür. IV buz pateni hobisidir.',
-    explanation: 'IV numaralı cümle Kanada\'daki açık hava buz hokeyi turnuvalarından bahsederek tehlikeli küresel ısınma döngüsünü bozan alakasız cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf permafrostun karbon deposu olduğunu, eridikçe sera gazı saldığını ve bunun bir geri besleme döngüsü yarattığını anlatır. II. cümle de permafrostla ilgilidir ama karbon konusundan antik hayvan kalıntılarına geçer. Doğru cevap B (II).'
   }
 ];
 

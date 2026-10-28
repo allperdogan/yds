@@ -3,6 +3,7 @@ import { Gauge, Timer, TrendingUp, ArrowRight } from 'lucide-react';
 import { MockExamResult, QuestionType, UserStats } from '../types';
 import { STUDY_TOPICS } from '../services/studyTopics';
 import {
+  EASY_PRACTICE,
   estimateOverallScore,
   MIN_ANSWERS_FOR_ESTIMATE,
   QUESTION_TYPE_LABELS,
@@ -16,7 +17,7 @@ interface ScoreEstimateCardProps {
   onPracticeType: (type: QuestionType) => void;
 }
 
-const QUESTION_TYPE_BY_ID = new Map(STUDY_TOPICS.flatMap((t) => t.questions).map((q) => [q.id, q.type]));
+const QUESTION_BY_ID = new Map(STUDY_TOPICS.flatMap((t) => t.questions).map((q) => [q.id, q]));
 
 export const ScoreEstimateCard: React.FC<ScoreEstimateCardProps> = ({
   solvedQuestions,
@@ -27,11 +28,20 @@ export const ScoreEstimateCard: React.FC<ScoreEstimateCardProps> = ({
   const estimate = useMemo(() => {
     const records: SolvedRecord[] = [];
     Object.entries(solvedQuestions).forEach(([id, s]) => {
-      const type = QUESTION_TYPE_BY_ID.get(id);
-      if (type) records.push({ type, isCorrect: s.firstIsCorrect ?? s.isCorrect, seconds: s.seconds });
+      const q = QUESTION_BY_ID.get(id);
+      if (q)
+        records.push({
+          type: q.type,
+          isCorrect: s.firstIsCorrect ?? s.isCorrect,
+          seconds: s.seconds,
+          ...(q.id.startsWith('bank_') ? EASY_PRACTICE : {})
+        });
     });
     // Vocabulary drill answers stand in for the exam's vocabulary questions.
-    Object.values(vocabFirstAnswers).forEach((isCorrect) => records.push({ type: 'vocabulary', isCorrect }));
+    // Drill distractors are easier than ÖSYM's, so these count like easy practice.
+    Object.values(vocabFirstAnswers).forEach((isCorrect) =>
+      records.push({ type: 'vocabulary', isCorrect, ...EASY_PRACTICE })
+    );
     return estimateOverallScore(records, mockExamResults);
   }, [solvedQuestions, mockExamResults, vocabFirstAnswers]);
 

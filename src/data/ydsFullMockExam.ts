@@ -573,7 +573,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
       "A": "their declining numbers pose a serious threat to global food security",
       "B": "many farmers have begun to rent hives during the flowering season",
       "C": "they have been studied by biologists for more than two centuries",
-      "D": "honey has long been one of the most widely traded natural products",
+      "D": "honey has long been one of the most widely traded natural products in the world",
       "E": "some wild bee species have become more common in urban gardens"
     },
     "answer": "A",
@@ -590,7 +590,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "online learning platforms allow self-paced mastery irrespective of physical location",
       "B": "online courses are also limited to a fixed schedule of live lectures",
-      "C": "students learn more effectively when they interact with a teacher face to face",
+      "C": "students generally learn more effectively when they interact with a teacher face to face in class",
       "D": "most universities have been reluctant to give up their physical campuses",
       "E": "classroom teachers can adapt their lessons to the needs of each student"
     },
@@ -628,7 +628,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
       "B": "as many experts had predicted at the beginning of the decade",
       "C": "that most universities banned their use in written exams years ago",
       "D": "since researchers first trained them on large collections of text",
-      "E": "that their ability to understand meaning has been proven conclusively"
+      "E": "that their ability to understand meaning has now been proven conclusively by experts"
     },
     "answer": "A",
     "difficulty": "Zor",
@@ -732,7 +732,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "39. Soru - Çeviri (İngilizce -> Türkçe)",
     "question": "Archaeologists excavating in Central America have uncovered ancient Mayan settlements that were far more interconnected and populous than previously estimated.",
     "options": {
-      "A": "Orta Amerika'da kazı yapan arkeologlar, önceden tahmin edilenden çok daha kalabalık olan ve birbirine bağlanan antik Maya yerleşimlerini yeni tekniklerle buldular.",
+      "A": "Orta Amerika'da kazı yapan arkeologlar, önceden tahmin edilenden çok daha kalabalık olan ve birbirine bağlanan antik Maya yerleşimlerini yeni lazer tarama teknikleriyle buldular.",
       "B": "Orta Amerika'daki antik Maya yerleşimleri, orada kazı yapan arkeologların önceden tahmin ettiğinden çok daha kalabalık ve birbirine bağlı çıkmıştır.",
       "C": "Orta Amerika'da kazı yapan arkeologlar, önceden tahmin edilenden çok daha fazla birbirine bağlı ve kalabalık olan antik Maya yerleşimlerini gün yüzüne çıkarmışlardır.",
       "D": "Önceden tahmin edilenin aksine, Orta Amerika'da kazı yapan arkeologların bulduğu antik Maya yerleşimleri son derece kalabalıktır.",
@@ -770,7 +770,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "Quantum computers solve complicated calculations in seconds, whereas conventional supercomputers require thousands of years.",
       "B": "Quantum computers possess the potential to solve in seconds complex problems that would take conventional supercomputers thousands of years to solve.",
-      "C": "Because conventional supercomputers take thousands of years to solve complex problems, quantum computers were developed to achieve this in seconds.",
+      "C": "Because conventional supercomputers take thousands of years to solve complex problems, quantum computers were specifically developed to achieve this in seconds.",
       "D": "It would take thousands of years for supercomputers to solve complex problems without the extraordinary speed of quantum computing.",
       "E": "Complex problems that require thousands of years can potentially be solved in seconds if conventional supercomputers adopt quantum processors."
     },
@@ -827,7 +827,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
       "A": "were costly and likely to cause unintended mutations",
       "B": "were more precise but much slower than CRISPR",
       "C": "could not be used in clinical trials on humans",
-      "D": "were based on the same bacterial defense system",
+      "D": "were based on exactly the same bacterial defense system",
       "E": "raised fewer ethical concerns than CRISPR does"
     },
     "answer": "A",
@@ -845,7 +845,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "has not yet been tested in clinical trials on humans",
       "B": "introduces modifications that can be passed down to future generations",
-      "C": "is much more expensive than other forms of gene editing",
+      "C": "is much more expensive and technically demanding than the other available forms of gene editing",
       "D": "may cause unexpected mutations in the treated patient",
       "E": "is used to treat diseases such as hereditary blindness"
     },
@@ -862,7 +862,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "Which of the following would be the best title for the passage?",
     "options": {
-      "A": "How Bacteria Defend Themselves Against Viruses",
+      "A": "How Bacteria Have Always Defended Themselves Against Invading Viruses",
       "B": "CRISPR-Cas9: A Genetic Revolution and Its Ethical Dilemmas",
       "C": "The Case Against Editing Human Embryos",
       "D": "New Treatments for Sickle-Cell Disease",
@@ -1034,7 +1034,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "question": "According to evolutionary psychologists, cognitive biases originally developed because they _____ .",
     "options": {
       "A": "helped our ancestors make quick decisions in dangerous conditions",
-      "B": "allowed early humans to analyse information more accurately",
+      "B": "allowed early humans to analyse complex information more accurately and slowly",
       "C": "protected people from the influence of their own beliefs",
       "D": "helped ancestors cope with an excess of information",
       "E": "were a design flaw that natural selection failed to remove"
@@ -1054,7 +1054,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "favour information that supports what one already believes",
       "B": "change one's beliefs whenever new evidence appears",
-      "C": "accept the views of the majority to avoid conflict",
+      "C": "accept the views of the majority in order to avoid open conflict with others",
       "D": "remember mainly information that is surprising",
       "E": "doubt evidence that comes from unfamiliar sources"
     },
@@ -1092,7 +1092,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "argue that cognitive biases should be treated as mental disorders",
       "B": "explain where cognitive biases come from and how they affect society today",
-      "C": "compare the thinking of hunter-gatherers with that of modern humans",
+      "C": "compare the everyday thinking of prehistoric hunter-gatherers with that of modern city dwellers",
       "D": "warn readers about the dangers of social media algorithms",
       "E": "show how confirmation bias can be overcome through education"
     },
@@ -1130,7 +1130,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "makes the models better at memorising their training data",
       "B": "can lead to reasoning abilities that go beyond memorisation",
-      "C": "proves that the models truly understand the physical world",
+      "C": "proves beyond doubt that the models truly understand the physical world",
       "D": "reduces the errors the models make in grammar",
       "E": "allows the models to predict words without statistics"
     },
@@ -1149,7 +1149,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "has largely been resolved in favour of the skeptics",
       "B": "centres on whether statistical prediction can amount to real understanding",
-      "C": "is mainly about how large the models should be allowed to become",
+      "C": "is mainly about how large and expensive the models should be allowed to become in future",
       "D": "concerns whether LLMs produce grammatically correct language",
       "E": "is likely to be settled by the next generation of models"
     },
@@ -1186,7 +1186,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "question": "Dr. Evans: Did you review the latest clinical trial results for the novel oncology drug?\nProf. Jenkins: Yes, and while the tumor shrinkage was indeed impressive, the incidence of severe hepatotoxicity among elderly patients is alarming.\nDr. Evans: _____ \nProf. Jenkins: Exactly. Unless we can synthesize a targeted delivery mechanism, the regulatory agency will never grant commercial approval.",
     "options": {
       "A": "So you think the side effects may outweigh its benefits for these patients?",
-      "B": "So you think we should simply lower the dose for elderly patients?",
+      "B": "So you think we should simply lower the dose for elderly patients and continue the trial?",
       "C": "So you believe the liver damage was caused by another medication?",
       "D": "So you suggest we test the drug on younger patients only?",
       "E": "So you expect the agency to approve it despite the side effects?"
@@ -1297,7 +1297,7 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "69. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'Although electric vehicles produce zero tailpipe emissions, their overall environmental benefits remain contingent upon how cleanly the electricity charging their batteries is generated.'",
     "options": {
-      "A": "Because electric vehicles produce no exhaust, they benefit the environment however their electricity is produced.",
+      "A": "Because electric vehicles produce no exhaust at all, they always benefit the environment however their electricity is produced.",
       "B": "Electric vehicles emit nothing from the exhaust, but how green they really are depends on how their power is generated.",
       "C": "Electric vehicles would produce zero tailpipe emissions only if their electricity were generated cleanly.",
       "D": "The way electricity is generated has little effect on the environment compared with tailpipe emissions.",

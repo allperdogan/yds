@@ -3,6 +3,7 @@ import { YDS_GRAMMAR_DRILL_BANK } from './ydsGrammarBank';
 import { PREPOSITION_REFLEX_QUESTIONS } from './ydsPrepositions';
 import { shuffleQuestionList } from '../services/optionShuffle';
 import { PARAGRAPH_TYPE_BANKS } from './banks';
+import { TRANSLATION_BANK } from './banks/translationBank';
 
 const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
   // 1. KELİME SORUSU (Vocabulary)
@@ -277,7 +278,8 @@ export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
   ...shuffleQuestionList(BASE_YDS_QUESTIONS_DATA),
   ...YDS_GRAMMAR_DRILL_BANK,
   ...PREPOSITION_REFLEX_QUESTIONS,
-  ...PARAGRAPH_TYPE_BANKS
+  ...PARAGRAPH_TYPE_BANKS,
+  ...TRANSLATION_BANK
 ];
 
 import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam';
