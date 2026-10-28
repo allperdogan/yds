@@ -678,15 +678,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Climate scientists emphasize that preserving tropical rainforests is essential not only for conserving global biodiversity but also for mitigating planetary carbon accumulation.',
     options: {
       A: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın yalnızca küresel biyoçeşitliliği muhafaza etmek için değil, aynı zamanda gezegensel karbon birikimini azaltmak için de elzem olduğunu vurgulamaktadır.',
-      B: 'Tropikal yağmur ormanlarının korunması, iklim bilimcilere göre biyoçeşitlilik kadar karbon birikimini önlemek açısından da gereklidir.',
-      C: 'İklim bilimcilerin vurguladığı gibi, gezegensel karbon birikimini azaltmak için yağmur ormanlarını korumak biyoçeşitlilikten daha önemlidir.',
-      D: 'Yağmur ormanlarının korunması gerektiği, hem biyoçeşitlilik kaybı hem de karbon birikimi konusunda iklim bilimciler tarafından savunulmaktadır.',
-      E: 'Gezegensel karbon birikimi ve biyoçeşitlilik kaybı, iklim bilimcilerin belirttiği gibi tropikal yağmur ormanlarının yok olmasıyla hızlanmaktadır.'
+      B: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın küresel biyoçeşitliliği muhafaza etmekten çok gezegensel karbon birikimini azaltmak için elzem olduğunu vurgulamaktadır.',
+      C: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın küresel biyoçeşitliliği muhafaza etmek için elzem olduğunu, ancak gezegensel karbon birikimini azaltmadığını vurgulamaktadır.',
+      D: 'İklim bilimciler, gezegensel karbon birikimini azaltmanın yalnızca tropikal yağmur ormanlarını değil, aynı zamanda küresel biyoçeşitliliği korumak için de elzem olduğunu vurgulamaktadır.',
+      E: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın küresel biyoçeşitliliği muhafaza etmek ya da gezegensel karbon birikimini azaltmak için yeterli olmayabileceğini vurgulamaktadır.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Not only ... but also (Yalnızca ... değil, aynı zamanda ...) & "emphasize that" (vurgulamaktadır)',
-    trapWarning: 'C şıkkında birinin diğerinden daha önemli olduğu söylenir; oysa metin her ikisinin de elzem olduğunu söyler.',
+    trapWarning: '"not only ... but also" iki amacı eşit ağırlıkta verir. B bir karşılaştırma (-den çok) kurar, C ikinci amacı olumsuzlar, D öznesi ile nesneyi yer değiştirir, E ise anlamı tersine çevirir.',
     explanation: 'Özne: Climate scientists, Ana Fiil: emphasize that (vurgulamaktadır), Bağlaç: not only ... but also (yalnızca ... değil aynı zamanda). Doğru cevap A.'
   },
   {
@@ -695,17 +695,17 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '38. Soru - İngilizce-Türkçe Çeviri',
     question: 'Although early historians considered the Roman Empire to be an impregnable superpower, recent archaeological excavations reveal that internal economic decay weakened its frontiers long before nomadic invasions.',
     options: {
-      A: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak değerlendirmiş olsalar da, son arkeolojik kazılar iç ekonomik çöküşün göçebe istilalarından çok önce sınırlarını zayıflattığını ortaya koymaktadır.',
-      B: 'Son arkeolojik kazılar Roma\'nın iç ekonomik çöküşünü gösterse de ilk tarihçiler imparatorluğun göçebe istilalarıyla yıkıldığını düşünüyordu.',
-      C: 'Roma İmparatorluğu zapt edilemez bir güç sanılsa da göçebe akınları iç ekonomik çöküşü tetiklemiş ve sınırları zayıflatmıştır.',
-      D: 'İlk tarihçilerin süper güç olarak tanımladığı Roma İmparatorluğu, arkeolojik kazılara göre göçebe istilaları yüzünden zayıflamıştır.',
-      E: 'Arkeolojik kazılar iç ekonomik çöküşü kanıtlayana kadar tarihçiler Roma İmparatorluğu\'nun süper güç olduğuna inanmaktaydı.'
+      A: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmüş olsalar da, son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından çok önce zayıflattığını ortaya koymaktadır.',
+      B: 'Son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından çok önce zayıflattığını ortaya koysa da, ilk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmeye devam etmektedir.',
+      C: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmüş olsalar da, son kazılar göçebe istilalarının iç ekonomik çöküşü tetikleyerek sınırlarını zayıflattığını ortaya koymaktadır.',
+      D: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak gördükleri için, son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından çok önce zayıflattığını ortaya koymaktadır.',
+      E: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmüş olsalar da, son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından hemen sonra zayıflattığını ortaya koymaktadır.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Although (olsalar da) & "reveal that" (ortaya koymaktadır)',
-    trapWarning: 'B şıkkında ana fikir kaydırılmıştır; orijinal cümle kazıların iç ekonomik çöküşü ortaya koyduğunu vurgular.',
-    explanation: 'Although considered... (değerlendirmiş olsalar da), recent excavations reveal... (kazılar ortaya koymaktadır). Kusursuz karşılık A şıkkıdır.'
+    trapWarning: 'B zıtlığı yanlış cümleye taşır, D zıtlığı sebebe çevirir. C sebep-sonucu tersine çevirir (çöküşü istilalar tetiklemiş gibi), E ise "long before" ifadesini "hemen sonra" diye çevirir.',
+    explanation: 'Although considered... (görmüş olsalar da), recent excavations reveal... (kazılar ortaya koymaktadır). Kusursuz karşılık A şıkkıdır.'
   },
   {
     id: 'm3_q39',
@@ -713,17 +713,17 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '39. Soru - İngilizce-Türkçe Çeviri',
     question: 'Epidemiologists warn that unless global vaccination distribution is handled equitably, new viral mutations could arise in under-immunized populations and threaten international health security.',
     options: {
-      A: 'Epidemiyologlar, küresel aşı dağıtımı adil bir şekilde ele alınmadıkça, yetersiz aşılanmış nüfuslarda yeni viral mutasyonların ortaya çıkabileceği ve uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarmaktadır.',
-      B: 'Küresel aşı dağıtımının adil yapılmaması durumunda, yeni mutasyonların ortaya çıkıp uluslararası sağlığı tehdit ettiği epidemiyologlarca uyarılmıştır.',
-      C: 'Yetersiz aşılanan bölgelerde ortaya çıkan mutasyonların uluslararası sağlığı tehdit ettiği, epidemiyologların aşı dağıtımı uyarısıyla kanıtlanmıştır.',
-      D: 'Epidemiyologların uyardığı üzere, mutasyonları engellemek için küresel aşı dağıtımının uluslararası kuruluşlarca yapılması zorunludur.',
-      E: 'Aşı dağıtımı adil yapılmadığı için ortaya çıkan yeni viral mutasyonlar, epidemiyologlara göre küresel sağlık güvenliğini sarsmaktadır.'
+      A: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılmadıkça, yeterince aşılanmamış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarıyor.',
+      B: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılırsa, yeterince aşılanmamış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarıyor.',
+      C: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılmadığı için, yeterince aşılanmamış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit ettiği konusunda uyarıyor.',
+      D: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılmadıkça, tamamen aşılanmış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarıyor.',
+      E: 'Epidemiyologlar, yeterince aşılanmamış nüfuslarda ortaya çıkan yeni viral mutasyonlar uluslararası sağlık güvenliğini tehdit etmedikçe küresel aşı dağıtımının adil yapılamayacağı konusunda uyarıyor.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Unless (ele alınmadıkça) & "could arise ... and threaten" (ortaya çıkabilir ve tehdit edebilir)',
-    trapWarning: 'E şıkkında "yapılmadığı için" denerek sebep cümlesi yapılmıştır; orijinal cümle şart (Unless) içerir.',
-    explanation: 'Unless handled equitably: adil ele alınmadıkça. Could arise and threaten: ortaya çıkabilir ve tehdit edebilir. Doğru cevap A.'
+    trapWarning: 'unless = -medikçe. B olumsuzluğu kaybeder, C koşulu gerçekleşmiş bir sebebe ve could modalını kesinliğe çevirir. D "under-immunized" ifadesini "tamamen aşılanmış" diye çevirir, E ise koşul ile sonucu yer değiştirir.',
+    explanation: 'Unless handled equitably: adil yapılmadıkça. Could arise and threaten: ortaya çıkabilir ve tehdit edebilir. Doğru cevap A.'
   },
   {
     id: 'm3_q40',
@@ -732,15 +732,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Yapay zekanın tıbbi görüntüleri analiz etmedeki başarısı kanıtlanmış olsa da, teşhis sürecinde hekimlerin mesleki deneyimi hala vazgeçilmez kabul edilmektedir.',
     options: {
       A: 'Although the success of artificial intelligence in analyzing medical images has been proven, the professional experience of physicians is still considered indispensable in the diagnostic process.',
-      B: 'Since artificial intelligence successfully analyzes medical imagery, physicians no longer need extensive experience in the diagnostic process.',
-      C: 'The professional experience of physicians in diagnosis is indispensable because artificial intelligence cannot accurately analyze medical images.',
-      D: 'Even if physicians use artificial intelligence to analyze images, their diagnostic decisions are frequently questioned by specialists.',
-      E: 'Artificial intelligence has revolutionized medical imaging, yet human physicians refuse to rely on its diagnostic accuracy.'
+      B: 'Since the success of artificial intelligence in analyzing medical images has been proven, the professional experience of physicians is no longer considered indispensable in the diagnostic process.',
+      C: 'Although the success of artificial intelligence in analyzing medical images has not yet been proven, the professional experience of physicians is still considered indispensable in diagnosis.',
+      D: 'Although the professional experience of physicians has been proven in analyzing medical images, artificial intelligence is still considered indispensable in the diagnostic process.',
+      E: 'Although the success of artificial intelligence in analyzing medical images has been proven, the professional experience of physicians was once considered indispensable in diagnosis.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Türkçe "kanıtlanmış olsa da" = Although the success has been proven & "still considered indispensable"',
-    trapWarning: 'B şıkkında "Since" (çünkü) kullanılmıştır; cümlede zıtlık vardır.',
+    trapWarning: 'B zıtlığı sebebe çevirir ve sonucu tersine çevirir. C "kanıtlanmış" ifadesini olumsuzlar, D yapay zeka ile hekimin yerini değiştirir, E ise "hâlâ" yerine "bir zamanlar" diyerek zamanı bozar.',
     explanation: 'Başarısı kanıtlanmış olsa da: Although the success has been proven... Hala vazgeçilmez kabul edilmektedir: is still considered indispensable. Doğru cevap A.'
   },
   {
@@ -750,15 +750,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Sanayi devriminden bu yana atmosferdeki sera gazı yoğunluğunun sürekli artması, küresel iklim krizinin başlıca nedeni olarak görülmektedir.',
     options: {
       A: 'The continuous increase in atmospheric greenhouse gas concentrations since the Industrial Revolution is regarded as the primary cause of the global climate crisis.',
-      B: 'Atmospheric greenhouse gases have increased because the global climate crisis accelerated during the Industrial Revolution.',
-      C: 'The Industrial Revolution caused the global climate crisis by generating massive concentrations of industrial greenhouse gases.',
-      D: 'Since the Industrial Revolution, greenhouse gas emissions have stabilized, reducing the severity of the global climate crisis.',
-      E: 'Although the climate crisis began with the Industrial Revolution, atmospheric gas concentrations have only recently been measured.'
+      B: 'The continuous increase in atmospheric greenhouse gas concentrations since the Industrial Revolution is regarded as a direct result of the global climate crisis.',
+      C: 'The continuous increase in atmospheric greenhouse gas concentrations before the Industrial Revolution is regarded as the primary cause of the global climate crisis.',
+      D: 'The occasional increase in atmospheric greenhouse gas concentrations since the Industrial Revolution is regarded as one of several minor causes of the climate crisis.',
+      E: 'The continuous increase in atmospheric greenhouse gas concentrations since the Industrial Revolution was once regarded as the primary cause of the global climate crisis.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Özne-Yüklem: "The continuous increase ... is regarded as the primary cause"',
-    trapWarning: 'B şıkkında sebep-sonuç tersine çevrilmiştir (gazlar kriz yüzünden arttı denmiştir).',
+    trapWarning: 'B sebep-sonucu tersine çevirir, C "since" yerine "before" der. D "sürekli" ve "başlıca" kelimelerini yanlış verir, E ise bugünkü görüşü geçmişe taşır (was once regarded).',
     explanation: 'Sera gazı yoğunluğunun sürekli artması (The continuous increase in concentrations), başlıca nedeni olarak görülmektedir (is regarded as the primary cause). Doğru cevap A.'
   },
   {
@@ -768,15 +768,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Gelişmiş ülkeler yenilenebilir enerji teknolojilerine yeterli finansman sağlamadıkça, gelişmekte olan ekonomilerin kömüre bağımlılığı devam edecektir.',
     options: {
       A: 'Unless developed countries provide adequate financing for renewable energy technologies, the reliance of developing economies on coal will continue.',
-      B: 'If developed nations finance renewable technologies, developing countries will immediately cease burning domestic coal reserves.',
-      C: 'Developing economies depend on coal because developed nations have banned foreign investments in renewable energy.',
-      D: 'Although developed nations offer financial support, developing economies prefer coal over renewable technologies.',
-      E: 'Developed countries should invest in renewable energy so that developing nations can reduce their industrial electricity costs.'
+      B: 'If developed countries provide adequate financing for renewable energy technologies, the reliance of developing economies on coal will continue.',
+      C: 'Unless developing countries provide adequate financing for renewable energy technologies, the reliance of developed economies on coal will continue.',
+      D: 'Because developed countries have not provided adequate financing for renewable energy technologies, developing economies have stopped relying on coal.',
+      E: 'Unless developed countries provide adequate financing for renewable energy technologies, the reliance of developing economies on coal will soon end.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: '"-sağlamadıkça" = Unless & "reliance on coal will continue"',
-    trapWarning: 'Şart bildiren "sağlamadıkça" ifadesini karşılayan yapı "Unless"tir.',
+    trapWarning: '"sağlamadıkça" = Unless. B olumsuzluğu kaybeder, C gelişmiş ve gelişmekte olan ülkelerin yerini değiştirir. D koşulu sebebe çevirir ve sonucu tersine çevirir, E ise "devam edecektir" yerine "sona erecektir" der.',
     explanation: 'Finansman sağlamadıkça: Unless developed countries provide adequate financing... Kömüre bağımlılık devam edecektir: reliance on coal will continue. Doğru cevap A.'
   },
 

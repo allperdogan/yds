@@ -678,15 +678,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Glaciologists warn that the accelerated melting of the Thwaites Glacier in West Antarctica could trigger an irreversible cascade that raises global sea levels by several meters.',
     options: {
       A: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesinin küresel deniz seviyelerini birkaç metre yükselten geri döndürülemez bir zincirleme süreci tetikleyebileceği konusunda uyarıyor.',
-      B: 'Batı Antarktika\'daki Thwaites Buzulu\'nun erimesi, buzulbilimcilere göre küresel deniz seviyesini yükseltecek geri dönülmez zincirleme bir reaksiyona yol açmıştır.',
-      C: 'Buzulbilimcilerin uyardığı gibi, küresel deniz seviyelerinin birkaç metre yükselmesi Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini tetikleyebilir.',
-      D: 'Thwaites Buzulu\'nun Batı Antarktika\'da hızla erimesi, buzulbilimcilerin uyardığı üzere deniz seviyesinde birkaç metrelik geri dönüşsüz artışa sebep olacaktır.',
-      E: 'Küresel deniz seviyesini birkaç metre yükseltecek zincirleme felaket, buzulbilimcilerin belirttiği gibi Thwaites Buzulu\'nun erimesiyle tetiklenmektedir.'
+      B: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesinin küresel deniz seviyelerini birkaç metre yükselten geri döndürülemez bir zincirleme süreci tetiklediği konusunda uyarıyor.',
+      C: 'Buzulbilimciler, küresel deniz seviyelerinin birkaç metre yükselmesinin Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini hızlandıran geri döndürülemez bir süreci tetikleyebileceği konusunda uyarıyor.',
+      D: 'Buzulbilimcilere göre Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesi, küresel deniz seviyelerini birkaç metre yükseltecek geri döndürülemez bir zincirleme süreci mutlaka tetikleyecektir.',
+      E: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini hızlandırabilecek geri döndürülemez bir zincirleme sürecin küresel deniz seviyelerini birkaç metre yükseltebileceği konusunda uyarıyor.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Ana Yüklem ve Özne Eşleştirme: Glaciologists warn that... (Buzulbilimciler ... konusunda uyarıyor)',
-    trapWarning: 'B şıkkında "yol açmıştır" diyerek geçmiş zaman yapılmıştır; oysa metin "could trigger" (tetikleyebilir) modalı kullanır.',
+    trapWarning: 'Bütün şıklar aynı kelimeleri kullanır; fark ayrıntıdadır. B "tetiklediği" diyerek could (-ebilir) modalını atar, D "mutlaka tetikleyecektir" diyerek kesinlik ekler. C ve E ise sebep-sonuç ilişkisini ters kurar.',
     explanation: 'Özne: "Glaciologists" (Buzulbilimciler), Ana Fiil: "warn that" (uyarıyor), Yan Cümle Yüklemi: "could trigger" (tetikleyebilir). Birebir ve eksiksiz çeviri A şıkkıdır.'
   },
   {
@@ -696,15 +696,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Although early European explorers perceived the Amazon basin as an untouched wilderness, recent satellite scans reveal extensive ancient civilizations that reshaped the rainforest.',
     options: {
       A: 'İlk Avrupalı kaşifler Amazon havzasını el değmemiş bir yaban hayatı olarak algılamış olsalar da, son uydu taramaları yağmur ormanını yeniden şekillendiren geniş antik uygarlıkları ortaya koymaktadır.',
-      B: 'Son uydu taramaları Amazon yağmur ormanlarını şekillendiren antik uygarlıkları gösterse de Avrupalı kaşifler burayı el değmemiş sanıyordu.',
-      C: 'Amazon havzasının el değmemiş bir yaban olduğu inancı, Avrupalı kaşiflerin yanılması ve uydu taramalarının antik uygarlıkları bulmasıyla yıkılmıştır.',
-      D: 'İlk Avrupalı kaşiflerin el değmemiş olarak tanımladığı Amazon havzasında, yağmur ormanlarını şekillendirmiş pek çok antik uygarlık uyduyla bulunmuştur.',
-      E: 'Geniş antik uygarlıkların Amazon havzasını şekillendirdiğini gösteren uydu taramaları, ilk kaşiflerin iddialarını tamamen yalanlamaktadır.'
+      B: 'Son uydu taramaları yağmur ormanını yeniden şekillendiren geniş antik uygarlıkları ortaya koysa da, ilk Avrupalı kaşifler Amazon havzasını el değmemiş bir yaban hayatı olarak algılamaya devam etmiştir.',
+      C: 'İlk Avrupalı kaşifler Amazon havzasını el değmemiş bir yaban hayatı olarak algıladıkları için, son uydu taramaları yağmur ormanını yeniden şekillendiren geniş antik uygarlıkları ortaya koymaktadır.',
+      D: 'İlk Avrupalı kaşiflerin el değmemiş bir yaban hayatı olarak algıladığı Amazon havzasında, son uydu taramaları yağmur ormanını yok eden geniş antik uygarlıkları ortaya koymaktadır.',
+      E: 'İlk Avrupalı kaşifler Amazon havzasını el değmemiş bir yaban hayatı olarak algılamış olsalar da, son uydu taramaları yağmur ormanının antik uygarlıkları yeniden şekillendirdiğini ortaya koymaktadır.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Although (olsalar da / -e rağmen) Zıtlık Yapısı ve "reveal" Fiili',
-    trapWarning: 'B şıkkında zıtlık bağlacı uydu taramalarına kaydırılmıştır; oysa orijinal cümlede Although kaşiflerin algısına bağlıdır.',
+    trapWarning: 'B zıtlık bağlacını yanlış cümleye taşır, C zıtlığı sebebe çevirir. D "reshaped" fiilini "yok eden" diye yanlış çevirir, E ise özne ile nesneyi yer değiştirir: ormanı uygarlıklar şekillendirmiştir, tersi değil.',
     explanation: 'Although explorers perceived... (kaşifler algılamış olsalar da), recent satellite scans reveal... (son uydu taramaları ortaya koymaktadır). Kusursuz karşılık A şıkkıdır.'
   },
   {
@@ -714,15 +714,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Neuroimaging studies demonstrate that regular aerobic exercise not only enhances cardiovascular stamina but also stimulates neurogenesis in the hippocampus.',
     options: {
       A: 'Nörogörüntüleme çalışmaları, düzenli aerobik egzersizin yalnızca kardiyovasküler dayanıklılığı artırmakla kalmayıp aynı zamanda hipokampüste nörojenezi uyardığını göstermektedir.',
-      B: 'Düzenli aerobik egzersiz yapmak kardiyovasküler dayanıklılığı artırırken hipokampüste de nörojenezi uyarır.',
-      C: 'Hipokampüste nörojenezi uyaran aerobik egzersizin kardiyovasküler sistemi güçlendirdiği nörogörüntüleme çalışmalarıyla kanıtlanmıştır.',
-      D: 'Nörogörüntüleme çalışmalarına göre aerobik egzersiz dayanıklılık sağladığı için hipokampüsün nörojenez kapasitesini destekler.',
-      E: 'Kardiyovasküler dayanıklılık ve hipokampüsteki nörojenez, düzenli egzersiz sayesinde nörogörüntüleme uzmanları tarafından incelenmiştir.'
+      B: 'Nörogörüntüleme çalışmaları, düzenli aerobik egzersizin kardiyovasküler dayanıklılığı artırdığı için hipokampüste nörojenezi de uyardığını göstermektedir.',
+      C: 'Nörogörüntüleme çalışmaları, düzenli aerobik egzersizin kardiyovasküler dayanıklılığı artırmadığını, ancak hipokampüste nörojenezi uyardığını göstermektedir.',
+      D: 'Nörogörüntüleme çalışmaları, hipokampüste nörojenezi uyaran düzenli aerobik egzersizin yalnızca kardiyovasküler dayanıklılığı artırabileceğini öne sürmektedir.',
+      E: 'Nörogörüntüleme çalışmaları, düzenli aerobik egzersizin kardiyovasküler dayanıklılığı artırmakla kalmayıp aynı zamanda hipokampüsü küçülttüğünü göstermektedir.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Not only ... but also (Yalnızca ... kalmayıp aynı zamanda...) Kalıp Eşleştirmesi',
-    trapWarning: '"not only ... but also" kalıbını birebir veren tek seçenek A şıkkıdır.',
+    trapWarning: '"not only ... but also" iki olumlu etkiyi yan yana koyar. B bunu sebep-sonuca, C olumsuzluğa çevirir. D "yalnızca" diyerek anlamı daraltır, E ise "stimulates neurogenesis" ifadesini tam tersine çevirir.',
     explanation: 'Ana yüklem "demonstrate that" (göstermektedir), bağlaç "not only ... but also" (yalnızca ... kalmayıp aynı zamanda). Doğru cevap A.'
   },
   {
@@ -732,15 +732,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Yapay zekanın tıbbi teşhislerde kullanımı son yıllarda hızla artmış olsa da, nihai kararın her zaman insan hekimler tarafından verilmesi gerektiği savunulmaktadır.',
     options: {
       A: 'Although the use of artificial intelligence in medical diagnostics has rapidly increased in recent years, it is argued that the final decision must always be made by human physicians.',
-      B: 'Since artificial intelligence has been widely used in medical diagnosis recently, human physicians must always make the final decision.',
-      C: 'The rapid increase in artificial intelligence applications in medicine demonstrates that human physicians should not make the final decision alone.',
-      D: 'Even if the final decision is made by human physicians, the adoption of artificial intelligence in diagnostics has grown exponentially.',
-      E: 'Because artificial intelligence in medical diagnosis is advancing, medical authorities argue that physicians will lose their decision-making power.'
+      B: 'Since the use of artificial intelligence in medical diagnostics has rapidly increased in recent years, it is argued that the final decision must always be made by human physicians.',
+      C: 'Although the use of artificial intelligence in medical diagnostics has rapidly increased in recent years, it is argued that the final decision should no longer be left to human physicians.',
+      D: 'Although the use of artificial intelligence in medical diagnostics may increase rapidly in the coming years, it is argued that the final decision must always be made by human physicians.',
+      E: 'Even if human physicians always make the final decision, it is argued that the use of artificial intelligence in medical diagnostics has rapidly increased in recent years.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Türkçe "olsa da" = Although / Even though & "it is argued that" (savunulmaktadır)',
-    trapWarning: 'B şıkkında "Since" (çünkü) kullanılmıştır; cümlede zıtlık (olsa da) vardır.',
+    trapWarning: 'B zıtlığı sebebe (Since) çevirir, C ana fikri tersine çevirir. D zamanı kaydırır ("artmış" değil "artabilir"), E ise zıtlık bağlacını yanlış cümleye taşır.',
     explanation: 'Artmış olsa da: Although the use has increased. Nihai kararın insan hekimler tarafından verilmesi gerektiği savunulmaktadır: it is argued that the final decision must always be made by human physicians. Doğru cevap A.'
   },
   {
@@ -750,15 +750,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Derin deniz madenciliği, kritik mineralleri temin etmek için cazip bir seçenek olarak görünse de, kırılgan deniz ekosistemlerine geri döndürülemez zararlar verebilir.',
     options: {
       A: 'While deep-sea mining appears to be an attractive option to secure critical minerals, it could inflict irreversible damage on fragile marine ecosystems.',
-      B: 'Deep-sea mining is an attractive option to obtain minerals because it does not harm fragile marine ecosystems.',
-      C: 'Fragile marine ecosystems have been damaged by deep-sea mining, which is why extracting critical minerals has been banned.',
-      D: 'Critical minerals can be secured through deep-sea mining, provided that marine ecosystems are protected from irreversible damage.',
-      E: 'Although deep-sea mining damages fragile ecosystems, governments consider it the only option for mineral procurement.'
+      B: 'Since deep-sea mining appears to be an attractive option to secure critical minerals, it could inflict irreversible damage on fragile marine ecosystems.',
+      C: 'While deep-sea mining appears to be an attractive option to secure critical minerals, it has already inflicted irreversible damage on fragile marine ecosystems.',
+      D: 'Deep-sea mining could be an attractive option to secure critical minerals, provided that it does not inflict irreversible damage on fragile marine ecosystems.',
+      E: 'While fragile marine ecosystems appear to be an attractive source of critical minerals, deep-sea mining could inflict irreversible damage on them.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'While / Although (görünse de) & "could inflict irreversible damage" (zarar verebilir)',
-    trapWarning: 'D şıkkında "provided that" (şartıyla) koşul bağlacı kullanılmıştır; oysa metin zıtlık bildirir.',
+    trapWarning: 'B zıtlığı sebebe çevirir, D koşul (provided that) kurar. C "verebilir" yerine "vermiştir" der, E ise cazip görünenin madencilik değil ekosistem olduğunu söyler.',
     explanation: 'Cazip bir seçenek olarak görünse de: While deep-sea mining appears to be an attractive option... Geri döndürülemez zararlar verebilir: it could inflict irreversible damage. Doğru cevap A.'
   },
   {
@@ -768,15 +768,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Gelişmekte olan ülkeler temiz enerji teknolojilerine yatırım yapmadıkça, küresel karbon emisyonlarını hedeflenen seviyelere indirmek imkansız olacaktır.',
     options: {
       A: 'Unless developing countries invest in clean energy technologies, it will be impossible to reduce global carbon emissions to target levels.',
-      B: 'If developing nations invest in clean energy technologies, reducing carbon emissions will become significantly easier.',
-      C: 'Because developing countries refuse to adopt clean energy, global carbon emissions cannot reach the targeted reduction levels.',
-      D: 'Developing countries should invest in renewable technologies so that international emissions targets can be achieved.',
-      E: 'Although developing nations are investing in clean energy, global emissions targets remain largely unattainable.'
+      B: 'If developing countries invest in clean energy technologies, it will be impossible to reduce global carbon emissions to target levels.',
+      C: 'Unless developing countries invest in clean energy technologies, it will be much easier to reduce global carbon emissions to target levels.',
+      D: 'Because developing countries do not invest in clean energy technologies, it has been impossible to reduce global carbon emissions to target levels.',
+      E: 'Unless developed countries invest in clean energy technologies, it will be impossible to reduce global carbon emissions to target levels.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: '"-medikçe / yapmadıkça" = Unless & "it will be impossible" (imkansız olacaktır)',
-    trapWarning: 'Türkçedeki "yapmadıkça" şart eki birebir "Unless" bağlacını gerektirir.',
+    trapWarning: '"yapmadıkça" = Unless. B olumsuzluğu kaybeder, C sonucu tersine çevirir, D koşulu gerçekleşmiş bir sebebe dönüştürür. E ise "gelişmekte olan" yerine "developed" (gelişmiş) der.',
     explanation: 'Yatırım yapmadıkça: Unless developing countries invest... İndirmek imkansız olacaktır: it will be impossible to reduce. Doğru cevap A.'
   },
 
