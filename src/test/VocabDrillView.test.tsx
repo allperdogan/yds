@@ -339,3 +339,24 @@ describe('VocabDrillView Functional & Button Tests', () => {
     expect(screen.getByText(/_____/)).toBeInTheDocument();
   });
 });
+
+describe('VocabDrillView spaced repetition', () => {
+  it('records a review and brings a missed word back later in the session', () => {
+    const onRecordReview = vi.fn();
+    render(
+      <VocabDrillView
+        initialSource="curated"
+        knownVocabIds={[]}
+        pendingReviewVocabIds={[]}
+        onMarkKnown={vi.fn()}
+        onMarkPendingReview={vi.fn()}
+        onRemovePendingReview={vi.fn()}
+        onRecordReview={onRecordReview}
+      />
+    );
+    const total = Number(screen.getByText(/^1\/\d+$/).textContent!.split('/')[1]);
+    fireEvent.click(screen.getByRole('button', { name: /undermine/i }));
+    expect(onRecordReview).toHaveBeenCalledWith('w1', false);
+    expect(screen.getByText(`1/${total + 1}`)).toBeInTheDocument();
+  });
+});

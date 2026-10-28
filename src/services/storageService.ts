@@ -29,7 +29,8 @@ export class StorageService {
       pendingReviewVocabIds: [],
       solvedQuestions: {},
       mockExamResults: [],
-      vocabFirstAnswers: {}
+      vocabFirstAnswers: {},
+      vocabReviews: {}
     };
   }
 
@@ -47,6 +48,7 @@ export class StorageService {
         if (!stats.solvedQuestions) stats.solvedQuestions = {};
         if (!stats.mockExamResults) stats.mockExamResults = [];
         if (!stats.vocabFirstAnswers) stats.vocabFirstAnswers = {};
+        if (!stats.vocabReviews) stats.vocabReviews = {};
         this.expireStreakIfMissed(stats);
         return stats;
       }

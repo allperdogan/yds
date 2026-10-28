@@ -19,22 +19,26 @@ import {
   Zap,
   Bookmark
 } from 'lucide-react';
-import { VocabQuizQuestion, YdsWord } from '../types';
+import { VocabQuizQuestion, WordReview, YdsWord } from '../types';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from '../data/ydsVocabQuiz';
 import { buildVocabOptions } from '../services/vocabOptions';
 import { blankExample } from '../services/vocabBlank';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { AudioService } from '../services/audioService';
+import { orderForStudy, requeueAfter } from '../services/vocabReview';
 
 interface VocabDrillViewProps {
   knownVocabIds: string[];
   pendingReviewVocabIds: string[];
   bookmarkedWordIds?: string[];
+  vocabReviews?: Record<string, WordReview>;
   initialDay?: number;
   initialStage?: 'learn' | 'test';
   initialSource?: 'infinite' | 'curated';
   onMarkKnown: (wordId: string) => void;
   onRecordVocabAnswer?: (wordId: string, isCorrect: boolean) => void;
+  onRecordReview?: (wordId: string, isCorrect: boolean) => void;
+  onOpenWordLists?: () => void;
   onMarkPendingReview: (wordId: string) => void;
   onRemovePendingReview: (wordId: string) => void;
   onToggleBookmark?: (wordId: string) => void;
@@ -49,11 +53,14 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   knownVocabIds,
   pendingReviewVocabIds,
   bookmarkedWordIds = [],
+  vocabReviews = {},
   initialDay,
   initialStage,
   initialSource = 'infinite',
   onMarkKnown,
   onRecordVocabAnswer,
+  onRecordReview,
+  onOpenWordLists,
   onMarkPendingReview,
   onRemovePendingReview,
   onToggleBookmark,
@@ -209,21 +216,36 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   // Active pool depends on drillSource
   const currentPool = drillSource === 'infinite' ? infiniteQuestions : curatedQuestions;
 
-  // Active question list: prioritize pending review words on pool load, then remaining.
-  // CRITICAL FIX: We do NOT re-sort activeQuestions on pendingReviewVocabIds changes during a session!
-  // Re-sorting dynamically shifted array indices while answering, causing currentIndex to point to the PREVIOUS question!
-  const activeQuestions: VocabQuizQuestion[] = useMemo(() => {
-    const pending = currentPool.filter((q) => pendingReviewVocabIds.includes(q.targetWordId));
-    const others = currentPool.filter((q) => !pendingReviewVocabIds.includes(q.targetWordId));
-    return [...pending, ...others];
+  const studyOrder = (pool: VocabQuizQuestion[]) =>
+    orderForStudy(pool, (q) => q.targetWordId, {
+      reviews: vocabReviews,
+      knownIds: knownVocabIds,
+      pendingIds: pendingReviewVocabIds
+    });
+
+  // Session order: missed words first, due reviews next, then new words; known
+  // words that are not due yet come last. Sorted once per pool, not on every
+  // answer, so the current question never shifts under the student.
+  const orderedPool: VocabQuizQuestion[] = useMemo(
+    () => studyOrder(currentPool),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPool]);
+    [currentPool]
+  );
+
+  // A missed question is put back a few places later in the same session.
+  const [session, setSession] = useState<{ base: VocabQuizQuestion[]; list: VocabQuizQuestion[] }>(() => ({
+    base: orderedPool,
+    list: orderedPool
+  }));
+  const activeQuestions = session.base === orderedPool ? session.list : orderedPool;
 
   const currentQ: VocabQuizQuestion | undefined = activeQuestions[currentIndex];
   const isTargetInReviewQueue = currentQ ? pendingReviewVocabIds.includes(currentQ.targetWordId) : false;
 
-  // Answers are immutably bound to currentQ.id - never leak across questions
-  const currentAnswer = currentQ ? drillAnswers[currentQ.id] : undefined;
+  // Answers are bound to the question's place in the session, so a requeued
+  // question can be answered again when it comes back.
+  const answerKey = currentQ ? `${currentIndex}:${currentQ.id}` : '';
+  const currentAnswer = currentQ ? drillAnswers[answerKey] : undefined;
   const hasAnswered = currentAnswer !== undefined;
   const selectedOption = currentAnswer || null;
 
@@ -231,12 +253,14 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (hasAnswered || !currentQ) return;
     setDrillAnswers((prev) => ({
       ...prev,
-      [currentQ.id]: opt
+      [answerKey]: opt
     }));
     setShowLearningCard(true); // Always reveal mnemonics for all 5 options!
 
     const isCorrect = opt === currentQ.correctAnswer;
     onRecordVocabAnswer?.(currentQ.targetWordId, isCorrect);
+    onRecordReview?.(currentQ.targetWordId, isCorrect);
+    if (!isCorrect) requeueCurrent();
     if (isCorrect) {
       onMarkKnown(currentQ.targetWordId);
       onRemovePendingReview(currentQ.targetWordId);
@@ -255,10 +279,12 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (!currentQ || hasAnswered) return;
     setDrillAnswers((prev) => ({
       ...prev,
-      [currentQ.id]: null
+      [answerKey]: null
     }));
     setShowLearningCard(true);
     onRecordVocabAnswer?.(currentQ.targetWordId, false);
+    onRecordReview?.(currentQ.targetWordId, false);
+    requeueCurrent();
     onMarkPendingReview(currentQ.targetWordId);
     if (onAddMistakeWord) {
       onAddMistakeWord(currentQ.targetWordId);
@@ -268,8 +294,15 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     }
   };
 
+  const requeueCurrent = () => {
+    if (!currentQ) return;
+    const q = currentQ;
+    setSession({ base: orderedPool, list: requeueAfter(activeQuestions, currentIndex, q, (a, b) => a.id === b.id) });
+  };
+
   const handleDirectMarkKnown = () => {
     if (!currentQ) return;
+    if (!hasAnswered) onRecordReview?.(currentQ.targetWordId, true);
     onMarkKnown(currentQ.targetWordId);
     onRemovePendingReview(currentQ.targetWordId);
     handleNext();
@@ -280,6 +313,9 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (currentIndex < activeQuestions.length - 1) {
       setCurrentIndex((prev) => prev + 1);
     } else {
+      // End of the round: start a new one ordered by the latest progress.
+      setSession({ base: orderedPool, list: studyOrder(currentPool) });
+      setDrillAnswers({});
       setCurrentIndex(0);
     }
   };
@@ -328,6 +364,14 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
             {Math.min(currentIndex + 1, activeQuestions.length)}/{activeQuestions.length}
           </span>
+        )}
+        {onOpenWordLists && (
+          <button
+            onClick={onOpenWordLists}
+            className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300"
+          >
+            Listelerim
+          </button>
         )}
         <button
           onClick={() => setShowOptions((v) => !v)}
