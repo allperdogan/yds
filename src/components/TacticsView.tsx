@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Compass, ShieldAlert, CheckCircle, Lightbulb, PlayCircle, BookOpen, AlertTriangle, FileText, Check, X, Sparkles, Brain, Zap, Search, ChevronRight, ChevronLeft } from 'lucide-react';
 import { YdsTacticGuide, QuestionType } from '../types';
-import { YDS_TACTIC_GUIDES } from '../data/ydsTactics';
+import { YDS_TACTIC_GUIDES, YDS_EXAM_STRATEGY } from '../data/ydsTactics';
 import { YDS_QUESTIONS_DATA } from '../data/ydsQuestions';
 import { YDS_PREPOSITION_MATRIX, PREPOSITION_REFLEX_QUESTIONS, PrepositionReflexItem } from '../data/ydsPrepositions';
 import { QuestionPracticeView } from './QuestionPracticeView';
@@ -164,6 +164,25 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
       {/* ========================================================================= */}
       {viewMode === 'tactic' && (
         <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm space-y-6">
+          {/* Whole-paper strategy: scoring, time plan, order */}
+          <details className="group rounded-2xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/60 dark:bg-amber-950/20 p-4">
+            <summary className="cursor-pointer list-none flex items-center justify-between gap-2 text-sm font-black text-amber-900 dark:text-amber-200">
+              <span className="flex items-center gap-2">
+                <Compass className="w-4 h-4 text-amber-600" />
+                Sınavın Geneli: Puanlama, Süre Planı ve Çözüm Sırası
+              </span>
+              <ChevronRight className="w-4 h-4 transition-transform group-open:rotate-90" />
+            </summary>
+            <ul className="mt-3 space-y-2.5">
+              {YDS_EXAM_STRATEGY.map((item) => (
+                <li key={item.title} className="text-xs leading-relaxed text-slate-700 dark:text-slate-300">
+                  <span className="font-extrabold text-slate-900 dark:text-white">{item.title}: </span>
+                  {item.detail}
+                </li>
+              ))}
+            </ul>
+          </details>
+
           {/* Tactic Card Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 dark:border-slate-800 pb-5">
             <div>
@@ -584,7 +603,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
                   "Not" olmadan cümleyi olumsuz yapan gizli kelimeler ve devriklik!
                 </h5>
                 <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Hardly, Scarcely, Seldom, Barely ve Little kelimeleri kendi içinde negatif anlam taşır. Yanına bir olumsuz yardımcı fiil (didn't, don't) almazlar ve cümle başında devrik soru kalıbı isterler.
+                  Hardly, Scarcely, Seldom, Barely ve Little kelimeleri kendi içinde negatif anlam taşır. Yanına bir olumsuz yardımcı fiil (didn't, don't) almazlar; cümle başına geldiklerinde de arkalarından devrik yapı (yardımcı fiil + özne) gelir.
                 </p>
                 <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 font-mono text-xs text-purple-600 dark:text-purple-400 font-bold">
                   Seldom has a study shown... / Hardly had they arrived...
@@ -610,7 +629,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
             </div>
 
             <p className="text-xs md:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-              Bu uygulama sana YDS'nin 1.400+ kelimesini, tüm soru tiplerinin altın taktiklerini ve zihinsel refleksleri kazandırır. Ancak gerçek sınav günü masaya oturduğunda ÖSYM soru yazarlarının kendine has yazı puntosu, kağıt kokusu, soru kökü tonlaması ve optik forma kodlama ritmiyle yabancılaşmamak için <strong>son 5 yılın (10 sınav dönemi: 2020-2024 YDS 1-2)</strong> sorularını mutlaka fiziksel olarak çözmelisin.
+              Bu uygulama sana YDS'nin 3.000 temel kelimesini, tüm soru tiplerinin altın taktiklerini ve zihinsel refleksleri kazandırır. Ancak gerçek sınav günü masaya oturduğunda ÖSYM soru yazarlarının kendine has yazı puntosu, kağıt kokusu, soru kökü tonlaması ve optik forma kodlama ritmiyle yabancılaşmamak için <strong>son 5 yılın çıkmış YDS sorularını</strong> (ÖSYM bunları osym.gov.tr adresinde ücretsiz yayımlar) mutlaka kâğıt üzerinde çözmelisin.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-medium">

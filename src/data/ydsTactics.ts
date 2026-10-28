@@ -8,11 +8,11 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     title: 'Kelime Bilgisi (Vocabulary)',
     questionCount: 6,
     badge: '6 Soru / 7.5 Puan',
-    summary: 'ÖSYM standart olarak 1 İsim, 1 Fiil, 1 Sıfat, 1 Zarf ve 2 Phrasal Verb sorar. Kelimeleri tekil anlamlarıyla değil, yanındaki edat (preposition) ve tamlamalarla (collocations) çözün.',
+    summary: 'Dağılım sınavdan sınava değişir ama genelde isim, fiil, sıfat, zarf ve 1-2 phrasal verb sorulur. Şıkların hepsi aynı türde ve cümleye gramer olarak uyan biçimde gelir; farkı yalnızca anlam belirler. Kelimeleri tekil anlamlarıyla değil, yanındaki edat (preposition) ve tamlamalarla (collocations) çözün.',
     goldenRules: [
       'Artı (+) / Eksi (-) Analizi: Cümlenin genel duygu yönünü belirleyin. Cümle bir felaketten mi (detrimental, degrade) yoksa bir gelişmeden mi (enhance, flourish) bahsediyor? Şıkları bu yöne göre 2-3 şıkka indirin.',
       'Boşluğun Sağı ve Solu (Collocation): Tüm cümleyi Türkçeye çevirmekle vakit kaybetmeyin. Boşluğun yanındaki edatlara bakın: "attribute ... to", "refrain ... from", "contribute ... to", "vulnerable ... to".',
-      'Phrasal Verb Dağılımı: ÖSYM son 10 yılda en çok "account for (açıklamak/oluşturmak)", "bring about (yol açmak)", "carry out (yürütmek)", "rely on (güvenmek/dayanmak)" ve "cope with (başa çıkmak)" köklerini sormuştur.'
+      'Phrasal Verb Soruları: Çıkmış sorularda sık görülen kalıplar "account for (açıklamak/oluşturmak)", "bring about (yol açmak)", "carry out (yürütmek)", "rely on (dayanmak)", "cope with (başa çıkmak)", "give rise to (yol açmak)" ve "rule out (olasılık dışı bırakmak)" gibi akademik kalıplardır. Şıklarda aynı fiil farklı edatlarla (put off / put up / put out) gelebilir; edatın anlamı değiştirdiğini unutmayın.'
     ],
     stepByStepMethod: [
       '1. Adım: Cümleyi okumadan önce 5 şıkkın türünü onaylayın (hepsi sıfat mı, hepsi zarf mı?).',
@@ -21,7 +21,8 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     ],
     commonTraps: [
       'Yanlış Edat Tuzağı: Şıktaki kelime anlamsal olarak mantıklı gelebilir ama arkasından gelen edatla uyuşmaz (Örn: "prevent from" gerekirken cümlede "to" varsa o şık elenir).',
-      'Benzer Yazılışlı Çeldiriciler: "Adopt (benimsemek)" ile "Adapt (uyum sağlamak)", "Precede (önce gelmek)" ile "Proceed (ilerlemek)" gibi kelimeleri birbirine karıştırmayın.'
+      'Benzer Yazılışlı Çeldiriciler: "Adopt (benimsemek)" ile "Adapt (uyum sağlamak)", "Precede (önce gelmek)" ile "Proceed (ilerlemek)" gibi kelimeleri birbirine karıştırmayın.',
+      '"Farklı Olanı Seç" Yanılgısı: ÖSYM çeldiricileri birbirinden bağımsız, aynı seviyede akademik kelimelerdir. Dört şık birbirine benziyor diye beşinciyi seçmek gerçek sınavda işe yaramaz; kelimeyi cümledeki anlamıyla doğrulayın.'
     ],
     proTip: 'Zarf sorularında (-ly ile bitenler), o zarfın nitelediği fiile veya sıfata bakın. "Increases dramatically / substantially" kalıbı YDS\'nin vazgeçilmezidir.',
     sampleQuestion: {
@@ -51,10 +52,10 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     badge: '10 Soru / 12.5 Puan',
     summary: 'Tense (Zamanlar), Modals, Passive/Active, Sadeleştirme (Participle Reductions), Edatlar ve Bağlaçlar test edilir. YDS\'de zaman uyumu (Tense Consistency) en büyük silahtır.',
     goldenRules: [
-      'Zaman Uyumu Kuralı: Temel cümle geçmiş zamandaysa (Past), yan cümle genelde geleceğe veya geniş zamana sıçrayamaz (Past ile Past, Present ile Present/Future eşleşir).',
+      'Zaman Uyumu Kuralı: Temel cümle geçmiş zamandaysa (Past), yan cümle de çoğunlukla geçmiş zaman grubundan gelir (Past ile Past, Present ile Present/Future eşleşir). İstisna: bugün hâlâ geçerli bilimsel gerçekler geçmiş zamanlı cümlede de Present kalabilir ("Galileo proved that the Earth moves").',
       'Since Kuralı: "Since + Past Zaman/Cümle, Present Perfect Tense (have/has V3)" formülü YDS\'nin kesin çıkan kuralıdır.',
       '"By + Gelecek Zaman" = Future Perfect (will have V3). "By + Geçmiş Zaman" = Past Perfect (had V3).',
-      'Sadeleştirme (Reduction): Boşluktan sonra nesne (object) varsa aktif (V-ing / Having V3), arkasından edat (by, in, to) veya doğrudan isim yoksa pasif (V3 / Having been V3) seçilir.'
+      'Sadeleştirme (Reduction): Boşluktan sonra fiilin nesnesi (object) geliyorsa aktif (V-ing / Having V3); nesne yoksa, boşluktan sonra "by" ya da başka bir edat geliyorsa pasif (V3 / Having been V3) seçilir. Ayrıca öznenin işi kendisi mi yaptığını (aktif) yoksa işe maruz mu kaldığını (pasif) kontrol edin.'
     ],
     stepByStepMethod: [
       '1. Adım: Zaman ipuçlarını işaretleyin (recently, in 1970, over the last decades, by 2050, currently).',
@@ -62,8 +63,8 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
       '3. Adım: Etken mi edilgen mi (Active/Passive) ayrımını yapın: Eylemi yapan özne işi kendisi mi yapıyor yoksa maruz mu kalıyor?'
     ],
     commonTraps: [
-      '"Recently / In recent years" tuzaktır: Asla Past Simple (V2) almaz! Mutlaka Present Perfect (have/has V3) ister.',
-      '"Would V1" tek başına hayali geçmiş anlatmaz; ya If Clause Type 2\'de ya da aktarmalı anlatımda (reported speech) kullanılır.'
+      '"In recent years / over the last decade / so far / up to now" Present Perfect (have/has V3) ister. Dikkat: tek başına "recently" hem Present Perfect hem Past Simple ile kullanılabilir ("She recently moved to Ankara" doğrudur); karar için cümledeki diğer ipuçlarına bakın.',
+      '"Would V1" geçmiş zamanı tek başına anlatmaz; If Type 2 sonucunda, geçmişteki alışkanlıklarda (= used to) ve geçmişten bakılan gelecekte ("He said he would come") kullanılır. Geçmişte tek bir olay anlatılıyorsa Past Simple gerekir.'
     ],
     proTip: 'Preposition sorularında soyut kavramlara dikkat edin: "at risk", "on the verge of", "in terms of", "with the help of", "under pressure".',
     sampleQuestion: {
@@ -150,24 +151,24 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
       'Tuzak Özne: Anlam çok mantıklı görünür ancak kök cümlenin öznesiyle diğer cümlenin öznesi alakasızdır.',
       'Zıtlık Bağlacında Paralel Anlam: Although cümlesinde sebep-sonuç anlamı veren şıklar çeldiricidir.'
     ],
-    proTip: 'Eğer soru kökünde bağlaç YOKSA, doğru seçenekte MUTLAKA bir bağlaç veya zıtlık/sebep ifadesi olmalıdır.',
+    proTip: 'Soru kökünde bağlaç yoksa, doğru seçenekte genellikle bir bağlaç (although, since, so ... that) ya da yan cümleyi bağlayan bir yapı (which, that, -ing) bulunur. Bağlaç iki tarafta birden olamaz: kökte "Although" varsa "but" ile başlayan şık elenir.',
     sampleQuestion: {
-      question: 'Although early hunter-gatherers lacked formal agricultural knowledge, _____.',
+      question: 'Although early hunter-gatherers lacked any formal knowledge of agriculture, _____.',
       options: {
-        A: 'they developed sophisticated seasonal strategies to harvest wild cereals across diverse terrains',
-        B: 'they were completely helpless during severe climatological shifts',
-        C: 'because permanent villages were founded centuries later',
-        D: 'which led to widespread starvation during winter months',
-        E: 'since modern archaeology has uncovered few tools from that era'
+        A: 'they developed sophisticated seasonal strategies for harvesting wild cereals across very different terrains',
+        B: 'they were largely unable to cope with the severe climatic shifts at the end of the last Ice Age',
+        C: 'the domestication of plants and animals eventually transformed their nomadic way of life',
+        D: 'they relied heavily on the meat of large mammals that were hunted in organised groups',
+        E: 'archaeologists have found very few of the stone tools that they used to process food'
       },
       answer: 'A',
       solutionSteps: [
-        '1. Adım (Bağlaç & Duygu Yönü): Kök cümle "Although" ile başlıyor ve "lacked formal knowledge" (bilgiden yoksundular) diyerek negatif (-) başlıyor.',
-        '2. Adım (Zıtlık & Özne Köprüsü): Ana cümlede pozitif (+) bir başarı aranmalıdır. Özne "early hunter-gatherers" (çoğul) olduğu için şıkta "they" zamir köprüsü aranır.',
-        '3. Adım (Şık Analizi): A şıkkı "they developed sophisticated strategies... (+)" diyerek hem zamir uyumunu hem zıtlık mantığını kusursuz tamamlar.'
+        '1. Adım (Bağlaç & Yön): Kök "Although" ile başlıyor ve olumsuz (-) bir eksiklik veriyor: "tarım bilgisinden yoksundular". Ana cümlede bu eksikliğe rağmen gerçekleşen beklenmedik, olumlu (+) bir durum aranır.',
+        '2. Adım (Şıkların Hepsi Gramer Olarak Uygun): ÖSYM\'de beş şık da tam ve doğru bir cümledir; eleme gramerle değil anlam ilişkisiyle yapılır.',
+        '3. Adım (Eleme): B olumsuzluğu sürdürür (zıtlık yok). D beklenen bir sonuçtur: tarım bilmeyenin avcılığa dayanması zıtlık değildir. C ve E konuyu başka bir özneye (evcilleştirme, arkeologlar) kaydırır. A "tarım bilmemelerine rağmen yabani tahılları hasat etmek için gelişmiş stratejiler geliştirdiler" diyerek zıtlığı kurar.'
       ],
-      trapExplanation: 'B şıkkında "they were completely helpless" der; bu zıtlık değil negatif devamlılık yaratırdı. C ve E şıkları bağlaçlı cümleye tekrar sebep bağlacı bağlar, cümle yarım kalır.',
-      fastMethodTrick: 'Although (-) kökünde hemen (+) beceri/başarı anlatan ve "they" zamir köprüsü kuran şıkkı 10 saniyede yakala!'
+      trapExplanation: 'D şıkkı konuyla çok uyumlu ve doğru bir bilgidir; ama "although" bir beklenti kırılması ister. Tarım bilmeyen birinin avcılığa dayanması beklenen bir durumdur, zıtlık değildir.',
+      fastMethodTrick: 'Although kökünde kendine sor: "Buna rağmen ne oldu?" Cevap beklenen bir sonuçsa (D) ya da olumsuzluğun devamıysa (B) şıkkı ele.'
     }
   },
   {
@@ -176,39 +177,41 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     title: 'İngilizce - Türkçe Çeviri',
     questionCount: 3,
     badge: '3 Soru / 3.75 Puan',
-    summary: 'YDS\'nin en hızlı ve kesin puan getiren bölümüdür. Cümlenin tamamını okumadan 20-30 saniyede çözülebilir!',
+    summary: 'Hızlı ve kesin puan getiren bölümlerden biridir. Ana yüklem ve özneyle başlayıp şıkları hızla eleyebilirsiniz; ama ÖSYM çoğu zaman beş şıkkın yüklemini aynı ya da çok benzer verir. Bu durumda karar zaman, kip (may/must), bağlaç yönü, olumsuzluk ve nicelik (some/most/all) farkında çıkar; kalan iki şıkkı kelime kelime karşılaştırın.',
     goldenRules: [
-      'KURAL 1: Ana Yüklemi (Main Verb) Bul: Türkçe cümlelerin yüklemi EN SONDA yer alır. İngilizce cümlenin ana fiilini bulun, zamanını ve etken/edilgen halini belirleyin. Türkçe şıkların son kelimesine bakarak 3 şıkkı 5 saniyede eleyin!',
+      'KURAL 1: Ana Yüklemi (Main Verb) Bul: Türkçe cümlelerin yüklemi EN SONDA yer alır. İngilizce cümlenin ana fiilini bulun, zamanını ve etken/edilgen halini belirleyin. Şıkların son kelimeleri farklıysa yüklemi tutmayanları hemen eleyin.',
       'KURAL 2: Ana Özneyi (Main Subject) Bul: Cümledeki ana özne Türkçe cümlenin genellikle EN BAŞINDA yer alır. Özne eksik veya değiştirilmiş şıkları eleyin.',
       'KURAL 3: Bağlaç ve Sıfat Cümlecikleri: "... who/which ..." gibi yapılar Türkçede "-en, -an / -dığı" sıfatı olarak yüklemden önceki kelimeye bağlanır.'
     ],
     stepByStepMethod: [
       '1. Adım: İngilizce cümlenin ana fiilini tespit et (Örn: "... has contributed to ...").',
-      '2. Adım: Şıkların sonuna bak: "... katkıda bulunmuştur" dışındaki (örn: katkıda bulunabilir, katkıda bulundu, katkı sağladı) şıkları ele.',
-      '3. Adım: Kalan 2 şık arasında ana özneyi kontrol et ve doğruyu işaretle.'
+      '2. Adım: Şıkların sonuna bak: "... katkıda bulunmuştur" dışındaki (örn: katkıda bulunabilir, katkıda bulundu) şıkları ele. Hepsi aynıysa bu adımı atla.',
+      '3. Adım: Kalan şıklarda özneyi, yan cümlenin zamanını, kipleri (may, must), olumsuzluğu ve niceleyicileri (some, most) tek tek karşılaştır.'
     ],
     commonTraps: [
       'Gereksiz Anlam Genişletmesi: Orijinal cümlede "may" yokken şıkta "-ebilir" eklenmesi.',
-      'Zaman Kayması: Present Perfect bir fiilin "-di\'li geçmiş" veya "şimdiki zaman" olarak çevrilmesi.'
+      'Zaman Kayması: Present Perfect bir fiilin "-di\'li geçmiş" veya "şimdiki zaman" olarak çevrilmesi.',
+      'Aynı Yüklem Tuzağı: Beş şık da "... göstermektedir" ile bitiyorsa son kelime yöntemi işe yaramaz. Yan cümledeki zaman, "not only / but also" gibi bağlaçlar ve "çoğu / bazı / tüm" gibi niceleyiciler tek tek kontrol edilmelidir.'
     ],
-    proTip: 'Bu 3 soruyu toplam 2 dakikadan az sürede çözüp sınavda zaman kazanmalısınız!',
+    proTip: 'Çeviri soruları için soru başına yaklaşık 1 dakika hedefleyin (6 soru için 6-8 dakika). Son iki şık kaldığında acele etmeyin; fark genellikle tek bir kelimededir.',
     sampleQuestion: {
-      question: 'Glaciologists warn that the accelerated melting of the Thwaites Glacier in West Antarctica could trigger an irreversible cascade that raises global sea levels by several meters.',
+      question: 'Glaciologists warn that the accelerated melting of the Thwaites Glacier in West Antarctica could trigger an irreversible process that would raise global sea levels by several metres.',
       options: {
-        A: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesinin küresel deniz seviyelerini birkaç metre yükselten geri döndürülemez bir zincirleme süreci tetikleyebileceği konusunda uyarıyor.',
-        B: 'Batı Antarktika\'daki Thwaites Buzulu\'nun erimesi, buzulbilimcilere göre küresel deniz seviyesini yükseltecek geri dönülmez zincirleme bir reaksiyona yol açmıştır.',
-        C: 'Buzulbilimcilerin uyardığı gibi, küresel deniz seviyelerinin birkaç metre yükselmesi Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini tetikleyebilir.',
-        D: 'Thwaites Buzulu\'nun Batı Antarktika\'da hızla erimesi, buzulbilimcilerin uyardığı üzere deniz seviyesinde birkaç metrelik geri dönüşsüz artışa sebep olacaktır.',
-        E: 'Küresel deniz seviyesini birkaç metre yükseltecek zincirleme felaket, buzulbilimcilerin belirttiği gibi Thwaites Buzulu\'nun erimesiyle tetiklenmektedir.'
+        A: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesinin küresel deniz seviyelerini birkaç metre yükseltecek geri döndürülemez bir süreci tetikleyebileceği konusunda uyarıyor.',
+        B: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesinin küresel deniz seviyelerini birkaç metre yükselten geri döndürülemez bir süreci tetiklediği konusunda uyarıyor.',
+        C: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun erimesi hızlanırsa küresel deniz seviyelerinin birkaç metre yükselebileceği konusunda uyarıyor.',
+        D: 'Buzulbilimciler, Batı Antarktika\'daki Thwaites Buzulu\'nun hızlanan erimesinin küresel deniz seviyelerini birkaç metre yükseltecek geri döndürülebilir bir süreci başlatabileceği konusunda uyarıyor.',
+        E: 'Buzulbilimciler, küresel deniz seviyelerinin birkaç metre yükselmesinin Batı Antarktika\'daki Thwaites Buzulu\'nun erimesini hızlandırabilecek geri döndürülemez bir süreç olduğu konusunda uyarıyor.'
       },
       answer: 'A',
       solutionSteps: [
-        '1. Adım (Ana Yüklem Avı): İngilizce cümlenin ana yüklemi "Glaciologists warn that...". Türkçe cümlenin son kelimesi mutlaka "... uyarıyor" veya "... uyarmaktadır" olmak zorundadır!',
-        '2. Adım (Şıkların Sonunu Tara): B şıkkı "... yol açmıştır", C şıkkı "... tetikleyebilir", D şıkkı "... sebep olacaktır", E şıkkı "... tetiklenmektedir" ile biter. Dördü de ana yüklem olmadığı için 5 saniyede elenir!',
-        '3. Adım (Doğrulama): A şıkkının sonu "... konusunda uyarıyor" ile biter; öznesi de "Buzulbilimciler"dir. Kusursuz ve tek doğru şık A\'dır.'
+        '1. Adım (Ana Yüklem): "Glaciologists warn that..." → "Buzulbilimciler ... konusunda uyarıyor". Beş şık da böyle bitiyor; ÖSYM\'de sık görülen durum budur, yüklemle eleme yapılamaz.',
+        '2. Adım (Kip): "could trigger" bir olasılıktır → "tetikleyebileceği". B şıkkı "tetiklediği" diyerek olasılığı kesinliğe çevirir, elenir.',
+        '3. Adım (Anlam Öğeleri): "irreversible" → "geri döndürülemez". D şıkkı "geri döndürülebilir" diyerek anlamı tersine çevirir. C şıkkı "irreversible process" öğesini tamamen atar ve cümleye koşul ekler.',
+        '4. Adım (Sebep-Sonuç Yönü): Orijinalde erime sebep, deniz seviyesinin yükselmesi sonuçtur. E şıkkı bu yönü ters çevirir. Doğru cevap A\'dır.'
       ],
-      trapExplanation: 'B, C, D ve E şıklarında yan cümlenin yüklemleri ana yüklem gibi gösterilerek zaman kayması yaratılmıştır.',
-      fastMethodTrick: 'İngilizce cümlenin ana fiiline bak: "warn that" -> Türkçe şıkların sadece son kelimelerini oku; "uyarıyor" ile biten tek şıkkı 10 saniyede işaretle!'
+      trapExplanation: 'Şıkların hepsi aynı yüklemle bittiği için "son kelimeye bak" yöntemi tek başına yetmez. Her çeldirici tek bir anlam öğesini bozar: kip (B), eksik öğe (C), olumsuzluk (D), sebep-sonuç yönü (E).',
+      fastMethodTrick: 'Yüklemler aynıysa İngilizce cümleden 4 kontrol noktası çıkar: kip (could), sıfat (irreversible), sebep-sonuç yönü ve eksiksizlik. Her şıkta bu dördünü tara; dördünü de karşılayan tek şık kalır.'
     }
   },
   {
@@ -275,7 +278,7 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
       'Kendi Bilgini Katmak: Metinde yazmayan ama gerçek hayatta doğru olan genel kültür bilgileri şıklara konur; metinde yoksa elenir!',
       'Yarı Doğru Yarı Yanlış Şık: Cümlenin ilk yarısı metinle birebir uyumlu, sonundaki 2 kelime metni saptıran tuzaktır.'
     ],
-    proTip: 'Her paragrafa maksimum 9-10 dakika ayırın. Takıldığınız soruda inatlaşmayın, şıkkı eleyip diğerine geçin.',
+    proTip: 'Her metne (4 soru) ortalama 8 dakika ayırın; 20 soruluk bölüm 40-45 dakikada bitmelidir. Takıldığınız soruda inatlaşmayın, eleyebildiğiniz şıkları eleyip birini işaretleyin ve diğer metne geçin.',
     sampleQuestion: {
       passage: 'For decades, classical genetics posited that an organism’s developmental destiny was determined by static DNA. However, epigenetics has demolished this paradigm. Epigenetic mechanisms—such as DNA methylation—act as molecular switches that regulate gene expression without altering the underlying nucleotide sequence. Environmental stimuli, including chronic stress and nutritional deprivation, can silence or activate specific genetic markers across generations.',
       question: 'According to the passage, the primary distinction between classical genetics and epigenetics is that epigenetics _____',
@@ -302,7 +305,7 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     title: 'Diyalog Tamamlama (Dialogue Completion)',
     questionCount: 5,
     badge: '5 Soru / 6.25 Puan',
-    summary: 'Karşılıklı konuşmada boş bırakılan cümleyi bulma. YDS\'nin en kolay puan toplanan bölümlerinden biridir.',
+    summary: 'Karşılıklı konuşmada boş bırakılan cümleyi bulma. ÖSYM diyalogları günlük sohbet değil, iki kişinin akademik ya da bilimsel bir konuyu (araştırma bulgusu, tarih, ekonomi, sağlık) tartışmasıdır; bu yüzden kelime ve okuma becerisi de ister.',
     goldenRules: [
       'Boşluktan HEMEN SONRAKİ Cümle Anahtardır: Boşluğu takip eden kişinin verdiği tepki (şaşırma, onaylama, itiraz, soru sorma) boşlukta ne söylenmiş olduğunu ele verir.',
       'Duygu ve Ton Uyumu: Karşıdaki "That sounds unbelievable!" diyorsa, boşlukta şaşırtıcı bir iddia veya haber yer almalıdır.',
@@ -315,7 +318,7 @@ const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     ],
     commonTraps: [
       'Diyaloğu Başlatan Cümleye Odaklanıp Sonrasını Unutmak: Cevap yukarıya uyabilir ama aşağıdaki tepkiyle çelişiyorsa yanlıştır.',
-      'Aşırı Resmi veya Alakasız Tepkiler: Günlük akademik sohbet tonunu bozan şıkları eleyin.'
+      'Konuyla İlgili Ama Soruya Cevap Vermeyen Şık: Şık diyaloğun konusunu anlatır, ama boşluktan önceki soruya ya da sonraki tepkiye bağlanmaz. ÖSYM\'nin en sık çeldiricisi budur.'
     ],
     proTip: 'Şıkkı boşluğa koyup sesli/içten bir film sahnesi gibi hızlıca akışı okuyun; sırıtan cümle anında elenir.',
     sampleQuestion: {
@@ -451,7 +454,7 @@ Dr. Miller:
     ],
     commonTraps: [
       'Aynı Kelimelerin Geçmesi: Bozan cümlenin içinde metindeki anahtar kelimeler geçer; bu yüzden "bu da aynı konudan bahsediyor" yanılgısına düşmeyin, odak noktasına bakın!',
-      '1. Cümlenin Bozan Cümle Olabilmesi: İlk cümlenin de akışı bozabileceğini unutmayın (Genellikle 2. cümle metni başlatır, 1. cümle alakasız kalır).'
+      'I. Cümle Konuyu Açar: ÖSYM\'de I. cümle neredeyse hiç cevap olmaz, çünkü paragrafın konusunu o belirler. Akışı bozan cümle genellikle II-V arasındadır; I. cümleyi işaretlemeden önce çok emin olun.'
     ],
     proTip: 'Bağlaçla başlayan cümlelere (However, Thus, In addition) dikkat edin: Eğer bir önceki cümleyle hiçbir bağ kuramıyorsa ya o cümle yanlıştır ya da ondan önceki cümle akışı bozmuştur.',
     sampleQuestion: {
@@ -485,3 +488,42 @@ export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = RAW_YDS_TACTIC_GUIDES.map((g)
   ...g,
   sampleQuestion: g.sampleQuestion ? shuffleQuestionOptions(g.sampleQuestion, `tactic_${g.id}`) : undefined
 }));
+
+export interface ExamStrategyItem {
+  title: string;
+  detail: string;
+}
+
+// Rules for the whole 80-question, 180-minute paper, shown above the per-type guides.
+export const YDS_EXAM_STRATEGY: ExamStrategyItem[] = [
+  {
+    title: 'Yanlış doğruyu götürmez: boş bırakma',
+    detail:
+      'YDS\'de her doğru cevap 1,25 puandır ve yanlış cevaplar doğruları götürmez. Bilmediğin soruda bile en az iki şıkkı eleyip birini işaretle; son 5 dakikada optikte boş soru kalmadığından emin ol.'
+  },
+  {
+    title: '180 dakikanın planı',
+    detail:
+      'Kelime + dil bilgisi (1-16) ~12 dk, cloze (17-26) ~10 dk, cümle tamamlama (27-36) ~12 dk, çeviri (37-42) ~7 dk, okuma (43-62) ~45 dk, diyalog (63-67) ~6 dk, anlamca en yakın (68-71) ~6 dk, paragraf tamamlama (72-75) ~7 dk, akışı bozan cümle (76-80) ~7 dk. Toplam ~112 dk; kalan süre işaretlediğin sorulara ve optik kontrolüne kalır.'
+  },
+  {
+    title: 'Çözüm sırası',
+    detail:
+      'Okuma bölümü en çok zaman yiyen bölümdür. Pek çok öğretmen 1-42 ve 63-80\'i önce çözüp 43-62\'yi sona bırakmayı önerir; böylece kısa sorulardaki kesin puanlar süre baskısına girmez. Hangi sıra sana uyuyorsa denemelerde dene ve sınavda değiştirme.'
+  },
+  {
+    title: 'İki tur kuralı',
+    detail:
+      'Bir soruda 90 saniyeyi geçtiysen en olası şıkkı işaretle, soruyu kitapçıkta yuvarlak içine al ve devam et. İlk turda bütün kitapçığı bitir, ikinci turda yalnızca işaretlediğin sorulara dön.'
+  },
+  {
+    title: 'Optiği bölüm bölüm kodla',
+    detail:
+      'Her bölüm (ör. 1-16, 17-26) bittiğinde cevapları optiğe geçir. Kodlamayı son 15 dakikaya bırakmak kaydırma hatası ve panik riskini artırır.'
+  },
+  {
+    title: 'Deneme ve çıkmış soru',
+    detail:
+      'Sınavdan önce en az 10-12 tam deneme çöz; bunların bir kısmı ÖSYM\'nin yayımladığı çıkmış YDS soruları olsun (osym.gov.tr, Çıkmış Sorular). Her denemeden sonra yanlışlarını soru tipine göre ayır ve en çok kaybettiğin tipe bir hafta odaklan.'
+  }
+];

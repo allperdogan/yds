@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Timer, AlertTriangle, CheckCircle2, XCircle, Award, BarChart3, ChevronRight, ChevronLeft, Flag, HelpCircle, ShieldAlert, Sparkles, BookMarked, RotateCcw, Brain, BatteryCharging, Zap, Info } from 'lucide-react';
 import { YdsQuestion, MockExamResult } from '../types';
 import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3, YDS_MOCK_EXAMS_LIST } from '../data/ydsFullMockExam';
-import { analyzeExam, formatSeconds, getPaceStatus, PACE_TARGET_SECONDS } from '../services/examInsights';
+import { GENERATED_MOCK_EXAMS, GENERATED_MOCK_EXAMS_LIST, GENERATED_MOCK_NOTE } from '../data/ydsGeneratedMockExams';
+
+const ALL_MOCK_EXAMS = [...YDS_MOCK_EXAMS_LIST, ...GENERATED_MOCK_EXAMS_LIST];
+import { analyzeExam, formatSeconds, getPaceStatus, PACE_TARGET_SECONDS, QUESTION_TYPE_LABELS } from '../services/examInsights';
 
 interface FullMockExamViewProps {
   onAddMistake: (questionId: string) => void;
@@ -81,7 +84,8 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
   const examMap: Record<string, YdsQuestion[]> = {
     exam_1: YDS_FULL_MOCK_EXAM_1,
     exam_2: YDS_FULL_MOCK_EXAM_2,
-    exam_3: YDS_FULL_MOCK_EXAM_3
+    exam_3: YDS_FULL_MOCK_EXAM_3,
+    ...GENERATED_MOCK_EXAMS
   };
   const questions = examMap[selectedExamId] || YDS_FULL_MOCK_EXAM_1;
   const currentQ = questions[currentIndex] || questions[0];
@@ -264,7 +268,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
               Çözmek İstediğiniz Denemeyi Seçin:
             </span>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              {YDS_MOCK_EXAMS_LIST.map((exam) => {
+              {ALL_MOCK_EXAMS.map((exam) => {
                 const isSelected = selectedExamId === exam.id;
                 return (
                   <div
@@ -287,7 +291,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                       <span className="text-[11px] font-bold text-slate-500">80 Soru</span>
                     </div>
                     <h4 className="text-xs font-black text-slate-900 dark:text-white leading-snug">
-                      {exam.title.split(':')[1] || exam.title}
+                      {exam.title}
                     </h4>
                     <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
                       {exam.description}
@@ -296,6 +300,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                 );
               })}
             </div>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">{GENERATED_MOCK_NOTE}</p>
           </div>
 
           {/* 80-90 ALANLARIN KONDİSYON VE GLİKOZ PROTOKOLÜ (EXPANDABLE REHBER) */}
@@ -314,7 +319,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
             </div>
 
             <p className="text-xs text-amber-900/80 dark:text-amber-300/80 leading-relaxed">
-              Sınav 180 dakika ve 80 soru. Beyin 60. sorudan sonra glikoz yakmayı bırakıp pes eder. Gerçek bir 80-90 adayının sınava kadar en az <strong>12-15 tane tam denemeyi</strong> kesintisiz masada çözüp o 3 saatlik zihinsel felci defalarca yaşamış olması şarttır!
+              Sınav 180 dakika ve 80 soru. Çoğu adayda dikkat ikinci saatin sonunda (yaklaşık 60. soru civarında) belirgin şekilde düşer. 75+ hedefleyen bir adayın sınava kadar en az <strong>10-12 tam denemeyi</strong> kesintisiz çözüp bu yorgunluğa alışmış olması gerekir.
             </p>
 
             {isStaminaGuideOpen && (
@@ -328,7 +333,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                 <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
                   <span className="font-extrabold text-amber-800 dark:text-amber-300">2. Glikoz ve Sıvı Desteği (60. Soru Krizi):</span>
                   <p className="text-slate-700 dark:text-slate-300 text-[11px]">
-                    Sınavın 60. dakikasında ve 60. sorusunda glikoz rezervi tükenir. Masanızda bir yudum su ve kuru üzüm/şeker bulundurun; anlık kan şekeri desteği mental yorgunluğu önler.
+                    Uzun sınavlarda yorgunluk ve susuzluk dikkati düşürür. Sınavdan önce düzgün kahvaltı yapın, yanınızda su bulundurun (sınav kurallarının izin verdiği ölçüde) ve 60. soru civarında 20-30 saniyelik bir nefes molası verin.
                   </p>
                 </div>
                 <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
@@ -616,7 +621,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                     ⚠️ 60. Soru Eşiği (Kritik Kondisyon Etabı)
                   </span>
                   <p className="text-[11px] text-amber-800/80 dark:text-amber-400/80">
-                    Beyin glikoz rezervini tüketti; pes etmeyin. Derin nefes alın, su için ve şık eleme tekniğiyle son 20 soruyu tamamlayın!
+                    Yorgunluk bu noktada normaldir; pes etmeyin. Derin nefes alın, su için ve şık eleme tekniğiyle son 20 soruyu tamamlayın!
                   </p>
                 </div>
               </div>
@@ -638,7 +643,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                   SORU {currentIndex + 1} / 80
                 </span>
                 <span className="text-xs font-bold px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950 text-sky-700 dark:text-sky-300">
-                  {currentQ.title || currentQ.type}
+                  {currentQ.title || QUESTION_TYPE_LABELS[currentQ.type]}
                 </span>
               </div>
 
@@ -855,7 +860,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-amber-600 font-bold shrink-0">💧</span>
-                  <span><strong>Glikoz & Su:</strong> Bir yudum su iç veya şeker/kuru meyve desteği al; beyin glikozsuz kaldığında eleme refleksini kaybeder.</span>
+                  <span><strong>Su & Mola:</strong> Bir yudum su iç veya şeker/kuru meyve desteği al; kısa bir mola dikkati toparlar.</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-amber-600 font-bold shrink-0">🎯</span>
