@@ -31,7 +31,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Biyolojide kimyasal veya evrimsel çekim/benzerlik; sosyolojide kültürel yakınlık anlamında gelir.",
     "frequency": "high",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AF-İFİ (Kalbi birbirine ısınan)' -> Ortak özellikleri olan iki kişinin birbirine duyduğu doğal AFFINITY (yakınlık, sempati, çekim)."
+    "mnemonic": "💡 ÇAĞRIŞIM: AF + FIN (sınır; \"final\"). Sınırları birbirine değen iki şey arasındaki doğal yakınlık ve çekim."
   },
   {
     "id": "w623",
@@ -47,7 +47,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "ÖSYM ekonomik kalkınma ve refah toplumu (affluent society) metinlerinde 'prosperity' ile eşleştirir.",
     "frequency": "high",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'A-FLOW (Para akışı)' -> Kasasına sel gibi para akan zenginlik ve refah (affluence) dolu toplum."
+    "mnemonic": "💡 ÇAĞRIŞIM: AF + FLU (akmak; \"fluid\" sıvı). Kasasına para akıp duran toplumun zenginliği ve refahı."
   },
   {
     "id": "w122",
@@ -223,7 +223,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Akademik konsensüs paragraflarında 'agree with' yerine daha resmi bir alternatif olarak sorulur.",
     "frequency": "high",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KONU-KABUL' -> Ortaya atılan konuyu hep birlikte kabul edip CONCUR WITH etmek (hemfikir olmak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: CON (birlikte) + CUR (koşmak; \"current\" akıntı). Fikirlerin aynı yöne birlikte koşması = hemfikir olmak."
   },
   {
     "id": "w444",
@@ -271,7 +271,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Daima 'from' edatıyla kullanılır (deviate from the path/norm).",
     "frequency": "high",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DE-VİYA' -> Gemiyi yoldan 'viya' edip rotadan saptırmak; yoldan DEVIATE olmak (sapmak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: DE (dışına) + VIA (yol; \"via\" = yoluyla). Yolun dışına çıkmak = sapmak. Daima \"deviate FROM\"."
   },
   {
     "id": "w152",
@@ -463,7 +463,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Hem 'düşmanca tavır' (hostile attitude) hem de 'yaşama uygun olmayan çetin ortam' (hostile climate) anlamında sorulur.",
     "frequency": "ultra",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HASTA-EDEN' -> Seni hasta eden düşmanca mikroplar veya çetin ve yaşamaya elverişsiz HOSTILE ortam."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"hostis\" (düşman, yabancı). Düşmanca davranan, yaşamaya elverişsiz ortam. Tersi: hospitable (misafirperver)."
   },
   {
     "id": "w504",
@@ -479,7 +479,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Biyolojide 'o bölgeye özgü tür' (indigenous species), antropolojide 'yerli halk' (indigenous people) olarak gelir.",
     "frequency": "ultra",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İNDİGO-YERLİSİ' -> Kendi doğal topraklarında yaşayan yerli halk; o coğrafyanın öz çocuğu: INDIGENOUS."
+    "mnemonic": "💡 ÇAĞRIŞIM: INDI (içeride) + GEN (doğmak; \"genetik\"). O toprakların içinde doğmuş = yerli. \"Indigenous peoples\" = yerli halklar."
   },
   {
     "id": "w1315",
@@ -655,7 +655,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Boksör kökünden ('pugilist') gelir; siyasette saldırgan ve uzlaşmaz tutumları tanımlar.",
     "frequency": "medium",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PUG KÖPEĞİ / PENÇE' -> Boyuna bakmadan herkese hırlayıp pençe atan kavgacı hırçın PUGNACIOUS tip."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince PUGNUS (yumruk; \"pugilist\" boksör). Yumruğu hep havada = kavgacı, hırçın."
   },
   {
     "id": "w822",
@@ -687,7 +687,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "'Reputable (saygın)' ve 'disreputable (itibarsız)' sıfat türevleriyle sınavlarda sıkça sorulur.",
     "frequency": "ultra",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'RAPOR-ETMEK' -> İnsanların senin hakkında konuştukları, rapor ettikleri genel intiba: REPUTATION (itibar, nam)."
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (tekrar) + PUT (düşünmek, hesaplamak; \"computer\"). İnsanların senin hakkında tekrar tekrar düşündükleri = itibar, ün."
   },
   {
     "id": "w212",
@@ -703,7 +703,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Hukuk ve anayasa metinlerinde bir yasayı veya emri iptal etmek anlamında 'revoke' ile tam eştir.",
     "frequency": "high",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'RESMİ-SON' -> Karara resmi olarak son verip yürürlükten kaldırmak: RESCIND (feshetmek, iptal etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: RE + SCIND (kesmek; \"scissors\" makas). Bir kararı makasla kesip atmak = feshetmek, iptal etmek."
   },
   {
     "id": "w376",
@@ -719,7 +719,7 @@ export const day1Words: YdsWord[] = [
     "ydsTip": "Daima 'against' edatıyla kullanılır (retaliate against an attack). 'Retaliation' isim halidir.",
     "frequency": "high",
     "groupDay": 1,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TATİLİ-ZEHİR-EDEN' -> Tatilini zehir eden düşmana anında karşılık verip misilleme yapmak: RETALIATE."
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (geri) + TALI (aynısı; \"talion\" = kısas). Göze göz, dişe diş: aynısıyla geri ödemek = misilleme yapmak."
   },
   {
     "id": "w594",

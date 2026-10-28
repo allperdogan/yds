@@ -77,7 +77,7 @@ export const day6Words: YdsWord[] = [
     "exampleEn": "The government issued official reassurances and guaranteed bank deposits in an attempt to assuage the public's mounting financial panic.",
     "exampleTr": "Hükümet, halkın tırmanan mali paniğini yatıştırmak ve dindirmek amacıyla resmi güvenceler verdi ve banka mevduatlarını garanti altına aldı.",
     "ydsTip": "'Alleviate', 'soothe', 'relieve', 'mitigate' ve 'placate' ile eş anlamlıdır. Korku, acı ve suçluluk hissini dindirmek için kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 6,
     "mnemonic": "💡 ÇAĞRIŞIM: 'AS-SU-İÇ' -> Yüreği yanan insanın içine su serpip yüreğini soğutmak: ASSUAGE (yatıştırmak, teskin etmek)."
   },
@@ -287,7 +287,7 @@ export const day6Words: YdsWord[] = [
     "ydsTip": "Hem isim (çaba/girişim = effort, attempt, undertaking) hem fiil (gayret etmek = strive, try) olarak kullanılır.",
     "frequency": "high",
     "groupDay": 6,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EN-DEV-DEVİR' -> Dev bir hedefe ulaşmak için harcanan büyük emek ve gayret: ENDEAVOR (çaba, girişim)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Fransızca \"en devoir\" (görevini yaparken). Görevini yapmak için harcanan zahmetli çaba = endeavor."
   },
   {
     "id": "w1011",
@@ -301,7 +301,7 @@ export const day6Words: YdsWord[] = [
     "exampleEn": "Dietitians frequently extol the health benefits of the Mediterranean diet for reducing chronic cardiovascular inflammation.",
     "exampleTr": "Diyetisyenler, kronik kardiyovasküler iltihabı azaltma konusunda Akdeniz diyetinin sağlık faydalarını sıklıkla öve öve bitiremezler ve methederler.",
     "ydsTip": "'Praise', 'laud', 'acclaim' ve 'glorify' ile tam eş anlamlıdır. Zıttı: Criticize, condemn.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 6,
     "mnemonic": "💡 ÇAĞRIŞIM: 'EKSTRA-TOL' -> Bir kişinin ya da besinin erdemlerini ekstra sözlerle göklere çıkarmak: EXTOL (methetmek, övmek)."
   },
@@ -319,7 +319,7 @@ export const day6Words: YdsWord[] = [
     "ydsTip": "'Wasteful', 'prodigal', 'lavish' ve 'immoderate' ile eş anlamlıdır; zıttı 'frugal' ve 'austere'dir.",
     "frequency": "high",
     "groupDay": 6,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EKSTRA-VAGON' -> İhtiyacı olmadığı halde ekstra vagon dolusu para harcayan savurgan tip: EXTRAVAGANT."
+    "mnemonic": "💡 ÇAĞRIŞIM: EXTRA (dışında) + VAG (gezinmek; \"vagabond\" serseri). Ölçünün dışına gezinip giden = savurgan, abartılı."
   },
   {
     "id": "w900",
@@ -383,7 +383,7 @@ export const day6Words: YdsWord[] = [
     "ydsTip": "'Hinder', 'impede', 'obstruct', 'thwart' ve 'inhibit' ile tam eş anlamlıdır. Doğal afet ve kriz metinlerinde bankodur.",
     "frequency": "ultra",
     "groupDay": 6,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HAMPAL (Hantal yük)' -> Ayağına hantal bir yük bağlanmış gibi yürümeyi güçleştirip engellemek: HAMPER."
+    "mnemonic": "💡 ÇAĞRIŞIM: Ortaçağda kaçmasın diye atın ayağına bağlanan köstek. Ayağına köstek bağlanmış gibi ilerlemeyi güçleştirmek = engellemek."
   },
   {
     "id": "w797",
@@ -399,7 +399,7 @@ export const day6Words: YdsWord[] = [
     "ydsTip": "'Instantly', 'promptly', 'at once' ve 'forthwith' ile eş anlamlıdır.",
     "frequency": "ultra",
     "groupDay": 6,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İM-MEDYAT' -> Bir saniye bile beklemeden, anında ve ivedilikle: IMMEDIATELY."
+    "mnemonic": "💡 ÇAĞRIŞIM: IM (yok) + MEDIATE (araya giren). Arada hiçbir aracı ya da bekleme olmadan = derhal, anında."
   },
   {
     "id": "w291",
@@ -591,7 +591,7 @@ export const day6Words: YdsWord[] = [
     "ydsTip": "'Trial', 'tribulation', 'hardship', 'nightmare' ve 'torment' ile eş anlamlıdır; zorlu hayatta kalma hikayelerinde yer alır.",
     "frequency": "medium",
     "groupDay": 6,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ORDA-ÖL' -> İnsanı canından bezdiren, ateşten gömlek gibi ağır çile ve sınav: ORDEAL."
+    "mnemonic": "💡 ÇAĞRIŞIM: Ortaçağda \"ordeal\" = sanığı kızgın demir ya da ateşle sınayan yargılama. Ateşten geçmek kadar ağır çile ve sınav."
   },
   {
     "id": "w351",

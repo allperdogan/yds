@@ -21,9 +21,9 @@ export const day28Words: YdsWord[] = [
     "exampleEn": "The sudden plunge in quarterly corporate earnings was treated by financial analysts as a temporary statistical aberration.",
     "exampleTr": "Üç aylık şirket kazançlarındaki ani düşüş, finans analistlerince geçici bir istatistiki sapma ve kuraldışılık olarak değerlendirildi.",
     "ydsTip": "'Deviation / anomaly / irregularity' eşanlamlısıdır; optikte ışık kırılması veya istatistikte olağandışı sapmadır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 28,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'A-BERRAK-SYON' -> Normalde berrak olan düzenin bozulması; çizgiden ABERRATION (sapma, anormallik)."
+    "mnemonic": "💡 ÇAĞRIŞIM: AB (uzağa) + ERR (yanılmak, \"error\"). Doğru yoldan uzağa yanılıp sapmak = sapma, kuraldışılık."
   },
   {
     "id": "w28",
@@ -95,9 +95,9 @@ export const day28Words: YdsWord[] = [
     "exampleEn": "Evolutionary biologists examine how altruistic behavior in social insects benefits the survival of the entire colony.",
     "exampleTr": "Evrimsel biyologlar, sosyal böceklerdeki özgecil ve fedakar davranışların tüm koloninin hayatta kalmasına nasıl yarar sağladığını inceliyor.",
     "ydsTip": "'Selfless / unselfish / philanthropic' eşanlamlısıdır; zıttı 'egoistic / selfish'tir.",
-    "frequency": "ultra",
+    "frequency": "high",
     "groupDay": 28,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AL-TURİST-İK (Veren el)' -> Kendi çıkarını değil hep başkalarını düşünen ALTRUISTIC (özgecil, fedakar) insan."
+    "mnemonic": "💡 ÇAĞRIŞIM: ALTER (Latince \"diğeri\"; \"alternatif\") + ISTIC. Kendinden önce hep \"diğerini\" düşünen = özgecil, fedakâr."
   },
   {
     "id": "w411",
@@ -456,9 +456,9 @@ export const day28Words: YdsWord[] = [
     "exampleEn": "The morning rainbow cast a breathtaking but evanescent shimmer across the waterfall before fading into the mist.",
     "exampleTr": "Sabah gökkuşağı, sisin içinde kaybolmadan önce şelalenin üzerine nefes kesici fakat uçucu ve çabuk kaybolan bir ışıltı saçtı.",
     "ydsTip": "'Fleeting / ephemeral / transient' eşanlamlısıdır; göz açıp kapayıncaya kadar kaybolan şeyleri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 28,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EV-ESEN-KAYBOLAN' -> Rüzgar gibi esip hemen kaybolan EVANESCENT (uçucu, çabuk kaybolan, fani)."
+    "mnemonic": "💡 ÇAĞRIŞIM: E + VANESC (kaybolmak; \"vanish\" ile akraba). Buhar gibi hemen kaybolup giden = uçucu, fani."
   },
   {
     "id": "w471",
@@ -482,7 +482,7 @@ export const day28Words: YdsWord[] = [
     "ydsTip": "'Exorbitant / immoderate / extreme' eşanlamlısıdır; normal sınırları aşan fazlalığı ifade eder.",
     "frequency": "high",
     "groupDay": 28,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EKSTRA-SESİF' -> Ekstra fazla, ölçüyü aşmış EXCESSIVE (aşırı, haddinden fazla)."
+    "mnemonic": "💡 ÇAĞRIŞIM: EXCESS (fazlalık) kökünden; EXCEED (aşmak) fiiliyle akraba. Sınırı aşan, haddinden fazla = aşırı."
   },
   {
     "id": "w179",
@@ -670,7 +670,7 @@ export const day28Words: YdsWord[] = [
     "exampleEn": "The aging composer was notoriously irascible, regularly throwing tantrums whenever musicians made the slightest error during rehearsal.",
     "exampleTr": "Yaşlanan besteci kötü şöhretli bir şekilde çabuk parlayan ve asabi biriydi; provalarda müzisyenler en ufak bir hata yaptığında düzenli olarak öfke krizlerine girerdi.",
     "ydsTip": "'Irritable / short-tempered / petulant' eşanlamlısıdır; pireye kızıp yorgan yakan fevri karakterleri anlatır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 28,
     "mnemonic": "💡 ÇAĞRIŞIM: 'İR-ASABİ' -> İri asabi adam; burnundan kıl aldırmayan, çabuk parlayan IRASCIBLE (asabi, hırçın) mizaç."
   },
@@ -766,9 +766,9 @@ export const day28Words: YdsWord[] = [
     "exampleEn": "The implementation of automated drone delivery systems will largely obviate the need for human couriers in remote mountainous areas.",
     "exampleTr": "Otomatik dron teslimat sistemlerinin devreye sokulması, uzak dağlık bölgelerde insan kuryelere olan ihtiyacı büyük ölçüde ortadan kaldıracak ve gereksiz kılacaktır.",
     "ydsTip": "'Preclude / eliminate / make unnecessary' eşanlamlısıdır; özellikle 'obviate the need for ...' kalıbıyla sık sorulur.",
-    "frequency": "ultra",
+    "frequency": "high",
     "groupDay": 28,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'OBVİYAT (Yolu aç/engeli kaldır)' -> İhtiyacı tamamen bertaraf edip ortadan kaldırmak (obviate)."
+    "mnemonic": "💡 ÇAĞRIŞIM: OB (karşı) + VIA (yol). Yolun önüne çıkan engeli önceden kaldırmak = ortadan kaldırmak, gereksiz kılmak."
   },
   {
     "id": "w343",
@@ -888,7 +888,7 @@ export const day28Words: YdsWord[] = [
     "ydsTip": "Hem 'işten çıkarmalar/kadro fazlalığı' hem de 'gereksiz fazlalık/yedekleme unsuru' demektir.",
     "frequency": "high",
     "groupDay": 28,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'REDUNDANT (Gereksiz fazlalık)' -> İhtiyaç dışı kalan fazlalık ve lüzumsuzluk REDUNDANCY."
+    "mnemonic": "💡 ÇAĞRIŞIM: REDUNDANT (taşan dalga gibi fazla) sıfatının ismi: fazlalık, gereksiz tekrar; iş yerinde kadro fazlası olarak çıkarılma."
   },
   {
     "id": "w209",

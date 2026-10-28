@@ -54,9 +54,9 @@ export const day18Words: YdsWord[] = [
     "exampleEn": "The collapse of the unregulated financial market was precipitated by reckless corporate greed and unbridled avarice.",
     "exampleTr": "Denetimsiz finans piyasasının çöküşü, pervasız kurumsal hırs ve dizginlenemez bir açgözlülükle tetiklendi.",
     "ydsTip": "Ahlaki çöküş ve finansal kriz metinlerinde 'greed' (doyumsuzluk) ile eşanlamlı olarak kullanılan seçkin bir kelimedir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 18,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AV-ARİCE (Ava doymayan açgözlü)' -> Dünyayı yese doymayan aşırı para hırsı: AVARICE (açgözlülük, hırs)."
+    "mnemonic": "💡 ÇAĞRIŞIM: AVID (açgözlü, can atan) ile aynı kökten. Paraya doymadan can atan kişinin açgözlülüğü = avarice."
   },
   {
     "id": "w640",
@@ -292,7 +292,7 @@ export const day18Words: YdsWord[] = [
     "exampleEn": "The judge sternly reminded courtroom spectators to maintain strict decorum throughout the murder trial.",
     "exampleTr": "Yargıç, cinayet davası boyunca mahkeme salonundaki izleyicilere katı adabımuaşereti (saygılı düzeni) korumalarını sertçe hatırlattı.",
     "ydsTip": "Resmi ortamlarda, meclislerde veya mahkemelerde saygınlık ve nezaket kurallarına uymayı tanımlar ('maintain decorum').",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 18,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DEKOR / DEKORUM' -> Salona yakışır şekilde edepli ve terbiyeli davranma hali: DECORUM (adabımuaşeret, terbiye, görgü)."
   },
@@ -809,7 +809,7 @@ export const day18Words: YdsWord[] = [
     "ydsTip": "'Wipe out' ve 'annihilate' ile tam eştir; arkasında hiçbir iz bırakmadan yeryüzünden silmek demektir.",
     "frequency": "high",
     "groupDay": 18,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'O-BİTTİ-LATE (Yok olup gitti)' -> Geride tek bir taş bile bırakmadan haritadan silmek: OBLITERATE (tamamen yok etmek, yerle bir etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: OB (üzerinden) + LITERA (harf; \"literature\"). Yazılı harflerin üzerinden silip hiçbir iz bırakmamak = tamamen yok etmek."
   },
   {
     "id": "w1139",
@@ -837,7 +837,7 @@ export const day18Words: YdsWord[] = [
     "exampleEn": "Court biographers depicted the courtiers as obsequious flatterers who catered to the king's every vanity.",
     "exampleTr": "Saray biyografi yazarları, saray mensuplarını kralın her türlü kibrine hizmet eden yaltakçı (dalkavuk) dalkavuklar olarak tasvir etti.",
     "ydsTip": "'Sycophantic' ile tam eştir; güçlü bir kişinin önünde eğilip bükülen dalkavukça tavırları anlatır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 18,
     "mnemonic": "💡 ÇAĞRIŞIM: 'OB-SEKİ-YUS (Sekiz takla atan)' -> Efendisinin önünde sekiz takla atıp eğilen köle ruhlu dalkavuk: OBSEQUIOUS (yaltakçı, kölece boyun eğen)."
   },
@@ -1142,7 +1142,7 @@ export const day18Words: YdsWord[] = [
     "ydsTip": "'Explicit' (açıkça söylenmiş) zıttıdır; açıkça dile getirilmeden, sessiz kalınarak verilen onayı ifade eder ('tacit consent').",
     "frequency": "ultra",
     "groupDay": 18,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TACİT -> SES ÇIKARMAYAN' -> Ağızdan tek kelime çıkmasa da sükut ikrardan gelir mantığıyla verilen sessiz onay: TACIT (zımni, üstü kapalı)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince TACERE (susmak). Söze dökülmeden, sessizce kabul edilen = zımni. \"Tacit agreement\" = sessiz anlaşma."
   },
   {
     "id": "w954",

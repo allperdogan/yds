@@ -89,7 +89,7 @@ export const day16Words: YdsWord[] = [
     "ydsTip": "Genellikle olumsuz bir tonda 'hadsizce gösterilen küstah cesaret' manasında 'have the audacity to do something' kalıbıyla çıkar.",
     "frequency": "high",
     "groupDay": 16,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ODA-SİTİ (Odayı başına yıkacak kadar cüretkar)' -> Haddini aşarak küstahça ileri atılmak: AUDACITY (cüret, hadsiz cesaret)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"audere\" (cüret etmek). \"Have the audacity to...\" = ...yapacak kadar cüretkâr olmak; haddini aşan cesaret."
   },
   {
     "id": "w638",
@@ -260,7 +260,7 @@ export const day16Words: YdsWord[] = [
     "ydsTip": "Daima 'TO' edatı alır ('confine someone/something to...'). Genellikle pasif olarak 'be confined to bed/home' (yatağa/eve mahkum olmak) şeklinde çıkar.",
     "frequency": "high",
     "groupDay": 16,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KONTROL ALTINA ALIP FINISH ÇİZGİSİ ÇEKMEK' -> Dışarı taşmaması için etrafını çevirip sınırlamak: CONFINE TO (sınırlandırmak, hapsetmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: CON + FINE (sınır; \"final\"). Bir şeyi sınırların içine kapatmak = sınırlandırmak, hapsetmek. \"Confined to\" = -e sınırlı."
   },
   {
     "id": "w429",
@@ -350,7 +350,7 @@ export const day16Words: YdsWord[] = [
     "exampleEn": "The premature withdrawal of troop support turned the planned military operation into an unmitigated debacle.",
     "exampleTr": "Birlik desteğinin vaktinden önce çekilmesi, planlanan askeri operasyonu tam bir hezimete (fiyaskoya) dönüştürdü.",
     "ydsTip": "Büyük iddialarla başlanıp rezalet ve çöküşle biten olayları anlatır; 'fiasco' ile eş anlamlıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 16,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DE-BAK-LE (Bak hele rezilliğe)' -> Büyük vaatlerle başlanıp tam bir fiyaskoyla sonuçlanan hezimet: DEBACLE (hezimet, tam çöküş)."
   },
@@ -757,7 +757,7 @@ export const day16Words: YdsWord[] = [
     "ydsTip": "'Carry out' phrasal verb'ünün birebir resmi akademik karşılığıdır; 'implement a plan / reform / agreement' kalıpları son derece popülerdir.",
     "frequency": "ultra",
     "groupDay": 16,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AMEL-İYAT / İCRAAT' -> Lafı bırakıp işi fiilen hayata geçirmek: IMPLEMENT (uygulamak, hayata geçirmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: IM (içine) + PLE (doldurmak; \"complete\"). Kâğıttaki planın içini gerçek işle doldurmak = uygulamak, hayata geçirmek."
   },
   {
     "id": "w1021",
@@ -1088,7 +1088,7 @@ export const day16Words: YdsWord[] = [
       "safety precautions",
       "precautionary measures"
     ],
-    "exampleEn": "Public health guidelines advise travelers to take precautionary measures against mosquito-borne tropical infections.",
+    "exampleEn": "Public health guidelines advise travelers to take precautions against mosquito-borne tropical infections.",
     "exampleTr": "Halk sağlığı yönergeleri, yolculara sivrisinekle bulaşan tropikal enfeksiyonlara karşı ihtiyati tedbirler (önlemler) almalarını tavsiye eder.",
     "ydsTip": "Daima 'take precautions against...' (-e karşı tedbir almak) fiiliyle kolokasyon oluşturur; sıfat hali 'precautionary'dır.",
     "frequency": "ultra",
@@ -1216,7 +1216,7 @@ export const day16Words: YdsWord[] = [
     "ydsTip": "Daima 'SUCCUMB TO' kalıbıyla kullanılır. Tıpta 'hastalıktan hayatını kaybetmek' ('succumb to cancer'); siyasette ise 'baskıya teslim olmak'tır.",
     "frequency": "ultra",
     "groupDay": 16,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SUKUT ETMEK / DÜŞMEK' -> Direnemeyip hastalığın veya baskının altına düşmek: SUCCUMB TO (yenik düşmek, boyun eğmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: SUC (altına) + CUMB (yatmak). Baskının altında yere yatmak = yenik düşmek. Daima \"succumb TO\"."
   },
   {
     "id": "w1167",
@@ -1246,7 +1246,7 @@ export const day16Words: YdsWord[] = [
     "exampleEn": "The corporate spy installed a surreptitious listening device beneath the conference room table.",
     "exampleTr": "Şirket casusu, konferans salonu masasının altına gizli kapaklı (el altından) bir dinleme cihazı yerleştirdi.",
     "ydsTip": "Başkaları görmesin diye gizlice, el altından yapılan kaçamak eylemleri tanımlar; 'clandestine' ve 'furtive' ile eştir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 16,
     "mnemonic": "💡 ÇAĞRIŞIM: 'SURREPTİTİOUS -> SÜRÜNGEN GİBİ SESSİZ' -> Yerden sessizce sürünen yılan gibi kimseye sezdirmeden: SURREPTITIOUS (gizli kapaklı, sinsi, kaçamak)."
   },

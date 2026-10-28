@@ -63,7 +63,7 @@ export const day11Words: YdsWord[] = [
     ydsTip: "Liderlerin yıkımına yol açan aşırı kibri ('hubris / arrogance') anlatan tarih ve edebiyat metinlerinde sıkça karşımıza çıkar.",
     frequency: "high",
     groupDay: 11,
-    mnemonic: "💡 ÇAĞRIŞIM: 'ARGO-GENC' -> Kendini herkesten üstün görüp kaba ve küstah davranan, kibrinden (arrogance) yanına varılmayan kişi."
+    mnemonic: "💡 ÇAĞRIŞIM: AR (-e doğru) + ROG (istemek, talep etmek; \"interrogate\" sorgulamak). Hak etmediği saygıyı herkesten talep eden kişinin kibri."
   },
   {
     id: "w633",
@@ -111,7 +111,7 @@ export const day11Words: YdsWord[] = [
     ydsTip: "Hukuk ve bilimsel tez tartışmalarında 'cogent argument / reason' (sağlam ve ikna edici sav/neden) olarak 'compelling' ile tam denktir.",
     frequency: "medium",
     groupDay: 11,
-    mnemonic: "💡 ÇAĞRIŞIM: 'KOÇ-GİBİ' -> Koç gibi sağlam temellere dayanan, dinleyeni anında ikna eden güçlü ve tutarlı (cogent) argüman."
+    mnemonic: "💡 ÇAĞRIŞIM: Latince \"cogere\" (bir araya sürmek). Bütün kanıtları bir araya toplayıp seni bir sonuca sürükleyen = ikna edici, güçlü (argüman)."
   },
   {
     id: "w132",
@@ -191,7 +191,7 @@ export const day11Words: YdsWord[] = [
     ydsTip: "'Contingency plan' (acil durum / B planı) ve 'contingency fund' (ihtiyat akçesi) ifadeleri yönetim ve ekonomi metinlerinde çok sık çıkar.",
     frequency: "high",
     groupDay: 11,
-    mnemonic: "💡 ÇAĞRIŞIM: 'KONTENJAN / KONTROL DIŞI' -> Her ihtimale karşı kenarda tutulan yedek bütçe, acil durum olasılığı: CONTINGENCY."
+    mnemonic: "💡 ÇAĞRIŞIM: CON + TING (dokunmak; \"contact\"). Başka bir olaya değerse ortaya çıkacak durum = beklenmedik olasılık. \"Contingency plan\" = B planı."
   },
   {
     id: "w1235",
@@ -205,7 +205,7 @@ export const day11Words: YdsWord[] = [
     exampleEn: "Balancing urgent economic growth with stringent ecological preservation presents a perennial policy conundrum for developing states.",
     exampleTr: "Acil ekonomik büyümeyi katı ekolojik koruma ile dengelemek, gelişmekte olan devletler için daimi bir politika çıkmazı ve muamması teşkil etmektedir.",
     ydsTip: "Etik veya ekonomik ikilemleri anlatırken 'ethical conundrum' (etik ikilem/bilmece) kalıbı 'dilemma' yerine kullanılır.",
-    frequency: "high",
+    frequency: "medium",
     groupDay: 11,
     mnemonic: "💡 ÇAĞRIŞIM: 'KANUN-DURUM' -> Kanunların bile içinden çıkamadığı, kafa karıştıran devasa bir muamma ve bilmece: CONUNDRUM."
   },
@@ -495,7 +495,7 @@ export const day11Words: YdsWord[] = [
     ydsTip: "Mahkeme ve hukuk metinlerinde hakimin en ağır cezayı vermek yerine müsamaha göstermesini ('clemency / leniency') ifade eder.",
     frequency: "medium",
     groupDay: 11,
-    mnemonic: "💡 ÇAĞRIŞIM: 'LENİN / LİMAN' -> Sert fırtınalara karşı sığınılan ılık liman gibi, sert kanunların karşısında merhamet ve müsamaha (leniency)."
+    mnemonic: "💡 ÇAĞRIŞIM: Latince LENIS (yumuşak, nazik). Ceza verirken yumuşak davranmak = hoşgörü, müsamaha. Sıfatı: lenient."
   },
   {
     id: "w1132",
@@ -639,7 +639,7 @@ export const day11Words: YdsWord[] = [
     ydsTip: "ÖSYM'nin en popüler sıfatlarından biridir! Krizden çabuk çıkan ekonomi ('resilient economy') veya afetlere dirençli yapılar için kullanılır.",
     frequency: "ultra",
     groupDay: 11,
-    mnemonic: "💡 ÇAĞRIŞIM: 'REZİSTANS (Direnç)' -> Darbeler karşısında kırılmayan, esneyip hemen eski sağlam haline toparlanan dirençli (resilient) yapı."
+    mnemonic: "💡 ÇAĞRIŞIM: RE (geri) + SILI (sıçramak). Ezilince yay gibi geri sıçrayan = dirençli, çabuk toparlanan."
   },
   {
     id: "w574",

@@ -383,7 +383,7 @@ export const day17Words: YdsWord[] = [
     "exampleEn": "The ancient fable employs a didactic narrative intended to instill moral virtue in young readers.",
     "exampleTr": "Antik masal, genç okuyuculara ahlaki erdem aşılamayı amaçlayan öğretici (didaktik) bir anlatı kullanır.",
     "ydsTip": "Edebiyatta doğrudan ahlak dersi ve öğüt vermeyi amaçlayan didaktik eserleri niteler; 'instructive' ile eşanlamlıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 17,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DİDAKTİK ŞİİR' -> Sanat için değil, doğrudan ders ve nasihat vermek için yazılan: DIDACTIC (öğretici, nasihat verici)."
   },
@@ -697,7 +697,7 @@ export const day17Words: YdsWord[] = [
     "ydsTip": "'Flawless' ve 'faultless' ile tam eşdeğerdir. 'Impeccable timing / credentials' (kusursuz zamanlama / yetkinlik) olarak sıkça test edilir.",
     "frequency": "high",
     "groupDay": 17,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İM-PEK-İYİ' -> Notu 'pek iyi'den de öte kusursuz, tek bir lekesi dahi olmayan: IMPECCABLE (kusursuz, hatasız)."
+    "mnemonic": "💡 ÇAĞRIŞIM: IM (değil) + PECC (günah işlemek). Hiç günah işlememiş gibi = kusursuz, lekesiz."
   },
   {
     "id": "w1022",
@@ -726,9 +726,9 @@ export const day17Words: YdsWord[] = [
     "exampleEn": "Human rights conventions strictly prohibit regimes from incarcerating political dissidents without fair trial.",
     "exampleTr": "İnsan hakları sözleşmeleri, rejimlerin siyasi muhalifleri adil yargılama olmaksızın hapsetmesini (cezaevine tıkmasını) kesinlikle yasaklar.",
     "ydsTip": "Hukuk ve insan hakları metinlerinde 'imprison' yerine kullanılan ileri düzey fiildir; isim hali 'incarceration' (hapis cezası/tutukluluk) şeklindedir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 17,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İÇERİ TIKMAK' -> Dört duvar arasına kapatıp zindana atmak: INCARCERATE (hapsetmek, cezaevine koymak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: IN + CARCER (Latince \"hapishane\"). Birini hapishanenin içine koymak = hapsetmek."
   },
   {
     "id": "w302",
@@ -911,7 +911,7 @@ export const day17Words: YdsWord[] = [
     "exampleEn": "Despite overwhelming scientific evidence, the CEO remained obdurate in refusing to reduce chemical emissions.",
     "exampleTr": "Ezici bilimsel kanıtlara rağmen genel müdür, kimyasal emisyonları azaltmayı reddetme konusunda yola gelmez (inatçı) kalmaya devam etti.",
     "ydsTip": "Mantıklı ikna çabalarına ve merhamete kapalı sert inatçılığı ifade eder; 'stubborn / unyielding' ile eşanlamlıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 17,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DURATE (Dayanıklı/Sert)' -> Kaya gibi sert, merhametsiz ve taş yürekli inatçı: OBDURATE (inatçı, yola gelmez)."
   },
@@ -1212,7 +1212,7 @@ export const day17Words: YdsWord[] = [
     "exampleEn": "The corrupt minister surrounded himself with sycophantic advisors who never dared to voice disagreement.",
     "exampleTr": "Yozlaşmış bakan, etrafını fikir ayrılığı belirtmeye asla cesaret edemeyen dalkavuk (yağcı) danışmanlarla doldurdu.",
     "ydsTip": "Kişisel menfaat için otoriteye yaltaklanan ve aşırı yağ çeken kişileri tanımlar; 'obsequious' ve 'fawning' ile eştir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 17,
     "mnemonic": "💡 ÇAĞRIŞIM: 'SİKO-FANTİK / DALKAVUK' -> Menfaat sağlamak için efendisinin her lafına çanak yalayan: SYCOPHANTIC (dalkavuk, çanak yalayıcı)."
   },

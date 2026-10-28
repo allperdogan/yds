@@ -118,9 +118,9 @@ export const day14Words: YdsWord[] = [
     "exampleEn": "The young scholar examined thousands of ancient papyrus fragments with extraordinary patience and assiduity.",
     "exampleTr": "Genç akademisyen, binlerce antik papirüs parçasını olağanüstü bir sabır ve sebatla (özenle) inceledi.",
     "ydsTip": "'Assiduous' sıfatının isim halidir; 'diligence' ve 'perseverance' ile eşdeğerdir. Akademik azim ve titizliği niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AS-İ-DUİT (As you do it / İşi hakkıyla yap)' -> Sabah akşam yılmadan çalışarak gösterilen sebat ve gayret: ASSIDUITY (çalışkanlık, sebat)."
+    "mnemonic": "💡 ÇAĞRIŞIM: AS + SID (oturmak; \"sedentary\" hareketsiz). Masadan kalkmadan oturup çalışmak = sebat, çalışkanlık."
   },
   {
     "id": "w636",
@@ -152,7 +152,7 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "Daima 'TO' edatı alır ('aversion to'). 'Risk aversion' (riskten kaçınma) iktisat metinlerinde çok sık test edilir.",
     "frequency": "ultra",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'A-VERSION (Farklı versiyon)' -> O versiyondan hiç hoşlanmayıp yüzünü çevirmek: AVERSION TO (şiddetli hoşnutsuzluk, nefret)."
+    "mnemonic": "💡 ÇAĞRIŞIM: A (uzağa) + VERS (çevirmek; \"reverse\"). Hoşlanmadığın şeyden yüzünü uzağa çevirmek = nefret, isteksizlik. \"aversion TO\"."
   },
   {
     "id": "w950",
@@ -241,7 +241,7 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "'Compelling' sıfatı (ikna edici, sürükleyici) YDS'de çok sevilir ('compelling evidence'). Fiil hali 'force' ve 'oblige' ile eştir.",
     "frequency": "ultra",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KOMPİLE (Zorlayıcı komplo)' -> Kurulan baskı ve kumpas insanı istemediği bir şeyi yapmaya COMPEL eder (mecbur bırakır, zorlar)."
+    "mnemonic": "💡 ÇAĞRIŞIM: COM (tamamen) + PEL (itmek; \"propel\" ileri itmek, \"expel\" dışarı itmek). Birini bir şeyi yapmaya itmek = zorlamak, mecbur bırakmak."
   },
   {
     "id": "w135",
@@ -390,7 +390,7 @@ export const day14Words: YdsWord[] = [
     "exampleEn": "The crux of the diplomatic debate centers on how carbon emissions should be calculated for developing nations.",
     "exampleTr": "Diplomatik tartışmanın can alıcı noktası (özü), karbon emisyonlarının gelişmekte olan ülkeler için nasıl hesaplanması gerektiği üzerine odaklanmaktadır.",
     "ydsTip": "Latincedeki 'haç/çarmıh' (cross) kelimesinden gelir. 'The crux of the matter / problem' kalıbı meselenin en kritik düğüm noktasını belirtir.",
-    "frequency": "ultra",
+    "frequency": "high",
     "groupDay": 14,
     "mnemonic": "💡 ÇAĞRIŞIM: 'KRİTİK / CROOKS' -> Tüm iplerin kesiştiği can alıcı düğüm noktası: CRUX (meselenin özü, en kritik nokta)."
   },
@@ -455,7 +455,7 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "'Deficit' (bütçe açığı) ile akrabadır. Tıpta 'vitamin deficiency' (vitamin eksikliği), psikolojide 'attention deficiency' (dikkat eksikliği) olarak gelir.",
     "frequency": "high",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DEFİNE-Cİ (Açıkta kalan)' -> Kasada para eksik çıkınca açık veren bütçe: DEFICIENCY (eksiklik, yetersizlik)."
+    "mnemonic": "💡 ÇAĞRIŞIM: DE (eksik) + FIC (yapmak; \"factory\"). Tam yapılamamış, eksik kalan şey = eksiklik. \"Vitamin D deficiency\" = D vitamini eksikliği."
   },
   {
     "id": "w1268",
@@ -516,7 +516,7 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "'Divert attention away from...' (dikkatleri ...-den başka yöne çekmek) siyaset ve sosyoloji metinlerinde sıkça doğru şıktır.",
     "frequency": "ultra",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DİREKSİYONU DÖNDÜRMEK' -> Yolu değiştirip başka yöne saptırmak: DIVERT (yönünü çevirmek, saptırmak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: DI (ayrı) + VERT (çevirmek; \"reverse\"). Akışı ayrı bir yöne çevirmek = yönünü değiştirmek. Trafik \"diversion\" = güzergâh değişikliği."
   },
   {
     "id": "w457",
@@ -704,7 +704,7 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "Neredeyse daima 'heed warnings / advice' (uyarıları/tavsiyeleri dikkate almak) kalıbıyla gelir. Zıttı 'ignore / disregard'dır.",
     "frequency": "ultra",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HİTİT / HÖDÜK OLMA, DİNLE' -> Sana verilen uyarılara hödük gibi kulak tıkama, HEED et (kulak ver, dikkate al)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Uyarı levhalarındaki \"Heed the warning!\" = Uyarıya kulak ver! \"Pay heed to\" = dikkate almak; \"heedless\" = dikkatsiz, umursamaz."
   },
   {
     "id": "w1105",
@@ -1300,7 +1300,7 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "Doğal afetlerde suların çekilmesi ('floodwaters subside'), fırtınanın ya da acının hafifleyip dinmesi ('pain subsides') için kullanılan kilit fiildir.",
     "frequency": "high",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SUB (Aşağı) + SİDE (Taraf)' -> Suların ve fırtınanın aşağıya doğru çekilip sakinleşmesi: SUBSIDE (yatışmak, suların çekilmesi, dinmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: SUB (aşağı) + SID (oturmak; \"sedentary\"). Fırtına ya da öfke yavaşça aşağı oturur = yatışmak, dinmek."
   },
   {
     "id": "w756",
@@ -1446,7 +1446,7 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "Resmi ve akademik dilde 'occur' veya 'happen' yerine kullanılan seçkin bir fiildir; ayrıca 'as it transpired' (sonradan anlaşıldığı üzere) kalıbı da vardır.",
     "frequency": "high",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TRANS-PİR (Olayın piri olmak)' -> Perde arkasında gizlice olan bitenin açığa çıkıp vuku bulması: TRANSPIRE (meydana gelmek, açığa çıkmak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: TRANS (içinden) + SPIRE (nefes almak). İçeride olan biten nefes gibi dışarı sızar = açığa çıkmak; ayrıca \"meydana gelmek\"."
   },
   {
     "id": "w607",
@@ -1477,6 +1477,6 @@ export const day14Words: YdsWord[] = [
     "ydsTip": "Latince 'ubique' (her yerde). 'Omnipresent' ve 'pervasive' ile eşdeğerdir. Modern teknolojinin veya kirliliğin her yere yayılmışlığını anlatır.",
     "frequency": "ultra",
     "groupDay": 14,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'UBI-KUTU (Her yerde bir kutu)' -> Hangi sokağa girsen karşına çıkan, her yerde hazır ve nazır: UBIQUITOUS (her yerde birden bulunan, yaygın)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince UBIQUE (her yerde). Her yerde karşına çıkan = her yerde bulunan, yaygın. Akıllı telefonlar artık ubiquitous."
   }
 ];

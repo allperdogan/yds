@@ -143,7 +143,7 @@ export const day19Words: YdsWord[] = [
     "ydsTip": "ÖSYM 'in deference to' (-e saygıdan/hürmeten) kalıp edatını gramer ve okuma parçalarında sıkça kullanır.",
     "frequency": "high",
     "groupDay": 19,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DEFTERİNİ' önüne koyup hocasına hürmet gösteren öğrenci; DEFERENCE = Saygı, hürmet."
+    "mnemonic": "💡 ÇAĞRIŞIM: DEFER (sözü bırakmak, boyun eğmek) fiilinin ismi. Büyüğüne söz hakkını bırakmak = saygı, hürmet. \"In deference to\" = -e saygıdan."
   },
   {
     "id": "w19",
@@ -173,7 +173,7 @@ export const day19Words: YdsWord[] = [
     "exampleEn": "Although the scientific establishment initially derided his eccentric hypotheses, later satellite data vindicated his discoveries.",
     "exampleTr": "Bilim camiası başlangıçta onun sıradışı hipotezleriyle alay edip onları küçümsese de, daha sonraki uydu verileri keşiflerini doğruladı.",
     "ydsTip": "'Ridicule' ve 'mock' ile eşanlamlıdır; bilim tarihi metinlerinde yenilikçi fikirlerin alaya alınmasında geçer.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 19,
     "mnemonic": "💡 ÇAĞRIŞIM: 'RIDICULE' (gülünç kılmak) köküyle akrabadır: Başkasına 'Deli mi ne!' diyerek ALAY ETMEK, KÜÇÜMSEMEK."
   },
@@ -349,7 +349,7 @@ export const day19Words: YdsWord[] = [
     "exampleEn": "The revolutionary leader faced an implacable adversary that refused to enter any diplomatic dialogue or compromise.",
     "exampleTr": "Devrimci lider, hiçbir diplomatik diyaloğa veya uzlaşmaya yanaşmayan amansız ve yatıştırılamaz bir düşmanla karşı karşıya kaldı.",
     "ydsTip": "Barışa yanaşmayan azılı düşmanlar veya dinmeyen şiddetli öfke için kullanılan edebi/akademik sıfattır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 19,
     "mnemonic": "💡 ÇAĞRIŞIM: 'IM-' (olumsuz) + 'PLACATE' (teskin etmek, yatıştırmak) -> Hiçbir şekilde sakinleştirilemeyen, AMANSIZ, TAVİZSİZ düşman."
   },
@@ -559,7 +559,7 @@ export const day19Words: YdsWord[] = [
     "ydsTip": "Uluslararası ilişkilerde meclislerin antlaşmaları onaylaması sürecinde daima 'ratify a treaty' kullanılır.",
     "frequency": "high",
     "groupDay": 19,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'RAHATLATTI' -> Meclis antlaşmayı resmi olarak ONAYLAYINCA (ratify) diplomasideki kriz çözüldü, taraflar rahatladı."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince RATUS (sabitlenmiş, onaylanmış; \"rate\" de buradan). Bir antlaşmayı resmen sabitlemek = onaylamak, tasdik etmek."
   },
   {
     "id": "w1363",
@@ -639,7 +639,7 @@ export const day19Words: YdsWord[] = [
     "ydsTip": "Karakter betimlemelerinde 'garrulous / loquacious' (geveze) kelimelerinin antitezi olarak sorulur.",
     "frequency": "high",
     "groupDay": 19,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TACİT' (zımni, örtülü) kökünden gelir; ağzını bıçak açmayan, sessizliğe bürünmüş KETUM insan."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince TACERE (susmak); \"tacit\" ile aynı kökten. Doğası gereği hep susan = az konuşan, ketum."
   },
   {
     "id": "w955",
@@ -719,7 +719,7 @@ export const day19Words: YdsWord[] = [
     "ydsTip": "'Wax and wane' (bir artıp bir azalmak) deyiminde ve imparatorlukların gücünün tükenmesinde sıkça karşımıza çıkar.",
     "frequency": "high",
     "groupDay": 19,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'VAY NE hale geldi' -> Bir zamanların dev gücünün yavaş yavaş eriyip zayıflaması, AZALMASI (wane)."
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Wax and wane\" = Ay'ın büyüyüp küçülmesi. Hilal gibi giderek küçülmek = azalmak, zayıflamak."
   },
   {
     "id": "w230",

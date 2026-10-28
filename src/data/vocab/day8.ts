@@ -47,7 +47,7 @@ export const day8Words: YdsWord[] = [
     ydsTip: "'Reach' veya 'achieve' kelimelerinin akademik muadilidir; hedeflere veya statüye ulaşmak anlatılırken 'attain' kullanılır.",
     frequency: "high",
     groupDay: 8,
-    mnemonic: "💡 ÇAĞRIŞIM: 'AT-TAYİN' -> Atına atlayıp hedefine koşan ve sonunda istediği makama tayin edilerek amacına ATTAIN eden (ulaşan, erişen) kişi."
+    mnemonic: "💡 ÇAĞRIŞIM: AT + TAIN (dokunmak, tutmak; \"contact\" ile akraba). Hedefe uzanıp ona dokunmak = ulaşmak, erişmek."
   },
   {
     id: "w1069",
@@ -159,7 +159,7 @@ export const day8Words: YdsWord[] = [
     ydsTip: "ÖSYM ekonomi ve çevre metinlerinde 'curb inflation' (enflasyonu dizginlemek) ve 'curb greenhouse emissions' (emisyonları kısmak) kullanır.",
     frequency: "ultra",
     groupDay: 8,
-    mnemonic: "💡 ÇAĞRIŞIM: 'KURBAN' olma -> Arabanın hızını frenleyip dizginlemezsen kaza kurbanı olursun; atın gemini çekip CURB et (dizginle)!"
+    mnemonic: "💡 ÇAĞRIŞIM: \"CURB\" kaldırım taşıdır; arabayı yolda tutup sınırlar. Atın ağzındaki gem de \"curb\"dür: dizginlemek, frenlemek."
   },
   {
     id: "w1391",
@@ -319,7 +319,7 @@ export const day8Words: YdsWord[] = [
     ydsTip: "'Formidable challenge' veya 'formidable opponent' tamlamaları ÖSYM sınavlarında 'daunting/tough' karşılığı olarak çok popülerdir.",
     frequency: "high",
     groupDay: 8,
-    mnemonic: "💡 ÇAĞRIŞIM: 'FORMA / FORMUNDA' -> Rakip o kadar formunda ve heybetli ki karşısında yenilmesi güç, ürkütücü ve zorlu (formidable) bir güç var."
+    mnemonic: "💡 ÇAĞRIŞIM: Latince \"formido\" (korku, dehşet). İnsanda korku uyandıracak kadar güçlü = zorlu, heybetli. Olumlu da kullanılır: \"a formidable opponent\" = çetin rakip."
   },
   {
     id: "w1099",
@@ -447,7 +447,7 @@ export const day8Words: YdsWord[] = [
     ydsTip: "Ticaret ve finans paragraflarında 'profitable' kelimesinin en yaygın akademik alternatifidir.",
     frequency: "high",
     groupDay: 8,
-    mnemonic: "💡 ÇAĞRIŞIM: 'LÜKS-LİRA' -> Kasasına bolca lira ve lüks getiren, son derece kazançlı ve karlı (lucrative) bir yatırım."
+    mnemonic: "💡 ÇAĞRIŞIM: LUCR (kazanç; \"filthy lucre\" = kirli para). Kasaya kazanç getiren = kârlı, kazançlı."
   },
   {
     id: "w1129",
@@ -591,7 +591,7 @@ export const day8Words: YdsWord[] = [
     ydsTip: "Neredeyse her zaman 'reluctant to + fiil' yapısıyla kullanılır; 'unwilling' anlamında çeldirici veya doğru cevaptır.",
     frequency: "ultra",
     groupDay: 8,
-    mnemonic: "💡 ÇAĞRIŞIM: 'RAHATSIZ-GÖNÜLSÜZ' -> İşi yapmaktan rahatsızlık duyan, ayaklarını sürüyen, gönülsüz ve isteksiz (reluctant) tavır."
+    mnemonic: "💡 ÇAĞRIŞIM: RE (karşı) + LUCT (mücadele etmek). İçinden direnerek, gönülsüzce yapan = isteksiz. \"Reluctant to do\" = yapmaya gönülsüz."
   },
   {
     id: "w932",

@@ -57,7 +57,7 @@ export const day15Words: YdsWord[] = [
     "ydsTip": "Uluslararası hukuk ve tarih metinlerinde 'commit atrocities' (vahşet işlemek) ve 'war atrocities' (savaş suçları/vahşeti) olarak test edilir.",
     "frequency": "ultra",
     "groupDay": 15,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'A-TROCİTY (Tersine dönen insanlık/Acımasızlık)' -> İnsanlık onurunu ayaklar altına alan korkunç canavarlık: ATROCITY (vahşet, canavarlık)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"atrox\" (vahşi, korkunç); sıfatı \"atrocious\" (berbat). İnsanlık dışı, vahşi eylem = vahşet."
   },
   {
     "id": "w637",
@@ -364,7 +364,7 @@ export const day15Words: YdsWord[] = [
     "exampleEn": "Through deft diplomatic maneuvering, the ambassador resolved the hostage crisis without a single shot being fired.",
     "exampleTr": "Büyükelçi, çevik (usta) diplomatik manevralar sayesinde tek bir el ateş edilmeden rehine krizini çözdü.",
     "ydsTip": "Hem el becerisi ('deft fingers') hem de kriz yönetimindeki siyasi ustalık ('deft management') için kullanılır; 'skillful' ve 'adroit' ile eştir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 15,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DEFTERİ DÜRMEK' -> Usta ve hünerli hareketlerle işi tereyağından kıl çeker gibi bitiren DEFT (becerikli, hünerli, çevik) uzman."
   },
@@ -614,7 +614,7 @@ export const day15Words: YdsWord[] = [
     "ydsTip": "'Futile' (nafile) sıfatının isim halidir; 'a sense of futility' (hiçbir işe yaramayacağı hissi) şeklinde roman ve felsefe metinlerinde çıkar.",
     "frequency": "high",
     "groupDay": 15,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'FUTILE (Nafile)' sıfatının isim hali -> Boşa kürek çekmenin yarattığı hayal kırıklığı: FUTILITY (beyhudelik, nafilelik)."
+    "mnemonic": "💡 ÇAĞRIŞIM: FUTILE (delik kovaya su taşımak kadar boşuna) sıfatının ismi: beyhudelik, nafilelik."
   },
   {
     "id": "w909",
@@ -970,7 +970,7 @@ export const day15Words: YdsWord[] = [
     "exampleEn": "The criminal syndicate orchestrated a nefarious scheme to launder illicit profits through offshore financial havens.",
     "exampleTr": "Suç örgütü, yasa dışı kârları denizaşırı vergi cennetleri üzerinden aklamak amacıyla şeytani (alçakça) bir plan tezgahladı.",
     "ydsTip": "Ahlaki açıdan son derece aşağılık ve kötü niyetli eylemleri anlatır; 'wicked / villainous' ile eş anlamlıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 15,
     "mnemonic": "💡 ÇAĞRIŞIM: 'NEFRET EDİLESİ' -> İnsanların nefretini kazanan karanlık ve kötücül faaliyetler: NEFARIOUS (alçakça, şeytani, haince)."
   },
@@ -1154,7 +1154,7 @@ export const day15Words: YdsWord[] = [
     "exampleEn": "After decades of hostility, the historic peace treaty marked a significant diplomatic rapprochement between the two nations.",
     "exampleTr": "Onlarca yıllık düşmanlığın ardından, tarihi barış antlaşması iki ulus arasında önemli bir diplomatik yakınlaşmayı (arayı düzeltmeyi) simgeledi.",
     "ydsTip": "Uluslararası ilişkilerde düşman iki devletin barış masasına oturması sürecidir; 'detente' (yumuşama) ve 'reconciliation' ile eştir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 15,
     "mnemonic": "💡 ÇAĞRIŞIM: Fransızca 'APPROCHE (Yaklaşmak)' kökünden -> İki küs ülkenin tekrar birbirine yanaşıp barışması: RAPPROCHEMENT (diplomatik yakınlaşma, barışma)."
   },
@@ -1249,9 +1249,9 @@ export const day15Words: YdsWord[] = [
     "exampleEn": "The wealthy merchant cast a supercilious glance at the street vendor before refusing to acknowledge his greeting.",
     "exampleTr": "Varlıklı tüccar, sokak satıcısının selamını almayı reddetmeden önce ona tepeden bakan (kibirli) bir bakış fırlattı.",
     "ydsTip": "Latincede kaş (eyebrow) kökünden gelir; burnu havada, kaşlarını kaldırıp başkalarını küçümseyen kişileri tarif eder; 'arrogant' ile eştir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 15,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SÜPER-CİLLİ (Kendini herkesten süper gören)' -> Burnu Kaf Dağı'nda gezen, herkese tepeden bakan kibirli kişi: SUPERCILIOUS (kibirli, tepeden bakan)."
+    "mnemonic": "💡 ÇAĞRIŞIM: SUPER (üstünde) + CILIUM (kaş). Kaşını havaya kaldırıp herkese tepeden bakan = kibirli."
   },
   {
     "id": "w757",

@@ -45,7 +45,7 @@ export const day23Words: YdsWord[] = [
     "exampleEn": "The Great Famine of Ireland in the 1840s was triggered by an aggressive potato blight that wiped out staple food crops.",
     "exampleTr": "1840'lardaki Büyük İrlanda Kıtlığı, temel besin ürünlerini yok eden ölümcül bir patates pası ve afeti tarafından tetiklendi.",
     "ydsTip": "Tarih ve tarım metinlerinde 'potato blight' (patates vebası) ile şehir sosyolojisinde 'urban blight' (kentsel çöküntü) kalıplarıyla gelir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 23,
     "mnemonic": "💡 ÇAĞRIŞIM: 'B-LIGHT' -> Işığını karartan dert, ekinleri çürüten pas hastalığı ve büyük FELAKET, AFET."
   },
@@ -157,7 +157,7 @@ export const day23Words: YdsWord[] = [
     "exampleEn": "Ancient Greek historians warned that uneducated crowds are exceptionally vulnerable to the charismatic rhetoric of an unscrupulous demagogue.",
     "exampleTr": "Antik Yunan tarihçileri, eğitimsiz kitlelerin vicdansız bir demagogun ve halk avcısının karizmatik retoriğine karşı son derece savunmasız olduğu konusunda uyarmışlardır.",
     "ydsTip": "Siyaset felsefesinde halkın korku ve önyargılarını sömüren popülist liderler için kullanılan üst düzey terimdir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 23,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DEMOS' (halk) + 'AGOGOS' (lider/güdücü) -> Halkı duygularıyla kandırıp peşinden sürükleyen: DEMAGOG, HALK AVCISI."
   },
@@ -207,7 +207,7 @@ export const day23Words: YdsWord[] = [
     "ydsTip": "'Belittle / denigrate' ile tam eşanlamlıdır; başkasının başarısını hafife alıp yermektir.",
     "frequency": "high",
     "groupDay": 23,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DİŞ BİLEMEK'ten gelir gibi; birinin başarısını lekeleyip KÖTÜLEMEK, DEĞERSİZ KILMAK."
+    "mnemonic": "💡 ÇAĞRIŞIM: DIS (aşağı) + PAR (eşit; \"parity\", \"par\"). Birini eşitlerinin altına indirip küçük düşürmek = kötülemek."
   },
   {
     "id": "w1277",
@@ -237,9 +237,9 @@ export const day23Words: YdsWord[] = [
     "exampleEn": "The independent tribunal condemned the multinational corporation for egregious violations of basic occupational safety protocols.",
     "exampleTr": "Bağımsız mahkeme, çok uluslu şirketi temel iş güvenliği protokollerinin fahiş ve affedilmez ihlalleri sebebiyle kınadı.",
     "ydsTip": "Hukuk ve insan hakları metinlerinde 'egregious violation / error' şeklinde affedilmez boyutlardaki skandallar için kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 23,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EĞRİ-CUS' -> Öyle büyük bir eğrilik ve hata ki gizlenemez: FAHİŞ, AKILLARA ZARAR, REZALET."
+    "mnemonic": "💡 ÇAĞRIŞIM: E (dışarı) + GREG (sürü; \"congregate\" toplanmak). Sürüden dışarı taşan, hemen göze batan = fahiş, affedilmez (hata, ihlal)."
   },
   {
     "id": "w466",
@@ -349,7 +349,7 @@ export const day23Words: YdsWord[] = [
     "exampleEn": "Gazing down at the curvature of the Earth from the spacecraft window filled the astronaut with a sense of ineffable wonder.",
     "exampleTr": "Uzay aracının penceresinden Dünya'nın eğriliğine aşağıya doğru bakmak, astronotu kelimelerle tarif edilemez bir hayranlık ve huşu duygusuyla doldurdu.",
     "ydsTip": "Edebi ve sanatsal parçalarda büyüleyici güzellikleri veya derin duyguları anlatırken 'indescribable' yerine kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 23,
     "mnemonic": "💡 ÇAĞRIŞIM: 'İFADE EDİLEMEZ' ile neredeyse aynı ses! IN-EFFABLE = İfade edilemez, KELİMELERLE TARİF EDİLEMEZ."
   },
@@ -479,7 +479,7 @@ export const day23Words: YdsWord[] = [
     "ydsTip": "Tıpta 'pernicious anemia' (ölümcül kansızlık) ve sosyolojide fark ettirmeden çürüten sinsi tehlikeler için kullanılır.",
     "frequency": "high",
     "groupDay": 23,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PER-NİÇİN / PERİŞAN EDEN' -> İnsanı içten içe perişan eden, sinsice yayılan ÇOK ZARARLI ve ÖLÜMCÜL mikrop."
+    "mnemonic": "💡 ÇAĞRIŞIM: PER (tamamen) + NIC/NEC (ölüm; \"necrosis\" doku ölümü). Sinsi sinsi öldürücü = çok zararlı."
   },
   {
     "id": "w556",
@@ -621,9 +621,9 @@ export const day23Words: YdsWord[] = [
     "exampleEn": "During harsh freezing winters, reptiles enter a torpid state characterized by drastically reduced heart rates.",
     "exampleTr": "Çetin dondurucu kışlar sırasında sürüngenler, ciddi oranda yavaşlayan kalp atışlarıyla karakterize edilen uyuşuk ve hareketsiz bir duruma geçerler.",
     "ydsTip": "Biyoloji metinlerinde kış uykusu ve metabolizmanın yavaşlamasını ('torpor/torpid') anlatmada kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 23,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TORPİDO' gibi hareketsizce suda yatan; kış uykusuna yatmış gibi UYUŞUK, HAREKETSİZ."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince TORPERE (uyuşmak). \"Torpido balığı\" dokunanı uyuşturur: uyuşuk, hareketsiz."
   },
   {
     "id": "w398",

@@ -31,7 +31,7 @@ export const day21Words: YdsWord[] = [
     "ydsTip": "Ekonomi haberlerinde batık bankaları veya ülkeleri devlet parasıyla kurtarmak için 'bailout' ismiyle birlikte çok sık karşımıza çıkar.",
     "frequency": "high",
     "groupDay": 21,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'BAĞLA ÇIKAR' -> Batan geminin suyunu kovayla tahliye edip gemiyi ve şirketi iflastan MALİ OLARAK KURTARMAK."
+    "mnemonic": "💡 ÇAĞRIŞIM: Batmak üzere olan teknedeki suyu kovayla dışarı atmak (bail out) gibi, batan şirketi parayla kurtarmak."
   },
   {
     "id": "w1215",
@@ -63,7 +63,7 @@ export const day21Words: YdsWord[] = [
     "ydsTip": "Hukukta 'under duress / under coercion' (baskı/tehdit altında) ifadesi iradenin sakatlanmasını anlatırken esastır.",
     "frequency": "high",
     "groupDay": 21,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KOLEŞ / ZORBA' baskısı; birine istemediği bir şeyi zorla ve tehditle yaptırmak: CEBİR, ZORLAMA, BASKI."
+    "mnemonic": "💡 ÇAĞRIŞIM: CO + ERCE (Latince \"coercere\": kafese kapatmak, zapt etmek). Birini kafese kıstırıp zorla bir şey yaptırmak = zorlama, cebir."
   },
   {
     "id": "w257",
@@ -191,7 +191,7 @@ export const day21Words: YdsWord[] = [
     "ydsTip": "Bir imparatorluğun çöküşü (demise of an empire) veya önemli bir şahsiyetin ölümü (demise of a leader) için kullanılır.",
     "frequency": "high",
     "groupDay": 21,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DE-MİSE' -> Misafirliği bitip son nefesini vermek ya da tahtından inmek: ÇÖKÜŞ, VEFAT, SON BULMA."
+    "mnemonic": "💡 ÇAĞRIŞIM: DE + MISE (göndermek; \"mission\"). Hayattan ya da sahneden gönderilmek = ölüm, çöküş, son bulma."
   },
   {
     "id": "w996",
@@ -237,7 +237,7 @@ export const day21Words: YdsWord[] = [
     "exampleEn": "The ebullient crowd poured into the city streets to celebrate their national soccer team's historic championship victory.",
     "exampleTr": "Coşkulu ve sevinçten kabına sığmayan kalabalık, ulusal futbol takımlarının tarihi şampiyonluk zaferini kutlamak için şehir sokaklarına döküldü.",
     "ydsTip": "İçindeki sevinç kaynayan, kabına sığmayan coşkulu insan ve toplulukları betimlemede kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 21,
     "mnemonic": "💡 ÇAĞRIŞIM: Kaynayan suyun fokurdaması (ebullition); içi neşe ve heyecanla fokurdayan COŞKULU, HAYAT DOLU insan."
   },
@@ -367,7 +367,7 @@ export const day21Words: YdsWord[] = [
     "ydsTip": "YDS bağlaç sorularında 'therefore / thus' ile birebir aynı işlevi görür; virgülden sonra veya noktalı virgülden sonra gelir.",
     "frequency": "ultra",
     "groupDay": 21,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HENCE' -> 'HER NEYSE, İŞTE BU YÜZDEN' dedirten sonuç bağlacı: BUNDAN DOLAYI, BU YÜZDEN."
+    "mnemonic": "💡 ÇAĞRIŞIM: Eski İngilizce \"hennes\" = buradan. \"Buradan hareketle\" = bu yüzden, dolayısıyla. Arkasından genellikle isim de gelebilir: \"hence the name\"."
   },
   {
     "id": "w494",
@@ -447,7 +447,7 @@ export const day21Words: YdsWord[] = [
     "ydsTip": "Hem coğrafi olarak sular altında bırakmak hem de mecazi olarak talep veya şikayet yağmuruna tutmak ('inundate with requests') anlamındadır.",
     "frequency": "high",
     "groupDay": 21,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İN İN İN... SU İNDİ' -> Her tarafı sel sularının basması; sular altında bırakıp BOĞMAK, YIĞMAK."
+    "mnemonic": "💡 ÇAĞRIŞIM: IN + UNDA (dalga; \"undulate\" dalgalanmak). Bir yeri dalgaların altında bırakmak = sel basmak; mecazen e-postalara \"boğulmak\"."
   },
   {
     "id": "w524",
@@ -525,7 +525,7 @@ export const day21Words: YdsWord[] = [
     "exampleEn": "Appearing visibly penitent before the jury, the convict apologized profusely for the devastating harm his actions had caused.",
     "exampleTr": "Jürinin önünde gözle görülür şekilde pişman ve nedamet içinde görünen hükümlü, eylemlerinin yol açtığı yıkıcı zarardan ötürü defalarca özür diledi.",
     "ydsTip": "'Penitence' (pişmanlık) isminden türemiştir; ceza hukuku ve ahlak metinlerinde 'remorseful / contrite' ile eşleşir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 21,
     "mnemonic": "💡 ÇAĞRIŞIM: 'PENITENTIARY' (ıslah evi/cezaevi) kelimesi buradan gelir; parmaklıklar arkasında nedamet getirip PİŞMAN olan mahkum."
   },
@@ -671,7 +671,7 @@ export const day21Words: YdsWord[] = [
     "ydsTip": "Zorluklar karşısında yılmayan bilim insanlarını veya dedektifleri niteler; 'persistent' ile eşleşir.",
     "frequency": "high",
     "groupDay": 21,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TENASÜL / TUTUNMAK' -> Pençeleriyle sımsıkı tutunan, asla bırakmayan: AZİMLİ, İNATÇI, PES ETMEYEN."
+    "mnemonic": "💡 ÇAĞRIŞIM: TEN (tutmak; \"tenant\" kiracı = evi tutan). Bir hedefe sımsıkı tutunup bırakmayan = azimli, inatçı."
   },
   {
     "id": "w51",

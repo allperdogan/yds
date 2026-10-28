@@ -143,7 +143,7 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "As soon as the market opened, a deafening cacophony of shouting traders and honking horns filled the narrow alleys.",
     "exampleTr": "Pazar açılır açılmaz, bağıran tüccarların ve çalan kornaların sağır edici kakofonisi ve ses karmaşası dar sokakları doldurdu.",
     "ydsTip": "'Dissonance / racket / clamor' eşanlamlısıdır; kulak tırmalayıcı uyumsuz gürültüleri ifade eder.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
     "mnemonic": "💡 ÇAĞRIŞIM: 'KAKO-FONİ' -> Yunanca KAKOS (kötü) + PHONE (ses); kulak tırmalayan çirkin ses karmaşası (kakofoni)."
   },
@@ -170,7 +170,7 @@ export const day27Words: YdsWord[] = [
     "ydsTip": "'Stop / halt / terminate' eşanlamlısıdır; 'ceasefire' (ateşkes) kelimesi buradan türemiştir.",
     "frequency": "ultra",
     "groupDay": 27,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SİS-DUR' -> Göz gözü görmeyen yoğun siste motoru CEASE etti (durdurdu, kesti)."
+    "mnemonic": "💡 ÇAĞRIŞIM: \"CEASEFIRE\" = ateşkes: ateşin durması. Cease = durmak, durdurmak; ismi \"cessation\"."
   },
   {
     "id": "w649",
@@ -263,7 +263,7 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "The inventor's early flying machine design was initially greeted with scorn and derision by the scientific establishment.",
     "exampleTr": "Mucidin ilk uçan makine tasarımı, bilim çevrelerince başlangıçta hor görme ve alayla karşılandı.",
     "ydsTip": "'Deride' (alay etmek) fiilinin isim halidir; 'mockery / ridicule / scorn' eşanlamlısıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DELİ-RESİM' -> Çizdiği projeye 'deli resmi bu' diyerek DERISION (alay, istihza) ile güldüler."
   },
@@ -360,7 +360,7 @@ export const day27Words: YdsWord[] = [
     "ydsTip": "'Liberate / free / unchain' eşanlamlısıdır; tarihte kölelerin veya kadınların özgürleşmesi anlatılırken kullanılır.",
     "frequency": "ultra",
     "groupDay": 27,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'E-MAN-CİP (Elleri bağsız insan)' -> Kelepçeleri kırıp insanı EMANCIPATE etmek (özgürlüğüne kavuşturmak, azat etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: E (dışarı) + MANCIP (elle tutulan mülk). Efendinin elinden mülk olarak bırakılmak = azat edilmek, özgürlüğe kavuşmak."
   },
   {
     "id": "w1281",
@@ -406,7 +406,7 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "The manuscript was written in an esoteric symbolic code that could only be deciphered by initiates of the secret society.",
     "exampleTr": "El yazması, yalnızca gizli topluluğun mensuplarınca çözülebilecek gizli ve sadece uzmanların anladığı sembolik bir kodla yazılmıştı.",
     "ydsTip": "'Obscure / arcane / cryptic' eşanlamlısıdır; geniş kitlelerin değil sadece küçük bir zümrenin anlayabildiği konuları niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
     "mnemonic": "💡 ÇAĞRIŞIM: 'EZOTERİK' -> Türkçedeki ezoterik öğretiler; gizli, derunî ve yalnız ehlinin bildiği (esoteric) bilgi."
   },
@@ -501,9 +501,9 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "The disgraced general suffered the ignominy of being stripped of his rank in front of his entire garrison.",
     "exampleTr": "İtibarsızlaşan general, tüm garnizonunun önünde rütbelerinin sökülmesi rezaleti ve utancını yaşadı.",
     "ydsTip": "'Disgrace / shame / humiliation' eşanlamlısıdır; kamuoyu önünde küçük düşme ve yüz karası olma halidir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İGNO-MİNİ (Adı lekelenmek)' -> Adı lekelenip rezil rüsva olmak; IGNOMINY (rezalet, yüz karalığı, utanç)."
+    "mnemonic": "💡 ÇAĞRIŞIM: IG (değil, yok etme) + NOMEN (ad; \"nominate\"). Birinin iyi adını silmek = rezalet, yüz karası."
   },
   {
     "id": "w963",
@@ -595,7 +595,7 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "Citizens living in active war zones eventually became tragically inured to the daily sound of distant artillery fire.",
     "exampleTr": "Aktif savaş bölgelerinde yaşayan vatandaşlar, nihayetinde uzaktaki topçu ateşinin günlük sesine trajik biçimde alıştı ve duyarsızlaştı.",
     "ydsTip": "'Inured to' şeklinde -to edatıyla kullanılır; 'accustomed / hardened / desensitized' eşanlamlısıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
     "mnemonic": "💡 ÇAĞRIŞIM: 'İN-UR (Nasır bağlamak)' -> Derisi nasır bağlamış gibi acılara alışıp duygusuzlaşan INURED (nasırlaşmış, alışkın)."
   },
@@ -691,9 +691,9 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "The corporate spokesperson offered immediate refunds and sincere apologies in an effort to mollify outraged customers.",
     "exampleTr": "Şirket sözcüsü, öfkeli müşterileri yatıştırmak ve gönüllerini almak amacıyla derhal geri ödeme ve samimi özürler sundu.",
     "ydsTip": "'Pacify / appease / soothe / placate' eşanlamlısıdır; kızgın birini sakinleştirmek durumudur.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'MOLLA-YAT' -> Bilge bir molla gibi tatlı sözlerle sinirli insanı MOLLIFY etmek (yatıştırmak, sakinleştirmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince MOLLIS (yumuşak). Öfkeli birini yumuşatmak = yatıştırmak, gönlünü almak."
   },
   {
     "id": "w1341",
@@ -862,7 +862,7 @@ export const day27Words: YdsWord[] = [
     "ydsTip": "Hem 'ihtiyaç fazlası/lüzumsuz' (unnecessary/superfluous) hem de 'işten çıkarılmış' (laid off) demektir.",
     "frequency": "high",
     "groupDay": 27,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'RED-DÜNDEN' -> Dünden kalan, artık kullanılmayan ve reddedilen REDUNDANT (gereksiz, fuzuli) eşya."
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (geri) + UNDA (dalga). Kabın kenarından taşıp geri dökülen dalga gibi = ihtiyaç fazlası, gereksiz. İş yerinde \"made redundant\" = kadro fazlası olarak işten çıkarılmak."
   },
   {
     "id": "w208",
@@ -958,7 +958,7 @@ export const day27Words: YdsWord[] = [
     "ydsTip": "'False / fake / bogus / unfounded' eşanlamlısıdır; istatistikte 'spurious correlation' (sahte korelasyon) popüler terimdir.",
     "frequency": "high",
     "groupDay": 27,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SPURİ-US (Süprüntü)' -> Çöpten süprüntü gibi uydurulmuş yalan ve SPURIOUS (sahte, temelsiz) iddialar."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince SPURIUS (gayrimeşru çocuk). Gerçek soydan gelmeyen, sahte = temelsiz, uydurma."
   },
   {
     "id": "w1178",
@@ -980,7 +980,7 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "The corrupt lobbyist alienated lawmakers with his excessively unctuous compliments and insincere flattery.",
     "exampleTr": "Yozlaşmış lobici, aşırı yağcı iltifatları ve samimiyetsiz pohpohlamalarıyla yasa yapıcıları kendinden uzaklaştırdı.",
     "ydsTip": "'Fawning / ingratiating / sycophantic' eşanlamlısıdır; vıcık vıcık yapmacık nezaketi ifade eder.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
     "mnemonic": "💡 ÇAĞRIŞIM: 'ÜNİ-YAĞ-TUUS' -> Üstünden yağ damlayan yapmacık ve yılışık tavırlar; UNCTUOUS (yağcı, riyakar)."
   },
@@ -1030,7 +1030,7 @@ export const day27Words: YdsWord[] = [
     "ydsTip": "'In the vicinity of' kalıbı 'in the neighborhood / proximity of' demektir; mekan ve çevre yakınlığıdır.",
     "frequency": "ultra",
     "groupDay": 27,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'VİCİN-İTİ (Komşu civarı)' -> Çevre muhiti ve komşu civar; VICINITY (yakın çevre, civar)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince VICINUS (komşu). Komşu bölge = civar, yakın çevre. \"In the vicinity of\" = -in civarında."
   },
   {
     "id": "w1371",
@@ -1051,7 +1051,7 @@ export const day27Words: YdsWord[] = [
     "exampleEn": "Throughout decades of exile, the deposed monarch endured the harsh vicissitudes of fortune with dignity.",
     "exampleTr": "Sürgünde geçen onlarca yıl boyunca tahttan indirilen hükümdar, talihin sert iniş çıkışlarına ve dönekliğine vakarla katlandı.",
     "ydsTip": "'Ups and downs / shifts / fluctuations' eşanlamlısıdır; özellikle 'vicissitudes of life/fortune' kalıbıyla bilinir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 27,
     "mnemonic": "💡 ÇAĞRIŞIM: 'VİCİ-SİT-TUT' -> Hayatın bir güldüren bir ağlatan inişli çıkışlı dönekliği; VICISSITUDE (talihin iniş çıkışları)."
   }

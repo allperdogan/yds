@@ -15,7 +15,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "'Hostility', 'hatred', 'enmity' ve 'antipathy' ile tam eş anlamlıdır. Savaş ve etnik çatışma paragraflarında çok sık sorulur.",
     "frequency": "high",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ANİ-DÜŞMAN' -> İçindeki vahşi canavarı çıkarıp komşusuna derin bir nefret besleyen kin ve düşmanlık: ANIMOSITY."
+    "mnemonic": "💡 ÇAĞRIŞIM: ANIMUS (Latince \"ruh, öfke\"; \"animasyon\" da ruh vermektir). Ruhun derinliğinden gelen öfke = düşmanlık, husumet."
   },
   {
     "id": "w627",
@@ -31,7 +31,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "'In anticipation of' (-in beklentisiyle / öngörerek) yapısı ÖSYM'nin edat sorularında en çok sorduğu kalıplardandır.",
     "frequency": "high",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ANTİ-KAPAT' -> Kriz ya da fırsat gelmeden önce onu bekleyip öngörme hali: 'In anticipation of' (-i bekleyerek, beklentisiyle)."
+    "mnemonic": "💡 ÇAĞRIŞIM: ANTICIPATE (önceden yakalamak) fiilinin ismi: olacak şeyi önceden bekleme hali. \"In anticipation of\" = -i bekleyerek."
   },
   {
     "id": "w980",
@@ -223,7 +223,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "'Manual dexterity' (el becerisi) kalıbı cerrahi, el sanatları veya robotik metinlerinde 'skill', 'agility' ve 'adeptness' ile eşleşir.",
     "frequency": "high",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DEKSTROZ / DOKTOR ELİ' -> Cerrahın ameliyatta parmaklarını ustalıkla kullanması: DEXTERITY (el becerisi, maharet)."
+    "mnemonic": "💡 ÇAĞRIŞIM: DEXTER (Latince \"sağ el\"). Sağ eliyle çalışan usta gibi beceri = el becerisi, maharet. Sıfatı: dexterous."
   },
   {
     "id": "w448",
@@ -399,7 +399,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "Tıp ve psikoloji metinlerinde 'damage', 'harm', 'weaken' ve 'compromise' ile eş anlamlıdır; 'visual impairment' kalıbı yaygındır.",
     "frequency": "ultra",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İM-PARK (Park etme yetisi bozuldu)' -> Yeteneğini, gözünü ya da aklını zedeleyip iş göremez kılmak: IMPAIR (bozmak, zedelemek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: IM + PAIR (Latince \"pejor\" = daha kötü; \"pejorative\" aşağılayıcı). Bir şeyi daha kötü hâle getirmek = bozmak, zayıflatmak. \"Hearing impairment\" = işitme kaybı."
   },
   {
     "id": "w186",
@@ -543,7 +543,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "Çevre ve kimya metinlerinde 'poisonous', 'toxic', 'harmful' ve 'deadly' ile eş anlamlı olarak sorulur.",
     "frequency": "high",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'NOK-ŞURASI' -> Soluduğunda ciğerlerini nakavt eden zehirli ve zararlı gaz: NOXIOUS (zehirli, muzır)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince NOX (zarar; \"innocuous\" zararsızın da kökü). Zarar veren, zehirli = noxious."
   },
   {
     "id": "w1349",
@@ -575,7 +575,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "'Credible', 'reasonable', 'believable' ve 'feasible' ile eş anlamlıdır. Bilimsel teorilerin mantıklılığını niteler.",
     "frequency": "ultra",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PLÂSI-VAR' -> Aklın terazisinde yeri olan, mantığa ve gerçeğe uygun düşen: PLAUSIBLE (makul, inandırıcı)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince PLAUDERE (alkışlamak; \"applause\"). Alkışlanacak kadar akla yatkın = makul, inandırıcı."
   },
   {
     "id": "w350",
@@ -703,7 +703,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "'Under scrutiny' (inceleme altında) kalıbı okuma parçalarında sürekli geçer; 'inspection', 'examination' ve 'audit' ile eştir.",
     "frequency": "ultra",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SÜR-GÖZÜNÜ' -> Büyüteci sürüp ayrıntıları inceleyen gözlem: SCRUTINY (mercek altına alma, didik didik inceleme)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"scrutari\" (çöpü bile karıştırıp aramak). Her ayrıntının karıştırıldığı yakın inceleme. \"Under scrutiny\" = mercek altında."
   },
   {
     "id": "w233",
@@ -735,7 +735,7 @@ export const day5Words: YdsWord[] = [
     "ydsTip": "Ekonomide 'stagnation' (durgunluk) terimi; 'standstill', 'languish' ve 'idle' kelimeleriyle eş anlamlıdır.",
     "frequency": "high",
     "groupDay": 5,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'STAJ-NET (Olduğu yerde sayan)' -> Akmayan göl suyu gibi durağanlaşan, yerinde sayıp ilerlemeyen durum: STAGNATE."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince STAGNUM (akmayan göl). Göl suyu gibi akmayıp yosun tutmak = durgunlaşmak."
   },
   {
     "id": "w109",

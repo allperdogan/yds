@@ -95,7 +95,7 @@ export const day3Words: YdsWord[] = [
     "ydsTip": "Coğrafya ve çevre metinlerinde 'dry', 'parched' ve 'barren' kelimeleriyle eş anlamlı olarak sorulur.",
     "frequency": "high",
     "groupDay": 3,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ARI-DÜNYA (Susuzluktan kavrulan)' -> Yağmur yağmayan, toprağı çatlamış kupkuru ARID (kurak, çorak) arazi."
+    "mnemonic": "💡 ÇAĞRIŞIM: Haritalarda çöl kuşakları \"arid zone\" diye geçer. A-RID: yağmurdan \"kurtulmuş\" (rid) toprak = kupkuru, kurak."
   },
   {
     "id": "w416",
@@ -143,7 +143,7 @@ export const day3Words: YdsWord[] = [
     "ydsTip": "Hukuk metinlerinde 'mercy', 'leniency' ve 'pardon' kelimeleriyle eş anlamlı olarak geçer.",
     "frequency": "medium",
     "groupDay": 3,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KLEMANSİ (Krem gibi yumuşak kalp)' -> Sert cezayı yumuşatan merhamet ve af: CLEMENCY (af, hoşgörü, bağışlama)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"clemens\" (merhametli); Papa adlarındaki \"Clement\" de buradan. Sert cezayı yumuşatan merhamet ve af."
   },
   {
     "id": "w655",
@@ -383,7 +383,7 @@ export const day3Words: YdsWord[] = [
     "ydsTip": "'Disgrace', 'demean' ve 'degrade' ile eş anlamlıdır. İnsan hakları ve psikoloji metinlerinde karşımıza çıkar.",
     "frequency": "high",
     "groupDay": 3,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HUMAN (insan)' -> Bir insanın onurunu ayaklar altına alıp onu küçük düşürmek: HUMILIATE (aşağılamak, rezil etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince HUMUS (toprak, yer; \"humble\" alçakgönüllü). Birini yere, toprağa indirmek = küçük düşürmek, aşağılamak."
   },
   {
     "id": "w184",
@@ -495,7 +495,7 @@ export const day3Words: YdsWord[] = [
     "ydsTip": "ÖSYM'nin en popüler 5 fiilinden biridir! 'Alleviate', 'lessen', 'ease' ve 'moderate' ile tam denktir; çevre ve tıp metinlerinde bankodur.",
     "frequency": "ultra",
     "groupDay": 3,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'MİTİNG-GATE (Yatıştırmak)' -> İsyan çıkaran kalabalığı miting alanında ikna edip öfkesini MITIGATE etmek (hafifletmek, teskin etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince MITIS (yumuşak) + AGERE (yapmak). Sert bir etkiyi yumuşak hâle getirmek = hafifletmek. Tersi: exacerbate (kötüleştirmek)."
   },
   {
     "id": "w263",
@@ -671,7 +671,7 @@ export const day3Words: YdsWord[] = [
     "ydsTip": "Son yıllarda çevre (climate resilience) ve psikoloji metinlerinde 'adaptability' ve 'toughness' ile en çok karşımıza çıkan sözcüktür.",
     "frequency": "ultra",
     "groupDay": 3,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'REZİL-OLMAZ' -> Başına ne kadar darbe gelirse gelsin ezilmeyen, yay gibi hemen eski haline dönen dayanıklılık: RESILIENCE."
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (geri) + SILI (sıçramak). Ezilen bir yay gibi geri sıçrayıp eski hâline dönme gücü = dayanıklılık, toparlanma gücü."
   },
   {
     "id": "w378",
@@ -687,7 +687,7 @@ export const day3Words: YdsWord[] = [
     "ydsTip": "Bilişimde 'retrieve data' (veriyi geri çağırmak); denizcilik ve kazalarda enkazdan bir şeyi kurtarmak anlamında 'recover' ile denktir.",
     "frequency": "high",
     "groupDay": 3,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'RE- (yeniden)' -> Kaybolmuş veya batmış bir şeyi gidip arayıp yeniden ele geçirmek, kurtarmak: RETRIEVE (geri almak/kurtarmak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Fransızca \"retrouver\" (yeniden bulmak). Atılan topu bulup getiren av köpeği \"golden retriever\" = geri getirmek, kurtarmak."
   },
   {
     "id": "w214",
@@ -703,7 +703,7 @@ export const day3Words: YdsWord[] = [
     "ydsTip": "'Examine thoroughly', 'inspect closely' ve 'investigate' fiilleriyle tam eş anlamlıdır.",
     "frequency": "ultra",
     "groupDay": 3,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SÜR-GÖZÜNÜ' -> Büyüteci sürüp her harfi milim milim, didik didik incelemek: SCRUTINIZE etmek."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"scrutari\" (çöpü bile karıştırıp aramak). Her köşeyi karıştırarak didik didik incelemek."
   },
   {
     "id": "w596",

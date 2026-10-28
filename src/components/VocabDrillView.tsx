@@ -22,6 +22,7 @@ import {
 import { VocabQuizQuestion, YdsWord } from '../types';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from '../data/ydsVocabQuiz';
 import { buildVocabOptions } from '../services/vocabOptions';
+import { blankExample } from '../services/vocabBlank';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { AudioService } from '../services/audioService';
 
@@ -124,23 +125,8 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     });
 
     return pool.map((w) => {
-      const wordText = w.word;
-      const escaped = wordText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const reg = new RegExp(`\\b${escaped}\\b`, 'i');
-      let sentence = w.exampleEn;
-
-      if (reg.test(sentence)) {
-        sentence = sentence.replace(reg, '_____');
-      } else {
-        // Fallback for inflected forms (e.g., -ing, -ed, -s)
-        const root = wordText.split(' ')[0].replace(/e$/, '');
-        const rootReg = new RegExp(`\\b${root}[a-z]*\\b`, 'i');
-        if (rootReg.test(sentence)) {
-          sentence = sentence.replace(rootReg, '_____');
-        } else {
-          sentence = `The research team noted that _____ conditions were critical for success. ("${w.exampleEn}")`;
-        }
-      }
+      const sentence =
+        blankExample(w.word, w.exampleEn) ?? `Anlamı "${w.meaning}" olan kelime: _____`;
 
       // 5 options: curated distractors first, then same part of speech; seeded order
       const options = buildVocabOptions(w, byType);
