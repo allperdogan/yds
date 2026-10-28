@@ -1278,16 +1278,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "68. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'Had the regional central bank not intervened with unprecedented liquidity injections, several prominent domestic commercial lenders would inevitably have collapsed during the financial panic.'",
     "options": {
-      "A": "The central bank intervened during the panic solely to prevent foreign conglomerates from purchasing distressed domestic lenders.",
+      "A": "Several domestic lenders collapsed during the panic even though the central bank injected record liquidity.",
       "B": "Because the regional central bank stepped in with extraordinary financial resources, major domestic banks managed to avoid bankruptcy during the crisis.",
-      "C": "Although the central bank provided record liquidity, it was unable to halt the catastrophic insolvency of prominent national lenders.",
-      "D": "Commercial banks in the region collapsed rapidly because the central bank refused to authorize liquidity injections during the panic.",
-      "E": "Had private investors liquidated their shares in commercial banks, the central bank would not have felt compelled to intervene."
+      "C": "The central bank intervened only after several domestic lenders had already collapsed during the panic.",
+      "D": "If the central bank intervenes again with large liquidity injections, domestic lenders may avoid collapse.",
+      "E": "The financial panic was caused by the central bank's decision to inject unprecedented liquidity."
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Type 3 Conditional Inversion Eşleştirme (Had X not intervened = If X had not intervened / Because it intervened, they avoided bankruptcy)",
-    "trapWarning": "C şıkkı 'unable to halt' der; oysa bankalar müdahale sayesinde kurtulmuştur.",
+    "trapWarning": "Had ... not intervened ... would have collapsed = müdahale etti, bu yüzden bankalar batmadı. A ve C batışı gerçek kabul eder, D geleceğe taşır, E ise sebep-sonucu ters çevirir.",
     "explanation": "Orijinal cümle: 'Merkez bankası benzeri görülmemiş likidite enjekte etmeseydi, birçok yerli ticari banka kaçınılmaz olarak çökerdi.' -> Demek ki merkez bankası müdahale ettiği için bankalar batmaktan kurtulmuştur (B şıkkı)."
   },
   {
@@ -1296,17 +1296,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "69. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'Although electric vehicles produce zero tailpipe emissions, their overall environmental benefits remain contingent upon how cleanly the electricity charging their batteries is generated.'",
     "options": {
-      "A": "Electric vehicles are universally superior to combustion engines regardless of whether electricity comes from coal or solar power.",
-      "B": "The total ecological advantage of electric vehicles depends on the cleanliness of the energy sources utilized to produce their charging electricity, despite their lack of direct exhaust emissions.",
-      "C": "Because electric cars generate severe emissions during battery charging, they are virtually as harmful to the environment as petroleum cars.",
-      "D": "Unless governments completely eliminate fossil-fueled power plants, electric vehicles will produce more tailpipe emissions than traditional vehicles.",
-      "E": "Battery charging infrastructure is so polluting that electric vehicles have failed to provide any measurable environmental improvements."
+      "A": "Because electric vehicles produce no exhaust, they benefit the environment however their electricity is produced.",
+      "B": "Electric vehicles emit nothing from the exhaust, but how green they really are depends on how their power is generated.",
+      "C": "Electric vehicles would produce zero tailpipe emissions only if their electricity were generated cleanly.",
+      "D": "The way electricity is generated has little effect on the environment compared with tailpipe emissions.",
+      "E": "Electric vehicles are no better for the environment than petrol cars because charging them causes emissions."
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Contingent upon = Depends on (Bağlıdır / Şartına dayalıdır)",
-    "trapWarning": "A şıkkı 'regardless of whether electricity comes from coal' der; metin ise elektriğin nasıl üretildiğinin kritik olduğunu söyler.",
-    "explanation": "'contingent upon how cleanly the electricity ... is generated' = 'depends on the cleanliness of the energy sources' + 'Although produce zero tailpipe emissions' = 'despite their lack of direct exhaust emissions' (B şıkkı)."
+    "trapWarning": "Although: egzoz salımı sıfır, AMA toplam fayda elektriğin temizliğine bağlı. A koşulu yok sayar, C koşulu egzoza bağlar, D önemi tersine çevirir, E ise aşırı bir sonuç çıkarır.",
+    "explanation": "'contingent upon how cleanly the electricity ... is generated' = 'depends on how their power is generated' + 'Although produce zero tailpipe emissions' = 'emit nothing from the exhaust, but...' (B şıkkı)."
   },
   {
     "id": "m_q70",
@@ -1314,17 +1314,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "70. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'No sooner had the experimental antiviral drug been administered to the clinical cohort than their viral loads plummeted to undetectable thresholds.'",
     "options": {
-      "A": "The experimental antiviral drug was administered only after the patients had already reduced their viral loads through natural immunity.",
-      "B": "Immediately after the patients in the trial received the experimental antiviral medication, their viral concentrations dropped sharply to undetectable levels.",
-      "C": "Although the antiviral drug lowered viral loads, it took several weeks before clinical diagnostic tests could detect any meaningful improvement.",
-      "D": "The viral load in the clinical cohort plummeted so rapidly that doctors decided to discontinue the administration of the antiviral drug.",
-      "E": "Patients who refused the experimental antiviral drug exhibited significantly higher viral loads than those who completed the treatment."
+      "A": "Shortly before the patients received the drug, their viral loads had already fallen to undetectable levels.",
+      "B": "As soon as the patients were given the experimental drug, their viral loads fell to undetectable levels.",
+      "C": "The patients' viral loads fell gradually over several weeks after they were given the drug.",
+      "D": "The drug was given to the patients only after their viral loads had become undetectable.",
+      "E": "Hardly had the viral loads fallen when doctors stopped giving the patients the experimental drug."
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "No sooner ... than = As soon as / Immediately after (-er etmez / anında)",
-    "trapWarning": "C şıkkı 'took several weeks' der; oysa 'no sooner...than' eylemin anında gerçekleştiğini ifade eder.",
-    "explanation": "'No sooner had X occurred than Y happened' formülü 'Immediately after X, Y happened' (B şıkkı) demektir. İlaç verilir verilmez virüs yükü tespit edilemez seviyelere düştü."
+    "trapWarning": "No sooner ... than = -ir -mez. A ve D sırayı ters çevirir, C anındalığı kaldırır, E ise aynı yapıyı (Hardly ... when) kullanır ama olayların yerini değiştirir.",
+    "explanation": "'No sooner had X occurred than Y happened' formülü 'As soon as X, Y happened' (B şıkkı) demektir. İlaç verilir verilmez virüs yükü tespit edilemez seviyelere düştü."
   },
   {
     "id": "m_q71",
@@ -1332,17 +1332,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "71. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'It was not until the decipherment of the Rosetta Stone in the nineteenth century that scholars could systematically comprehend Egyptian hieroglyphic inscriptions.'",
     "options": {
-      "A": "Scholars had already translated most Egyptian hieroglyphic inscriptions before the discovery of the Rosetta Stone.",
-      "B": "Only after the Rosetta Stone was deciphered in the nineteenth century were researchers able to systematically understand Egyptian hieroglyphic writings.",
-      "C": "The Rosetta Stone proved to be completely incomprehensible to nineteenth-century linguists despite their extensive knowledge of ancient scripts.",
-      "D": "Although hieroglyphics were deciphered in the nineteenth century, scholars still struggle to translate stone inscriptions systematically.",
-      "E": "Nineteenth-century scholars focused so heavily on the Rosetta Stone that other ancient Mediterranean languages were neglected."
+      "A": "Scholars had already understood most hieroglyphs before the Rosetta Stone was deciphered in the nineteenth century.",
+      "B": "Only once the Rosetta Stone was deciphered in the nineteenth century could scholars systematically read hieroglyphs.",
+      "C": "The Rosetta Stone was deciphered in the nineteenth century, long after scholars had learned to read hieroglyphs.",
+      "D": "Scholars could read some hieroglyphs systematically, but the Rosetta Stone was not deciphered until the nineteenth century.",
+      "E": "In the nineteenth century, scholars deciphered the Rosetta Stone without being able to understand hieroglyphs."
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "It was not until ... that ... = Only after ... (Ancak ... olduktan sonra)",
-    "trapWarning": "A şıkkı 'Rosetta'dan önce çevirmişlerdi' der, tam tersidir.",
-    "explanation": "'It was not until X that Y could be understood' = 'Only after X was deciphered were researchers able to understand Y' (B şıkkı)."
+    "trapWarning": "It was not until ... that = ancak ... -dıktan sonra. A ve C sırayı ters çevirir, D iki olayı birbirinden koparır, E ise sonucu olumsuzlar.",
+    "explanation": "'It was not until X that Y could be understood' = 'Only once X was deciphered could scholars read Y' (B şıkkı)."
   },
   {
     "id": "m_q72",
@@ -1350,17 +1350,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "72. Soru - Paragraf Tamamlama",
     "question": "For centuries, astronomers debated whether our solar system was unique in harboring planetary bodies. The discovery of the first confirmed exoplanet orbiting a sun-like star in 1995 fundamentally transformed observational astrophysics. [_____] Today, data from Kepler and the James Webb Space Telescope indicates that the Milky Way alone contains more planets than stars, meaning planetary formation is a cosmic inevitability rather than an anomaly.",
     "options": {
-      "A": "Subsequent space missions and ground-based velocity surveys soon triggered a deluge of new exoplanetary discoveries.",
-      "B": "Most seventeenth-century optical lenses suffered from severe chromatic aberration that prevented clear planetary observations.",
-      "C": "Commercial space travel has made interplanetary tourism affordable for ordinary citizens across the globe.",
-      "D": "Galileo Galilei was condemned by the Roman Inquisition for supporting the heliocentric Copernican cosmology.",
-      "E": "Solar flares occasionally disrupt shortwave radio telecommunications in polar jurisdictions."
+      "A": "Later missions and ground-based surveys soon led to thousands of further discoveries.",
+      "B": "That planet, however, was a gas giant orbiting far too close to its star to support life.",
+      "C": "Before 1995, several astronomers had already claimed to detect planets around other stars.",
+      "D": "Even so, most astronomers continued to believe that planets were extremely rare in the galaxy.",
+      "E": "Some scientists argue that the search for exoplanets has received too much funding."
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Zaman ve Mantık Akışı: 1995'te ilk ötegezegen keşfi -> Devamında yeni keşif seli (deluge of discoveries) -> Bugün milyarlarca gezegen olduğu bilgisi",
-    "trapWarning": "D şıkkı Galileo'dan bahseder, zamanda geriye gider ve modern ötegezegen keşif süreciyle uyuşmaz.",
-    "explanation": "1995'teki ilk keşiften bugünkü binlerce gezegen verisine geçişi sağlayan mantıksal köprü A şıkkıdır: 'Bunu takip eden uzay görevleri ve taramalar, yeni ötegezegen keşifleri selini tetikledi'."
+    "trapWarning": "Boşluktan sonra \"Today, ... more planets than stars\" gelir; arada keşiflerin hızla çoğaldığı söylenmelidir. B ve C konuyla ilgili ama akışı kurmaz; D ise sonraki cümleyle çelişir.",
+    "explanation": "1995'teki ilk keşiften bugünkü binlerce gezegen verisine geçişi sağlayan mantıksal köprü A şıkkıdır: 'Sonraki görevler ve yer tabanlı taramalar kısa sürede binlerce yeni keşfe yol açtı'."
   },
   {
     "id": "m_q73",
@@ -1368,17 +1368,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "73. Soru - Paragraf Tamamlama",
     "question": "Sleep is far from a passive state of physiological inactivity; rather, it represents a highly coordinated neurological maintenance cycle. During non-rapid eye movement (NREM) deep sleep, the brain activates the glymphatic system, which flushes out metabolic waste products like amyloid-beta proteins that accumulate during waking hours. [_____] Consequently, chronic sleep deprivation does not merely impair daily cognitive performance; it also exponentially elevates long-term vulnerability to neurodegenerative pathologies like Alzheimer's.",
     "options": {
-      "A": "Without this restorative cleansing process, toxic cellular byproducts gradually damage delicate cerebral neurons.",
-      "B": "Insomnia medications can occasionally cause mild morning drowsiness in elderly patients.",
-      "C": "REM sleep was first documented by researchers working at the University of Chicago in the 1950s.",
-      "D": "Caffeine consumption in the early morning promotes alertness by blocking adenosine receptors.",
-      "E": "Most mammalian species require significantly fewer hours of nocturnal rest than adult humans."
+      "A": "Without this cleaning process, toxic waste slowly damages brain cells.",
+      "B": "During REM sleep, by contrast, the brain is most active in processing emotions.",
+      "C": "Short naps during the day can partly make up for a lost night of sleep.",
+      "D": "The glymphatic system was discovered only about a decade ago in mice.",
+      "E": "As a result, people who sleep longer generally perform better at work."
     },
     "answer": "A",
     "difficulty": "İleri",
-    "tacticUsed": "Referans İpucu: 'Without this restorative cleansing process' (Önceki cümledeki glimfatik atık temizleme sistemine atıf)",
-    "trapWarning": "D şıkkı kafeinden bahseder, metnin konusu uykuda atık temizliği ve Alzheimer riskidir.",
-    "explanation": "Önceki cümledeki 'flushes out metabolic waste products' (metabolik atıkları temizler) eylemine 'Without this restorative cleansing process' (Bu onarıcı temizleme süreci olmadan...) şeklinde atıfta bulunan ve Alzheimer sonucuna bağlayan A şıkkıdır."
+    "tacticUsed": "Referans İpucu: 'Without this cleaning process' (Önceki cümledeki glimfatik atık temizleme sistemine atıf)",
+    "trapWarning": "Sonraki cümle \"Consequently, chronic sleep deprivation ... Alzheimer\" der; boşlukta temizlik yapılmazsa ne olacağı söylenmelidir. B ve D konu içidir ama zinciri kurmaz; E ise sonucu günlük performansa indirger.",
+    "explanation": "Önceki cümledeki 'flushes out metabolic waste products' (metabolik atıkları temizler) eylemine 'Without this cleaning process' (Bu temizlik süreci olmadan...) şeklinde atıfta bulunan ve Alzheimer sonucuna bağlayan A şıkkıdır."
   },
   {
     "id": "m_q74",
@@ -1386,17 +1386,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "74. Soru - Paragraf Tamamlama",
     "question": "In classical economics, markets were presumed to operate on the foundation of the rational actor model—the assumption that individuals consistently make decisions that optimize their personal economic utility. However, real-world financial behavior repeatedly contradicts this idyllic presumption. [_____] Because human decisions are frequently clouded by fear, herd behavior, and loss aversion, financial markets are perpetually vulnerable to irrational speculative bubbles and catastrophic panics.",
     "options": {
-      "A": "Behavioral economists have demonstrated that cognitive biases systematically distort financial judgment.",
-      "B": "Automated algorithmic trading now accounts for more than eighty percent of equity volume in Wall Street.",
-      "C": "Gold bullion has historically functioned as a safe haven asset during periods of currency hyperinflation.",
-      "D": "Central banks frequently lower statutory interest rates to stimulate business capital investments.",
-      "E": "Corporate tax exemptions are designed to encourage research and development inside domestic borders."
+      "A": "Behavioral economists have shown that cognitive biases systematically distort financial judgment.",
+      "B": "Some economists still defend the model, arguing that markets correct individual errors over time.",
+      "C": "Classical economists such as Adam Smith also stressed the role of moral sentiment in trade.",
+      "D": "Financial regulators have therefore introduced stricter rules to prevent speculative bubbles.",
+      "E": "Most investors, in fact, make rational decisions when they have access to complete information."
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Zıtlık Sonrası Açıklama: 'real-world behavior contradicts this presumption' -> Davranışsal iktisatçıların bilişsel önyargı tespiti",
-    "trapWarning": "B şıkkı algoritmik ticaretten bahseder; sonraki cümle insan kararlarındaki 'fear, herd behavior'dan bahsetmektedir.",
-    "explanation": "A şıkkı: 'Davranışsal iktisatçılar bilişsel önyargıların finansal kararları sistematik olarak bozduğunu kanıtlamışlardır.' Bu cümle sonraki 'Because human decisions are clouded by fear...' açıklamasına kusursuz bağlanır."
+    "trapWarning": "Boşluktan önce \"real-world behavior contradicts this\", sonra \"fear, herd behavior\" gelir. B ve E rasyonel modeli savunarak akışı bozar; D sonucu erken verir; C ise zamanda geriye gider.",
+    "explanation": "A şıkkı: 'Davranışsal iktisatçılar bilişsel önyargıların finansal kararları sistematik olarak bozduğunu göstermiştir.' Bu cümle sonraki 'Because human decisions are clouded by fear...' açıklamasına kusursuz bağlanır."
   },
   {
     "id": "m_q75",
@@ -1404,17 +1404,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "75. Soru - Paragraf Tamamlama",
     "question": "Volcanic eruptions are notorious for their localized destruction, burying surrounding valleys under incandescent pyroclastic flows. Yet, their climactic influence can extend thousands of kilometers beyond the crater rim. When violent eruptions inject immense plumes of sulfur dioxide into the stratosphere, these gases react with moisture to form reflective sulfate aerosols. [_____] As a consequence, historical megavolcanoes have precipitated 'volcanic winters,' causing widespread crop failures and catastrophic societal collapses across entire continents.",
     "options": {
-      "A": "These suspended airborne particles reflect incoming solar radiation back into space, thereby cooling the planet's surface.",
-      "B": "Volcanic basalt soil is exceptionally fertile and supports productive vineyards in southern Italy.",
-      "C": "Geologists utilize seismometers to measure harmonic tremors preceding explosive magmatic ascents.",
-      "D": "Geothermal power plants extract steam from subterranean aquifers to generate clean municipal electricity.",
-      "E": "Volcanoes located along convergent plate boundaries tend to produce more viscous rhyolitic lavas."
+      "A": "These particles reflect sunlight back into space and cool the surface.",
+      "B": "These aerosols usually fall back to the ground within a few days of the eruption.",
+      "C": "Sulfur dioxide is also released by power plants that burn coal and oil.",
+      "D": "Volcanic ash clouds can also damage aircraft engines and disrupt air travel.",
+      "E": "These gases also trap heat in the atmosphere, warming the planet for decades."
     },
     "answer": "A",
     "difficulty": "İleri",
-    "tacticUsed": "Referans Zamir Eşleşmesi: 'These suspended airborne particles' = 'sulfate aerosols' + cooling the planet -> Volcanic winter",
-    "trapWarning": "B şıkkı volkanik toprağın verimliliğinden bahseder, metnin konusu küresel iklimi soğutması ve kıtlıktır.",
-    "explanation": "Sülfat aerosolleri oluştuktan sonra ne olduğunu açıklayan ve 'As a consequence, precipitated volcanic winters' (Sonuç olarak volkanik kışlar yarattı) cümlesine bağlayan cümle A şıkkıdır: 'Havada asılı kalan bu partiküller güneş ışığını geri yansıtarak gezegen yüzeyini soğutur'."
+    "tacticUsed": "Referans Zamir Eşleşmesi: 'These particles' = 'sulfate aerosols' + cooling the planet -> Volcanic winter",
+    "trapWarning": "Sonraki cümle \"volcanic winters\" der; boşlukta soğumanın mekanizması olmalıdır. B ve E sonuçla çelişir (B etkiyi kısaltır, E ısınma der); C ve D konuyla ilgili ama zinciri kurmaz.",
+    "explanation": "Sülfat aerosolleri oluştuktan sonra ne olduğunu açıklayan ve 'As a consequence, precipitated volcanic winters' (Sonuç olarak volkanik kışlar yarattı) cümlesine bağlayan cümle A şıkkıdır: 'Bu partiküller güneş ışığını uzaya geri yansıtır ve yüzeyi soğutur'."
   },
   {
     "id": "m_q76",
