@@ -35,7 +35,7 @@ html.dark:not(.theme-eyecare) body {
 /* 3. Göz Dinlendirme Modu (Eye-Care Sepia & Warm Paper Mode) */
 /* Apple Books / Kindle Paperwhite Parşömen & Mavi Işık Azaltıcı Ton */
 html.theme-eyecare:not(.dark) body {
-  background-color: #fbf7ee !important;
+  background-color: #f4ecdc !important;
   color: #2d2621 !important;
 }
 
@@ -44,8 +44,28 @@ html.theme-eyecare:not(.dark) .bg-white {
   border-color: #e8ded0 !important;
 }
 
+html.theme-eyecare:not(.dark) .bg-white\/95 {
+  background-color: rgba(250, 244, 232, 0.95) !important;
+  border-color: #e4d8c5 !important;
+}
+
+/* Bright blue is the harshest colour on screen; warm it to a soft teal. */
+html.theme-eyecare:not(.dark) .bg-sky-600,
+html.theme-eyecare:not(.dark) .bg-sky-700 {
+  background-color: #3f7a72 !important;
+}
+
+html.theme-eyecare:not(.dark) .bg-sky-50 {
+  background-color: #eef0e4 !important;
+}
+
+html.theme-eyecare:not(.dark) .text-sky-600,
+html.theme-eyecare:not(.dark) .text-sky-700 {
+  color: #2f6a62 !important;
+}
+
 html.theme-eyecare:not(.dark) .bg-slate-50 {
-  background-color: #f5efe3 !important;
+  background-color: #efe5d2 !important;
 }
 
 html.theme-eyecare:not(.dark) .bg-slate-100 {

@@ -14,6 +14,7 @@ interface TacticsViewProps {
   onAddMistake?: (questionId: string) => void;
   onRemoveMistake?: (questionId: string) => void;
   onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => void;
+  onBack?: () => void;
 }
 
 export const TacticsView: React.FC<TacticsViewProps> = ({
@@ -23,7 +24,8 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
   mistakeIds = [],
   onAddMistake = () => {},
   onRemoveMistake = () => {},
-  onRecordQuestionResult = () => {}
+  onRecordQuestionResult = () => {},
+  onBack
 }) => {
   const [selectedType, setSelectedType] = useState<QuestionType>(
     initialType || 'translation_en_tr'
@@ -62,75 +64,80 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
     <div className="space-y-6 pb-24 md:pb-12 max-w-5xl mx-auto">
       {/* Title Header with Mode Switcher */}
       <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 text-xs font-bold mb-2">
-            <Compass className="w-3.5 h-3.5 text-indigo-500" />
-            <span>80 Soruluk YDS Sınav Stratejisi</span>
+        <div className="flex items-start gap-2">
+          {onBack && (
+            <button
+              onClick={onBack}
+              aria-label="Geri"
+              className="p-1.5 -ml-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+          )}
+          <div>
+            <h2 className="text-xl font-bold text-slate-900 dark:text-white">Taktikler</h2>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5 max-w-xl">
+              Soru tipini seç: nasıl çözülür, hangi çeldiriciler çıkar, örnek sorular.
+            </p>
           </div>
-          <h2 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-            Soru Tipleri İçin Taktik Kılavuzu
-          </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-xl">
-            ÖSYM'nin soru hazırlama psikolojisini çözen formüller, çeldirici eleme hileleri ve 30 saniyelik kestirme yollar.
-          </p>
         </div>
 
         {/* View Mode Switcher (Bilgi / Taktik vs Soru Çözümü vs Çeldirici Deşifresi) */}
         <div className="flex flex-col sm:flex-row items-center gap-2 shrink-0">
-          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold w-full sm:w-auto">
+          <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-sm font-semibold w-full sm:w-auto overflow-x-auto scrollbar-none whitespace-nowrap">
             <button
               onClick={() => setViewMode('tactic')}
-              className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
+              className={`shrink-0 flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg transition-all ${
                 viewMode === 'tactic'
                   ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm font-extrabold'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
               }`}
             >
               <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
-              <span>💡 Sınav Taktiği (Bilgi)</span>
+              <span>Taktik</span>
             </button>
             <button
               onClick={() => setViewMode('practice')}
-              className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
+              className={`shrink-0 flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg transition-all ${
                 viewMode === 'practice'
                   ? 'bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-300 shadow-sm font-extrabold'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
               }`}
             >
               <PlayCircle className="w-3.5 h-3.5 text-sky-500" />
-              <span>⚡ Model Sorular ({matchingQuestionsCount})</span>
+              <span>Örnek sorular ({matchingQuestionsCount})</span>
             </button>
             <button
               onClick={() => setViewMode('traps')}
-              className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
+              className={`shrink-0 flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg transition-all ${
                 viewMode === 'traps'
                   ? 'bg-white dark:bg-slate-700 text-rose-600 dark:text-rose-300 shadow-sm font-extrabold'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
               }`}
             >
               <ShieldAlert className="w-3.5 h-3.5 text-rose-500" />
-              <span>🎯 ÖSYM Çeldirici Deşifresi</span>
+              <span>Çeldiriciler</span>
             </button>
             <button
               onClick={() => setViewMode('prepositions')}
-              className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
+              className={`shrink-0 flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg transition-all ${
                 viewMode === 'prepositions'
                   ? 'bg-white dark:bg-slate-700 text-emerald-600 dark:text-emerald-300 shadow-sm font-extrabold'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
               }`}
             >
               <Zap className="w-3.5 h-3.5 text-emerald-500" />
-              <span>🔗 Edat Refleks Matrisi ({YDS_PREPOSITION_MATRIX.length})</span>
+              <span>Edatlar ({YDS_PREPOSITION_MATRIX.length})</span>
             </button>
           </div>
 
           {/* Quick Practice CTA */}
           <button
             onClick={handleGoToPractice}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white font-extrabold text-xs shadow-md shadow-sky-500/20 active:scale-95 transition-all shrink-0"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-sm active:scale-95 transition-all shrink-0"
           >
             <PlayCircle className="w-4 h-4" />
-            <span>Bu Taktikten Soru Çöz</span>
+            <span>Bu tipten soru çöz</span>
           </button>
         </div>
       </div>

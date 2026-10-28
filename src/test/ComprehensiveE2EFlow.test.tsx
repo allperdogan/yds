@@ -5,6 +5,12 @@ import { App } from '../App';
 import { StorageService } from '../services/storageService';
 import { SyncService } from '../services/syncService';
 
+// Dark mode, eye care, backup and install live in the header's settings menu.
+const openSettingsItem = (name: RegExp): HTMLElement => {
+  fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+  return screen.getByRole(/Karanlık|Göz/.test(name.source) ? 'menuitemcheckbox' : 'menuitem', { name });
+};
+
 describe('Comprehensive E2E Function & Button Verification', () => {
   beforeEach(() => {
     localStorage.clear();
@@ -25,13 +31,13 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     // 3. A topic links to its tactics, which still offers the trap analysis
     fireEvent.click(screen.getByRole('button', { name: /Cloze Test/ }));
     fireEvent.click(screen.getByRole('button', { name: /Taktik/ }));
-    expect(screen.getByText(/Soru Tipleri İçin Taktik Kılavuzu/i)).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /ÖSYM Çeldirici Deşifresi/i }));
+    expect(screen.getByText(/Soru tipini seç/i)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /^Çeldiriciler$/ }));
     expect(screen.getByText(/ÖSYM Çeldirici Psikolojisi & Son 5 Yıl Çıkmış Soru Deşifresi/i)).toBeInTheDocument();
 
     // 4. Mock exam
     fireEvent.click(screen.getAllByRole('button', { name: 'Deneme' })[0]);
-    expect(screen.getByText(/180 Dakika \/ 80 Soruluk Tam YDS Deneme Sınavı/i)).toBeInTheDocument();
+    expect(screen.getByText(/Gerçek sınav gibi: 80 soru, 180 dakika/i)).toBeInTheDocument();
     expect(screen.getByText(/Standart Deneme/i)).toBeInTheDocument();
 
     // 5. 30-day plan opens from Today
@@ -41,7 +47,7 @@ describe('Comprehensive E2E Function & Button Verification', () => {
 
     // 6. Mistakes
     fireEvent.click(screen.getAllByRole('button', { name: /Hatalarım/ })[0]);
-    expect(screen.getByText(/Hata Defterim & Zayıf Noktalarım/i)).toBeInTheDocument();
+    expect(screen.getByText(/Yanlış yaptığın sorular ve kelimeler burada/i)).toBeInTheDocument();
   });
 
   it('moves a question from "learning" to "learned" once it is answered correctly', () => {
@@ -67,16 +73,16 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     answer = wrong.textContent!.match(/Doğru cevap ([A-E])/)![1];
 
     // It now counts as "öğreniyorum" and is waiting in the review list
-    expect(screen.getByRole('button', { name: /Tekrar et \(1\)/ })).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /Tekrar et \(1\)/ }));
+    expect(screen.getByRole('button', { name: /Tekrar \(1\)/ })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Tekrar \(1\)/ }));
     fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${answer}\\)`) }));
     expect(screen.getByText(/^Doğru\./)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Tekrar et \(0\)/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Tekrar \(0\)/ })).toBeInTheDocument();
 
     // The hub shows nothing left to relearn in this topic
     fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
     const clozeRow = screen.getByRole('button', { name: /Cloze Test/ });
-    expect(clozeRow.textContent).toMatch(/0 öğreniyorum/);
+    expect(clozeRow.textContent).not.toMatch(/öğreniyorum/);
     expect(clozeRow.textContent).toMatch(/[1-9]\d* öğrendim/);
   });
 
@@ -85,10 +91,10 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
     fireEvent.click(screen.getByRole('button', { name: /^Kelime/ }));
 
-    fireEvent.click(screen.getByText(/Bilmiyorum \(Tüm Şıkları Öğret\)/i));
+    fireEvent.click(screen.getByText(/^Bilmiyorum$/));
 
     fireEvent.click(screen.getAllByRole('button', { name: /Hatalarım/ })[0]);
-    fireEvent.click(screen.getByRole('button', { name: /Zor Kelimeler/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Kelimeler \(\d+\)$/ }));
     expect(screen.getByText(/Soruda Yanlış Yapıldı/i)).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('button', { name: /Öğrendim/i }));
@@ -119,7 +125,7 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     render(<App />);
 
     // Find dark mode button in Navbar
-    const darkModeBtn = screen.getByTitle(/iPhone \/ Bilgisayar Kurulumu/i).nextElementSibling as HTMLButtonElement;
+    const darkModeBtn = openSettingsItem(/Karanlık mod/i);
     expect(darkModeBtn).toBeInTheDocument();
 
     // Click toggle to enable dark mode
@@ -137,7 +143,7 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     const { container } = render(<App />);
 
     // Find and click Sync button in Navbar
-    const syncBtn = screen.getByTitle(/İlerleme Yedekle & Cihaz Eşitle/i);
+    const syncBtn = openSettingsItem(/Yedekle/i);
     fireEvent.click(syncBtn);
 
     // Modal should be open with stats summary

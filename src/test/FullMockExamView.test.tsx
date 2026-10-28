@@ -10,27 +10,27 @@ describe('FullMockExamView Functional & Button Tests', () => {
 
   it('resumes an unfinished exam after leaving the screen', () => {
     const first = render(<FullMockExamView onAddMistake={vi.fn()} />);
-    fireEvent.click(screen.getByRole('button', { name: /180 Dakikalık Deneme Sınavını Başlat/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Denemeyi başlat/i }));
     expect(screen.getByText(/Sınavı Bitir/i)).toBeInTheDocument();
     first.unmount();
 
     render(<FullMockExamView onAddMistake={vi.fn()} />);
     expect(screen.getByText(/Sınavı Bitir/i)).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: /180 Dakikalık Deneme Sınavını Başlat/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Denemeyi başlat/i })).not.toBeInTheDocument();
   });
 
   it('renders intro screen with 180 min information and start button', () => {
     render(<FullMockExamView onAddMistake={vi.fn()} />);
 
-    expect(screen.getByText(/180 Dakika \/ 80 Soruluk Tam YDS Deneme Sınavı/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /180 Dakikalık Deneme Sınavını Başlat/i })).toBeInTheDocument();
+    expect(screen.getByText(/Gerçek sınav gibi: 80 soru, 180 dakika/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Denemeyi başlat/i })).toBeInTheDocument();
   });
 
   it('starts exam and navigates questions with optical grid and prev/next buttons', () => {
     render(<FullMockExamView onAddMistake={vi.fn()} />);
 
     // Start exam
-    fireEvent.click(screen.getByRole('button', { name: /180 Dakikalık Deneme Sınavını Başlat/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Denemeyi başlat/i }));
 
     // Should be in active mode
     expect(screen.getByText(/SORU 1 \/ 80/i)).toBeInTheDocument();
@@ -67,7 +67,7 @@ describe('FullMockExamView Functional & Button Tests', () => {
     render(<FullMockExamView onAddMistake={vi.fn()} onSaveExamResult={onSaveExamResult} />);
 
     // Start exam
-    fireEvent.click(screen.getByRole('button', { name: /180 Dakikalık Deneme Sınavını Başlat/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Denemeyi başlat/i }));
 
     // Click Sınavı Bitir
     const finishBtn = screen.getByRole('button', { name: /Sınavı Bitir/i });

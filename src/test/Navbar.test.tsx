@@ -105,9 +105,11 @@ describe('Navbar Functional & Button Tests', () => {
       />
     );
 
-    const installBtn = screen.getByTitle(/iPhone \/ Bilgisayar Kurulumu/i);
-    fireEvent.click(installBtn);
+    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+    fireEvent.click(screen.getByRole('menuitem', { name: /Telefona \/ bilgisayara kur/i }));
     expect(onOpenInstallModal).toHaveBeenCalledTimes(1);
+    // Picking an action closes the menu
+    expect(screen.queryByRole('menu')).not.toBeInTheDocument();
   });
 
   it('clicking dark mode toggle button toggles state', () => {
@@ -123,10 +125,8 @@ describe('Navbar Functional & Button Tests', () => {
       />
     );
 
-    // Button contains Moon icon when false
-    const toggleButtons = screen.getAllByRole('button');
-    const darkModeBtn = toggleButtons[toggleButtons.length - 1];
-    fireEvent.click(darkModeBtn);
+    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+    fireEvent.click(screen.getByRole('menuitemcheckbox', { name: /Karanlık mod/i }));
     expect(setDarkMode).toHaveBeenCalledWith(true);
   });
 });

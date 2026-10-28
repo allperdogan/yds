@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckCircle2, Circle, ArrowRight, Zap, Target, BookOpen, Sparkles, ChevronRight, RotateCcw } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Circle, ArrowRight, Zap, Target, BookOpen, Sparkles, ChevronRight, RotateCcw } from 'lucide-react';
 import { DailyMission } from '../types';
 import { YDS_30_DAY_CURRICULUM } from '../data/ydsCurriculum';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
@@ -11,6 +11,7 @@ interface DailyPlanViewProps {
   onNavigateToTactic: (tacticType: string) => void;
   onNavigateToPractice: (day?: number) => void;
   onResetProgress?: () => void;
+  onBack?: () => void;
 }
 
 export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
@@ -19,7 +20,8 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
   onNavigateToVocabDay,
   onNavigateToTactic,
   onNavigateToPractice,
-  onResetProgress
+  onResetProgress,
+  onBack
 }) => {
   const [selectedWeek, setSelectedWeek] = useState<number>(1);
   const [activeDay, setActiveDay] = useState<number>(1);
@@ -41,86 +43,72 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
 
   return (
     <div className="space-y-6 pb-20 md:pb-8">
-      {/* 30-Day Master Header Card */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-sky-700 via-sky-800 to-indigo-900 text-white p-6 shadow-xl">
-        <div className="absolute right-0 top-0 -mt-10 -mr-10 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none" />
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="space-y-2 max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-200 text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>30 günlük çalışma programı</span>
-            </div>
-            <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-              30 Günlük Program
-            </h1>
-            <p className="text-sm text-sky-100/90 leading-relaxed">
-              ÖSYM formatında taranmış en sık çıkan kelimeler, soru tipi formülleri ve SM-2 aralıklı tekrar sistemiyle her gün planlı ilerleyin.
-            </p>
-          </div>
+      {/* Header: back, title, progress */}
+      <div className="space-y-3">
+        <div className="flex items-center gap-2">
+          {onBack && (
+            <button
+              onClick={onBack}
+              aria-label="Geri"
+              className="p-2 -ml-2 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+            >
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+          )}
+          <h1 className="text-xl font-bold text-slate-900 dark:text-white">30 Günlük Program</h1>
+        </div>
+        <p className="text-sm text-slate-600 dark:text-slate-400">
+          Her gün için kelime, taktik ve soru görevi. Bitirdiğin günü işaretle.
+        </p>
 
-          {/* Progress Circle & Stats */}
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl flex items-center gap-4 min-w-[220px]">
-            <div className="relative w-16 h-16 flex items-center justify-center">
-              <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
-                <path
-                  className="text-white/20"
-                  strokeWidth="3.5"
-                  stroke="currentColor"
-                  fill="none"
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path
-                  className="text-amber-400 transition-all duration-500"
-                  strokeDasharray={`${progressPercent}, 100`}
-                  strokeWidth="3.5"
-                  strokeLinecap="round"
-                  stroke="currentColor"
-                  fill="none"
-                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-              </svg>
-              <span className="absolute font-black text-sm">{progressPercent}%</span>
-            </div>
-            <div>
-              <p className="text-xs text-sky-200 font-medium">Genel İlerleme</p>
-              <p className="text-lg font-bold">{completedCount} / 30 Gün</p>
-              <p className="text-[11px] text-amber-300 font-medium">
-                {30 - completedCount} gün kaldı
-              </p>
-              {onResetProgress && (
-                <button
-                  onClick={() => {
-                    if (window.confirm('Tüm tamamlanan günler ve ilerlemeniz sıfırlanıp 0. Güne dönülecektir. Baştan başlamak istediğinize emin misiniz?')) {
-                      onResetProgress();
-                      setActiveDay(1);
-                    }
-                  }}
-                  title="İlerlemeyi Sıfırla (0. Güne Dön)"
-                  className="mt-2 text-[10px] bg-white/15 hover:bg-white/25 px-2.5 py-1 rounded-md text-white font-bold transition-colors inline-flex items-center gap-1 border border-white/20 shadow-xs"
-                >
-                  <RotateCcw className="w-3 h-3" />
-                  <span>0. Güne Sıfırla</span>
-                </button>
-              )}
-            </div>
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 space-y-2">
+          <div className="flex items-baseline justify-between gap-2">
+            <p className="font-semibold text-slate-900 dark:text-white tabular-nums">{completedCount} / 30 Gün</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400">{30 - completedCount} gün kaldı</p>
           </div>
+          <div
+            className="h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden"
+            role="progressbar"
+            aria-valuenow={progressPercent}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label="Program ilerlemesi"
+          >
+            <div className="h-full bg-emerald-500 transition-all" style={{ width: `${progressPercent}%` }} />
+          </div>
+          {onResetProgress && completedCount > 0 && (
+            <button
+              onClick={() => {
+                if (window.confirm('Tüm tamamlanan günler ve ilerlemeniz sıfırlanıp 0. Güne dönülecektir. Baştan başlamak istediğinize emin misiniz?')) {
+                  onResetProgress();
+                  setActiveDay(1);
+                }
+              }}
+              title="İlerlemeyi Sıfırla (0. Güne Dön)"
+              className="text-xs text-slate-500 dark:text-slate-400 hover:text-rose-600 inline-flex items-center gap-1"
+            >
+              <RotateCcw className="w-3 h-3" />
+              <span>Baştan başla</span>
+            </button>
+          )}
         </div>
 
-        {/* Week Selector Tabs */}
-        <div className="mt-6 pt-5 border-t border-white/10 flex flex-wrap gap-2">
+        {/* Week Selector */}
+        <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-sm font-semibold">
           {[
-            { week: 1, label: '1. Hafta: Temel & Çeviri (Gün 1-7)' },
-            { week: 2, label: '2. Hafta: Bağlaçlar & Cümle (Gün 8-14)' },
-            { week: 3, label: '3. Hafta: Paragraf (Gün 15-21)' },
-            { week: 4, label: '4. Hafta: İleri Soru & Simülasyon (Gün 22-30)' }
+            { week: 1, label: '1. Hafta', hint: 'Temel & Çeviri' },
+            { week: 2, label: '2. Hafta', hint: 'Bağlaçlar & Cümle' },
+            { week: 3, label: '3. Hafta', hint: 'Paragraf' },
+            { week: 4, label: '4. Hafta', hint: 'İleri Soru & Simülasyon' }
           ].map((w) => (
             <button
               key={w.week}
               onClick={() => setSelectedWeek(w.week)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              title={w.hint}
+              className={`flex-1 px-2 py-2 rounded-lg whitespace-nowrap transition-colors ${
                 selectedWeek === w.week
-                  ? 'bg-amber-400 text-slate-900 shadow-md scale-105'
-                  : 'bg-white/10 hover:bg-white/20 text-white'
+                  ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm'
+                  : 'text-slate-600 dark:text-slate-400'
               }`}
             >
               {w.label}

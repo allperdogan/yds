@@ -3,6 +3,12 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { App } from '../App';
 
+// Dark mode, eye care, backup and install live in the header's settings menu.
+const openSettingsItem = (name: RegExp): HTMLElement => {
+  fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+  return screen.getByRole(/Karanlık|Göz/.test(name.source) ? 'menuitemcheckbox' : 'menuitem', { name });
+};
+
 describe('App Integration & Complete Flow Tests', () => {
   beforeEach(() => {
     localStorage.clear();
@@ -23,7 +29,7 @@ describe('App Integration & Complete Flow Tests', () => {
 
     // Open a topic: the first question is shown right away
     fireEvent.click(screen.getByRole('button', { name: /Cloze Test/ }));
-    expect(screen.getByText(/Yeni sorular/)).toBeInTheDocument();
+    expect(screen.getByText(/^Yeni \(/)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /^A\)/ })).toBeInTheDocument();
 
     // The tab takes you back to the topic list
@@ -31,10 +37,10 @@ describe('App Integration & Complete Flow Tests', () => {
     expect(screen.getByRole('heading', { name: 'Çalış' })).toBeInTheDocument();
 
     fireEvent.click(screen.getAllByRole('button', { name: 'Deneme' })[0]);
-    expect(screen.getByText(/180 Dakika \/ 80 Soruluk Tam YDS Deneme Sınavı/i)).toBeInTheDocument();
+    expect(screen.getByText(/Gerçek sınav gibi: 80 soru, 180 dakika/i)).toBeInTheDocument();
 
     fireEvent.click(screen.getAllByRole('button', { name: /Hatalarım/ })[0]);
-    expect(screen.getByText(/Hata Defterim/i)).toBeInTheDocument();
+    expect(screen.getByText(/Yanlış yaptığın sorular ve kelimeler burada/i)).toBeInTheDocument();
 
     fireEvent.click(screen.getAllByRole('button', { name: 'Bugün' })[0]);
     fireEvent.click(screen.getByRole('button', { name: /30 günlük program/i }));
@@ -44,7 +50,7 @@ describe('App Integration & Complete Flow Tests', () => {
   it('toggles dark mode class on document element', () => {
     render(<App />);
 
-    const darkModeToggleBtn = screen.getByTitle(/iPhone \/ Bilgisayar Kurulumu/i).nextElementSibling as HTMLElement;
+    const darkModeToggleBtn = openSettingsItem(/Karanlık mod/i);
     expect(darkModeToggleBtn).toBeInTheDocument();
 
     // Initially light mode
@@ -62,7 +68,7 @@ describe('App Integration & Complete Flow Tests', () => {
   it('opens and closes the PWA install guide modal', () => {
     render(<App />);
 
-    const installHelpBtn = screen.getByTitle(/iPhone \/ Bilgisayar Kurulumu/i);
+    const installHelpBtn = openSettingsItem(/kur/i);
     fireEvent.click(installHelpBtn);
 
     // Modal is opened

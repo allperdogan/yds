@@ -40,7 +40,9 @@ describe('Advanced UI & Untested Flows Verification', () => {
         />
       );
 
-      const eyeCareBtn = screen.getByTitle(/Göz Dinlendirme Modunu Aç/i);
+      fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+      const eyeCareBtn = screen.getByRole('menuitemcheckbox', { name: /Göz dinlendirme/i });
+      expect(eyeCareBtn).toHaveAttribute('aria-checked', 'false');
       expect(eyeCareBtn).toBeInTheDocument();
       fireEvent.click(eyeCareBtn);
       expect(onToggleEyeCare).toHaveBeenCalledTimes(1);
@@ -60,7 +62,8 @@ describe('Advanced UI & Untested Flows Verification', () => {
         />
       );
 
-      expect(screen.getByTitle(/Göz Dinlendirme Açık/i)).toBeInTheDocument();
+      fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+      expect(screen.getByRole('menuitemcheckbox', { name: /Göz dinlendirme/i })).toHaveAttribute('aria-checked', 'true');
     });
   });
 
@@ -69,7 +72,6 @@ describe('Advanced UI & Untested Flows Verification', () => {
       render(<FullMockExamView onAddMistake={vi.fn()} onSaveExamResult={vi.fn()} />);
 
       // Verify 3 mock exam cards are rendered
-      expect(screen.getByText(/3 Farklı Tam Deneme/i)).toBeInTheDocument();
       expect(screen.getByText(/Standart Deneme/i)).toBeInTheDocument();
       expect(screen.getByText(/Ağır Akademik Kondisyon Denemesi/i)).toBeInTheDocument();
       expect(screen.getByText(/Çeldirici ve Hız Odaklı Deneme/i)).toBeInTheDocument();
@@ -83,7 +85,7 @@ describe('Advanced UI & Untested Flows Verification', () => {
       render(<FullMockExamView onAddMistake={vi.fn()} onSaveExamResult={vi.fn()} />);
 
       // Click start exam
-      const startBtn = screen.getByText(/180 Dakikalık Deneme Sınavını Başlat/i);
+      const startBtn = screen.getByText(/Denemeyi başlat/i);
       fireEvent.click(startBtn);
 
       // Verify question 1 is active
@@ -138,12 +140,12 @@ describe('Advanced UI & Untested Flows Verification', () => {
       );
 
       // Click ÖSYM Çeldirici Deşifresi
-      const trapsBtn = screen.getByText(/ÖSYM Çeldirici Deşifresi/i);
+      const trapsBtn = screen.getByText(/^Çeldiriciler$/);
       fireEvent.click(trapsBtn);
       expect(screen.getByText(/ÖSYM'nin En Sık Kullandığı 6 İmza Tuzak/i)).toBeInTheDocument();
 
       // Click back to Sınav Taktiği (Bilgi)
-      const tacticBtn = screen.getByText(/Sınav Taktiği \(Bilgi\)/i);
+      const tacticBtn = screen.getByText(/^Taktik$/);
       fireEvent.click(tacticBtn);
       expect(screen.getByText(/Soru Tipinin Kuralları ve Formülleri/i)).toBeInTheDocument();
     });

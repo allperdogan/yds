@@ -16,7 +16,7 @@ describe('DailyPlanView Functional & Button Tests', () => {
     );
 
     // 3 of 30 is 10%
-    expect(screen.getByText('10%')).toBeInTheDocument();
+    expect(screen.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '10');
     expect(screen.getByText('3 / 30 Gün')).toBeInTheDocument();
     expect(screen.getByText('27 gün kaldı')).toBeInTheDocument();
   });
