@@ -34,6 +34,7 @@ interface VocabDrillViewProps {
   initialStage?: 'learn' | 'test';
   initialSource?: 'infinite' | 'curated';
   onMarkKnown: (wordId: string) => void;
+  onRecordVocabAnswer?: (wordId: string, isCorrect: boolean) => void;
   onMarkPendingReview: (wordId: string) => void;
   onRemovePendingReview: (wordId: string) => void;
   onToggleBookmark?: (wordId: string) => void;
@@ -52,6 +53,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   initialStage,
   initialSource = 'infinite',
   onMarkKnown,
+  onRecordVocabAnswer,
   onMarkPendingReview,
   onRemovePendingReview,
   onToggleBookmark,
@@ -234,6 +236,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     setShowLearningCard(true); // Always reveal mnemonics for all 5 options!
 
     const isCorrect = opt === currentQ.correctAnswer;
+    onRecordVocabAnswer?.(currentQ.targetWordId, isCorrect);
     if (isCorrect) {
       onMarkKnown(currentQ.targetWordId);
       onRemovePendingReview(currentQ.targetWordId);
@@ -255,6 +258,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       [currentQ.id]: null
     }));
     setShowLearningCard(true);
+    onRecordVocabAnswer?.(currentQ.targetWordId, false);
     onMarkPendingReview(currentQ.targetWordId);
     if (onAddMistakeWord) {
       onAddMistakeWord(currentQ.targetWordId);

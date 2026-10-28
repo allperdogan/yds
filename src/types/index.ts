@@ -167,6 +167,7 @@ export interface ReadingPassage {
 
 export interface MockExamResult {
   id: string;
+  examId?: string; // which mock (exam_1..3); retakes of the same mock are not fresh evidence
   date: string;
   score: number; // 0 to 100
   correctCount: number;
@@ -190,6 +191,12 @@ export interface UserStats {
   mistakeQuestionIds: string[];
   knownVocabIds: string[];
   pendingReviewVocabIds: string[];
-  solvedQuestions: { [questionId: string]: { selected: string; isCorrect: boolean; seconds?: number } };
+  // isCorrect follows the latest answer; firstIsCorrect keeps the first try,
+  // which is what the score estimate uses (a retry after seeing the answer is not evidence).
+  solvedQuestions: {
+    [questionId: string]: { selected: string; isCorrect: boolean; seconds?: number; firstIsCorrect?: boolean };
+  };
+  // First answer given to each word in the vocabulary drill.
+  vocabFirstAnswers?: { [wordId: string]: boolean };
   mockExamResults?: MockExamResult[];
 }

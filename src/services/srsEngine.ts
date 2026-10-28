@@ -1,11 +1,11 @@
 import { SRSItem, SRSGrade } from '../types';
+import { localDateKey } from './storageService';
 
 export class SRSEngine {
   private static STORAGE_KEY = 'yds_srs_data_v1';
 
   public static getTodayString(): string {
-    const today = new Date();
-    return today.toISOString().split('T')[0];
+    return localDateKey();
   }
 
   public static loadSRSData(): Record<string, SRSItem> {
@@ -75,7 +75,7 @@ export class SRSEngine {
     // Calculate next review date
     const nextDate = new Date(today);
     nextDate.setDate(today.getDate() + interval);
-    const nextReviewDate = nextDate.toISOString().split('T')[0];
+    const nextReviewDate = localDateKey(nextDate);
 
     // Determine card state
     let state: SRSItem['state'] = 'learning';

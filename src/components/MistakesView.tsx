@@ -4,6 +4,7 @@ import { YdsQuestion, YdsWord } from '../types';
 import { getUnifiedQuestionById } from '../data/ydsQuestions';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { AudioService } from '../services/audioService';
+import { QUESTION_TYPE_LABELS } from '../services/examInsights';
 
 interface MistakesViewProps {
   mistakeQuestionIds: string[];
@@ -12,9 +13,114 @@ interface MistakesViewProps {
   onRemoveMistake: (questionId: string) => void;
   onRemoveBookmark: (wordId: string) => void;
   onMarkWordKnown?: (wordId: string) => void;
+  onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean) => void;
   onNavigateToPractice: () => void;
   onNavigateToVocab: () => void;
 }
+
+const OPTION_KEYS = ['A', 'B', 'C', 'D', 'E'] as const;
+
+/**
+ * A mistake is solved again before it can leave the list: the answer stays
+ * hidden until the student picks an option, and only a correct pick offers
+ * "Öğrendim (Kaldır)".
+ */
+const MistakeCard: React.FC<{
+  q: YdsQuestion;
+  index: number;
+  onRemoveMistake: (questionId: string) => void;
+  onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean) => void;
+}> = ({ q, index, onRemoveMistake, onRecordQuestionResult }) => {
+  const [picked, setPicked] = useState<string | null>(null);
+  const [showPassage, setShowPassage] = useState(true);
+  const answered = picked !== null;
+  const correct = picked === q.answer;
+
+  const choose = (key: string) => {
+    if (answered) return;
+    setPicked(key);
+    onRecordQuestionResult?.(q.id, key, key === q.answer);
+  };
+
+  return (
+    <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-4">
+      <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-extrabold bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 px-2 py-0.5 rounded">
+            Hata #{index + 1}
+          </span>
+          <span className="text-xs font-semibold text-slate-500">{QUESTION_TYPE_LABELS[q.type] || q.type}</span>
+        </div>
+        {answered && (
+          <button
+            onClick={() => (correct ? onRemoveMistake(q.id) : setPicked(null))}
+            className={`flex items-center gap-1 text-xs font-bold transition-colors ${
+              correct ? 'text-emerald-600 hover:text-emerald-700' : 'text-slate-500 hover:text-sky-600'
+            }`}
+          >
+            {correct ? <CheckCircle2 className="w-4 h-4" /> : <RotateCcw className="w-4 h-4" />}
+            <span>{correct ? 'Öğrendim (Kaldır)' : 'Tekrar dene'}</span>
+          </button>
+        )}
+      </div>
+
+      {q.passage && (
+        <div className="rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+          <button
+            onClick={() => setShowPassage((v) => !v)}
+            className="w-full text-left px-3 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300"
+          >
+            {showPassage ? 'Metni gizle' : 'Metni göster'}
+          </button>
+          {showPassage && (
+            <p className="px-3 pb-3 text-sm leading-relaxed text-slate-800 dark:text-slate-200 whitespace-pre-line max-h-[35vh] overflow-y-auto">
+              {q.passage}
+            </p>
+          )}
+        </div>
+      )}
+
+      <p className="text-sm font-bold text-slate-900 dark:text-white whitespace-pre-line">{q.question}</p>
+
+      <div className="grid grid-cols-1 gap-2 text-sm">
+        {OPTION_KEYS.filter((k) => q.options[k]).map((optKey) => {
+          const isAns = optKey === q.answer;
+          let cls =
+            'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-sky-400';
+          if (answered && isAns) cls = 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400 text-emerald-900 dark:text-emerald-200 font-bold';
+          else if (answered && optKey === picked) cls = 'bg-rose-50 dark:bg-rose-950/40 border-rose-400 text-rose-900 dark:text-rose-200';
+          else if (answered) cls = 'bg-slate-50 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700 text-slate-500 opacity-60';
+          return (
+            <button
+              key={optKey}
+              onClick={() => choose(optKey)}
+              disabled={answered}
+              className={`p-2.5 rounded-xl border flex items-start gap-2 text-left ${cls}`}
+            >
+              <span className="font-bold">{optKey})</span>
+              <span>{q.options[optKey]}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {answered && (
+        <div className="space-y-2">
+          <p className={`text-sm font-bold ${correct ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-700 dark:text-rose-400'}`}>
+            {correct ? 'Doğru. Artık listeden çıkarabilirsin.' : `Yanlış. Doğru cevap ${q.answer}. Soru listede kalıyor.`}
+          </p>
+          <div className="bg-slate-50 dark:bg-slate-850 p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Taktiksel Çözüm: {q.tacticUsed}</span>
+            </div>
+            <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed whitespace-pre-line">{q.explanation}</p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export const MistakesView: React.FC<MistakesViewProps> = ({
   mistakeQuestionIds,
@@ -23,6 +129,7 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
   onRemoveMistake,
   onRemoveBookmark,
   onMarkWordKnown,
+  onRecordQuestionResult,
   onNavigateToPractice,
   onNavigateToVocab
 }) => {
@@ -111,67 +218,13 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
             </div>
           ) : (
             mistakeQuestions.map((q, idx) => (
-              <div
+              <MistakeCard
                 key={q.id}
-                className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-4"
-              >
-                <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-extrabold bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 px-2 py-0.5 rounded">
-                      Hata #{idx + 1}
-                    </span>
-                    <span className="text-xs font-semibold capitalize text-slate-500">
-                      {q.type.replace('_', ' ')}
-                    </span>
-                  </div>
-
-                  <button
-                    onClick={() => onRemoveMistake(q.id)}
-                    title="Öğrendim, Hata Defterinden Kaldır"
-                    className="flex items-center gap-1 text-xs font-bold text-slate-400 hover:text-emerald-600 transition-colors"
-                  >
-                    <CheckCircle2 className="w-4 h-4" />
-                    <span>Öğrendim (Kaldır)</span>
-                  </button>
-                </div>
-
-                {/* Question */}
-                <p className="text-sm font-bold text-slate-900 dark:text-white whitespace-pre-line">
-                  {q.question}
-                </p>
-
-                {/* Options summary */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                  {(Object.keys(q.options) as Array<keyof typeof q.options>).map((optKey) => {
-                    const isAns = optKey === q.answer;
-                    return (
-                      <div
-                        key={optKey}
-                        className={`p-2.5 rounded-xl border flex items-center gap-2 ${
-                          isAns
-                            ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400 text-emerald-900 dark:text-emerald-200 font-bold'
-                            : 'bg-slate-50 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400'
-                        }`}
-                      >
-                        <span className="font-bold">{optKey})</span>
-                        <span>{q.options[optKey]}</span>
-                        {isAns && <span className="ml-auto text-[10px] bg-emerald-200 dark:bg-emerald-900 px-1.5 py-0.2 rounded font-extrabold">Doğru Şık</span>}
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* Tactical Solution */}
-                <div className="bg-slate-50 dark:bg-slate-850 p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400">
-                    <Sparkles className="w-3.5 h-3.5" />
-                    <span>Taktiksel Çözüm: {q.tacticUsed}</span>
-                  </div>
-                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed whitespace-pre-line">
-                    {q.explanation}
-                  </p>
-                </div>
-              </div>
+                q={q}
+                index={idx}
+                onRemoveMistake={onRemoveMistake}
+                onRecordQuestionResult={onRecordQuestionResult}
+              />
             ))
           )}
         </div>

@@ -9,25 +9,67 @@ interface FullMockExamViewProps {
   onSaveExamResult?: (result: MockExamResult) => void;
 }
 
+const SAVED_EXAM_KEY = 'yds_mock_in_progress_v1';
+
+interface SavedMockExam {
+  selectedExamId: string;
+  currentIndex: number;
+  userAnswers: Record<string, string>;
+  flaggedQuestions: Record<string, boolean>;
+  struckOptions: Record<string, Record<string, boolean>>;
+  timeLeft: number;
+  secondsSpent: Record<string, number>;
+}
+
+const loadSavedExam = (): SavedMockExam | null => {
+  try {
+    const raw = localStorage.getItem(SAVED_EXAM_KEY);
+    const parsed = raw ? (JSON.parse(raw) as SavedMockExam) : null;
+    return parsed && parsed.selectedExamId && parsed.timeLeft > 0 ? parsed : null;
+  } catch {
+    return null;
+  }
+};
+
+const saveExam = (exam: SavedMockExam) => {
+  try {
+    localStorage.setItem(SAVED_EXAM_KEY, JSON.stringify(exam));
+  } catch {
+    // Storage full or blocked: the exam still works, it just is not resumable.
+  }
+};
+
+const clearSavedExam = () => {
+  try {
+    localStorage.removeItem(SAVED_EXAM_KEY);
+  } catch {
+    // ignore
+  }
+};
+
 export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
   onAddMistake,
   onSaveExamResult
 }) => {
+  // An unfinished exam is saved so switching tabs or reloading does not lose it.
+  // The clock only runs while this screen is open.
+  const [saved] = useState<SavedMockExam | null>(loadSavedExam);
+
   // Sınav Seçimi (Deneme 1, 2, 3)
-  const [selectedExamId, setSelectedExamId] = useState<string>('exam_1');
+  const [selectedExamId, setSelectedExamId] = useState<string>(saved?.selectedExamId ?? 'exam_1');
   
   // Sınav Durumu
-  const [examState, setExamState] = useState<'intro' | 'active' | 'review'>('intro');
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
-  const [flaggedQuestions, setFlaggedQuestions] = useState<Record<string, boolean>>({});
-  const [struckOptions, setStruckOptions] = useState<Record<string, Record<string, boolean>>>({});
+  const [examState, setExamState] = useState<'intro' | 'active' | 'review'>(saved ? 'active' : 'intro');
+  const [currentIndex, setCurrentIndex] = useState<number>(saved?.currentIndex ?? 0);
+  const [userAnswers, setUserAnswers] = useState<Record<string, string>>(saved?.userAnswers ?? {});
+  const [flaggedQuestions, setFlaggedQuestions] = useState<Record<string, boolean>>(saved?.flaggedQuestions ?? {});
+  const [struckOptions, setStruckOptions] = useState<Record<string, Record<string, boolean>>>(saved?.struckOptions ?? {});
   
   // 180 Dakika = 10,800 Saniye
-  const [timeLeft, setTimeLeft] = useState<number>(180 * 60);
+  const [timeLeft, setTimeLeft] = useState<number>(saved?.timeLeft ?? 180 * 60);
   const [isTimerPaused, setIsTimerPaused] = useState<boolean>(false);
   // Seconds spent on each question, for per-type pacing feedback
-  const [secondsSpent, setSecondsSpent] = useState<Record<string, number>>({});
+  const [secondsSpent, setSecondsSpent] = useState<Record<string, number>>(saved?.secondsSpent ?? {});
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
 
   // 60. Soru Glikoz & Zihinsel Kriz Kalkanı
@@ -59,19 +101,24 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
       const activeQuestionId = currentQ.id;
       interval = setInterval(() => {
         setSecondsSpent((prev) => ({ ...prev, [activeQuestionId]: (prev[activeQuestionId] || 0) + 1 }));
-        setTimeLeft((prev) => {
-          if (prev <= 1) {
-            handleAutoSubmit();
-            return 0;
-          }
-          return prev - 1;
-        });
+        setTimeLeft((prev) => Math.max(0, prev - 1));
       }, 1000);
     }
     return () => {
       if (interval) clearInterval(interval);
     };
   }, [examState, isTimerPaused, timeLeft, currentQ.id]);
+
+  // Time is up: submit once, outside the state updater.
+  useEffect(() => {
+    if (examState === 'active' && timeLeft === 0) handleAutoSubmit();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [examState, timeLeft]);
+
+  useEffect(() => {
+    if (examState !== 'active') return;
+    saveExam({ selectedExamId, currentIndex, userAnswers, flaggedQuestions, struckOptions, timeLeft, secondsSpent });
+  }, [examState, selectedExamId, currentIndex, userAnswers, flaggedQuestions, struckOptions, timeLeft, secondsSpent]);
 
   const handleStartExam = () => {
     setUserAnswers({});
@@ -154,6 +201,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
 
     const result: MockExamResult = {
       id: `mock_${Date.now()}`,
+      examId: selectedExamId,
       date: new Date().toISOString().split('T')[0],
       score,
       correctCount: correct,
@@ -168,6 +216,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
       onSaveExamResult(result);
     }
 
+    clearSavedExam();
     setExamState('review');
     setIsSubmitModalOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });

@@ -1,5 +1,6 @@
 import { YdsQuestion } from '../types';
 import { shuffleQuestionList } from '../services/optionShuffle';
+import { fillGroupPassages } from '../services/groupPassages';
 
 const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
   // =========================================================================
@@ -494,7 +495,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Although solar panels generate zero direct emissions during electricity production, _____.',
     options: {
       A: 'the mining and refining of silicon and rare earth metals entail considerable ecological damage',
-      B: 'they have helped many households to reduce both their energy bills and their carbon footprint',
+      B: 'they have already helped millions of households to reduce both their energy bills and their carbon footprint',
       C: 'their contribution to lowering urban air pollution has been widely documented by researchers',
       D: 'they are increasingly regarded as one of the cleanest sources of electricity available today',
       E: 'governments in sunny regions have offered generous subsidies to encourage their installation'
@@ -512,7 +513,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: '_____, neuroscientists have discovered that the adult brain continues generating new neurons throughout life.',
     options: {
       A: 'Contrary to earlier neurological assumptions that brain cellular development ceases after adolescence',
-      B: 'Consistent with earlier neurological assumptions that the adult brain is structurally fixed',
+      B: 'Consistent with earlier neurological assumptions that the adult brain is structurally fixed after the teenage years',
       C: 'Despite a large body of evidence that new neurons continue to form throughout adulthood',
       D: 'Owing to the long-standing belief that the number of brain cells declines steadily with age',
       E: 'Just as early anatomists had insisted that no new nerve cells are produced after childhood'
@@ -586,7 +587,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
       A: 'low-lying coastal regions will suffer severe and irreversible flooding from rising seas',
       B: 'sea levels along most coastlines will begin to fall within a few decades',
       C: 'coastal cities will be largely protected from the effects of rising seas',
-      D: 'global emissions have already started to decline in most industrial nations',
+      D: 'global carbon emissions have already started to decline steadily in most of the world\'s industrial nations',
       E: 'coastal regions would have avoided the severe flooding of the past decade'
     },
     answer: 'A',
@@ -620,7 +621,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: '_____, the prolonged drought crippled the agrarian economy of the entire river basin.',
     options: {
       A: 'As regional farmers relied almost exclusively on seasonal precipitation for crop irrigation',
-      B: 'Although regional farmers relied almost exclusively on seasonal rainfall for irrigation',
+      B: 'Although regional farmers relied almost exclusively on seasonal rainfall for irrigating their crops',
       C: 'As regional farmers had access to extensive networks of reservoirs and deep wells',
       D: 'Even though the drought had been predicted by meteorologists several months earlier',
       E: 'Unless regional farmers had switched to crops that require far less irrigation water'
@@ -657,7 +658,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     options: {
       A: 'marine microbiologists have recognized that complex life can flourish without photosynthetic sunlight',
       B: 'marine microbiologists recognized that complex life could flourish without sunlight',
-      C: 'marine microbiologists will need to reconsider the conditions under which life can exist',
+      C: 'marine microbiologists will need to fundamentally reconsider the environmental conditions under which life can exist',
       D: 'marine microbiologists had assumed that all deep-sea life depended on photosynthesis',
       E: 'marine microbiologists are studying how vent organisms survive without any sunlight'
     },
@@ -810,7 +811,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'It is stated in the passage that the city plazas of Tikal were specifically designed to _____',
     options: {
       A: 'capture monsoon rainfall and channel it directly into filtration and storage systems.',
-      B: 'drain monsoon floods away from the residential districts of the city.',
+      B: 'drain the heavy monsoon floods away from the crowded residential districts of the city as quickly as possible.',
       C: 'collect quartz sand and zeolite carried down by seasonal rains.',
       D: 'store rainwater directly on the plaza surface during the dry season.',
       E: 'allow rainwater to soak into the limestone beneath the city.'
@@ -870,7 +871,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
       B: 'allows the brain to control which microbes live in the gut.',
       C: 'explains how gut bacteria synthesize vitamins and fatty acids.',
       D: 'shows that most serotonin used by the brain is made in the gut.',
-      E: 'replaces the vagus nerve as the main route between gut and brain.'
+      E: 'completely replaces the vagus nerve as the main route between gut and brain.'
     },
     answer: 'A',
     difficulty: 'Orta',
@@ -961,7 +962,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     options: {
       A: 'relies on the laws of physics instead of mathematical difficulty.',
       B: 'uses longer prime numbers than RSA does.',
-      C: 'can be run only on fault-tolerant quantum computers.',
+      C: 'can be run only on large, fault-tolerant quantum computers built in specialised laboratories.',
       D: 'prevents eavesdroppers from measuring photons.',
       E: 'uses Shor\'s algorithm to encode information.'
     },
@@ -980,7 +981,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
       A: 'Measuring a photon changes its state and produces detectable errors.',
       B: 'The intercepted photons stop reaching the receiver altogether.',
       C: 'The eavesdropper must first crack the key with Shor\'s algorithm.',
-      D: 'Each photon is encrypted with an RSA key that reveals tampering.',
+      D: 'Each photon is encrypted with a separate RSA key that reveals any tampering.',
       E: 'The polarization of all photons is reset automatically.'
     },
     answer: 'A',
@@ -1073,7 +1074,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
       A: 'become more concentrated at each higher level of the food chain.',
       B: 'spread evenly to all animals living in the same habitat.',
       C: 'affect predators only after the contaminated prey has died.',
-      D: 'collect mainly in the bodies of small filter-feeding animals.',
+      D: 'collect mainly in the bodies of small filter-feeding animals near the seabed.',
       E: 'break down gradually as they pass from prey to predator.'
     },
     answer: 'A',
@@ -1111,7 +1112,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     options: {
       A: 'triggers synaptic pruning in specialized left-hemisphere areas.',
       B: 'increases the number of synapses throughout the whole brain.',
-      C: 'is needed for Broca\'s area to develop in the right hemisphere.',
+      C: 'is needed mainly for Broca\'s area to develop fully in the right hemisphere.',
       D: 'has little effect until the child reaches age four.',
       E: 'replaces the role of the innate Language Acquisition Device.'
     },
@@ -1148,7 +1149,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
       A: 'The neural circuitry responsible for syntactic processing permanently atrophies.',
       B: 'The child can still reach native-level fluency with intensive teaching.',
       C: 'The child learns vocabulary normally but struggles with pronunciation.',
-      D: 'Broca\'s and Wernicke\'s areas develop more slowly but eventually catch up.',
+      D: 'Broca\'s and Wernicke\'s areas develop more slowly but eventually catch up in adolescence.',
       E: 'The Language Acquisition Device takes over the missing neural circuits.'
     },
     answer: 'A',
@@ -1209,7 +1210,7 @@ Thomas:
     options: {
       A: 'What if we used smart glass that tints itself to block solar heat while still letting light in?',
       B: 'What if we installed a larger cooling system that can cope with the extra heat in summer?',
-      C: 'What if we moved the glass facade to the north side, where it receives less direct sunlight?',
+      C: 'What if we moved the whole glass facade to the north side, where it receives less direct sunlight?',
       D: 'What if we planted tall trees along the south side to shade the glass in the afternoons?',
       E: 'What if we reduced the glass area and added more artificial lighting inside the atrium?'
     },
@@ -1237,7 +1238,7 @@ Liam:
 — So even if the Mexican forest reserves are protected, agricultural chemical practices thousands of kilometers away in the Midwest are decimating their food supply.`,
     options: {
       A: 'Logging plays a minor role; the main cause is herbicides destroying milkweed along their breeding routes.',
-      B: 'Yes, illegal logging inside the reserve has removed many of the trees the butterflies roost on.',
+      B: 'Yes, illegal logging inside the reserve has removed many of the old fir trees that the butterflies roost on in winter.',
       C: 'Partly, but the unusually cold winter in Mexico also killed many butterflies on arrival.',
       D: 'Not really; the main cause seems to be severe storms that struck during their migration south.',
       E: 'It is too early to say, since this year\'s count may have been affected by poor weather.'
@@ -1268,7 +1269,7 @@ David:
       A: 'Could we add an in-memory cache to serve repeated read requests without touching the database?',
       B: 'Could we upgrade the database server to a machine with more processors and memory?',
       C: 'Could we rewrite the slowest SQL queries so that they need fewer complex joins?',
-      D: 'Could we move the database to a cloud provider that scales automatically at peak times?',
+      D: 'Could we move the whole database to a cloud provider that scales automatically at peak shopping times?',
       E: 'Could we show customers a simpler checkout page during the busiest evening hours?'
     },
     answer: 'A',
@@ -1318,7 +1319,7 @@ Dr. Vance:
     options: {
       A: 'Because city officials failed to upgrade the drainage system after the 2018 flooding, the recent severe storm resulted in extensive devastation.',
       B: 'Because city officials upgraded the drainage system after the 2018 floods, the recent torrential storm caused relatively little damage.',
-      C: 'Even if city officials had upgraded the drainage system after the 2018 floods, the recent storm would still have caused widespread destruction.',
+      C: 'Even if city officials had upgraded the entire drainage system after the 2018 floods, the recent storm would still have caused widespread destruction.',
       D: 'If city officials do not upgrade the drainage system soon, future storms will cause even more destruction than the floods of 2018.',
       E: 'The recent storm caused widespread destruction, so city officials have finally decided to upgrade the drainage system built after 2018.'
     },
@@ -1335,7 +1336,7 @@ Dr. Vance:
     question: 'So computationally demanding is real-time high-resolution climate modeling that even the world’s most advanced supercomputers require weeks to simulate a single century.',
     options: {
       A: 'Real-time high-resolution climate simulation requires so much computational power that simulating one century takes weeks, even on top supercomputers.',
-      B: 'Even the most advanced supercomputers can simulate a century of high-resolution climate in a few hours, despite the heavy computational load.',
+      B: 'Even the most advanced supercomputers can now simulate a whole century of high-resolution climate in just a few hours, despite the heavy computational load.',
       C: 'Real-time climate modeling demands so little computing power that ordinary computers can simulate a whole century within weeks.',
       D: 'Simulating a century of high-resolution climate takes weeks only on older supercomputers, not on the most advanced ones.',
       E: 'Because supercomputers require weeks to run, scientists have abandoned real-time high-resolution climate modeling altogether.'
@@ -1466,7 +1467,7 @@ Dr. Vance:
     id: 'm3_q76',
     type: 'irrelevant_sentence',
     title: '76. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Photosynthesis in terrestrial plants is catalyzed by the enzyme RuBisCO, which captures atmospheric carbon dioxide to synthesize organic sugars. (II) However, RuBisCO is notoriously inefficient because it frequently binds with ambient oxygen instead of carbon dioxide, initiating an energy-wasting metabolic detour known as photorespiration. (III) Under high temperatures, this enzymatic flaw can reduce agricultural crop yields by up to forty percent in major food crops like wheat and soybeans. (IV) Modern combine harvesters manufactured in North America utilize GPS guidance to navigate grain fields with centimeter accuracy. (V) To circumvent this biological bottleneck, bioengineers are attempting to install more efficient bacterial carbon-concentrating mechanisms into staple food crops.`,
+    question: `(I) Photosynthesis in terrestrial plants is catalyzed by the enzyme RuBisCO, which captures atmospheric carbon dioxide to synthesize organic sugars. (II) However, RuBisCO is notoriously inefficient because it frequently binds with ambient oxygen instead of carbon dioxide, initiating an energy-wasting metabolic detour known as photorespiration. (III) RuBisCO is often described as the most abundant protein on Earth, since it is present in vast quantities in every green leaf. (IV) Under high temperatures, this enzymatic flaw can reduce agricultural crop yields by up to forty percent in major food crops like wheat and soybeans. (V) To circumvent this biological bottleneck, bioengineers are attempting to install more efficient bacterial carbon-concentrating mechanisms into staple food crops.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1474,17 +1475,17 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'C',
     difficulty: 'Orta',
-    tacticUsed: 'GPS Biçerdöver Sapması: Paragraf RuBisCO enziminin verimsizliğini ve genetik çözümleri anlatırken IV. cümle GPS\'li biçerdöverden bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri enzimin fotosentezdeki kusurunu ve biyomühendislik çözümlerini anlatır. IV alakasız tarım makinesidir.',
-    explanation: 'IV numaralı cümle GPS\'li biçerdöverlerden bahsederek fotosentez enzimi kusuru konusunun akışını bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf RuBisCO\'nun verimsizliğini, bunun ürün kaybına etkisini ve biyomühendislik çözümünü anlatan bir sorun-çözüm akışıdır. III. cümle de enzimden söz eder ama verimsizlik konusundan bolluğuna geçerek II. ve IV. cümle arasındaki bağı koparır. Doğru cevap C (III).'
   },
   {
     id: 'm3_q77',
     type: 'irrelevant_sentence',
     title: '77. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) The invention of the printing press by Johannes Gutenberg in the mid-fifteenth century catalyzed an unprecedented democratization of knowledge across Europe. (II) Prior to movable type, books were laboriously transcribed by hand in monastic scriptoria, restricting literacy to wealthy elites and clergy. (III) Gutenberg\'s mechanical press drastically slashed book production costs, enabling ideas of the Protestant Reformation and the Scientific Revolution to propagate across continental borders. (IV) The vintage antique furniture market in modern London features rare sixteenth-century oak reading desks that sell for thousands of pounds. (V) Within several decades of its debut, millions of printed volumes circulated throughout European urban centers, permanently destabilizing established authoritarian information monopolies.`,
+    question: `(I) The invention of the printing press by Johannes Gutenberg in the mid-fifteenth century catalyzed an unprecedented democratization of knowledge across Europe. (II) Prior to movable type, books were laboriously transcribed by hand in monastic scriptoria, restricting literacy to wealthy elites and clergy. (III) Gutenberg\'s mechanical press drastically slashed book production costs, enabling ideas of the Protestant Reformation and the Scientific Revolution to propagate across continental borders. (IV) Within several decades of its debut, millions of printed volumes circulated throughout European urban centers, permanently destabilizing established authoritarian information monopolies. (V) Gutenberg himself, however, died in relative poverty after losing control of his printing workshop to his financial backer.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1492,17 +1493,17 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'E',
     difficulty: 'Orta',
-    tacticUsed: 'Antika Mobilya Piyasası Sapması: Paragraf matbaanın bilgi devrimini anlatırken IV. cümle Londra\'daki antika masa fiyatlarından bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri matbaanın bilgiye erişim ve toplumsal dönüşüm üzerindeki etkisidir. IV antika mobilyadır.',
-    explanation: 'IV numaralı cümle Londra antika mobilya pazarından bahsederek Gutenberg matbaasının entelektüel devrimini bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf matbaanın bilgiyi nasıl yaygınlaştırdığını ve Avrupa\'daki etkisini anlatır. V. cümle Gutenberg\'den söz etse de toplumsal etkiden mucidin kişisel hayatına geçer. Doğru cevap E (V).'
   },
   {
     id: 'm3_q78',
     type: 'irrelevant_sentence',
     title: '78. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Coral bleaching occurs when marine heatwaves cause symbiotic zooxanthellae algae to be expelled from coral tissues. (II) Deprived of these photosynthetic algae, corals lose their vibrant coloration and primary nutritional source, exposing their white calcium carbonate skeleton. (III) If ocean temperatures return to baseline levels within several weeks, surviving corals can gradually reacquire algae and recover. (IV) Tropical resort hotels frequently provide complimentary scuba diving lessons for vacationing families during the winter holidays. (V) However, under prolonged thermal stress, massive coral mortality ensues, triggering the ecological collapse of surrounding marine reef biodiversity.`,
+    question: `(I) Coral bleaching occurs when marine heatwaves cause symbiotic zooxanthellae algae to be expelled from coral tissues. (II) Some corals are also threatened by crown-of-thorns starfish, which feed directly on coral tissue. (III) Deprived of these photosynthetic algae, corals lose their vibrant coloration and primary nutritional source, exposing their white calcium carbonate skeleton. (IV) If ocean temperatures return to baseline levels within several weeks, surviving corals can gradually reacquire algae and recover. (V) However, under prolonged thermal stress, massive coral mortality ensues, triggering the ecological collapse of surrounding marine reef biodiversity.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1510,17 +1511,17 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'B',
     difficulty: 'Orta',
-    tacticUsed: 'Tatil Köyü Scuba Dersi Sapması: Paragraf mercan ağarmasını anlatırken IV. cümle tatil köyü dalış dersinden bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri mercan ağarmasının biyolojisi ve ölüm tehlikesidir. IV turizm reklamıdır.',
-    explanation: 'IV numaralı cümle tatil köylerindeki dalış derslerinden bahsederek mercan ağarması felaketini bölen ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf ağarmanın nedenini, kısa süreli sıcaklıkta toparlanmayı ve uzun süreli sıcaklıkta ölümü sırayla anlatır. II. cümle de mercanlara yönelik bir tehditten söz eder ama ağarma sürecinden ayrı bir tehdide geçerek I. ve III. cümle arasındaki neden-sonuç zincirini keser. Doğru cevap B (II).'
   },
   {
     id: 'm3_q79',
     type: 'irrelevant_sentence',
     title: '79. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) The development of CRISPR-Cas9 genetic editing represents one of the most powerful molecular tools in contemporary biological science. (II) Originally discovered as an adaptive immune defense system in bacteria against viral phages, researchers repurposed the Cas9 enzyme to execute targeted double-stranded DNA cuts with pinpoint precision. (III) By introducing customized guide RNA molecules, scientists can knock out defective genetic alleles or insert corrective therapeutic sequences. (IV) Medical laboratory coats are traditionally dyed white to reflect hygiene and allow immediate detection of chemical stains. (V) This programmable genetic precision holds extraordinary promise for curing monogenic hereditary disorders such as sickle cell anemia and cystic fibrosis.`,
+    question: `(I) The development of CRISPR-Cas9 genetic editing represents one of the most powerful molecular tools in contemporary biological science. (II) Originally discovered as an adaptive immune defense system in bacteria against viral phages, researchers repurposed the Cas9 enzyme to execute targeted double-stranded DNA cuts with pinpoint precision. (III) By introducing customized guide RNA molecules, scientists can knock out defective genetic alleles or insert corrective therapeutic sequences. (IV) The scientists who adapted CRISPR for gene editing were awarded the Nobel Prize in Chemistry in 2020. (V) This programmable genetic precision holds extraordinary promise for curing monogenic hereditary disorders such as sickle cell anemia and cystic fibrosis.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1530,15 +1531,15 @@ Dr. Vance:
     },
     answer: 'D',
     difficulty: 'Orta',
-    tacticUsed: 'Beyaz Laboratuvar Önlüğü Sapması: Paragraf CRISPR-Cas9 gen düzenleme mekanizmasını anlatırken IV. cümle doktor önlüğünden bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri CRISPR teknolojisini anlatır. IV önlük kumaşı detayıdır.',
-    explanation: 'IV numaralı cümle beyaz laboratuvar önlüklerinden bahsederek devrim niteliğindeki gen düzenleme teknolojisi akışını bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf CRISPR\'ın nasıl çalıştığını ve kalıtsal hastalıkların tedavisindeki vaadini anlatır. IV. cümle de CRISPR ile ilgilidir ama yöntemden ödüle geçer; V. cümledeki "this programmable genetic precision" ifadesi III. cümleye bağlanır. Doğru cevap D (IV).'
   },
   {
     id: 'm3_q80',
     type: 'irrelevant_sentence',
     title: '80. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Urban public transit systems are essential for curtailing metropolitan traffic congestion and municipal carbon emissions. (II) Electric subways and bus rapid transit networks transport millions of commuters daily with far greater thermodynamic efficiency than private single-occupancy vehicles. (III) Investments in dedicated bus lanes and signal priority significantly accelerate transit speeds, incentivizing citizens to leave automobiles at home. (IV) Classic vintage sports car exhibitions in Monaco attract high-net-worth vehicle collectors from across the globe every May. (V) Furthermore, expanding reliable urban public transport reduces socioeconomic inequality by connecting disenfranchised suburban communities to central employment corridors.`,
+    question: `(I) Urban public transit systems are essential for curtailing metropolitan traffic congestion and municipal carbon emissions. (II) Electric subways and bus rapid transit networks transport millions of commuters daily with far greater thermodynamic efficiency than private single-occupancy vehicles. (III) Many cities, however, still struggle to fund the maintenance of ageing subway lines built more than a century ago. (IV) Investments in dedicated bus lanes and signal priority significantly accelerate transit speeds, incentivizing citizens to leave automobiles at home. (V) Furthermore, expanding reliable urban public transport reduces socioeconomic inequality by connecting disenfranchised suburban communities to central employment corridors.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1546,13 +1547,13 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'C',
     difficulty: 'Orta',
-    tacticUsed: 'Monako Klasik Araba Fuarı Sapması: Paragraf toplu taşımayı anlatırken IV. cümle Monako\'daki zengin klasik araba fuarından bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri kentsel toplu taşımanın faydaları ve sosyal eşitliğidir. IV lüks spor araba hobisidir.',
-    explanation: 'IV numaralı cümle Monako\'daki klasik spor araba sergisinden bahsederek kentsel toplu taşıma planlaması konusunu bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf toplu taşımanın trafiği, emisyonları ve eşitsizliği azaltan yararlarını sıralar. III. cümle de toplu taşımadan söz eder ama yararlar listesinden bakım finansmanı sorununa geçerek "Furthermore" ile devam eden akışı bozar. Doğru cevap C (III).'
   }
 ];
 
 // Options are reordered per question so the answer key is not concentrated in A.
-export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_3);
+export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = fillGroupPassages(shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_3));

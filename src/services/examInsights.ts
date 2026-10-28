@@ -46,7 +46,7 @@ export const TARGET_RATE_FOR_75: Record<QuestionType, number> = {
 };
 
 const RECOMMENDATIONS: Record<QuestionType, string> = {
-  vocabulary: 'Her gün 40 yeni kelime + SRS tekrarı; kelimeyi eş anlamlısı ve edatıyla birlikte çalış.',
+  vocabulary: 'Her gün programdaki günün kelime grubunu (~100 kelime) antrenmanla çöz, kartlarla tekrar et; kelimeyi eş anlamlısı ve edatıyla birlikte çalış.',
   grammar: 'Tense uyumu, bağlaçlar ve edat kalıplarında günde 20 gramer sorusu çöz.',
   cloze: 'Boşluktan önceki ve sonraki cümleyi oku; bağlacın yönünü (+/-) belirle, sonra şıklara bak.',
   sentence_completion: 'Önce bağlacı ve zaman uyumunu kontrol et, sonra anlamca uymayanları ele.',
@@ -206,7 +206,16 @@ export interface SolvedRecord {
   type: QuestionType;
   isCorrect: boolean;
   seconds?: number;
+  // How much the answer counts as evidence (default 1).
+  weight?: number;
+  // Share of a correct answer credited towards the exam rate (default 1).
+  credit?: number;
 }
+
+// The generated practice banks (ids bank_*) and vocabulary drill questions are easier
+// than real YDS items: they count half as much and a correct answer earns 85%
+// credit, so a perfect record there cannot alone predict a perfect exam.
+export const EASY_PRACTICE = { weight: 0.5, credit: 0.85 };
 
 export interface OverallTypeEstimate {
   type: QuestionType;
@@ -249,7 +258,7 @@ export const MIN_ANSWERS_FOR_ESTIMATE = 20;
  */
 export const estimateOverallScore = (
   solved: SolvedRecord[],
-  mockResults: Array<{ categoryBreakdown: Record<string, { total: number; correct: number; wrong: number }> }> = []
+  mockResults: Array<{ examId?: string; categoryBreakdown: Record<string, { total: number; correct: number; wrong: number }> }> = []
 ): OverallEstimate => {
   const acc = new Map<QuestionType, { weight: number; correct: number; answered: number; timeSum: number; timed: number }>();
   const get = (t: QuestionType) => {
@@ -264,16 +273,26 @@ export const estimateOverallScore = (
   solved.forEach((s) => {
     if (!(s.type in YDS_EXAM_DISTRIBUTION)) return;
     const e = get(s.type);
-    e.weight += 1;
+    const w = s.weight ?? 1;
+    e.weight += w;
     e.answered += 1;
-    if (s.isCorrect) e.correct += 1;
+    if (s.isCorrect) e.correct += w * (s.credit ?? 1);
     if (s.seconds && s.seconds > 0) {
       e.timeSum += s.seconds;
       e.timed += 1;
     }
   });
 
-  mockResults.slice(-RECENT_MOCKS).forEach((m) => {
+  // A retaken mock has been seen before, so only the first sitting of each counts.
+  const seenExams = new Set<string>();
+  const freshMocks = mockResults.filter((m) => {
+    if (!m.examId) return true;
+    if (seenExams.has(m.examId)) return false;
+    seenExams.add(m.examId);
+    return true;
+  });
+
+  freshMocks.slice(-RECENT_MOCKS).forEach((m) => {
     Object.entries(m.categoryBreakdown || {}).forEach(([type, b]) => {
       if (!(type in YDS_EXAM_DISTRIBUTION) || !b.total) return;
       const e = get(type as QuestionType);

@@ -132,7 +132,11 @@ describe('Data Integrity & Question Engine Tests', () => {
       const synthesized = getUnifiedQuestionById(syntheticId);
       expect(synthesized).toBeDefined();
       expect(synthesized?.id).toBe(syntheticId);
-      expect(synthesized?.options.A).toBe(firstWord.word);
+      // Same question as the drill: the word is one of 5 options, blanked out of the sentence.
+      expect(synthesized!.options[synthesized!.answer]).toBe(firstWord.word);
+      expect(new Set(Object.values(synthesized!.options)).size).toBe(5);
+      expect(synthesized!.question).toContain('_____');
+      expect(synthesized!.question.toLowerCase()).not.toContain(firstWord.word.toLowerCase());
       expect(synthesized?.explanation).toContain(firstWord.word);
     });
 

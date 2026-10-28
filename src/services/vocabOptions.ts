@@ -7,7 +7,8 @@ export const VOCAB_OPTION_COUNT = 5;
 // (same frequency band first) so no option stands out by form.
 export const pickVocabDistractors = (word: YdsWord, byType: Record<string, YdsWord[]>): string[] => {
   const needed = VOCAB_OPTION_COUNT - 1;
-  const seen = new Set([word.word.toLowerCase()]);
+  // Synonyms would make a second correct option.
+  const seen = new Set([word.word, ...(word.synonyms || [])].map((w) => w.toLowerCase()));
   const picked: string[] = [];
   const add = (candidate: string) => {
     const key = candidate.toLowerCase();

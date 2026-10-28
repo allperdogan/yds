@@ -79,7 +79,7 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
     setIndex((i) => i + 1);
     setSeconds(0);
     setShowPassage(true);
-    topRef.current?.scrollIntoView({ block: 'start' });
+    topRef.current?.scrollIntoView?.({ block: 'start' });
   };
 
   const pace = q ? getPaceStatus(seconds, q.type) : 'ok';
