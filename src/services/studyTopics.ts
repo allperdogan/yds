@@ -28,6 +28,41 @@ const READING_QUESTIONS: YdsQuestion[] = YDS_READING_PASSAGES.flatMap((p) =>
 
 const byTypes = (types: QuestionType[]) => YDS_QUESTIONS_DATA.filter((q) => types.includes(q.type));
 
+// Grammar questions come from several banks; group them by subject so a
+// session stays on one subject at a time instead of jumping between them.
+const GRAMMAR_GROUPS: Record<string, string> = {
+  tenses_time_clauses: 'Zamanlar',
+  conjunctions_transitions: 'Bağlaçlar',
+  prepositions: 'Edatlar',
+  reductions_participles: 'Kısaltmalar',
+  modals: 'Modallar',
+  relative_noun_clauses: 'İlgi ve isim cümlecikleri',
+  inversion_conditionals: 'Devrik yapılar ve koşul',
+  vocabulary: 'Kelime',
+  mixed: 'Karışık'
+};
+const GRAMMAR_ORDER = Object.keys(GRAMMAR_GROUPS);
+
+const grammarGroupKey = (q: YdsQuestion): string => {
+  const category = (q as { grammarCategory?: string }).grammarCategory;
+  if (category) return category;
+  if (q.id.startsWith('prep_')) return 'prepositions';
+  return q.type === 'vocabulary' ? 'vocabulary' : 'mixed';
+};
+
+const sortByGrammarGroup = (questions: YdsQuestion[]) =>
+  questions
+    .map((q, i) => ({ q, i, g: GRAMMAR_ORDER.indexOf(grammarGroupKey(q)) }))
+    .sort((a, b) => a.g - b.g || a.i - b.i)
+    .map((x) => x.q);
+
+/** The sub-group a question belongs to inside its topic: a grammar subject or a reading passage. */
+export const questionGroupLabel = (q: YdsQuestion): string | undefined => {
+  if (q.type === 'grammar' || q.type === 'vocabulary') return GRAMMAR_GROUPS[grammarGroupKey(q)];
+  if (q.type === 'reading') return q.title;
+  return undefined;
+};
+
 const topic = (id: string, label: string, types: QuestionType[], questions?: YdsQuestion[]): StudyTopic => ({
   id,
   label,
@@ -37,7 +72,7 @@ const topic = (id: string, label: string, types: QuestionType[], questions?: Yds
 
 // Topics in the order they appear in the exam. Mock exams are kept separate.
 export const STUDY_TOPICS: StudyTopic[] = [
-  topic('grammar', QUESTION_TYPE_LABELS.grammar, ['grammar', 'vocabulary']),
+  topic('grammar', QUESTION_TYPE_LABELS.grammar, ['grammar', 'vocabulary'], sortByGrammarGroup(byTypes(['grammar', 'vocabulary']))),
   topic('cloze', QUESTION_TYPE_LABELS.cloze, ['cloze']),
   topic('sentence_completion', QUESTION_TYPE_LABELS.sentence_completion, ['sentence_completion']),
   topic('translation', 'Çeviri', ['translation_en_tr', 'translation_tr_en']),

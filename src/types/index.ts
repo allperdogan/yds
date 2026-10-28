@@ -178,6 +178,15 @@ export interface MockExamResult {
   level: string;
 }
 
+// Spaced-repetition record for one vocabulary word (times in ms).
+export interface WordReview {
+  seen: number;
+  wrong: number;
+  box: number;
+  due: number;
+  lastSeen: number;
+}
+
 export interface UserStats {
   streak: number;
   lastStudyDate: string;
@@ -198,5 +207,7 @@ export interface UserStats {
   };
   // First answer given to each word in the vocabulary drill.
   vocabFirstAnswers?: { [wordId: string]: boolean };
+  // When each word comes back; known words come back rarely, missed ones soon.
+  vocabReviews?: { [wordId: string]: WordReview };
   mockExamResults?: MockExamResult[];
 }

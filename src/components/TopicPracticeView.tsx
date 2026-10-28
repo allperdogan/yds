@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Timer, Lightbulb } from 'lucide-react';
 import { QuestionType, UserStats, YdsQuestion } from '../types';
-import { StudyTopic, getQuestionStatus } from '../services/studyTopics';
+import { StudyTopic, getQuestionStatus, questionGroupLabel } from '../services/studyTopics';
 import { getPaceStatus, PACE_TARGET_SECONDS } from '../services/examInsights';
 
-type Mode = 'new' | 'review';
+type Mode = 'new' | 'review' | 'all';
 
 interface TopicPracticeViewProps {
   topic: StudyTopic;
@@ -15,6 +15,8 @@ interface TopicPracticeViewProps {
   onRemoveMistake: (questionId: string) => void;
   onBack: () => void;
   onOpenTactic?: (type: QuestionType) => void;
+  // Which list to open with; defaults to new questions, or review when none are left.
+  initialMode?: Mode;
 }
 
 const OPTION_KEYS = ['A', 'B', 'C', 'D', 'E'] as const;
@@ -27,9 +29,11 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
   onAddMistake,
   onRemoveMistake,
   onBack,
-  onOpenTactic
+  onOpenTactic,
+  initialMode
 }) => {
   const buildList = (mode: Mode): YdsQuestion[] => {
+    if (mode === 'all') return topic.questions;
     const mistakes = new Set(mistakeIds);
     const wanted = mode === 'new' ? 'new' : 'learning';
     return topic.questions.filter((q) => getQuestionStatus(q.id, solvedQuestions, mistakes) === wanted);
@@ -38,8 +42,11 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
   const mistakeSet = new Set(mistakeIds);
   const newCount = topic.questions.filter((q) => getQuestionStatus(q.id, solvedQuestions, mistakeSet) === 'new').length;
   const reviewCount = topic.questions.filter((q) => mistakeSet.has(q.id)).length;
+  const solvedCount = topic.questions.length - newCount - reviewCount;
 
-  const [mode, setMode] = useState<Mode>(() => (newCount === 0 && reviewCount > 0 ? 'review' : 'new'));
+  const [mode, setMode] = useState<Mode>(() =>
+    initialMode === 'review' && reviewCount > 0 ? 'review' : newCount === 0 && reviewCount > 0 ? 'review' : 'new'
+  );
   // The list is fixed for a session so answering never reshuffles the questions.
   const [list, setList] = useState<YdsQuestion[]>(() => buildList(mode));
   const [index, setIndex] = useState(0);
@@ -59,6 +66,12 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
   const q = list[index];
   const selected = q ? answers[q.id] : undefined;
   const answered = Boolean(selected);
+
+  // Where this question sits in its sub-group (grammar subject or reading
+  // passage), so a change of subject or passage is visible.
+  const group = q ? questionGroupLabel(q) : undefined;
+  const groupMembers = group ? topic.questions.filter((x) => questionGroupLabel(x) === group) : [];
+  const groupPosition = q ? groupMembers.indexOf(q) + 1 : 0;
 
   useEffect(() => {
     if (!q || answered) return;
@@ -135,6 +148,14 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
         >
           Tekrar et ({reviewCount})
         </button>
+        <button
+          onClick={() => startMode('all')}
+          className={`px-3 py-1.5 rounded-lg ${
+            mode === 'all' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-600 dark:text-slate-400'
+          }`}
+        >
+          Hepsi ({topic.questions.length})
+        </button>
         {onOpenTactic && (
           <button
             onClick={() => onOpenTactic(topic.types[0])}
@@ -146,10 +167,18 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
         )}
       </div>
 
+      {mode === 'new' && solvedCount > 0 && index === 0 && !answered && (
+        <p className="text-xs text-slate-500 dark:text-slate-400">
+          Daha önce doğru çözdüğün {solvedCount} soru bu listede yok. Hepsini sırayla görmek için "Hepsi"ye bas.
+        </p>
+      )}
+
       {!q ? (
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 text-center space-y-3">
           <p className="font-semibold text-slate-900 dark:text-white">
-            {mode === 'new'
+            {mode === 'all'
+              ? 'Bu konunun tüm sorularını bitirdin.'
+              : mode === 'new'
               ? list.length === 0
                 ? 'Bu konuda yeni soru kalmadı.'
                 : 'Bu turdaki soruları bitirdin.'
@@ -178,6 +207,12 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
         </div>
       ) : (
         <div key={q.id} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 md:p-6 space-y-4">
+          {group && (
+            <p className="text-xs font-semibold text-sky-700 dark:text-sky-400">
+              {q.type === 'reading' ? 'Metin: ' : ''}
+              {group} · {groupPosition}/{groupMembers.length}
+            </p>
+          )}
           {q.passage && (
             <div className="rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
               <button

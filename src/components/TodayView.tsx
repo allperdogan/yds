@@ -9,7 +9,7 @@ import { ProgressBar, ProgressNumbers } from './StudyHubView';
 interface TodayViewProps {
   stats: UserStats;
   dueWordCount: number;
-  onOpenTopic: (topicId: string) => void;
+  onOpenTopic: (topicId: string, mode?: 'new' | 'review') => void;
   onOpenVocab: () => void;
   onOpenFlashcards: () => void;
   onOpenPlan: () => void;
@@ -41,9 +41,9 @@ export const TodayView: React.FC<TodayViewProps> = ({ stats, dueWordCount, onOpe
     .filter((t) => t.progress.solved < t.progress.total)
     .sort((a, b) => a.progress.solved / a.progress.total - b.progress.solved / b.progress.total)[0];
   const next = withMistakes
-    ? { topic: withMistakes.topic, text: `${withMistakes.topic.label}: ${withMistakes.progress.learning} yanlışını tekrar et` }
+    ? { topic: withMistakes.topic, mode: 'review' as const, text: `${withMistakes.topic.label}: ${withMistakes.progress.learning} yanlışını tekrar et` }
     : leastSolved
-    ? { topic: leastSolved.topic, text: `${leastSolved.topic.label}: yeni sorularla devam et` }
+    ? { topic: leastSolved.topic, mode: 'new' as const, text: `${leastSolved.topic.label}: yeni sorularla devam et` }
     : null;
 
   const mockResults: MockExamResult[] = stats.mockExamResults || [];
@@ -54,7 +54,7 @@ export const TodayView: React.FC<TodayViewProps> = ({ stats, dueWordCount, onOpe
 
       {next && (
         <button
-          onClick={() => onOpenTopic(next.topic.id)}
+          onClick={() => onOpenTopic(next.topic.id, next.mode)}
           className="w-full text-left flex items-center gap-3 bg-sky-600 hover:bg-sky-700 text-white rounded-2xl px-4 py-4"
         >
           <div className="flex-1">
@@ -96,7 +96,7 @@ export const TodayView: React.FC<TodayViewProps> = ({ stats, dueWordCount, onOpe
           <Layers className="w-5 h-5 text-slate-500" />
           <span className="text-sm">
             <span className="block font-semibold text-slate-900 dark:text-white">Kelime tekrarı</span>
-            <span className="text-xs text-slate-500 dark:text-slate-400">{dueWordCount} kart bugün tekrar bekliyor</span>
+            <span className="text-xs text-slate-500 dark:text-slate-400">{dueWordCount} kelime bugün tekrar bekliyor</span>
           </span>
         </button>
         <button

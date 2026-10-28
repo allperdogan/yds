@@ -15,6 +15,7 @@ const PARENT_TAB: Record<string, MainTabId> = {
   study: 'study',
   vocab_drill: 'study',
   vocab: 'study',
+  vocab_lists: 'study',
   tactics: 'study',
   practice: 'study',
   reading_lab: 'study',

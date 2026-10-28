@@ -11,6 +11,7 @@ interface StudyHubViewProps {
   pendingReviewVocabIds: string[];
   onOpenTopic: (topicId: string) => void;
   onOpenVocab: () => void;
+  onOpenWordLists?: () => void;
 }
 
 export const ProgressBar: React.FC<{ progress: TopicProgress }> = ({ progress }) => {
@@ -56,7 +57,8 @@ export const StudyHubView: React.FC<StudyHubViewProps> = ({
   knownVocabIds,
   pendingReviewVocabIds,
   onOpenTopic,
-  onOpenVocab
+  onOpenVocab,
+  onOpenWordLists
 }) => {
   const vocab = getVocabProgress(YDS_VOCABULARY_LIST.length, knownVocabIds, pendingReviewVocabIds);
 
@@ -71,6 +73,15 @@ export const StudyHubView: React.FC<StudyHubViewProps> = ({
 
       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl divide-y divide-slate-200 dark:divide-slate-800 overflow-hidden">
         <TopicRow label="Kelime" progress={vocab} unit="kelime" onClick={onOpenVocab} />
+        {onOpenWordLists && (
+          <button
+            onClick={onOpenWordLists}
+            className="w-full text-left flex items-center gap-3 px-4 py-2.5 text-sm text-sky-700 dark:text-sky-400 hover:bg-slate-50 dark:hover:bg-slate-800/60"
+          >
+            <span className="flex-1">Listelerim: öğrendiklerim, hata yaptıklarım, hiç görmediklerim</span>
+            <ChevronRight className="w-4 h-4 shrink-0" />
+          </button>
+        )}
         {STUDY_TOPICS.map((t) => (
           <TopicRow
             key={t.id}
