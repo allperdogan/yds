@@ -66,19 +66,16 @@ npm run build
 
 ---
 
-## 🚀 7/24 Ücretsiz Canlı Yayına Alma (Deploy)
+## 🚀 Ücretsiz Yayın (GitHub Pages)
 
-Uygulama statik bir Single Page Application (SPA) olduğu için Vercel veya Netlify üzerinde **7/24 ücretsiz** çalışır:
+`main` dalına her push'ta `.github/workflows/deploy-pages.yml` testleri çalıştırır, uygulamayı derler ve **https://allperdogan.github.io/yds/** adresine yayınlar. GitHub Pages herkese açık depolarda ücretsizdir ve build kredisi yoktur.
 
-### Netlify Drop ile (Sıfır Kod, 30 Saniye):
-1. `npm run build` komutu ile `dist` klasörünü oluşturun.
-2. [app.netlify.com/drop](https://app.netlify.com/drop) adresine girin.
-3. Projedeki `dist` klasörünü tarayıcıya sürükleyip bırakın.
-4. Anında kalıcı bir `https://yds-master-pro.netlify.app` adresi elde edin.
+İlk kurulum (bir kez): GitHub'da **Settings → Pages → Build and deployment → Source: GitHub Actions** seçin.
 
-### Vercel ile:
-1. Bu GitHub deposunu Vercel hesabınıza bağlayın.
-2. Framework olarak `Vite` seçin ve `Deploy` butonuna basın.
+Uygulama PWA'dır: telefonda "Ana Ekrana Ekle" ile kurulur ve bir kez açıldıktan sonra internetsiz çalışır.
+
+### İlerleme nerede saklanır?
+Tüm ilerleme cihazın tarayıcısında (`localStorage`) tutulur; sunucu veya hesap yoktur. Cihazlar arasında taşımak için uygulamadaki **Yedek Al / Geri Yükle** penceresini kullanın.
 
 ---
 

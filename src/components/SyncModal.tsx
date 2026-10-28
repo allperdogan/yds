@@ -298,32 +298,31 @@ export const SyncModal: React.FC<SyncModalProps> = ({
                   <span>Farklı Ağda & Dışarıda 7/24 Kesintisiz Erişim</span>
                 </div>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-[11px]">
-                  Şu anki geçici tünel bağlantısı bilgisayarınız açıkken çalışır. Dışarıda (4.5G/5G, okul, kütüphane) ve bilgisayar kapalıyken bile <strong>7/24 ücretsiz</strong> erişmek için 2 pratik yolunuz var:
+                  Uygulama GitHub Pages'te <strong>ücretsiz ve sınırsız</strong> yayında: <strong>allperdogan.github.io/yds</strong>. Bilgisayarın kapalıyken de her ağda açılır, bir kez açtıktan sonra internetsiz de çalışır.
                 </p>
               </div>
 
-              {/* Method 1: Netlify Drop */}
+              {/* Method 1: Install as app */}
               <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 space-y-2">
                 <span className="font-extrabold text-slate-900 dark:text-white flex items-center gap-1.5">
                   <span className="w-5 h-5 rounded-full bg-emerald-600 text-white text-[10px] flex items-center justify-center font-black">1</span>
-                  <span>En Kolay Yol: Netlify Drop (30 Saniye, Sıfır Kod)</span>
+                  <span>Telefona Uygulama Olarak Kur</span>
                 </span>
                 <ol className="list-decimal list-inside space-y-1 text-slate-600 dark:text-slate-400 text-[11px] pl-1">
-                  <li>Bilgisayarınızda <strong>app.netlify.com/drop</strong> adresini açın (ücretsiz).</li>
-                  <li>Proje klasörünüzdeki hazır <strong>dist</strong> klasörünü sayfaya sürükleyip bırakın.</li>
-                  <li>Netlify size ömür boyu kalıcı ücretsiz bir link verir (örn: <code>yds-master.netlify.app</code>).</li>
-                  <li>Artık bilgisayarınız kapalıyken bile iPhone'unuzdan istediğiniz her ağda açabilirsiniz!</li>
+                  <li>iPhone'da linki <strong>Safari</strong>'de aç, <strong>Paylaş → Ana Ekrana Ekle</strong> de.</li>
+                  <li>Android'de Chrome menüsünden <strong>Uygulamayı yükle</strong> de.</li>
+                  <li>Bundan sonra hep ana ekrandaki simgeden aç: ilerlemen o simgenin içinde saklanır.</li>
                 </ol>
               </div>
 
-              {/* Method 2: iPhone PWA */}
+              {/* Method 2: Where progress lives */}
               <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 space-y-2">
                 <span className="font-extrabold text-slate-900 dark:text-white flex items-center gap-1.5">
                   <span className="w-5 h-5 rounded-full bg-sky-600 text-white text-[10px] flex items-center justify-center font-black">2</span>
-                  <span>iPhone'da "Ana Ekrana Ekle" (Kalıcı Hafıza)</span>
+                  <span>İlerlemen Nerede Saklanıyor?</span>
                 </span>
                 <p className="text-slate-600 dark:text-slate-400 text-[11px] leading-relaxed">
-                  Kalıcı linke girdikten sonra Safari'de alttaki <strong>Paylaş</strong> butonuna basıp <strong>"Ana Ekrana Ekle"</strong> deyin. Bu sayede uygulama telefonunuzda gerçek bir App gibi çalışır ve hafızadaki ilerlemeleriniz asla sıfırlanmaz!
+                  İlerlemen sunucuda değil, <strong>bu cihazın bu tarayıcısında</strong> saklanır. Telefon, bilgisayar, Safari ve ana ekran simgesi birbirini görmez. Cihaz değiştirirken veya eski linkten yenisine geçerken <strong>Yedek Al</strong> ile kodu kopyala, diğer tarafta <strong>Geri Yükle</strong>'ye yapıştır. Ara ara .json yedeği indirmek de iyi bir sigortadır.
                 </p>
               </div>
             </div>

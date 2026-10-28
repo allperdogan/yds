@@ -3,12 +3,13 @@
   "name": "YDS Master Pro - 30 Günde Full Hazırlık",
   "icons": [
     {
-      "src": "/logo.svg",
+      "src": "logo.svg",
       "type": "image/svg+xml",
       "sizes": "192x192 512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "background_color": "#082f49",
   "theme_color": "#0284c7",
   "display": "standalone",
