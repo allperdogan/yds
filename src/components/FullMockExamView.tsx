@@ -314,7 +314,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
             </div>
 
             <p className="text-xs text-amber-900/80 dark:text-amber-300/80 leading-relaxed">
-              Sınav 180 dakika ve 80 soru. Beyin 60. sorudan sonra glikoz yakmayı bırakıp pes eder. Gerçek bir 80-90 adayının sınava kadar en az <strong>12-15 tane tam denemeyi</strong> kesintisiz masada çözüp o 3 saatlik zihinsel felci defalarca yaşamış olması şarttır!
+              Sınav 180 dakika ve 80 soru. Çoğu adayda dikkat ikinci saatin sonunda (yaklaşık 60. soru civarında) belirgin şekilde düşer. 75+ hedefleyen bir adayın sınava kadar en az <strong>10-12 tam denemeyi</strong> kesintisiz çözüp bu yorgunluğa alışmış olması gerekir.
             </p>
 
             {isStaminaGuideOpen && (
@@ -328,7 +328,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                 <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
                   <span className="font-extrabold text-amber-800 dark:text-amber-300">2. Glikoz ve Sıvı Desteği (60. Soru Krizi):</span>
                   <p className="text-slate-700 dark:text-slate-300 text-[11px]">
-                    Sınavın 60. dakikasında ve 60. sorusunda glikoz rezervi tükenir. Masanızda bir yudum su ve kuru üzüm/şeker bulundurun; anlık kan şekeri desteği mental yorgunluğu önler.
+                    Uzun sınavlarda yorgunluk ve susuzluk dikkati düşürür. Sınavdan önce düzgün kahvaltı yapın, yanınızda su bulundurun (sınav kurallarının izin verdiği ölçüde) ve 60. soru civarında 20-30 saniyelik bir nefes molası verin.
                   </p>
                 </div>
                 <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
@@ -616,7 +616,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                     ⚠️ 60. Soru Eşiği (Kritik Kondisyon Etabı)
                   </span>
                   <p className="text-[11px] text-amber-800/80 dark:text-amber-400/80">
-                    Beyin glikoz rezervini tüketti; pes etmeyin. Derin nefes alın, su için ve şık eleme tekniğiyle son 20 soruyu tamamlayın!
+                    Yorgunluk bu noktada normaldir; pes etmeyin. Derin nefes alın, su için ve şık eleme tekniğiyle son 20 soruyu tamamlayın!
                   </p>
                 </div>
               </div>
@@ -855,7 +855,7 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-amber-600 font-bold shrink-0">💧</span>
-                  <span><strong>Glikoz & Su:</strong> Bir yudum su iç veya şeker/kuru meyve desteği al; beyin glikozsuz kaldığında eleme refleksini kaybeder.</span>
+                  <span><strong>Su & Mola:</strong> Bir yudum su iç veya şeker/kuru meyve desteği al; kısa bir mola dikkati toparlar.</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-amber-600 font-bold shrink-0">🎯</span>
