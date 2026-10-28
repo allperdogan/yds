@@ -1,7 +1,8 @@
 import { YdsWord } from '../../types';
 
 // Generated: ÖSYM-frequent academic words with curated same-POS distractors.
-export const VOCAB_BANK_WORDS: YdsWord[] = [
+// Split into chunks so TypeScript does not hit its union-complexity limit.
+const PART_1: YdsWord[] = [
   {
     "id": "wb0001",
     "word": "abstract",
@@ -10682,7 +10683,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "heir"
     ],
     "groupDay": 10
-  },
+  }
+];
+
+const PART_2: YdsWord[] = [
   {
     "id": "wb0401",
     "word": "anxiety",
@@ -21469,7 +21473,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "resolution"
     ],
     "groupDay": 20
-  },
+  }
+];
+
+const PART_3: YdsWord[] = [
   {
     "id": "wb0801",
     "word": "source",
@@ -32192,7 +32199,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "wastefully"
     ],
     "groupDay": 30
-  },
+  }
+];
+
+const PART_4: YdsWord[] = [
   {
     "id": "wb1201",
     "word": "gently",
@@ -42792,3 +42802,5 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
     "groupDay": 3
   }
 ];
+
+export const VOCAB_BANK_WORDS: YdsWord[] = [...PART_1, ...PART_2, ...PART_3, ...PART_4];
