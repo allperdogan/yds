@@ -9,7 +9,7 @@ interface QuestionPracticeViewProps {
   mistakeIds: string[];
   onAddMistake: (questionId: string) => void;
   onRemoveMistake: (questionId: string) => void;
-  onRecordQuestionResult: (questionId: string, selected: string, isCorrect: boolean) => void;
+  onRecordQuestionResult: (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => void;
   onBackToTactics?: () => void;
 }
 
@@ -78,7 +78,7 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
     setShowExplanation(true);
 
     const isCorrect = key === currentQ.answer;
-    onRecordQuestionResult(currentQ.id, key, isCorrect);
+    onRecordQuestionResult(currentQ.id, key, isCorrect, seconds);
     if (!isCorrect) {
       onAddMistake(currentQ.id);
     }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle2, Circle, ArrowRight, Zap, Target, BookOpen, Sparkles, ChevronRight, RotateCcw } from 'lucide-react';
-import { DailyMission } from '../types';
+import { DailyMission, MockExamResult, QuestionType, UserStats } from '../types';
+import { ScoreEstimateCard } from './ScoreEstimateCard';
 import { YDS_30_DAY_CURRICULUM } from '../data/ydsCurriculum';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 
@@ -11,6 +12,9 @@ interface DailyPlanViewProps {
   onNavigateToTactic: (tacticType: string) => void;
   onNavigateToPractice: (day?: number) => void;
   onResetProgress?: () => void;
+  solvedQuestions?: UserStats['solvedQuestions'];
+  mockExamResults?: MockExamResult[];
+  onPracticeType?: (type: QuestionType) => void;
 }
 
 export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
@@ -19,7 +23,10 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
   onNavigateToVocabDay,
   onNavigateToTactic,
   onNavigateToPractice,
-  onResetProgress
+  onResetProgress,
+  solvedQuestions = {},
+  mockExamResults = [],
+  onPracticeType = () => {}
 }) => {
   const [selectedWeek, setSelectedWeek] = useState<number>(1);
   const [activeDay, setActiveDay] = useState<number>(1);
@@ -128,6 +135,12 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
           ))}
         </div>
       </div>
+
+      <ScoreEstimateCard
+        solvedQuestions={solvedQuestions}
+        mockExamResults={mockExamResults}
+        onPracticeType={onPracticeType}
+      />
 
       {/* 0. GÜN: SIFIR NOKTASI & YDS BAŞLANGIÇ ORYANTASYONU */}
       <div className="bg-gradient-to-r from-amber-500/10 via-sky-500/10 to-indigo-500/10 border-2 border-amber-300/80 dark:border-amber-800/80 rounded-2xl p-5 space-y-3">

@@ -186,3 +186,150 @@ export const formatSeconds = (s: number) => {
   const sec = s % 60;
   return m > 0 ? `${m} dk ${sec.toString().padStart(2, '0')} sn` : `${sec} sn`;
 };
+
+// Number of questions per type in a real 80-question YDS paper.
+export const YDS_EXAM_DISTRIBUTION: Record<QuestionType, number> = {
+  vocabulary: 6,
+  grammar: 10,
+  cloze: 10,
+  sentence_completion: 10,
+  translation_en_tr: 3,
+  translation_tr_en: 3,
+  reading: 20,
+  dialogue: 5,
+  restatement: 4,
+  paragraph_completion: 4,
+  irrelevant_sentence: 5
+};
+
+export interface SolvedRecord {
+  type: QuestionType;
+  isCorrect: boolean;
+  seconds?: number;
+}
+
+export interface OverallTypeEstimate {
+  type: QuestionType;
+  label: string;
+  answered: number;
+  rate: number;
+  examQuestions: number;
+  pointsLost: number;
+  avgSeconds: number | null;
+  targetSeconds: number;
+  overTime: boolean;
+}
+
+export interface OverallEstimate {
+  answered: number;
+  hasEnoughData: boolean;
+  score: number;
+  scoreLow: number;
+  scoreHigh: number;
+  types: OverallTypeEstimate[];
+  untestedTypes: QuestionType[];
+  weakest: { type: QuestionType; label: string; text: string; pointsLost: number } | null;
+  slowest: OverallTypeEstimate | null;
+}
+
+// With little data a type's rate is pulled towards this prior instead of
+// trusting a lucky 3/3. Practice is untimed and repeatable, so the prior sits
+// below 50% to keep the estimate on the cautious side.
+const PRIOR_RATE = 0.4;
+const PRIOR_WEIGHT = 4;
+// A mock exam answer is timed and unseen, so it counts three times.
+const MOCK_WEIGHT = 3;
+const RECENT_MOCKS = 3;
+export const MIN_ANSWERS_FOR_ESTIMATE = 20;
+
+/**
+ * Realistic YDS score from everything answered so far: per-type accuracy from
+ * practice and recent mock exams, weighted by how many questions of each type
+ * appear in the real exam.
+ */
+export const estimateOverallScore = (
+  solved: SolvedRecord[],
+  mockResults: Array<{ categoryBreakdown: Record<string, { total: number; correct: number; wrong: number }> }> = []
+): OverallEstimate => {
+  const acc = new Map<QuestionType, { weight: number; correct: number; answered: number; timeSum: number; timed: number }>();
+  const get = (t: QuestionType) => {
+    let e = acc.get(t);
+    if (!e) {
+      e = { weight: 0, correct: 0, answered: 0, timeSum: 0, timed: 0 };
+      acc.set(t, e);
+    }
+    return e;
+  };
+
+  solved.forEach((s) => {
+    if (!(s.type in YDS_EXAM_DISTRIBUTION)) return;
+    const e = get(s.type);
+    e.weight += 1;
+    e.answered += 1;
+    if (s.isCorrect) e.correct += 1;
+    if (s.seconds && s.seconds > 0) {
+      e.timeSum += s.seconds;
+      e.timed += 1;
+    }
+  });
+
+  mockResults.slice(-RECENT_MOCKS).forEach((m) => {
+    Object.entries(m.categoryBreakdown || {}).forEach(([type, b]) => {
+      if (!(type in YDS_EXAM_DISTRIBUTION) || !b.total) return;
+      const e = get(type as QuestionType);
+      e.weight += b.total * MOCK_WEIGHT;
+      e.correct += b.correct * MOCK_WEIGHT;
+      e.answered += b.total;
+    });
+  });
+
+  let expectedCorrect = 0;
+  let variance = 0;
+  const types: OverallTypeEstimate[] = (Object.keys(YDS_EXAM_DISTRIBUTION) as QuestionType[]).map((type) => {
+    const n = YDS_EXAM_DISTRIBUTION[type];
+    const e = acc.get(type);
+    const weight = e ? e.weight : 0;
+    const rate = ((e ? e.correct : 0) + PRIOR_RATE * PRIOR_WEIGHT) / (weight + PRIOR_WEIGHT);
+    expectedCorrect += n * rate;
+    // Uncertainty in the rate itself plus the luck of a single sitting.
+    variance += (n * n * rate * (1 - rate)) / (weight + PRIOR_WEIGHT) + n * rate * (1 - rate);
+    const avgSeconds = e && e.timed ? Math.round(e.timeSum / e.timed) : null;
+    const targetSeconds = PACE_TARGET_SECONDS[type];
+    return {
+      type,
+      label: QUESTION_TYPE_LABELS[type],
+      answered: e ? e.answered : 0,
+      rate,
+      examQuestions: n,
+      pointsLost: round1(Math.max(0, TARGET_RATE_FOR_75[type] - rate) * n * POINTS_PER_QUESTION),
+      avgSeconds,
+      targetSeconds,
+      overTime: avgSeconds !== null && avgSeconds > targetSeconds
+    };
+  });
+
+  const answered = types.reduce((sum, t) => sum + t.answered, 0);
+  const score = round1(expectedCorrect * POINTS_PER_QUESTION);
+  const margin = Math.sqrt(variance) * POINTS_PER_QUESTION;
+
+  const weakestType = types
+    .filter((t) => t.pointsLost > 0)
+    .sort((a, b) => b.pointsLost - a.pointsLost)[0];
+  const slowest = types
+    .filter((t) => t.overTime)
+    .sort((a, b) => (b.avgSeconds || 0) / b.targetSeconds - (a.avgSeconds || 0) / a.targetSeconds)[0];
+
+  return {
+    answered,
+    hasEnoughData: answered >= MIN_ANSWERS_FOR_ESTIMATE,
+    score,
+    scoreLow: Math.max(0, Math.round(score - margin)),
+    scoreHigh: Math.min(100, Math.round(score + margin)),
+    types,
+    untestedTypes: types.filter((t) => t.answered === 0).map((t) => t.type),
+    weakest: weakestType
+      ? { type: weakestType.type, label: weakestType.label, text: RECOMMENDATIONS[weakestType.type], pointsLost: weakestType.pointsLost }
+      : null,
+    slowest: slowest || null
+  };
+};

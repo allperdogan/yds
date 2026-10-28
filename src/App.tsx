@@ -113,12 +113,12 @@ export const App: React.FC = () => {
   };
 
   // Record Question Result
-  const handleRecordQuestionResult = (questionId: string, selected: string, isCorrect: boolean) => {
+  const handleRecordQuestionResult = (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => {
     setStats((prev) => {
       const alreadySolved = prev.solvedQuestions[questionId];
       const newSolved = {
         ...prev.solvedQuestions,
-        [questionId]: { selected, isCorrect }
+        [questionId]: seconds ? { selected, isCorrect, seconds } : { selected, isCorrect }
       };
 
       return {
@@ -252,6 +252,12 @@ export const App: React.FC = () => {
             completedDays={stats.completedDays}
             onToggleDayCompleted={handleToggleDayCompleted}
             onResetProgress={handleResetProgress}
+            solvedQuestions={stats.solvedQuestions}
+            mockExamResults={stats.mockExamResults || []}
+            onPracticeType={(type) => {
+              setPracticeTypeFilter(type);
+              setActiveTab('practice');
+            }}
             onNavigateToVocabDay={(day) => {
               setVocabDayFilter(day);
               setActiveTab('vocab');

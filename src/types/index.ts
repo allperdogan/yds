@@ -190,6 +190,6 @@ export interface UserStats {
   mistakeQuestionIds: string[];
   knownVocabIds: string[];
   pendingReviewVocabIds: string[];
-  solvedQuestions: { [questionId: string]: { selected: string; isCorrect: boolean } };
+  solvedQuestions: { [questionId: string]: { selected: string; isCorrect: boolean; seconds?: number } };
   mockExamResults?: MockExamResult[];
 }

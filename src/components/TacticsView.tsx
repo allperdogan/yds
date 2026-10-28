@@ -13,7 +13,7 @@ interface TacticsViewProps {
   mistakeIds?: string[];
   onAddMistake?: (questionId: string) => void;
   onRemoveMistake?: (questionId: string) => void;
-  onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean) => void;
+  onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => void;
 }
 
 export const TacticsView: React.FC<TacticsViewProps> = ({
