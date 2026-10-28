@@ -35,7 +35,7 @@ describe('ReadingLabView Functional & Button Tests', () => {
     expect(screen.getByText(/SORU 1 \/ 4/i)).toBeInTheDocument();
 
     // Click option C on Question 1
-    const optionC = screen.getByRole('button', { name: /was completely incapable of generating new brain cells/i });
+    const optionC = screen.getByRole('button', { name: /could neither produce new neurons nor reorganize itself/i });
     fireEvent.click(optionC);
 
     // Feedback should be displayed
