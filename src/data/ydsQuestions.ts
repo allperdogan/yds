@@ -286,8 +286,7 @@ import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from
 import { YDS_READING_PASSAGES } from './ydsReadingPassages';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from './ydsVocabQuiz';
 import { YDS_VOCABULARY_LIST } from './ydsVocabulary';
-import { buildVocabOptions } from '../services/vocabOptions';
-import { blankExample } from '../services/vocabBlank';
+import { buildVocabQuestion } from '../services/vocabOptions';
 import { YdsWord } from '../types';
 
 let wordsByType: Record<string, YdsWord[]> | null = null;
@@ -346,15 +345,15 @@ export const getUnifiedQuestionById = (id: string): YdsQuestion | undefined => {
   if (id.startsWith('inf_')) {
     const wordObj = YDS_VOCABULARY_LIST.find((w) => w.id === id.slice(4));
     if (wordObj) {
-      const options = buildVocabOptions(wordObj, getWordsByType());
+      const { sentence, options, answer } = buildVocabQuestion(wordObj, getWordsByType());
       const letters = ['A', 'B', 'C', 'D', 'E'] as const;
       const syntheticQ: YdsQuestion = {
         id,
         type: 'vocabulary',
         title: `Kelime Sorusu: ${wordObj.word}`,
-        question: blankExample(wordObj.word, wordObj.exampleEn) ?? `Anlamı "${wordObj.meaning}" olan kelime: _____`,
+        question: sentence,
         options: { A: options[0], B: options[1], C: options[2], D: options[3], E: options[4] },
-        answer: letters[options.indexOf(wordObj.word)],
+        answer: letters[options.indexOf(answer)],
         explanation: `Doğru kelime: ${wordObj.word} (${wordObj.meaning}). "${wordObj.exampleEn}" - ${wordObj.exampleTr}${
           wordObj.mnemonic ? ` Çağrışım: ${wordObj.mnemonic}` : ''
         }`,

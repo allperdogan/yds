@@ -10381,10 +10381,10 @@ const PART_1: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: MOMENT (an). \"O an\" = -ir -mez.",
     "distractors": [
-      "the more",
-      "the same",
-      "the reason",
-      "the extent"
+      "unless",
+      "whereas",
+      "so that",
+      "provided that"
     ],
     "groupDay": 29
   },
@@ -25133,10 +25133,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: SORT (sınıflandırmak) + OUT. Karışıklığı sınıflandırıp çıkarmak = halletmek.",
     "distractors": [
-      "sort through",
-      "sort of",
-      "sort into",
-      "sort by"
+      "sort through"
     ],
     "groupDay": 6
   },
@@ -25215,8 +25212,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "stick up for",
       "stick out",
-      "stick around",
-      "stick with it"
+      "stick around"
     ],
     "groupDay": 9
   },
@@ -25241,9 +25237,7 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: THROW (fırlatmak) + AWAY (uzağa). Uzağa fırlatıp atmak.",
     "distractors": [
       "throw up",
-      "throw in",
-      "throw out of",
-      "throw off balance"
+      "throw in"
     ],
     "groupDay": 10
   },
@@ -25293,9 +25287,7 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: TRY (denemek) + OUT. Uygulamaya çıkarıp denemek.",
     "distractors": [
       "try on",
-      "try for",
-      "try back",
-      "try over"
+      "try for"
     ],
     "groupDay": 12
   },
@@ -25344,12 +25336,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: USE (kullanmak) + UP (tamamen). Tamamen kullanmak = bitirmek.",
-    "distractors": [
-      "use for",
-      "use as",
-      "use on",
-      "use with"
-    ],
+    "distractors": [],
     "groupDay": 14
   },
   {
@@ -25374,8 +25361,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "wear off",
       "wear on",
-      "wear down",
-      "wear away at"
+      "wear down"
     ],
     "groupDay": 15
   },
@@ -25451,8 +25437,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "cash out",
       "cash up",
-      "cash back",
-      "cash down"
+      "cash back"
     ],
     "groupDay": 18
   },
@@ -25503,8 +25488,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "crack up",
       "crack open",
-      "crack on",
-      "crack apart"
+      "crack on"
     ],
     "groupDay": 20
   },
@@ -25554,10 +25538,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: FEND = DEFEND'in kısaltması. Savunup uzaklaştırmak = savuşturmak.",
     "distractors": [
-      "fend for",
-      "fend up",
-      "fend in",
-      "fend out"
+      "fend for"
     ],
     "groupDay": 22
   },
@@ -25632,12 +25613,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: IRON (ütülemek) + OUT. Kırışıklığı ütüleyip düzeltmek = sorunları gidermek.",
-    "distractors": [
-      "iron on",
-      "iron up",
-      "iron over",
-      "iron through"
-    ],
+    "distractors": [],
     "groupDay": 25
   },
   {
@@ -25686,10 +25662,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: MAP (harita) + OUT. Bir planın haritasını çıkarmak.",
     "distractors": [
-      "map onto",
-      "map over",
-      "map across",
-      "map down"
+      "map onto"
     ],
     "groupDay": 27
   },
@@ -25714,8 +25687,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "opt out",
       "opt in",
-      "opt into",
-      "opt against"
+      "opt into"
     ],
     "groupDay": 28
   },
@@ -25767,8 +25739,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "pin up",
       "pin on",
-      "pin back",
-      "pin together"
+      "pin back"
     ],
     "groupDay": 30
   },
@@ -25790,12 +25761,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: PIECE (parça) + TOGETHER (birlikte). Yapbozun parçalarını birleştirmek.",
-    "distractors": [
-      "piece out",
-      "piece off",
-      "piece up",
-      "piece through"
-    ],
+    "distractors": [],
     "groupDay": 1
   },
   {
@@ -25818,10 +25784,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: FILL (doldurmak) + IN (içine). Formdaki boşlukların içine yazmak.",
     "distractors": [
-      "fill up",
-      "fill out with",
-      "fill over",
-      "fill back"
+      "fill up"
     ],
     "groupDay": 2
   },
@@ -25847,8 +25810,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "hand out",
       "hand down",
-      "hand over to",
-      "hand back from"
+      "hand over to"
     ],
     "groupDay": 3
   },
@@ -26166,7 +26128,6 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "cut in",
       "cut back",
-      "cut off from",
       "cut across"
     ],
     "groupDay": 15
@@ -26193,7 +26154,6 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "die out",
       "die off",
-      "die away from",
       "die for"
     ],
     "groupDay": 16
@@ -26219,8 +26179,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "do up",
       "do over",
-      "do in",
-      "do away"
+      "do in"
     ],
     "groupDay": 17
   },
@@ -26431,10 +26390,8 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: HOLD (tutmak) + OFF (uzakta). Kararı uzakta tutmak = ertelemek.",
     "distractors": [
-      "hold up with",
       "hold on",
-      "hold out",
-      "hold back from"
+      "hold out"
     ],
     "groupDay": 25
   },
@@ -26457,10 +26414,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: TRACK (iz). Bir şeyin izini tutmak = takip etmek.",
     "distractors": [
-      "keep pace with",
-      "keep in touch with",
-      "keep up with",
-      "keep clear of"
+      "keep up with"
     ],
     "groupDay": 26
   },
@@ -26485,7 +26439,6 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: LAY (koymak) + OUT. Masanın üzerine açıp sermek = düzenleyip sunmak.",
     "distractors": [
       "lay off",
-      "lay down on",
       "lay by",
       "lay aside"
     ],
@@ -26510,12 +26463,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: LINE (çizgi, sıra) + UP. Sıra hâline gelmek.",
-    "distractors": [
-      "line out",
-      "line in",
-      "line down",
-      "line off"
-    ],
+    "distractors": [],
     "groupDay": 28
   },
   {
@@ -26537,7 +26485,6 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: LOOK (bakmak) + BACK (geri). Geriye dönüp bakmak.",
     "distractors": [
-      "look forward",
       "look down on",
       "look up to",
       "look out for"
@@ -26591,9 +26538,7 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: MIX (karıştırmak) + UP. Birbirine karıştırmak.",
     "distractors": [
       "mix in",
-      "mix with",
-      "mix over",
-      "mix off"
+      "mix with"
     ],
     "groupDay": 1
   },
@@ -26615,12 +26560,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: NARROW (dar) + DOWN. Seçenekleri daraltmak.",
-    "distractors": [
-      "narrow in",
-      "narrow out",
-      "narrow off",
-      "narrow up"
-    ],
+    "distractors": [],
     "groupDay": 2
   },
   {
@@ -26641,12 +26581,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "own up to + isim/V-ing.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: OWN (sahip olmak) + UP. Hatana sahip çıkmak = itiraf etmek.",
-    "distractors": [
-      "own out",
-      "own off",
-      "own over",
-      "own in"
-    ],
+    "distractors": [],
     "groupDay": 3
   },
   {
@@ -26696,8 +26631,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "put up",
       "put on",
-      "put off",
-      "put out of"
+      "put off"
     ],
     "groupDay": 5
   },
@@ -26881,8 +26815,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "shut up",
       "shut out",
-      "shut in",
-      "shut off from"
+      "shut in"
     ],
     "groupDay": 12
   },
@@ -26906,10 +26839,7 @@ const PART_3: YdsWord[] = [
     "frequency": "high",
     "mnemonic": "💡 ÇAĞRIŞIM: SLOW (yavaş) + DOWN.",
     "distractors": [
-      "slow up",
-      "slow off",
-      "slow over",
-      "slow out"
+      "slow up"
     ],
     "groupDay": 13
   },
@@ -26932,10 +26862,7 @@ const PART_3: YdsWord[] = [
     "frequency": "high",
     "mnemonic": "💡 ÇAĞRIŞIM: SPEED (hız) + UP.",
     "distractors": [
-      "speed off",
-      "speed on",
-      "speed over",
-      "speed out"
+      "speed off"
     ],
     "groupDay": 14
   },
@@ -26959,9 +26886,7 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: SPLIT (bölmek) + UP. Parçalara bölmek.",
     "distractors": [
       "split off",
-      "split on",
-      "split over",
-      "split in"
+      "split on"
     ],
     "groupDay": 15
   },
@@ -27013,8 +26938,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "stand out from",
       "stand in for",
-      "stand by for",
-      "stand down from"
+      "stand by for"
     ],
     "groupDay": 17
   },
@@ -27040,7 +26964,6 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "step up",
       "step in",
-      "step aside for",
       "step back from"
     ],
     "groupDay": 18
@@ -27093,7 +27016,6 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: CHECK (kontrol etmek) + OUT. Bir şeyi baştan sona kontrol etmek.",
     "distractors": [
       "check in",
-      "check by",
       "check off",
       "check with"
     ],
@@ -27279,7 +27201,6 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "warm to",
       "warm over",
-      "warm off",
       "warm down"
     ],
     "groupDay": 27
@@ -27331,7 +27252,6 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: CARRY (taşımak) + OVER (öte). Öbür tarafa taşımak = aktarmak.",
     "distractors": [
       "carry out",
-      "carry by",
       "carry off",
       "carry through"
     ],
@@ -27357,10 +27277,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: FADE (solmak) + AWAY. Solup uzaklaşmak.",
     "distractors": [
-      "fade in",
-      "fade up",
-      "fade over",
-      "fade back"
+      "fade in"
     ],
     "groupDay": 30
   },
@@ -27385,9 +27302,7 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: FILL (doldurmak) + UP (tamamen).",
     "distractors": [
       "fill in",
-      "fill out",
-      "fill for",
-      "fill over"
+      "fill out"
     ],
     "groupDay": 1
   },
@@ -27412,8 +27327,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "opt for",
       "opt in",
-      "opt into",
-      "opt between"
+      "opt into"
     ],
     "groupDay": 2
   },
@@ -27436,7 +27350,6 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: PAY (ödemek) + BACK (geri).",
     "distractors": [
-      "pay through",
       "pay in",
       "pay out",
       "pay for"
@@ -27462,7 +27375,6 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: PLAY (oynamak) + DOWN (aşağı). Önemi aşağı çekmek.",
     "distractors": [
-      "play over",
       "play on",
       "play off",
       "play along"
@@ -27490,7 +27402,6 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: POUR (dökmek) + IN (içeri). İçeri dökülmek = akın etmek.",
     "distractors": [
       "pour out",
-      "pour off",
       "pour over",
       "pour down"
     ],
@@ -27567,12 +27478,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: SCALE (ölçek) + BACK. Ölçeği geri çekmek = küçültmek.",
-    "distractors": [
-      "scale in",
-      "scale over",
-      "scale off",
-      "scale on"
-    ],
+    "distractors": [],
     "groupDay": 8
   },
   {
@@ -27593,12 +27499,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: SINGLE (tek) + OUT. Kalabalıktan tek birini dışarı çıkarmak.",
-    "distractors": [
-      "single up",
-      "single in",
-      "single over",
-      "single off"
-    ],
+    "distractors": [],
     "groupDay": 9
   },
   {
@@ -27622,8 +27523,7 @@ const PART_3: YdsWord[] = [
     "distractors": [
       "sign off",
       "sign over",
-      "sign away",
-      "sign by"
+      "sign away"
     ],
     "groupDay": 10
   },
@@ -27645,12 +27545,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: SPELL (harf harf söylemek) + OUT. Harf harf açıklamak.",
-    "distractors": [
-      "spell in",
-      "spell over",
-      "spell off",
-      "spell down"
-    ],
+    "distractors": [],
     "groupDay": 11
   },
   {
@@ -27671,12 +27566,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: SUM (toplam) + UP. Hepsini toplayıp söylemek = özetlemek.",
-    "distractors": [
-      "sum in",
-      "sum over",
-      "sum off",
-      "sum down"
-    ],
+    "distractors": [],
     "groupDay": 12
   },
   {
@@ -27699,10 +27589,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: TAP (musluk) + INTO. Bir kaynağa musluk takıp ondan yararlanmak.",
     "distractors": [
-      "tap out",
-      "tap off",
-      "tap up",
-      "tap over"
+      "tap out"
     ],
     "groupDay": 13
   },
@@ -27726,7 +27613,6 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: TEAR (yırtmak) + DOWN (aşağı). Aşağı yıkmak.",
     "distractors": [
       "tear up",
-      "tear on",
       "tear off",
       "tear into"
     ],
@@ -27751,10 +27637,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: TIE (bağlamak) + IN WITH. Birbirine bağlanıp uyuşmak.",
     "distractors": [
-      "tie up with",
-      "tie down to",
-      "tie on to",
-      "tie off from"
+      "tie up with"
     ],
     "groupDay": 15
   },
@@ -27777,10 +27660,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: TONE (ton) + DOWN. Sesin tonunu aşağı çekmek = yumuşatmak.",
     "distractors": [
-      "tone up",
-      "tone in",
-      "tone over",
-      "tone off"
+      "tone up"
     ],
     "groupDay": 16
   },
@@ -27803,10 +27683,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: USHER (yer gösterici). Yer gösterici seni içeri buyur eder: yeni bir dönemi içeri buyur etmek.",
     "distractors": [
-      "usher out",
-      "usher off",
-      "usher over",
-      "usher up"
+      "usher out"
     ],
     "groupDay": 17
   },
@@ -27828,12 +27705,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: WATER (su) + DOWN. İçine su katıp gücünü azaltmak.",
-    "distractors": [
-      "water up",
-      "water in",
-      "water off",
-      "water over"
-    ],
+    "distractors": [],
     "groupDay": 18
   },
   {
@@ -27880,12 +27752,7 @@ const PART_3: YdsWord[] = [
     "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: ZERO (sıfır noktası, hedefin merkezi) + IN ON. Nişangâhı hedefin tam merkezine kilitlemek.",
-    "distractors": [
-      "zero out of",
-      "zero up to",
-      "zero off from",
-      "zero down on"
-    ],
+    "distractors": [],
     "groupDay": 20
   },
   {
@@ -28014,7 +27881,6 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: TALK (konuşmak) + INTO. Konuşarak birini bir işin içine sokmak.",
     "distractors": [
-      "talk off",
       "talk over",
       "talk down to",
       "talk back to"
@@ -28119,10 +27985,7 @@ const PART_3: YdsWord[] = [
     "frequency": "medium",
     "mnemonic": "💡 ÇAĞRIŞIM: WATCH (izlemek) + OUT. Dışarıya dikkatle bakmak.",
     "distractors": [
-      "watch over",
-      "watch on",
-      "watch in",
-      "watch up"
+      "watch over"
     ],
     "groupDay": 29
   },
@@ -28147,9 +28010,7 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: WIND (kurmak, sarmak) + UP. Sarıp sonuna getirmek.",
     "distractors": [
       "wind down",
-      "wind back",
-      "wind off",
-      "wind over"
+      "wind back"
     ],
     "groupDay": 30
   },
@@ -28199,7 +28060,6 @@ const PART_3: YdsWord[] = [
     "mnemonic": "💡 ÇAĞRIŞIM: WRITE (yazmak) + DOWN. Kâğıda dökmek.",
     "distractors": [
       "write off",
-      "write over",
       "write back",
       "write in"
     ],

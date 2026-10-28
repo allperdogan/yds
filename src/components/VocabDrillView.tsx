@@ -21,8 +21,7 @@ import {
 } from 'lucide-react';
 import { VocabQuizQuestion, YdsWord } from '../types';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from '../data/ydsVocabQuiz';
-import { buildVocabOptions } from '../services/vocabOptions';
-import { blankExample } from '../services/vocabBlank';
+import { buildVocabQuestion } from '../services/vocabOptions';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { AudioService } from '../services/audioService';
 
@@ -130,11 +129,9 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     });
 
     return pool.map((w) => {
-      const sentence =
-        blankExample(w.word, w.exampleEn) ?? `Anlamı "${w.meaning}" olan kelime: _____`;
-
-      // 5 options: curated distractors first, then same part of speech; seeded order
-      const options = buildVocabOptions(w, byType);
+      // 5 options in the form the blank needs: at most two curated distractors,
+      // the rest unrelated words of the same part of speech; seeded order
+      const { sentence, options, answer, baseOf } = buildVocabQuestion(w, byType);
 
       // Build options breakdown including mnemonics for every choice
       const optionsBreakdown: Record<
@@ -143,7 +140,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       > = {};
 
       options.forEach((opt) => {
-        const found = wordMap.get(opt.toLowerCase());
+        const found = wordMap.get(baseOf[opt].toLowerCase());
         if (found) {
           optionsBreakdown[opt] = {
             word: found.word,
@@ -156,7 +153,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
         } else {
           optionsBreakdown[opt] = {
             word: opt,
-            meaning: opt === w.word ? w.meaning : 'çeldirici şık',
+            meaning: opt === answer ? w.meaning : 'çeldirici şık',
             mnemonic: 'ÖSYM sınav sözcüğü'
           };
         }
@@ -173,7 +170,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
         type: w.type,
         sentence,
         options,
-        correctAnswer: w.word,
+        correctAnswer: answer,
         meaningTr: w.meaning,
         explanation: `"${w.exampleTr}" — YDS Sınav Notu: ${
           w.ydsTip || 'ÖSYM bu kelimeyi ve eş anlamlılarını sınavlarda sıklıkla test eder.'
