@@ -804,16 +804,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "According to the passage, the CRISPR-Cas9 system was originally discovered as _____ .",
     "options": {
-      "A": "a synthetic protein developed by pharmaceutical conglomerates",
+      "A": "a laboratory tool designed to cut and replace damaged DNA",
       "B": "a natural bacterial defense mechanism against viral infections",
-      "C": "a hereditary mutation observed in patients with sickle-cell disease",
-      "D": "an accidental byproduct of industrial wastewater purification",
-      "E": "a cellular anomaly found exclusively in mammalian embryonic cells"
+      "C": "a virus that bacteria use to attack other microorganisms",
+      "D": "an immune response that human cells use against bacteria",
+      "E": "a gene therapy first tested on patients with sickle-cell disease"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Doğrudan Bilgi Çıkarımı: 'bacteria against bacteriophages (viruses)'",
-    "trapWarning": "A şıkkı 'synthetic' der; metin 'naturally occurring' olduğunu söyler.",
+    "trapWarning": "Metin: \"derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages\". A bugünkü kullanımı köken gibi sunar, C saldıranla savunanı karıştırır, D canlıları değiştirir, E ise klinik denemeyi keşif sanır.",
     "explanation": "Metinde 'Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages' denmiştir. Bakteriyofaj bir virüstür. Dolayısıyla B şıkkı doğrudur."
   },
   {
@@ -823,17 +823,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "It is clearly stated in the passage that earlier genetic technologies _____ .",
     "options": {
-      "A": "were significantly more expensive and prone to unintended genetic errors",
-      "B": "successfully cured all hereditary causes of congenital blindness",
-      "C": "were completely outlawed by international bioethics tribunals",
-      "D": "relied on bacterial enzymes rather than synthetic chemical scissors",
-      "E": "focused exclusively on eradicating viral bacteriophages"
+      "A": "were costly and likely to cause unintended mutations",
+      "B": "were more precise but much slower than CRISPR",
+      "C": "could not be used in clinical trials on humans",
+      "D": "were based on the same bacterial defense system",
+      "E": "raised fewer ethical concerns than CRISPR does"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Karşılaştırma (Unlike earlier genetic modification technologies...)",
-    "trapWarning": "B şıkkında 'successfully cured all' aşırı iddialıdır ve metinle çelişir.",
-    "explanation": "'prohibitively expensive, laborious, and vulnerable to off-target mutations' = 'more expensive and prone to unintended genetic errors' (A şıkkı)."
+    "trapWarning": "Metin: \"prohibitively expensive, laborious, and vulnerable to off-target mutations\". B kesinliği eski yöntemlere verir (tersi); C, D ve E metinde söylenmeyen karşılaştırmalardır.",
+    "explanation": "'prohibitively expensive, laborious, and vulnerable to off-target mutations' = 'costly and likely to cause unintended mutations' (A şıkkı)."
   },
   {
     "id": "m_q45",
@@ -842,16 +842,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "The author notes that germline editing is controversial primarily because it _____ .",
     "options": {
-      "A": "requires the complete shutdown of existing pharmaceutical facilities",
+      "A": "has not yet been tested in clinical trials on humans",
       "B": "introduces modifications that can be passed down to future generations",
-      "C": "has proven entirely ineffective in laboratory animal models",
-      "D": "costs substantially more than conventional chemotherapy regimens",
-      "E": "cannot be detected by contemporary diagnostic gene sequencing"
+      "C": "is much more expensive than other forms of gene editing",
+      "D": "may cause unexpected mutations in the treated patient",
+      "E": "is used to treat diseases such as hereditary blindness"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Sebep Analizi: 'alterations made to embryos that are inheritable across generations'",
-    "trapWarning": "C şıkkı 'entirely ineffective' der; sorun işe yaramaması değil nesilden nesile aktarılabilmesidir.",
+    "trapWarning": "Metin germline düzenlemeyi \"inheritable across generations\" diye tanımlar; tartışmanın nedeni budur. D eski tekniklerin sorununu (off-target) buraya taşır; E ise klinik denemeleri tartışma nedeni gibi sunar.",
     "explanation": "Metinde 'alterations made to embryos that are inheritable across generations' ifadesi doğrudan 'modifications that can be passed down to future generations' (B şıkkı) ile örtüşür."
   },
   {
@@ -861,16 +861,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "Which of the following would be the best title for the passage?",
     "options": {
-      "A": "The Total Eradication of Bacterial Infections in Hospitals",
+      "A": "How Bacteria Defend Themselves Against Viruses",
       "B": "CRISPR-Cas9: A Genetic Revolution and Its Ethical Dilemmas",
-      "C": "Why Inheritable Diseases Can Never Be Cured by Modern Science",
-      "D": "The Financial Bankruptcy of Traditional Biotechnology Companies",
-      "E": "How Bacteriophages Destroyed Early Genetic Laboratories"
+      "C": "The Case Against Editing Human Embryos",
+      "D": "New Treatments for Sickle-Cell Disease",
+      "E": "Why Earlier Genetic Technologies Failed"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Başlık Tespiti (CRISPR devrimi ve etik boyutu)",
-    "trapWarning": "A şıkkı bakteriyel enfeksiyonlardan bahseder, metnin ana konusu gen düzenlemedir.",
+    "trapWarning": "Başlık bütün paragrafı kapsamalıdır: CRISPR devrimi + etik tartışma. A, D ve E yalnızca bir cümleyi kapsar; C ise tartışmanın bir tarafını seçer, oysa yazar taraf tutmaz.",
     "explanation": "Metin CRISPR'ın genetik teknolojisindeki devrimini ve ardından gelen etik tartışmaları özetler. Doğru başlık B'dir."
   },
   {
@@ -881,15 +881,15 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "question": "Supporters of deep-sea nodule harvesting claim that it is advantageous because it _____ .",
     "options": {
       "A": "produces lower carbon emissions and avoids displacing human communities",
-      "B": "permanently cleanses toxic sediments from the ocean floor",
-      "C": "accelerates the reproduction rates of benthic organisms",
-      "D": "eliminates the need for any renewable battery production globally",
-      "E": "requires no complex robotic machinery or heavy surface vessels"
+      "B": "causes less damage to ecosystems than mining on land",
+      "C": "can supply metals that are not found anywhere on land",
+      "D": "is cheaper than open-pit mining on land",
+      "E": "will allow damaged seabed habitats to recover quickly"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Proponents (Savunucular) Argümanı Çıkarımı",
-    "trapWarning": "C şıkkı biyologların endişeleriyle çelişir, madencilik canlıları hızlandırmaz.",
+    "trapWarning": "Destekçiler: düşük karbon ayak izi ve sıfır insan yerinden edilmesi. B ekosistem iddiası ekler (biyologların itirazıyla karışır), C ve D metinde olmayan avantajlardır, E ise metinle çelişir.",
     "explanation": "Metinde 'produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement' açıkça belirtilmiştir (A şıkkı)."
   },
   {
@@ -899,16 +899,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The abyssal plains of the Clarion-Clipperton Zone in the central Pacific Ocean contain trillions of polymetallic nodules—potato-sized mineral accretions exceptionally rich in nickel, cobalt, manganese, and copper. As demand for these metals surges to fuel the global green transition, commercial mining entities are eager to begin industrial dredging four thousand meters beneath the surface. Proponents argue that deep-sea harvesting produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement. However, marine biologists vehemently counter that abyssal ecosystems are among the most fragile and slowest-recovering biomes on Earth. Organisms living in the perpetual darkness of the deep sea have evolved over millions of years under tranquil conditions; sediment plumes and acoustic pollution generated by heavy robotic crawlers could cause irreversible biodiversity loss.",
     "question": "According to marine biologists in the passage, abyssal ecosystems are particularly vulnerable because they _____ .",
     "options": {
-      "A": "have evolved in undisturbed environments and recover at exceedingly slow rates",
-      "B": "are heavily contaminated by industrial plastic debris from nearby islands",
-      "C": "compete aggressively with terrestrial species for vital atmospheric oxygen",
-      "D": "lack any mineral compounds necessary to sustain metabolic life",
-      "E": "experience constant volcanic eruptions that destroy natural habitats"
+      "A": "developed under calm conditions and recover very slowly",
+      "B": "contain species that are found nowhere else on Earth",
+      "C": "are already polluted by plastic waste from the surface",
+      "D": "depend on the nodules for their supply of food",
+      "E": "are exposed to frequent changes in temperature and light"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Paraphrase: 'fragile and slowest-recovering' & 'tranquil conditions'",
-    "trapWarning": "E şıkkında volkanik patlamalardan bahsedilmemektedir, sakin (tranquil) ortamdan bahsedilmektedir.",
+    "trapWarning": "Metin: \"slowest-recovering\" ve \"evolved ... under tranquil conditions\". B makul görünür ama metinde yoktur; E ise \"perpetual darkness\" ve \"tranquil\" ile çelişir.",
     "explanation": "Metin 'abyssal ecosystems are among the most fragile and slowest-recovering biomes ... evolved over millions of years under tranquil conditions' demektedir (A şıkkı)."
   },
   {
@@ -918,17 +918,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The abyssal plains of the Clarion-Clipperton Zone in the central Pacific Ocean contain trillions of polymetallic nodules—potato-sized mineral accretions exceptionally rich in nickel, cobalt, manganese, and copper. As demand for these metals surges to fuel the global green transition, commercial mining entities are eager to begin industrial dredging four thousand meters beneath the surface. Proponents argue that deep-sea harvesting produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement. However, marine biologists vehemently counter that abyssal ecosystems are among the most fragile and slowest-recovering biomes on Earth. Organisms living in the perpetual darkness of the deep sea have evolved over millions of years under tranquil conditions; sediment plumes and acoustic pollution generated by heavy robotic crawlers could cause irreversible biodiversity loss.",
     "question": "It can be inferred from the passage that the drive to extract deep-sea minerals is largely fueled by _____ .",
     "options": {
-      "A": "a desire to explore potential deep-water human habitation sites",
-      "B": "the growing worldwide demand for raw materials used in green technologies",
-      "C": "strict United Nations mandates that prohibit all forms of terrestrial mining",
-      "D": "an acute shortage of agricultural fertilizers across the Americas",
-      "E": "the total collapse of international maritime shipping routes"
+      "A": "concerns about the environmental damage caused by land mining",
+      "B": "rising demand for metals needed in green technologies",
+      "C": "the falling cost of underwater robotic technology",
+      "D": "the discovery of new nodule fields in the Pacific Ocean",
+      "E": "pressure from marine biologists to study the deep sea"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Inference: 'demand for these metals surges to fuel the global green transition'",
-    "trapWarning": "C şıkkındaki 'UN mandates prohibit terrestrial mining' uydurma bir bilgidir.",
-    "explanation": "'demand for these metals surges to fuel the global green transition' = 'growing worldwide demand for raw materials used in green technologies' (B şıkkı)."
+    "trapWarning": "Metin: \"As demand for these metals surges to fuel the global green transition\". A destekçilerin bir argümanıdır, temel itici güç değildir; C ve D metinde geçmez; E ise biyologların tutumuyla çelişir.",
+    "explanation": "'demand for these metals surges to fuel the global green transition' = 'rising demand for metals needed in green technologies' (B şıkkı)."
   },
   {
     "id": "m_q50",
@@ -937,17 +937,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The abyssal plains of the Clarion-Clipperton Zone in the central Pacific Ocean contain trillions of polymetallic nodules—potato-sized mineral accretions exceptionally rich in nickel, cobalt, manganese, and copper. As demand for these metals surges to fuel the global green transition, commercial mining entities are eager to begin industrial dredging four thousand meters beneath the surface. Proponents argue that deep-sea harvesting produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement. However, marine biologists vehemently counter that abyssal ecosystems are among the most fragile and slowest-recovering biomes on Earth. Organisms living in the perpetual darkness of the deep sea have evolved over millions of years under tranquil conditions; sediment plumes and acoustic pollution generated by heavy robotic crawlers could cause irreversible biodiversity loss.",
     "question": "The tone of the marine biologists regarding deep-sea mining can best be described as _____ .",
     "options": {
-      "A": "dismissive and indifferent",
-      "B": "cautious and enthusiastic",
-      "C": "deeply alarmed and critical",
-      "D": "uncompromisingly celebratory",
-      "E": "neutral and non-committal"
+      "A": "cautiously optimistic",
+      "B": "openly supportive",
+      "C": "seriously concerned",
+      "D": "mildly amused",
+      "E": "largely indifferent"
     },
     "answer": "C",
     "difficulty": "İleri",
     "tacticUsed": "Yazarın / Biyologların Tavrı (Tone): 'vehemently counter', 'irreversible loss'",
-    "trapWarning": "B şıkkındaki 'enthusiastic' (hevesli) biyologların karşıt tavrına tamamen aykırıdır.",
-    "explanation": "Biyologlar 'vehemently counter' (şiddetle karşı çıkmak) ve 'irreversible biodiversity loss' (geri dönüşü olmayan kayıp) demektedir. Tonları 'deeply alarmed and critical'dır (C şıkkı)."
+    "trapWarning": "\"Vehemently counter\" ve \"irreversible biodiversity loss\" ifadeleri ciddi bir endişe gösterir. A \"cautious\" kelimesiyle tuzak kurar ama \"optimistic\" metne uymaz.",
+    "explanation": "Biyologlar 'vehemently counter' (şiddetle karşı çıkmak) ve 'irreversible biodiversity loss' (geri dönüşü olmayan kayıp) demektedir. Tonları 'seriously concerned'dır (C şıkkı)."
   },
   {
     "id": "m_q51",
@@ -956,16 +956,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "According to the passage, the AMOC is essential for Europe because it _____ .",
     "options": {
-      "A": "acts as a natural maritime barrier against commercial shipping traffic",
+      "A": "carries cold polar water south toward the tropics",
       "B": "releases tropical heat that keeps regional temperatures comparatively mild",
-      "C": "prevents Greenland from developing any permanent polar glaciers",
-      "D": "dilutes high salinity levels that would otherwise kill commercial fish stocks",
-      "E": "generates electrical power along the continental shelf of the North Sea"
+      "C": "brings rainfall from tropical monsoon belts",
+      "D": "prevents the Greenland ice sheet from melting",
+      "E": "makes European winters colder than North American ones"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Doğrudan Bilgi: 'releasing immense thermal energy ... enjoy climates markedly milder'",
-    "trapWarning": "D şıkkında balık stoklarının ölmesinden bahsedilmez, iklimsel ılımanlıktan bahsedilir.",
+    "trapWarning": "AMOC sıcak tuzlu suyu tropiklerden kuzeye taşır ve ısı bırakır. A yönü ters çevirir, E karşılaştırmayı tersine çevirir, C ve D ise metindeki başka bilgileri karıştırır.",
     "explanation": "'By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries ... enjoy climates markedly milder' (B şıkkı)."
   },
   {
@@ -975,16 +975,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "The primary mechanism threatening to disrupt the AMOC is _____ .",
     "options": {
-      "A": "the excessive accumulation of salt caused by high tropical evaporation",
-      "B": "the influx of light freshwater from melting glaciers that impedes sinking",
-      "C": "underwater seismic activity along the Mid-Atlantic tectonic boundary",
-      "D": "industrial heat pollution released by nuclear plants on European coastlines",
-      "E": "the physical obstruction of sea lanes by thousands of drifting icebergs"
+      "A": "rising salt levels in the North Atlantic caused by evaporation",
+      "B": "meltwater from Greenland that makes the water harder to sink",
+      "C": "warmer surface water that releases more heat over Europe",
+      "D": "changes in tropical monsoon belts that weaken the current",
+      "E": "dense salty water that sinks too quickly in subpolar seas"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Mekanizma & Neden-Sonuç: 'meltwater runoff ... low-density freshwater ... does not sink'",
-    "trapWarning": "A şıkkı 'excessive accumulation of salt' der; tam aksine tuzluluk azalmakta (freshening) ve su hafifleşmektedir.",
+    "trapWarning": "Sorun tatlı suyun düşük yoğunluğu: \"freshwater does not sink as readily\". A ve E tuzluluğu sorun gibi sunar (tersi), D sonucu neden yapar, C ise mekanizmayı karıştırır.",
     "explanation": "Metin 'meltwater runoff from Greenland ... low-density freshwater ... does not sink as readily as dense, salty water' demektedir. B şıkkı tam açıklamadır."
   },
   {
@@ -994,16 +994,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "Paleoclimate data mentioned in the passage indicates that previous shutdowns of the AMOC _____ .",
     "options": {
-      "A": "permanently eradicated all rainfall patterns across equatorial South America",
-      "B": "caused sudden sharp cooling in Europe and disrupted tropical rainfall cycles",
-      "C": "resulted in centuries of global warming that melted both polar ice caps",
-      "D": "had virtually no discernible impact outside of subpolar Greenland",
-      "E": "were swiftly reversed within several days by atmospheric jet streams"
+      "A": "led to gradual warming across Europe over several centuries",
+      "B": "brought sudden cooling to Europe and shifted monsoon belts",
+      "C": "affected Europe but had little effect on the tropics",
+      "D": "were caused by changes in tropical monsoon belts",
+      "E": "caused the Greenland ice sheet to melt rapidly"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Metin İçi Kanıt: 'precipitated abrupt cooling events ... and triggered dramatic shifts in monsoon belts'",
-    "trapWarning": "C şıkkı 'warming' der; metin Avrupa'da ani soğumaya (abrupt cooling) yol açtığını belirtir.",
+    "trapWarning": "Metin: \"abrupt cooling events across Europe and ... shifts in tropical monsoon belts\". A yönü ve hızı değiştirir, C tropik etkisini yok sayar, D sebep-sonucu ters çevirir.",
     "explanation": "'precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts' = B şıkkı."
   },
   {
@@ -1013,16 +1013,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "The word 'stall' in the passage is closest in meaning to _____ .",
     "options": {
-      "A": "accelerate",
+      "A": "reverse",
       "B": "halt",
-      "C": "nourish",
-      "D": "originate",
-      "E": "overhaul"
+      "C": "weaken",
+      "D": "delay",
+      "E": "trigger"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Kelime Eş Anlamı: 'stall = durdurmak, stop / halt'",
-    "trapWarning": "A şıkkı 'accelerate' (hızlandırmak) zıt anlamlısıdır.",
+    "trapWarning": "Stall = durdurmak. C (weaken) ve D (delay) anlamca yakındır ama tam karşılık değildir; A (reverse) yön değiştirmeyi, E (trigger) başlatmayı anlatır.",
     "explanation": "Stall: durdurmak, duraklatmak, aksatmak. Eşanlamlısı 'halt' (B şıkkı)."
   },
   {
@@ -1032,16 +1032,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "According to evolutionary psychologists, cognitive biases originally developed because they _____ .",
     "options": {
-      "A": "enabled ancestors to make rapid survival decisions in hazardous environments",
-      "B": "were designed to prevent human beings from developing religious dogmas",
-      "C": "facilitated complex arithmetic calculations during seasonal trade fairs",
-      "D": "encouraged early hominids to record objective historical chronicles",
-      "E": "eliminated all physiological stress associated with predatory encounters"
+      "A": "helped our ancestors make quick decisions in dangerous conditions",
+      "B": "allowed early humans to analyse information more accurately",
+      "C": "protected people from the influence of their own beliefs",
+      "D": "helped ancestors cope with an excess of information",
+      "E": "were a design flaw that natural selection failed to remove"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Evrimsel Neden Tespiti: 'adaptive heuristics ... rapid decision-making was far more advantageous for survival'",
-    "trapWarning": "C ve D şıkları yazılı tarih ve ticaretle ilgilidir; evrimsel köken hayatta kalmadır (survival).",
+    "trapWarning": "Önyargılar hızlı karar için uyarlayıcı kısayollardır. B doğruluğu öne çıkarır (metin hızın doğruluktan önemli olduğunu söyler), D bilgi kıtlığını bolluğa çevirir, E ise \"not ... design flaws\" ile çelişir.",
     "explanation": "'Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation' = A şıkkı."
   },
   {
@@ -1051,16 +1051,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "Confirmation bias is defined in the passage as a subconscious tendency to _____ .",
     "options": {
-      "A": "favor information that aligns with prior beliefs while ignoring counter-evidence",
-      "B": "distrust all scientific assertions published in peer-reviewed medical journals",
-      "C": "adopt the political ideology of the majority in order to avoid social ostracism",
-      "D": "forget unpleasant emotional memories while amplifying joyful experiences",
-      "E": "reject ancient ancestral traditions in favor of radical progressive philosophies"
+      "A": "favour information that supports what one already believes",
+      "B": "change one's beliefs whenever new evidence appears",
+      "C": "accept the views of the majority to avoid conflict",
+      "D": "remember mainly information that is surprising",
+      "E": "doubt evidence that comes from unfamiliar sources"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Tanım Eşleştirme: 'validates preexisting beliefs while disregarding contradictory data'",
-    "trapWarning": "C şıkkı sürü psikolojisini (conformity) anlatır; doğrulama yanlılığı (confirmation bias) ise kendi inancını doğrulamaktır.",
+    "trapWarning": "Tanım: mevcut inancı doğrulayan bilgiyi arama ve karşıt veriyi göz ardı etme. B tanımın tersidir; C ve E başka önyargıları (sürü etkisi, kaynak güvensizliği) tarif eder.",
     "explanation": "'tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data' = A şıkkı."
   },
   {
@@ -1070,17 +1070,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "The author argues that in modern digital societies, evolutionary cognitive shortcuts _____ .",
     "options": {
-      "A": "have completely ceased to function due to advanced educational curricula",
-      "B": "protect social media users from falling victim to financial internet scams",
-      "C": "fuel ideological divisions and reinforce the rejection of scientific consensus",
-      "D": "encourage deep, empathetic dialogues across differing ideological groups",
-      "E": "enable internet users to process massive data streams with perfect objectivity"
+      "A": "are still useful because they help people process information quickly",
+      "B": "have been largely replaced by more careful statistical reasoning",
+      "C": "deepen political divisions and strengthen science denial",
+      "D": "help people avoid being trapped in online echo chambers",
+      "E": "are less common than they were among hunter-gatherers"
     },
     "answer": "C",
     "difficulty": "İleri",
     "tacticUsed": "Modern Dünya Etkisi: 'exacerbate political polarization and entrench scientific denialism'",
-    "trapWarning": "D şıkkı tam tersidir; kutuplaşmayı (polarization) artırmaktadır.",
-    "explanation": "'exacerbate political polarization and entrench scientific denialism' = 'fuel ideological divisions and reinforce the rejection of scientific consensus' (C şıkkı)."
+    "trapWarning": "Son cümle: \"exacerbate political polarization and entrench scientific denialism\". A geçmişteki faydayı bugüne taşır, D tersini söyler, B ve E metinde olmayan iddialardır.",
+    "explanation": "'exacerbate political polarization and entrench scientific denialism' = 'deepen political divisions and strengthen science denial' (C şıkkı)."
   },
   {
     "id": "m_q58",
@@ -1089,16 +1089,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "The primary purpose of the passage is to _____ .",
     "options": {
-      "A": "advocate for the immediate censorship of algorithmic social media platforms",
-      "B": "explain the evolutionary origins of cognitive biases and their modern societal ramifications",
-      "C": "demonstrate that ancient hunter-gatherers were intellectually superior to modern humans",
-      "D": "provide a clinical checklist for diagnosing psychiatric disorders in teenagers",
-      "E": "refute the theory of natural selection through statistical cognitive experiments"
+      "A": "argue that cognitive biases should be treated as mental disorders",
+      "B": "explain where cognitive biases come from and how they affect society today",
+      "C": "compare the thinking of hunter-gatherers with that of modern humans",
+      "D": "warn readers about the dangers of social media algorithms",
+      "E": "show how confirmation bias can be overcome through education"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Ana Amaç (Evolutionary origins + modern ramifications)",
-    "trapWarning": "A şıkkı aşırı uç bir siyasi taleptir (censorship); yazar sadece durumu analiz etmektedir.",
+    "trapWarning": "Paragraf: önyargıların evrimsel kökeni + bugünkü etkileri. C ve D yalnızca bir kısmı kapsar; A metinle çelişir (\"not pathological\"), E ise metinde olmayan bir çözüm sunar.",
     "explanation": "Metin, bilişsel önyargıların evrimsel kökenini (avcı-toplayıcı hayatta kalma) ve günümüz dijital dünyasındaki yansımalarını (kutuplaşma) anlatmaktadır (B şıkkı)."
   },
   {
@@ -1108,16 +1108,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "According to skeptical linguists in the passage, Large Language Models _____ .",
     "options": {
-      "A": "produce grammatically coherent text without truly understanding real-world meaning",
-      "B": "are completely incapable of mastering elementary syntactic rules of grammar",
-      "C": "rely on genetic algorithms rather than deep artificial neural networks",
-      "D": "have already surpassed the analytical capacity of the human cerebral cortex",
-      "E": "refuse to process statistical probabilities during their training phase"
+      "A": "produce fluent text without really understanding what it means",
+      "B": "frequently make grammatical errors when generating long texts",
+      "C": "begin to reason once they reach a very large size",
+      "D": "understand language in much the same way as children do",
+      "E": "simply copy sentences they have memorised from their training data"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Şüpheci Görüş Analizi: 'syntactically flawless prose without possessing any semantic understanding'",
-    "trapWarning": "B şıkkı yanlıştır; metin gramerin kusursuz (syntactically flawless) olduğunu ama anlamın eksik olduğunu söyler.",
+    "trapWarning": "Şüpheciler: dilbilgisi kusursuz ama anlam yok. B dilbilgisi iddiasıyla çelişir, C destekçilerin görüşüdür. E ince tuzaktır: \"parrot\" ezber gibi görünür ama metin istatistiksel tahmin der, cümle kopyalama demez.",
     "explanation": "'syntactically flawless prose without possessing any underlying semantic understanding' = A şıkkı."
   },
   {
@@ -1127,16 +1127,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "Proponents of LLMs argue that expanding the volume of parameters within neural networks _____ .",
     "options": {
-      "A": "inevitably leads to the total degradation of algorithmic response speed",
-      "B": "can give rise to spontaneous emergent reasoning capabilities beyond memorization",
-      "C": "forces the systems to forget previously learned training vocabularies",
-      "D": "proves that human conscious thought is entirely governed by simple chemical reflexes",
-      "E": "requires the complete elimination of transformer deep-learning architectures"
+      "A": "makes the models better at memorising their training data",
+      "B": "can lead to reasoning abilities that go beyond memorisation",
+      "C": "proves that the models truly understand the physical world",
+      "D": "reduces the errors the models make in grammar",
+      "E": "allows the models to predict words without statistics"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Karşıt Görüş: 'emergent reasoning capabilities spontaneously manifest'",
-    "trapWarning": "A şıkkı hız kaybından bahseder; metin akıl yürütme (reasoning) yeteneklerinin ortaya çıkışını vurgular.",
+    "trapWarning": "Destekçiler: ölçek büyüdükçe \"emergent reasoning ... transcending mere rote memorization\". A tam tersini söyler, C \"proves\" ile aşırı kesinlik ekler, D ve E metinde yoktur.",
     "explanation": "'as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization' = B şıkkı."
   },
   {
@@ -1146,16 +1146,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "It is implied in the passage that the ongoing debate between skeptics and proponents _____ .",
     "options": {
-      "A": "has been decisively settled in favor of traditional generative grammarians",
-      "B": "concerns whether statistical prediction can be equated with genuine cognitive intentionality",
-      "C": "prompted tech companies to permanently abandon large-scale AI research",
-      "D": "has demonstrated that human children learn grammar purely through rote statistical tokenization",
-      "E": "is primarily driven by financial disputes regarding patent ownership"
+      "A": "has largely been resolved in favour of the skeptics",
+      "B": "centres on whether statistical prediction can amount to real understanding",
+      "C": "is mainly about how large the models should be allowed to become",
+      "D": "concerns whether LLMs produce grammatically correct language",
+      "E": "is likely to be settled by the next generation of models"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Sonuç Cümlesi / Çıkarım: 'whether statistical prediction can ever yield genuine cognitive intentionality'",
-    "trapWarning": "A şıkkı 'decisively settled' der; metnin son cümlesi bunun halen çözülmemiş temel bir felsefi sorun olduğunu söyler.",
+    "trapWarning": "Son cümle tartışmanın hâlâ açık olduğunu ve sorunun istatistiksel tahminin gerçek anlama dönüşüp dönüşemeyeceği olduğunu söyler. A ve E çözülmüş/çözülecek der; D ise iki tarafın da kabul ettiği bir noktadır.",
     "explanation": "Son cümlede 'Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge' denmiştir. Doğru cevap B'dir."
   },
   {
@@ -1165,16 +1165,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "The metaphor 'stochastic parrots' is used by skeptics to emphasize that LLMs _____ .",
     "options": {
-      "A": "repeat statistical linguistic patterns without actual comprehension",
-      "B": "can communicate naturally with wild tropical avian species",
-      "C": "require living biological neural tissue to generate paragraphs",
-      "D": "are incapable of memorizing vocabulary beyond several thousand words",
-      "E": "actively sabotage human efforts to regulate dangerous technologies"
+      "A": "repeat language patterns without real understanding",
+      "B": "can only repeat sentences they have seen before",
+      "C": "produce text that is often grammatically incorrect",
+      "D": "learn language by imitating human speakers directly",
+      "E": "give random answers that have no statistical basis"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Metafor Anlamı Çözümleme ('Stochastic parrot' = Anlamadan tekrar eden)",
-    "trapWarning": "B şıkkındaki gerçek papağanlar ironik bir çeldiricidir.",
+    "trapWarning": "\"Stochastic\" = olasılıksal, \"parrot\" = anlamadan tekrar. B ince tuzaktır: birebir kopyalama demez; C dilbilgisi iddiasıyla çelişir, E ise \"stochastic\" kelimesini rastgele sanır.",
     "explanation": "Stokastik papağan: olasılıksal kalıpları ne anlama geldiğini kavramadan papağan gibi tekrar eden yapı demektir (A şıkkı)."
   },
   {
