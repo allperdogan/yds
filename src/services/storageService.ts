@@ -38,17 +38,7 @@ export class StorageService {
     try {
       const raw = localStorage.getItem(STATS_KEY);
       if (raw) {
-        const stats: UserStats = JSON.parse(raw);
-        // Ensure new arrays and objects exist for backward compatibility
-        if (!stats.knownVocabIds) stats.knownVocabIds = [];
-        if (!stats.pendingReviewVocabIds) stats.pendingReviewVocabIds = [];
-        if (!stats.bookmarkedWords) stats.bookmarkedWords = [];
-        if (!stats.mistakeQuestionIds) stats.mistakeQuestionIds = [];
-        if (!stats.completedDays) stats.completedDays = [];
-        if (!stats.solvedQuestions) stats.solvedQuestions = {};
-        if (!stats.mockExamResults) stats.mockExamResults = [];
-        if (!stats.vocabFirstAnswers) stats.vocabFirstAnswers = {};
-        if (!stats.vocabReviews) stats.vocabReviews = {};
+        const stats = this.normalizeStats(JSON.parse(raw));
         this.expireStreakIfMissed(stats);
         return stats;
       }
@@ -58,6 +48,16 @@ export class StorageService {
     const fresh = this.getInitialStats();
     this.saveStats(fresh);
     return fresh;
+  }
+
+  /** Fills fields missing from older saves or backups so screens never read undefined. */
+  public static normalizeStats(raw: Partial<UserStats>): UserStats {
+    const base = this.getInitialStats();
+    const stats = { ...base, ...raw } as UserStats;
+    (Object.keys(base) as Array<keyof UserStats>).forEach((key) => {
+      if (stats[key] == null) (stats as unknown as Record<string, unknown>)[key] = base[key];
+    });
+    return stats;
   }
 
   public static saveStats(stats: UserStats): void {
