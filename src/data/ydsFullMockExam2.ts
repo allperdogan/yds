@@ -494,15 +494,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Although early hunter-gatherers lacked formal agricultural knowledge, _____.',
     options: {
       A: 'they developed sophisticated seasonal strategies to harvest wild cereals across diverse terrains',
-      B: 'they were completely helpless during severe climatological shifts',
-      C: 'because permanent villages were only founded thousands of years later',
-      D: 'which led to widespread starvation during winter months',
-      E: 'since modern archaeology has uncovered few tools from that era'
+      B: 'they consequently remained almost entirely dependent on hunting large migratory animals',
+      C: 'their diets therefore lacked the cultivated grains that later farming villages produced in abundance',
+      D: 'they had no reliable means of storing surplus food through long and unpredictable winters',
+      E: 'they were unable to establish the permanent settlements that agriculture would later allow'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Zıtlık & Özne-Yüklem Mantığı: Tarım bilgileri yoktu (-) -> Gelişmiş stratejiler ürettiler (+)',
-    trapWarning: 'B şıkkı çaresiz kaldıklarını söyler; bu zıtlık değil negatif devamlılık yaratırdı.',
+    trapWarning: 'Bütün şıklar dil bilgisi olarak cümleye oturur. B, C, D ve E ise tarım bilgisinin eksikliğiyle aynı yönde (-) devam eder; Although ise zıt yönde (+) bir sonuç ister.',
     explanation: 'Although (tarım bilgileri olmamasına rağmen) zıtlığı karşılayan ana cümle pozitif bir beceri sunmalıdır: "yabani tahılları toplamak için gelişmiş stratejiler ürettiler" (A şıkkı).'
   },
   {
@@ -512,15 +512,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: '_____, neuroscientists have established that adult brains retain remarkable neuroplasticity throughout life.',
     options: {
       A: 'Contrary to the long-held dogma that neuronal regeneration ceases after adolescence',
-      B: 'Because mature neural circuits are completely rigid and unchanging',
-      C: 'Since cognitive decline is an inevitable biological consequence of aging',
-      D: 'In order that elderly individuals could improve their memory retention',
-      E: 'Just as earlier Victorian physicians had accurately hypothesized'
+      B: 'In line with the long-held dogma that the adult brain becomes structurally fixed after adolescence',
+      C: 'Despite growing evidence that new neural connections continue to form throughout adulthood',
+      D: 'Owing to the widespread belief that cognitive capacity inevitably declines with advancing age',
+      E: 'Just as earlier physicians had insisted that brain cells never regenerate during adulthood'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Contrary to (Aksine) Zıtlık Yapısı: Ergenlikten sonra durduğu inancının aksine...',
-    trapWarning: 'Ana cümle beynin yaşam boyu yenilendiğini (neuroplasticity) söyler. Giriş cümlesi eski yanlış inancı "Contrary to" ile çürütmelidir.',
+    trapWarning: 'In line with ve Just as benzerlik kurar ama ana cümle eski inancı çürütür. Despite yanlış yönde zıtlık kurar: plastisiteyi destekleyen kanıta rağmen değil, onun sayesinde bu sonuca varılır.',
     explanation: 'Contrary to the dogma (nöron yenilenmesinin ergenlikten sonra durduğu dogmasının aksine), yetişkin beyni plastisitesini korur. Doğru cevap A.'
   },
   {
@@ -530,15 +530,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'In order for offshore wind farms to deliver consistent base-load electric power, _____.',
     options: {
       A: 'grid operators must deploy massive utility-scale battery storage facilities to buffer fluctuating wind velocities',
-      B: 'although fossil fuel plants emit substantially more carbon dioxide into the atmosphere',
-      C: 'because coastal breezes blow with perpetual and unwavering speed every single day',
-      D: 'which resulted in unprecedented fiscal deficits for municipal authorities',
-      E: 'even if aerodynamic turbine blades were constructed from carbon fiber composites'
+      B: 'wind velocities over open water tend to fluctuate far more sharply than they do over land',
+      C: 'several coastal communities have objected to the visual impact of turbines on their seascapes',
+      D: 'offshore turbines have generally proved more expensive to maintain than onshore installations',
+      E: 'engineers in the 1990s regarded construction in deep coastal waters as technically unfeasible'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'In order for X to do Y (Amacın Gerçekleşmesi İçin Şart Olan Eylem)',
-    trapWarning: 'Amaç bildiren "In order for..." yapısından sonra ana cümlenin bir gereklilik (must/should) veya çözüm sunması gerekir.',
+    trapWarning: 'B şıkkı konuyla ilgilidir ama bir gereklilik değil, sorunun kendisidir. In order for X to do Y yapısı, amaca ulaşmak için yapılması gerekeni (must/need to) ister.',
     explanation: 'Rüzgar santrallerinin kesintisiz baz yük sağlayabilmesi için, şebeke işletmecilerinin devasa batarya depolama tesisleri kurması zorunludur (A şıkkı).'
   },
   {
@@ -548,15 +548,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Whereas conventional silicon photovoltaic panels lose energy conversion efficiency at elevated temperatures, _____.',
     options: {
       A: 'next-generation perovskite solar cells maintain robust electronic performance even under intense desert heat',
-      B: 'fossil fuels continue to supply the vast majority of global industrial energy demands',
-      C: 'solar developers are dismantling installations across sunny Mediterranean territories',
-      D: 'which explains why nuclear fission reactors require constant freshwater cooling',
-      E: 'because high temperatures invariably degrade all known semiconductor materials'
+      B: 'they remain the most widely installed photovoltaic technology across hot desert regions',
+      C: 'their efficiency losses become especially severe during prolonged summer heatwaves',
+      D: 'active cooling systems can reduce, but not entirely eliminate, these heat-related losses',
+      E: 'next-generation thin-film modules also suffer measurable declines in output under intense heat'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Whereas (Taban Tabana Zıt İki Teknoloji Karşılaştırması)',
-    trapWarning: 'Whereas silikon panellerin sıcağa dayanıksızlığını verirken, ikinci cümle sıcakta performansını koruyan yeni perovskite hücrelerini anlatmalıdır.',
+    trapWarning: 'Whereas iki farklı şeyi zıt yönde karşılaştırır. E şıkkı ikinci bir teknolojiden bahsetse de "also" ile aynı sorunu tekrarlar; C ve D aynı panellerden bahsetmeye devam eder.',
     explanation: 'Konvansiyonel silikon paneller yüksek sıcaklıkta verim kaybederken (Whereas silicon loses efficiency), yeni nesil perovskite hücreleri çöl sıcağında bile performansını korur (A şıkkı).'
   },
   {
@@ -566,15 +566,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Epidemiologists initiated comprehensive wastewater surveillance programs across major transit hubs _____',
     options: {
       A: 'so that emerging viral pathogen variants could be detected weeks before clinical hospitalizations spike.',
-      B: 'although water sanitation infrastructure had already collapsed centuries ago.',
-      C: 'in case pharmaceutical companies had refused to develop antibiotic medications.',
-      D: 'because sewage treatment plants generate tremendous quantities of methane gas.',
-      E: 'as if international travel had been permanently outlawed by the global health body.'
+      B: 'even though wastewater samples can reveal emerging variants long before patients seek medical care.',
+      C: 'whereas hospital-based testing remains the most reliable way of identifying new viral variants.',
+      D: 'as if clinical hospitalizations had already provided sufficiently early warning of new variants.',
+      E: 'so that hospitals would no longer need to test patients who present with respiratory symptoms.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'So that + Could (Amaç Belirteci ve Modal Uyumu)',
-    trapWarning: 'Atık su takibi yapılmasının amacı, yeni virüs varyantlarının hastaneye yatışlar patlamadan haftalar önce tespit edilebilmesidir (so that).',
+    trapWarning: 'E şıkkı da so that ile başlar ama abartılı ve ilgisiz bir amaç verir: atık su takibi hastane testlerini gereksiz kılmaz. B şıkkındaki even though ise sebebi zıtlık gibi sunar.',
     explanation: 'Epidemiyologlar atık su gözetim programları başlattı; BÖYLECE yeni varyantlar önceden tespit edilebilsin (so that ... could be detected). Doğru cevap A.'
   },
   {
@@ -584,15 +584,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Unless member states urgently ratify legally binding treaties to cap greenhouse emissions, _____.',
     options: {
       A: 'low-lying Pacific atoll nations will suffer irreversible inundation from escalating sea level rise',
-      B: 'clean energy subsidies have successfully reduced solar manufacturing expenses',
-      C: 'which caused massive political demonstrations in several European capitals',
-      D: 'although carbon capture technologies have demonstrated promising laboratory efficacy',
-      E: 'since international climate summits always produce unanimous consensus among participants'
+      B: 'global average temperatures will stabilise naturally within the next few decades',
+      C: 'low-lying Pacific nations will no longer face the threat of rising sea levels',
+      D: 'renewable energy has already become cheaper than coal in most major economies',
+      E: 'island nations would have been spared the devastating floods of recent decades'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Unless (Eğer yapılmazsa) -> Gelecekteki Kaçınılmaz Tehdit (Will suffer)',
-    trapWarning: 'Unless olumsuz koşuldur; ana cümlede bu koşul sağlanmazsa ne olacağı (will suffer irreversible inundation) söylenmelidir.',
+    trapWarning: 'Unless = if not. Antlaşmalar onaylanmazsa olumsuz bir gelecek beklenir; B ve C anlamca terstir. D ve E ise zaman uyumunu bozar (present perfect, would have been).',
     explanation: 'Üye ülkeler emisyonları sınırlandıran antlaşmaları onaylamazsa (Unless states ratify), alçak ada ülkeleri kalıcı olarak sular altında kalacaktır (A şıkkı).'
   },
   {
@@ -602,15 +602,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Because the gravitational pull of a supermassive black hole is so immense that not even light can escape its event horizon, _____.',
     options: {
       A: 'astrophysicists must observe them indirectly through the electromagnetic radiation emitted by infalling matter',
-      B: 'optical space telescopes can photograph their interior core with pristine clarity',
-      C: 'which led Albert Einstein to reject the mathematical foundations of general relativity',
-      D: 'even though nearby orbital stars are completely unaffected by its presence',
-      E: 'so that future robotic spacecraft could safely land on its theoretical singularity'
+      B: 'optical telescopes can photograph their interiors directly and with remarkable clarity',
+      C: 'astronomers first detected them through the bright visible light radiating from their centres',
+      D: 'they emit more visible light than any other type of object in the observable universe',
+      E: 'they exert little measurable influence on the orbits of the stars that surround them'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Sebep-Sonuç Mantığı: Işık kaçamadığı için doğrudan görülemez, dolaylı gözlemlenmelidir.',
-    trapWarning: 'B şıkkında "fotoğrafını çekebilir" der; oysa ışık kaçamıyorsa fotoğraf çekilemez! A şıkkı dolaylı gözlem gerekliliğini açıklar.',
+    trapWarning: 'B, C ve D ışığın kaçamadığı bilgisiyle çelişir; E ise devasa çekim kuvvetiyle çelişir. Sebep cümlesinden mantıklı olarak çıkan tek sonuç dolaylı gözlem zorunluluğudur.',
     explanation: 'Işık bile kaçamadığı için (Because not even light can escape), astrofizikçiler onları içeri düşen maddenin yaydığı ışıma üzerinden DOLAYLI gözlemlemek zorundadır (A şıkkı).'
   },
   {
@@ -620,15 +620,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: '_____, the trade embargo crippled the island nation’s domestic manufacturing sector within a matter of months.',
     options: {
       A: 'As the country was almost entirely dependent on imported raw materials and industrial machinery',
-      B: 'Even though foreign commerce had flourished following the maritime treaty',
-      C: 'So that local agricultural producers could expand their regional export networks',
-      D: 'While domestic factories possessed boundless domestic reserves of high-grade copper',
-      E: 'Unless international trade partners had lowered their protective import tariffs'
+      B: 'Although the country was almost entirely dependent on imported raw materials and machinery',
+      C: 'As the country had built up large domestic reserves of raw materials and spare machinery',
+      D: 'Even though the embargo was widely expected to cause severe shortages of industrial inputs',
+      E: 'Unless the country had been able to secure alternative suppliers of imported machinery'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Sebep Bağlacı (As = Because): İthal hammaddeye bağımlı olduğu için ambargo felç etti.',
-    trapWarning: 'Ambargonun sanayiyi felç etmesinin mantıklı sebebi ülkenin dışa/ithalata bağımlı olmasıdır.',
+    trapWarning: 'B şıkkı doğru bilgiyi verir ama Although ile zıtlık kurar; oysa ithalata bağımlılık felcin sebebidir. C ise sebebi tersine çevirir: rezervi olan bir ülke ambargodan bu kadar etkilenmez.',
     explanation: 'Ülke neredeyse tamamen ithal hammaddeye bağımlı olduğu için (As the country was dependent on imported materials), ticaret ambargosu üretimi aylarca felç etti (A şıkkı).'
   },
   {
@@ -638,15 +638,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Much as modern digital algorithms optimize logistics and consumer supply chains with breathtaking speed, _____.',
     options: {
       A: 'they frequently reproduce systemic socio-economic biases present in their historical training datasets',
-      B: 'they operate with absolute and infallible moral discernment across all applications',
-      C: 'because technological corporations prioritize public welfare above financial profitability',
-      D: 'which completely eliminated human employment in manufacturing facilities worldwide',
-      E: 'so that artificial intelligence models could generate error-free statistical analyses'
+      B: 'they have also made consumer supply chains considerably faster and more cost-effective',
+      C: 'they are now relied upon by almost every major retailer to manage stock and deliveries',
+      D: 'their speed has allowed companies to respond quickly to sudden shifts in consumer demand',
+      E: 'they rarely make the kinds of errors that human logistics planners routinely commit'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Much as = Although (Her ne kadar optimize etse de [+] -> Önyargıları kopyalar [-])',
-    trapWarning: '"Much as" zıtlık bağlacıdır. Hız ve optimizasyon pozitifken, ikinci cümle algoritmanın hatasını/önyargısını (-) vermelidir.',
+    trapWarning: 'Much as = although. Giriş algoritmaları övdüğü (+) için ana cümle bir sorun (-) vermelidir. B, C, D ve E övgüyü sürdürür, zıtlık kurmaz.',
     explanation: 'Algoritmalar tedarik zincirini ne kadar hızlı optimize etse de (Much as algorithms optimize...), geçmiş verilerdeki önyargıları da sıklıkla kopyalarlar (A şıkkı).'
   },
   {
@@ -656,15 +656,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Ever since archaeologists uncovered the pristine burial chambers of the Bronze Age chieftain in the early 2000s, _____.',
     options: {
       A: 'historians have been revising their assumptions regarding metallurgical trade networks in prehistoric Europe',
-      B: 'they will begin systematic excavations of neighboring burial mounds next autumn',
-      C: 'which proved that pastoralist tribes had no knowledge of copper casting techniques',
-      D: 'as ancient grave robbers had thoroughly looted every valuable artifact centuries ago',
-      E: 'until modern radiocarbon dating technologies demonstrated their authentic antiquity'
+      B: 'historians revised their assumptions about metallurgical trade in prehistoric Europe',
+      C: 'historians will need to reconsider how metal goods were traded across prehistoric Europe',
+      D: 'historians had long believed that the tribe of the chieftain was isolated from regional trade',
+      E: 'historians are revising their view of when the burial chambers were originally constructed'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Ever since + V2 -> Present Perfect (Have been revising)',
-    trapWarning: 'Ever since geçmişte bir başlangıç noktası verir; ana cümle Present Perfect (have been revising) olmak zorundadır.',
+    trapWarning: 'Bütün şıklar anlamca makuldür; soru zaman uyumunu ölçer. Ever since + geçmiş zaman, ana cümlede present perfect (have been revising) ister. B, C, D ve E bu kuralı bozar.',
     explanation: 'Mezar odaları 2000\'lerin başında keşfedildiğinden beri (Ever since uncovered), tarihçiler maden ticareti ağlarına dair kabullerini revize etmektedirler (A şıkkı).'
   },
 
@@ -1178,16 +1178,16 @@ Dr. Aris:
 Dr. Vane:
 — I hadn't factored in public health and energy savings. If the net economic return offsets the expenditure within five years, city council might approve the bond.`,
     options: {
-      A: 'True, but you are neglecting the massive reductions in hospital admissions for heatstroke and urban air-conditioning electricity demands.',
-      B: 'Then we should abandon the project completely and invest in diesel-powered water cooling trucks.',
-      C: 'Asphalt is actually much cheaper to import from overseas petro-chemical refineries.',
-      D: 'Most citizens prefer darker roads because they conceal oil stains from motor vehicles.',
-      E: 'Municipal bond issuances have been outlawed by the regional regulatory authorities.'
+      A: 'True, but you are ignoring the savings from fewer heatstroke admissions and lower air-conditioning demand.',
+      B: 'True, which is why we should first test the surfaces on a single district before expanding citywide.',
+      C: 'Perhaps, but residents have also complained that reflective surfaces create uncomfortable glare.',
+      D: 'Then we could ask the national government to cover part of the cost through infrastructure grants.',
+      E: 'You are right that the cost is high, so the project will probably have to wait another decade.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Sonraki Cevaptan Geriye Yürüme: "I hadn\'t factored in public health and energy savings"',
-    trapWarning: 'Dr. Vane son cümlede "halk sağlığı ve enerji tasarrufunu hesaba katmamıştım" der. Demek ki Dr. Aris boşlukta tam olarak bundan bahsetmiştir!',
+    trapWarning: 'B, C, D ve E maliyet itirazına makul cevaplardır ama Dr. Vane\'in son sözüyle bağlanmaz. Vane "halk sağlığı ve enerji tasarrufunu hesaba katmamıştım" der; boşlukta tam olarak bunlar geçmelidir.',
     explanation: 'Dr. Aris: "True, but you are neglecting the reductions in hospital admissions and energy demands" (Haklısın ama hastane masraflarındaki ve klima enerjisindeki tasarrufu göz ardı ediyorsun). Doğru cevap A.'
   },
   {
@@ -1207,16 +1207,16 @@ Talia:
 Marcus:
 — Exactly. Adding disulfide covalent cross-links might provide the structural rigidity necessary to resist thermal unfolding. Let\'s prepare that variant immediately.`,
     options: {
-      A: 'Could we re-engineer the molecular backbone with stabilization bonds to raise its thermal tolerance threshold?',
-      B: 'Then we have no choice but to terminate the entire drug development research project right now.',
-      C: 'Why don\'t we just instruct clinical trial patients to store their medicine inside home freezers?',
-      D: 'The chromatography machines must be malfunctioning; the results cannot be trusted.',
-      E: 'Perhaps human core body temperature will drop naturally if patients drink chilled liquids.'
+      A: 'Could we strengthen the molecular backbone with extra bonds so that it tolerates higher temperatures?',
+      B: 'Should we repeat the assays with a different buffer solution to rule out an experimental error?',
+      C: 'Could we deliver the compound in a cooled capsule that releases it only after it reaches the bloodstream?',
+      D: 'Do you think we should report this result to the funding agency before running further tests?',
+      E: 'Is it possible that other proteins in the same family are naturally more resistant to heat?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Mantıksal Çözüm Önerisi & Sonraki Cümle Uyumu: "Disulfide covalent cross-links"',
-    trapWarning: 'Marcus "Exactly. Adding disulfide covalent cross-links..." diyerek moleküler yapıyı güçlendirmeyi onaylar; soru kökünde bu öneri getirilmelidir.',
+    trapWarning: 'Bütün öneriler mantıklı görünür. Ama Marcus "Exactly. Disülfit köprüleri eklemek yapısal sağlamlık verebilir" der; yani Talia molekülün kendisini güçlendirmeyi önermiş olmalıdır. C şıkkı da bir çözümdür ama molekülü değiştirmez.',
     explanation: 'Talia moleküler yapıyı termal dirence karşı stabilize etmeyi önerir (A şıkkı). Marcus da bunu onaylayarak disülfit bağlarını eklemeyi söyler.'
   },
   {
@@ -1236,16 +1236,16 @@ Professor Thorne:
 Elena:
 — You are right. Without validating the subsurface stratigraphy and carbon-dating the pottery shards, these geometric shapes remain theoretical hypotheses.`,
     options: {
-      A: 'Indeed, but let us not jump to sweeping demographic conclusions before we conduct physical ground-truthing excavations.',
-      B: 'I have already published a peer-reviewed monograph declaring this the largest city in the ancient Americas.',
-      C: 'The jungle canopy is completely impenetrable, so we will never be able to visit the physical site.',
-      D: 'LiDAR technology has a ninety percent error margin when surveying rainforest topography.',
-      E: 'The ancient Maya had no understanding of terrace irrigation or stone architecture.'
+      A: 'Indeed, but we should not draw demographic conclusions before we excavate and date the site.',
+      B: 'Indeed, and the scans suggest the city may have been far older than anyone had previously assumed.',
+      C: 'Indeed, and we should publish these findings quickly before another research team does so.',
+      D: 'Indeed, though similar terraces have already been documented at several neighbouring sites.',
+      E: 'Indeed, and it may explain why the region was abandoned so suddenly in the ninth century.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Akademik İhtiyat / Ground-truthing: "Before we conduct physical excavations"',
-    trapWarning: 'Elena son cümlede "Kazı yapıp çömlekleri tarihlendirmeden bunlar hipotez olarak kalır" diyerek hocanın ihtiyat çağrısını onaylar.',
+    trapWarning: 'Bütün şıklar "Indeed" ile başlar ve Elena\'ya katılır görünür. Ancak Elena "Kazı ve tarihlendirme olmadan bunlar hipotez olarak kalır" diyerek bir ihtiyat çağrısını onaylar. C şıkkı bunun tam tersini önerir.',
     explanation: 'Profesör Thorne: "Indeed, but let us not jump to conclusions before we conduct physical ground-truthing excavations" (Evet ama fiziki kazı yapmadan kesin demografik sonuçlara varmayalım). Doğru cevap A.'
   },
   {
@@ -1265,16 +1265,16 @@ Julian:
 Sarah:
 — Because if a database is breached and your password is stolen, you can simply reset it. But if your immutable facial biometric template is compromised, you cannot change your face.`,
     options: {
-      A: 'How could a mathematical representation of someone\'s facial features be more hazardous than a plaintext password?',
-      B: 'Are you suggesting we revert back to sending verification codes via unencrypted SMS text messages?',
-      C: 'Biometric scanning hardware has become so inexpensive that even small retailers can afford it.',
-      D: 'Our cloud servers are completely unhackable, so database breaches are a mathematical impossibility.',
-      E: 'Most users forget their complex alphanumeric passwords within forty-eight hours anyway.'
+      A: 'How could a stored map of someone\'s facial features be more dangerous than a stolen password?',
+      B: 'Do you mean that facial scanners can sometimes be fooled by a high-resolution photograph?',
+      C: 'Are you worried that customers will find facial scanning slower than typing a password?',
+      D: 'Would combining facial scanning with a one-time code sent by text message reduce that risk?',
+      E: 'Is it because some customers may refuse to share their biometric data with our company?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Soru-Cevap Bütünlüğü: "Because if your face is compromised, you cannot change your face"',
-    trapWarning: 'Sarah "Because if your password is stolen you reset it, but you cannot change your face" diyerek Julian\'ın sorusunu yanıtlar.',
+    trapWarning: 'Sarah "Because..." ile başlayarak bir neden açıklar ve şifrenin değiştirilebildiğini, yüzün değiştirilemediğini söyler. Boşlukta bu yüzden "neden daha tehlikeli?" sorusu olmalıdır. B, D ve E de soru sorar ama Sarah\'nın cevabı onlarla bağlanmaz.',
     explanation: 'Julian Sarah\'ya biyometriğin nasıl daha tehlikeli olabileceğini sorar: "How could facial features be more hazardous?" (A şıkkı). Sarah da sebebini açıklar.'
   },
   {
@@ -1294,16 +1294,16 @@ Dr. Chen:
 Dr. Novak:
 — Absolutely. In fact, it makes Enceladus arguably the most compelling target for searching for extant microbial life within our solar system.`,
     options: {
-      A: 'Which implies that all the thermodynamic and chemical prerequisites for prebiotic abiogenesis are actively co-existing there right now.',
-      B: 'Therefore, sending a probe to Saturn\'s moons would be an unjustifiable waste of space agency funds.',
-      C: 'Unfortunately, the surface ice shell is hundreds of kilometers thick, making any exploration impossible.',
-      D: 'However, serpentinization is a strictly inorganic process that inhibits any biological synthesis.',
-      E: 'None of our existing spectrometer instruments are sensitive enough to measure silica particles accurately.'
+      A: 'Which means that the basic chemical ingredients needed for life may all be present there today.',
+      B: 'Which means that the plume must be far colder than models of the interior had predicted.',
+      C: 'Although it is still unclear how deep beneath the ice shell that subsurface ocean actually lies.',
+      D: 'But the same chemical signatures have also been detected in many lifeless comets and asteroids.',
+      E: 'Which means that a future lander would need to drill through several kilometres of surface ice.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Bilimsel Çıkarım & Son Cümle Desteği: Canlılık için gerekli önkoşulların varlığı',
-    trapWarning: 'Dr. Novak "Absolutely... most compelling target for microbial life" diyerek onaylar; Chen canlılık önkoşullarından bahsetmelidir.',
+    trapWarning: 'Dr. Novak "Absolutely" der ve Enceladus\'u yaşam arayışında en güçlü hedef ilan eder. Bu yüzden boşlukta yaşamın önkoşullarına dair olumlu bir çıkarım olmalıdır. D şıkkı bunu zayıflatır, E ise konuyu keşif zorluğuna kaydırır.',
     explanation: 'Dr. Chen: "Which implies all thermodynamic prerequisites for life co-exist right now" (Bu da yaşam için gerekli tüm termodinamik önkoşulların orada şu anda var olduğunu gösterir). Doğru cevap A.'
   },
 

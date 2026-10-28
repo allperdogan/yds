@@ -494,15 +494,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Although solar panels generate zero direct emissions during electricity production, _____.',
     options: {
       A: 'the mining and refining of silicon and rare earth metals entail considerable ecological damage',
-      B: 'they are completely useless for powering urban metropolitan centers',
-      C: 'because fossil fuel plants will be permanently phased out by the end of the decade',
-      D: 'which proves that renewable energy technologies are a scientific impossibility',
-      E: 'as governmental subsidies for solar installations have completely ceased'
+      B: 'they have helped many households to reduce both their energy bills and their carbon footprint',
+      C: 'their contribution to lowering urban air pollution has been widely documented by researchers',
+      D: 'they are increasingly regarded as one of the cleanest sources of electricity available today',
+      E: 'governments in sunny regions have offered generous subsidies to encourage their installation'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Zıtlık Analizi: Sıfır doğrudan emisyon (+) -> Madencilik ekolojik zarar verir (-)',
-    trapWarning: 'B şıkkında "tamamen işe yaramaz" diyerek aşırıya kaçmıştır; mantıklı akademik zıtlık A\'dadır.',
+    trapWarning: 'Although güneş panellerini övdüğü (+) için ana cümle bir dezavantaj (-) vermelidir. B, C, D ve E övgüyü sürdürür; dil bilgisi olarak uysalar da zıtlık kurmazlar.',
     explanation: 'Although (her ne kadar doğrudan emisyon üretmese de), silikon madenciliği ve arıtımı ciddi ekolojik zarara yol açar (A şıkkı).'
   },
   {
@@ -512,15 +512,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: '_____, neuroscientists have discovered that the adult brain continues generating new neurons throughout life.',
     options: {
       A: 'Contrary to earlier neurological assumptions that brain cellular development ceases after adolescence',
-      B: 'Because cognitive decline is an inevitable biological consequence of reaching adulthood',
-      C: 'In order that elderly citizens could effortlessly memorize complex foreign languages',
-      D: 'Since ancient philosophers had already proven the existence of brain neurogenesis',
-      E: 'Just as early psychoanalysts had predicted in their 19th-century clinical treatises'
+      B: 'Consistent with earlier neurological assumptions that the adult brain is structurally fixed',
+      C: 'Despite a large body of evidence that new neurons continue to form throughout adulthood',
+      D: 'Owing to the long-standing belief that the number of brain cells declines steadily with age',
+      E: 'Just as early anatomists had insisted that no new nerve cells are produced after childhood'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Contrary to (Aksine) Zıtlık Yapısı: Ergenlikten sonra durduğu varsayımının aksine...',
-    trapWarning: 'Ana cümle yeni nöron üretildiğini söyler; giriş eski yanlış varsayımı (ceases after adolescence) çürütmelidir.',
+    trapWarning: 'Ana cümle eski görüşü çürütür, bu yüzden giriş bir zıtlık (contrary to) kurmalıdır. Consistent with ve Just as benzerlik bildirir; Despite ise zıtlığı yanlış yere koyar.',
     explanation: 'Contrary to earlier assumptions (ergenlikten sonra gelişimin durduğu yönündeki eski varsayımların aksine), beyin yaşam boyu yeni nöron üretir (A şıkkı).'
   },
   {
@@ -529,17 +529,17 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '29. Soru - Cümle Tamamlama',
     question: 'In order to preserve endangered benthic coral formations from destructive bottom trawling, _____.',
     options: {
-      A: 'maritime authorities must enforce strict marine protected reserves that prohibit heavy commercial fishing gear',
-      B: 'although industrial fishing fleets generate billions of dollars in export revenues annually',
-      C: 'because tropical coral polyps thrive under high mechanical sedimentation and disturbance',
-      D: 'which explains why deep-sea fish stocks have miraculously doubled over the past decade',
-      E: 'unless regional governments had already banned commercial seafood exports'
+      A: 'maritime authorities must establish protected reserves where heavy fishing gear is banned',
+      B: 'industrial fishing fleets have expanded their operations into deeper and more remote waters',
+      C: 'coral formations in deep water grow far more slowly than those found in shallow reefs',
+      D: 'scientists have recorded a sharp decline in the diversity of species living on the seabed',
+      E: 'bottom trawling has become one of the most profitable methods of commercial fishing'
     },
     answer: 'A',
     difficulty: 'Orta',
-    tacticUsed: 'In order to preserve (Korumak amacıyla) -> Alınması Gereken Önlem (Must enforce)',
-    trapWarning: 'Korumak amacıyla ifadesinden sonra yetkililerin yapması gereken zorunluluk (must enforce) gelmelidir.',
-    explanation: 'Mercanları korumak amacıyla, denizcilik otoriteleri ağır balıkçılığı yasaklayan koruma alanlarını yürürlüğe koymalıdır (A şıkkı).'
+    tacticUsed: 'In order to preserve (Korumak amacıyla) -> Alınması Gereken Önlem (Must establish)',
+    trapWarning: 'C ve D konuyla ilgili gerçekler sunar ama amaç yapısı (In order to) bu amaca ulaşmak için yapılması gereken bir eylem (must establish) ister.',
+    explanation: 'Mercanları korumak amacıyla, denizcilik otoriteleri ağır balıkçılık araçlarının yasak olduğu koruma alanları oluşturmalıdır (A şıkkı).'
   },
   {
     id: 'm3_q30',
@@ -548,15 +548,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Whereas conventional internal combustion engines emit tremendous quantities of toxic pollutants, _____.',
     options: {
       A: 'hydrogen fuel-cell vehicles produce only pure water vapor as their operational exhaust',
-      B: 'petroleum refineries are expanding production across all continents',
-      C: 'electric charging grids have completely eliminated the need for power plants',
-      D: 'which resulted in unprecedented traffic congestion in metropolitan centers',
-      E: 'because modern diesel engines are completely harmless to public respiratory health'
+      B: 'they also release significant amounts of heat-trapping carbon dioxide into the atmosphere',
+      C: 'diesel-powered heavy trucks are responsible for a disproportionate share of urban smog',
+      D: 'modern catalytic converters can reduce, though not eliminate, some of these emissions',
+      E: 'their efficiency has improved steadily over the past several decades of engineering'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Whereas (Taban Tabana Zıt İki Teknoloji: Zehirli gaz vs Saf su buharı)',
-    trapWarning: 'Whereas zıtlık verir: konvansiyonel motorlar kirlilik yayarken, hidrojenli araçlar sadece su buharı çıkarır.',
+    trapWarning: 'Whereas iki farklı şeyi zıt yönde karşılaştırır. B ve C kirliliği sürdürür, D aynı motorlardan bahseder, E ise konudan sapar. Temiz bir alternatif veren tek şık doğru cevaptır.',
     explanation: 'Konvansiyonel motorlar zehirli gaz yayarken (Whereas engines emit pollutants), hidrojen yakıt hücreli araçlar sadece su buharı üretir (A şıkkı).'
   },
   {
@@ -566,15 +566,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Archaeologists deployed high-resolution ground-penetrating radar across the ceremonial site _____',
     options: {
       A: 'so that subsurface architectural foundations could be mapped without disturbing fragile historical strata.',
-      B: 'because ancient builders had constructed no subterranean structures in the valley.',
-      C: 'although modern digital imaging equipment was completely forbidden by ministry officials.',
-      D: 'in case grave robbers had voluntarily returned all stolen gold artifacts.',
-      E: 'as if pastoralist nomads had established massive stone pyramids overnight.'
+      B: 'even though radar surveys can reveal buried foundations without any need for excavation.',
+      C: 'in case earlier excavations had already exposed all the foundations buried at the site.',
+      D: 'as if the buried foundations had already been fully mapped by previous expeditions.',
+      E: 'so that the fragile historical strata could be removed more quickly by heavy machinery.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'So that + Could (Amaç Bağlacı: Kazmadan haritalayabilsinler diye)',
-    trapWarning: 'Radar kullanılmasının mantıklı amacı, hassas katmanları bozmadan mimari temelleri haritalayabilmektir.',
+    trapWarning: 'E şıkkı da so that ile başlar ama amaç mantığa terstir: radar katmanları korumak için kullanılır, hızla kaldırmak için değil. B ise sebebi zıtlık gibi sunar.',
     explanation: 'Arkeologlar yer radarı yerleştirdi; BÖYLECE toprak altı temeller tabakaları bozmadan haritalanabilsin (so that ... could be mapped). Doğru cevap A.'
   },
   {
@@ -583,16 +583,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '32. Soru - Cümle Tamamlama',
     question: 'Unless governments implement stringent carbon emissions caps within the current decade, _____.',
     options: {
-      A: 'low-lying coastal metropolitan regions will experience catastrophic and irreversible marine inundation',
-      B: 'renewable energy corporations have broken previous manufacturing records',
-      C: 'which caused international climate conferences to reach immediate consensus',
-      D: 'although global average temperatures have stabilized at pre-industrial levels',
-      E: 'since industrial manufacturing requires boundless quantities of coal'
+      A: 'low-lying coastal regions will suffer severe and irreversible flooding from rising seas',
+      B: 'sea levels along most coastlines will begin to fall within a few decades',
+      C: 'coastal cities will be largely protected from the effects of rising seas',
+      D: 'global emissions have already started to decline in most industrial nations',
+      E: 'coastal regions would have avoided the severe flooding of the past decade'
     },
     answer: 'A',
     difficulty: 'Orta',
-    tacticUsed: 'Unless (Eğer uygulanmazsa) -> Gelecekteki Kaçınılmaz Tehdit (Will experience)',
-    trapWarning: 'Unless olumsuz şarttır; yapılmazsa ne olacağı ana cümlede (will experience inundation) söylenir.',
+    tacticUsed: 'Unless (Eğer uygulanmazsa) -> Gelecekteki Kaçınılmaz Tehdit (Will suffer)',
+    trapWarning: 'Unless = if not. Önlem alınmazsa olumsuz bir gelecek (will suffer) beklenir. B ve C anlamca terstir; D ve E zaman uyumunu bozar.',
     explanation: 'Hükümetler emisyon kotalarını uygulamazsa (Unless governments implement), kıyı şehirleri geri dönüşsüz su baskınlarıyla karşılaşacaktır (A şıkkı).'
   },
   {
@@ -601,16 +601,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '33. Soru - Cümle Tamamlama',
     question: 'Because the interior temperatures of stellar cores reach tens of millions of degrees, _____.',
     options: {
-      A: 'hydrogen atomic nuclei possess sufficient kinetic energy to overcome electrostatic repulsion and undergo fusion',
-      B: 'solid mineral crusts can form on the surface of giant gaseous stars',
-      C: 'which explains why robotic exploratory spacecraft can easily land on solar surfaces',
-      D: 'even though stellar magnetic fields prevent any nuclear reactions from occurring',
-      E: 'so that astrophysicists could photograph individual neutrons with optical telescopes'
+      A: 'hydrogen nuclei move fast enough to overcome their mutual repulsion and fuse together',
+      B: 'the atoms inside them remain too cold and slow-moving to undergo any form of nuclear fusion',
+      C: 'solid mineral crusts are able to form and persist across the surfaces of most large stars',
+      D: 'spacecraft could in principle land safely on their surfaces using conventional heat shields',
+      E: 'nuclear reactions inside stars occur only rarely and release relatively little energy'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Fiziksel Sebep-Sonuç: Sıcaklık milyonlarca dereceye ulaştığı için füzyon gerçekleşir.',
-    trapWarning: 'Yüksek sıcaklığın bilimsel sonucu nükleer füzyonun (çekirdek kaynaşmasının) gerçekleşmesidir.',
+    trapWarning: 'Sebep cümlesi aşırı yüksek sıcaklıktan bahseder. B, C, D ve E bu sıcaklıkla çelişen sonuçlar verir; mantıklı tek sonuç füzyonun gerçekleşebilmesidir.',
     explanation: 'Yıldız çekirdekleri milyonlarca dereceye ulaştığı için, hidrojen çekirdekleri itme kuvvetini yenip füzyona girecek kinetik enerjiye ulaşır (A şıkkı).'
   },
   {
@@ -620,15 +620,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: '_____, the prolonged drought crippled the agrarian economy of the entire river basin.',
     options: {
       A: 'As regional farmers relied almost exclusively on seasonal precipitation for crop irrigation',
-      B: 'Even though modern automated desalination plants supplied unlimited freshwater',
-      C: 'So that municipal reservoirs could export water to neighboring desert states',
-      D: 'While industrial manufacturing factories generated boundless profits from textile exports',
-      E: 'Unless international humanitarian agencies had delivered emergency grain shipments'
+      B: 'Although regional farmers relied almost exclusively on seasonal rainfall for irrigation',
+      C: 'As regional farmers had access to extensive networks of reservoirs and deep wells',
+      D: 'Even though the drought had been predicted by meteorologists several months earlier',
+      E: 'Unless regional farmers had switched to crops that require far less irrigation water'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Sebep Bağlacı (As = Because): Yağmura bağımlı oldukları için kuraklık ekonomiyi felç etti.',
-    trapWarning: 'B şıkkında suyun sınırsız olduğu söylenir; bu durumda kuraklık ekonomiyi felç edemezdi.',
+    trapWarning: 'B doğru bilgiyi verir ama Although ile zıtlık kurar; oysa yağmura bağımlılık felcin sebebidir. C sebebi tersine çevirir: kuyusu ve rezervuarı olan çiftçiler bu kadar etkilenmezdi.',
     explanation: 'Bölge çiftçileri sulama için neredeyse tamamen mevsimsel yağışlara bağımlı olduğu için (As farmers relied on precipitation), kuraklık ekonomiyi felç etti (A şıkkı).'
   },
   {
@@ -638,15 +638,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Much as artificial intelligence models streamline administrative data processing across hospitals, _____.',
     options: {
       A: 'they cannot replicate the nuanced clinical empathy and bedside judgment of experienced human physicians',
-      B: 'they operate with complete and infallible medical precision in every diagnostic test',
-      C: 'because hospital administrative budgets have completely eliminated physician salaries',
-      D: 'which proves that medical schools should be permanently closed within five years',
-      E: 'so that pharmaceutical corporations could artificially inflate the price of critical vaccines'
+      B: 'they have also reduced the time doctors spend completing routine paperwork each day',
+      C: 'they are now being adopted by a growing number of hospitals across the world',
+      D: 'their speed allows hospital managers to allocate beds and staff more efficiently',
+      E: 'they rarely make the clerical errors that tired administrative staff often commit'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Much as = Although (Her ne kadar verileri hızlandırsa da [+] -> İnsan empatisini taklit edemez [-])',
-    trapWarning: '"Much as" zıtlık bağlacıdır. Hızlandırma pozitifken ikinci cümle yapay zekanın insani empati eksikliğini (-) vermelidir.',
+    trapWarning: 'Much as = although. Giriş yapay zekayı övdüğü (+) için ana cümle bir sınırlılık (-) vermelidir. B, C, D ve E övgüyü sürdürür.',
     explanation: 'Yapay zeka veri işlemlerini ne kadar kolaylaştırsa da (Much as AI streamlines), deneyimli hekimlerin empati ve klinik sağduyusunu taklit edemez (A şıkkı).'
   },
   {
@@ -656,15 +656,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Ever since deep-sea submersibles first documented hydrothermal ecosystems in the late 1970s, _____.',
     options: {
       A: 'marine microbiologists have recognized that complex life can flourish without photosynthetic sunlight',
-      B: 'they will launch an international expedition to map the Mariana Trench next autumn',
-      C: 'which proved that life can only originate in warm shallow equatorial lagoons',
-      D: 'until commercial mining companies extracted all mineral deposits along the ocean floor',
-      E: 'as classical biology had already documented deep-sea chemosynthesis centuries earlier'
+      B: 'marine microbiologists recognized that complex life could flourish without sunlight',
+      C: 'marine microbiologists will need to reconsider the conditions under which life can exist',
+      D: 'marine microbiologists had assumed that all deep-sea life depended on photosynthesis',
+      E: 'marine microbiologists are studying how vent organisms survive without any sunlight'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Ever since + V2 -> Present Perfect (Have recognized)',
-    trapWarning: 'Ever since başlangıç anını verir; ana cümle Present Perfect (have recognized) olmak zorundadır.',
+    trapWarning: 'Bütün şıklar anlamca makuldür; soru zaman uyumunu ölçer. Ever since + geçmiş zaman, ana cümlede present perfect (have recognized) ister.',
     explanation: 'Denizaltılar hidrotermal ekosistemleri belgelediğinden beri (Ever since submersibles documented), biyologlar karmaşık yaşamın güneş ışığı olmadan da gelişebileceğini kabul etmiştir (A şıkkı).'
   },
 
@@ -1178,16 +1178,16 @@ Dr. Evans:
 Dr. Miller:
 — Precisely. If clearing the plaques doesn\'t halt cognitive decline, we must urgently redirect research funding towards neuroinflammation and tau protein tangles.`,
     options: {
-      A: 'So you are implying that amyloid plaques might merely be a secondary symptom rather than the primary cause of neurodegeneration?',
-      B: 'Then we should double the antibody dosage and continue the trial for another five years without changes.',
-      C: 'Are you suggesting that clinical trials should never be monitored by independent regulatory agencies?',
-      D: 'The laboratory testing equipment was obviously uncalibrated, so the amyloid measurements are invalid.',
-      E: 'Most patients actually prefer taking oral tablets rather than undergoing intravenous antibody infusions.'
+      A: 'So you mean the plaques might be a side effect of the disease rather than its main cause?',
+      B: 'So you think the antibody simply needs to be given at an earlier stage of the disease?',
+      C: 'So you suspect that the cognitive tests we used were not sensitive enough to detect change?',
+      D: 'So you believe the trial was too short for any cognitive benefit to become measurable?',
+      E: 'So you think the reduction in plaques was mainly caused by the placebo effect itself?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Sonraki Cevaptan Geriye Yürüme: "Precisely. If clearing plaques doesn\'t halt decline..."',
-    trapWarning: 'Dr. Miller "Tam olarak öyle. Eğer plakları temizlemek gerilemeyi durdurmuyorsa yönümüzü değiştirmeliyiz" diyerek Dr. Evans\'ın hipotez şüphesini doğrular.',
+    trapWarning: 'B, C ve D, amiloid hipotezini kurtarmaya çalışan makul açıklamalardır. Ama Dr. Miller "Plakları temizlemek gerilemeyi durdurmuyorsa araştırmayı başka yöne çevirmeliyiz" der; yani hipotezin kendisini sorgulayan şıkkı onaylar.',
     explanation: 'Dr. Evans: "So you are implying that amyloid plaques might merely be a symptom rather than the cause?" (Yani plakların asıl neden değil, ikincil bir belirti olduğunu mu ima ediyorsun?). Doğru cevap A.'
   },
   {
@@ -1207,16 +1207,16 @@ Rachel:
 Thomas:
 — That would solve the problem completely. Electrochromic smart glass can tint automatically in response to sunlight intensity, blocking infrared radiation while allowing visible light through.`,
     options: {
-      A: 'What if we specify dynamic electrochromic glass that modulates solar heat gain without obstructing views?',
-      B: 'Then let us replace the entire glass design with solid concrete walls devoid of any windows.',
-      C: 'We can simply instruct library patrons to carry personal battery-operated handheld fans.',
-      D: 'Air-conditioning electricity costs are completely irrelevant because the municipality has unlimited funds.',
-      E: 'Glass panels cannot support the structural weight of the library\'s third-floor roof.'
+      A: 'What if we used smart glass that tints itself to block solar heat while still letting light in?',
+      B: 'What if we installed a larger cooling system that can cope with the extra heat in summer?',
+      C: 'What if we moved the glass facade to the north side, where it receives less direct sunlight?',
+      D: 'What if we planted tall trees along the south side to shade the glass in the afternoons?',
+      E: 'What if we reduced the glass area and added more artificial lighting inside the atrium?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Teknik Çözüm Önerisi & Sonraki Cümle Uyumu: "Electrochromic smart glass"',
-    trapWarning: 'Thomas son cümlede "Electrochromic smart glass would solve the problem" diyerek Rachel\'ın önerisini doğrular.',
+    trapWarning: 'Bütün öneriler ısı sorununa makul çözümlerdir. Fark Thomas\'ın cevabındadır: "Electrochromic smart glass can tint automatically" der. Bu yüzden boşlukta akıllı cam önerisi olmalıdır.',
     explanation: 'Rachel elektrostatik/akıllı cam kullanılmasını önerir (A şıkkı). Thomas da bu akıllı camın güneşe göre kararıp ısıyı kestiğini onaylar.'
   },
   {
@@ -1236,16 +1236,16 @@ Professor Alvarez:
 Liam:
 — So even if the Mexican forest reserves are protected, agricultural chemical practices thousands of kilometers away in the Midwest are decimating their food supply.`,
     options: {
-      A: 'Illegal logging plays a minor role, but the primary culprit is the widespread use of agricultural herbicides that destroy milkweed across North American breeding corridors.',
-      B: 'No, monarch butterflies have simply chosen to migrate to South America instead of Mexico this winter.',
-      C: 'The sanctuary rangers have deliberately relocated the butterflies to climate-controlled greenhouses.',
-      D: 'Butterflies are completely immune to any agricultural chemicals or industrial pesticides.',
-      E: 'The decline is entirely fictional because satellite imagery cannot detect individual insect wings.'
+      A: 'Logging plays a minor role; the main cause is herbicides destroying milkweed along their breeding routes.',
+      B: 'Yes, illegal logging inside the reserve has removed many of the trees the butterflies roost on.',
+      C: 'Partly, but the unusually cold winter in Mexico also killed many butterflies on arrival.',
+      D: 'Not really; the main cause seems to be severe storms that struck during their migration south.',
+      E: 'It is too early to say, since this year\'s count may have been affected by poor weather.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Sonraki Cevaptan Geriye Yürüme: "Agricultural practices in the Midwest decimating food supply"',
-    trapWarning: 'Liam son cümlede "Demek ki orman korunsan bile binlerce kilometre uzaktaki herbisitler besinlerini yok ediyor" der.',
+    trapWarning: 'Liam "Orman korunsa bile Ortabatı\'daki tarım kimyasalları besinlerini yok ediyor" der. Bu yüzden Profesör boşlukta herbisitlerden bahsetmiş olmalıdır. B, C, D ve E başka nedenler verir.',
     explanation: 'Profesör Alvarez asıl suçlunun Kuzey Amerika\'daki yabani ot ilaçları (herbicides) olduğunu söyler (A şıkkı). Liam da bunu özetler.'
   },
   {
@@ -1265,16 +1265,16 @@ Miriam:
 David:
 — Excellent idea. By storing frequently requested catalog data in an in-memory Redis cache, we can serve ninety percent of read requests in milliseconds without querying the database at all.`,
     options: {
-      A: 'Could we introduce an in-memory caching layer to intercept and serve repetitive read queries?',
-      B: 'Why don\'t we just delete all customer review tables to reduce disk space?',
-      C: 'We should ask customers to avoid shopping on our platform during the evening hours.',
-      D: 'Relational databases are completely obsolete, so let us rewrite the entire platform in assembly code.',
-      E: 'Latency is beneficial because it encourages customers to browse more products while waiting.'
+      A: 'Could we add an in-memory cache to serve repeated read requests without touching the database?',
+      B: 'Could we upgrade the database server to a machine with more processors and memory?',
+      C: 'Could we rewrite the slowest SQL queries so that they need fewer complex joins?',
+      D: 'Could we move the database to a cloud provider that scales automatically at peak times?',
+      E: 'Could we show customers a simpler checkout page during the busiest evening hours?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Problem-Çözüm Eşleştirmesi & Sonraki Cümle Uyumu: "Redis cache / in-memory cache"',
-    trapWarning: 'David "Excellent idea... in-memory Redis cache" diyerek Miriam\'ın önerisini över.',
+    trapWarning: 'B, C ve D de veritabanı yükünü azaltmaya yönelik makul fikirlerdir. Ama David "Redis önbelleğinde tutarak okuma isteklerini veritabanına gitmeden karşılarız" der. Boşlukta önbellek önerisi olmalıdır.',
     explanation: 'Miriam veri tabanına yük binmesini engellemek için bir "in-memory caching" katmanı önerir (A şıkkı). David de bunu onaylar.'
   },
   {
@@ -1294,16 +1294,16 @@ Dr. Thorne:
 Dr. Vance:
 — I completely agree. Until an independent ground-based observatory confirms these precise fluctuations, we must refrain from making revolutionary claims.`,
     options: {
-      A: 'Before we speculate about exotic multiverse theories, we should conduct rigorous cross-calibration tests with ground-based radio arrays.',
-      B: 'Then let us publish an immediate press release announcing that Albert Einstein’s theory of relativity has been disproven.',
-      C: 'The cosmic microwave background is purely theoretical anyway, so slight temperature fluctuations are meaningless.',
-      D: 'We should permanently deactivate the orbital telescope to save electrical battery power.',
-      E: 'Inflationary cosmology has never been supported by any empirical observational evidence.'
+      A: 'Before we speculate about new physics, we should cross-check the data with ground-based telescopes.',
+      B: 'If this is new physics, it could be the most important cosmological discovery in decades.',
+      C: 'We should submit the results to a journal now so that other teams can begin to analyse them.',
+      D: 'The calibration of our receivers was checked last year, so an instrument error seems unlikely.',
+      E: 'Similar anomalies were reported by an earlier satellite, which strengthens the case for new physics.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Akademik İhtiyat / Doğrulama Çağrısı: "Until independent observatory confirms..."',
-    trapWarning: 'Dr. Vance "I agree. Until an independent observatory confirms..." diyerek Thorne\'un ihtiyatlı yaklaşımını onaylar.',
+    trapWarning: 'Dr. Vance "Bağımsız bir yer gözlemevi doğrulayana kadar devrim niteliğinde iddialardan kaçınmalıyız" der. Boşlukta ihtiyatlı bir doğrulama önerisi olmalıdır. B, D ve E yeni fizik iddiasını güçlendirir, C ise aceleci davranır.',
     explanation: 'Dr. Thorne: "Before we speculate, we should conduct rigorous cross-calibration tests" (Spekülasyon yapmadan önce bağımsız yer dizinleriyle kalibrasyon yapalım). Doğru cevap A.'
   },
 
