@@ -1317,15 +1317,15 @@ Dr. Novak:
     question: 'Had the international coalition enforced strict carbon caps two decades ago, global average temperatures would not be escalating at their current alarming rate.',
     options: {
       A: 'Because the international community failed to implement binding carbon limits twenty years ago, worldwide temperatures are now rising with disturbing speed.',
-      B: 'Global average temperatures have increased steadily over the last two decades despite the rigorous carbon caps imposed by international treaties.',
-      C: 'Even if the international coalition had mandated carbon restrictions twenty years ago, global warming would still be accelerating at the same alarming pace.',
-      D: 'Unless international leaders agree to cap global emissions within the next twenty years, atmospheric temperatures will escalate uncontrollably.',
-      E: 'The international coalition was completely unaware twenty years ago that carbon emissions would cause worldwide temperatures to rise.'
+      B: 'Because the international coalition enforced strict carbon limits twenty years ago, global temperatures are no longer rising at an alarming rate.',
+      C: 'Even if the international coalition had imposed strict carbon caps twenty years ago, global temperatures would still be rising at the current alarming rate.',
+      D: 'If the international coalition does not enforce strict carbon caps within the next two decades, global temperatures will rise at an alarming rate.',
+      E: 'Global temperatures have been rising at an alarming rate for two decades, so the international coalition has recently decided to enforce strict carbon caps.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Type 3 Devrik If Analizi: Had enforced = Uygulamadığı için şu an artıyor',
-    trapWarning: 'C şıkkında "Even if... still would be accelerating" der; bu zıt anlamdır.',
+    trapWarning: 'Devrik Type 3/karma koşul: geçmişte yapılmadı, bugün sonucu görülüyor. B olumsuzluğu kaldırır, C (Even if) koşulun etkisini yok sayar, D geleceğe taşır, E ise sebep-sonucu ve zamanı değiştirir.',
     explanation: 'Orijinal cümle: "Uluslararası koalisyon 20 yıl önce katı karbon kotaları uygulasaydı, küresel sıcaklıklar bugünkü endişe verici hızla yükseliyor olmazdı." Bu cümlenin net karşılığı A şıkkıdır: "Uygulamadığı için (Because failed to implement) şu anda rahatsız edici bir hızla yükselmektedir."'
   },
   {
@@ -1335,15 +1335,15 @@ Dr. Novak:
     question: 'So intricate is the grammatical architecture of ancient Sanskrit that early comparative linguists mistakenly believed it to be an artificial language engineered by philosophers.',
     options: {
       A: 'The grammar of ancient Sanskrit is so complex that pioneering linguistic scholars wrongly concluded it was a constructed language designed by thinkers.',
-      B: 'Philosophers deliberately engineered the grammar of ancient Sanskrit to be so confusing that early linguists could never decipher it.',
-      C: 'Early comparative linguists proved conclusively that ancient Sanskrit was indeed an artificial linguistic system invented by philosophers.',
-      D: 'Although ancient Sanskrit possesses a relatively simple grammatical system, early philosophers failed to appreciate its structural beauty.',
-      E: 'Only by studying modern artificial languages were historical linguists able to unravel the complex grammatical rules of Sanskrit.'
+      B: 'Because early comparative linguists found the grammar of Sanskrit so complex, they correctly concluded that it had been invented by philosophers.',
+      C: 'Early comparative linguists believed that Sanskrit was so complex that philosophers could never have engineered it as an artificial language.',
+      D: 'Philosophers deliberately designed the grammar of Sanskrit to be so complex that early linguists would mistake it for a natural language.',
+      E: 'The grammar of Sanskrit is less complex than early comparative linguists believed, which is why they wrongly thought it was artificial.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'So + Adj + that (Öylesine karmaşık ki...) Kalıp Eşleştirmesi',
-    trapWarning: 'C şıkkında dilin gerçekten yapay olduğunun kanıtlandığını söyler; oysa orijinal cümle "mistakenly believed" (yanlışlıkla inandılar) demektedir.',
+    trapWarning: 'So ... that sonuç bildirir ve "mistakenly" inancın yanlış olduğunu söyler. B "correctly" der, C inancı tersine çevirir, D yapaylığı gerçek kabul eder, E ise karmaşıklığı olumsuzlar.',
     explanation: 'So intricate (öylesine karmaşık ki) = so complex. Mistakenly believed it to be artificial = wrongly concluded it was a constructed language. Doğru cevap A.'
   },
   {
@@ -1353,15 +1353,15 @@ Dr. Novak:
     question: 'While regular aerobic exercise undeniably enhances cardiovascular longevity, its cognitive benefits can only be fully unlocked when paired with sustained intellectual engagement.',
     options: {
       A: 'Aerobic fitness certainly boosts cardiovascular health, but its positive impacts on the brain are maximized only if accompanied by ongoing mental stimulation.',
-      B: 'Unless individuals perform vigorous physical exercise every day, engaging in intellectual activities will provide zero measurable benefits for the brain.',
-      C: 'Cognitive decline can be completely reversed by aerobic conditioning alone, without any requirement for intellectual problem-solving.',
-      D: 'Cardiovascular longevity is far more critical for brain health than any form of mental or intellectual activity.',
-      E: 'Engaging in intellectually demanding tasks enhances physical stamina much more effectively than conventional cardiovascular workouts.'
+      B: 'Regular aerobic exercise boosts heart health, and its cognitive benefits are fully realized even without any intellectual engagement.',
+      C: 'Sustained intellectual engagement improves cardiovascular longevity just as much as regular aerobic exercise improves brain health.',
+      D: 'Regular aerobic exercise may not improve cardiovascular longevity, but it does unlock cognitive benefits when combined with mental activity.',
+      E: 'The cognitive benefits of intellectual engagement can only be fully unlocked when it is combined with regular aerobic exercise.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Zıtlık ve Şart Uyumu: While ... undeniably enhances, only fully unlocked when paired with...',
-    trapWarning: 'B şıkkında zihinsel egzersizin sıfır fayda sağladığı iddia edilir; metin bunu söylemez.',
+    trapWarning: 'Ana fikir: egzersizin kalbe faydası kesin, beyne faydası ise zihinsel aktiviteyle birleşince tam ortaya çıkar. B şartı kaldırır, C konuyu değiştirir, D ilk yargıyı olumsuzlar, E ise koşulu tersine çevirir.',
     explanation: 'Orijinal cümle: Aerobik egzersiz kalp sağlığını kesinlikle artırsa da, zihinsel faydaları ancak sürekli zihinsel uğraşla birleştirildiğinde tam açığa çıkar. Birebir karşılık A şıkkıdır.'
   },
   {
@@ -1371,15 +1371,15 @@ Dr. Novak:
     question: 'Scarcely had the volcanic ash plume penetrated the upper troposphere when aviation authorities grounded all transcontinental flights across the hemisphere.',
     options: {
       A: 'Aviation officials suspended all transcontinental flights across the hemisphere almost immediately after the volcanic ash entered the upper troposphere.',
-      B: 'Aviation authorities delayed grounding commercial flights until the volcanic ash plume had drifted across the entire hemisphere.',
-      C: 'Even though volcanic ash had reached the upper troposphere, transcontinental flights continued operating without interruption.',
-      D: 'Transcontinental flights were canceled because airport runways throughout the hemisphere were buried under heavy volcanic debris.',
-      E: 'Aviation officials had intended to ground flights long before the volcano showed any signs of explosive atmospheric activity.'
+      B: 'Aviation authorities grounded all transcontinental flights some time after the volcanic ash plume had spread across the upper troposphere.',
+      C: 'Aviation authorities grounded all transcontinental flights shortly before the volcanic ash plume reached the upper troposphere.',
+      D: 'As soon as aviation authorities grounded all transcontinental flights, the volcanic ash plume penetrated the upper troposphere.',
+      E: 'The volcanic ash plume had hardly reached the upper troposphere, yet aviation authorities refused to ground transcontinental flights.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Scarcely had ... when = Tam ... olmuştu ki ... oldu (Almost immediately after)',
-    trapWarning: 'Scarcely ... when yapısı anında gerçekleşen eylemi anlatır. B şıkkı gecikmeli yapıldığını iddia eder.',
+    trapWarning: 'Scarcely ... when = -ir -mez. Kül yükselir yükselmez uçuşlar durdurulmuştur. B gecikme ekler, C sırayı tersine çevirir, D olayların yerini değiştirir, E ise yasağı olumsuzlar.',
     explanation: 'Scarcely had the plume penetrated ... when grounded = kül bulutu troposfere girer girmez uçuşlar askıya alındı (almost immediately after). Doğru cevap A.'
   },
 
@@ -1393,15 +1393,15 @@ Dr. Novak:
     question: `Throughout the vertebrate tree of life, sleep remains an evolutionary enigma. Engaging in prolonged unconsciousness leaves animals vulnerable to predation and prevents foraging. (_____) Neurobiological investigations reveal that during deep slow-wave sleep, the brain’s glymphatic system expands, flushing out neurotoxic metabolic waste products, such as amyloid-beta proteins, that accumulate during waking hours. Without this nightly biochemical cleansing, cognitive dysfunction and neuronal degeneration inevitably ensue.`,
     options: {
       A: 'Yet, the sheer ubiquity of sleep across species demonstrates that it must serve an indispensable physiological function.',
-      B: 'Consequently, most predatory mammals have completely evolved away the biological necessity for restorative rest.',
-      C: 'Furthermore, aquatic marine mammals never enter slow-wave sleep because they must surface periodically to breathe.',
-      D: 'For this reason, human beings require significantly less sleep than primitive cold-blooded reptiles.',
-      E: 'Instead, sleep deprivation has been proven to enhance athletic agility and sensory perception in birds.'
+      B: 'Some species, such as dolphins, rest only one half of the brain at a time so that they can remain alert.',
+      C: 'This is why many prey animals sleep in short bursts, often in groups where some members stay awake.',
+      D: 'Researchers have also found that the amount of sleep an animal needs varies greatly with its body size.',
+      E: 'As a result, sleep has gradually disappeared in species that face constant pressure from predators.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Zıtlık Geçişi (Tehlikeli ve dezavantajlı görünmesine rağmen vazgeçilmez bir işlevi olmalıdır)',
-    trapWarning: 'Boşluktan önceki cümle uykunun tehlikelerini (-) anlatırken, boşluktan sonraki cümle beynin temizlendiğini (+) anlatır. Araya zıtlık bağlacı (Yet) şarttır.',
+    trapWarning: 'Boşluktan önce uykunun riskleri (-), sonra beynin temizlenmesi (+) anlatılır. Araya "Yet ... must serve an indispensable function" gibi bir geçiş gerekir. B, C ve D konuyla ilgili ama akışı farklı yöne çeker; E ise metinle çelişir.',
     explanation: 'Yet (Yine de, uykunun tüm türlerde bulunması vazgeçilmez bir işleve hizmet ettiğini gösterir). Ardından gelen cümle bu işlevi (glymphatic flushing) açıklar. Doğru cevap A.'
   },
   {
@@ -1410,16 +1410,16 @@ Dr. Novak:
     title: '73. Soru - Paragraf Tamamlama',
     question: `Urban heat islands occur when dense metropolitan centers experience substantially warmer ambient temperatures than surrounding rural landscapes. Concrete, brick, and asphalt possess high thermal mass, absorbing vast quantities of solar radiation during the day and radiating it slowly at night. (_____) To counteract this hazardous phenomenon, progressive urban landscape architects are mandating green vegetative rooftops, reflective solar pavements, and extensive urban canopy corridors to restore natural microclimatic evapotranspiration.`,
     options: {
-      A: 'Coupled with anthropogenic waste heat generated by vehicular exhaust and air-conditioning units, this trapped energy elevates local nocturnal temperatures dramatically.',
-      B: 'Rural forests, in contrast, generate immense quantities of synthetic chemical heat during winter months.',
-      C: 'Consequently, city dwellers consume significantly less electricity for indoor air-conditioning during July and August.',
-      D: 'Modern asphalt formulations have been engineered to absorb cold air and release it during summer afternoons.',
-      E: 'Architectural authorities have therefore outlawed the construction of multi-story buildings in earthquake zones.'
+      A: 'Combined with waste heat from cars and air conditioners, this stored energy sharply raises night-time temperatures.',
+      B: 'Rural areas, in contrast, are covered mostly by vegetation, which releases moisture and cools the air.',
+      C: 'Green rooftops and reflective pavements are therefore becoming common features of new urban developments.',
+      D: 'Some cities, however, have found that heat islands bring benefits such as lower heating costs in winter.',
+      E: 'These materials are also cheaper and more durable than most of the natural alternatives available.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Neden-Sonuç Zinciri: Isının birikmesi ve gece sıcaklıklarını artırması',
-    trapWarning: 'Boşluktan sonra "To counteract this hazardous phenomenon" der. Demek ki boşlukta bu tehlikeli durumun nasıl katmerlendiği (Coupled with waste heat...) anlatılmalıdır.',
+    trapWarning: 'Boşluktan sonra "To counteract this hazardous phenomenon" gelir; yani boşlukta sorunun nasıl ağırlaştığı anlatılmalıdır. C çözümü erken verir ve sonraki cümleyi tekrarlar, D ise "hazardous" vurgusuyla çelişir.',
     explanation: 'A şıkkı betonun ısıyı tutmasına ek olarak araç ve klima ısısının birleşerek gece sıcaklıklarını fırlattığını açıklar. Doğru cevap A.'
   },
   {
@@ -1429,15 +1429,15 @@ Dr. Novak:
     question: `For centuries, the Silk Road was envisioned as a single well-defined highway traversing the Eurasian steppes from China to the Mediterranean. Contemporary archaeological excavations have dismantled this simplistic romantic imagery. (_____) Along this intricate decentralized spiderweb, nomadic pastoralists served as essential intermediaries, trading horses, textiles, lapis lazuli, and religious philosophies between isolated oasis city-states.`,
     options: {
       A: 'In reality, it operated as a vast, shifting network of interconnected mountain passes, river valleys, and desert tracks.',
-      B: 'European merchants traversed the entire ten-thousand-kilometer distance in single continuous seasonal caravans.',
-      C: 'The Chinese imperial army stationed garrison forts along every mile of the desert road to protect silk merchants.',
-      D: 'Maritime shipping had completely replaced overland trade caravans by the early Bronze Age.',
-      E: 'No precious gemstones or exotic religious manuscripts were ever transported along these Central Asian routes.'
+      B: 'Most of the silk that reached Rome had, in fact, passed through the hands of many different traders.',
+      C: 'The term Silk Road itself was coined only in the nineteenth century by a German geographer.',
+      D: 'Excavations have also uncovered large quantities of Chinese silk in the tombs of Roman aristocrats.',
+      E: 'Instead, most goods appear to have travelled by sea along the coasts of the Indian Ocean.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Gerçek / Yanılsama Karşılaştırması: "In reality, it operated as a vast, shifting network..."',
-    trapWarning: 'Önceki cümle tek bir yol sanılmasını yıkar; sonraki cümle ise bu ağın bir örümcek ağı (spiderweb) olduğunu söyler. Boşluk A şıkkıdır.',
+    trapWarning: 'Sonraki cümle "Along this intricate decentralized spiderweb" der; yani boşlukta yolun aslında bir ağ olduğu söylenmelidir. B ve C konuyla ilgilidir ama "this spiderweb" ifadesinin göndergesini vermez; E ise karayolu ağını yok sayar.',
     explanation: 'In reality (Gerçekte tek bir yol değil, birbiriyle bağlantılı dağ geçitleri ve vadi yollarından oluşan devasa bir ağdır). Sonraki cümlenin "intricate decentralized spiderweb" ifadesini birebir karşılar. Doğru cevap A.'
   },
   {
@@ -1447,15 +1447,15 @@ Dr. Novak:
     question: `Antimicrobial resistance poses one of the most perilous global health threats of the twenty-first century. Decades of systemic overprescription of antibiotics in human medicine and livestock agriculture have exerted immense selective evolutionary pressure on microbial pathogens. (_____) Consequently, routine surgical interventions and minor infections that were readily curable for generations could once again become lethal medical emergencies.`,
     options: {
       A: 'Bacteria carrying resistant genetic mutations survive treatments, rapidly multiplying and exchanging defensive plasmids with neighboring strains.',
-      B: 'Pharmaceutical conglomerates have easily developed dozens of universally effective synthetic antibiotic molecules every single month.',
-      C: 'Most pathogenic bacteria naturally lose their virulence when exposed to high doses of broad-spectrum penicillin.',
-      D: 'Livestock farming has completely eliminated the use of preventative animal medicinal supplements.',
-      E: 'Human immune systems have spontaneously evolved universal antibody defenses against all known microbial species.'
+      B: 'Pharmaceutical companies, meanwhile, have invested less in new antibiotics because they offer small profits.',
+      C: 'In many countries, antibiotics can still be bought without a prescription from local pharmacies.',
+      D: 'Hospitals have responded by introducing stricter hygiene rules to limit the spread of infections.',
+      E: 'Fortunately, most bacteria lose their resistance quickly once antibiotic use is reduced.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Bakteriyel Direnç Mekanizması Açıklaması',
-    trapWarning: 'Boşluktan sonraki "Consequently, routine infections become lethal" cümlesi dirençli bakterilerin nasıl hayatta kaldığının sonucudur.',
+    trapWarning: 'Sonraki cümle "Consequently, minor infections could become lethal" der; boşlukta seçici baskının dirençli bakterileri nasıl çoğalttığı anlatılmalıdır. B, C ve D konuyla ilgili ama zinciri kurmaz; E ise sonuçla çelişir.',
     explanation: 'A şıkkı dirençli bakterilerin mutasyon geçirip hayatta kalarak çoğaldığını ve savunma genlerini paylaştığını açıklar. Doğru cevap A.'
   },
 

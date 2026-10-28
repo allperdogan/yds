@@ -721,7 +721,7 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     },
     answer: 'A',
     difficulty: 'Orta',
-    tacticUsed: 'Unless (ele alınmadıkça) & "could arise ... and threaten" (ortaya çıkabilir ve tehdit edebilir)',
+    tacticUsed: 'Unless (yapılmadıkça) & "could arise ... and threaten" (ortaya çıkabilir ve tehdit edebilir)',
     trapWarning: 'unless = -medikçe. B olumsuzluğu kaybeder, C koşulu gerçekleşmiş bir sebebe ve could modalını kesinliğe çevirir. D "under-immunized" ifadesini "tamamen aşılanmış" diye çevirir, E ise koşul ile sonucu yer değiştirir.',
     explanation: 'Unless handled equitably: adil yapılmadıkça. Could arise and threaten: ortaya çıkabilir ve tehdit edebilir. Doğru cevap A.'
   },
@@ -1317,15 +1317,15 @@ Dr. Vance:
     question: 'Had municipal authorities retrofitted the urban drainage infrastructure following the 2018 floods, the recent torrential storm would not have caused such widespread destruction.',
     options: {
       A: 'Because city officials failed to upgrade the drainage system after the 2018 flooding, the recent severe storm resulted in extensive devastation.',
-      B: 'Even though city authorities had reinforced the drainage infrastructure after 2018, the recent torrential rain still caused catastrophic damages.',
-      C: 'The recent storm was so powerful that no amount of drainage infrastructure improvement after 2018 could have prevented the disaster.',
-      D: 'Unless municipal officials immediately reconstruct urban drainage systems, future storms will cause even more destruction than in 2018.',
-      E: 'Municipal authorities had already upgraded the drainage networks before 2018, yet the city was unprepared for torrential rainfall.'
+      B: 'Because city officials upgraded the drainage system after the 2018 floods, the recent torrential storm caused relatively little damage.',
+      C: 'Even if city officials had upgraded the drainage system after the 2018 floods, the recent storm would still have caused widespread destruction.',
+      D: 'If city officials do not upgrade the drainage system soon, future storms will cause even more destruction than the floods of 2018.',
+      E: 'The recent storm caused widespread destruction, so city officials have finally decided to upgrade the drainage system built after 2018.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Type 3 Devrik If Analizi: Had retrofitted (Yenileseydi yıkım olmazdı -> Yenilemediği için oldu)',
-    trapWarning: 'B şıkkında altyapının güçlendirildiği iddia edilir; oysa orijinal cümle güçlendirilmediğini (had retrofitted ... would not have) anlatır.',
+    trapWarning: 'Had ... would not have = yapılmadı, bu yüzden yıkım oldu. B olumsuzluğu kaldırır, C (Even if) koşulun etkisini yok sayar, D geleceğe taşır, E ise zaman ve sebep ilişkisini bozar.',
     explanation: 'Orijinal cümle: "Yetkililer 2018 sellerinden sonra altyapıyı yenileseydi, son fırtına bu kadar büyük yıkıma yol açmazdı." Birebir karşılık A şıkkıdır: "Yenilemedikleri için son fırtına büyük yıkıma yol açtı."'
   },
   {
@@ -1335,15 +1335,15 @@ Dr. Vance:
     question: 'So computationally demanding is real-time high-resolution climate modeling that even the world’s most advanced supercomputers require weeks to simulate a single century.',
     options: {
       A: 'Real-time high-resolution climate simulation requires so much computational power that simulating one century takes weeks, even on top supercomputers.',
-      B: 'Supercomputers can simulate several centuries of global climate change in a matter of minutes due to modern algorithmic efficiencies.',
-      C: 'Because climate change occurs very slowly, supercomputers only need to run simulations once every century.',
-      D: 'Advanced supercomputers have become so inexpensive that even small universities can simulate centuries of climate models in real time.',
-      E: 'Unless meteorologists simplify their mathematical climate equations, supercomputers will be unable to run any future planetary simulations.'
+      B: 'Even the most advanced supercomputers can simulate a century of high-resolution climate in a few hours, despite the heavy computational load.',
+      C: 'Real-time climate modeling demands so little computing power that ordinary computers can simulate a whole century within weeks.',
+      D: 'Simulating a century of high-resolution climate takes weeks only on older supercomputers, not on the most advanced ones.',
+      E: 'Because supercomputers require weeks to run, scientists have abandoned real-time high-resolution climate modeling altogether.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'So + Adj + that (Öylesine işlem gücü gerektirir ki...) Kalıp Eşleştirmesi',
-    trapWarning: 'B şıkkında dakikalar içinde simüle ettiğini söyler; orijinal cümle haftalar sürdüğünü belirtir.',
+    trapWarning: 'So ... that: işlem o kadar ağırdır ki en iyi süper bilgisayarlar bile haftalar harcar. B süreyi değiştirir, C yükü olumsuzlar, D "even" anlamını bozar, E ise metinde olmayan bir sonuç ekler.',
     explanation: 'So computationally demanding that (öylesine işlem gücü gerektirir ki) = requires so much computational power that takes weeks. Doğru cevap A.'
   },
   {
@@ -1353,15 +1353,15 @@ Dr. Vance:
     question: 'While regular cardiovascular workouts undeniably bolster heart longevity, their protective benefits against cognitive decline are maximized only when combined with mentally challenging tasks.',
     options: {
       A: 'Aerobic exercises certainly strengthen the heart, but their ability to guard against mental decline is greatest when accompanied by intellectual activities.',
-      B: 'Engaging in intellectually challenging tasks protects against cognitive decline much more effectively than any form of cardiovascular exercise.',
-      C: 'Unless individuals perform vigorous physical exercise daily, intellectual problem-solving will provide zero protection against dementia.',
-      D: 'Cardiovascular longevity is far more critical for brain function than any form of intellectual or puzzle-solving mental engagement.',
-      E: 'Heart health can be completely restored through intellectual puzzles alone, eliminating the necessity for physical aerobic conditioning.'
+      B: 'Regular cardiovascular workouts strengthen the heart, and they fully protect against cognitive decline even without mental challenges.',
+      C: 'Mentally challenging tasks protect the heart just as effectively as regular cardiovascular workouts protect against cognitive decline.',
+      D: 'Cardiovascular workouts may not improve heart longevity, but they protect against cognitive decline when combined with mental tasks.',
+      E: 'Mentally challenging tasks protect against cognitive decline most effectively only when they are combined with cardiovascular workouts.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Zıtlık & Şart Analizi: While undeniably bolsters ... maximized only when combined with...',
-    trapWarning: 'B şıkkı zihinsel egzersizin spordan daha üstün olduğunu iddia eder; oysa metin kombinasyonu (birlikte yapılmasını) savunur.',
+    trapWarning: 'Ana fikir: sporun kalbe faydası kesin, zihinsel gerilemeye karşı koruması ise zihinsel görevlerle birleşince en yüksek düzeye çıkar. B şartı kaldırır, C konuyu değiştirir, D ilk yargıyı olumsuzlar, E koşulu tersine çevirir.',
     explanation: 'Orijinal cümle: Kardiyovasküler egzersiz kalp sağlığını kesinlikle artırsa da, zihinsel gerilemeye karşı koruyucu faydası ancak zihinsel uğraşla birleştirildiğinde en üst düzeye çıkar. Birebir karşılık A\'dır.'
   },
   {
@@ -1371,15 +1371,15 @@ Dr. Vance:
     question: 'Scarcely had the volcanic observatory detected the harmonic tremor beneath the caldera when civil defense authorities initiated mandatory civilian evacuations.',
     options: {
       A: 'Civil defense officials ordered mandatory civilian evacuations almost immediately after the observatory identified the harmonic tremor under the caldera.',
-      B: 'Civil defense authorities waited until the volcanic caldera began erupting violently before issuing any evacuation orders for residents.',
-      C: 'Even though harmonic tremors were detected beneath the caldera, civilian evacuations were deemed unnecessary by emergency officials.',
-      D: 'Volcanic observatories have difficulty detecting harmonic tremors because magma movements under calderas are completely silent.',
-      E: 'Civilian populations voluntarily evacuated their homes long before the volcanic observatory detected any seismic tremors.'
+      B: 'Civil defense authorities ordered evacuations some time after the observatory had recorded several tremors beneath the caldera.',
+      C: 'Civil defense authorities ordered evacuations shortly before the observatory detected the harmonic tremor beneath the caldera.',
+      D: 'As soon as civil defense authorities ordered evacuations, the observatory detected a harmonic tremor beneath the caldera.',
+      E: 'The observatory had hardly detected the harmonic tremor, yet civil defense authorities decided that evacuations were unnecessary.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Scarcely had ... when = Almost immediately after (-er etmez / anında)',
-    trapWarning: 'Scarcely ... when anında gerçekleşen eylemi anlatır. B şıkkı gecikmeli yapıldığını iddia eder.',
+    trapWarning: 'Scarcely ... when = -ir -mez. Titreşim tespit edilir edilmez tahliye başlamıştır. B gecikme ekler, C sırayı tersine çevirir, D olayların yerini değiştirir, E ise tahliyeyi olumsuzlar.',
     explanation: 'Scarcely had detected ... when initiated = titreşimi tespit eder etmez tahliyeyi başlattı (almost immediately after). Doğru cevap A.'
   },
 
@@ -1393,15 +1393,15 @@ Dr. Vance:
     question: `Throughout the evolution of complex life, bioluminescence—the biochemical production of visible light by living organisms—has evolved independently in over forty distinct phylogenetic lineages. In the sunless depths of the mesopelagic and bathypelagic ocean, where solar rays cannot penetrate, light generation is an indispensable survival strategy. Organisms utilize luciferin-luciferase reactions to produce blue-green wavelengths that travel furthest through seawater. (_____) For example, the anglerfish dangles a luminous bacterial lure to attract prey directly toward its jaws, while lanternfish emit ventral light to match downwelling downwelling surface luminescence, effectively rendering themselves invisible to predators swimming below.`,
     options: {
       A: 'This biochemical illumination serves multifaceted ecological functions, ranging from predatory entrapment to counterillumination camouflage.',
-      B: 'Consequently, deep-sea organisms have completely lost their biological eyes through millions of years of evolutionary regression.',
-      C: 'Furthermore, terrestrial land mammals frequently utilize bioluminescence to navigate through subterranean forest caves at night.',
-      D: 'However, producing organic light requires so much caloric energy that most bioluminescent fish die of severe malnutrition.',
-      E: 'Instead, marine biologists have proven that deep-sea fish generate light strictly as an accidental byproduct of kidney filtration.'
+      B: 'Red light, by contrast, is absorbed within a few metres and is therefore rarely produced by deep-sea animals.',
+      C: 'Some species produce light themselves, while others rely on bioluminescent bacteria living in their tissues.',
+      D: 'Scientists still disagree about why this ability has evolved so many separate times in the ocean.',
+      E: 'Most bioluminescent animals, however, live in shallow coastal waters rather than in the deep sea.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Genel Tanımdan Örneğe Geçiş: Boşluktan sonraki "For example" cümlesi avlanma ve kamuflajı açıklar.',
-    trapWarning: 'Boşluktan sonraki cümle avlanma (predatory lure) ve kamuflajdan (camouflage) bahseder. Boşluk bu iki fonksiyonu genelleyen A şıkkıdır.',
+    trapWarning: 'Sonraki cümle "For example" ile avlanma ve kamuflaj örnekleri verir; yani boşlukta ışığın işlevleri genel olarak söylenmelidir. B ve C konuyla ilgili ama örneklerin genellemesini yapmaz; E ise metinle çelişir.',
     explanation: 'A şıkkı: "This illumination serves multifaceted functions, ranging from predatory entrapment to camouflage" (Bu ışık avlanmadan kamuflaja kadar çok yönlü işlevler görür). Ardından gelen "For example" bunu kanıtlar. Doğru cevap A.'
   },
   {
@@ -1411,15 +1411,15 @@ Dr. Vance:
     question: `Soil salinization poses a devastating threat to global agricultural food security, especially in arid and semi-arid river basins. When farmers utilize poorly managed flood irrigation in dry climates, intense evaporation draws subterranean groundwater to the soil surface. (_____) As these toxic salt concentrations accumulate in the root zone, they exert intense osmotic pressure, preventing crops from absorbing essential moisture and eventually rendering fertile croplands completely barren.`,
     options: {
       A: 'As the surface water evaporates, dissolved mineral salts are left behind in the upper topsoil layers.',
-      B: 'Consequently, crop yields increase dramatically because mineral salts act as powerful natural fertilizers.',
-      C: 'Modern farmers have therefore abandoned all chemical fertilizers in favor of pure seawater irrigation.',
-      D: 'Subterranean groundwater, in contrast, contains zero trace minerals or dissolved chemical ions.',
-      E: 'Heavy monsoon rains invariably wash all soil nutrients into deep geological bedrock formations.'
+      B: 'Drip irrigation, by contrast, delivers water directly to the roots and reduces evaporation considerably.',
+      C: 'In some regions, farmers have responded by switching to crops that tolerate higher levels of salt.',
+      D: 'Salinization already affects millions of hectares of farmland, particularly in South Asia and the Middle East.',
+      E: 'This groundwater, however, is usually fresh and therefore improves the quality of the topsoil.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Mantıksal Adım Takibi: Buharlaşma suyu çeker -> Su buharlaşınca tuz geride kalır -> Tuz kökleri kurutur.',
-    trapWarning: 'Önceki cümle buharlaşmadan bahsetti; boşlukta su buharlaşınca tuzun üst katmanda biriktiği (salts left behind) söylenmelidir.',
+    trapWarning: 'Sonraki cümle "As these toxic salt concentrations accumulate" der; "these" göndergesi için boşlukta tuzların toprağın üstünde kaldığı söylenmelidir. B ve C çözümleri erken verir, D genel bilgi verir, E ise sonuçla çelişir.',
     explanation: 'A şıkkı su buharlaşınca tuzların üst toprak katmanında kaldığını açıklar. Sonraki cümle bu tuz konsantrasyonunun (these toxic salt concentrations) etkisini anlatır. Doğru cevap A.'
   },
   {
@@ -1429,15 +1429,15 @@ Dr. Vance:
     question: `For decades, planetary geologists considered Mercury to be a geologically dead world—a desolate, heavily cratered iron sphere that had cooled into complete inactivity billions of years ago. However, high-resolution imagery captured by NASA’s MESSENGER spacecraft has overturned this consensus. (_____) These tectonic landforms indicate that as Mercury\'s disproportionately colossal metallic core has cooled and contracted, the planet’s outer crust has literally buckled and shrunk by several kilometers, a geological process that may continue into the present day.`,
     options: {
       A: 'Orbital instruments revealed extensive fault scarps, known as lobate scarps, cutting across relatively young impact craters.',
-      B: 'The probe discovered that Mercury possesses liquid water oceans covering over fifty percent of its surface.',
-      C: 'Scientists proved that Mercury has maintained an identical planetary diameter since the birth of the solar system.',
-      D: 'Commercial mining satellites have established automated titanium extraction factories near Mercury\'s equator.',
-      E: 'Astronomers concluded that Mercury was originally an icy moon ejected from the orbit of Neptune.'
+      B: 'The spacecraft also detected water ice inside permanently shadowed craters near the poles of Mercury.',
+      C: 'MESSENGER was the first spacecraft to orbit Mercury, completing more than four thousand orbits.',
+      D: 'Mercury\'s iron core, which makes up most of its volume, is unusually large for a planet of its size.',
+      E: 'Its surface, however, shows no signs of having changed since the planet first formed.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Referans Kelime Uyumu: Boşluktan sonra gelen "These tectonic landforms"',
-    trapWarning: 'Boşluktan sonraki cümle "These tectonic landforms" (Bu tektonik yer şekilleri) der. Demek ki boşlukta bu şekiller (fault scarps / lobate scarps) tanıtılmalıdır!',
+    trapWarning: 'Sonraki cümle "These tectonic landforms" der; boşlukta bu yer şekilleri tanıtılmalıdır. B ve C görev hakkında doğru bilgiler verir ama tektonik şekillerden bahsetmez; D çekirdeği erken açıklar, E ise metinle çelişir.',
     explanation: 'A şıkkı tektonik kırık yamaçlarını (fault scarps) tanıtır; sonraki cümle "These tectonic landforms" diyerek bu açıklamayı devam ettirir. Doğru cevap A.'
   },
   {
@@ -1447,15 +1447,15 @@ Dr. Vance:
     question: `In classical economics, consumers were long assumed to be strictly rational agents who systematically calculate marginal utilities to maximize their personal financial welfare. However, the emergence of behavioral economics in the late twentieth century dismantled this theoretical abstraction. (_____) Consequently, human decision-makers consistently deviate from idealized economic models, exhibiting cognitive biases like loss aversion and present bias that lead to systematically suboptimal financial choices.`,
     options: {
       A: 'Pioneering researchers demonstrated that human cognition relies on heuristic shortcuts that are vulnerable to emotional biases.',
-      B: 'Classical mathematical formulas have proven completely infallible in predicting daily consumer spending habits.',
-      C: 'Consumers invariably calculate long-term investment probabilities with absolute statistical perfection.',
-      D: 'Modern corporations have completely eliminated advertising because consumers only buy essential goods.',
-      E: 'Behavioral economists proved that human beings possess boundless computing power in their prefrontal cortex.'
+      B: 'Classical economists, however, continued to defend the rational agent model well into the 1990s.',
+      C: 'Behavioral economics draws on insights from psychology, neuroscience and sociology.',
+      D: 'Governments have since used these insights to design policies that nudge people toward better choices.',
+      E: 'These researchers confirmed that people usually make the choices that best serve their financial interests.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Teorik Geçiş & Boşluk Sonrası Uyumu: "cognitive biases like loss aversion"',
-    trapWarning: 'Boşluktan sonra "bilişsel önyargılar sergilerler" denmektedir. Boşluk insanın kestirme yollara (heuristics) ve önyargılara dayandığını söyleyen A şıkkıdır.',
+    trapWarning: 'Sonraki cümle "Consequently, people deviate from idealized models" der; boşlukta bunun nedeni (zihinsel kestirmeler ve önyargılar) verilmelidir. B ve C konuyla ilgili ama neden vermez; D sonucu erken verir, E ise sonuçla çelişir.',
     explanation: 'A şıkkı bilişsel kestirmelerin ve duygusal önyargıların rolünü açıklar; sonraki cümle "Consequently, decision-makers deviate..." diyerek bunu doğrular. Doğru cevap A.'
   },
 
