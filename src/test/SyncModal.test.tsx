@@ -65,7 +65,7 @@ describe('SyncModal Functional & Button Tests', () => {
     // Switch to Guide Tab
     const guideTabBtn = screen.getByRole('button', { name: /🌐 7\/24 Dışarıda Açma/i });
     fireEvent.click(guideTabBtn);
-    expect(screen.getByText(/En Kolay Yol: Netlify Drop/i)).toBeInTheDocument();
+    expect(screen.getByText(/Telefona Uygulama Olarak Kur/i)).toBeInTheDocument();
   });
 
   it('handles restoring progress when valid code is submitted', () => {
