@@ -791,16 +791,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     passage: 'For decades, classical genetics posited that an organism’s developmental destiny was rigidly determined by its static DNA sequence. However, the burgeoning discipline of epigenetics has demolished this deterministic paradigm. Epigenetic mechanisms—such as DNA methylation and histone modification—act as molecular switches that regulate gene expression without altering the underlying nucleotide sequence. Environmental stimuli, including chronic emotional stress, nutritional deprivation, and exposure to airborne pollutants, can trigger molecular tags that silence or activate specific genetic loci. Astonishingly, epidemiological research on the Dutch Famine of 1944 revealed that severe prenatal starvation altered metabolic gene markers in fetuses, predisposing them—and their future offspring—to obesity and cardiovascular disorders decades later. This demonstrates that lifestyle choices and ecological exposures can leave enduring biochemical signatures across generations.',
     question: 'According to the passage, the primary distinction between classical genetics and epigenetics is that epigenetics _____',
     options: {
-      A: 'demonstrates that gene expression can be influenced by environmental factors without changing DNA sequences.',
-      B: 'claims that DNA nucleotide sequences change permanently during an individual’s lifetime.',
-      C: 'asserts that environmental pollutants have no measurable impact on biological development.',
-      D: 'proves that classical geneticists were entirely correct about rigid biological destiny.',
-      E: 'suggests that maternal nutrition has no relevance to fetal metabolic programming.'
+      A: 'shows that environmental factors can change how genes are expressed without altering the DNA sequence.',
+      B: 'shows that environmental factors can permanently alter the nucleotide sequence of an organism\'s DNA.',
+      C: 'regards the DNA sequence as the only factor that determines an organism\'s development.',
+      D: 'focuses mainly on how DNA methylation repairs damage caused by airborne pollutants.',
+      E: 'argues that the effects of the environment on genes disappear within a single generation.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Paragraf Doğrudan Bilgi Taraması: Epigenetiğin Tanımı',
-    trapWarning: 'B şıkkında DNA diziliminin kalıcı değiştiğini söyler; oysa metin "without altering the underlying nucleotide sequence" der.',
+    trapWarning: 'B metindeki kelimeleri kullanır ama "without altering the underlying nucleotide sequence" ifadesiyle çelişir. C klasik genetiğin görüşüdür, E ise Hollanda kıtlığı örneğiyle çelişir.',
     explanation: 'Metne göre epigenetik: "regulate gene expression without altering the underlying nucleotide sequence" (DNA dizilimini değiştirmeden gen ifadesini düzenler). Doğru cevap A.'
   },
   {
@@ -809,16 +809,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '44. Soru - Paragraf 1',
     question: 'The author mentions the Dutch Famine of 1944 in order to illustrate _____',
     options: {
-      A: 'how extreme maternal nutritional deprivation can induce transgenerational epigenetic modifications.',
-      B: 'why famine relief efforts in 20th-century Europe were logistically inefficient.',
-      C: 'that cardiovascular disease is strictly caused by genetic inheritance rather than diet.',
-      D: 'the complete failure of modern nutritional sciences during wartime.',
-      E: 'how static DNA sequences naturally repair themselves after traumatic starvation.'
+      A: 'how severe hunger before birth can cause epigenetic changes that are passed on to later generations.',
+      B: 'how food shortages during the Second World War led to a sharp rise in infant mortality.',
+      C: 'why obesity and heart disease are caused mainly by inherited changes in the DNA sequence.',
+      D: 'how chronic emotional stress can silence specific genes in adults over several decades.',
+      E: 'why the effects of prenatal starvation tend to disappear once normal nutrition is restored.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Örnek Verme Amacı Sorusu (Illustration of transgenerational effects)',
-    trapWarning: 'Örnek savaşın lojistiği için değil, anne açlığının sonraki nesillerin gen belirteçlerini değiştirdiğini göstermek için verilmiştir.',
+    trapWarning: 'Örnek, rahimdeki açlığın gen belirteçlerini değiştirip sonraki nesillere geçtiğini göstermek için verilir. D metinde geçen başka bir faktörü örneğe bağlar, C ve E ise metinle çelişir.',
     explanation: 'Yazar Hollanda Kıtlığı örneğini: anne karnındaki açlığın gelecek nesillere bile aktarılan epigenetik izler bıraktığını göstermek için verir. Doğru cevap A.'
   },
   {
@@ -827,16 +827,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '45. Soru - Paragraf 1',
     question: 'It can be inferred from the passage that an individual\'s health outcomes are _____',
     options: {
-      A: 'the result of a dynamic interplay between inherited genetic predispositions and environmental exposures.',
-      B: 'entirely insulated from emotional stress and ecological contamination.',
-      C: 'predetermined at the moment of conception without any possibility of alteration.',
-      D: 'governed solely by the nutritional habits of their distant ancestors.',
-      E: 'completely unrelated to maternal physical well-being during gestation.'
+      A: 'shaped by the interaction between inherited genes and the environments a person is exposed to.',
+      B: 'determined mainly by the person\'s own lifestyle, regardless of what their ancestors experienced.',
+      C: 'fixed at the moment of conception by the DNA sequence inherited from both parents.',
+      D: 'influenced by environmental factors only during the earliest stages of fetal development.',
+      E: 'more strongly affected by airborne pollutants than by nutrition or emotional stress.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Çıkarım (Inference): Genetik ve Çevrenin Etkileşimi',
-    trapWarning: 'C şıkkı eski genetik dogmasını savunur; epigenetik ise gen ve çevre etkileşimini kanıtlar.',
+    trapWarning: 'B ataların deneyimini (Hollanda kıtlığı) yok sayar, C eski genetik dogmasını savunur. D çevresel etkiyi yalnızca rahim dönemiyle sınırlar, E ise metinde olmayan bir karşılaştırma yapar.',
     explanation: 'Paragraftan çıkarılan temel sonuç: sağlık, kalıtsal yatkınlıklar ile çevresel maruziyetlerin dinamik etkileşiminin bir ürünüdür. Doğru cevap A.'
   },
   {
@@ -846,15 +846,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'Which of the following would be the most appropriate title for this passage?',
     options: {
       A: 'Beyond the Static Genome: The Epigenetic Revolution',
-      B: 'The Nutritional History of the Second World War',
-      C: 'Classical Genetics: Why DNA Never Changes',
-      D: 'The Dangers of Airborne Industrial Pollutants',
-      E: 'Cardiovascular Surgery: Modern Treatment Paradigms'
+      B: 'The Dutch Famine of 1944 and Its Lasting Effects on Health',
+      C: 'Classical Genetics: How DNA Determines Our Destiny',
+      D: 'How Pollution and Stress Damage the Human Genome',
+      E: 'DNA Methylation: A New Treatment for Heart Disease'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Ana Fikir / Başlık Tespiti: Statik Genomun Ötesi ve Epigenetik',
-    trapWarning: 'B, D ve E şıkları metindeki yan detaylardır, ana konuyu kapsamaz.',
+    trapWarning: 'B metindeki tek bir örneği başlık yapar, çok dardır. C metnin çürüttüğü görüştür. D DNA dizisinin bozulduğunu ima eder; E ise metinde olmayan bir tedavi iddiası taşır.',
     explanation: 'Metin bütünüyle klasik statik genetik anlayışının epigenetik ile nasıl yıkıldığını anlatmaktadır. En uygun başlık A\'dır.'
   },
 
@@ -866,16 +866,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     passage: 'Around 1200 BCE, the sophisticated and interconnected palace civilizations of the Eastern Mediterranean—including the Mycenaeans in Greece, the Hittites in Anatolia, and the New Kingdom of Egypt—suffered a catastrophic unraveling known to historians as the Late Bronze Age Collapse. Within a few tumultuous decades, fortified imperial capitals were incinerated, intricate trade routes carrying tin and copper severed, and entire writing systems, such as Linear B, vanished into historical oblivion. Early twentieth-century historiography attributed this civilizational implosion exclusively to the marauding incursions of mysterious "Sea Peoples." However, contemporary paleoclimatological data derived from speleothems and lake sediment cores tell a far more complex tale. Prolonged megadroughts, combined with soil exhaustion and seismic tremors, triggered widespread famine. This ecological fragility fractured the centralized elite redistribution networks, making the crumbling empires vulnerable to nomadic raids and internal rebellions.',
     question: 'According to the passage, the collapse of the Late Bronze Age civilizations resulted in _____',
     options: {
-      A: 'the destruction of fortified urban centers and the loss of complex administrative writing systems.',
-      B: 'the immediate transition to advanced democratic institutions throughout Greece.',
-      C: 'the complete unification of the Eastern Mediterranean under Egyptian rule.',
-      D: 'an unprecedented expansion of maritime trade networks across the Atlantic.',
-      E: 'the peaceful relocation of imperial populations to fertile Anatolian valleys.'
+      A: 'the burning of fortified capitals, the breakdown of trade routes and the loss of writing systems.',
+      B: 'the gradual decline of trade in tin and copper over several centuries.',
+      C: 'the replacement of palace economies by a single empire based in Egypt.',
+      D: 'a series of invasions by the Sea Peoples, which caused all the destruction.',
+      E: 'the spread of new writing systems, such as Linear B, across the region.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Paragraf Doğrudan Bilgi Taraması: Çöküşün Sonuçları',
-    trapWarning: 'Metinde: "capitals were incinerated... writing systems vanished" doğrudan belirtilmiştir.',
+    trapWarning: 'B süreci yüzyıllara yayar; metin "within a few tumultuous decades" der. D eski tarih yazımının görüşüdür ve metin bunu yetersiz bulur. E ise Linear B\'nin kaybolduğu bilgisini tersine çevirir.',
     explanation: 'Çöküşün sonuçları: tahkim edilmiş şehirlerin yakılması ve Linear B gibi yazı sistemlerinin unutulup kaybolmasıdır. Doğru cevap A.'
   },
   {
@@ -884,16 +884,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '48. Soru - Paragraf 2',
     question: 'Modern historians differ from earlier twentieth-century researchers because modern scholars _____',
     options: {
-      A: 'incorporate paleoclimatological evidence showing that droughts and environmental stress drove the collapse.',
-      B: 'reject the idea that the Hittites or Mycenaeans ever existed in the Mediterranean basin.',
-      C: 'believe that the "Sea Peoples" were a peaceful coalition of agricultural traders.',
-      D: 'attribute the entire crisis solely to political corruption among Mycenaean kings.',
-      E: 'claim that the Bronze Age was a period of primitive cultural isolation.'
+      A: 'use climate evidence showing that droughts and environmental stress helped cause the collapse.',
+      B: 'believe that the Sea Peoples played no role whatsoever in the fall of these empires.',
+      C: 'argue that earthquakes alone were responsible for the destruction of the palaces.',
+      D: 'rely mainly on written records left by the Mycenaean and Hittite administrations.',
+      E: 'consider internal rebellions to be more important than any environmental factor.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Eski vs Yeni Görüş Karşılaştırması',
-    trapWarning: 'Eski tarihçiler sadece Deniz Kavimlerine bağlarken modern araştırmacılar iklim ve kuraklık verilerini entegre eder.',
+    trapWarning: 'B aşırıya kaçar: metin akınları dışlamaz, onları tek sebep olmaktan çıkarır. C tek bir faktörü öne çıkarır, D metinde geçmez, E ise metnin kurduğu sebep-sonuç ilişkisini ters çevirir.',
     explanation: 'Modern araştırmacılar: paleoklimatolojik verileri (mağara çökelleri ve göl tortulları) kullanarak kuraklık ve kıtlığın rolünü ortaya koymuştur. Doğru cevap A.'
   },
   {
@@ -902,16 +902,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '49. Soru - Paragraf 2',
     question: 'The passage suggests that the political systems of Bronze Age empires were fragile because _____',
     options: {
-      A: 'their highly centralized economies depended upon delicate ecological and agricultural stability.',
-      B: 'they possessed no defensive military weaponry or fortified city walls.',
-      C: 'their rulers refused to trade essential metals like copper and tin with neighbors.',
-      D: 'peasant farmers refused to cultivate cereals even during periods of abundant rain.',
-      E: 'priests and scribes intentionally destroyed administrative record systems.'
+      A: 'their centralized economies depended on stable climatic and agricultural conditions.',
+      B: 'their armies were too weak to defend fortified capitals against nomadic raiders.',
+      C: 'their rulers had stopped trading tin and copper with neighbouring kingdoms.',
+      D: 'their writing systems were too complex to keep accurate administrative records.',
+      E: 'their populations had grown too large for the region\'s trade networks to support.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Neden-Sonuç Çıkarımı: Merkezi Yönetimin Kırılganlığı',
-    trapWarning: 'Metin: "ecological fragility fractured the centralized elite redistribution networks" demektedir.',
+    trapWarning: 'Metin kırılganlığı ekolojik koşullara bağlar: "This ecological fragility fractured the centralized ... networks". B sonucu sebep gibi sunar, C ve D metinde olmayan iddialardır, E ise metinde geçmez.',
     explanation: 'Sistemlerin kırılganlığı: aşırı merkezi yapıların hassas tarımsal ve ekolojik dengeye bağımlı olmasından kaynaklanıyordu. Doğru cevap A.'
   },
   {
@@ -920,16 +920,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '50. Soru - Paragraf 2',
     question: 'The word "severed" in the passage is closest in meaning to _____',
     options: {
-      A: 'cut off / disconnected',
-      B: 'reconstructed',
-      C: 'expanded',
-      D: 'subsidized',
-      E: 'monopolized'
+      A: 'cut off',
+      B: 'rerouted',
+      C: 'restored',
+      D: 'taxed',
+      E: 'extended'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Kelime Bağlamı Analizi: Severed trade routes (Kopan/kesilen ticaret yolları)',
-    trapWarning: 'Sever fiili koparmak, kesmek, ayırmak demektir.',
+    trapWarning: 'Bağlamda ticaret yolları başkentlerin yakılması ve yazının kaybolmasıyla birlikte anılır; yani yollar kopmuştur. "rerouted" (yön değiştirmek) da akla gelebilir ama sever "kesmek, koparmak" demektir.',
     explanation: 'Sever: koparmak, kesmek. "trade routes severed" = ticaret yolları kesildi/bağlantısı koptu (cut off / disconnected). Doğru cevap A.'
   },
 
@@ -941,16 +941,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     passage: 'Optical space telescopes, such as Hubble, revolutionized our visual appreciation of the universe by capturing high-resolution imagery in the visible and ultraviolet wavelengths. Nevertheless, their observational capabilities are fundamentally constrained when gazing into the most distant and ancient reaches of the cosmos. Because the universe has been continuously expanding since the Big Bang, light emitted by primordial stars thirteen billion years ago has undergone cosmological redshift—its electromagnetic wavelength has stretched from short visible waves into long infrared radiation. Moreover, stellar nurseries are enveloped in opaque cosmic dust clouds that scatter visible light. The James Webb Space Telescope (JWST) circumvented these barriers through its massive gold-coated beryllium mirror and cryogenic mid-infrared instruments. By piercing through obscuring dust, JWST has revealed fully formed massive galaxies that existed merely a few hundred million years after the dawn of time, forcing theoretical cosmologists to revise models of early galaxy evolution.',
     question: 'It is stated in the passage that optical telescopes struggle to observe the earliest stars because _____',
     options: {
-      A: 'cosmological expansion has stretched the light from early stars into the infrared spectrum.',
-      B: 'primordial stars never emitted any form of electromagnetic radiation.',
-      C: 'Hubble’s mirrors were constructed from fragile gold-coated composites.',
-      D: 'the Big Bang destroyed all cosmic dust particles billions of years ago.',
-      E: 'infrared radiation cannot travel through the vacuum of interstellar space.'
+      A: 'the expansion of the universe has stretched their light into infrared wavelengths.',
+      B: 'the light from these stars is too faint to be detected by any instrument at all.',
+      C: 'their light has been shifted from infrared into shorter ultraviolet wavelengths.',
+      D: 'optical telescopes are unable to operate at the very low temperatures of space.',
+      E: 'the gold-coated mirrors of optical telescopes absorb most infrared radiation.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Doğrudan Bilgi Taraması: Redshift (Kızıla Kayma)',
-    trapWarning: 'Evrenin genişlemesi ışığı uzatarak görünür dalga boyundan kızılötesine kaydırmıştır.',
+    trapWarning: 'C kırmızıya kaymanın yönünü tersine çevirir: ışık kısa dalgadan uzun dalgaya (infrared) gider. B metinde olmayan bir genelleme, D ve E ise JWST\'ye ait ayrıntıları yanlış yere bağlar.',
     explanation: 'Metne göre: "cosmological redshift—its electromagnetic wavelength has stretched into long infrared radiation". Doğru cevap A.'
   },
   {
@@ -959,16 +959,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '52. Soru - Paragraf 3',
     question: 'According to the text, cosmic dust clouds _____',
     options: {
-      A: 'absorb and scatter visible light, hiding newborn stars from optical telescopes.',
-      B: 'magnify infrared wavelengths, allowing amateur astronomers to observe galaxies.',
-      C: 'were completely eliminated by the James Webb Space Telescope’s mirrors.',
-      D: 'prevent infrared light from reaching cryogenically cooled orbital spectrometers.',
-      E: 'are only located within our own immediate solar neighborhood.'
+      A: 'scatter visible light and hide stellar nurseries from optical telescopes.',
+      B: 'scatter infrared light and hide stellar nurseries from infrared telescopes.',
+      C: 'are the main cause of the cosmological redshift of ancient starlight.',
+      D: 'were cleared away by JWST, which allowed it to see the first galaxies.',
+      E: 'surround mainly old, dying stars rather than newly forming ones.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Toz Bulutlarının Etkisi: Görünür ışığı saçarak gizler',
-    trapWarning: 'Metin: "stellar nurseries are enveloped in opaque cosmic dust clouds that scatter visible light" der.',
+    trapWarning: 'B görünür ışık yerine kızılötesi der; oysa JWST tam da tozu kızılötesiyle aşar. C kırmızıya kaymanın sebebini değiştirir, D "piercing through" ifadesini "temizlemek" diye yorumlar, E ise "stellar nurseries" ile çelişir.',
     explanation: 'Kozmik toz bulutları: görünür ışığı saçar ve yıldız doğum yerlerini optik teleskoplardan gizler. Doğru cevap A.'
   },
   {
@@ -977,16 +977,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '53. Soru - Paragraf 3',
     question: 'One major scientific outcome of the observations made by JWST is that _____',
     options: {
-      A: 'cosmologists have had to modify existing theoretical models regarding early galaxy formation.',
-      B: 'theoretical physicists have entirely abandoned the concept of the expanding universe.',
-      C: 'optical telescopes like Hubble have been officially declared scientifically obsolete.',
-      D: 'extraterrestrial biological life has been confirmed on dozens of exoplanets.',
-      E: 'infrared astronomy has proven to be less accurate than visible-light observations.'
+      A: 'cosmologists have had to revise their models of how early galaxies formed.',
+      B: 'cosmologists have abandoned the idea that the universe is expanding.',
+      C: 'Hubble\'s observations of early galaxies have been shown to be inaccurate.',
+      D: 'massive galaxies are now known to have formed only billions of years after the Big Bang.',
+      E: 'the earliest galaxies were found to be smaller and dimmer than models predicted.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Son Cümle Analizi: Bilimsel Sonuç',
-    trapWarning: 'B şıkkında Big Bang terk edildi der; oysa sadece erken galaksi oluşum modelleri revize edilmektedir.',
+    trapWarning: 'D ve E bulguyu tersine çevirir: JWST Büyük Patlama\'dan yalnızca birkaç yüz milyon yıl sonra büyük galaksiler bulmuştur. B aşırı genellemedir, C ise metinde geçmez.',
     explanation: 'JWST\'nin sonucu: "forcing theoretical cosmologists to revise models of early galaxy evolution" (kuramcıları erken galaksi evrimi modellerini revize etmeye zorladı). Doğru cevap A.'
   },
   {
@@ -996,15 +996,15 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     question: 'The author\'s tone regarding the James Webb Space Telescope can best be described as _____',
     options: {
       A: 'appreciative and informative',
-      B: 'skeptical and dismissive',
-      C: 'cynical and sarcastic',
-      D: 'alarmist and pessimistic',
-      E: 'apathetic and indifferent'
+      B: 'cautious and doubtful',
+      C: 'neutral but critical',
+      D: 'enthusiastic but alarmed',
+      E: 'detached and indifferent'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Yazarın Tavrı (Author\'s Tone): Takdir edici ve bilgilendirici',
-    trapWarning: 'Yazar JWST\'nin engelleri nasıl aştığını ve bilime katkısını tarafsız ve takdirkar bir dille anlatır.',
+    trapWarning: 'Yazar JWST\'nin engelleri nasıl aştığını açıklar ve katkısını takdir eder. Metinde şüphe, eleştiri ya da endişe yoktur; kayıtsız bir dil de kullanılmaz.',
     explanation: 'Yazar JWST\'nin başarısını ve bilimsel katkılarını nesnel, takdirkar ve bilgilendirici bir tonda sunmaktadır. Doğru cevap A.'
   },
 
@@ -1016,16 +1016,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     passage: 'Throughout the Industrial Revolution, technological mechanization primarily replaced physical labor, substituting steam turbines and automated looms for human muscle power while expanding demand for cognitive and administrative personnel. However, contemporary advancements in generative artificial intelligence and neural algorithms are upending this historical labor pattern. For the first time, automated systems are demonstrating superior competence in tasks once considered the exclusive province of highly educated professionals, including contract synthesis, radiologic image diagnostics, and software programming. Labor economists warn that this shift could induce unprecedented polarization in white-collar employment. While high-tier creative innovators who can orchestrate these algorithms may experience exponential productivity surges, routine intellectual workers face widespread redundancy. Consequently, academic institutions must fundamentally redesign curricula to emphasize interpersonal empathy, critical epistemological reasoning, and multidisciplinary synthesis—cognitive attributes where biological humans still retain an evolutionary edge.',
     question: 'Unlike 19th-century industrial mechanization, modern artificial intelligence _____',
     options: {
-      A: 'threatens intellectual and cognitive professional roles rather than merely manual labor.',
-      B: 'primarily affects agricultural workers in developing rural economies.',
-      C: 'has increased the demand for repetitive manual data entry clerks.',
-      D: 'guarantees equal economic compensation across all sectors of the workforce.',
-      E: 'requires vast quantities of physical steam power to maintain computational operations.'
+      A: 'is replacing highly educated professionals rather than only physical labor.',
+      B: 'is replacing physical labor while increasing demand for office workers.',
+      C: 'is creating more jobs for highly educated professionals than it removes.',
+      D: 'affects creative innovators and routine intellectual workers in the same way.',
+      E: 'has so far had little effect on professions such as law and medicine.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Tarihsel Karşılaştırma Sorusu: Fiziksel Güç vs Zihinsel Emek',
-    trapWarning: 'Sanayi devrimi fiziksel gücün yerini almıştı; yapay zeka ise eğitimli zihinsel meslekleri (hukuk, tıp, kodlama) etkiler.',
+    trapWarning: 'B sanayi devriminin özelliğini yapay zekaya yükler. C ve E metinle çelişir, D ise kutuplaşma fikrini yok sayar.',
     explanation: 'Fark: Modern yapay zeka sadece el emeğini değil, entelektüel ve bilişsel profesyonel rolleri tehdit etmektedir (A şıkkı).'
   },
   {
@@ -1034,16 +1034,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '56. Soru - Paragraf 4',
     question: 'According to the passage, the implementation of AI could lead to white-collar polarization because _____',
     options: {
-      A: 'elite innovators will become far more productive while routine intellectual workers risk becoming redundant.',
-      B: 'all university graduates will receive identical salaries regardless of discipline.',
-      C: 'corporations will completely eliminate all computer systems in favor of manual bookkeeping.',
-      D: 'routine office workers will voluntarily resign to pursue industrial agricultural jobs.',
-      E: 'software programmers will refuse to collaborate with artificial neural networks.'
+      A: 'creative innovators may become far more productive while routine intellectual workers lose their jobs.',
+      B: 'routine intellectual workers may become far more productive while creative innovators lose their jobs.',
+      C: 'most white-collar workers will need to move into manual jobs that algorithms cannot perform.',
+      D: 'universities are no longer training students in the skills that employers need.',
+      E: 'algorithms are better at software programming than at contract synthesis or diagnostics.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Kutuplaşmanın Nedeni: Rutin işler elenirken elit yöneticilerin verimi katlanır.',
-    trapWarning: 'Metin açıkça: "innovators experience productivity surges, routine intellectual workers face redundancy" der.',
+    trapWarning: 'B iki grubun yerini değiştirir. C metinde olmayan bir sonuç çıkarır, D metnin önerisini sebep gibi sunar, E ise metinde olmayan bir karşılaştırma yapar.',
     explanation: 'Beyaz yaka kutuplaşmasının sebebi: algoritmaları yöneten elitlerin aşırı üretkenleşmesi, rutin büro çalışanlarının ise işsiz kalma riskidir. Doğru cevap A.'
   },
   {
@@ -1052,16 +1052,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '57. Soru - Paragraf 4',
     question: 'The author suggests that higher education institutions should adapt to AI advancements by _____',
     options: {
-      A: 'cultivating uniquely human skills like empathy, critical evaluation, and holistic synthesis.',
-      B: 'forcing all undergraduate students to memorize standardized corporate contracts.',
-      C: 'banning students from utilizing any digital technology in university classrooms.',
-      D: 'shutting down medical and legal academic departments completely.',
-      E: 'focusing exclusively on mechanical typing speed and repetitive arithmetic calculations.'
+      A: 'focusing on human strengths such as empathy, critical reasoning and combining different disciplines.',
+      B: 'training students to program and orchestrate the algorithms that are replacing professionals.',
+      C: 'reducing the number of students admitted to programs in law, medicine and computing.',
+      D: 'teaching students to perform routine intellectual tasks faster and more accurately.',
+      E: 'specializing each student in a single discipline rather than in several fields.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Çözüm Önerisi Tespiti: Üniversitelerin rolü',
-    trapWarning: 'Yazar ezberciliği değil; empati, eleştirel düşünme ve çok disiplinli sentezi ön plana çıkarır.',
+    trapWarning: 'B metinde geçen "orchestrate these algorithms" ifadesini kullanır ama yazarın eğitim önerisi bu değildir. D tam da yapay zekanın devraldığı işleri önerir, E ise "multidisciplinary synthesis" ile çelişir.',
     explanation: 'Üniversiteler müfredatlarını: empati, eleştirel düşünme ve sentez gibi insanın evrimsel üstünlük taşıdığı alanlara odaklamalıdır. Doğru cevap A.'
   },
   {
@@ -1070,16 +1070,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '58. Soru - Paragraf 4',
     question: 'The word "redundancy" in the passage refers to _____',
     options: {
-      A: 'joblessness / being no longer needed in employment',
-      B: 'unprecedented financial bonuses',
-      C: 'rapid international promotion',
-      D: 'technological immortality',
-      E: 'academic excellence'
+      A: 'losing one\'s job because it is no longer needed',
+      B: 'being moved to a different department',
+      C: 'having to work longer hours for the same pay',
+      D: 'retiring early on a reduced pension',
+      E: 'being retrained for a more creative role'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'İş Dünyası / Ekonomi Terminolojisi: Redundancy (İşten çıkarılma / Fazlalık olma)',
-    trapWarning: 'Redundancy İngiliz iş hukukunda personelin ihtiyaç fazlası olup işten çıkarılması durumudur.',
+    trapWarning: 'Bağlamda üretkenliği artanlarla "redundancy" ile karşılaşanlar karşılaştırılır. Redundancy, işin artık gerekmediği için işten çıkarılmaktır. B ve E işini koruyan durumlardır.',
     explanation: 'Face widespread redundancy: işsizlik / ihtiyaç fazlası haline gelme riskiyle karşı karşıya kalır. Doğru cevap A.'
   },
 
@@ -1091,16 +1091,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     passage: 'While public concern regarding anthropogenic climate change predominantly focuses on atmospheric thermal increases, oceans absorb over twenty-five percent of industrial carbon dioxide emissions, driving a quiet ecological crisis known as ocean acidification. When carbon dioxide dissolves into seawater, it undergoes a chemical reaction that generates carbonic acid, liberating hydrogen ions that bind with ambient carbonate ions. This chemical sequence drastically depletes the free carbonate ions that calcifying marine organisms—such as reef-building scleractinian corals, pteropods, and shellfish—require to synthesize their calcium carbonate exoskeletons. In increasingly acidic waters, existing shells literally begin to dissolve. Because coral reefs harbor over twenty-five percent of all marine biodiversity despite occupying less than one percent of the ocean floor, their architectural collapse threatens coastal protective buffers and the primary protein source for a billion coastal inhabitants.',
     question: 'It can be inferred from the passage that ocean acidification is chemically caused by _____',
     options: {
-      A: 'the absorption of excess atmospheric carbon dioxide forming carbonic acid in seawater.',
-      B: 'uncontrolled thermal radiation emitted by underwater volcanic fissures.',
-      C: 'the excessive dumping of synthetic plastic polymers into coastal wetlands.',
-      D: 'the complete absence of hydrogen ions in equatorial maritime currents.',
-      E: 'the overpopulation of calcifying shellfish species in tropical coral atolls.'
+      A: 'carbon dioxide from the atmosphere dissolving in seawater and forming carbonic acid.',
+      B: 'rising ocean temperatures that increase the amount of carbonate in seawater.',
+      C: 'the release of carbonate ions from the dissolving shells of marine organisms.',
+      D: 'hydrogen ions being removed from seawater by reef-building corals.',
+      E: 'carbonic acid entering the oceans directly from industrial waste water.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Doğrudan Bilgi: Asitlenmenin Kimyasal Nedeni',
-    trapWarning: 'Metin: "CO2 dissolves into seawater, forming carbonic acid" sürecini doğrudan anlatır.',
+    trapWarning: 'B metnin karşı çıktığı sıcaklık odağını sebep yapar. C sonucu sebep gibi sunar, D süreci tersine çevirir, E ise karbonik asidin denizde oluştuğu bilgisini değiştirir.',
     explanation: 'Okyanus asitlenmesi: atmosferik karbondioksitin deniz suyuna karışarak karbonik asit oluşturmasıyla meydana gelir. Doğru cevap A.'
   },
   {
@@ -1109,16 +1109,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '60. Soru - Paragraf 5',
     question: 'According to the passage, calcifying marine organisms suffer in acidified oceans because _____',
     options: {
-      A: 'the depletion of free carbonate ions impairs their ability to construct and maintain protective shells.',
-      B: 'predatory fish populations consume coral polyps at an accelerated rate.',
-      C: 'cooler water temperatures force shellfish to migrate towards polar abyssal zones.',
-      D: 'dissolved oxygen concentrations reach lethally high saturation levels.',
-      E: 'photosynthetic algae produce toxic quantities of glucose within coral tissues.'
+      A: 'fewer free carbonate ions are available for them to build and maintain their shells.',
+      B: 'hydrogen ions attach directly to their shells and make them heavier.',
+      C: 'the excess carbonate ions in acidic water make their shells too thick.',
+      D: 'warmer surface waters force them to move into deeper, darker regions.',
+      E: 'carbonic acid prevents them from absorbing enough dissolved oxygen.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Organizmalar Neden Zarar Görür? Karbonat iyonu tükenmesi',
-    trapWarning: 'Metin: serbest karbonat iyonlarının azalması sonucu kabuklarını inşa edemediklerini söyler.',
+    trapWarning: 'B hidrojen iyonlarının bağlandığı yeri değiştirir: metinde karbonat iyonlarına bağlanırlar. C karbonat azalmasını artış olarak verir, D ve E metinde geçmez.',
     explanation: 'Kabuklu canlılar zarar görür çünkü: serbest karbonat iyonlarının tükenmesi kabuk üretmelerini engeller ve var olan kabukları eritir. Doğru cevap A.'
   },
   {
@@ -1127,16 +1127,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '61. Soru - Paragraf 5',
     question: 'The ecological importance of coral reefs is highlighted by the fact that they _____',
     options: {
-      A: 'sustain a quarter of marine biodiversity despite covering less than one percent of the seabed.',
-      B: 'supply all industrial carbon dioxide required for terrestrial plant photosynthesis.',
-      C: 'prevent polar ice shelves from calving into sub-Antarctic ocean currents.',
-      D: 'are completely impervious to any form of chemical contamination.',
-      E: 'exist exclusively in deep-sea trenches where sunlight cannot penetrate.'
+      A: 'support about a quarter of marine life even though they cover less than one percent of the seabed.',
+      B: 'cover about a quarter of the seabed and support most of the marine life in the oceans.',
+      C: 'absorb more than twenty-five percent of the carbon dioxide released by industry.',
+      D: 'provide the main source of protein for most of the world\'s population.',
+      E: 'are able to rebuild their structures quickly once the water becomes less acidic.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Paragraf İstatistiği Taraması: %25 biyoçeşitlilik / <%1 alan',
-    trapWarning: 'Metindeki son cümle doğrudan bu oranı vermektedir.',
+    trapWarning: 'B oranları yer değiştirir. C yüzde 25\'i okyanusların emdiği CO2 ile karıştırır. D "bir milyar kıyı sakini" bilgisini tüm dünyaya genişletir, E ise metinde geçmez.',
     explanation: 'Mercanların önemi: deniz tabanının %1\'inden azını kaplamalarına rağmen tüm denizel biyoçeşitliliğin dörtte birini barındırmalarıdır. Doğru cevap A.'
   },
   {
@@ -1145,16 +1145,16 @@ const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
     title: '62. Soru - Paragraf 5',
     question: 'The passage implies that the destruction of coral reef architectures would _____',
     options: {
-      A: 'undermine food security for human populations relying on coastal fisheries for nutrition.',
-      B: 'substantially reduce carbon dioxide concentrations throughout the global atmosphere.',
-      C: 'force shellfish to evolve non-calcified titanium exoskeletons within decades.',
-      D: 'eliminate all tidal waves and coastal flooding along continental coastlines.',
-      E: 'have zero measurable economic consequences for international seafood markets.'
+      A: 'threaten the food supply of coastal communities that depend on reefs for protein.',
+      B: 'reduce the ability of the oceans to absorb carbon dioxide from the atmosphere.',
+      C: 'mainly affect shellfish and pteropods rather than human communities.',
+      D: 'increase the amount of free carbonate available to other marine organisms.',
+      E: 'have a greater impact on deep-sea species than on coastal ecosystems.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'İnsan Üzerindeki Çıkarım: Gıda Güvenliği Tehdidi',
-    trapWarning: 'Son cümle: "threatens coastal buffers and the primary protein source for a billion coastal inhabitants" demektedir.',
+    trapWarning: 'Son cümle resiflerin çöküşünün kıyıları ve bir milyar insanın protein kaynağını tehdit ettiğini söyler. B makul görünür ama metinde geçmez. C insan boyutunu yok sayar, D ve E ise metinle çelişir.',
     explanation: 'Mercanların yok olması: kıyıda yaşayan bir milyar insanın birincil protein kaynağını ve gıda güvenliğini tehdit eder. Doğru cevap A.'
   },
 
