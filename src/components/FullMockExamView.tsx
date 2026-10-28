@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Timer, AlertTriangle, CheckCircle2, XCircle, Award, BarChart3, ChevronRight, ChevronLeft, Flag, HelpCircle, ShieldAlert, Sparkles, BookMarked, RotateCcw, Brain, BatteryCharging, Zap, Info } from 'lucide-react';
 import { YdsQuestion, MockExamResult } from '../types';
 import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3, YDS_MOCK_EXAMS_LIST } from '../data/ydsFullMockExam';
+import { analyzeExam, formatSeconds, getPaceStatus, PACE_TARGET_SECONDS } from '../services/examInsights';
 
 interface FullMockExamViewProps {
   onAddMistake: (questionId: string) => void;
@@ -25,6 +26,8 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
   // 180 Dakika = 10,800 Saniye
   const [timeLeft, setTimeLeft] = useState<number>(180 * 60);
   const [isTimerPaused, setIsTimerPaused] = useState<boolean>(false);
+  // Seconds spent on each question, for per-type pacing feedback
+  const [secondsSpent, setSecondsSpent] = useState<Record<string, number>>({});
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState<boolean>(false);
 
   // 60. Soru Glikoz & Zihinsel Kriz Kalkanı
@@ -53,7 +56,9 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
   useEffect(() => {
     let interval: ReturnType<typeof setInterval> | null = null;
     if (examState === 'active' && !isTimerPaused && timeLeft > 0) {
+      const activeQuestionId = currentQ.id;
       interval = setInterval(() => {
+        setSecondsSpent((prev) => ({ ...prev, [activeQuestionId]: (prev[activeQuestionId] || 0) + 1 }));
         setTimeLeft((prev) => {
           if (prev <= 1) {
             handleAutoSubmit();
@@ -66,12 +71,13 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [examState, isTimerPaused, timeLeft]);
+  }, [examState, isTimerPaused, timeLeft, currentQ.id]);
 
   const handleStartExam = () => {
     setUserAnswers({});
     setFlaggedQuestions({});
     setStruckOptions({});
+    setSecondsSpent({});
     setTimeLeft(180 * 60);
     setCurrentIndex(0);
     setHasShownStaminaModal(false);
@@ -176,16 +182,6 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
 
   const answeredCount = Object.keys(userAnswers).length;
   const flaggedCount = Object.values(flaggedQuestions).filter(Boolean).length;
-
-  const getRecommendedPacing = (idx: number) => {
-    if (idx < 6) return '~45 sn (Kelime)';
-    if (idx < 16) return '~40 sn (Gramer)';
-    if (idx < 26) return '~1 dk (Cloze)';
-    if (idx < 36) return '~1.5 dk (Cümle Tamamlama)';
-    if (idx < 42) return '~1.5 dk (Çeviri)';
-    if (idx < 62) return '~2.5 dk (Paragraf)';
-    return '~1.5 dk (Son 20 Soru / Kondisyon)';
-  };
 
   return (
     <div className="max-w-5xl mx-auto space-y-6 pb-24 md:pb-12 px-2">
@@ -356,13 +352,29 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
                 {answeredCount} / 80 İşaretlendi
               </span>
 
-              {/* Soru Başına İdeal Süre Rehberi */}
-              {examState === 'active' && (
-                <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
-                  <Zap className="w-3 h-3 text-indigo-500" />
-                  <span>İdeal Hız: {getRecommendedPacing(currentIndex)}</span>
-                </span>
-              )}
+              {/* Bu sorudaki süre / hedef süre */}
+              {examState === 'active' && (() => {
+                const elapsed = secondsSpent[currentQ.id] || 0;
+                const status = getPaceStatus(elapsed, currentQ.type);
+                const tone =
+                  status === 'over'
+                    ? 'bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800'
+                    : status === 'warn'
+                    ? 'bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800'
+                    : 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800';
+                return (
+                  <span
+                    data-testid="question-pace"
+                    className={`inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg border ${tone}`}
+                  >
+                    <Zap className="w-3 h-3" />
+                    <span>
+                      Bu soru: {formatSeconds(elapsed)} / hedef {PACE_TARGET_SECONDS[currentQ.type]} sn
+                      {status === 'over' && ' · Süre aşıldı, işaretle ve geç'}
+                    </span>
+                  </span>
+                );
+              })()}
             </div>
 
             <div className="flex items-center gap-2">
@@ -425,6 +437,69 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
               <p className="text-xs text-slate-600 dark:text-slate-400">
                 💡 Yanlış yaptığınız tüm sorular otomatik olarak <strong>Hata Defteri</strong>'ne eklenmiştir. Aşağıdaki sorularda doğrudan doğru cevapları, soru taktiklerini ve ÖSYM çeldirici uyarılarını inceleyebilirsiniz.
               </p>
+
+              {(() => {
+                const insights = analyzeExam(questions, userAnswers, secondsSpent);
+                return (
+                  <div className="space-y-4" data-testid="exam-insights">
+                    <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-4">
+                      <p className="text-xs font-bold text-slate-500 dark:text-slate-400">Tahmini YDS puanı</p>
+                      <p className="text-xl font-black text-slate-900 dark:text-white">
+                        {insights.score} <span className="text-sm font-bold text-slate-500">(gerçek sınavda muhtemel aralık {insights.scoreLow}-{insights.scoreHigh})</span>
+                      </p>
+                      <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
+                        Tek deneme bir örneklemdir; aralık daralsın diye en az 3 denemenin ortalamasına bak. 75 için 80 sorudan 60 doğru gerekir.
+                      </p>
+                    </div>
+
+                    <div className="overflow-x-auto bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700">
+                      <table className="w-full text-xs">
+                        <thead>
+                          <tr className="text-left text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-700">
+                            <th className="p-2.5 font-bold">Soru tipi</th>
+                            <th className="p-2.5 font-bold">Doğru</th>
+                            <th className="p-2.5 font-bold">75 hedefi</th>
+                            <th className="p-2.5 font-bold">Ort. süre</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {insights.types.map((t) => (
+                            <tr key={t.type} className="border-b last:border-0 border-slate-100 dark:border-slate-700/60">
+                              <td className="p-2.5 font-bold text-slate-700 dark:text-slate-200">{t.label}</td>
+                              <td className={`p-2.5 font-bold ${t.pointsBelowTarget > 0 ? 'text-rose-600' : 'text-emerald-600'}`}>
+                                {t.correct} / {t.total}
+                              </td>
+                              <td className="p-2.5 text-slate-500 dark:text-slate-400">{Math.ceil(t.targetRate * t.total)} / {t.total}</td>
+                              <td className={`p-2.5 ${t.overTime ? 'text-amber-600 font-bold' : 'text-slate-500 dark:text-slate-400'}`}>
+                                {t.avgSeconds !== null ? `${t.avgSeconds} sn (hedef ${t.targetSeconds})` : '-'}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+
+                    {insights.recommendations.length > 0 && (
+                      <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-4 space-y-2">
+                        <p className="text-xs font-black text-slate-700 dark:text-slate-200">Önce bunlara çalış</p>
+                        <ol className="list-decimal pl-4 space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+                          {insights.recommendations.map((r) => (
+                            <li key={r.type}>
+                              <strong>{r.label}</strong> (hedefin {r.pointsBelowTarget} puan altında): {r.text}
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                    )}
+
+                    {insights.slowTypes.length > 0 && (
+                      <p className="text-xs text-amber-700 dark:text-amber-300">
+                        Süre aşımı: {insights.slowTypes.map((t) => t.label).join(', ')} sorularında hedef sürenin üstündesin.
+                      </p>
+                    )}
+                  </div>
+                );
+              })()}
             </div>
           )}
 
