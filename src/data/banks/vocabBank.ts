@@ -9288,6 +9288,1331 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
   },
   {
     "id": "wb0349",
+    "word": "give rise to",
+    "type": "phrasal_verb",
+    "meaning": "yol açmak, neden olmak",
+    "synonyms": [
+      "cause",
+      "lead to",
+      "bring about"
+    ],
+    "collocations": [
+      "give rise to concerns",
+      "give rise to problems"
+    ],
+    "exampleEn": "The use of pesticides has given rise to serious health concerns among farmers.",
+    "exampleTr": "Böcek ilacı kullanımı çiftçiler arasında ciddi sağlık endişelerine yol açtı.",
+    "ydsTip": "give rise to + isim = cause. ÖSYM bunu \"lead to / result in\" ile eş anlamlı sorar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Bir şeyin yükselmesine (rise) imkân vermek (give)\": sorunun ayağa kalkmasına izin vermek = yol açmak.",
+    "distractors": [
+      "give up",
+      "give in",
+      "give away",
+      "give off"
+    ],
+    "groupDay": 19
+  },
+  {
+    "id": "wb0350",
+    "word": "take into account",
+    "type": "phrasal_verb",
+    "meaning": "hesaba katmak, göz önünde bulundurmak",
+    "synonyms": [
+      "consider",
+      "allow for",
+      "bear in mind"
+    ],
+    "collocations": [
+      "take into account the cost"
+    ],
+    "exampleEn": "Doctors must take into account the patient's age before prescribing the drug.",
+    "exampleTr": "Doktorlar ilacı reçete etmeden önce hastanın yaşını hesaba katmalıdır.",
+    "ydsTip": "\"take sth into account\" = \"take account of sth\" = consider.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: ACCOUNT (hesap). Bir şeyi hesabın içine almak = hesaba katmak.",
+    "distractors": [
+      "take over",
+      "take after",
+      "take up",
+      "take off"
+    ],
+    "groupDay": 20
+  },
+  {
+    "id": "wb0351",
+    "word": "take up",
+    "type": "phrasal_verb",
+    "meaning": "(yer, zaman) kaplamak; (hobi, iş) başlamak",
+    "synonyms": [
+      "occupy",
+      "start",
+      "begin"
+    ],
+    "collocations": [
+      "take up space",
+      "take up a hobby"
+    ],
+    "exampleEn": "Old paper files take up a lot of space in the office.",
+    "exampleTr": "Eski kâğıt dosyalar ofiste çok yer kaplıyor.",
+    "ydsTip": "take up iki anlamlı: \"yer kaplamak\" ve \"bir uğraşa başlamak\".",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: TAKE UP: yukarıya kadar alanı almak = yer kaplamak. Yeni bir hobiyi elinle yukarı almak = başlamak.",
+    "distractors": [
+      "take after",
+      "take off",
+      "take in",
+      "take over"
+    ],
+    "groupDay": 21
+  },
+  {
+    "id": "wb0352",
+    "word": "take off",
+    "type": "phrasal_verb",
+    "meaning": "havalanmak; hızla başarılı olmak",
+    "synonyms": [
+      "lift off",
+      "succeed",
+      "boom"
+    ],
+    "collocations": [
+      "sales take off",
+      "plane takes off"
+    ],
+    "exampleEn": "Sales of electric bikes really took off after the government introduced subsidies.",
+    "exampleTr": "Hükümet destek getirdikten sonra elektrikli bisiklet satışları gerçekten hızla arttı.",
+    "ydsTip": "take off: uçak için \"kalkmak\", iş/ürün için \"hızla başarılı olmak\".",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: Uçak \"take off\" eder, yerden kalkar. Satışlar da yerden kalkıp uçarsa = hızla yükselir.",
+    "distractors": [
+      "take after",
+      "take in",
+      "take apart",
+      "take over"
+    ],
+    "groupDay": 22
+  },
+  {
+    "id": "wb0353",
+    "word": "turn out",
+    "type": "phrasal_verb",
+    "meaning": "ortaya çıkmak, ... olduğu anlaşılmak",
+    "synonyms": [
+      "prove",
+      "emerge",
+      "transpire"
+    ],
+    "collocations": [
+      "turn out to be",
+      "as it turned out"
+    ],
+    "exampleEn": "The so-called miracle cure turned out to be completely ineffective.",
+    "exampleTr": "Sözde mucizevi tedavinin tamamen etkisiz olduğu ortaya çıktı.",
+    "ydsTip": "turn out to be = prove to be: sonradan anlaşılan gerçek.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: TURN (dönmek) + OUT (dışarı). Kart çevrilip dışarı dönünce gerçek görünür = ortaya çıkmak.",
+    "distractors": [
+      "turn down",
+      "turn up",
+      "turn over",
+      "turn off"
+    ],
+    "groupDay": 23
+  },
+  {
+    "id": "wb0354",
+    "word": "turn into",
+    "type": "phrasal_verb",
+    "meaning": "-e dönüşmek",
+    "synonyms": [
+      "become",
+      "change into",
+      "transform into"
+    ],
+    "collocations": [
+      "turn into a disaster"
+    ],
+    "exampleEn": "Without careful planning, a small fire can quickly turn into a disaster.",
+    "exampleTr": "Dikkatli planlama olmadan küçük bir yangın hızla bir felakete dönüşebilir.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: TURN (dönmek) + INTO (içine). Başka bir şeyin içine dönüşmek.",
+    "distractors": [
+      "turn down",
+      "turn up",
+      "turn away",
+      "turn off"
+    ],
+    "groupDay": 24
+  },
+  {
+    "id": "wb0355",
+    "word": "live up to",
+    "type": "phrasal_verb",
+    "meaning": "(beklentiyi) karşılamak, -e layık olmak",
+    "synonyms": [
+      "meet",
+      "fulfil",
+      "match"
+    ],
+    "collocations": [
+      "live up to expectations"
+    ],
+    "exampleEn": "The new smartphone failed to live up to customers' expectations.",
+    "exampleTr": "Yeni akıllı telefon müşterilerin beklentilerini karşılayamadı.",
+    "ydsTip": "live up to + expectations/reputation kalıbıyla gelir.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: LIVE UP TO: beklentinin seviyesine kadar yukarı yaşamak = beklentiyi karşılamak.",
+    "distractors": [
+      "live on",
+      "live off",
+      "live through",
+      "live with"
+    ],
+    "groupDay": 25
+  },
+  {
+    "id": "wb0356",
+    "word": "pick up",
+    "type": "phrasal_verb",
+    "meaning": "(dil, beceri) kapmak, öğrenmek; toplamak",
+    "synonyms": [
+      "learn",
+      "acquire",
+      "collect"
+    ],
+    "collocations": [
+      "pick up a language",
+      "pick up speed"
+    ],
+    "exampleEn": "Children pick up new languages much more easily than adults.",
+    "exampleTr": "Çocuklar yeni dilleri yetişkinlerden çok daha kolay kapar.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: PICK (toplamak) + UP. Yerden toplar gibi dili yoldan \"kapıvermek\".",
+    "distractors": [
+      "pick out",
+      "pick on",
+      "pick off",
+      "pick through"
+    ],
+    "groupDay": 26
+  },
+  {
+    "id": "wb0357",
+    "word": "pull out",
+    "type": "phrasal_verb",
+    "meaning": "çekilmek, geri çekilmek",
+    "synonyms": [
+      "withdraw",
+      "retreat",
+      "back out"
+    ],
+    "collocations": [
+      "pull out of a deal",
+      "pull out troops"
+    ],
+    "exampleEn": "Several investors pulled out of the project because of rising costs.",
+    "exampleTr": "Artan maliyetler nedeniyle birkaç yatırımcı projeden çekildi.",
+    "ydsTip": "pull out of + isim: bir anlaşmadan/işten çekilmek.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: PULL (çekmek) + OUT (dışarı). Kendini dışarı çekmek = çekilmek.",
+    "distractors": [
+      "pull through",
+      "pull up",
+      "pull over",
+      "pull together"
+    ],
+    "groupDay": 27
+  },
+  {
+    "id": "wb0358",
+    "word": "refer to",
+    "type": "phrasal_verb",
+    "meaning": "-e atıfta bulunmak, -den bahsetmek; -e başvurmak",
+    "synonyms": [
+      "mention",
+      "cite",
+      "consult"
+    ],
+    "collocations": [
+      "refer to a study",
+      "refer to as"
+    ],
+    "exampleEn": "In his speech, the president referred to the recent floods.",
+    "exampleTr": "Başkan konuşmasında son sellerden bahsetti.",
+    "ydsTip": "\"be referred to as\" = olarak adlandırılmak.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (geri) + FER (taşımak). Konuyu geriye taşıyıp ondan söz etmek. \"Referans\" = başvurulan kaynak.",
+    "distractors": [
+      "confer with",
+      "defer to",
+      "infer from",
+      "prefer to"
+    ],
+    "groupDay": 28
+  },
+  {
+    "id": "wb0359",
+    "word": "give away",
+    "type": "phrasal_verb",
+    "meaning": "bedavaya vermek; (sır) ele vermek",
+    "synonyms": [
+      "donate",
+      "reveal",
+      "disclose"
+    ],
+    "collocations": [
+      "give away secrets",
+      "give away free"
+    ],
+    "exampleEn": "The company gave away thousands of free masks during the pandemic.",
+    "exampleTr": "Şirket pandemi sırasında binlerce ücretsiz maske dağıttı.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: GIVE (vermek) + AWAY (uzağa). Elinden uzağa verip gitmek = bedavaya dağıtmak.",
+    "distractors": [
+      "give off",
+      "give in",
+      "give up",
+      "give rise to"
+    ],
+    "groupDay": 29
+  },
+  {
+    "id": "wb0360",
+    "word": "hold up",
+    "type": "phrasal_verb",
+    "meaning": "geciktirmek, engellemek; ayakta kalmak",
+    "synonyms": [
+      "delay",
+      "hinder",
+      "withstand"
+    ],
+    "collocations": [
+      "be held up",
+      "hold up traffic"
+    ],
+    "exampleEn": "The shipment was held up at customs for two weeks.",
+    "exampleTr": "Sevkiyat gümrükte iki hafta bekletildi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: HOLD (tutmak) + UP. Yukarıda tutup ilerletmemek = geciktirmek.",
+    "distractors": [
+      "hold on",
+      "hold out",
+      "hold off",
+      "hold forth"
+    ],
+    "groupDay": 30
+  },
+  {
+    "id": "wb0361",
+    "word": "let down",
+    "type": "phrasal_verb",
+    "meaning": "hayal kırıklığına uğratmak",
+    "synonyms": [
+      "disappoint",
+      "fail",
+      "abandon"
+    ],
+    "collocations": [
+      "feel let down",
+      "let someone down"
+    ],
+    "exampleEn": "Many voters felt let down by the government's broken promises.",
+    "exampleTr": "Pek çok seçmen hükümetin tutulmayan sözleri yüzünden hayal kırıklığına uğradı.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: LET (bırakmak) + DOWN (aşağı). Birini aşağı bırakmak = hayal kırıklığına uğratmak.",
+    "distractors": [
+      "let in",
+      "let off",
+      "let out",
+      "let on"
+    ],
+    "groupDay": 1
+  },
+  {
+    "id": "wb0362",
+    "word": "break into",
+    "type": "phrasal_verb",
+    "meaning": "zorla girmek; (piyasaya) girmek",
+    "synonyms": [
+      "burgle",
+      "enter",
+      "penetrate"
+    ],
+    "collocations": [
+      "break into a house",
+      "break into a market"
+    ],
+    "exampleEn": "Thieves broke into the museum and stole several valuable paintings.",
+    "exampleTr": "Hırsızlar müzeye zorla girerek birkaç değerli tablo çaldı.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: BREAK (kırmak) + INTO (içine). Kapıyı kırıp içine girmek.",
+    "distractors": [
+      "break up",
+      "break down",
+      "break out",
+      "break through"
+    ],
+    "groupDay": 2
+  },
+  {
+    "id": "wb0363",
+    "word": "bring out",
+    "type": "phrasal_verb",
+    "meaning": "(ürün) piyasaya sürmek; ortaya çıkarmak",
+    "synonyms": [
+      "launch",
+      "release",
+      "reveal"
+    ],
+    "collocations": [
+      "bring out a product",
+      "bring out the best"
+    ],
+    "exampleEn": "The company plans to bring out a cheaper version of its electric car next year.",
+    "exampleTr": "Şirket gelecek yıl elektrikli arabasının daha ucuz bir versiyonunu piyasaya sürmeyi planlıyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: BRING (getirmek) + OUT (dışarı). Ürünü fabrikadan dışarı getirmek = piyasaya sürmek.",
+    "distractors": [
+      "bring about",
+      "bring up",
+      "bring down",
+      "bring in"
+    ],
+    "groupDay": 3
+  },
+  {
+    "id": "wb0364",
+    "word": "bring down",
+    "type": "phrasal_verb",
+    "meaning": "düşürmek, azaltmak; devirmek",
+    "synonyms": [
+      "reduce",
+      "lower",
+      "overthrow"
+    ],
+    "collocations": [
+      "bring down prices",
+      "bring down a government"
+    ],
+    "exampleEn": "The new policy helped bring down the cost of medicines.",
+    "exampleTr": "Yeni politika ilaç maliyetlerini düşürmeye yardımcı oldu.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: BRING (getirmek) + DOWN (aşağı). Fiyatları aşağı getirmek = düşürmek.",
+    "distractors": [
+      "bring up",
+      "bring about",
+      "bring in",
+      "bring forward"
+    ],
+    "groupDay": 4
+  },
+  {
+    "id": "wb0365",
+    "word": "come about",
+    "type": "phrasal_verb",
+    "meaning": "meydana gelmek, olmak",
+    "synonyms": [
+      "happen",
+      "occur",
+      "arise"
+    ],
+    "collocations": [
+      "how did it come about"
+    ],
+    "exampleEn": "Scientists are still trying to understand how the changes came about.",
+    "exampleTr": "Bilim insanları değişikliklerin nasıl meydana geldiğini hâlâ anlamaya çalışıyor.",
+    "ydsTip": "come about = happen; bring about = cause. İkisi karıştırılır.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: COME (gelmek) + ABOUT (etrafta). Ortaya gelmek = meydana gelmek.",
+    "distractors": [
+      "come across",
+      "come up with",
+      "come down with",
+      "come into"
+    ],
+    "groupDay": 5
+  },
+  {
+    "id": "wb0366",
+    "word": "come up",
+    "type": "phrasal_verb",
+    "meaning": "(konu, sorun) gündeme gelmek, ortaya çıkmak",
+    "synonyms": [
+      "arise",
+      "crop up",
+      "emerge"
+    ],
+    "collocations": [
+      "come up in a discussion",
+      "problems come up"
+    ],
+    "exampleEn": "The question of funding came up at the last meeting.",
+    "exampleTr": "Finansman meselesi son toplantıda gündeme geldi.",
+    "ydsTip": "come up (gündeme gelmek) ile come up with (fikir bulmak) farklıdır.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: COME (gelmek) + UP (yukarı). Masanın üstüne gelmek = gündeme gelmek.",
+    "distractors": [
+      "come off",
+      "come over",
+      "come round",
+      "come by"
+    ],
+    "groupDay": 6
+  },
+  {
+    "id": "wb0367",
+    "word": "fall through",
+    "type": "phrasal_verb",
+    "meaning": "suya düşmek, gerçekleşmemek",
+    "synonyms": [
+      "fail",
+      "collapse",
+      "come to nothing"
+    ],
+    "collocations": [
+      "plans fall through",
+      "deal falls through"
+    ],
+    "exampleEn": "The deal fell through when the two companies could not agree on a price.",
+    "exampleTr": "İki şirket fiyatta anlaşamayınca anlaşma suya düştü.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: FALL (düşmek) + THROUGH (içinden). Ağın deliğinden düşüp gitmek = suya düşmek.",
+    "distractors": [
+      "fall behind",
+      "fall apart",
+      "fall back on",
+      "fall for"
+    ],
+    "groupDay": 7
+  },
+  {
+    "id": "wb0368",
+    "word": "go on",
+    "type": "phrasal_verb",
+    "meaning": "devam etmek; olmak",
+    "synonyms": [
+      "continue",
+      "proceed",
+      "happen"
+    ],
+    "collocations": [
+      "go on to",
+      "what is going on"
+    ],
+    "exampleEn": "Despite the rain, the festival went on as planned.",
+    "exampleTr": "Yağmura rağmen festival planlandığı gibi devam etti.",
+    "ydsTip": "\"go on + V-ing\" = devam etmek; \"go on to + V1\" = sonra başka bir şeye geçmek.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: GO (gitmek) + ON (üzerinde, devam). Yolda gitmeye devam = devam etmek.",
+    "distractors": [
+      "go without",
+      "go over",
+      "go against",
+      "go by"
+    ],
+    "groupDay": 8
+  },
+  {
+    "id": "wb0369",
+    "word": "go over",
+    "type": "phrasal_verb",
+    "meaning": "gözden geçirmek, incelemek",
+    "synonyms": [
+      "review",
+      "examine",
+      "check"
+    ],
+    "collocations": [
+      "go over the details"
+    ],
+    "exampleEn": "The teacher went over the main points again before the exam.",
+    "exampleTr": "Öğretmen sınavdan önce ana noktaları yeniden gözden geçirdi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: GO (gitmek) + OVER (üzerinden). Metnin üzerinden geçmek = gözden geçirmek.",
+    "distractors": [
+      "go off",
+      "go on",
+      "go by",
+      "go without"
+    ],
+    "groupDay": 9
+  },
+  {
+    "id": "wb0370",
+    "word": "leave out",
+    "type": "phrasal_verb",
+    "meaning": "dışarıda bırakmak, atlamak",
+    "synonyms": [
+      "omit",
+      "exclude",
+      "skip"
+    ],
+    "collocations": [
+      "leave out details",
+      "feel left out"
+    ],
+    "exampleEn": "The report left out several important details about the accident.",
+    "exampleTr": "Rapor kazayla ilgili birkaç önemli ayrıntıyı atlamıştı.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: LEAVE (bırakmak) + OUT (dışarı). Dışarıda bırakmak = atlamak.",
+    "distractors": [
+      "leave behind",
+      "leave off",
+      "leave on",
+      "leave over"
+    ],
+    "groupDay": 10
+  },
+  {
+    "id": "wb0371",
+    "word": "live on",
+    "type": "phrasal_verb",
+    "meaning": "ile geçinmek; yaşamaya devam etmek",
+    "synonyms": [
+      "survive on",
+      "subsist on",
+      "continue"
+    ],
+    "collocations": [
+      "live on a small income",
+      "live on rice"
+    ],
+    "exampleEn": "Millions of people live on less than two dollars a day.",
+    "exampleTr": "Milyonlarca insan günde iki dolardan az parayla geçiniyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: LIVE (yaşamak) + ON (üzerinde). Bir şeyin üzerinde yaşamak = ile geçinmek.",
+    "distractors": [
+      "live up to",
+      "live through",
+      "live with",
+      "live off"
+    ],
+    "groupDay": 11
+  },
+  {
+    "id": "wb0372",
+    "word": "settle down",
+    "type": "phrasal_verb",
+    "meaning": "yerleşmek, düzenli bir hayata geçmek; sakinleşmek",
+    "synonyms": [
+      "establish oneself",
+      "calm down"
+    ],
+    "collocations": [
+      "settle down in a city"
+    ],
+    "exampleEn": "After years of travelling, they decided to settle down in a small village.",
+    "exampleTr": "Yıllarca seyahat ettikten sonra küçük bir köye yerleşmeye karar verdiler.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: SETTLE (yerleşmek) + DOWN. Aşağı inip kök salmak = yerleşmek.",
+    "distractors": [
+      "settle for",
+      "settle in",
+      "settle up",
+      "settle on"
+    ],
+    "groupDay": 12
+  },
+  {
+    "id": "wb0373",
+    "word": "sort out",
+    "type": "phrasal_verb",
+    "meaning": "çözmek, halletmek; ayırmak",
+    "synonyms": [
+      "resolve",
+      "fix",
+      "organize"
+    ],
+    "collocations": [
+      "sort out a problem"
+    ],
+    "exampleEn": "Engineers worked all night to sort out the technical problem.",
+    "exampleTr": "Mühendisler teknik sorunu çözmek için bütün gece çalıştı.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: SORT (sınıflandırmak) + OUT. Karışıklığı sınıflandırıp çıkarmak = halletmek.",
+    "distractors": [
+      "sort through",
+      "sort of",
+      "sort into",
+      "sort by"
+    ],
+    "groupDay": 13
+  },
+  {
+    "id": "wb0374",
+    "word": "speak out",
+    "type": "phrasal_verb",
+    "meaning": "açıkça konuşmak, sesini yükseltmek",
+    "synonyms": [
+      "protest",
+      "speak up",
+      "voice opposition"
+    ],
+    "collocations": [
+      "speak out against"
+    ],
+    "exampleEn": "Several doctors spoke out against the government's health policy.",
+    "exampleTr": "Birkaç doktor hükümetin sağlık politikasına karşı açıkça sesini yükseltti.",
+    "ydsTip": "speak out against = -e karşı açıkça konuşmak.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: SPEAK (konuşmak) + OUT (dışarı). İçindekini dışarıya yüksek sesle söylemek.",
+    "distractors": [
+      "speak for",
+      "speak to",
+      "speak of",
+      "speak up for"
+    ],
+    "groupDay": 14
+  },
+  {
+    "id": "wb0375",
+    "word": "stand out",
+    "type": "phrasal_verb",
+    "meaning": "göze çarpmak, öne çıkmak",
+    "synonyms": [
+      "be noticeable",
+      "excel",
+      "be prominent"
+    ],
+    "collocations": [
+      "stand out from",
+      "stand out as"
+    ],
+    "exampleEn": "Her research stands out from that of her colleagues because of its originality.",
+    "exampleTr": "Araştırması özgünlüğü sayesinde meslektaşlarınınkinden öne çıkıyor.",
+    "ydsTip": "stand out from = -den sıyrılmak, öne çıkmak.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: STAND (durmak) + OUT (dışarıda). Kalabalığın dışında duran = göze çarpan.",
+    "distractors": [
+      "stand for",
+      "stand by",
+      "stand up",
+      "stand in"
+    ],
+    "groupDay": 15
+  },
+  {
+    "id": "wb0376",
+    "word": "stick to",
+    "type": "phrasal_verb",
+    "meaning": "-e bağlı kalmak, sadık kalmak",
+    "synonyms": [
+      "adhere to",
+      "follow",
+      "keep to"
+    ],
+    "collocations": [
+      "stick to a plan",
+      "stick to a diet"
+    ],
+    "exampleEn": "Patients who stick to their diet usually lose weight steadily.",
+    "exampleTr": "Diyetine bağlı kalan hastalar genellikle düzenli olarak kilo verir.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: STICK (yapışmak) + TO. Bir şeye yapışık kalmak = sadık kalmak.",
+    "distractors": [
+      "stick up for",
+      "stick out",
+      "stick around",
+      "stick with it"
+    ],
+    "groupDay": 16
+  },
+  {
+    "id": "wb0377",
+    "word": "throw away",
+    "type": "phrasal_verb",
+    "meaning": "atmak, çöpe atmak; harcamak",
+    "synonyms": [
+      "discard",
+      "dispose of",
+      "waste"
+    ],
+    "collocations": [
+      "throw away food",
+      "throw away a chance"
+    ],
+    "exampleEn": "Households throw away nearly a third of the food they buy.",
+    "exampleTr": "Haneler satın aldıkları gıdanın neredeyse üçte birini çöpe atıyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: THROW (fırlatmak) + AWAY (uzağa). Uzağa fırlatıp atmak.",
+    "distractors": [
+      "throw up",
+      "throw in",
+      "throw out of",
+      "throw off balance"
+    ],
+    "groupDay": 17
+  },
+  {
+    "id": "wb0378",
+    "word": "touch on",
+    "type": "phrasal_verb",
+    "meaning": "kısaca değinmek",
+    "synonyms": [
+      "mention",
+      "refer to",
+      "allude to"
+    ],
+    "collocations": [
+      "touch on a subject"
+    ],
+    "exampleEn": "The lecture only touched on the economic effects of climate change.",
+    "exampleTr": "Ders iklim değişikliğinin ekonomik etkilerine yalnızca kısaca değindi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: TOUCH (dokunmak) + ON. Konuya sadece dokunup geçmek = kısaca değinmek.",
+    "distractors": [
+      "touch up",
+      "touch down",
+      "touch off",
+      "touch base"
+    ],
+    "groupDay": 18
+  },
+  {
+    "id": "wb0379",
+    "word": "try out",
+    "type": "phrasal_verb",
+    "meaning": "denemek, test etmek",
+    "synonyms": [
+      "test",
+      "trial",
+      "experiment with"
+    ],
+    "collocations": [
+      "try out a new method"
+    ],
+    "exampleEn": "Teachers are trying out a new method of teaching reading.",
+    "exampleTr": "Öğretmenler okuma öğretiminde yeni bir yöntemi deniyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: TRY (denemek) + OUT. Uygulamaya çıkarıp denemek.",
+    "distractors": [
+      "try on",
+      "try for",
+      "try back",
+      "try over"
+    ],
+    "groupDay": 19
+  },
+  {
+    "id": "wb0380",
+    "word": "turn up",
+    "type": "phrasal_verb",
+    "meaning": "ortaya çıkmak, gelmek; (ses) açmak",
+    "synonyms": [
+      "appear",
+      "arrive",
+      "show up"
+    ],
+    "collocations": [
+      "turn up late",
+      "fail to turn up"
+    ],
+    "exampleEn": "Only half of the invited guests turned up for the ceremony.",
+    "exampleTr": "Davet edilen konukların yalnızca yarısı törene geldi.",
+    "ydsTip": "turn up (gelmek) ile turn down (reddetmek) zıt anlamlıdır.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: TURN UP = birden yukarıda belirmek = gelip çıkmak. show up ile eş anlamlı.",
+    "distractors": [
+      "turn down",
+      "turn over",
+      "turn off",
+      "turn away"
+    ],
+    "groupDay": 20
+  },
+  {
+    "id": "wb0381",
+    "word": "use up",
+    "type": "phrasal_verb",
+    "meaning": "tüketmek, bitirmek",
+    "synonyms": [
+      "exhaust",
+      "consume",
+      "deplete"
+    ],
+    "collocations": [
+      "use up resources"
+    ],
+    "exampleEn": "At the current rate, the world will use up its oil reserves within fifty years.",
+    "exampleTr": "Mevcut hızla dünya petrol rezervlerini elli yıl içinde tüketecek.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: USE (kullanmak) + UP (tamamen). Tamamen kullanmak = bitirmek.",
+    "distractors": [
+      "use for",
+      "use as",
+      "use on",
+      "use with"
+    ],
+    "groupDay": 21
+  },
+  {
+    "id": "wb0382",
+    "word": "wear out",
+    "type": "phrasal_verb",
+    "meaning": "aşınmak, eskimek; yormak",
+    "synonyms": [
+      "deteriorate",
+      "exhaust",
+      "tire"
+    ],
+    "collocations": [
+      "wear out quickly",
+      "be worn out"
+    ],
+    "exampleEn": "Cheap shoes wear out quickly and need to be replaced often.",
+    "exampleTr": "Ucuz ayakkabılar çabuk eskir ve sık sık değiştirilmeleri gerekir.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: WEAR (giymek) + OUT. Giye giye tükenmek = eskimek.",
+    "distractors": [
+      "wear off",
+      "wear on",
+      "wear down",
+      "wear away at"
+    ],
+    "groupDay": 22
+  },
+  {
+    "id": "wb0383",
+    "word": "boil down to",
+    "type": "phrasal_verb",
+    "meaning": "-e indirgenmek, özünde ... olmak",
+    "synonyms": [
+      "come down to",
+      "amount to"
+    ],
+    "collocations": [
+      "boil down to"
+    ],
+    "exampleEn": "In the end, the problem boils down to a lack of money.",
+    "exampleTr": "Sonunda sorun para eksikliğine indirgeniyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: BOIL (kaynatmak) + DOWN. Sıvıyı kaynatıp özüne indirmek = özünde ... olmak.",
+    "distractors": [
+      "boil over",
+      "boil up",
+      "boil away",
+      "boil off"
+    ],
+    "groupDay": 23
+  },
+  {
+    "id": "wb0384",
+    "word": "brush up on",
+    "type": "phrasal_verb",
+    "meaning": "(bilgiyi) tazelemek",
+    "synonyms": [
+      "revise",
+      "refresh",
+      "improve"
+    ],
+    "collocations": [
+      "brush up on a language"
+    ],
+    "exampleEn": "She is brushing up on her French before moving to Paris.",
+    "exampleTr": "Paris'e taşınmadan önce Fransızcasını tazeliyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: BRUSH (fırçalamak) + UP. Tozlanmış bilgiyi fırçalayıp tazelemek.",
+    "distractors": [
+      "brush off",
+      "brush aside",
+      "brush past",
+      "brush against"
+    ],
+    "groupDay": 24
+  },
+  {
+    "id": "wb0385",
+    "word": "cash in on",
+    "type": "phrasal_verb",
+    "meaning": "-den faydalanmak, -i fırsata çevirmek",
+    "synonyms": [
+      "exploit",
+      "profit from",
+      "capitalize on"
+    ],
+    "collocations": [
+      "cash in on a trend"
+    ],
+    "exampleEn": "Many companies tried to cash in on the popularity of the film.",
+    "exampleTr": "Pek çok şirket filmin popülerliğinden faydalanmaya çalıştı.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CASH (nakit) + IN ON. Bir durumu nakde çevirmek = fırsattan faydalanmak.",
+    "distractors": [
+      "cash out",
+      "cash up",
+      "cash back",
+      "cash down"
+    ],
+    "groupDay": 25
+  },
+  {
+    "id": "wb0386",
+    "word": "come forward",
+    "type": "phrasal_verb",
+    "meaning": "ortaya çıkmak, (bilgi vermek için) başvurmak",
+    "synonyms": [
+      "step forward",
+      "volunteer",
+      "present oneself"
+    ],
+    "collocations": [
+      "witnesses come forward"
+    ],
+    "exampleEn": "Police have asked witnesses to come forward with any information about the crime.",
+    "exampleTr": "Polis tanıklardan suçla ilgili herhangi bir bilgiyle başvurmalarını istedi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: COME (gelmek) + FORWARD (öne). Kalabalıktan öne çıkıp gelmek.",
+    "distractors": [
+      "come forth",
+      "come back",
+      "come round",
+      "come apart"
+    ],
+    "groupDay": 26
+  },
+  {
+    "id": "wb0387",
+    "word": "crack down on",
+    "type": "phrasal_verb",
+    "meaning": "-e sert önlem almak, -i bastırmak",
+    "synonyms": [
+      "clamp down on",
+      "suppress",
+      "tackle"
+    ],
+    "collocations": [
+      "crack down on crime"
+    ],
+    "exampleEn": "The government promised to crack down on tax evasion.",
+    "exampleTr": "Hükümet vergi kaçakçılığına karşı sert önlemler alma sözü verdi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CRACK (kırbaç şaklatmak) + DOWN ON. Kırbacı birinin üstüne indirmek = sert önlem almak.",
+    "distractors": [
+      "crack up",
+      "crack open",
+      "crack on",
+      "crack apart"
+    ],
+    "groupDay": 27
+  },
+  {
+    "id": "wb0388",
+    "word": "cut back",
+    "type": "phrasal_verb",
+    "meaning": "kısmak, azaltmak",
+    "synonyms": [
+      "reduce",
+      "cut down",
+      "curtail"
+    ],
+    "collocations": [
+      "cut back on spending"
+    ],
+    "exampleEn": "Many families have had to cut back on spending because of rising prices.",
+    "exampleTr": "Artan fiyatlar nedeniyle pek çok aile harcamalarını kısmak zorunda kaldı.",
+    "ydsTip": "cut back on = cut down on: harcamayı/tüketimi azaltmak.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CUT (kesmek) + BACK (geri). Harcamayı kesip geri çekmek = kısmak.",
+    "distractors": [
+      "cut off",
+      "cut out",
+      "cut in",
+      "cut through"
+    ],
+    "groupDay": 28
+  },
+  {
+    "id": "wb0389",
+    "word": "fend off",
+    "type": "phrasal_verb",
+    "meaning": "savuşturmak, defetmek",
+    "synonyms": [
+      "ward off",
+      "repel",
+      "resist"
+    ],
+    "collocations": [
+      "fend off attacks",
+      "fend off competition"
+    ],
+    "exampleEn": "The small company managed to fend off competition from larger rivals.",
+    "exampleTr": "Küçük şirket büyük rakiplerin rekabetini savuşturmayı başardı.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: FEND = DEFEND'in kısaltması. Savunup uzaklaştırmak = savuşturmak.",
+    "distractors": [
+      "fend for",
+      "fend up",
+      "fend in",
+      "fend out"
+    ],
+    "groupDay": 29
+  },
+  {
+    "id": "wb0390",
+    "word": "go about",
+    "type": "phrasal_verb",
+    "meaning": "(bir işe) girişmek, ele almak",
+    "synonyms": [
+      "tackle",
+      "approach",
+      "set about"
+    ],
+    "collocations": [
+      "go about doing something"
+    ],
+    "exampleEn": "Scientists are not sure how to go about solving the problem.",
+    "exampleTr": "Bilim insanları sorunu çözmeye nasıl girişeceklerinden emin değil.",
+    "ydsTip": "go about + V-ing: bir işe nasıl başlanacağını sorar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: GO (gitmek) + ABOUT (etrafında). Bir işin etrafında dolaşıp nereden başlayacağını bulmak.",
+    "distractors": [
+      "go off",
+      "go over",
+      "go by",
+      "go without"
+    ],
+    "groupDay": 30
+  },
+  {
+    "id": "wb0391",
+    "word": "hinge on",
+    "type": "phrasal_verb",
+    "meaning": "-e bağlı olmak",
+    "synonyms": [
+      "depend on",
+      "rest on",
+      "turn on"
+    ],
+    "collocations": [
+      "hinge on a decision"
+    ],
+    "exampleEn": "The success of the project hinges on government funding.",
+    "exampleTr": "Projenin başarısı devlet finansmanına bağlı.",
+    "ydsTip": "hinge on = depend on.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: HINGE (menteşe). Kapı menteşenin üzerinde döner: her şey ona bağlıdır.",
+    "distractors": [
+      "hint at",
+      "hang on",
+      "hold on",
+      "lean on"
+    ],
+    "groupDay": 1
+  },
+  {
+    "id": "wb0392",
+    "word": "iron out",
+    "type": "phrasal_verb",
+    "meaning": "(sorunları) gidermek, düzeltmek",
+    "synonyms": [
+      "resolve",
+      "sort out",
+      "smooth out"
+    ],
+    "collocations": [
+      "iron out differences",
+      "iron out problems"
+    ],
+    "exampleEn": "The two sides met to iron out their differences before signing the agreement.",
+    "exampleTr": "İki taraf anlaşmayı imzalamadan önce aralarındaki farklılıkları gidermek için bir araya geldi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: IRON (ütülemek) + OUT. Kırışıklığı ütüleyip düzeltmek = sorunları gidermek.",
+    "distractors": [
+      "iron on",
+      "iron up",
+      "iron over",
+      "iron through"
+    ],
+    "groupDay": 2
+  },
+  {
+    "id": "wb0393",
+    "word": "lay down",
+    "type": "phrasal_verb",
+    "meaning": "(kural) koymak, belirlemek",
+    "synonyms": [
+      "establish",
+      "set down",
+      "stipulate"
+    ],
+    "collocations": [
+      "lay down rules"
+    ],
+    "exampleEn": "The law lays down strict rules for the disposal of toxic waste.",
+    "exampleTr": "Yasa zehirli atıkların bertarafı için katı kurallar koyuyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: LAY (koymak) + DOWN. Kuralları masaya yere koymak = belirlemek.",
+    "distractors": [
+      "lay off",
+      "lay out",
+      "lay aside",
+      "lay into"
+    ],
+    "groupDay": 3
+  },
+  {
+    "id": "wb0394",
+    "word": "map out",
+    "type": "phrasal_verb",
+    "meaning": "ayrıntılı planlamak",
+    "synonyms": [
+      "plan",
+      "outline",
+      "chart"
+    ],
+    "collocations": [
+      "map out a strategy",
+      "map out a career"
+    ],
+    "exampleEn": "The committee mapped out a ten-year plan to reduce carbon emissions.",
+    "exampleTr": "Komite karbon salımlarını azaltmak için on yıllık bir planı ayrıntılı olarak çizdi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: MAP (harita) + OUT. Bir planın haritasını çıkarmak.",
+    "distractors": [
+      "map onto",
+      "map over",
+      "map across",
+      "map down"
+    ],
+    "groupDay": 4
+  },
+  {
+    "id": "wb0395",
+    "word": "opt for",
+    "type": "phrasal_verb",
+    "meaning": "-i seçmek, tercih etmek",
+    "synonyms": [
+      "choose",
+      "select",
+      "go for"
+    ],
+    "collocations": [
+      "opt for a cheaper option"
+    ],
+    "exampleEn": "More and more consumers are opting for electric cars.",
+    "exampleTr": "Giderek daha fazla tüketici elektrikli arabaları tercih ediyor.",
+    "ydsTip": "opt for = choose; opt out of = -den çekilmek.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"OPTION\" (seçenek) kelimesinin fiili. Bir seçeneği almak = tercih etmek.",
+    "distractors": [
+      "opt out",
+      "opt in",
+      "opt into",
+      "opt against"
+    ],
+    "groupDay": 5
+  },
+  {
+    "id": "wb0396",
+    "word": "pass on",
+    "type": "phrasal_verb",
+    "meaning": "aktarmak, iletmek; (hastalık) bulaştırmak",
+    "synonyms": [
+      "transmit",
+      "hand down",
+      "convey"
+    ],
+    "collocations": [
+      "pass on genes",
+      "pass on information"
+    ],
+    "exampleEn": "Parents can pass on certain genetic disorders to their children.",
+    "exampleTr": "Ebeveynler bazı genetik bozuklukları çocuklarına aktarabilir.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: PASS (geçirmek) + ON. Elden ele bir sonrakine geçirmek = aktarmak.",
+    "distractors": [
+      "pass out",
+      "pass by",
+      "pass over",
+      "pass for"
+    ],
+    "groupDay": 6
+  },
+  {
+    "id": "wb0397",
+    "word": "pin down",
+    "type": "phrasal_verb",
+    "meaning": "kesin olarak belirlemek",
+    "synonyms": [
+      "identify",
+      "determine",
+      "pinpoint"
+    ],
+    "collocations": [
+      "pin down the cause"
+    ],
+    "exampleEn": "Doctors have been unable to pin down the exact cause of the illness.",
+    "exampleTr": "Doktorlar hastalığın kesin nedenini belirleyemedi.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: PIN (iğne) + DOWN. Haritada iğneyle yerini kesin olarak işaretlemek.",
+    "distractors": [
+      "pin up",
+      "pin on",
+      "pin back",
+      "pin together"
+    ],
+    "groupDay": 7
+  },
+  {
+    "id": "wb0398",
+    "word": "piece together",
+    "type": "phrasal_verb",
+    "meaning": "(parçaları) birleştirerek anlamak",
+    "synonyms": [
+      "reconstruct",
+      "assemble",
+      "work out"
+    ],
+    "collocations": [
+      "piece together the evidence"
+    ],
+    "exampleEn": "Investigators are trying to piece together what happened before the crash.",
+    "exampleTr": "Müfettişler kazadan önce ne olduğunu parçaları birleştirerek anlamaya çalışıyor.",
+    "ydsTip": "Phrasal verb sorularında edatı ve arkasından gelen nesneyi kontrol et; ÖSYM aynı fiilin farklı edatlı hallerini çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: PIECE (parça) + TOGETHER (birlikte). Yapbozun parçalarını birleştirmek.",
+    "distractors": [
+      "piece out",
+      "piece off",
+      "piece up",
+      "piece through"
+    ],
+    "groupDay": 8
+  },
+  {
+    "id": "wb0399",
     "word": "accurately",
     "type": "adverb",
     "meaning": "doğru bir şekilde, isabetle",
@@ -9311,10 +10636,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "loosely",
       "carelessly"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0350",
+    "id": "wb0400",
     "word": "approximately",
     "type": "adverb",
     "meaning": "yaklaşık olarak",
@@ -9338,10 +10663,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "wholly",
       "lavishly"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0351",
+    "id": "wb0401",
     "word": "barely",
     "type": "adverb",
     "meaning": "ancak, zar zor, neredeyse hiç",
@@ -9365,10 +10690,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "fully",
       "abundantly"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0352",
+    "id": "wb0402",
     "word": "briefly",
     "type": "adverb",
     "meaning": "kısaca, kısa süreliğine",
@@ -9392,10 +10717,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "thoroughly",
       "lengthily"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0353",
+    "id": "wb0403",
     "word": "broadly",
     "type": "adverb",
     "meaning": "genel olarak, kabaca",
@@ -9419,10 +10744,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "strictly",
       "specifically"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0354",
+    "id": "wb0404",
     "word": "closely",
     "type": "adverb",
     "meaning": "yakından, sıkı şekilde",
@@ -9446,10 +10771,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "remotely",
       "vaguely"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0355",
+    "id": "wb0405",
     "word": "constantly",
     "type": "adverb",
     "meaning": "sürekli olarak",
@@ -9473,10 +10798,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "occasionally",
       "briefly"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0356",
+    "id": "wb0406",
     "word": "currently",
     "type": "adverb",
     "meaning": "şu anda, hâlihazırda",
@@ -9500,10 +10825,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "once",
       "originally"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0357",
+    "id": "wb0407",
     "word": "entirely",
     "type": "adverb",
     "meaning": "tamamen",
@@ -9527,10 +10852,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scarcely",
       "slightly"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0358",
+    "id": "wb0408",
     "word": "fairly",
     "type": "adverb",
     "meaning": "oldukça; adil biçimde",
@@ -9554,10 +10879,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "barely",
       "seldom"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0359",
+    "id": "wb0409",
     "word": "frequently",
     "type": "adverb",
     "meaning": "sık sık",
@@ -9581,10 +10906,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scarcely",
       "barely"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0360",
+    "id": "wb0410",
     "word": "fully",
     "type": "adverb",
     "meaning": "tamamen, tam olarak",
@@ -9608,10 +10933,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scarcely",
       "hardly"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0361",
+    "id": "wb0411",
     "word": "greatly",
     "type": "adverb",
     "meaning": "büyük ölçüde",
@@ -9635,10 +10960,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scarcely",
       "marginally"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0362",
+    "id": "wb0412",
     "word": "hardly",
     "type": "adverb",
     "meaning": "neredeyse hiç, pek ... -mez",
@@ -9662,10 +10987,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "heavily",
       "freely"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0363",
+    "id": "wb0413",
     "word": "heavily",
     "type": "adverb",
     "meaning": "yoğun olarak, büyük ölçüde",
@@ -9689,10 +11014,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "barely",
       "scarcely"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0364",
+    "id": "wb0414",
     "word": "highly",
     "type": "adverb",
     "meaning": "son derece, çok",
@@ -9716,10 +11041,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "marginally",
       "loosely"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0365",
+    "id": "wb0415",
     "word": "ideally",
     "type": "adverb",
     "meaning": "ideal olarak, en iyi durumda",
@@ -9743,10 +11068,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "seldom",
       "reluctantly"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0366",
+    "id": "wb0416",
     "word": "intentionally",
     "type": "adverb",
     "meaning": "kasıtlı olarak",
@@ -9770,10 +11095,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "unwittingly",
       "randomly"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0367",
+    "id": "wb0417",
     "word": "merely",
     "type": "adverb",
     "meaning": "sadece, yalnızca",
@@ -9797,10 +11122,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "wholly",
       "greatly"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0368",
+    "id": "wb0418",
     "word": "mostly",
     "type": "adverb",
     "meaning": "çoğunlukla, büyük ölçüde",
@@ -9824,10 +11149,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "slightly",
       "rarely"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0369",
+    "id": "wb0419",
     "word": "nearly",
     "type": "adverb",
     "meaning": "neredeyse",
@@ -9851,10 +11176,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scarcely",
       "solely"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0370",
+    "id": "wb0420",
     "word": "necessarily",
     "type": "adverb",
     "meaning": "zorunlu olarak, ille de",
@@ -9877,10 +11202,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "seldom",
       "scarcely"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0371",
+    "id": "wb0421",
     "word": "objectively",
     "type": "adverb",
     "meaning": "nesnel olarak, tarafsızca",
@@ -9904,10 +11229,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "arbitrarily",
       "partially"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0372",
+    "id": "wb0422",
     "word": "obviously",
     "type": "adverb",
     "meaning": "açıkça, belli ki",
@@ -9931,10 +11256,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dimly",
       "barely"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0373",
+    "id": "wb0423",
     "word": "occasionally",
     "type": "adverb",
     "meaning": "ara sıra, zaman zaman",
@@ -9958,10 +11283,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "permanently",
       "persistently"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0374",
+    "id": "wb0424",
     "word": "partially",
     "type": "adverb",
     "meaning": "kısmen",
@@ -9985,10 +11310,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "totally",
       "fully"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0375",
+    "id": "wb0425",
     "word": "particularly",
     "type": "adverb",
     "meaning": "özellikle",
@@ -10012,10 +11337,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "hardly",
       "marginally"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0376",
+    "id": "wb0426",
     "word": "possibly",
     "type": "adverb",
     "meaning": "muhtemelen, belki",
@@ -10039,10 +11364,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "seldom",
       "hardly"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0377",
+    "id": "wb0427",
     "word": "precisely",
     "type": "adverb",
     "meaning": "tam olarak, kesinlikle",
@@ -10066,10 +11391,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "loosely",
       "approximately"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0378",
+    "id": "wb0428",
     "word": "previously",
     "type": "adverb",
     "meaning": "daha önce, önceden",
@@ -10093,10 +11418,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "eventually",
       "afterwards"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0379",
+    "id": "wb0429",
     "word": "promptly",
     "type": "adverb",
     "meaning": "derhal, hemen",
@@ -10120,10 +11445,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "slowly",
       "tardily"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0380",
+    "id": "wb0430",
     "word": "properly",
     "type": "adverb",
     "meaning": "düzgünce, doğru şekilde",
@@ -10147,10 +11472,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "hardly",
       "scarcely"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0381",
+    "id": "wb0431",
     "word": "readily",
     "type": "adverb",
     "meaning": "kolayca; istekle",
@@ -10174,10 +11499,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "hardly",
       "rarely"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0382",
+    "id": "wb0432",
     "word": "reasonably",
     "type": "adverb",
     "meaning": "makul ölçüde, oldukça",
@@ -10201,10 +11526,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "hardly",
       "barely"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0383",
+    "id": "wb0433",
     "word": "recently",
     "type": "adverb",
     "meaning": "son zamanlarda, yakın zamanda",
@@ -10228,10 +11553,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "eventually",
       "subsequently"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0384",
+    "id": "wb0434",
     "word": "relatively",
     "type": "adverb",
     "meaning": "nispeten, görece",
@@ -10255,10 +11580,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "entirely",
       "utterly"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0385",
+    "id": "wb0435",
     "word": "reluctantly",
     "type": "adverb",
     "meaning": "isteksizce, gönülsüzce",
@@ -10282,10 +11607,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "enthusiastically",
       "gladly"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0386",
+    "id": "wb0436",
     "word": "repeatedly",
     "type": "adverb",
     "meaning": "defalarca, tekrar tekrar",
@@ -10309,10 +11634,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "once",
       "rarely"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0387",
+    "id": "wb0437",
     "word": "roughly",
     "type": "adverb",
     "meaning": "kabaca, aşağı yukarı",
@@ -10336,10 +11661,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "strictly",
       "solely"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0388",
+    "id": "wb0438",
     "word": "seemingly",
     "type": "adverb",
     "meaning": "görünüşte, görünüşe göre",
@@ -10363,10 +11688,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "actually",
       "really"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0389",
+    "id": "wb0439",
     "word": "seldom",
     "type": "adverb",
     "meaning": "nadiren",
@@ -10390,10 +11715,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "constantly",
       "invariably"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0390",
+    "id": "wb0440",
     "word": "severely",
     "type": "adverb",
     "meaning": "ciddi şekilde, şiddetle",
@@ -10417,10 +11742,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "lightly",
       "barely"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0391",
+    "id": "wb0441",
     "word": "slightly",
     "type": "adverb",
     "meaning": "biraz, hafifçe",
@@ -10444,10 +11769,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "greatly",
       "drastically"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0392",
+    "id": "wb0442",
     "word": "steadily",
     "type": "adverb",
     "meaning": "istikrarlı biçimde, düzenli olarak",
@@ -10471,10 +11796,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "suddenly",
       "sporadically"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0393",
+    "id": "wb0443",
     "word": "strictly",
     "type": "adverb",
     "meaning": "kesinlikle, sıkı biçimde",
@@ -10498,10 +11823,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "casually",
       "partially"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0394",
+    "id": "wb0444",
     "word": "subsequently",
     "type": "adverb",
     "meaning": "daha sonra, sonradan",
@@ -10525,10 +11850,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "beforehand",
       "initially"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0395",
+    "id": "wb0445",
     "word": "successfully",
     "type": "adverb",
     "meaning": "başarıyla",
@@ -10552,10 +11877,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "reluctantly",
       "barely"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0396",
+    "id": "wb0446",
     "word": "sufficiently",
     "type": "adverb",
     "meaning": "yeterince",
@@ -10579,10 +11904,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "extremely",
       "unduly"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0397",
+    "id": "wb0447",
     "word": "surprisingly",
     "type": "adverb",
     "meaning": "şaşırtıcı biçimde",
@@ -10606,10 +11931,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "obviously",
       "inevitably"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0398",
+    "id": "wb0448",
     "word": "undoubtedly",
     "type": "adverb",
     "meaning": "şüphesiz, kuşkusuz",
@@ -10633,10 +11958,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scarcely",
       "barely"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0399",
+    "id": "wb0449",
     "word": "widely",
     "type": "adverb",
     "meaning": "yaygın olarak, geniş çapta",
@@ -10660,10 +11985,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scarcely",
       "seldom"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0400",
+    "id": "wb0450",
     "word": "wholly",
     "type": "adverb",
     "meaning": "tamamen, bütünüyle",
@@ -10687,10 +12012,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "slightly",
       "scarcely"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0401",
+    "id": "wb0451",
     "word": "adapt",
     "type": "verb",
     "meaning": "uyum sağlamak, uyarlamak",
@@ -10714,10 +12039,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "resort",
       "yield"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0402",
+    "id": "wb0452",
     "word": "adopt",
     "type": "verb",
     "meaning": "benimsemek, kabul etmek; evlat edinmek",
@@ -10741,10 +12066,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "abide",
       "conform"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0403",
+    "id": "wb0453",
     "word": "affect",
     "type": "verb",
     "meaning": "etkilemek",
@@ -10768,10 +12093,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "afford",
       "impose"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0404",
+    "id": "wb0454",
     "word": "alter",
     "type": "verb",
     "meaning": "değiştirmek, farklılaştırmak",
@@ -10795,10 +12120,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "exchange",
       "revise"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0405",
+    "id": "wb0455",
     "word": "assess",
     "type": "verb",
     "meaning": "değerlendirmek, ölçmek",
@@ -10822,10 +12147,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "inflict",
       "exert"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0406",
+    "id": "wb0456",
     "word": "assign",
     "type": "verb",
     "meaning": "atamak, görevlendirmek, tahsis etmek",
@@ -10849,10 +12174,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "nominate",
       "elect"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0407",
+    "id": "wb0457",
     "word": "assume",
     "type": "verb",
     "meaning": "varsaymak; üstlenmek",
@@ -10876,10 +12201,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "doubt",
       "dispute"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0408",
+    "id": "wb0458",
     "word": "attempt",
     "type": "verb",
     "meaning": "denemek, girişimde bulunmak",
@@ -10903,10 +12228,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "evade",
       "postpone"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0409",
+    "id": "wb0459",
     "word": "boost",
     "type": "verb",
     "meaning": "artırmak, desteklemek, canlandırmak",
@@ -10930,10 +12255,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "restrain",
       "deflate"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0410",
+    "id": "wb0460",
     "word": "claim",
     "type": "verb",
     "meaning": "iddia etmek; talep etmek; (can) almak",
@@ -10957,10 +12282,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deny",
       "doubt"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0411",
+    "id": "wb0461",
     "word": "collapse",
     "type": "verb",
     "meaning": "çökmek, yıkılmak",
@@ -10984,10 +12309,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "recover",
       "endure"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0412",
+    "id": "wb0462",
     "word": "combine",
     "type": "verb",
     "meaning": "birleştirmek",
@@ -11011,10 +12336,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "separate",
       "compete"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0413",
+    "id": "wb0463",
     "word": "commit",
     "type": "verb",
     "meaning": "(suç vb.) işlemek; adamak, taahhüt etmek",
@@ -11038,10 +12363,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "submit",
       "permit"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0414",
+    "id": "wb0464",
     "word": "comprise",
     "type": "verb",
     "meaning": "içermek, -den oluşmak",
@@ -11065,10 +12390,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "compress",
       "consist"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0415",
+    "id": "wb0465",
     "word": "conduct",
     "type": "verb",
     "meaning": "yürütmek, yapmak (araştırma vb.)",
@@ -11092,10 +12417,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "construct",
       "conceive"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0416",
+    "id": "wb0466",
     "word": "confirm",
     "type": "verb",
     "meaning": "doğrulamak, teyit etmek",
@@ -11119,10 +12444,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "conceal",
       "deny"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0417",
+    "id": "wb0467",
     "word": "consume",
     "type": "verb",
     "meaning": "tüketmek",
@@ -11146,10 +12471,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "generate",
       "conserve"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0418",
+    "id": "wb0468",
     "word": "contribute",
     "type": "verb",
     "meaning": "katkıda bulunmak; yol açmak",
@@ -11173,10 +12498,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "constitute",
       "object"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0419",
+    "id": "wb0469",
     "word": "convert",
     "type": "verb",
     "meaning": "dönüştürmek, çevirmek",
@@ -11200,10 +12525,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "divert",
       "invert"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0420",
+    "id": "wb0470",
     "word": "convince",
     "type": "verb",
     "meaning": "ikna etmek",
@@ -11227,10 +12552,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deceive",
       "accuse"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0421",
+    "id": "wb0471",
     "word": "decline",
     "type": "verb",
     "meaning": "azalmak, düşmek; reddetmek",
@@ -11254,10 +12579,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "refuse",
       "reject"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0422",
+    "id": "wb0472",
     "word": "define",
     "type": "verb",
     "meaning": "tanımlamak",
@@ -11281,10 +12606,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "defy",
       "deform"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0423",
+    "id": "wb0473",
     "word": "demonstrate",
     "type": "verb",
     "meaning": "göstermek, kanıtlamak; gösteri yapmak",
@@ -11308,10 +12633,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dispute",
       "deny"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0424",
+    "id": "wb0474",
     "word": "deny",
     "type": "verb",
     "meaning": "inkâr etmek, reddetmek; mahrum bırakmak",
@@ -11335,10 +12660,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deploy",
       "refuse"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0425",
+    "id": "wb0475",
     "word": "deploy",
     "type": "verb",
     "meaning": "konuşlandırmak; kullanıma sokmak",
@@ -11362,10 +12687,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deplete",
       "disband"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0426",
+    "id": "wb0476",
     "word": "detect",
     "type": "verb",
     "meaning": "tespit etmek, saptamak",
@@ -11389,10 +12714,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "detach",
       "conceal"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0427",
+    "id": "wb0477",
     "word": "determine",
     "type": "verb",
     "meaning": "belirlemek; karar vermek",
@@ -11416,10 +12741,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "exterminate",
       "discriminate"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0428",
+    "id": "wb0478",
     "word": "diagnose",
     "type": "verb",
     "meaning": "teşhis etmek",
@@ -11443,10 +12768,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "suppose",
       "cure"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0429",
+    "id": "wb0479",
     "word": "display",
     "type": "verb",
     "meaning": "sergilemek, göstermek",
@@ -11470,10 +12795,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deploy",
       "conceal"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0430",
+    "id": "wb0480",
     "word": "distinguish",
     "type": "verb",
     "meaning": "ayırt etmek",
@@ -11497,10 +12822,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "diminish",
       "establish"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0431",
+    "id": "wb0481",
     "word": "distribute",
     "type": "verb",
     "meaning": "dağıtmak",
@@ -11524,10 +12849,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "constitute",
       "withhold"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0432",
+    "id": "wb0482",
     "word": "dominate",
     "type": "verb",
     "meaning": "hâkim olmak, egemen olmak",
@@ -11551,10 +12876,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "abandon",
       "enter"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0433",
+    "id": "wb0483",
     "word": "emphasize",
     "type": "verb",
     "meaning": "vurgulamak",
@@ -11578,10 +12903,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "overlook",
       "neglect"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0434",
+    "id": "wb0484",
     "word": "employ",
     "type": "verb",
     "meaning": "istihdam etmek; kullanmak",
@@ -11605,10 +12930,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dismiss",
       "retire"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0435",
+    "id": "wb0485",
     "word": "enable",
     "type": "verb",
     "meaning": "olanak sağlamak, mümkün kılmak",
@@ -11632,10 +12957,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "prohibit",
       "enact"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0436",
+    "id": "wb0486",
     "word": "encourage",
     "type": "verb",
     "meaning": "teşvik etmek, cesaretlendirmek",
@@ -11659,10 +12984,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "endorse",
       "forbid"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0437",
+    "id": "wb0487",
     "word": "endanger",
     "type": "verb",
     "meaning": "tehlikeye atmak",
@@ -11686,10 +13011,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "protect",
       "engender"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0438",
+    "id": "wb0488",
     "word": "ensure",
     "type": "verb",
     "meaning": "sağlamak, garanti altına almak",
@@ -11713,10 +13038,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "endure",
       "entail"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0439",
+    "id": "wb0489",
     "word": "establish",
     "type": "verb",
     "meaning": "kurmak; kanıtlamak, saptamak",
@@ -11740,10 +13065,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "distinguish",
       "dissolve"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0440",
+    "id": "wb0490",
     "word": "estimate",
     "type": "verb",
     "meaning": "tahmin etmek, hesaplamak",
@@ -11767,10 +13092,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "stimulate",
       "overestimate"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0441",
+    "id": "wb0491",
     "word": "evaluate",
     "type": "verb",
     "meaning": "değerlendirmek",
@@ -11794,10 +13119,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "elevate",
       "devalue"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0442",
+    "id": "wb0492",
     "word": "evolve",
     "type": "verb",
     "meaning": "evrimleşmek, gelişmek",
@@ -11821,10 +13146,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dissolve",
       "devolve"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0443",
+    "id": "wb0493",
     "word": "exceed",
     "type": "verb",
     "meaning": "aşmak, geçmek",
@@ -11848,10 +13173,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "concede",
       "recede"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0444",
+    "id": "wb0494",
     "word": "exclude",
     "type": "verb",
     "meaning": "hariç tutmak, dışlamak",
@@ -11875,10 +13200,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "seclude",
       "elude"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0445",
+    "id": "wb0495",
     "word": "expand",
     "type": "verb",
     "meaning": "genişlemek, genişletmek",
@@ -11902,10 +13227,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "contract",
       "shrink"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0446",
+    "id": "wb0496",
     "word": "expose",
     "type": "verb",
     "meaning": "maruz bırakmak; açığa çıkarmak",
@@ -11929,10 +13254,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "propose",
       "dispose"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0447",
+    "id": "wb0497",
     "word": "extend",
     "type": "verb",
     "meaning": "uzatmak, genişletmek",
@@ -11956,10 +13281,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "contend",
       "shorten"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0448",
+    "id": "wb0498",
     "word": "extract",
     "type": "verb",
     "meaning": "çıkarmak, elde etmek",
@@ -11983,10 +13308,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "distract",
       "subtract"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0449",
+    "id": "wb0499",
     "word": "highlight",
     "type": "verb",
     "meaning": "vurgulamak, öne çıkarmak",
@@ -12010,10 +13335,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "enlighten",
       "delight"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0450",
+    "id": "wb0500",
     "word": "identify",
     "type": "verb",
     "meaning": "tanımlamak, belirlemek, teşhis etmek",
@@ -12037,10 +13362,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "intensify",
       "justify"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0451",
+    "id": "wb0501",
     "word": "ignore",
     "type": "verb",
     "meaning": "görmezden gelmek, yok saymak",
@@ -12064,10 +13389,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deplore",
       "implore"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0452",
+    "id": "wb0502",
     "word": "indicate",
     "type": "verb",
     "meaning": "göstermek, işaret etmek",
@@ -12091,10 +13416,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "indict",
       "eradicate"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0453",
+    "id": "wb0503",
     "word": "insist",
     "type": "verb",
     "meaning": "ısrar etmek, üstelemek",
@@ -12118,10 +13443,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "resist",
       "assist"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0454",
+    "id": "wb0504",
     "word": "investigate",
     "type": "verb",
     "meaning": "araştırmak, soruşturmak",
@@ -12145,10 +13470,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "navigate",
       "mitigate"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0455",
+    "id": "wb0505",
     "word": "involve",
     "type": "verb",
     "meaning": "içermek, gerektirmek; dahil etmek",
@@ -12172,10 +13497,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "resolve",
       "dissolve"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0456",
+    "id": "wb0506",
     "word": "launch",
     "type": "verb",
     "meaning": "başlatmak; fırlatmak; piyasaya sürmek",
@@ -12199,10 +13524,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "terminate",
       "lunch"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0457",
+    "id": "wb0507",
     "word": "maintain",
     "type": "verb",
     "meaning": "sürdürmek, korumak; iddia etmek",
@@ -12226,10 +13551,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "contain",
       "detain"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0458",
+    "id": "wb0508",
     "word": "measure",
     "type": "verb",
     "meaning": "ölçmek",
@@ -12253,10 +13578,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "endure",
       "ensure"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0459",
+    "id": "wb0509",
     "word": "occur",
     "type": "verb",
     "meaning": "meydana gelmek, olmak",
@@ -12280,10 +13605,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "concur",
       "deter"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0460",
+    "id": "wb0510",
     "word": "prevent",
     "type": "verb",
     "meaning": "önlemek, engellemek",
@@ -12307,10 +13632,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "promote",
       "provoke"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0461",
+    "id": "wb0511",
     "word": "protect",
     "type": "verb",
     "meaning": "korumak",
@@ -12334,10 +13659,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "expose",
       "neglect"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0462",
+    "id": "wb0512",
     "word": "prove",
     "type": "verb",
     "meaning": "kanıtlamak; (olduğu) ortaya çıkmak",
@@ -12361,10 +13686,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "disprove",
       "remove"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0463",
+    "id": "wb0513",
     "word": "recover",
     "type": "verb",
     "meaning": "iyileşmek; geri kazanmak",
@@ -12388,10 +13713,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "relapse",
       "deteriorate"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0464",
+    "id": "wb0514",
     "word": "reduce",
     "type": "verb",
     "meaning": "azaltmak",
@@ -12415,10 +13740,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "produce",
       "increase"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0465",
+    "id": "wb0515",
     "word": "reflect",
     "type": "verb",
     "meaning": "yansıtmak; düşünmek",
@@ -12442,10 +13767,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "neglect",
       "reject"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0466",
+    "id": "wb0516",
     "word": "reject",
     "type": "verb",
     "meaning": "reddetmek",
@@ -12469,10 +13794,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "project",
       "accept"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0467",
+    "id": "wb0517",
     "word": "release",
     "type": "verb",
     "meaning": "serbest bırakmak; salmak; yayımlamak",
@@ -12496,10 +13821,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "absorb",
       "retain"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0468",
+    "id": "wb0518",
     "word": "remove",
     "type": "verb",
     "meaning": "kaldırmak, gidermek",
@@ -12523,10 +13848,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "implant",
       "insert"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0469",
+    "id": "wb0519",
     "word": "replace",
     "type": "verb",
     "meaning": "yerini almak; değiştirmek",
@@ -12550,10 +13875,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "replicate",
       "restore"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0470",
+    "id": "wb0520",
     "word": "require",
     "type": "verb",
     "meaning": "gerektirmek",
@@ -12577,10 +13902,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "retire",
       "inspire"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0471",
+    "id": "wb0521",
     "word": "resist",
     "type": "verb",
     "meaning": "direnmek, karşı koymak",
@@ -12604,10 +13929,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "assist",
       "succumb"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0472",
+    "id": "wb0522",
     "word": "reveal",
     "type": "verb",
     "meaning": "ortaya koymak, açığa çıkarmak",
@@ -12631,10 +13956,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "repeal",
       "reverse"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0473",
+    "id": "wb0523",
     "word": "seek",
     "type": "verb",
     "meaning": "aramak; çabalamak; istemek",
@@ -12658,10 +13983,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "flee",
       "forsake"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0474",
+    "id": "wb0524",
     "word": "select",
     "type": "verb",
     "meaning": "seçmek",
@@ -12685,10 +14010,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "detect",
       "reject"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0475",
+    "id": "wb0525",
     "word": "shift",
     "type": "verb",
     "meaning": "kaymak, değişmek; kaydırmak",
@@ -12712,10 +14037,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "stick",
       "cling"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0476",
+    "id": "wb0526",
     "word": "spread",
     "type": "verb",
     "meaning": "yaymak, yayılmak",
@@ -12739,10 +14064,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "contain",
       "restrict"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0477",
+    "id": "wb0527",
     "word": "struggle",
     "type": "verb",
     "meaning": "mücadele etmek, uğraşmak",
@@ -12766,10 +14091,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "refuse",
       "decline"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0478",
+    "id": "wb0528",
     "word": "suffer",
     "type": "verb",
     "meaning": "acı çekmek; (bir hastalıktan) muzdarip olmak",
@@ -12793,10 +14118,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "offer",
       "recover"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0479",
+    "id": "wb0529",
     "word": "tend",
     "type": "verb",
     "meaning": "eğiliminde olmak; bakmak",
@@ -12820,10 +14145,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "extend",
       "pretend"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0480",
+    "id": "wb0530",
     "word": "threaten",
     "type": "verb",
     "meaning": "tehdit etmek",
@@ -12847,10 +14172,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "sustain",
       "secure"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0481",
+    "id": "wb0531",
     "word": "track",
     "type": "verb",
     "meaning": "izlemek, takip etmek",
@@ -12874,10 +14199,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "hide",
       "disguise"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0482",
+    "id": "wb0532",
     "word": "transfer",
     "type": "verb",
     "meaning": "aktarmak, transfer etmek",
@@ -12901,10 +14226,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "defer",
       "differ"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0483",
+    "id": "wb0533",
     "word": "vary",
     "type": "verb",
     "meaning": "değişmek, farklılık göstermek",
@@ -12928,10 +14253,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "remain",
       "persist"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0484",
+    "id": "wb0534",
     "word": "abolish",
     "type": "verb",
     "meaning": "kaldırmak, yürürlükten kaldırmak",
@@ -12955,10 +14280,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "demolish",
       "enact"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0485",
+    "id": "wb0535",
     "word": "absorb",
     "type": "verb",
     "meaning": "emmek, soğurmak; özümsemek",
@@ -12982,10 +14307,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "emit",
       "release"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0486",
+    "id": "wb0536",
     "word": "accuse",
     "type": "verb",
     "meaning": "suçlamak",
@@ -13009,10 +14334,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "acquit",
       "praise"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0487",
+    "id": "wb0537",
     "word": "achieve",
     "type": "verb",
     "meaning": "başarmak, elde etmek",
@@ -13036,10 +14361,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "believe",
       "forfeit"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0488",
+    "id": "wb0538",
     "word": "adjust",
     "type": "verb",
     "meaning": "ayarlamak; uyum sağlamak",
@@ -13063,10 +14388,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "admit",
       "resist"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0489",
+    "id": "wb0539",
     "word": "admit",
     "type": "verb",
     "meaning": "kabul etmek, itiraf etmek",
@@ -13090,10 +14415,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "submit",
       "deny"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0490",
+    "id": "wb0540",
     "word": "alleviate",
     "type": "verb",
     "meaning": "hafifletmek, azaltmak",
@@ -13117,10 +14442,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "exacerbate",
       "alienate"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0491",
+    "id": "wb0541",
     "word": "analyze",
     "type": "verb",
     "meaning": "analiz etmek, incelemek",
@@ -13144,10 +14469,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "synthesize",
       "summarize"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0492",
+    "id": "wb0542",
     "word": "announce",
     "type": "verb",
     "meaning": "duyurmak, ilan etmek",
@@ -13171,10 +14496,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "denounce",
       "conceal"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0493",
+    "id": "wb0543",
     "word": "approve",
     "type": "verb",
     "meaning": "onaylamak",
@@ -13198,10 +14523,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "prove",
       "reject"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0494",
+    "id": "wb0544",
     "word": "attract",
     "type": "verb",
     "meaning": "çekmek, cezbetmek",
@@ -13225,10 +14550,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "detract",
       "repel"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0495",
+    "id": "wb0545",
     "word": "avoid",
     "type": "verb",
     "meaning": "kaçınmak",
@@ -13252,10 +14577,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "pursue",
       "consume"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0496",
+    "id": "wb0546",
     "word": "calculate",
     "type": "verb",
     "meaning": "hesaplamak",
@@ -13279,10 +14604,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "articulate",
       "accumulate"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0497",
+    "id": "wb0547",
     "word": "capture",
     "type": "verb",
     "meaning": "yakalamak; ele geçirmek; tutmak",
@@ -13306,10 +14631,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "emit",
       "liberate"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0498",
+    "id": "wb0548",
     "word": "challenge",
     "type": "verb",
     "meaning": "meydan okumak; sorgulamak",
@@ -13333,10 +14658,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "endorse",
       "support"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0499",
+    "id": "wb0549",
     "word": "clarify",
     "type": "verb",
     "meaning": "açıklığa kavuşturmak, netleştirmek",
@@ -13360,10 +14685,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "obscure",
       "verify"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0500",
+    "id": "wb0550",
     "word": "classify",
     "type": "verb",
     "meaning": "sınıflandırmak",
@@ -13387,10 +14712,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "signify",
       "identify"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0501",
+    "id": "wb0551",
     "word": "compete",
     "type": "verb",
     "meaning": "rekabet etmek, yarışmak",
@@ -13414,10 +14739,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "cooperate",
       "comply"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0502",
+    "id": "wb0552",
     "word": "conclude",
     "type": "verb",
     "meaning": "sonuca varmak; bitirmek",
@@ -13441,10 +14766,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "seclude",
       "commence"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0503",
+    "id": "wb0553",
     "word": "constitute",
     "type": "verb",
     "meaning": "oluşturmak, teşkil etmek",
@@ -13468,10 +14793,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "restitute",
       "contribute"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0504",
+    "id": "wb0554",
     "word": "construct",
     "type": "verb",
     "meaning": "inşa etmek, kurmak",
@@ -13495,10 +14820,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "destruct",
       "conduct"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0505",
+    "id": "wb0555",
     "word": "consult",
     "type": "verb",
     "meaning": "danışmak, başvurmak",
@@ -13522,10 +14847,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "console",
       "consume"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0506",
+    "id": "wb0556",
     "word": "convey",
     "type": "verb",
     "meaning": "iletmek, aktarmak; taşımak",
@@ -13549,10 +14874,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "survey",
       "conceal"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0507",
+    "id": "wb0557",
     "word": "cooperate",
     "type": "verb",
     "meaning": "iş birliği yapmak",
@@ -13576,10 +14901,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "corporate",
       "corroborate"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0508",
+    "id": "wb0558",
     "word": "criticize",
     "type": "verb",
     "meaning": "eleştirmek",
@@ -13603,10 +14928,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "scrutinize",
       "publicize"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0509",
+    "id": "wb0559",
     "word": "dedicate",
     "type": "verb",
     "meaning": "adamak, ithaf etmek",
@@ -13630,10 +14955,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "delegate",
       "deduce"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0510",
+    "id": "wb0560",
     "word": "defend",
     "type": "verb",
     "meaning": "savunmak",
@@ -13657,10 +14982,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "attack",
       "expose"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0511",
+    "id": "wb0561",
     "word": "delay",
     "type": "verb",
     "meaning": "ertelemek, geciktirmek",
@@ -13684,10 +15009,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "accelerate",
       "expedite"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0512",
+    "id": "wb0562",
     "word": "deliver",
     "type": "verb",
     "meaning": "teslim etmek; sunmak; doğurtmak",
@@ -13711,10 +15036,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "withhold",
       "divert"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0513",
+    "id": "wb0563",
     "word": "designate",
     "type": "verb",
     "meaning": "belirlemek, atamak, tayin etmek",
@@ -13738,10 +15063,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "delegate",
       "designs"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0514",
+    "id": "wb0564",
     "word": "discourage",
     "type": "verb",
     "meaning": "caydırmak, cesaretini kırmak",
@@ -13765,10 +15090,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "promote",
       "foster"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0515",
+    "id": "wb0565",
     "word": "dismiss",
     "type": "verb",
     "meaning": "reddetmek, önemsememek; işten çıkarmak",
@@ -13792,10 +15117,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "endorse",
       "dispatch"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0516",
+    "id": "wb0566",
     "word": "dissolve",
     "type": "verb",
     "meaning": "çözünmek, eritmek; feshetmek",
@@ -13819,10 +15144,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "solidify",
       "crystallize"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0517",
+    "id": "wb0567",
     "word": "divide",
     "type": "verb",
     "meaning": "bölmek, ayırmak",
@@ -13846,10 +15171,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "unite",
       "merge"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0518",
+    "id": "wb0568",
     "word": "engage",
     "type": "verb",
     "meaning": "meşgul olmak, katılmak; ilgisini çekmek",
@@ -13873,10 +15198,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "withdraw",
       "abstain"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0519",
+    "id": "wb0569",
     "word": "equip",
     "type": "verb",
     "meaning": "donatmak, teçhiz etmek",
@@ -13900,10 +15225,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "strip",
       "quip"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0520",
+    "id": "wb0570",
     "word": "evacuate",
     "type": "verb",
     "meaning": "tahliye etmek, boşaltmak",
@@ -13927,10 +15252,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "inhabit",
       "occupy"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0521",
+    "id": "wb0571",
     "word": "examine",
     "type": "verb",
     "meaning": "incelemek, muayene etmek",
@@ -13954,10 +15279,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "overlook",
       "ignore"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0522",
+    "id": "wb0572",
     "word": "exhibit",
     "type": "verb",
     "meaning": "sergilemek, göstermek",
@@ -13981,10 +15306,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "inhabit",
       "conceal"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0523",
+    "id": "wb0573",
     "word": "explore",
     "type": "verb",
     "meaning": "keşfetmek, araştırmak",
@@ -14008,10 +15333,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "implore",
       "deplore"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0524",
+    "id": "wb0574",
     "word": "extinguish",
     "type": "verb",
     "meaning": "söndürmek; yok etmek",
@@ -14035,10 +15360,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "ignite",
       "kindle"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0525",
+    "id": "wb0575",
     "word": "fade",
     "type": "verb",
     "meaning": "solmak, yavaş yavaş kaybolmak",
@@ -14062,10 +15387,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "persist",
       "linger"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0526",
+    "id": "wb0576",
     "word": "flee",
     "type": "verb",
     "meaning": "kaçmak, firar etmek",
@@ -14089,10 +15414,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "remain",
       "dwell"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0527",
+    "id": "wb0577",
     "word": "forecast",
     "type": "verb",
     "meaning": "tahmin etmek, öngörmek",
@@ -14116,10 +15441,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "recall",
       "review"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0528",
+    "id": "wb0578",
     "word": "formulate",
     "type": "verb",
     "meaning": "formüle etmek, oluşturmak",
@@ -14143,10 +15468,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "accumulate",
       "speculate"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0529",
+    "id": "wb0579",
     "word": "frustrate",
     "type": "verb",
     "meaning": "engellemek, boşa çıkarmak; hayal kırıklığına uğratmak",
@@ -14170,10 +15495,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "demonstrate",
       "fascinate"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0530",
+    "id": "wb0580",
     "word": "accompany",
     "type": "verb",
     "meaning": "eşlik etmek, beraberinde olmak",
@@ -14197,10 +15522,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "acquire",
       "accelerate"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0531",
+    "id": "wb0581",
     "word": "advance",
     "type": "verb",
     "meaning": "ilerlemek, ilerletmek; öne sürmek",
@@ -14224,10 +15549,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "decline",
       "withdraw"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0532",
+    "id": "wb0582",
     "word": "arise",
     "type": "verb",
     "meaning": "ortaya çıkmak, doğmak (sorun, durum)",
@@ -14251,10 +15576,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "rise",
       "arrange"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0533",
+    "id": "wb0583",
     "word": "assist",
     "type": "verb",
     "meaning": "yardım etmek, destek olmak",
@@ -14278,10 +15603,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "persist",
       "consist"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0534",
+    "id": "wb0584",
     "word": "attach",
     "type": "verb",
     "meaning": "eklemek, iliştirmek; (önem) atfetmek",
@@ -14305,10 +15630,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deduct",
       "detect"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0535",
+    "id": "wb0585",
     "word": "benefit",
     "type": "verb",
     "meaning": "yararlanmak, fayda sağlamak",
@@ -14332,10 +15657,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "differ",
       "abstain"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0536",
+    "id": "wb0586",
     "word": "compensate",
     "type": "verb",
     "meaning": "telafi etmek, tazmin etmek",
@@ -14359,10 +15684,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "contemplate",
       "congratulate"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0537",
+    "id": "wb0587",
     "word": "compile",
     "type": "verb",
     "meaning": "derlemek, toplamak (veri, liste)",
@@ -14386,10 +15711,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "compete",
       "complain"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0538",
+    "id": "wb0588",
     "word": "complement",
     "type": "verb",
     "meaning": "tamamlamak, bütünlemek",
@@ -14413,10 +15738,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "supplement",
       "comment"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0539",
+    "id": "wb0589",
     "word": "concentrate",
     "type": "verb",
     "meaning": "yoğunlaşmak, odaklanmak; toplanmak",
@@ -14440,10 +15765,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "distribute",
       "dilute"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0540",
+    "id": "wb0590",
     "word": "correspond",
     "type": "verb",
     "meaning": "uyuşmak, karşılık gelmek; yazışmak",
@@ -14467,10 +15792,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "depend",
       "suspend"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0541",
+    "id": "wb0591",
     "word": "deserve",
     "type": "verb",
     "meaning": "hak etmek, layık olmak",
@@ -14494,10 +15819,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "reserve",
       "conserve"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0542",
+    "id": "wb0592",
     "word": "devote",
     "type": "verb",
     "meaning": "adamak, ayırmak (zaman, emek)",
@@ -14521,10 +15846,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "devour",
       "deviate"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0543",
+    "id": "wb0593",
     "word": "differ",
     "type": "verb",
     "meaning": "farklı olmak, ayrılmak",
@@ -14548,10 +15873,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "suffer",
       "infer"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0544",
+    "id": "wb0594",
     "word": "embrace",
     "type": "verb",
     "meaning": "benimsemek, kucaklamak",
@@ -14575,10 +15900,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dismiss",
       "abandon"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0545",
+    "id": "wb0595",
     "word": "enlarge",
     "type": "verb",
     "meaning": "büyütmek, genişletmek",
@@ -14602,10 +15927,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "reduce",
       "diminish"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0546",
+    "id": "wb0596",
     "word": "enrich",
     "type": "verb",
     "meaning": "zenginleştirmek",
@@ -14629,10 +15954,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "drain",
       "impoverish"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0547",
+    "id": "wb0597",
     "word": "exaggerate",
     "type": "verb",
     "meaning": "abartmak",
@@ -14656,10 +15981,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "overlook",
       "minimize"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0548",
+    "id": "wb0598",
     "word": "exempt",
     "type": "verb",
     "meaning": "muaf tutmak",
@@ -14683,10 +16008,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "exert",
       "expel"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0549",
+    "id": "wb0599",
     "word": "execute",
     "type": "verb",
     "meaning": "uygulamak, yerine getirmek; idam etmek",
@@ -14710,10 +16035,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "exclude",
       "exceed"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0550",
+    "id": "wb0600",
     "word": "expire",
     "type": "verb",
     "meaning": "süresi dolmak, geçersiz olmak",
@@ -14737,10 +16062,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "perspire",
       "conspire"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0551",
+    "id": "wb0601",
     "word": "favour",
     "type": "verb",
     "meaning": "tercih etmek, desteklemek; kayırmak",
@@ -14764,10 +16089,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "resent",
       "denounce"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0552",
+    "id": "wb0602",
     "word": "feature",
     "type": "verb",
     "meaning": "içermek, öne çıkarmak, yer vermek",
@@ -14791,10 +16116,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "capture",
       "nurture"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0553",
+    "id": "wb0603",
     "word": "finance",
     "type": "verb",
     "meaning": "finanse etmek, para sağlamak",
@@ -14818,10 +16143,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "refine",
       "define"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0554",
+    "id": "wb0604",
     "word": "grant",
     "type": "verb",
     "meaning": "vermek, bahşetmek; kabul etmek",
@@ -14845,10 +16170,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "withhold",
       "reject"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0555",
+    "id": "wb0605",
     "word": "guarantee",
     "type": "verb",
     "meaning": "garanti etmek, güvence vermek",
@@ -14872,10 +16197,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "undermine",
       "violate"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0556",
+    "id": "wb0606",
     "word": "handle",
     "type": "verb",
     "meaning": "üstesinden gelmek, ele almak, idare etmek",
@@ -14899,10 +16224,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "hurdle",
       "haunt"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0557",
+    "id": "wb0607",
     "word": "hesitate",
     "type": "verb",
     "meaning": "tereddüt etmek, duraksamak",
@@ -14926,10 +16251,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "meditate",
       "dictate"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0558",
+    "id": "wb0608",
     "word": "imitate",
     "type": "verb",
     "meaning": "taklit etmek",
@@ -14953,10 +16278,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "intimidate",
       "hesitate"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0559",
+    "id": "wb0609",
     "word": "inform",
     "type": "verb",
     "meaning": "bilgilendirmek, haber vermek",
@@ -14980,10 +16305,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "reform",
       "transform"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0560",
+    "id": "wb0610",
     "word": "insert",
     "type": "verb",
     "meaning": "yerleştirmek, sokmak, eklemek",
@@ -15007,10 +16332,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "desert",
       "invert"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0561",
+    "id": "wb0611",
     "word": "intend",
     "type": "verb",
     "meaning": "niyet etmek, amaçlamak",
@@ -15034,10 +16359,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "pretend",
       "tend"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0562",
+    "id": "wb0612",
     "word": "invest",
     "type": "verb",
     "meaning": "yatırım yapmak",
@@ -15061,10 +16386,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "divest",
       "inject"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0563",
+    "id": "wb0613",
     "word": "lack",
     "type": "verb",
     "meaning": "yoksun olmak, eksiği olmak",
@@ -15088,10 +16413,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "retain",
       "obtain"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0564",
+    "id": "wb0614",
     "word": "limit",
     "type": "verb",
     "meaning": "sınırlamak",
@@ -15115,10 +16440,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "broaden",
       "increase"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0565",
+    "id": "wb0615",
     "word": "locate",
     "type": "verb",
     "meaning": "yerini bulmak; yerleştirmek",
@@ -15142,10 +16467,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dislocate",
       "collate"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0566",
+    "id": "wb0616",
     "word": "merge",
     "type": "verb",
     "meaning": "birleşmek, birleştirmek",
@@ -15169,10 +16494,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "diverge",
       "immerse"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0567",
+    "id": "wb0617",
     "word": "obey",
     "type": "verb",
     "meaning": "itaat etmek, uymak",
@@ -15196,10 +16521,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "ignore",
       "disregard"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0568",
+    "id": "wb0618",
     "word": "oblige",
     "type": "verb",
     "meaning": "zorunda bırakmak, mecbur etmek",
@@ -15223,10 +16548,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "spare",
       "excuse"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0569",
+    "id": "wb0619",
     "word": "oppose",
     "type": "verb",
     "meaning": "karşı çıkmak, muhalefet etmek",
@@ -15250,10 +16575,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "favour",
       "propose"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0570",
+    "id": "wb0620",
     "word": "participate",
     "type": "verb",
     "meaning": "katılmak",
@@ -15277,10 +16602,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "emancipate",
       "dissipate"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0571",
+    "id": "wb0621",
     "word": "permit",
     "type": "verb",
     "meaning": "izin vermek",
@@ -15304,10 +16629,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "ban",
       "prevent"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0572",
+    "id": "wb0622",
     "word": "persuade",
     "type": "verb",
     "meaning": "ikna etmek",
@@ -15331,10 +16656,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "evade",
       "invade"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0573",
+    "id": "wb0623",
     "word": "possess",
     "type": "verb",
     "meaning": "sahip olmak",
@@ -15358,10 +16683,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "surrender",
       "relinquish"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0574",
+    "id": "wb0624",
     "word": "prioritize",
     "type": "verb",
     "meaning": "öncelik vermek, önceliklendirmek",
@@ -15385,10 +16710,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "overlook",
       "disregard"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0575",
+    "id": "wb0625",
     "word": "proceed",
     "type": "verb",
     "meaning": "devam etmek, ilerlemek",
@@ -15412,10 +16737,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "exceed",
       "concede"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0576",
+    "id": "wb0626",
     "word": "prompt",
     "type": "verb",
     "meaning": "tetiklemek, -e sevk etmek",
@@ -15439,10 +16764,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "discourage",
       "hinder"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0577",
+    "id": "wb0627",
     "word": "propose",
     "type": "verb",
     "meaning": "önermek; evlilik teklif etmek",
@@ -15466,10 +16791,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "expose",
       "dispose"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0578",
+    "id": "wb0628",
     "word": "purchase",
     "type": "verb",
     "meaning": "satın almak",
@@ -15493,10 +16818,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "sell",
       "lease"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0579",
+    "id": "wb0629",
     "word": "qualify",
     "type": "verb",
     "meaning": "hak kazanmak, nitelik kazanmak",
@@ -15520,10 +16845,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "classify",
       "clarify"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0580",
+    "id": "wb0630",
     "word": "recall",
     "type": "verb",
     "meaning": "hatırlamak; geri çağırmak",
@@ -15547,10 +16872,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "neglect",
       "omit"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0581",
+    "id": "wb0631",
     "word": "recognize",
     "type": "verb",
     "meaning": "tanımak; kabul etmek, takdir etmek",
@@ -15574,10 +16899,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "ignore",
       "dismiss"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0582",
+    "id": "wb0632",
     "word": "recommend",
     "type": "verb",
     "meaning": "tavsiye etmek, önermek",
@@ -15601,10 +16926,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "comment",
       "amend"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0583",
+    "id": "wb0633",
     "word": "recruit",
     "type": "verb",
     "meaning": "işe almak, (asker, üye) toplamak",
@@ -15628,10 +16953,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "expel",
       "retire"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0584",
+    "id": "wb0634",
     "word": "regard",
     "type": "verb",
     "meaning": "saymak, gözüyle bakmak",
@@ -15655,10 +16980,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "guard",
       "reward"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0585",
+    "id": "wb0635",
     "word": "regulate",
     "type": "verb",
     "meaning": "düzenlemek, denetlemek",
@@ -15682,10 +17007,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "congratulate",
       "circulate"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0586",
+    "id": "wb0636",
     "word": "represent",
     "type": "verb",
     "meaning": "temsil etmek; teşkil etmek",
@@ -15709,10 +17034,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "repent",
       "present"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0587",
+    "id": "wb0637",
     "word": "reproduce",
     "type": "verb",
     "meaning": "üremek; yeniden üretmek",
@@ -15736,10 +17061,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deduce",
       "induce"
     ],
-    "groupDay": 17
+    "groupDay": 7
   },
   {
-    "id": "wb0588",
+    "id": "wb0638",
     "word": "rescue",
     "type": "verb",
     "meaning": "kurtarmak",
@@ -15763,10 +17088,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "neglect",
       "endanger"
     ],
-    "groupDay": 18
+    "groupDay": 8
   },
   {
-    "id": "wb0589",
+    "id": "wb0639",
     "word": "resign",
     "type": "verb",
     "meaning": "istifa etmek",
@@ -15790,10 +17115,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "consign",
       "reign"
     ],
-    "groupDay": 19
+    "groupDay": 9
   },
   {
-    "id": "wb0590",
+    "id": "wb0640",
     "word": "respond",
     "type": "verb",
     "meaning": "cevap vermek, tepki göstermek",
@@ -15817,10 +17142,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "suspend",
       "spend"
     ],
-    "groupDay": 20
+    "groupDay": 10
   },
   {
-    "id": "wb0591",
+    "id": "wb0641",
     "word": "restore",
     "type": "verb",
     "meaning": "onarmak, eski hâline getirmek",
@@ -15844,10 +17169,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "demolish",
       "damage"
     ],
-    "groupDay": 21
+    "groupDay": 11
   },
   {
-    "id": "wb0592",
+    "id": "wb0642",
     "word": "retire",
     "type": "verb",
     "meaning": "emekli olmak; çekilmek",
@@ -15871,10 +17196,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "admire",
       "inspire"
     ],
-    "groupDay": 22
+    "groupDay": 12
   },
   {
-    "id": "wb0593",
+    "id": "wb0643",
     "word": "reverse",
     "type": "verb",
     "meaning": "tersine çevirmek",
@@ -15898,10 +17223,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "worsen",
       "sustain"
     ],
-    "groupDay": 23
+    "groupDay": 13
   },
   {
-    "id": "wb0594",
+    "id": "wb0644",
     "word": "satisfy",
     "type": "verb",
     "meaning": "tatmin etmek; (şart, ihtiyaç) karşılamak",
@@ -15925,10 +17250,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dissatisfy",
       "deprive"
     ],
-    "groupDay": 24
+    "groupDay": 14
   },
   {
-    "id": "wb0595",
+    "id": "wb0645",
     "word": "secure",
     "type": "verb",
     "meaning": "sağlamak, elde etmek; güvence altına almak",
@@ -15952,10 +17277,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "squander",
       "risk"
     ],
-    "groupDay": 25
+    "groupDay": 15
   },
   {
-    "id": "wb0596",
+    "id": "wb0646",
     "word": "settle",
     "type": "verb",
     "meaning": "yerleşmek; (anlaşmazlığı) çözmek",
@@ -15979,10 +17304,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "escalate",
       "prolong"
     ],
-    "groupDay": 26
+    "groupDay": 16
   },
   {
-    "id": "wb0597",
+    "id": "wb0647",
     "word": "specialize",
     "type": "verb",
     "meaning": "uzmanlaşmak",
@@ -16006,10 +17331,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "finalize",
       "stabilize"
     ],
-    "groupDay": 27
+    "groupDay": 17
   },
   {
-    "id": "wb0598",
+    "id": "wb0648",
     "word": "specify",
     "type": "verb",
     "meaning": "belirtmek, açıkça tanımlamak",
@@ -16033,10 +17358,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "simplify",
       "signify"
     ],
-    "groupDay": 28
+    "groupDay": 18
   },
   {
-    "id": "wb0599",
+    "id": "wb0649",
     "word": "strengthen",
     "type": "verb",
     "meaning": "güçlendirmek",
@@ -16060,10 +17385,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "erode",
       "loosen"
     ],
-    "groupDay": 29
+    "groupDay": 19
   },
   {
-    "id": "wb0600",
+    "id": "wb0650",
     "word": "submit",
     "type": "verb",
     "meaning": "sunmak, teslim etmek; boyun eğmek",
@@ -16087,10 +17412,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "permit",
       "commit"
     ],
-    "groupDay": 30
+    "groupDay": 20
   },
   {
-    "id": "wb0601",
+    "id": "wb0651",
     "word": "succeed",
     "type": "verb",
     "meaning": "başarmak; -in yerine geçmek",
@@ -16114,10 +17439,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "fail",
       "concede"
     ],
-    "groupDay": 1
+    "groupDay": 21
   },
   {
-    "id": "wb0602",
+    "id": "wb0652",
     "word": "summarize",
     "type": "verb",
     "meaning": "özetlemek",
@@ -16141,10 +17466,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "memorize",
       "sympathize"
     ],
-    "groupDay": 2
+    "groupDay": 22
   },
   {
-    "id": "wb0603",
+    "id": "wb0653",
     "word": "supply",
     "type": "verb",
     "meaning": "sağlamak, tedarik etmek",
@@ -16168,10 +17493,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deprive",
       "deny"
     ],
-    "groupDay": 3
+    "groupDay": 23
   },
   {
-    "id": "wb0604",
+    "id": "wb0654",
     "word": "suspect",
     "type": "verb",
     "meaning": "şüphelenmek",
@@ -16195,10 +17520,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "expect",
       "prospect"
     ],
-    "groupDay": 4
+    "groupDay": 24
   },
   {
-    "id": "wb0605",
+    "id": "wb0655",
     "word": "symbolize",
     "type": "verb",
     "meaning": "simgelemek",
@@ -16222,10 +17547,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "summarize",
       "stabilize"
     ],
-    "groupDay": 5
+    "groupDay": 25
   },
   {
-    "id": "wb0606",
+    "id": "wb0656",
     "word": "tackle",
     "type": "verb",
     "meaning": "ele almak, üstesinden gelmeye çalışmak",
@@ -16249,10 +17574,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "evade",
       "overlook"
     ],
-    "groupDay": 6
+    "groupDay": 26
   },
   {
-    "id": "wb0607",
+    "id": "wb0657",
     "word": "urge",
     "type": "verb",
     "meaning": "ısrarla tavsiye etmek, teşvik etmek",
@@ -16276,10 +17601,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deter",
       "forbid"
     ],
-    "groupDay": 7
+    "groupDay": 27
   },
   {
-    "id": "wb0608",
+    "id": "wb0658",
     "word": "withdraw",
     "type": "verb",
     "meaning": "geri çekmek, çekilmek; (para) çekmek",
@@ -16303,10 +17628,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "deploy",
       "advance"
     ],
-    "groupDay": 8
+    "groupDay": 28
   },
   {
-    "id": "wb0609",
+    "id": "wb0659",
     "word": "worsen",
     "type": "verb",
     "meaning": "kötüleşmek, kötüleştirmek",
@@ -16330,10 +17655,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "ease",
       "improve"
     ],
-    "groupDay": 9
+    "groupDay": 29
   },
   {
-    "id": "wb0610",
+    "id": "wb0660",
     "word": "decrease",
     "type": "verb",
     "meaning": "azalmak, azaltmak",
@@ -16357,10 +17682,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "soar",
       "escalate"
     ],
-    "groupDay": 10
+    "groupDay": 30
   },
   {
-    "id": "wb0611",
+    "id": "wb0661",
     "word": "disguise",
     "type": "verb",
     "meaning": "gizlemek, kılık değiştirmek",
@@ -16384,10 +17709,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "expose",
       "display"
     ],
-    "groupDay": 11
+    "groupDay": 1
   },
   {
-    "id": "wb0612",
+    "id": "wb0662",
     "word": "erect",
     "type": "verb",
     "meaning": "dikmek, inşa etmek",
@@ -16411,10 +17736,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "destroy",
       "topple"
     ],
-    "groupDay": 12
+    "groupDay": 2
   },
   {
-    "id": "wb0613",
+    "id": "wb0663",
     "word": "explode",
     "type": "verb",
     "meaning": "patlamak; hızla artmak",
@@ -16438,10 +17763,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "dwindle",
       "stagnate"
     ],
-    "groupDay": 13
+    "groupDay": 3
   },
   {
-    "id": "wb0614",
+    "id": "wb0664",
     "word": "gather",
     "type": "verb",
     "meaning": "toplamak, bir araya gelmek",
@@ -16465,10 +17790,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "distribute",
       "discard"
     ],
-    "groupDay": 14
+    "groupDay": 4
   },
   {
-    "id": "wb0615",
+    "id": "wb0665",
     "word": "install",
     "type": "verb",
     "meaning": "kurmak, yerleştirmek",
@@ -16492,10 +17817,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "uninstall",
       "dismantle"
     ],
-    "groupDay": 15
+    "groupDay": 5
   },
   {
-    "id": "wb0616",
+    "id": "wb0666",
     "word": "influence",
     "type": "verb",
     "meaning": "etkilemek",
@@ -16519,10 +17844,10 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "neglect",
       "resist"
     ],
-    "groupDay": 16
+    "groupDay": 6
   },
   {
-    "id": "wb0617",
+    "id": "wb0667",
     "word": "invent",
     "type": "verb",
     "meaning": "icat etmek; uydurmak",
@@ -16546,6 +17871,6 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "prevent",
       "discover"
     ],
-    "groupDay": 17
+    "groupDay": 7
   }
 ];
