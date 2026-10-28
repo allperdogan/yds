@@ -21,6 +21,8 @@ import {
 } from 'lucide-react';
 import { VocabQuizQuestion, YdsWord } from '../types';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from '../data/ydsVocabQuiz';
+import { buildVocabOptions } from '../services/vocabOptions';
+import { blankExample } from '../services/vocabBlank';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { AudioService } from '../services/audioService';
 
@@ -30,7 +32,9 @@ interface VocabDrillViewProps {
   bookmarkedWordIds?: string[];
   initialDay?: number;
   initialStage?: 'learn' | 'test';
+  initialSource?: 'infinite' | 'curated';
   onMarkKnown: (wordId: string) => void;
+  onRecordVocabAnswer?: (wordId: string, isCorrect: boolean) => void;
   onMarkPendingReview: (wordId: string) => void;
   onRemovePendingReview: (wordId: string) => void;
   onToggleBookmark?: (wordId: string) => void;
@@ -39,13 +43,17 @@ interface VocabDrillViewProps {
   onNavigateToFlashcards?: (mode?: 'flashcard' | 'dictionary') => void;
 }
 
+const TOTAL_WORDS = YDS_VOCABULARY_LIST.length.toLocaleString('tr-TR');
+
 export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   knownVocabIds,
   pendingReviewVocabIds,
   bookmarkedWordIds = [],
   initialDay,
   initialStage,
+  initialSource = 'infinite',
   onMarkKnown,
+  onRecordVocabAnswer,
   onMarkPendingReview,
   onRemovePendingReview,
   onToggleBookmark,
@@ -53,8 +61,9 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   onAddMistake,
   onNavigateToFlashcards
 }) => {
-  // Drill Mode: Curated VIP Questions vs Infinite 1,412 Question Generator
-  const [drillSource, setDrillSource] = useState<'infinite' | 'curated'>('curated');
+  // Drill Mode: Curated VIP Questions vs Infinite Question Generator
+  const [drillSource, setDrillSource] = useState<'infinite' | 'curated'>(initialSource);
+  const [showOptions, setShowOptions] = useState<boolean>(false);
 
   // Filters
   const [selectedCategory, setSelectedCategory] = useState<
@@ -95,7 +104,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   const [atlasTab, setAtlasTab] = useState<'conjunctions' | 'verbs' | 'adjectives'>('conjunctions');
   const [searchLearnedQuery, setSearchLearnedQuery] = useState<string>('');
 
-  // 1. DYNAMIC INFINITE QUESTION GENERATOR FROM ALL 1,412 WORDS
+  // 1. DYNAMIC INFINITE QUESTION GENERATOR FROM THE WHOLE WORD LIST
   const infiniteQuestions: VocabQuizQuestion[] = useMemo(() => {
     let pool = [...YDS_VOCABULARY_LIST];
 
@@ -120,46 +129,12 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       byType[w.type].push(w);
     });
 
-    return pool.map((w, index) => {
-      const wordText = w.word;
-      const escaped = wordText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const reg = new RegExp(`\\b${escaped}\\b`, 'i');
-      let sentence = w.exampleEn;
+    return pool.map((w) => {
+      const sentence =
+        blankExample(w.word, w.exampleEn) ?? `Anlamı "${w.meaning}" olan kelime: _____`;
 
-      if (reg.test(sentence)) {
-        sentence = sentence.replace(reg, '_____');
-      } else {
-        // Fallback for inflected forms (e.g., -ing, -ed, -s)
-        const root = wordText.split(' ')[0].replace(/e$/, '');
-        const rootReg = new RegExp(`\\b${root}[a-z]*\\b`, 'i');
-        if (rootReg.test(sentence)) {
-          sentence = sentence.replace(rootReg, '_____');
-        } else {
-          sentence = `The research team noted that _____ conditions were critical for success. ("${w.exampleEn}")`;
-        }
-      }
-
-      // Pick 3 realistic distractors of the same grammatical part of speech
-      const candidateDistractors = (byType[w.type] || YDS_VOCABULARY_LIST).filter(
-        (c) => c.id !== w.id && c.word.toLowerCase() !== w.word.toLowerCase()
-      );
-
-      const distractors: string[] = [];
-      const distLen = candidateDistractors.length;
-      if (distLen >= 3) {
-        const step = Math.max(1, Math.floor(distLen / 4));
-        const d1 = candidateDistractors[(index * 5 + 1) % distLen];
-        const d2 = candidateDistractors[(index * 5 + step + 2) % distLen];
-        const d3 = candidateDistractors[(index * 5 + step * 2 + 3) % distLen];
-        distractors.push(d1.word, d2.word, d3.word);
-      } else {
-        distractors.push('enhance', 'undermine', 'mitigate');
-      }
-
-      // 4 choices sorted alphabetically so the correct answer is not in a fixed position
-      const options = Array.from(new Set([w.word, ...distractors])).sort((a, b) =>
-        a.localeCompare(b)
-      );
+      // 5 options: curated distractors first, then same part of speech; seeded order
+      const options = buildVocabOptions(w, byType);
 
       // Build options breakdown including mnemonics for every choice
       const optionsBreakdown: Record<
@@ -258,9 +233,10 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       ...prev,
       [currentQ.id]: opt
     }));
-    setShowLearningCard(true); // Always reveal mnemonics for all 4 options!
+    setShowLearningCard(true); // Always reveal mnemonics for all 5 options!
 
     const isCorrect = opt === currentQ.correctAnswer;
+    onRecordVocabAnswer?.(currentQ.targetWordId, isCorrect);
     if (isCorrect) {
       onMarkKnown(currentQ.targetWordId);
       onRemovePendingReview(currentQ.targetWordId);
@@ -282,6 +258,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       [currentQ.id]: null
     }));
     setShowLearningCard(true);
+    onRecordVocabAnswer?.(currentQ.targetWordId, false);
     onMarkPendingReview(currentQ.targetWordId);
     if (onAddMistakeWord) {
       onAddMistakeWord(currentQ.targetWordId);
@@ -344,6 +321,25 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
 
   return (
     <div className="max-w-3xl mx-auto space-y-4 pb-24 px-2">
+      {/* Compact header so the question is visible first; settings fold away */}
+      <div className="flex items-center gap-2">
+        <h2 className="font-bold text-slate-900 dark:text-white flex-1">Kelime</h2>
+        {studyStage === 'test' && (
+          <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
+            {Math.min(currentIndex + 1, activeQuestions.length)}/{activeQuestions.length}
+          </span>
+        )}
+        <button
+          onClick={() => setShowOptions((v) => !v)}
+          aria-expanded={showOptions}
+          className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300"
+        >
+          {showOptions ? 'Ayarları kapat' : 'Ayarlar'}
+        </button>
+      </div>
+
+      {showOptions && (
+      <div className="space-y-4">
       {/* 1. TOP UNIFIED NAVIGATION BAR */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
         <div>
@@ -356,11 +352,11 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             </span>
           </div>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-            1.412 kelimelik havuzdan test çöz, hafıza tekniklerini ve 4 şıkkın çağrışımlarını incele
+            {TOTAL_WORDS} kelimelik havuzdan test çöz, hafıza tekniklerini ve 5 şıkkın çağrışımlarını incele
           </p>
         </div>
 
-        {/* View Switcher: Soru Çöz vs 1.412 Kart (SRS) vs Kelime Sözlüğü (A-Z) */}
+        {/* View Switcher: Soru Çöz vs SRS Kart (SRS) vs Kelime Sözlüğü (A-Z) */}
         <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold shrink-0">
           <button
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-300 shadow-sm font-extrabold"
@@ -372,15 +368,15 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             <>
               <button
                 onClick={() => onNavigateToFlashcards('flashcard')}
-                title="1.412 Kelimelik Flashcard (SRS) Masasına Git"
+                title={`${TOTAL_WORDS} Kelimelik Flashcard (SRS) Masasına Git`}
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors"
               >
                 <Layers className="w-3.5 h-3.5 text-indigo-500" />
-                <span>🎴 1.412 Kart (SRS)</span>
+                <span>🎴 {TOTAL_WORDS} Kart (SRS)</span>
               </button>
               <button
                 onClick={() => onNavigateToFlashcards('dictionary')}
-                title="1.412 Kelimelik A-Z Sözlük & Arama Masasına Git"
+                title={`${TOTAL_WORDS} Kelimelik A-Z Sözlük & Arama Masasına Git`}
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors"
               >
                 <BookOpen className="w-3.5 h-3.5 text-emerald-500" />
@@ -407,7 +403,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           }`}
         >
           <Zap className="w-4 h-4" />
-          <span>♾️ 1.412 Kelime Soru Çözücü ({infiniteQuestions.length} Soru)</span>
+          <span>♾️ {TOTAL_WORDS} Kelime Soru Çözücü ({infiniteQuestions.length} Soru)</span>
         </button>
 
         <button
@@ -424,7 +420,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           }`}
         >
           <Sparkles className="w-4 h-4" />
-          <span>💎 VIP Model Sorular ({curatedQuestions.length} Soru)</span>
+          <span>Seçilmiş Sorular ({curatedQuestions.length} Soru)</span>
         </button>
       </div>
 
@@ -436,7 +432,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               <Calendar className="w-3.5 h-3.5 text-sky-500" />
               <span>Müfredat Gününe Göre Soru Çöz:</span>
             </span>
-            <span>{selectedDay === 'all' ? 'Tüm 30 Gün (1.412 Kelime)' : `Gün ${selectedDay}`}</span>
+            <span>{selectedDay === 'all' ? `Tüm 30 Gün (${TOTAL_WORDS} Kelime)` : `Gün ${selectedDay}`}</span>
           </div>
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs font-semibold">
             <button
@@ -452,7 +448,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                   : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800'
               }`}
             >
-              📅 Tüm Günler (1.412)
+              📅 Tüm Günler ({TOTAL_WORDS})
             </button>
             {Array.from({ length: 30 }, (_, i) => i + 1).map((day) => {
               const count = YDS_VOCABULARY_LIST.filter((w) => w.groupDay === day).length;
@@ -546,6 +542,9 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
         </button>
       </div>
 
+      </div>
+      )}
+
       {/* ========================================================================= */}
       {/* STAGE 1: GÜNÜN KELİMELERİNİ ÖĞRENME KARTI (PRE-DRILL WALKTHROUGH DECK)   */}
       {/* ========================================================================= */}
@@ -631,7 +630,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                     : 'bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300'
                 }`}
               >
-                {activeLearningWord.frequency === 'ultra' ? '★ Ultra Frekans' : '● Yüksek Frekans'}
+                {activeLearningWord.frequency === 'ultra' ? 'Çok sık çıkar' : 'Sık çıkar'}
               </span>
             </div>
           </div>
@@ -745,6 +744,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
       {studyStage === 'test' && (
         <>
           {/* 5. CLEAN STATUS BAR WITH "ÖĞRENDİKLERİM" & "ATLAS" */}
+          {showOptions && (
           <div className="flex items-center justify-between bg-white dark:bg-slate-900 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-xs font-bold">
         <div className="flex items-center gap-2">
           {/* Clickable Mastered Count Button */}
@@ -760,7 +760,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           {/* Fiil & Bağlaç Atlası Butonu */}
           <button
             onClick={() => setIsAtlasModalOpen(true)}
-            title="ÖSYM Altın Bağlaç ve Fiil Tablosu"
+            title="Bağlaç ve Fiil Tablosu"
             className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 transition-colors"
           >
             <Compass className="w-3.5 h-3.5 text-indigo-500" />
@@ -779,6 +779,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           Soru {currentIndex + 1} / {activeQuestions.length}
         </span>
       </div>
+          )}
 
       {/* 6. MAIN QUESTION CARD */}
       {currentQ ? (
@@ -789,13 +790,13 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               <div className="flex items-center gap-2">
                 <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300">
                   {currentQ.category === 'verb' || currentQ.type === 'verb'
-                    ? '⚔️ Akademik Fiil Sorusu'
+                    ? 'Fiil Sorusu'
                     : currentQ.category === 'adjective' || currentQ.type === 'adjective'
-                    ? '🎨 Sıfat & Duygu Analizi'
+                    ? 'Sıfat Sorusu'
                     : currentQ.category === 'conjunction' || currentQ.type === 'conjunction'
-                    ? '🔗 Bağlaç Sorusu'
+                    ? 'Bağlaç Sorusu'
                     : currentQ.category === 'phrasal_verb' || currentQ.type === 'phrasal_verb'
-                    ? '⚡ Phrasal Verb Sorusu'
+                    ? 'Phrasal Verb Sorusu'
                     : currentQ.category === 'grammar'
                     ? 'Gramer Formülü'
                     : 'Kelime Sorusu'}
@@ -836,7 +837,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               </button>
             </div>
 
-            {/* 4 Clean Choice Buttons */}
+            {/* 5 Clean Choice Buttons */}
             <div className="space-y-2.5 pt-1">
               {currentQ.options.map((opt, idx) => {
                 const isSelected = selectedOption === opt;
@@ -1054,7 +1055,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
             }}
             className="px-4 py-2 bg-sky-600 text-white rounded-xl text-xs font-bold"
           >
-            Tüm 1.412 Kelimeyi Aç
+            Tüm {TOTAL_WORDS} Kelimeyi Aç
           </button>
         </div>
       )}
@@ -1175,7 +1176,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                 </span>
                 <div>
                   <h3 className="text-base md:text-lg font-black text-slate-900 dark:text-white">
-                    ÖSYM Altın Fiil, Bağlaç & Sıfat Atlası
+                    Fiil, Bağlaç ve Sıfat Listesi
                   </h3>
                   <p className="text-[11px] text-slate-400">
                     Paragraf ve cümle sorularını deşifre eden anahtar formüller
@@ -1211,7 +1212,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                     : 'text-slate-600 dark:text-slate-400'
                 }`}
               >
-                ⚔️ 30 Altın Fiil
+                ⚔️ 30 Sık Fiil
               </button>
               <button
                 onClick={() => setAtlasTab('adjectives')}

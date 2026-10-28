@@ -15,6 +15,7 @@ export interface YdsWord {
   frequency: 'ultra' | 'high' | 'medium';
   groupDay: number; // Day 1 to 30
   mnemonic?: string; // Akılda kalıcı çağrışım / ses benzeşimi / hafıza tekniği
+  distractors?: string[]; // Aynı türden, yakın anlamlı ama cümleye uymayan 4 çeldirici
 }
 
 export type SRSGrade = 0 | 3 | 4 | 5; // 0: Again, 3: Hard, 4: Good, 5: Easy
@@ -44,7 +45,7 @@ export interface VocabQuizQuestion {
   targetWord: string;
   type: WordType;
   sentence: string; // Sentence with "_____"
-  options: string[]; // 4 options
+  options: string[]; // 5 options (ÖSYM formatı)
   correctAnswer: string;
   meaningTr: string;
   explanation: string;
@@ -84,7 +85,7 @@ export interface YdsQuestion {
   explanation: string;
   tacticUsed: string;
   trapWarning?: string;
-  difficulty: 'Orta' | 'İleri' | 'YDS Master';
+  difficulty: 'Orta' | 'İleri' | 'Zor';
   dayAssigned?: number;
 }
 
@@ -166,6 +167,7 @@ export interface ReadingPassage {
 
 export interface MockExamResult {
   id: string;
+  examId?: string; // which mock (exam_1..3); retakes of the same mock are not fresh evidence
   date: string;
   score: number; // 0 to 100
   correctCount: number;
@@ -189,6 +191,12 @@ export interface UserStats {
   mistakeQuestionIds: string[];
   knownVocabIds: string[];
   pendingReviewVocabIds: string[];
-  solvedQuestions: { [questionId: string]: { selected: string; isCorrect: boolean } };
+  // isCorrect follows the latest answer; firstIsCorrect keeps the first try,
+  // which is what the score estimate uses (a retry after seeing the answer is not evidence).
+  solvedQuestions: {
+    [questionId: string]: { selected: string; isCorrect: boolean; seconds?: number; firstIsCorrect?: boolean };
+  };
+  // First answer given to each word in the vocabulary drill.
+  vocabFirstAnswers?: { [wordId: string]: boolean };
   mockExamResults?: MockExamResult[];
 }

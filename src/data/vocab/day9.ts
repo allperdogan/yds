@@ -79,7 +79,7 @@ export const day9Words: YdsWord[] = [
     ydsTip: "'Augmented reality' (artırılmış gerçeklik) teknolojisinden bilinen augment; metinlerde geliri veya gücü artırmak anlamında 'increase' muadilidir.",
     frequency: "high",
     groupDay: 9,
-    mnemonic: "💡 ÇAĞRIŞIM: 'AĞ-MENTEŞE / AUGMENTED' -> Kapıya ek menteşe takarak sağlamlığını artırmak, boyutu çoğaltmak (augment)."
+    mnemonic: "💡 ÇAĞRIŞIM: AUG (artırmak, büyütmek). \"Augmented reality\" = gerçekliği artıran teknoloji. Bir şeyi büyütmek, çoğaltmak."
   },
   {
     id: "w1070",
@@ -191,7 +191,7 @@ export const day9Words: YdsWord[] = [
     ydsTip: "Beklenmedik kötü bir haber karşısında yaşanan şok ve dehşet halini ifade eder; 'dismay' ve 'alarm' ile eş anlamlıdır.",
     frequency: "medium",
     groupDay: 9,
-    mnemonic: "💡 ÇAĞRIŞIM: 'KORKSANA-TEN' -> İnsanın korku ve dehşetten teninin renginin atması, büyük bir şaşkınlık ve afallama hali (consternation)."
+    mnemonic: "💡 ÇAĞRIŞIM: CON + STERN (yere sermek). İnsanı yere seren büyük şaşkınlık ve dehşet = afallama."
   },
   {
     id: "w661",
@@ -479,7 +479,7 @@ export const day9Words: YdsWord[] = [
     ydsTip: "Sanat, edebiyat ve mimari eleştirilerinde zıt iki ögenin çarpıcı bir etki yaratmak için yan yana getirilmesini ifade eder.",
     frequency: "medium",
     groupDay: 9,
-    mnemonic: "💡 ÇAĞRIŞIM: 'YUKARI-POZİSYON / YAN YANA' -> İki zıt resmi yan yana koyup aralarındaki tezat pozisyonu sergilemek: JUXTAPOSITION."
+    mnemonic: "💡 ÇAĞRIŞIM: Latince JUXTA (yanında) + POSITION (konum). İki şeyi karşılaştırmak için yan yana koymak = yan yana koyma, tezat."
   },
   {
     id: "w1130",
@@ -495,7 +495,7 @@ export const day9Words: YdsWord[] = [
     ydsTip: "Siyaset ve hukuk metinlerinde uydurma beyanları veya aldatıcı propagandayı nitelerken 'dishonest' yerine kullanılan üst düzey kelimedir.",
     frequency: "medium",
     groupDay: 9,
-    mnemonic: "💡 ÇAĞRIŞIM: 'MANDACI / MENDİLLİ YALANCI' -> Göz göre göre uydurma masallar anlatan, mendil sallayıp halkı aldatan yalancı (mendacious)."
+    mnemonic: "💡 ÇAĞRIŞIM: Latince MENDAX (yalancı). Sürekli gerçeğe aykırı konuşan = yalancı, uydurma."
   },
   {
     id: "w324",
@@ -575,7 +575,7 @@ export const day9Words: YdsWord[] = [
     ydsTip: "Daima 'for' edatı ile kullanılır: 'have a penchant for something' (bir şeye düşkünlüğü/eğilimi olmak). 'Predilection' ve 'propensity' ile eştir.",
     frequency: "medium",
     groupDay: 9,
-    mnemonic: "💡 ÇAĞRIŞIM: 'PEK-CAN' -> Cana pek yakın gelen, kalbin bir şeye aşırı derecede meyletmesi ve düşkün olması: PENCHANT (meyil, düşkünlük)."
+    mnemonic: "💡 ÇAĞRIŞIM: Fransızca \"pencher\" (eğilmek). Gönlün sürekli bir şeye doğru eğilmesi = düşkünlük, meyil. \"A penchant for\" = -e düşkünlük."
   },
   {
     id: "w354",
@@ -735,7 +735,7 @@ export const day9Words: YdsWord[] = [
     ydsTip: "Tıp metinlerinde bir hastalığa yenik düşüp ölmek, siyasette ise baskılara dayanamayıp teslim olmak ('succumb to pressure') bağlamında test edilir.",
     frequency: "high",
     groupDay: 9,
-    mnemonic: "💡 ÇAĞRIŞIM: 'SÜKUT / BOYUN BÜKÜM' -> Artık direnecek takati kalmayıp boynunu bükmek, teslim olup yenik düşmek (succumb to)."
+    mnemonic: "💡 ÇAĞRIŞIM: SUC (altına) + CUMB (yatmak). Hastalığın ya da baskının altında yere yığılmak = yenik düşmek."
   },
   {
     id: "w602",

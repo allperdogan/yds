@@ -13,9 +13,9 @@ export const day4Words: YdsWord[] = [
     "exampleEn": "Immigrants taking the naturalization oath must formally renounce former political ties and pledge allegiance to their new homeland.",
     "exampleTr": "Vatandaşlığa geçiş yeminini eden göçmenler, önceki siyasi bağlarından resmen feragat etmeli ve yeni anavatanlarına bağlılık ve sadakat yemini etmelidir.",
     "ydsTip": "Tarih ve siyaset metinlerinde 'loyalty', 'fidelity' ve 'devotion' ile eş anlamlı olarak sorulur.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ALİ-GENÇLİK' -> Ali gençlik kollarındayken davasına sarsılmaz bir ALLEGIANCE (sadakat, bağlılık) ile hizmet etti."
+    "mnemonic": "💡 ÇAĞRIŞIM: AL + LEGI (bağlamak; Ortaçağda \"liege\" = efendi). Efendisine bağlı olma hali = sadakat, bağlılık."
   },
   {
     "id": "w979",
@@ -63,7 +63,7 @@ export const day4Words: YdsWord[] = [
     "ydsTip": "'Foresee', 'predict', 'expect' ve 'forecast' ile tam eş anlamlıdır; gelecek tahminleri içeren akademik metinlerde sıkça yer alır.",
     "frequency": "ultra",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ANTİ-KAPAT' -> Kriz gelmeden önce tedbirini alıp önceden tahmin eden, öngören akıl: ANTICIPATE (öngörmek, beklemek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: ANTI (burada ANTE = önce) + CIP (almak, yakalamak; \"capture\"). Olay gelmeden önce zihninde yakalamak = öngörmek, beklemek."
   },
   {
     "id": "w1065",
@@ -79,7 +79,7 @@ export const day4Words: YdsWord[] = [
     "ydsTip": "'Daring', 'bold' ve 'fearless' ile eş anlamlıdır. Bazen de sınır tanımaz küstahlık (insolent) anlamı taşır.",
     "frequency": "high",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ODA-BOŞ' -> Tehlikeye aldırmadan cüretle ileri atılan AUDACIOUS (cüretkar, cesur) kahraman."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"audere\" (cüret etmek). AUDAcious ~ \"ODA\"ya izinsiz dalan gözü pek misafir: cüretkâr, aşırı cesur."
   },
   {
     "id": "w417",
@@ -159,7 +159,7 @@ export const day4Words: YdsWord[] = [
     "ydsTip": "Şehircilik metinlerinde 'traffic congestion' (trafik sıkışıklığı); tıp metinlerinde 'nasal / lung congestion' olarak çıkar.",
     "frequency": "high",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KAN-CESTE (Tıkandı)' -> Damarların veya yolların kilitlenip akmaz hale gelmesi: CONGESTION (trafik veya burun tıkanıklığı)."
+    "mnemonic": "💡 ÇAĞRIŞIM: CON + GEST (taşımak, yığmak). Her şeyin tek bir noktaya yığılması = tıkanıklık. \"Traffic congestion\" trafik sıkışıklığı, \"nasal congestion\" burun tıkanıklığı."
   },
   {
     "id": "w95",
@@ -303,7 +303,7 @@ export const day4Words: YdsWord[] = [
     "ydsTip": "Hukuk ve kriminal metinlerde 'acquit', 'absolve', 'clear' ve 'vindicate' fiilleriyle tam eş anlamlıdır.",
     "frequency": "high",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EX-ONUR' -> Elinden alınan onurunu geri verip temize çıkarmak, suçsuz olduğunu kanıtlamak: EXONERATE (aklamak, temize çıkarmak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: EX (üzerinden at) + ONER (yük; \"onus\" = sorumluluk yükü). Suçun yükünü birinin omzundan atmak = aklamak, temize çıkarmak."
   },
   {
     "id": "w477",
@@ -575,7 +575,7 @@ export const day4Words: YdsWord[] = [
     "ydsTip": "Hukuk ve çevre metinlerinde 'public nuisance' (kamu huzurunu bozma / kamu zararı) terimi olarak sıkça geçer.",
     "frequency": "medium",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'NU-IS-ANCE' -> İnsanın başını ağrıtan, kurtulması zor gıcık baş belası durum: NUISANCE."
+    "mnemonic": "💡 ÇAĞRIŞIM: Fransızca \"nuire\" (zarar vermek, rahatsız etmek). Başını ağrıtan küçük dert = baş belası, can sıkıcı şey."
   },
   {
     "id": "w349",
@@ -607,7 +607,7 @@ export const day4Words: YdsWord[] = [
     "ydsTip": "'Cautious', 'wise', 'sensible' ve 'judicious' ile eş anlamlıdır. Mali ve siyasi basireti niteler.",
     "frequency": "high",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PRO-DENT (Her ayrıntıyı düşünen)' -> Adımını atmadan önce iki kere düşünen, basiretli ve tedbirli insan: PRUDENT."
+    "mnemonic": "💡 ÇAĞRIŞIM: PROVIDENT (ileriyi gören) kelimesinin kısalmış hâli. Önünü görerek davranan = tedbirli, sağduyulu."
   },
   {
     "id": "w928",
@@ -703,7 +703,7 @@ export const day4Words: YdsWord[] = [
     "ydsTip": "İki zıt anlama gelebilir: 1. 'Penalty / embargo' (yaptırım); 2. 'Approval / authorization' (resmi onay). Metinlerde çoğunlukla 'ceza/yaptırım' olarak çıkar.",
     "frequency": "ultra",
     "groupDay": 4,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SANKİ-ONAY-DEĞİL (Ceza)' -> Kurallara uymayan ülkeye uygulanan ekonomik abluka ve ceza: SANCTION (yaptırım, müeyyide)."
+    "mnemonic": "💡 ÇAĞRIŞIM: SANCT (kutsal; \"sanctuary\"). Eskiden kanun kutsal yeminle bağlanırdı: hem resmî onay hem de kuralı çiğneyene ceza (yaptırım)."
   },
   {
     "id": "w215",

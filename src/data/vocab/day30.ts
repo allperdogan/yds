@@ -166,7 +166,7 @@ export const day30Words: YdsWord[] = [
     "ydsTip": "'Condemnation / reprimand / rebuke' eşanlamlısıdır; resmi makamların yaptığı ağır kınamadır ('censor' sansürlemek ile karıştırılmamalı!).",
     "frequency": "high",
     "groupDay": 30,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ÇENENİ SÜRME' -> 'Haddini bil, ileri gitme' diyerek resmi meclis kararıyla azarlayıp CENSURE etmek (kınama, paylama)."
+    "mnemonic": "💡 ÇAĞRIŞIM: SANSÜR (censor) ile aynı kökten: Roma'da \"censor\" ahlakı denetleyen memurdu. Resmî olarak kınamak, şiddetle eleştirmek."
   },
   {
     "id": "w652",
@@ -243,7 +243,7 @@ export const day30Words: YdsWord[] = [
     "ydsTip": "Sıfat olarak 'kasıtlı, taammüden' (intentional); fiil olarak 'enine boyuna düşünmek, müzakere etmek'tir.",
     "frequency": "high",
     "groupDay": 30,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DELİL-BİR-ET' -> Delili olan, kaza süsü verilmeyip bilerek planlanmış DELIBERATE (kasıtlı, taammüden) eylem."
+    "mnemonic": "💡 ÇAĞRIŞIM: LIBRA (Latince terazi; burç adı). Kararı teraziye koyup tartarak verilen = kasıtlı, bilerek yapılan. Fiil olarak \"deliberate\" = uzun uzun düşünmek."
   },
   {
     "id": "w443",
@@ -502,7 +502,7 @@ export const day30Words: YdsWord[] = [
     "exampleEn": "The spokesperson was severely rebuked by reporters for making facetious jokes during a somber briefing on the train derailment.",
     "exampleTr": "Sözcü, tren kazasına ilişkin kasvetli bir bilgilendirme toplantısı sırasında yersiz şakalar ve ciddiyetsiz espriler yaptığı için muhabirler tarafından sertçe azarlandı.",
     "ydsTip": "'Flippant / frivolous / tongue-in-cheek' eşanlamlısıdır; ciddi durumlarda lüzumsuz şaklabanlık yapan tavırdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 30,
     "mnemonic": "💡 ÇAĞRIŞIM: 'FASELYA-ŞAKASI' -> En ciddi anda ciddiyetsiz ve yersiz şaka yapan FACETIOUS tip."
   },
@@ -812,7 +812,7 @@ export const day30Words: YdsWord[] = [
     "ydsTip": "'Pervade / penetrate / seep into' eşanlamlısıdır; koku veya ideolojinin her tarafa yayılmasıdır.",
     "frequency": "ultra",
     "groupDay": 30,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PERM-ET (İçine geç)' -> Yağmur suyunun toprağın en derinine nüfuz edip işlemesi; PERMEATE (nüfuz etmek, içine işlemek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: PER (içinden) + MEA (geçmek, akmak). Su gibi her yerin içinden geçip sızmak = nüfuz etmek, yayılmak."
   },
   {
     "id": "w1407",
@@ -882,7 +882,7 @@ export const day30Words: YdsWord[] = [
     "exampleEn": "In stark contrast to his poetic fantasies, his daily routine consisted of prosaic bureaucratic tasks and endless ledgers.",
     "exampleTr": "Şiirsel hayallerinin tam aksine, günlük rutini sıradan, yavan bürokratik görevlerden ve sonu gelmez hesap defterlerinden ibaretti.",
     "ydsTip": "'Prose' (düz yazı) kelimesinden gelir; 'mundane / pedestrian / ordinary / dull' eşanlamlısıdır; şiirsellikten uzak sıradanlıktır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 30,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DÜZYAZI (Prose)' -> Şiir gibi ilham verici değil, düzyazı gibi kuru, yavan ve sıradan PROSAIC."
   },
@@ -954,7 +954,7 @@ export const day30Words: YdsWord[] = [
     "ydsTip": "'Reject / disown / renounce / dismiss' eşanlamlısıdır; borcu, antlaşmayı veya suçlamayı reddetmektir.",
     "frequency": "high",
     "groupDay": 30,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'RE-PUF (Püskürtüp reddet)' -> Yüzüne tükürüp iddiayı ve borcu tanımamak, REPUDIATE etmek (inkar etmek, tanımamak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince REPUDIUM (eşini boşama). Bir eşi kapı dışarı eder gibi bir fikri ya da borcu tamamen reddetmek, tanımamak."
   },
   {
     "id": "w375",
@@ -1002,7 +1002,7 @@ export const day30Words: YdsWord[] = [
     "ydsTip": "'Strict / rigorous / tight / demanding' eşanlamlısıdır; 'stringent laws/rules/measures' YDS'nin favorisidir.",
     "frequency": "ultra",
     "groupDay": 30,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SİT-RİNK (Ringde tavizsiz kural)' -> Boksta ring kuralları gibi tavizsiz, son derece STRINGENT (katı, sıkı) kurallar."
+    "mnemonic": "💡 ÇAĞRIŞIM: STRING (ip, tel). İpi iyice gerip sıkmak gibi = katı, sıkı (kurallar, önlemler)."
   },
   {
     "id": "w1181",
@@ -1024,7 +1024,7 @@ export const day30Words: YdsWord[] = [
     "exampleEn": "Critics dismissed the blockbuster summer movie as a sequence of loud explosions wrapped around vapid, brainless dialogue.",
     "exampleTr": "Eleştirmenler, gişe rekortmeni yaz filmini yavan, sığ ve beyinsiz diyalogların etrafına sarılmış bir dizi gürültülü patlama olarak nitelendirip bir kenara attı.",
     "ydsTip": "'Dull / insipid / uninspiring / lifeless' eşanlamlısıdır; tadı tuzu olmayan, derinlikten yoksun şeyleri anlatır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 30,
     "mnemonic": "💡 ÇAĞRIŞIM: 'VAPİD (Tuzsuz çorba gibi)' -> Ne lezzeti var ne zekası; tatsız tuzsuz, yavan ve sığ VAPID sohbet."
   },

@@ -29,6 +29,7 @@ import { day27Words } from './vocab/day27';
 import { day28Words } from './vocab/day28';
 import { day29Words } from './vocab/day29';
 import { day30Words } from './vocab/day30';
+import { VOCAB_BANK_WORDS } from './banks/vocabBank';
 
 export const YDS_VOCABULARY_LIST: YdsWord[] = [
   ...day1Words,
@@ -60,5 +61,6 @@ export const YDS_VOCABULARY_LIST: YdsWord[] = [
   ...day27Words,
   ...day28Words,
   ...day29Words,
-  ...day30Words
+  ...day30Words,
+  ...VOCAB_BANK_WORDS
 ];

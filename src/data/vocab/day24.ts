@@ -31,7 +31,7 @@ export const day24Words: YdsWord[] = [
     "ydsTip": "'Bane' (baş belası/felaket) kelimesinin doğrudan zıttıdır; ÖSYM zıtlık paragraflarında 'boon or bane?' (lütuf mu bela mı?) ikilemini çok sever.",
     "frequency": "high",
     "groupDay": 24,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'BOON' -> Sanki piyangodan 'BUN-CA' para çıkmış gibi gökten inen BÜYÜK NİMET, LÜTUF."
+    "mnemonic": "💡 ÇAĞRIŞIM: BOON ~ \"BONUS\": beklenmedik bir bonus gibi gökten inen nimet, lütuf. Zıttı: bane (bela). \"a boon and a bane\" = hem nimet hem bela."
   },
   {
     "id": "w858",
@@ -175,7 +175,7 @@ export const day24Words: YdsWord[] = [
     "ydsTip": "Biyolojide kurbağa veya kadavra kesmek; felsefe ve edebiyatta bir argümanı en küçük parçalarına ayırıp incelemektir.",
     "frequency": "high",
     "groupDay": 24,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DİSK-SEKTÖR' gibi dilim dilim kesmek; neşterle kesip DİDİK DİDİK İNCELEMEK."
+    "mnemonic": "💡 ÇAĞRIŞIM: DIS (ayrı) + SECT (kesmek; \"section\" bölüm). Neşterle kesip parçalara ayırmak; mecazen bir konuyu didik didik incelemek."
   },
   {
     "id": "w1278",
@@ -333,7 +333,7 @@ export const day24Words: YdsWord[] = [
     "exampleEn": "Severe censorship and political intimidation are deeply inimical to the intellectual growth of independent academic institutions.",
     "exampleTr": "Ağır sansür ve siyasi gözdağı, bağımsız akademik kurumların entelektüel gelişimine derinden zararlı, aleyhte ve düşmancadır.",
     "ydsTip": "Latince 'enemy' (düşman) kelimesiyle akrabadır; 'inimical TO progress/freedom' (-e aykırı/zararlı) şeklinde gelir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 24,
     "mnemonic": "💡 ÇAĞRIŞIM: 'ENEMY' (düşman) kökünden gelir; gelişmeye düşman gibi hasar veren: DÜŞMANCA, ZARARLI, ALEYHTE."
   },
@@ -477,7 +477,7 @@ export const day24Words: YdsWord[] = [
     "exampleEn": "The perspicacious geopolitical analyst correctly predicted the dissolution of the trade bloc long before signs emerged.",
     "exampleTr": "Basiretli ve keskin görüşlü jeopolitik analist, ticaret bloğunun dağılacağını açık belirtiler ortaya çıkmadan çok önce doğru tahmin etti.",
     "ydsTip": "'Perspective' (bakış açısı) ile akrabadır; olayların perde arkasını ve geleceği gören bilge kimseleri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 24,
     "mnemonic": "💡 ÇAĞRIŞIM: 'PERSPEKTİF'i çok geniş olan insan; her şeyin içyüzünü gören: FERASETLİ, BASİRETLİ, KESKİN GÖRÜŞLÜ."
   },
@@ -623,7 +623,7 @@ export const day24Words: YdsWord[] = [
     "ydsTip": "'Torture' (işkence) ile karıştırılmamalıdır! 'Tortuous' kıvrımlı dağ yolları ve karmaşık labirent gibi bürokratik süreçler içindir.",
     "frequency": "high",
     "groupDay": 24,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TORTOISE' (kaplumbağa) gibi kıvrıla kıvrıla giden veya işkence gibi uzayan: DOLAMBAÇLI, ÇETREFİLLİ."
+    "mnemonic": "💡 ÇAĞRIŞIM: TORT (bükmek; \"distort\" çarpıtmak). Sürekli bükülüp kıvrılan = dolambaçlı, çetrefilli."
   },
   {
     "id": "w399",
@@ -650,7 +650,7 @@ export const day24Words: YdsWord[] = [
     "synonyms": ["paradise", "ideal world", "heaven on earth", "Elysium"],
     "antonyms": ["dystopia"],
     "collocations": ["social utopia", "vision of utopia", "technological utopia"],
-    "exampleEn": "Thomas More coined the term to describe an imaginary island society governed by perfect justice and communal egalitarianism.",
+    "exampleEn": "Thomas More coined the term utopia to describe an imaginary island society governed by perfect justice and communal egalitarianism.",
     "exampleTr": "Thomas More bu terimi, kusursuz bir adalet ve ortaklaşa eşitlikçilikle yönetilen hayali bir ada toplumunu ve ütopyayı tarif etmek için türetti.",
     "ydsTip": "Thomas More'un eserinden gelir; 'dystopia' (distopya/baskıcı karanlık gelecek) kelimesinin doğrudan zıttıdır.",
     "frequency": "high",

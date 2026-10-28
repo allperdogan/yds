@@ -1,6 +1,7 @@
 import { YdsTacticGuide } from '../types';
+import { shuffleQuestionOptions } from '../services/optionShuffle';
 
-export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
+const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
   {
     id: 'vocabulary',
     numberRange: '1 - 6. Sorular',
@@ -76,7 +77,7 @@ export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
       },
       answer: 'A',
       solutionSteps: [
-        '1. Adım (ÖSYM Altın Formülü): "Since / Ever since + Past Simple (V2), Present Perfect (Have/Has V3)". Bu kalıp YDS\'nin en yüksek frekanslı kuralıdır.',
+        '1. Adım (Formül): "Since / Ever since + Past Simple (V2), Present Perfect (Have/Has V3)". Bu kalıp YDS\'nin en yüksek frekanslı kuralıdır.',
         '2. Adım (İlk Boşluk): "in the 1970s" geçmişte belirli bir tarihtir; Simple Past (discovered) gerektirir.',
         '3. Adım (İkinci Boşluk): 1970\'lerden günümüze kadar devam eden atılımlar Present Perfect (has made) gerektirir. Doğru şık A\'dır.'
       ],
@@ -174,12 +175,12 @@ export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     numberRange: '37 - 39. Sorular',
     title: 'İngilizce - Türkçe Çeviri',
     questionCount: 3,
-    badge: '3 Soru / 3.75 Puan - Bedava Net!',
+    badge: '3 Soru / 3.75 Puan',
     summary: 'YDS\'nin en hızlı ve kesin puan getiren bölümüdür. Cümlenin tamamını okumadan 20-30 saniyede çözülebilir!',
     goldenRules: [
-      'ALTIN KURAL 1: Ana Yüklemi (Main Verb) Bul: Türkçe cümlelerin yüklemi EN SONDA yer alır. İngilizce cümlenin ana fiilini bulun, zamanını ve etken/edilgen halini belirleyin. Türkçe şıkların son kelimesine bakarak 3 şıkkı 5 saniyede eleyin!',
-      'ALTIN KURAL 2: Ana Özneyi (Main Subject) Bul: Cümledeki ana özne Türkçe cümlenin genellikle EN BAŞINDA yer alır. Özne eksik veya değiştirilmiş şıkları eleyin.',
-      'ALTIN KURAL 3: Bağlaç ve Sıfat Cümlecikleri: "... who/which ..." gibi yapılar Türkçede "-en, -an / -dığı" sıfatı olarak yüklemden önceki kelimeye bağlanır.'
+      'KURAL 1: Ana Yüklemi (Main Verb) Bul: Türkçe cümlelerin yüklemi EN SONDA yer alır. İngilizce cümlenin ana fiilini bulun, zamanını ve etken/edilgen halini belirleyin. Türkçe şıkların son kelimesine bakarak 3 şıkkı 5 saniyede eleyin!',
+      'KURAL 2: Ana Özneyi (Main Subject) Bul: Cümledeki ana özne Türkçe cümlenin genellikle EN BAŞINDA yer alır. Özne eksik veya değiştirilmiş şıkları eleyin.',
+      'KURAL 3: Bağlaç ve Sıfat Cümlecikleri: "... who/which ..." gibi yapılar Türkçede "-en, -an / -dığı" sıfatı olarak yüklemden önceki kelimeye bağlanır.'
     ],
     stepByStepMethod: [
       '1. Adım: İngilizce cümlenin ana fiilini tespit et (Örn: "... has contributed to ...").',
@@ -215,7 +216,7 @@ export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     numberRange: '40 - 42. Sorular',
     title: 'Türkçe - İngilizce Çeviri',
     questionCount: 3,
-    badge: '3 Soru / 3.75 Puan - Bedava Net!',
+    badge: '3 Soru / 3.75 Puan',
     summary: 'İngilizce-Türkçe çevirinin tersidir. Mantık birebir aynıdır: Türkçe cümlenin sonundaki yüklem İngilizce cümlenin merkezindeki ana fiil olmak zorundadır.',
     goldenRules: [
       'Türkçe cümlenin son kelimesini inceleyin: Eylem etken mi (yaptı), edilgen mi (yapıldı), yoksa modal mı (yapmalıdır - must/should)?',
@@ -256,11 +257,11 @@ export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
     numberRange: '43 - 62. Sorular',
     title: 'Paragraf / Okuma Anlama (Reading Passages)',
     questionCount: 20,
-    badge: '20 Soru / 25 Puan - Sınavın Kalbi!',
+    badge: '20 Soru / 25 Puan',
     summary: '5 farklı akademik metin ve her metne ait 4\'er soru (Toplam 20 soru). YDS puanının tam 4\'te biridir. Zaman yönetiminin ve stratejinin kader belirlediği yerdir.',
     goldenRules: [
       'ÖNCE SORULARI OKU: Metne girmeden önce 4 soru kökünü ve anahtar kelimeleri 30 saniyede tarayın. Böylece beyniniz metinde neyi avlayacağını bilerek okur.',
-      'AŞIRI GENELLEME (EXTREME WORDS) TUZAĞI: Şıklarda "always, completely, solely, only, entirely, never, best, impossible" gibi uç ve kesin kelimeler geçiyorsa o şık %95 YANLIŞTIR ve çeldiricidir! ÖSYM ılımlı şıkları sever (may, likely, generally, tend to).',
+      'AŞIRI GENELLEME (EXTREME WORDS) TUZAĞI: Şıklarda "always, completely, solely, only, entirely, never, best, impossible" gibi uç ve kesin kelimeler geçiyorsa o şık çoğunlukla YANLIŞTIR ve çeldiricidir! ÖSYM ılımlı şıkları sever (may, likely, generally, tend to).',
       'Eş Anlamlı Yeniden İfade (Paraphrase): Doğru cevap metindeki cümlenin kelime kelime kopyası DEĞİLDİR; eş anlamlı kelimelerle yeniden yazılmış halidir.',
       'Ana Fikir Soruları: "The main idea / Primary purpose / Best title" sorularının cevabı genellikle ilk veya son iki cümlede yer alır.'
     ],
@@ -478,3 +479,9 @@ Dr. Miller:
     }
   }
 ];
+
+// Sample question options are reordered so the answer is not always A.
+export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = RAW_YDS_TACTIC_GUIDES.map((g) => ({
+  ...g,
+  sampleQuestion: g.sampleQuestion ? shuffleQuestionOptions(g.sampleQuestion, `tactic_${g.id}`) : undefined
+}));

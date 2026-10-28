@@ -47,9 +47,9 @@ export const day29Words: YdsWord[] = [
     "exampleEn": "With her sharp business acumen and foresight, the CEO steered the tech start-up through turbulent economic downturns.",
     "exampleTr": "Keskin ticari zekası ve basireti sayesinde icra kurulu başkanı (CEO), teknoloji girişimini çalkantılı ekonomik krizlerde başarıyla yönetti.",
     "ydsTip": "'Astuteness / shrewdness / sharpness' eşanlamlısıdır; iş ve siyasette doğru karar alma kavrayışıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 29,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AKIL-MEN' -> Akıl adamı; ticari zekası ve basireti (acumen) tavan yapmış yönetici."
+    "mnemonic": "💡 ÇAĞRIŞIM: ACU (keskin, sivri; \"akupunktur iğnesi\", \"acute\") + MEN. İğne ucu gibi keskin zekâ = kavrayış gücü."
   },
   {
     "id": "w621",
@@ -121,7 +121,7 @@ export const day29Words: YdsWord[] = [
     "ydsTip": "'Random / capricious / despotic' eşanlamlısıdır; mantıklı bir kurala dayanmayan keyfi uygulamaları anlatır.",
     "frequency": "ultra",
     "groupDay": 29,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ARABİT-KEYFİ' -> Kendi keyfine göre kural koyan hakimin ARBITRARY (keyfi, rastgele) kararı."
+    "mnemonic": "💡 ÇAĞRIŞIM: ARBITER (hakem). Kurala göre değil, hakemin keyfine göre verilen karar = keyfi, rastgele."
   },
   {
     "id": "w863",
@@ -166,7 +166,7 @@ export const day29Words: YdsWord[] = [
     "exampleEn": "Geologists theorize that a catastrophic asteroid impact triggered the planetary cataclysm that wiped out the non-avian dinosaurs.",
     "exampleTr": "Jeologlar, feci bir göktaşı çarpmasının dinozorları yok eden küresel tufanı ve yıkıcı afeti tetiklediğini öne sürmektedir.",
     "ydsTip": "'Disaster / catastrophe / upheaval' eşanlamlısıdır; dünyayı altüst eden dev felaketleri anlatır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 29,
     "mnemonic": "💡 ÇAĞRIŞIM: 'KATAKLİZM' -> Jeolojideki kataklizm; dünyayı sarsan büyük tufan ve yıkıcı afet (cataclysm)."
   },
@@ -216,7 +216,7 @@ export const day29Words: YdsWord[] = [
     "ydsTip": "'In compliance with' kalıbı 'kurallara uygun olarak / riayet ederek' demektir; hukuk metinlerinde çok sevilir.",
     "frequency": "ultra",
     "groupDay": 29,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KOMPLİKE ETMEDEN UYMA' -> İtiraz etmeyip kurallara tam riayet ve itaat COMPLIANCE."
+    "mnemonic": "💡 ÇAĞRIŞIM: COMPLY (uymak) fiilinin ismi: kurallara uyma. \"In compliance with\" = -e uygun olarak."
   },
   {
     "id": "w88",
@@ -265,7 +265,7 @@ export const day29Words: YdsWord[] = [
     "exampleEn": "Chronic sleep deprivation exerts a profoundly deleterious impact on the human immune system and cognitive functioning.",
     "exampleTr": "Kronik uykusuzluk, insan bağışıklık sistemi ve bilişsel işlevleri üzerinde derinden zararlı ve tahrip edici bir etki yaratır.",
     "ydsTip": "'Harmful / damaging / detrimental' eşanlamlısıdır; özellikle 'deleterious effect/impact on' kalıbı yaygındır.",
-    "frequency": "ultra",
+    "frequency": "high",
     "groupDay": 29,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DELETE (Silmek/Yok etmek)' -> Hücreleri silip yok edercesine hasar veren DELETERIOUS (zararlı, tahrip edici)."
   },
@@ -409,7 +409,7 @@ export const day29Words: YdsWord[] = [
     "ydsTip": "Sert bir gerçeği daha kibar ve yumuşak bir ifadeyle anlatma sanatıdır.",
     "frequency": "ultra",
     "groupDay": 29,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EFENDİCE-İSİM' -> Kaba sözü efendice yumuşatarak söyleme sanatı; EUPHEMISM (hüsnütabir)."
+    "mnemonic": "💡 ÇAĞRIŞIM: EU (iyi, güzel; \"euphoria\") + PHEME (söz). Kaba bir gerçeği güzel sözle söylemek: \"öldü\" yerine \"aramızdan ayrıldı\" = hüsnütabir."
   },
   {
     "id": "w790",
@@ -812,7 +812,7 @@ export const day29Words: YdsWord[] = [
     "exampleEn": "The heir squandered his multi-million dollar inheritance in less than a decade through extravagant parties and prodigal spending.",
     "exampleTr": "Mirasçı, abartılı partiler ve savurgan, müsrif harcamalarla milyonlarca dolarlık mirasını on yıldan kısa sürede heba etti.",
     "ydsTip": "'Extravagant / wasteful / profligate' eşanlamlısıdır; 'the prodigal son' meşhur bir kalıptır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 29,
     "mnemonic": "💡 ÇAĞRIŞIM: 'PARALARI-DAĞITAN' -> Kazandığı paraları sokakta saçan müsrif ve mirasyedi PRODIGAL adam."
   },
@@ -908,7 +908,7 @@ export const day29Words: YdsWord[] = [
     "ydsTip": "'Limit / confine / restrain' eşanlamlısıdır; 'restrict ... to' kalıbıyla da sıkça sorulur.",
     "frequency": "ultra",
     "groupDay": 29,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'REST-TRİK (Kısıt)' -> Girişe kısıt koyup sınır çekmek, RESTRICT etmek (kısıtlamak, sınırlamak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: RE + STRICT (sıkı; \"strict\"). Bir şeyi sıkıca geri tutmak = kısıtlamak, sınırlamak. İsmi \"restriction\"."
   },
   {
     "id": "w965",
@@ -977,7 +977,7 @@ export const day29Words: YdsWord[] = [
     "exampleEn": "The movie was heavily criticized by reviewers for its dazzling special effects paired with completely vacuous and shallow dialogue.",
     "exampleTr": "Film, göz kamaştırıcı özel efektlerinin tamamen boş, anlamsız ve sığ diyaloglarla eşleştirilmesi nedeniyle eleştirmenlerce ağır şekilde yerildi.",
     "ydsTip": "'Empty / devoid of thought / unintelligent / inane' eşanlamlısıdır; içi boş ifadeleri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 29,
     "mnemonic": "💡 ÇAĞRIŞIM: 'VAKUM' -> İçi vakumlanmış gibi bomboş ve anlamsız; VACUOUS (içi boş, anlamsız, sığ)."
   },
@@ -1031,7 +1031,7 @@ export const day29Words: YdsWord[] = [
     "ydsTip": "'Confirm / authenticate / substantiate' eşanlamlısıdır; doğruluğunu kanıtla ortaya koymaktır.",
     "frequency": "ultra",
     "groupDay": 29,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'VER-İ-FİKİR (Verileri incele)' -> Verileri kontrol edip belgenin doğruluğunu VERIFY etmek (doğrulamak, teyit etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: VER (gerçek, doğru; \"veracity\", \"verdict\"). Bir şeyin gerçek olduğunu ortaya koymak = doğrulamak."
   },
   {
     "id": "w1373",

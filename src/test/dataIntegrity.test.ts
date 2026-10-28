@@ -114,14 +114,15 @@ describe('Data Integrity & Question Engine Tests', () => {
       const q = getUnifiedQuestionById('q1');
       expect(q).toBeDefined();
       expect(q?.type).toBe('vocabulary');
-      expect(q?.options.C).toBe('detrimental');
+      // Options are shuffled per question, so check the answer text rather than its letter
+      expect(q && q.options[q.answer]).toBe('detrimental');
     });
 
     it('retrieves mock exam questions by id', () => {
       const mockQ = getUnifiedQuestionById('m_q1');
       expect(mockQ).toBeDefined();
       expect(mockQ?.options).toBeDefined();
-      expect(mockQ?.options.B).toBe('proliferation');
+      expect(mockQ && mockQ.options[mockQ.answer]).toBe('proliferation');
     });
 
     it('synthesizes questions for infinite vocabulary IDs (inf_w...)', () => {
@@ -131,7 +132,11 @@ describe('Data Integrity & Question Engine Tests', () => {
       const synthesized = getUnifiedQuestionById(syntheticId);
       expect(synthesized).toBeDefined();
       expect(synthesized?.id).toBe(syntheticId);
-      expect(synthesized?.options.A).toBe(firstWord.word);
+      // Same question as the drill: the word is one of 5 options, blanked out of the sentence.
+      expect(synthesized!.options[synthesized!.answer]).toBe(firstWord.word);
+      expect(new Set(Object.values(synthesized!.options)).size).toBe(5);
+      expect(synthesized!.question).toContain('_____');
+      expect(synthesized!.question.toLowerCase()).not.toContain(firstWord.word.toLowerCase());
       expect(synthesized?.explanation).toContain(firstWord.word);
     });
 

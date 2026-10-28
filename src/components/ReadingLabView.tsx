@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
-import { BookOpen, Sparkles, CheckCircle2, ChevronRight, HelpCircle, Layers, Split, Volume2, ShieldAlert } from 'lucide-react';
+import { BookOpen, Sparkles, CheckCircle2, ChevronLeft, ChevronRight, HelpCircle, Layers, Split, Volume2, ShieldAlert } from 'lucide-react';
 import { ReadingPassage, YdsQuestion } from '../types';
 import { YDS_READING_PASSAGES } from '../data/ydsReadingPassages';
 import { AudioService } from '../services/audioService';
+
+const PASSAGE_TOPICS: ReadingPassage['topic'][] = [
+  'Science & Technology',
+  'Health & Medicine',
+  'History & Archaeology',
+  'Economics & Environment',
+  'Social Sciences'
+];
 
 interface ReadingLabViewProps {
   onAddMistake: (questionId: string) => void;
@@ -14,12 +22,30 @@ export const ReadingLabView: React.FC<ReadingLabViewProps> = ({ onAddMistake }) 
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
   const [showExplanations, setShowExplanations] = useState<Record<string, boolean>>({});
 
+  const [topicFilter, setTopicFilter] = useState<'all' | ReadingPassage['topic']>('all');
+  const [solvedPassageIds, setSolvedPassageIds] = useState<Set<string>>(new Set());
+
   const currentPassage = YDS_READING_PASSAGES.find((p) => p.id === selectedPassageId) || YDS_READING_PASSAGES[0];
+  const filteredPassages =
+    topicFilter === 'all' ? YDS_READING_PASSAGES : YDS_READING_PASSAGES.filter((p) => p.topic === topicFilter);
+  const currentIndex = filteredPassages.findIndex((p) => p.id === currentPassage.id);
+
+  const selectPassage = (id: string) => {
+    setSelectedPassageId(id);
+    setUserAnswers({});
+    setShowExplanations({});
+  };
+
+  const goRelative = (step: number) => {
+    const next = filteredPassages[currentIndex + step];
+    if (next) selectPassage(next.id);
+  };
 
   const handleSelectOption = (qId: string, optKey: string, correctAns: string) => {
     if (userAnswers[qId]) return;
     setUserAnswers((prev) => ({ ...prev, [qId]: optKey }));
     setShowExplanations((prev) => ({ ...prev, [qId]: true }));
+    setSolvedPassageIds((prev) => new Set(prev).add(currentPassage.id));
     if (optKey !== correctAns) {
       onAddMistake(qId);
     }
@@ -84,31 +110,60 @@ export const ReadingLabView: React.FC<ReadingLabViewProps> = ({ onAddMistake }) 
         </div>
       </div>
 
-      {/* Makale Seçici Haplar */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-        {YDS_READING_PASSAGES.map((p) => {
-          const isSelected = selectedPassageId === p.id;
-          return (
+      {/* Makale Seçici: konu filtresi + liste + önceki/sonraki */}
+      <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-4 shadow-sm space-y-3">
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+          {(['all', ...PASSAGE_TOPICS] as const).map((t) => (
             <button
-              key={p.id}
+              key={t}
               onClick={() => {
-                setSelectedPassageId(p.id);
-                setUserAnswers({});
-                setShowExplanations({});
+                setTopicFilter(t);
+                const first = t === 'all' ? YDS_READING_PASSAGES[0] : YDS_READING_PASSAGES.find((p) => p.topic === t);
+                if (first) selectPassage(first.id);
               }}
-              className={`px-4 py-2 rounded-2xl text-xs font-bold shrink-0 transition-all text-left border ${
-                isSelected
-                  ? 'bg-sky-600 text-white border-sky-600 shadow-md shadow-sky-500/20 scale-[1.02]'
-                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50'
+              className={`px-3 py-1.5 rounded-xl text-[11px] font-bold shrink-0 border transition-colors ${
+                topicFilter === t
+                  ? 'bg-sky-600 text-white border-sky-600'
+                  : 'bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
               }`}
             >
-              <span className="block text-[10px] uppercase tracking-wider opacity-75">
-                {p.topic}
-              </span>
-              <span className="font-extrabold line-clamp-1">{p.title}</span>
+              {t === 'all' ? `Tümü (${YDS_READING_PASSAGES.length})` : `${t} (${YDS_READING_PASSAGES.filter((p) => p.topic === t).length})`}
             </button>
-          );
-        })}
+          ))}
+        </div>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => goRelative(-1)}
+            disabled={currentIndex <= 0}
+            aria-label="Önceki parça"
+            className="p-2 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 disabled:opacity-40 hover:bg-slate-50 dark:hover:bg-slate-800"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <select
+            aria-label="Okuma parçası seç"
+            value={currentPassage.id}
+            onChange={(e) => selectPassage(e.target.value)}
+            className="flex-1 min-w-0 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-xs font-bold text-slate-800 dark:text-slate-200"
+          >
+            {filteredPassages.map((p, i) => (
+              <option key={p.id} value={p.id}>
+                {i + 1}. {p.title}{solvedPassageIds.has(p.id) ? ' ✓' : ''}
+              </option>
+            ))}
+          </select>
+          <button
+            onClick={() => goRelative(1)}
+            disabled={currentIndex >= filteredPassages.length - 1}
+            aria-label="Sonraki parça"
+            className="p-2 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 disabled:opacity-40 hover:bg-slate-50 dark:hover:bg-slate-800"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+          <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 shrink-0">
+            {currentIndex + 1} / {filteredPassages.length}
+          </span>
+        </div>
       </div>
 
       {/* 1. SEKME: MAKALE METNİ & KELİME NOTLARI */}

@@ -1,6 +1,9 @@
 import { YdsQuestion } from '../types';
 import { YDS_GRAMMAR_DRILL_BANK } from './ydsGrammarBank';
 import { PREPOSITION_REFLEX_QUESTIONS } from './ydsPrepositions';
+import { shuffleQuestionList } from '../services/optionShuffle';
+import { PARAGRAPH_TYPE_BANKS } from './banks';
+import { TRANSLATION_BANK } from './banks/translationBank';
 
 const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
   // 1. KELİME SORUSU (Vocabulary)
@@ -48,7 +51,7 @@ const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
     trapWarning: 'D şıkkındaki "looked into (araştırmak, incelemek)" cazip görünebilir ancak bir keşif seferi (expedition) "incelenmez", "yürütülür/gerçekleştirilir".',
     explanation: `🎯 TAKTİK ADIMLARI:
 1. Nesne Analizi: Boşluktan sonra "an unprecedented underwater expedition (benzeri görülmemiş bir su altı seferi)" gelmektedir.
-2. ÖSYM Altın Formülü: İngilizcede "research, experiment, study, expedition, survey, investigation" kelimeleri eyleme dökülürken %95 "carry out" veya "conduct" fiiliyle birleşir.
+2. Formül: İngilizcede "research, experiment, study, expedition, survey, investigation" kelimeleri eyleme dökülürken çoğunlukla "carry out" veya "conduct" fiiliyle birleşir.
 3. Şık Analizi:
    - A) called off (iptal etti)
    - B) carried out (yürüttü, icra etti) -> Doğru cevap!
@@ -198,7 +201,7 @@ const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
       E: 'solely the inability of international organizations like the WHO to draft meaningful health regulations'
     },
     answer: 'B',
-    difficulty: 'YDS Master',
+    difficulty: 'Zor',
     tacticUsed: 'Paraphrase (Yeniden İfade) & Extreme Words Çeldirici Eleme',
     trapWarning: 'A ("complete failure"), C ("purely natural / no capacity whatsoever"), D ("total absence") ve E ("solely") şıklarındaki radikal kelimeler (extreme words) ÖSYM\'nin en belirgin tuzaklarıdır!',
     explanation: `🎯 TAKTİK ADIMLARI:
@@ -272,15 +275,31 @@ Dr. Wright: Precisely. Without modifying the dosing regimen or introducing prote
 ];
 
 export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
-  ...BASE_YDS_QUESTIONS_DATA,
+  ...shuffleQuestionList(BASE_YDS_QUESTIONS_DATA),
   ...YDS_GRAMMAR_DRILL_BANK,
-  ...PREPOSITION_REFLEX_QUESTIONS
+  ...PREPOSITION_REFLEX_QUESTIONS,
+  ...PARAGRAPH_TYPE_BANKS,
+  ...TRANSLATION_BANK
 ];
 
 import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam';
 import { YDS_READING_PASSAGES } from './ydsReadingPassages';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from './ydsVocabQuiz';
 import { YDS_VOCABULARY_LIST } from './ydsVocabulary';
+import { buildVocabOptions } from '../services/vocabOptions';
+import { blankExample } from '../services/vocabBlank';
+import { YdsWord } from '../types';
+
+let wordsByType: Record<string, YdsWord[]> | null = null;
+const getWordsByType = () => {
+  if (!wordsByType) {
+    wordsByType = {};
+    YDS_VOCABULARY_LIST.forEach((w) => {
+      (wordsByType![w.type] ||= []).push(w);
+    });
+  }
+  return wordsByType;
+};
 
 // Flatten reading questions
 const readingPassageQuestions: YdsQuestion[] = YDS_READING_PASSAGES.flatMap((p) => p.questions);
@@ -322,27 +341,24 @@ export const getUnifiedQuestionById = (id: string): YdsQuestion | undefined => {
     return unifiedQuestionMap.get(id);
   }
 
-  // Handle synthetic infinite vocab questions (e.g., inf_w14)
+  // Vocab drill questions (inf_<wordId>) are generated, so rebuild the same
+  // question the student saw: blanked example sentence and the same 5 options.
   if (id.startsWith('inf_')) {
-    const wordId = id.replace('inf_', '');
-    const wordObj = YDS_VOCABULARY_LIST.find((w) => w.id === wordId);
+    const wordObj = YDS_VOCABULARY_LIST.find((w) => w.id === id.slice(4));
     if (wordObj) {
+      const options = buildVocabOptions(wordObj, getWordsByType());
+      const letters = ['A', 'B', 'C', 'D', 'E'] as const;
       const syntheticQ: YdsQuestion = {
         id,
         type: 'vocabulary',
-        title: `Hatalı Kelime Testi: ${wordObj.word}`,
-        question: `The research committee pointed out that _____ conditions were critical. ("${wordObj.exampleEn}")`,
-        options: {
-          A: wordObj.word,
-          B: 'enhance',
-          C: 'undermine',
-          D: 'mitigate',
-          E: 'deteriorate'
-        },
-        answer: 'A',
-        explanation: `Doğru Kelime: ${wordObj.word} (${wordObj.meaning}). Örnek: "${wordObj.exampleEn}" - ${wordObj.exampleTr}. Çağrışım: ${wordObj.mnemonic || 'ÖSYM VIP sözcüğü'}`,
+        title: `Kelime Sorusu: ${wordObj.word}`,
+        question: blankExample(wordObj.word, wordObj.exampleEn) ?? `Anlamı "${wordObj.meaning}" olan kelime: _____`,
+        options: { A: options[0], B: options[1], C: options[2], D: options[3], E: options[4] },
+        answer: letters[options.indexOf(wordObj.word)],
+        explanation: `Doğru kelime: ${wordObj.word} (${wordObj.meaning}). "${wordObj.exampleEn}" - ${wordObj.exampleTr}${
+          wordObj.mnemonic ? ` Çağrışım: ${wordObj.mnemonic}` : ''
+        }`,
         tacticUsed: 'Kelime Çağrışım ve Soru Çözümü',
-        trapWarning: 'Bu kelimede pratik testi sırasında hata yapıldı.',
         difficulty: 'İleri'
       };
       unifiedQuestionMap.set(id, syntheticQ);

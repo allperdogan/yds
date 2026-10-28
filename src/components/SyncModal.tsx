@@ -334,7 +334,7 @@ export const SyncModal: React.FC<SyncModalProps> = ({
         <div className="p-4 bg-slate-50 dark:bg-slate-800/60 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
           <span className="flex items-center gap-1">
             <ShieldCheck className="w-4 h-4 text-emerald-500" />
-            <span>%100 Ücretsiz & Gizli (Verileriniz yalnız sizin)</span>
+            <span>Ücretsiz ve gizli: verilerin yalnızca sende</span>
           </span>
           <button
             onClick={onClose}

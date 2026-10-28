@@ -8,49 +8,37 @@ describe('App Integration & Complete Flow Tests', () => {
     localStorage.clear();
   });
 
-  it('renders default VocabDrill view on mount', () => {
+  it('opens on the Today screen', () => {
     render(<App />);
-
-    // Brand should be visible
-    expect(screen.getByText('Master')).toBeInTheDocument();
-
-    // Default tab is Vocab Drill
-    expect(screen.getByText(/🎯 Kelime/i)).toBeInTheDocument();
-    expect(screen.getByText(/🌟 Tüm Sorular/i)).toBeInTheDocument();
+    expect(screen.getByText('Hazırlık')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Bugün' })).toBeInTheDocument();
+    expect(screen.getByText(/Tahmini YDS puanın/i)).toBeInTheDocument();
   });
 
-  it('navigates across all views via top navbar and bottom tab bar', () => {
+  it('navigates across the 4 sections and into a topic', () => {
     render(<App />);
 
-    // Switch to 30-Day Plan via Navbar
-    const dailyBtn = screen.getByText(/30 Günlük Plan/i);
-    fireEvent.click(dailyBtn);
-    expect(screen.getByText(/30 Günlük YDS Master Yol Haritası/i)).toBeInTheDocument();
+    fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
+    expect(screen.getByRole('heading', { name: 'Çalış' })).toBeInTheDocument();
 
-    // Switch to Paragraf & Cümle Deşifre via Navbar
-    const readingBtn = screen.getByText(/Paragraf & Cümle Deşifre/i);
-    fireEvent.click(readingBtn);
-    expect(screen.getByText(/Akademik Okuma & Ağır Cümle Deşifre Atölyesi/i)).toBeInTheDocument();
+    // Open a topic: the first question is shown right away
+    fireEvent.click(screen.getByRole('button', { name: /Cloze Test/ }));
+    expect(screen.getByText(/Yeni sorular/)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /^A\)/ })).toBeInTheDocument();
 
-    // Switch to 80 Soruluk Deneme via Navbar
-    const mockBtn = screen.getByText(/80 Soruluk Deneme/i);
-    fireEvent.click(mockBtn);
+    // The tab takes you back to the topic list
+    fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
+    expect(screen.getByRole('heading', { name: 'Çalış' })).toBeInTheDocument();
+
+    fireEvent.click(screen.getAllByRole('button', { name: 'Deneme' })[0]);
     expect(screen.getByText(/180 Dakika \/ 80 Soruluk Tam YDS Deneme Sınavı/i)).toBeInTheDocument();
 
-    // Switch to Taktikler via Navbar
-    const tacticsBtn = screen.getByText(/Taktikler/i);
-    fireEvent.click(tacticsBtn);
-    expect(screen.getByText(/10 Soru Tipi İçin Altın Taktik Kılavuzu/i)).toBeInTheDocument();
+    fireEvent.click(screen.getAllByRole('button', { name: /Hatalarım/ })[0]);
+    expect(screen.getByText(/Hata Defterim/i)).toBeInTheDocument();
 
-    // Switch to Hatalarım via Navbar
-    const mistakesNavBtn = screen.getByText(/Hatalarım/i);
-    fireEvent.click(mistakesNavBtn);
-    expect(screen.getByText(/Hata Defterim & Zayıf Noktalarım/i)).toBeInTheDocument();
-
-    // Switch back to Kelime via Mobile Bottom Bar
-    const bottomVocabBtn = screen.getByRole('button', { name: /^Kelime$/i });
-    fireEvent.click(bottomVocabBtn);
-    expect(screen.getByText(/🌟 Tüm Sorular/i)).toBeInTheDocument();
+    fireEvent.click(screen.getAllByRole('button', { name: 'Bugün' })[0]);
+    fireEvent.click(screen.getByRole('button', { name: /30 günlük program/i }));
+    expect(screen.getByText('30 Günlük Program')).toBeInTheDocument();
   });
 
   it('toggles dark mode class on document element', () => {

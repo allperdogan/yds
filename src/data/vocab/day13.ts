@@ -90,7 +90,7 @@ export const day13Words: YdsWord[] = [
     "ydsTip": "Daima 'TO' edatı alır ('allude to'). Doğrudan söylemek yerine dolaylı olarak ima etmek anlamındadır; 'allusion' (ima/gönderme) isim halidir.",
     "frequency": "high",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AL-ÜTÜ'yü... diyerek üstü kapalı konuşuyor -> Açıkça söylemeyip ALLUDE TO yapıyor (ima ediyor, üstü kapalı değiniyor)."
+    "mnemonic": "💡 ÇAĞRIŞIM: AL + LUDE (oynamak; \"ludic\", \"prelude\"). Bir konuyla açıkça değil, oynarcasına üstü kapalı söz etmek = ima etmek."
   },
   {
     "id": "w774",
@@ -327,7 +327,7 @@ export const day13Words: YdsWord[] = [
     "ydsTip": "Hukuk, gümrük ve güvenlik metinlerinde 'seize' (zapt etmek) ile eşdeğerdir; devlet veya yetkili mercilerin yasa dışı mallara el koymasını anlatır.",
     "frequency": "high",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KON-FİSKE' -> Polis sahte malların üzerine 'KONdu' ve hemen FİSKEYLE çekip el koydu: CONFISCATE (el koymak, müsadere etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: FISC (devlet hazinesi; \"fiscal policy\" maliye politikası). Birinin malını alıp devlet hazinesine katmak = el koymak, müsadere."
   },
   {
     "id": "w665",
@@ -388,9 +388,9 @@ export const day13Words: YdsWord[] = [
     "exampleEn": "Increased economic inequality is often viewed as a lamentable corollary of unchecked market deregulation.",
     "exampleTr": "Artan ekonomik eşitsizlik, genellikle denetimsiz piyasa serbestleşmesinin üzücü bir doğal sonucu olarak görülür.",
     "ydsTip": "Felsefi, mantıksal veya sosyolojik metinlerde bir kuralın ya da durumun doğrudan doğurduğu kaçınılmaz sonucu anlatmak için 'corollary of...' şeklinde kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KOROLARIN (Koro ekibinin) uyumu' -> Eğer çok prova yaparsan, güzel şarkı söylemek bunun COROLLARY'sidir (kaçınılmaz doğal sonucudur)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Matematikte \"corollary\" = bir teoremden doğrudan çıkan sonuç. Bir şeyin kaçınılmaz, doğal sonucu."
   },
   {
     "id": "w1074",
@@ -453,9 +453,9 @@ export const day13Words: YdsWord[] = [
     "exampleEn": "The aristocratic elite treated the emerging merchant class with unconcealed disdain and social condescension.",
     "exampleTr": "Aristokrat elit kesim, yeni ortaya çıkan tüccar sınıfına gizlenemez bir küçümseme ve sosyal tepeden bakışla yaklaştı.",
     "ydsTip": "Hem isim hem fiil olarak kullanılır. 'Treat with disdain' (hor görmek / küçümsemek) en yaygın akademik collocations'ıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DİS-DAİN (Diz çöktürme/Tenezzül etmeme)' -> 'Senin seviyene inmem' deyip burnunu havaya diken kibirli kişinin DISDAIN (küçümseme, hor görme) tavrı."
+    "mnemonic": "💡 ÇAĞRIŞIM: DIS (değil) + DAIN (Latince \"dignus\" = layık; \"dignity\" onur). Birini kendine layık görmemek = hor görme, küçümseme."
   },
   {
     "id": "w1396",
@@ -674,7 +674,7 @@ export const day13Words: YdsWord[] = [
     "ydsTip": "'Prove futile' (nafile/boşuna olduğu ortaya çıkmak) ve 'futile attempt' kalıpları YDS paragraf ve kelime sorularının vazgeçilmezidir.",
     "frequency": "high",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'FUTURSUZCA' boşuna çabalamak ya da 'FİTİL'i çekilmiş bombayı üfleyerek söndürmeye çalışmak FUTILE'dır (nafiledir, boşunadır)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"futilis\" (su sızdıran kap). Delik kovaya su taşımak kadar boşuna = nafile, beyhude."
   },
   {
     "id": "w907",
@@ -795,7 +795,7 @@ export const day13Words: YdsWord[] = [
     "exampleEn": "The lunar soil samples were stored in a hermetic container to prevent any chemical contamination from Earth's atmosphere.",
     "exampleTr": "Ay toprağı numuneleri, Dünya atmosferinden kaynaklanabilecek herhangi bir kimyasal kirlenmeyi önlemek için hava sızdırmaz bir kapta saklandı.",
     "ydsTip": "Mühendislik ve fen metinlerinde 'hermetic seal' (hava/sıvı geçirmez conta/kilit); edebi ve felsefi metinlerde ise 'dış dünyaya kapalı, anlaşılması güç' anlamındadır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 13,
     "mnemonic": "💡 ÇAĞRIŞIM: 'HER-METRE-TİK (Heryeri tıkalı)' -> Bir milim bile hava almayacak şekilde her tarafı tıkanmış: HERMETIC (hava sızdırmaz, dışa kapalı)."
   },
@@ -987,7 +987,7 @@ export const day13Words: YdsWord[] = [
     "ydsTip": "İki temel anlamı vardır: 1. Hukuki sorumluluk ('legal liability'); 2. Muhasebede 'asset' (varlık) zıddı olan borç veya mecazi olarak 'ayak bağı/dezavantaj'.",
     "frequency": "ultra",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'Lİ-ABİLİTE / RELIABLE' -> Kanunen sorumlu tutulabilirlik; taşınması gereken ağır yük ve borç: LIABILITY (sorumluluk, külfet, ayak bağı)."
+    "mnemonic": "💡 ÇAĞRIŞIM: LIABLE (yükümlü, sorumlu) sıfatının ismi; Latince \"ligare\" (bağlamak). Kanunen bir borca bağlı olmak = yükümlülük; mecazen ayak bağı."
   },
   {
     "id": "w1134",
@@ -1016,7 +1016,7 @@ export const day13Words: YdsWord[] = [
     "exampleEn": "Focusing solely on quarterly profits is a dangerously myopic strategy that ignores long-term corporate sustainability.",
     "exampleTr": "Yalnızca üç aylık kârlara odaklanmak, şirketin uzun vadeli sürdürülebilirliğini görmezden gelen tehlikeli derecede dar görüşlü (miyop) bir stratejidir.",
     "ydsTip": "Tıbbi anlamı 'miyop' (uzağı net göremeyen) olsa da, YDS ekonomi ve siyaset metinlerinde 'ileriyi hesaplayamayan, basiretsiz, dar görüşlü' mecazıyla sorulur.",
-    "frequency": "ultra",
+    "frequency": "high",
     "groupDay": 13,
     "mnemonic": "💡 ÇAĞRIŞIM: 'MİYOP GÖZLÜK' -> Uzağı seçemeyen göz gibi, gelecekteki büyük resmi göremeyen basiretsiz siyasetçi: MYOPIC (dar görüşlü, ileriyi göremeyen)."
   },
@@ -1081,7 +1081,7 @@ export const day13Words: YdsWord[] = [
     "ydsTip": "Hem sıfat ('obscure origin' = adı sanı duyulmamış, belirsiz) hem de fiil ('obscure the reality' = gerçeği perdelemek) olarak kullanılır. 'Clarify' zıttıdır.",
     "frequency": "high",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'O-Bİ-SKUR (Skor tablosunun üstünü örtmek)' -> Hakem skor tablosunun önüne geçip skoru görmemizi engelledi: OBSCURE (görünmez kılmak, perdelemek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: OB (üzerine) + SCUR (örtmek, karanlık). Bir şeyin üzerine örtü çekip karanlıkta bırakmak = belirsizleştirmek, gizlemek."
   },
   {
     "id": "w546",
@@ -1238,7 +1238,7 @@ export const day13Words: YdsWord[] = [
     "ydsTip": "Zıttı olan 'unscrupulous' (ahlaksız, vicdansız, gaddar) kelimesi de sınavlarda sıkça sorulur. Hem ahlaki dürüstlük hem de bilimsel aşırı titizlik anlatır.",
     "frequency": "high",
     "groupDay": 13,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SKRİP (Script/Metin) + PUL (Pul pul incelemek)' -> Elindeki metni en ince ayrıntısına kadar inceleyen SCRUPULOUS (kılı kırk yaran, çok titiz) araştırmacı."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince \"scrupulus\" (ayakkabıdaki küçük, sivri taş). Küçücük bir taşı bile dert eden vicdan = aşırı titiz, dürüst."
   },
   {
     "id": "w937",
@@ -1296,7 +1296,7 @@ export const day13Words: YdsWord[] = [
     "exampleEn": "Throughout the diplomatic standoff, the prime minister remained a staunch advocate of nuclear non-proliferation treaties.",
     "exampleTr": "Diplomatik kriz boyunca başbakan, nükleer silahların yayılmasını önleme antlaşmalarının sarsılmaz bir savunucusu olmaya devam etti.",
     "ydsTip": "'Staunch ally / defender / supporter' kalıbı YDS uluslararası ilişkiler ve siyaset metinlerinde 'loyal / steadfast' anlamında sıkça test edilir.",
-    "frequency": "ultra",
+    "frequency": "high",
     "groupDay": 13,
     "mnemonic": "💡 ÇAĞRIŞIM: 'STAUNCH -> TAŞ gibi sağlam' -> Fikrinde ve dostluğunda taş gibi sarsılmaz duran: STAUNCH (sadık, vefakar, sarsılmaz)."
   },

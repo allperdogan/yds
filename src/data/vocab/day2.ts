@@ -143,7 +143,7 @@ export const day2Words: YdsWord[] = [
     "ydsTip": "Siyaset ve münazara metinlerinde karşı tarafın haklılığını veya yenilgiyi kabul etmek anlamında 'admit' yerine kullanılır.",
     "frequency": "high",
     "groupDay": 2,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KÖŞEYE-ÇEKİL' -> Seçimi kaybedip köşeye çekilen adayın yenilgiyi CONCEDE etmesi (kabullenmesi, teslim olması)."
+    "mnemonic": "💡 ÇAĞRIŞIM: CON + CEDE (çekilmek, geri adım atmak; \"recede\" geri çekilmek). Rakibe geri adım atıp yenilgiyi kabullenmek. İsmi \"concession\" = taviz."
   },
   {
     "id": "w1385",
@@ -159,7 +159,7 @@ export const day2Words: YdsWord[] = [
     "ydsTip": "'Condemn ... for ...' (kınamak) ve edilgen haliyle 'be condemned to ...' (mahkum edilmek) kalıbı sıkça çıkar.",
     "frequency": "high",
     "groupDay": 2,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KARA-DAMGA' -> Bir suçlunun ya da zalimin alnına kara damga vurup onu kınamak ve mahkum etmek: CONDEMN."
+    "mnemonic": "💡 ÇAĞRIŞIM: İçinde DAMN (lanet) var: CON-DEMN. Birine lanet edercesine kınamak; mahkeme de suçluyu cezaya \"mahkûm eder\"."
   },
   {
     "id": "w654",
@@ -175,7 +175,7 @@ export const day2Words: YdsWord[] = [
     "ydsTip": "'In conformity with' (uyarınca, -e uygun olarak) edat grubu olarak preposition sorularında sorulur.",
     "frequency": "high",
     "groupDay": 2,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KONFOR-UĞRUNA' -> Konforunu bozmamak için toplumsal kalıplara harfiyen uyan bireyin CONFORMITY (uyum, boyun eğme) hali."
+    "mnemonic": "💡 ÇAĞRIŞIM: CON (ile) + FORM (biçim). Herkesle aynı biçime girmek = kurallara uyma, uyumculuk. \"Conformist\" = topluma uyan kişi."
   },
   {
     "id": "w116",
@@ -431,7 +431,7 @@ export const day2Words: YdsWord[] = [
     "ydsTip": "'Prevent', 'hamper', 'impede' ve 'obstruct' ile birlikte YDS'nin vazgeçilmez engel bildiren fiiller grubundadır.",
     "frequency": "ultra",
     "groupDay": 2,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HİNDİSTAN TRAFİĞİ' -> Yola aniden fırlayan ineklerin arabaları HINDER etmesi (engellemesi, aksatması)."
+    "mnemonic": "💡 ÇAĞRIŞIM: HIND (arka; \"hindsight\" sonradan görme). Birini arkadan çekip ilerlemesini engellemek = aksatmak, köstek olmak."
   },
   {
     "id": "w505",
@@ -735,7 +735,7 @@ export const day2Words: YdsWord[] = [
     "ydsTip": "'Concise', 'brief' ve 'pithy' kelimeleriyle eş anlamlıdır; gereksiz laf kalabalığından arındırılmış ifadeleri niteler.",
     "frequency": "high",
     "groupDay": 2,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SUKÛT-SÖZ' -> Boş konuşmayı bırakıp sukût ile az ve öz konuşan veciz kişi: SUCCINCT (kısa ve öz, lakonik)."
+    "mnemonic": "💡 ÇAĞRIŞIM: SUC + CINCT (kuşakla bağlamak). Bol elbiseyi kuşakla toplar gibi sözü toparlayıp kısaltmak = kısa ve öz."
   },
   {
     "id": "w1183",
@@ -751,7 +751,7 @@ export const day2Words: YdsWord[] = [
     "ydsTip": "'Respected', 'esteemed' ve 'revered' ile eş anlamlıdır. Tarihi yapılar veya saygın şahsiyetler için kullanılır.",
     "frequency": "medium",
     "groupDay": 2,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'VENİ-VİDİ (Tarihi büyüklük)' -> Yaşından, bilgeliğinden ve tarihinden ötürü herkesin saygı duyduğu muhterem ve ulu kişi/kurum: VENERABLE."
+    "mnemonic": "💡 ÇAĞRIŞIM: VENUS (sevgi, saygı tanrıçası). Yaşı ve bilgeliği yüzünden sevgi ve saygı duyulan = saygıdeğer, köklü."
   },
   {
     "id": "w262",

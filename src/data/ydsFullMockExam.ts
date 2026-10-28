@@ -1,13 +1,15 @@
 import { YdsQuestion } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
+import { fillGroupPassages } from '../services/groupPassages';
 export { YDS_FULL_MOCK_EXAM_2 } from './ydsFullMockExam2';
 export { YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam3';
 
 export const YDS_MOCK_EXAMS_LIST = [
   {
     id: 'exam_1',
-    title: '1. Deneme: Standart ÖSYM 2024 VIP Simülasyonu',
+    title: '1. Deneme: Standart Deneme',
     badge: 'ÖSYM Standartı',
-    description: 'Birebir resmi sınav dengesi, standart soru tipleri ve dengeli süre yönetimi.',
+    description: 'Gerçek sınavdaki soru dağılımı ve süresiyle hazırlanmış deneme.',
     questionCount: 80,
     difficulty: 'ÖSYM Düzeyi'
   },
@@ -21,15 +23,15 @@ export const YDS_MOCK_EXAMS_LIST = [
   },
   {
     id: 'exam_3',
-    title: '3. Deneme: Çeldirici & Hız Odaklı Master Deneme',
+    title: '3. Deneme: Çeldirici ve Hız Odaklı Deneme',
     badge: 'Tuzak Deşifresi',
     description: 'ÖSYM soru yazarlarının imza çeldiricileri, ikili bağlaç tuzakları ve zaman baskısı antrenmanı.',
     questionCount: 80,
-    difficulty: 'YDS Master'
+    difficulty: 'Zor'
   }
 ];
 
-export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
+const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
   {
     "id": "m_q1",
     "type": "vocabulary",
@@ -118,7 +120,7 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "difficulty": "Orta",
     "tacticUsed": "Yüzde / Oran Analizi: 'Account for + rakam/oran' (-i oluşturmak)",
     "trapWarning": "'carry out' (yürütmek/gerçekleştirmek) çok popüler olsa da oran/yüzde almaz; deney veya araştırma yürütülür.",
-    "explanation": "Account for: oluşturmak, tekabül etmek (%40'ını oluşturuyor). YDS'de arkasından yüzde, kesir veya oran geliyorsa doğru cevap %99 'account for'dur."
+    "explanation": "Account for: oluşturmak, tekabül etmek (%40'ını oluşturuyor). YDS'de arkasından yüzde, kesir veya oran geliyorsa doğru cevap çoğunlukla 'account for'dur."
   },
   {
     "id": "m_q6",
@@ -136,7 +138,7 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "difficulty": "Orta",
     "tacticUsed": "İsim-Fiil Uyumu: 'Carry out testing / experiment / research' (uygulamak, yürütmek)",
     "trapWarning": "'put off' ertelemek demektir; güvenlik testi ertelenmez, icra edilir.",
-    "explanation": "Carry out: yürütmek, uygulamak, icra etmek (synonym: conduct, implement, execute). YDS'nin 1 numaralı phrasal verb'üdür."
+    "explanation": "Carry out: yürütmek, uygulamak, icra etmek (synonym: conduct, implement, execute). YDS'de sık çıkan bir phrasal verb'dür."
   },
   {
     "id": "m_q7",
@@ -152,7 +154,7 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     },
     "answer": "A",
     "difficulty": "Orta",
-    "tacticUsed": "Altın Since Kuralı: Since + V2 (Past Simple), have/has V3 (Present Perfect)",
+    "tacticUsed": "Since Kuralı: Since + V2 (Past Simple), have/has V3 (Present Perfect)",
     "trapWarning": "B şıkkında since'in içine 'has taken' Present Perfect konamaz; since kısmı kesinlikle geçmişte bir nokta (V2) olmalıdır!",
     "explanation": "Since kuralı: 'Since + Past Simple (1954'te ilk nakil gerçekleştiğinden beri), Present Perfect (tanık olmuştur)'. Doğru cevap A'dır."
   },
@@ -514,16 +516,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "27. Soru - Cümle Tamamlama",
     "question": "Although modern desalination facilities have alleviated chronic freshwater shortages across the Persian Gulf, _____ .",
     "options": {
-      "A": "the hyper-saline brine discharge they release back into shallow marine ecosystems threatens local coral reefs",
-      "B": "they have completely eliminated the need for municipal wastewater management systems",
-      "C": "surrounding desert populations have universally migrated toward equatorial river basins",
-      "D": "oil refineries in the region have consequently abandoned all fossil fuel extraction technologies",
-      "E": "freshwater consumption among wealthy households has dropped to historical minimums"
+      "A": "the brine they discharge into shallow waters threatens local coral reefs",
+      "B": "they have become the main source of drinking water for most coastal cities",
+      "C": "governments in the region have continued to invest heavily in new plants",
+      "D": "the energy they consume is mostly supplied by cheap domestic natural gas",
+      "E": "water shortages in the region are therefore unlikely to return in the near future"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Although Zıtlık Analizi (+/-): Tatlı su krizini hafifletti (+) / Ancak bıraktığı aşırı tuzlu atık mercan resiflerini tehdit ediyor (-)",
-    "trapWarning": "B şıkkındaki 'completely eliminated' YDS'nin sevmediği aşırı genelleme tuzağıdır ve zıtlık yaratmaz.",
+    "trapWarning": "Although zıtlık ister: ilk yarı olumlu (kıtlığı azalttı), ikinci yarı bir sorun söylemeli. B, C, D ve E dilbilgisi olarak oturur ama ya aynı yönde devam eder ya da zıtlık kurmaz.",
     "explanation": "Although tatlı su krizini hafifletti (+) dediği için devamında tesislerin yol açtığı çevre kirliliği veya maliyet gibi olumsuz bir bedel (-) gelmelidir (A şıkkı)."
   },
   {
@@ -534,14 +536,14 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "contemporary social media platforms have fostered deep ideological fragmentation and rapid disinformation",
       "B": "the widespread adoption of the internet has democratized global access to specialized knowledge",
-      "C": "manuscripts written by medieval monks were preserved inside subterranean library vaults",
-      "D": "industrial textile machinery forced thousands of manual laborers into chronic urban unemployment",
-      "E": "steam navigation enabled transoceanic trade routes to circumvent dangerous cape crossings"
+      "C": "the internet has made it harder for governments to control the spread of information",
+      "D": "the printing press also made books much cheaper than handwritten manuscripts",
+      "E": "many scholars believe that the internet has reduced the amount people actually read"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Just as ... so too (Benzerlik / Paralellik Kurgusu)",
-    "trapWarning": "A şıkkı olumsuz bir etki (disinformation) verdiği için matbaanın olumlu eğitim devrimiyle paralellik taşımaz.",
+    "trapWarning": "Just as ... (tıpkı ... gibi) paralel bir olumlu etki ister: matbaa okuryazarlığı yaydı, internet de bilgiye erişimi yaydı. A ve E olumsuz sonuç verir; C yakındır ama okuryazarlık/bilgiye erişim paralelliğini değil siyasi kontrolü öne çıkarır; D ise ikinci yarıda yine matbaadan bahseder.",
     "explanation": "Just as: Tıpkı matbaanın okuryazarlığı ve reformu tetiklemesi gibi, internet de küresel bilgiye erişimi demokratikleştirmiştir (B şıkkı)."
   },
   {
@@ -550,16 +552,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "29. Soru - Cümle Tamamlama",
     "question": "Unless developing countries receive substantial international technology transfers and concessional climate finance, _____ .",
     "options": {
-      "A": "they will have completely transformed their national power grids into carbon-free systems by 2030",
+      "A": "they have already reduced their emissions faster than most developed nations",
       "B": "their reliance on cheap domestic coal to power industrial development will persist for decades",
-      "C": "wealthy donor states will immediately cease all bilateral diplomatic negotiations",
-      "D": "global temperature anomalies will spontaneously revert to pre-industrial benchmarks",
-      "E": "renewable solar panels will automatically become the sole source of electricity worldwide"
+      "C": "they will be able to switch to renewable energy within a few years",
+      "D": "wealthy countries have pledged billions of dollars to help them adapt",
+      "E": "they have been criticized for blocking agreements at recent climate summits"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Unless (Olumsuz Şart) -> Doğal Olumsuz Sonuç",
-    "trapWarning": "A ve E şıkları teknoloji almadan mucizevi şekilde yeşil enerjiye geçeceklerini söyler, saçmadır.",
+    "trapWarning": "Unless (-mezse) gelecek zamanlı olumsuz bir sonuç ister. A ve E zaman uyumunu bozar (present perfect), C anlam olarak ters yöndedir, D ise koşula bağlı bir sonuç değildir.",
     "explanation": "Unless teknoloji transferi ve finansman almadıkları sürece, sanayilerini beslemek için ucuz yerli kömüre olan bağımlılıkları devam edecektir (B şıkkı)."
   },
   {
@@ -568,17 +570,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "30. Soru - Cümle Tamamlama",
     "question": "Because honeybees perform pollination services essential to more than a third of human food crops, _____ .",
     "options": {
-      "A": "their sudden colony collapse poses an existential threat to international agricultural security",
-      "B": "pesticide manufacturers have intentionally doubled their chemical production targets",
-      "C": "wild avian predators avoid hunting near commercial apiaries during seasonal migrations",
-      "D": "synthetic fertilizers have completely replaced all biological processes in modern farming",
-      "E": "honey production has ceased to hold any economic value across regional retail markets"
+      "A": "their declining numbers pose a serious threat to global food security",
+      "B": "many farmers have begun to rent hives during the flowering season",
+      "C": "they have been studied by biologists for more than two centuries",
+      "D": "honey has long been one of the most widely traded natural products in the world",
+      "E": "some wild bee species have become more common in urban gardens"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Because (Sebep-Sonuç Mantığı): İnsan gıdasının üçte birini tozlaştırıyorlar (sebep) -> Yok olmaları küresel tarım güvenliğine tehdittir (sonuç)",
-    "trapWarning": "B şıkkı arıların önemini değil böcek ilacı üreticilerinin niyetini söyler, anlamsızdır.",
-    "explanation": "A şıkkı: Kolonilerinin aniden çökmesi uluslararası tarımsal güvenlik için varoluşsal bir tehdit oluşturmaktadır."
+    "trapWarning": "Because neden-sonuç ister: tozlaşma gıdanın üçte biri için gerekli, o halde arıların azalması gıda güvenliğini tehdit eder. B makul bir sonuçtur ama \"essential to a third of food crops\" vurgusunu karşılamaz; C, D ve E nedenle bağlanmaz.",
+    "explanation": "A şıkkı: Sayılarının azalması küresel gıda güvenliği için ciddi bir tehdit oluşturur."
   },
   {
     "id": "m_q31",
@@ -587,16 +589,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "question": "Whereas traditional classroom instruction is fundamentally bounded by strict geographic and chronological parameters, _____ .",
     "options": {
       "A": "online learning platforms allow self-paced mastery irrespective of physical location",
-      "B": "university textbooks have remained remarkably unchanged over the past fifty years",
-      "C": "standardized pen-and-paper examinations are preferred by conservative educators",
-      "D": "commute times for suburban students frequently exceed ninety minutes every morning",
-      "E": "vocational apprenticeships prioritize manual craftsmanship over abstract theories"
+      "B": "online courses are also limited to a fixed schedule of live lectures",
+      "C": "students generally learn more effectively when they interact with a teacher face to face in class",
+      "D": "most universities have been reluctant to give up their physical campuses",
+      "E": "classroom teachers can adapt their lessons to the needs of each student"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Whereas (Kıyaslama): Geleneksel sınıf coğrafi ve zamansal sınırlara tabiyken, online platformlar konumdan bağımsız öğrenme sağlar.",
-    "trapWarning": "B şıkkı ders kitaplarından bahseder, sınıf öğretimiyle karşıtlık oluşturmaz.",
-    "explanation": "A şıkkı: 'online learning platforms allow self-paced mastery irrespective of physical location' tam bir zıt kıyaslamadır."
+    "trapWarning": "Whereas iki şeyi karşılaştırır: sınıf (yer ve zamana bağlı) vs. çevrimiçi (bağımsız). B karşılaştırmayı kurar ama aynı sınırlamayı söyler; C ve E sınıf lehine konuşup karşıtlığı kurmaz; D ise ikinci tarafı vermez.",
+    "explanation": "A şıkkı: Çevrimiçi kurslar her yerden ve kendi hızında öğrenmeye izin verir; bu, sınıfın yer ve zaman sınırlarıyla tam bir zıt kıyaslamadır."
   },
   {
     "id": "m_q32",
@@ -604,16 +606,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "32. Soru - Cümle Tamamlama",
     "question": "_____ , deep-sea hydrothermal vents harbor thriving ecosystems that derive their energy exclusively from chemosynthesis.",
     "options": {
-      "A": "Since solar radiation penetrates down to the abyssal trenches of the Mariana basin",
+      "A": "Because sunlight reaches even the deepest parts of the ocean floor",
       "B": "Despite the total absence of sunlight and the crushing hydrostatic pressure of the ocean floor",
-      "C": "Whenever commercial trawlers drag heavy nets across shallow continental shelves",
-      "D": "Because marine algae perform photosynthesis at rates far exceeding terrestrial plants",
-      "E": "In order that coastal mangroves can protect barrier islands against seasonal typhoons"
+      "C": "Although they were discovered only in the late 1970s",
+      "D": "Since the water around them is rich in dissolved oxygen and light",
+      "E": "Unlike the coral reefs that also depend on chemical energy"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Zıtlık Zarfı (Güneş ışığının tamamen yokluğuna ve ezici basınca rağmen canlılar yaşar)",
-    "trapWarning": "A şıkkı bilimsel olarak yanlıştır; güneş ışığı okyanus tabanına asla ulaşamaz.",
+    "trapWarning": "Ana cümle \"enerjiyi yalnızca kemosentezden alır\" der; boşlukta ışıksızlığa rağmen gibi bir zıtlık gerekir. A ve D metinle çelişir; C dilbilgisi olarak oturur ama zıtlık mantığı kurmaz; E ise mercanlar hakkında yanlış bir karşılaştırma yapar.",
     "explanation": "B şıkkı: 'Güneş ışığının tamamen yokluğuna ve okyanus tabanının ezici hidrostatik basıncına rağmen, derin deniz bacaları kemosentezden beslenen canlı ekosistemler barındırır'."
   },
   {
@@ -622,16 +624,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "33. Soru - Cümle Tamamlama",
     "question": "So rapidly have artificial intelligence models evolved in generating natural human language _____ .",
     "options": {
-      "A": "that distinguishing between machine-generated essays and human scholarship has become exceptionally challenging",
-      "B": "because international copyright conventions were originally drafted for printed literary works",
-      "C": "unless supercomputing clusters are cooled with specialized cryogenic liquid nitrogen loops",
-      "D": "although cognitive linguists had predicted that syntax was entirely unique to hominid brains",
-      "E": "in case malicious cyber attackers exploit weaknesses in municipal electrical grids"
+      "A": "that it is now very hard to tell machine-written essays from human ones",
+      "B": "as many experts had predicted at the beginning of the decade",
+      "C": "that most universities banned their use in written exams years ago",
+      "D": "since researchers first trained them on large collections of text",
+      "E": "that their ability to understand meaning has now been proven conclusively by experts"
     },
     "answer": "A",
-    "difficulty": "YDS Master",
+    "difficulty": "Zor",
     "tacticUsed": "So + Adverb + Inversion ... that + Cümle (So rapidly have they evolved that...)",
-    "trapWarning": "'So ... that' kalıbıdır! 'So rapidly' başa geldiği için cümle devriktir (have AI models evolved), arkasından kesinlikle 'that' gelir.",
+    "trapWarning": "So ... that yapısı: boşluk \"that\" ile başlamalı (B ve D elenir). C zaman olarak tutarsızdır (\"years ago\" ile yakın gelişme), E ise üretim hızından anlama kapasitesine sıçrayan aşırı bir sonuçtur.",
     "explanation": "So + zarf devrik başlangıcının tamlayıcısı 'that' sonucudur. O kadar hızlı geliştiler ki, makine metinlerini insan yazısından ayırt etmek olağanüstü zorlaştı (A şıkkı)."
   },
   {
@@ -640,16 +642,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "34. Soru - Cümle Tamamlama",
     "question": "While genetic predisposition undoubtedly plays an influential role in the manifestation of clinical depression, _____ .",
     "options": {
-      "A": "monozygotic twins always exhibit identical susceptibility to affective disorders",
+      "A": "identical twins almost always share the same risk of developing the disorder",
       "B": "environmental stressors and social isolation are equally potent determinants of psychiatric vulnerability",
-      "C": "antidepressant pharmaceuticals alter neurotransmitter concentrations within thirty minutes of ingestion",
-      "D": "neurosurgeons rarely perform lobotomies in contemporary psychiatric institutions",
-      "E": "the human genome project has successfully mapped every single base pair sequence"
+      "C": "antidepressants remain the most widely prescribed treatment for the condition",
+      "D": "scientists have identified a single gene that is responsible for most cases",
+      "E": "people with a family history of depression are more likely to develop it"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "While Zıtlığı (Genetik yatkınlık rol oynarken, çevresel faktörler de eşit derecede etkilidir)",
-    "trapWarning": "A şıkkındaki 'always exhibit identical' zıtlık yaratmaz ve aşırı uç bir ifadedir.",
+    "trapWarning": "While (-se de) zıtlık ister: genetik önemli AMA başka etkenler de önemli. A ve E yine genetiği destekler; D genetiği daha da güçlendirir; C ise konuyu tedaviye kaydırır.",
     "explanation": "While genetik rol oynar dese de, çevresel stres faktörleri ve sosyal izolasyon da eşit derecede güçlü belirleyicilerdir (B şıkkı)."
   },
   {
@@ -658,16 +660,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "35. Soru - Cümle Tamamlama",
     "question": "In light of mounting evidence linking microplastic ingestion to endocrine disruption in marine mammals, _____ .",
     "options": {
-      "A": "several sovereign governments have enacted comprehensive bans on single-use non-biodegradable packaging",
-      "B": "plastic manufacturing conglomerates have enjoyed unprecedented profit margins in recent quarters",
-      "C": "oceanic currents have slowed their circulatory speed across the North Atlantic gyre",
-      "D": "offshore oil drilling rigs have expanded their operations into protected polar sanctuaries",
-      "E": "deep-sea submersibles are capable of descending beneath eleven thousand meters of depth"
+      "A": "several governments have banned single-use plastic packaging",
+      "B": "plastic producers have argued that the evidence is still incomplete",
+      "C": "marine mammals have been observed eating plastic for decades",
+      "D": "plastic production has continued to increase worldwide",
+      "E": "researchers have called for more studies on the effects of plastic on humans"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "In light of (Işığında / Göz önüne alındığında) -> Harekete Geçme / Karar",
-    "trapWarning": "B şıkkı şirket karlarından bahseder, hükümetlerin plastik kirliliğine karşı tedbir alması mantıksal beklentidir.",
+    "trapWarning": "In light of (... ışığında) sonuç/tepki ister. B ve D artan kanıtla ters yöne gider; C neden-sonuç değil arka plan bilgisidir. E de bir tepkidir ama kanıtın sonucu değil başka bir konuya geçer; en doğrudan sonuç yasaklamadır.",
     "explanation": "A şıkkı: Deniz memelilerinde hormon bozukluğu kanıtları ışığında, birçok hükümet tek kullanımlık ambalajlara kapsamlı yasaklar getirdi."
   },
   {
@@ -676,16 +678,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "36. Soru - Cümle Tamamlama",
     "question": "Even if multinational trade agreements are finalized with the utmost diplomatic diligence, _____ .",
     "options": {
-      "A": "customs officials will celebrate the immediate disappearance of all black market smuggling",
+      "A": "they will probably be welcomed by local manufacturers and labour unions",
       "B": "domestic interest groups and protectionist lobbies will inevitably voice vehement opposition",
-      "C": "every member nation will automatically enjoy identical export surpluses in manufactured goods",
-      "D": "foreign direct investment has historically remained immune to sudden currency devaluations",
-      "E": "consumer prices will universally fall by more than fifty percent across retail sectors"
+      "C": "they usually take several years to negotiate and approve",
+      "D": "they were often rejected by national parliaments in the past",
+      "E": "consumers will benefit from lower prices on imported goods"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Even if (Olsa bile): Büyük bir özenle imzalansa bile, yerel çıkar grupları sert muhalefet gösterecektir.",
-    "trapWarning": "A, C ve E şıklarındaki pembe tablolar (herkesin aynı karı elde etmesi vb.) 'even if' zıtlığıyla uyuşmaz.",
+    "trapWarning": "Even if (... olsa bile) beklenmedik/olumsuz bir sonuç ister. A ve E olumlu sonuç verip zıtlığı kurmaz; C ve D genel bilgi verir, D ayrıca zaman uyumunu bozar.",
     "explanation": "B şıkkı: Ne kadar özenle hazırlansa bile (Even if), yerel çıkar grupları ve korumacı lobiler kaçınılmaz olarak şiddetli muhalefet dile getirecektir."
   },
   {
@@ -730,7 +732,7 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "39. Soru - Çeviri (İngilizce -> Türkçe)",
     "question": "Archaeologists excavating in Central America have uncovered ancient Mayan settlements that were far more interconnected and populous than previously estimated.",
     "options": {
-      "A": "Orta Amerika'da kazı yapan arkeologlar, önceden tahmin edilenden çok daha kalabalık olan ve birbirine bağlanan antik Maya yerleşimlerini yeni tekniklerle buldular.",
+      "A": "Orta Amerika'da kazı yapan arkeologlar, önceden tahmin edilenden çok daha kalabalık olan ve birbirine bağlanan antik Maya yerleşimlerini yeni lazer tarama teknikleriyle buldular.",
       "B": "Orta Amerika'daki antik Maya yerleşimleri, orada kazı yapan arkeologların önceden tahmin ettiğinden çok daha kalabalık ve birbirine bağlı çıkmıştır.",
       "C": "Orta Amerika'da kazı yapan arkeologlar, önceden tahmin edilenden çok daha fazla birbirine bağlı ve kalabalık olan antik Maya yerleşimlerini gün yüzüne çıkarmışlardır.",
       "D": "Önceden tahmin edilenin aksine, Orta Amerika'da kazı yapan arkeologların bulduğu antik Maya yerleşimleri son derece kalabalıktır.",
@@ -768,7 +770,7 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "Quantum computers solve complicated calculations in seconds, whereas conventional supercomputers require thousands of years.",
       "B": "Quantum computers possess the potential to solve in seconds complex problems that would take conventional supercomputers thousands of years to solve.",
-      "C": "Because conventional supercomputers take thousands of years to solve complex problems, quantum computers were developed to achieve this in seconds.",
+      "C": "Because conventional supercomputers take thousands of years to solve complex problems, quantum computers were specifically developed to achieve this in seconds.",
       "D": "It would take thousands of years for supercomputers to solve complex problems without the extraordinary speed of quantum computing.",
       "E": "Complex problems that require thousands of years can potentially be solved in seconds if conventional supercomputers adopt quantum processors."
     },
@@ -803,16 +805,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "According to the passage, the CRISPR-Cas9 system was originally discovered as _____ .",
     "options": {
-      "A": "a synthetic protein developed by pharmaceutical conglomerates",
+      "A": "a laboratory tool designed to cut and replace damaged DNA",
       "B": "a natural bacterial defense mechanism against viral infections",
-      "C": "a hereditary mutation observed in patients with sickle-cell disease",
-      "D": "an accidental byproduct of industrial wastewater purification",
-      "E": "a cellular anomaly found exclusively in mammalian embryonic cells"
+      "C": "a virus that bacteria use to attack other microorganisms",
+      "D": "an immune response that human cells use against bacteria",
+      "E": "a gene therapy first tested on patients with sickle-cell disease"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Doğrudan Bilgi Çıkarımı: 'bacteria against bacteriophages (viruses)'",
-    "trapWarning": "A şıkkı 'synthetic' der; metin 'naturally occurring' olduğunu söyler.",
+    "trapWarning": "Metin: \"derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages\". A bugünkü kullanımı köken gibi sunar, C saldıranla savunanı karıştırır, D canlıları değiştirir, E ise klinik denemeyi keşif sanır.",
     "explanation": "Metinde 'Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages' denmiştir. Bakteriyofaj bir virüstür. Dolayısıyla B şıkkı doğrudur."
   },
   {
@@ -822,17 +824,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "It is clearly stated in the passage that earlier genetic technologies _____ .",
     "options": {
-      "A": "were significantly more expensive and prone to unintended genetic errors",
-      "B": "successfully cured all hereditary causes of congenital blindness",
-      "C": "were completely outlawed by international bioethics tribunals",
-      "D": "relied on bacterial enzymes rather than synthetic chemical scissors",
-      "E": "focused exclusively on eradicating viral bacteriophages"
+      "A": "were costly and likely to cause unintended mutations",
+      "B": "were more precise but much slower than CRISPR",
+      "C": "could not be used in clinical trials on humans",
+      "D": "were based on exactly the same bacterial defense system",
+      "E": "raised fewer ethical concerns than CRISPR does"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Karşılaştırma (Unlike earlier genetic modification technologies...)",
-    "trapWarning": "B şıkkında 'successfully cured all' aşırı iddialıdır ve metinle çelişir.",
-    "explanation": "'prohibitively expensive, laborious, and vulnerable to off-target mutations' = 'more expensive and prone to unintended genetic errors' (A şıkkı)."
+    "trapWarning": "Metin: \"prohibitively expensive, laborious, and vulnerable to off-target mutations\". B kesinliği eski yöntemlere verir (tersi); C, D ve E metinde söylenmeyen karşılaştırmalardır.",
+    "explanation": "'prohibitively expensive, laborious, and vulnerable to off-target mutations' = 'costly and likely to cause unintended mutations' (A şıkkı)."
   },
   {
     "id": "m_q45",
@@ -841,16 +843,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "The author notes that germline editing is controversial primarily because it _____ .",
     "options": {
-      "A": "requires the complete shutdown of existing pharmaceutical facilities",
+      "A": "has not yet been tested in clinical trials on humans",
       "B": "introduces modifications that can be passed down to future generations",
-      "C": "has proven entirely ineffective in laboratory animal models",
-      "D": "costs substantially more than conventional chemotherapy regimens",
-      "E": "cannot be detected by contemporary diagnostic gene sequencing"
+      "C": "is much more expensive and technically demanding than the other available forms of gene editing",
+      "D": "may cause unexpected mutations in the treated patient",
+      "E": "is used to treat diseases such as hereditary blindness"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Sebep Analizi: 'alterations made to embryos that are inheritable across generations'",
-    "trapWarning": "C şıkkı 'entirely ineffective' der; sorun işe yaramaması değil nesilden nesile aktarılabilmesidir.",
+    "trapWarning": "Metin germline düzenlemeyi \"inheritable across generations\" diye tanımlar; tartışmanın nedeni budur. D eski tekniklerin sorununu (off-target) buraya taşır; E ise klinik denemeleri tartışma nedeni gibi sunar.",
     "explanation": "Metinde 'alterations made to embryos that are inheritable across generations' ifadesi doğrudan 'modifications that can be passed down to future generations' (B şıkkı) ile örtüşür."
   },
   {
@@ -860,16 +862,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The advent of the CRISPR-Cas9 genome editing mechanism has fundamentally transformed contemporary molecular genetics. Derived from a naturally occurring adaptive immune defense found in bacteria against bacteriophages, CRISPR acts as a pair of molecular scissors capable of excising and replacing mutated DNA sequences with remarkable precision. Unlike earlier genetic modification technologies that were prohibitively expensive, laborious, and vulnerable to off-target mutations, CRISPR offers unmatched efficiency. Medical researchers are currently conducting clinical trials targeting sickle-cell disease and hereditary blindness. However, the prospect of germline gene editing—alterations made to embryos that are inheritable across generations—has sparked fierce bioethical debates globally.",
     "question": "Which of the following would be the best title for the passage?",
     "options": {
-      "A": "The Total Eradication of Bacterial Infections in Hospitals",
+      "A": "How Bacteria Have Always Defended Themselves Against Invading Viruses",
       "B": "CRISPR-Cas9: A Genetic Revolution and Its Ethical Dilemmas",
-      "C": "Why Inheritable Diseases Can Never Be Cured by Modern Science",
-      "D": "The Financial Bankruptcy of Traditional Biotechnology Companies",
-      "E": "How Bacteriophages Destroyed Early Genetic Laboratories"
+      "C": "The Case Against Editing Human Embryos",
+      "D": "New Treatments for Sickle-Cell Disease",
+      "E": "Why Earlier Genetic Technologies Failed"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Başlık Tespiti (CRISPR devrimi ve etik boyutu)",
-    "trapWarning": "A şıkkı bakteriyel enfeksiyonlardan bahseder, metnin ana konusu gen düzenlemedir.",
+    "trapWarning": "Başlık bütün paragrafı kapsamalıdır: CRISPR devrimi + etik tartışma. A, D ve E yalnızca bir cümleyi kapsar; C ise tartışmanın bir tarafını seçer, oysa yazar taraf tutmaz.",
     "explanation": "Metin CRISPR'ın genetik teknolojisindeki devrimini ve ardından gelen etik tartışmaları özetler. Doğru başlık B'dir."
   },
   {
@@ -880,15 +882,15 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "question": "Supporters of deep-sea nodule harvesting claim that it is advantageous because it _____ .",
     "options": {
       "A": "produces lower carbon emissions and avoids displacing human communities",
-      "B": "permanently cleanses toxic sediments from the ocean floor",
-      "C": "accelerates the reproduction rates of benthic organisms",
-      "D": "eliminates the need for any renewable battery production globally",
-      "E": "requires no complex robotic machinery or heavy surface vessels"
+      "B": "causes less damage to ecosystems than mining on land",
+      "C": "can supply metals that are not found anywhere on land",
+      "D": "is cheaper than open-pit mining on land",
+      "E": "will allow damaged seabed habitats to recover quickly"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Proponents (Savunucular) Argümanı Çıkarımı",
-    "trapWarning": "C şıkkı biyologların endişeleriyle çelişir, madencilik canlıları hızlandırmaz.",
+    "trapWarning": "Destekçiler: düşük karbon ayak izi ve sıfır insan yerinden edilmesi. B ekosistem iddiası ekler (biyologların itirazıyla karışır), C ve D metinde olmayan avantajlardır, E ise metinle çelişir.",
     "explanation": "Metinde 'produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement' açıkça belirtilmiştir (A şıkkı)."
   },
   {
@@ -898,16 +900,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The abyssal plains of the Clarion-Clipperton Zone in the central Pacific Ocean contain trillions of polymetallic nodules—potato-sized mineral accretions exceptionally rich in nickel, cobalt, manganese, and copper. As demand for these metals surges to fuel the global green transition, commercial mining entities are eager to begin industrial dredging four thousand meters beneath the surface. Proponents argue that deep-sea harvesting produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement. However, marine biologists vehemently counter that abyssal ecosystems are among the most fragile and slowest-recovering biomes on Earth. Organisms living in the perpetual darkness of the deep sea have evolved over millions of years under tranquil conditions; sediment plumes and acoustic pollution generated by heavy robotic crawlers could cause irreversible biodiversity loss.",
     "question": "According to marine biologists in the passage, abyssal ecosystems are particularly vulnerable because they _____ .",
     "options": {
-      "A": "have evolved in undisturbed environments and recover at exceedingly slow rates",
-      "B": "are heavily contaminated by industrial plastic debris from nearby islands",
-      "C": "compete aggressively with terrestrial species for vital atmospheric oxygen",
-      "D": "lack any mineral compounds necessary to sustain metabolic life",
-      "E": "experience constant volcanic eruptions that destroy natural habitats"
+      "A": "developed under calm conditions and recover very slowly",
+      "B": "contain species that are found nowhere else on Earth",
+      "C": "are already polluted by plastic waste from the surface",
+      "D": "depend on the nodules for their supply of food",
+      "E": "are exposed to frequent changes in temperature and light"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Paraphrase: 'fragile and slowest-recovering' & 'tranquil conditions'",
-    "trapWarning": "E şıkkında volkanik patlamalardan bahsedilmemektedir, sakin (tranquil) ortamdan bahsedilmektedir.",
+    "trapWarning": "Metin: \"slowest-recovering\" ve \"evolved ... under tranquil conditions\". B makul görünür ama metinde yoktur; E ise \"perpetual darkness\" ve \"tranquil\" ile çelişir.",
     "explanation": "Metin 'abyssal ecosystems are among the most fragile and slowest-recovering biomes ... evolved over millions of years under tranquil conditions' demektedir (A şıkkı)."
   },
   {
@@ -917,17 +919,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The abyssal plains of the Clarion-Clipperton Zone in the central Pacific Ocean contain trillions of polymetallic nodules—potato-sized mineral accretions exceptionally rich in nickel, cobalt, manganese, and copper. As demand for these metals surges to fuel the global green transition, commercial mining entities are eager to begin industrial dredging four thousand meters beneath the surface. Proponents argue that deep-sea harvesting produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement. However, marine biologists vehemently counter that abyssal ecosystems are among the most fragile and slowest-recovering biomes on Earth. Organisms living in the perpetual darkness of the deep sea have evolved over millions of years under tranquil conditions; sediment plumes and acoustic pollution generated by heavy robotic crawlers could cause irreversible biodiversity loss.",
     "question": "It can be inferred from the passage that the drive to extract deep-sea minerals is largely fueled by _____ .",
     "options": {
-      "A": "a desire to explore potential deep-water human habitation sites",
-      "B": "the growing worldwide demand for raw materials used in green technologies",
-      "C": "strict United Nations mandates that prohibit all forms of terrestrial mining",
-      "D": "an acute shortage of agricultural fertilizers across the Americas",
-      "E": "the total collapse of international maritime shipping routes"
+      "A": "concerns about the environmental damage caused by land mining",
+      "B": "rising demand for metals needed in green technologies",
+      "C": "the falling cost of underwater robotic technology",
+      "D": "the discovery of new nodule fields in the Pacific Ocean",
+      "E": "pressure from marine biologists to study the deep sea"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Inference: 'demand for these metals surges to fuel the global green transition'",
-    "trapWarning": "C şıkkındaki 'UN mandates prohibit terrestrial mining' uydurma bir bilgidir.",
-    "explanation": "'demand for these metals surges to fuel the global green transition' = 'growing worldwide demand for raw materials used in green technologies' (B şıkkı)."
+    "trapWarning": "Metin: \"As demand for these metals surges to fuel the global green transition\". A destekçilerin bir argümanıdır, temel itici güç değildir; C ve D metinde geçmez; E ise biyologların tutumuyla çelişir.",
+    "explanation": "'demand for these metals surges to fuel the global green transition' = 'rising demand for metals needed in green technologies' (B şıkkı)."
   },
   {
     "id": "m_q50",
@@ -936,17 +938,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The abyssal plains of the Clarion-Clipperton Zone in the central Pacific Ocean contain trillions of polymetallic nodules—potato-sized mineral accretions exceptionally rich in nickel, cobalt, manganese, and copper. As demand for these metals surges to fuel the global green transition, commercial mining entities are eager to begin industrial dredging four thousand meters beneath the surface. Proponents argue that deep-sea harvesting produces far lower carbon footprints than open-pit terrestrial mining and involves zero human displacement. However, marine biologists vehemently counter that abyssal ecosystems are among the most fragile and slowest-recovering biomes on Earth. Organisms living in the perpetual darkness of the deep sea have evolved over millions of years under tranquil conditions; sediment plumes and acoustic pollution generated by heavy robotic crawlers could cause irreversible biodiversity loss.",
     "question": "The tone of the marine biologists regarding deep-sea mining can best be described as _____ .",
     "options": {
-      "A": "dismissive and indifferent",
-      "B": "cautious and enthusiastic",
-      "C": "deeply alarmed and critical",
-      "D": "uncompromisingly celebratory",
-      "E": "neutral and non-committal"
+      "A": "cautiously optimistic",
+      "B": "openly supportive",
+      "C": "seriously concerned",
+      "D": "mildly amused",
+      "E": "largely indifferent"
     },
     "answer": "C",
     "difficulty": "İleri",
     "tacticUsed": "Yazarın / Biyologların Tavrı (Tone): 'vehemently counter', 'irreversible loss'",
-    "trapWarning": "B şıkkındaki 'enthusiastic' (hevesli) biyologların karşıt tavrına tamamen aykırıdır.",
-    "explanation": "Biyologlar 'vehemently counter' (şiddetle karşı çıkmak) ve 'irreversible biodiversity loss' (geri dönüşü olmayan kayıp) demektedir. Tonları 'deeply alarmed and critical'dır (C şıkkı)."
+    "trapWarning": "\"Vehemently counter\" ve \"irreversible biodiversity loss\" ifadeleri ciddi bir endişe gösterir. A \"cautious\" kelimesiyle tuzak kurar ama \"optimistic\" metne uymaz.",
+    "explanation": "Biyologlar 'vehemently counter' (şiddetle karşı çıkmak) ve 'irreversible biodiversity loss' (geri dönüşü olmayan kayıp) demektedir. Tonları 'seriously concerned'dır (C şıkkı)."
   },
   {
     "id": "m_q51",
@@ -955,16 +957,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "According to the passage, the AMOC is essential for Europe because it _____ .",
     "options": {
-      "A": "acts as a natural maritime barrier against commercial shipping traffic",
+      "A": "carries cold polar water south toward the tropics",
       "B": "releases tropical heat that keeps regional temperatures comparatively mild",
-      "C": "prevents Greenland from developing any permanent polar glaciers",
-      "D": "dilutes high salinity levels that would otherwise kill commercial fish stocks",
-      "E": "generates electrical power along the continental shelf of the North Sea"
+      "C": "brings rainfall from tropical monsoon belts",
+      "D": "prevents the Greenland ice sheet from melting",
+      "E": "makes European winters colder than North American ones"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Doğrudan Bilgi: 'releasing immense thermal energy ... enjoy climates markedly milder'",
-    "trapWarning": "D şıkkında balık stoklarının ölmesinden bahsedilmez, iklimsel ılımanlıktan bahsedilir.",
+    "trapWarning": "AMOC sıcak tuzlu suyu tropiklerden kuzeye taşır ve ısı bırakır. A yönü ters çevirir, E karşılaştırmayı tersine çevirir, C ve D ise metindeki başka bilgileri karıştırır.",
     "explanation": "'By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries ... enjoy climates markedly milder' (B şıkkı)."
   },
   {
@@ -974,16 +976,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "The primary mechanism threatening to disrupt the AMOC is _____ .",
     "options": {
-      "A": "the excessive accumulation of salt caused by high tropical evaporation",
-      "B": "the influx of light freshwater from melting glaciers that impedes sinking",
-      "C": "underwater seismic activity along the Mid-Atlantic tectonic boundary",
-      "D": "industrial heat pollution released by nuclear plants on European coastlines",
-      "E": "the physical obstruction of sea lanes by thousands of drifting icebergs"
+      "A": "rising salt levels in the North Atlantic caused by evaporation",
+      "B": "meltwater from Greenland that makes the water harder to sink",
+      "C": "warmer surface water that releases more heat over Europe",
+      "D": "changes in tropical monsoon belts that weaken the current",
+      "E": "dense salty water that sinks too quickly in subpolar seas"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Mekanizma & Neden-Sonuç: 'meltwater runoff ... low-density freshwater ... does not sink'",
-    "trapWarning": "A şıkkı 'excessive accumulation of salt' der; tam aksine tuzluluk azalmakta (freshening) ve su hafifleşmektedir.",
+    "trapWarning": "Sorun tatlı suyun düşük yoğunluğu: \"freshwater does not sink as readily\". A ve E tuzluluğu sorun gibi sunar (tersi), D sonucu neden yapar, C ise mekanizmayı karıştırır.",
     "explanation": "Metin 'meltwater runoff from Greenland ... low-density freshwater ... does not sink as readily as dense, salty water' demektedir. B şıkkı tam açıklamadır."
   },
   {
@@ -993,16 +995,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "Paleoclimate data mentioned in the passage indicates that previous shutdowns of the AMOC _____ .",
     "options": {
-      "A": "permanently eradicated all rainfall patterns across equatorial South America",
-      "B": "caused sudden sharp cooling in Europe and disrupted tropical rainfall cycles",
-      "C": "resulted in centuries of global warming that melted both polar ice caps",
-      "D": "had virtually no discernible impact outside of subpolar Greenland",
-      "E": "were swiftly reversed within several days by atmospheric jet streams"
+      "A": "led to gradual warming across Europe over several centuries",
+      "B": "brought sudden cooling to Europe and shifted monsoon belts",
+      "C": "affected Europe but had little effect on the tropics",
+      "D": "were caused by changes in tropical monsoon belts",
+      "E": "caused the Greenland ice sheet to melt rapidly"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Metin İçi Kanıt: 'precipitated abrupt cooling events ... and triggered dramatic shifts in monsoon belts'",
-    "trapWarning": "C şıkkı 'warming' der; metin Avrupa'da ani soğumaya (abrupt cooling) yol açtığını belirtir.",
+    "trapWarning": "Metin: \"abrupt cooling events across Europe and ... shifts in tropical monsoon belts\". A yönü ve hızı değiştirir, C tropik etkisini yok sayar, D sebep-sonucu ters çevirir.",
     "explanation": "'precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts' = B şıkkı."
   },
   {
@@ -1012,16 +1014,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The Atlantic Meridional Overturning Circulation (AMOC)—a vast conveyor belt of ocean currents that transports warm, saline surface waters from the tropics to the North Atlantic—is a cornerstone of global climate stability. By releasing immense thermal energy into the atmosphere above Northwestern Europe, the AMOC ensures that countries like the United Kingdom and Norway enjoy climates markedly milder than regions at equivalent latitudes in North America. However, accelerating meltwater runoff from the Greenland ice sheet is flooding the subpolar seas with massive volumes of low-density freshwater. Because freshwater does not sink as readily as dense, salty water, this freshening threatens to stall the deep-water convective sinking that drives the entire circulatory system. Paleoclimate data reveals that past AMOC disruptions precipitated abrupt cooling events across Europe and triggered dramatic shifts in tropical monsoon belts.",
     "question": "The word 'stall' in the passage is closest in meaning to _____ .",
     "options": {
-      "A": "accelerate",
+      "A": "reverse",
       "B": "halt",
-      "C": "nourish",
-      "D": "originate",
-      "E": "overhaul"
+      "C": "weaken",
+      "D": "delay",
+      "E": "trigger"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Kelime Eş Anlamı: 'stall = durdurmak, stop / halt'",
-    "trapWarning": "A şıkkı 'accelerate' (hızlandırmak) zıt anlamlısıdır.",
+    "trapWarning": "Stall = durdurmak. C (weaken) ve D (delay) anlamca yakındır ama tam karşılık değildir; A (reverse) yön değiştirmeyi, E (trigger) başlatmayı anlatır.",
     "explanation": "Stall: durdurmak, duraklatmak, aksatmak. Eşanlamlısı 'halt' (B şıkkı)."
   },
   {
@@ -1031,16 +1033,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "According to evolutionary psychologists, cognitive biases originally developed because they _____ .",
     "options": {
-      "A": "enabled ancestors to make rapid survival decisions in hazardous environments",
-      "B": "were designed to prevent human beings from developing religious dogmas",
-      "C": "facilitated complex arithmetic calculations during seasonal trade fairs",
-      "D": "encouraged early hominids to record objective historical chronicles",
-      "E": "eliminated all physiological stress associated with predatory encounters"
+      "A": "helped our ancestors make quick decisions in dangerous conditions",
+      "B": "allowed early humans to analyse complex information more accurately and slowly",
+      "C": "protected people from the influence of their own beliefs",
+      "D": "helped ancestors cope with an excess of information",
+      "E": "were a design flaw that natural selection failed to remove"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Evrimsel Neden Tespiti: 'adaptive heuristics ... rapid decision-making was far more advantageous for survival'",
-    "trapWarning": "C ve D şıkları yazılı tarih ve ticaretle ilgilidir; evrimsel köken hayatta kalmadır (survival).",
+    "trapWarning": "Önyargılar hızlı karar için uyarlayıcı kısayollardır. B doğruluğu öne çıkarır (metin hızın doğruluktan önemli olduğunu söyler), D bilgi kıtlığını bolluğa çevirir, E ise \"not ... design flaws\" ile çelişir.",
     "explanation": "'Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation' = A şıkkı."
   },
   {
@@ -1050,16 +1052,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "Confirmation bias is defined in the passage as a subconscious tendency to _____ .",
     "options": {
-      "A": "favor information that aligns with prior beliefs while ignoring counter-evidence",
-      "B": "distrust all scientific assertions published in peer-reviewed medical journals",
-      "C": "adopt the political ideology of the majority in order to avoid social ostracism",
-      "D": "forget unpleasant emotional memories while amplifying joyful experiences",
-      "E": "reject ancient ancestral traditions in favor of radical progressive philosophies"
+      "A": "favour information that supports what one already believes",
+      "B": "change one's beliefs whenever new evidence appears",
+      "C": "accept the views of the majority in order to avoid open conflict with others",
+      "D": "remember mainly information that is surprising",
+      "E": "doubt evidence that comes from unfamiliar sources"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Tanım Eşleştirme: 'validates preexisting beliefs while disregarding contradictory data'",
-    "trapWarning": "C şıkkı sürü psikolojisini (conformity) anlatır; doğrulama yanlılığı (confirmation bias) ise kendi inancını doğrulamaktır.",
+    "trapWarning": "Tanım: mevcut inancı doğrulayan bilgiyi arama ve karşıt veriyi göz ardı etme. B tanımın tersidir; C ve E başka önyargıları (sürü etkisi, kaynak güvensizliği) tarif eder.",
     "explanation": "'tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data' = A şıkkı."
   },
   {
@@ -1069,17 +1071,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "The author argues that in modern digital societies, evolutionary cognitive shortcuts _____ .",
     "options": {
-      "A": "have completely ceased to function due to advanced educational curricula",
-      "B": "protect social media users from falling victim to financial internet scams",
-      "C": "fuel ideological divisions and reinforce the rejection of scientific consensus",
-      "D": "encourage deep, empathetic dialogues across differing ideological groups",
-      "E": "enable internet users to process massive data streams with perfect objectivity"
+      "A": "are still useful because they help people process information quickly",
+      "B": "have been largely replaced by more careful statistical reasoning",
+      "C": "deepen political divisions and strengthen science denial",
+      "D": "help people avoid being trapped in online echo chambers",
+      "E": "are less common than they were among hunter-gatherers"
     },
     "answer": "C",
     "difficulty": "İleri",
     "tacticUsed": "Modern Dünya Etkisi: 'exacerbate political polarization and entrench scientific denialism'",
-    "trapWarning": "D şıkkı tam tersidir; kutuplaşmayı (polarization) artırmaktadır.",
-    "explanation": "'exacerbate political polarization and entrench scientific denialism' = 'fuel ideological divisions and reinforce the rejection of scientific consensus' (C şıkkı)."
+    "trapWarning": "Son cümle: \"exacerbate political polarization and entrench scientific denialism\". A geçmişteki faydayı bugüne taşır, D tersini söyler, B ve E metinde olmayan iddialardır.",
+    "explanation": "'exacerbate political polarization and entrench scientific denialism' = 'deepen political divisions and strengthen science denial' (C şıkkı)."
   },
   {
     "id": "m_q58",
@@ -1088,16 +1090,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "Human cognition is notoriously susceptible to cognitive biases—systematic deviations from normative rationality that influence judgment and decision-making. Among the most pervasive is confirmation bias: the subconscious tendency to seek, interpret, and recall information in a manner that validates one's preexisting beliefs while disregarding contradictory empirical data. In evolutionary psychology, cognitive biases are not interpreted as pathological design flaws, but rather as adaptive heuristics. Our ancestral hunter-gatherer predecessors operated in precarious environments characterized by acute information scarcity and imminent mortal danger. Under such severe constraints, rapid decision-making was far more advantageous for survival than exhaustive statistical deliberation. However, in contemporary digital societies flooded with algorithmic echo chambers, these evolutionary shortcuts often exacerbate political polarization and entrench scientific denialism.",
     "question": "The primary purpose of the passage is to _____ .",
     "options": {
-      "A": "advocate for the immediate censorship of algorithmic social media platforms",
-      "B": "explain the evolutionary origins of cognitive biases and their modern societal ramifications",
-      "C": "demonstrate that ancient hunter-gatherers were intellectually superior to modern humans",
-      "D": "provide a clinical checklist for diagnosing psychiatric disorders in teenagers",
-      "E": "refute the theory of natural selection through statistical cognitive experiments"
+      "A": "argue that cognitive biases should be treated as mental disorders",
+      "B": "explain where cognitive biases come from and how they affect society today",
+      "C": "compare the everyday thinking of prehistoric hunter-gatherers with that of modern city dwellers",
+      "D": "warn readers about the dangers of social media algorithms",
+      "E": "show how confirmation bias can be overcome through education"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Ana Amaç (Evolutionary origins + modern ramifications)",
-    "trapWarning": "A şıkkı aşırı uç bir siyasi taleptir (censorship); yazar sadece durumu analiz etmektedir.",
+    "trapWarning": "Paragraf: önyargıların evrimsel kökeni + bugünkü etkileri. C ve D yalnızca bir kısmı kapsar; A metinle çelişir (\"not pathological\"), E ise metinde olmayan bir çözüm sunar.",
     "explanation": "Metin, bilişsel önyargıların evrimsel kökenini (avcı-toplayıcı hayatta kalma) ve günümüz dijital dünyasındaki yansımalarını (kutuplaşma) anlatmaktadır (B şıkkı)."
   },
   {
@@ -1107,16 +1109,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "According to skeptical linguists in the passage, Large Language Models _____ .",
     "options": {
-      "A": "produce grammatically coherent text without truly understanding real-world meaning",
-      "B": "are completely incapable of mastering elementary syntactic rules of grammar",
-      "C": "rely on genetic algorithms rather than deep artificial neural networks",
-      "D": "have already surpassed the analytical capacity of the human cerebral cortex",
-      "E": "refuse to process statistical probabilities during their training phase"
+      "A": "produce fluent text without really understanding what it means",
+      "B": "frequently make grammatical errors when generating long texts",
+      "C": "begin to reason once they reach a very large size",
+      "D": "understand language in much the same way as children do",
+      "E": "simply copy sentences they have memorised from their training data"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Şüpheci Görüş Analizi: 'syntactically flawless prose without possessing any semantic understanding'",
-    "trapWarning": "B şıkkı yanlıştır; metin gramerin kusursuz (syntactically flawless) olduğunu ama anlamın eksik olduğunu söyler.",
+    "trapWarning": "Şüpheciler: dilbilgisi kusursuz ama anlam yok. B dilbilgisi iddiasıyla çelişir, C destekçilerin görüşüdür. E ince tuzaktır: \"parrot\" ezber gibi görünür ama metin istatistiksel tahmin der, cümle kopyalama demez.",
     "explanation": "'syntactically flawless prose without possessing any underlying semantic understanding' = A şıkkı."
   },
   {
@@ -1126,16 +1128,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "Proponents of LLMs argue that expanding the volume of parameters within neural networks _____ .",
     "options": {
-      "A": "inevitably leads to the total degradation of algorithmic response speed",
-      "B": "can give rise to spontaneous emergent reasoning capabilities beyond memorization",
-      "C": "forces the systems to forget previously learned training vocabularies",
-      "D": "proves that human conscious thought is entirely governed by simple chemical reflexes",
-      "E": "requires the complete elimination of transformer deep-learning architectures"
+      "A": "makes the models better at memorising their training data",
+      "B": "can lead to reasoning abilities that go beyond memorisation",
+      "C": "proves beyond doubt that the models truly understand the physical world",
+      "D": "reduces the errors the models make in grammar",
+      "E": "allows the models to predict words without statistics"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Karşıt Görüş: 'emergent reasoning capabilities spontaneously manifest'",
-    "trapWarning": "A şıkkı hız kaybından bahseder; metin akıl yürütme (reasoning) yeteneklerinin ortaya çıkışını vurgular.",
+    "trapWarning": "Destekçiler: ölçek büyüdükçe \"emergent reasoning ... transcending mere rote memorization\". A tam tersini söyler, C \"proves\" ile aşırı kesinlik ekler, D ve E metinde yoktur.",
     "explanation": "'as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization' = B şıkkı."
   },
   {
@@ -1145,16 +1147,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "It is implied in the passage that the ongoing debate between skeptics and proponents _____ .",
     "options": {
-      "A": "has been decisively settled in favor of traditional generative grammarians",
-      "B": "concerns whether statistical prediction can be equated with genuine cognitive intentionality",
-      "C": "prompted tech companies to permanently abandon large-scale AI research",
-      "D": "has demonstrated that human children learn grammar purely through rote statistical tokenization",
-      "E": "is primarily driven by financial disputes regarding patent ownership"
+      "A": "has largely been resolved in favour of the skeptics",
+      "B": "centres on whether statistical prediction can amount to real understanding",
+      "C": "is mainly about how large and expensive the models should be allowed to become in future",
+      "D": "concerns whether LLMs produce grammatically correct language",
+      "E": "is likely to be settled by the next generation of models"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Sonuç Cümlesi / Çıkarım: 'whether statistical prediction can ever yield genuine cognitive intentionality'",
-    "trapWarning": "A şıkkı 'decisively settled' der; metnin son cümlesi bunun halen çözülmemiş temel bir felsefi sorun olduğunu söyler.",
+    "trapWarning": "Son cümle tartışmanın hâlâ açık olduğunu ve sorunun istatistiksel tahminin gerçek anlama dönüşüp dönüşemeyeceği olduğunu söyler. A ve E çözülmüş/çözülecek der; D ise iki tarafın da kabul ettiği bir noktadır.",
     "explanation": "Son cümlede 'Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge' denmiştir. Doğru cevap B'dir."
   },
   {
@@ -1164,16 +1166,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "passage": "The meteoric rise of Large Language Models (LLMs) has rekindled a fierce philosophical debate regarding the nature of artificial intelligence and genuine linguistic comprehension. Built upon deep neural transformer architectures, LLMs are trained on billions of digital text tokens to predict subsequent words via sophisticated statistical probability distributions. Skeptical linguists, aligning with Noam Chomsky, argue that these models are essentially sophisticated 'stochastic parrots'—systems capable of generating syntactically flawless prose without possessing any underlying semantic understanding or empirical model of physical reality. Conversely, proponents contend that as neural networks scale in parameter volume, emergent reasoning capabilities spontaneously manifest, transcending mere rote memorization. Resolving whether statistical prediction can ever yield genuine cognitive intentionality remains the defining challenge of twenty-first-century philosophy of mind.",
     "question": "The metaphor 'stochastic parrots' is used by skeptics to emphasize that LLMs _____ .",
     "options": {
-      "A": "repeat statistical linguistic patterns without actual comprehension",
-      "B": "can communicate naturally with wild tropical avian species",
-      "C": "require living biological neural tissue to generate paragraphs",
-      "D": "are incapable of memorizing vocabulary beyond several thousand words",
-      "E": "actively sabotage human efforts to regulate dangerous technologies"
+      "A": "repeat language patterns without real understanding",
+      "B": "can only repeat sentences they have seen before",
+      "C": "produce text that is often grammatically incorrect",
+      "D": "learn language by imitating human speakers directly",
+      "E": "give random answers that have no statistical basis"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Metafor Anlamı Çözümleme ('Stochastic parrot' = Anlamadan tekrar eden)",
-    "trapWarning": "B şıkkındaki gerçek papağanlar ironik bir çeldiricidir.",
+    "trapWarning": "\"Stochastic\" = olasılıksal, \"parrot\" = anlamadan tekrar. B ince tuzaktır: birebir kopyalama demez; C dilbilgisi iddiasıyla çelişir, E ise \"stochastic\" kelimesini rastgele sanır.",
     "explanation": "Stokastik papağan: olasılıksal kalıpları ne anlama geldiğini kavramadan papağan gibi tekrar eden yapı demektir (A şıkkı)."
   },
   {
@@ -1183,17 +1185,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Dr. Evans & Prof. Jenkins",
     "question": "Dr. Evans: Did you review the latest clinical trial results for the novel oncology drug?\nProf. Jenkins: Yes, and while the tumor shrinkage was indeed impressive, the incidence of severe hepatotoxicity among elderly patients is alarming.\nDr. Evans: _____ \nProf. Jenkins: Exactly. Unless we can synthesize a targeted delivery mechanism, the regulatory agency will never grant commercial approval.",
     "options": {
-      "A": "So you mean that the therapeutic benefits are completely overshadowed by its systemic toxicity?",
-      "B": "Why don't we immediately start mass production without consulting the ethics committee?",
-      "C": "I disagree with you entirely; the liver enzymes returned to normal levels within hours.",
-      "D": "Have you scheduled an interview with the patient's immediate relatives yet?",
-      "E": "The cost of the laboratory equipment was fortunately reimbursed by our university."
+      "A": "So you think the side effects may outweigh its benefits for these patients?",
+      "B": "So you think we should simply lower the dose for elderly patients and continue the trial?",
+      "C": "So you believe the liver damage was caused by another medication?",
+      "D": "So you suggest we test the drug on younger patients only?",
+      "E": "So you expect the agency to approve it despite the side effects?"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Diyalog Mantığı & 'Exactly' Onayı: Prof. Jenkins 'Exactly. Unless we synthesize a targeted delivery...' diyerek Evans'ın tehlike tespitini onaylıyor.",
-    "trapWarning": "C şıkkı 'I disagree' der; oysa Jenkins 'Exactly' ile Evans'a tam destek vermektedir.",
-    "explanation": "Prof. Jenkins ilacın karaciğere toksik olduğunu söylediğinde Dr. Evans 'Yani tedavi edici faydalarının toksisitesi tarafından gölgelendiğini mi söylüyorsun?' diye özetler (A şıkkı)."
+    "trapWarning": "Bütün şıklar \"So you...\" ile başlar. Jenkins \"Exactly\" deyip özel bir taşıma sistemi gerektiğini söyler; bu yüzden boşlukta yan etkilerin faydayı gölgelediği yorumu olmalıdır. B ve D başka çözümler önerir, E ise Jenkins'in sözüyle çelişir.",
+    "explanation": "Prof. Jenkins ilacın karaciğere toksik olduğunu söylediğinde Dr. Evans 'Yani yan etkilerin bu hastalar için faydalardan ağır basabileceğini mi düşünüyorsun?' diye özetler (A şıkkı)."
   },
   {
     "id": "m_q64",
@@ -1202,17 +1204,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Sarah & David (Urban Planning Conference)",
     "question": "Sarah: Several major metropolitan areas in Europe have started banning private diesel vehicles from central business districts to combat smog.\nDavid: _____ \nSarah: Actually, economic data shows the opposite. Foot traffic increased substantially, and retail revenues rose because city centers became far more hospitable and pedestrian-friendly.",
     "options": {
-      "A": "I wonder whether local shop owners lodged fierce protests fearing an immediate collapse in consumer retail sales.",
-      "B": "Diesel vehicles have historically been proven to consume far less fuel than gasoline engines.",
-      "C": "Are electric vehicle charging stations being installed at every street intersection?",
-      "D": "I suppose bicycles will eventually be banned from shared bus lanes as well.",
-      "E": "Did the mayor decide to run for prime minister in the upcoming general elections?"
+      "A": "Didn't local shop owners fear that their sales would fall?",
+      "B": "Has the air quality in those cities actually improved since then?",
+      "C": "Weren't commuters angry about the longer travel times?",
+      "D": "Do you think the bans will be extended to petrol cars as well?",
+      "E": "How did the cities persuade residents to accept the bans?"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "'Actually, economic data shows the opposite': Karşı tarafın ekonomik kayıp endişesini çürüten cevap",
-    "trapWarning": "Sarah 'tam tersine yaya trafiği ve esnaf geliri arttı' diyorsa, David öncesinde dükkan sahiplerinin iflas edeceğinden korktuğunu söylemiş olmalıdır.",
-    "explanation": "A şıkkında David esnafın satışların çökeceğinden korkup protesto edip etmediğini sorar; Sarah da 'Aksine, veriler yaya trafiğinin ve dükkan gelirlerinin arttığını gösteriyor' der."
+    "trapWarning": "Sarah \"Actually ... the opposite\" der ve yaya trafiği ile satışların arttığını anlatır. Yani David ekonomik bir kaygı dile getirmiş olmalıdır. B, C, D ve E de makul sorulardır ama Sarah'nın cevabı satışlarla ilgilidir.",
+    "explanation": "A şıkkında David esnafın satışların düşeceğinden korkmadığını sorar; Sarah da 'Aksine, veriler yaya trafiğinin ve dükkan gelirlerinin arttığını gösteriyor' der."
   },
   {
     "id": "m_q65",
@@ -1221,17 +1223,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Clara & Mark (Astronomy Seminar)",
     "question": "Clara: Why are astrophysicists so eager to construct space-based gravitational wave observatories when we already have LIGO on Earth?\nMark: _____ \nClara: Ah, that makes complete sense. Ground vibrations and seismic tremors mask low-frequency signals that only space-based instruments can detect.",
     "options": {
-      "A": "Because space-based projects are funded entirely by private philanthropic donations rather than taxes.",
-      "B": "Terrestrial detectors suffer from unavoidable seismic noise, whereas the cosmic vacuum provides an undisturbed vantage point for low-frequency waves.",
-      "C": "Ground-based observatories were all destroyed by recent meteor showers over the Pacific.",
-      "D": "LIGO has already detected every single black hole merger that will ever occur in the universe.",
-      "E": "Optical telescopes in Chile have completely superseded all gravitational wave technology."
+      "A": "Because space observatories are much cheaper to maintain than LIGO.",
+      "B": "Because on Earth seismic noise drowns out low-frequency waves.",
+      "C": "Because LIGO cannot detect waves from distant black holes.",
+      "D": "Because space detectors can be built with much longer arms.",
+      "E": "Because the atmosphere distorts gravitational waves before they reach us."
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Clara'nın İkinci Cümlesinden Çıkarım: 'Ground vibrations and seismic tremors mask low-frequency signals'",
-    "trapWarning": "Clara 'Ah, yer titreşimlerinin sinyali engellediği mantıklı' dediğine göre Mark yerdeki sismik gürültüden (seismic noise) bahsetmiş olmalıdır.",
-    "explanation": "B şıkkında Mark yeryüzündeki sismik gürültünün sinyalleri bozduğunu, uzaydaki boşluğun ise pürüzsüz gözlem sağladığını belirtir."
+    "trapWarning": "Clara \"Ground vibrations and seismic tremors mask low-frequency signals\" diye özetler. D gerçek bir avantajdır ama Clara'nın özetiyle bağlanmaz; E ise atmosferi karıştırır.",
+    "explanation": "B şıkkında Mark yeryüzündeki sismik gürültünün düşük frekanslı dalgaları bastırdığını söyler; Clara da bunu özetler."
   },
   {
     "id": "m_q66",
@@ -1240,17 +1242,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Reporter & Marine Biologist",
     "question": "Reporter: Many tourists are thrilled when coastal municipalities build artificial reefs using decommissioned ships.\nMarine Biologist: While they can indeed provide immediate hard substrates for sessile marine invertebrates, we must remain vigilant.\nReporter: _____ \nMarine Biologist: If the vessels are not meticulously stripped of lead paints, asbestos, and toxic petrochemical residues, they become long-term sources of marine contamination.",
     "options": {
-      "A": "What kind of hazards could submerged metal structures possibly pose to benthic life?",
-      "B": "How many scuba diving licenses were issued to tourists during the previous summer season?",
-      "C": "Do commercial fishermen agree to donate their boats without receiving any financial subsidies?",
-      "D": "Which coral species reproduces fastest when attached to granite boulders?",
-      "E": "Are shipping containers lighter than military aircraft carriers?"
+      "A": "What risks could a sunken ship pose to marine life?",
+      "B": "How long does it take for coral to cover a sunken ship?",
+      "C": "Do artificial reefs attract more fish than natural ones?",
+      "D": "Why do tourists find these artificial reefs so attractive?",
+      "E": "Who pays for sinking the ships in the right location?"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Tehlike Detayı İsteme: Biyolog 'meticulously stripped of lead, asbestos, petrochemicals' diyerek tehlikeleri sıralıyor.",
-    "trapWarning": "B ve C şıkları turizm ve para üzerinedir; biyoloğun cevabı kurşun ve asbest gibi çevre tehlikeleridir.",
-    "explanation": "Muhabir 'Batırılan gemiler deniz yaşamına ne gibi tehlikeler yaratabilir ki?' (A şıkkı) diye sorduğunda biyolog boya, asbest ve kimyasal sızıntı risklerini anlatır."
+    "trapWarning": "Biyolog cevabında kurşun boya, asbest ve kirlilik gibi riskleri anlatır; boşlukta risk sorusu olmalıdır. B ve C konuyla ilgili ama cevabı \"if the vessels are not stripped...\" ile bağlanmaz.",
+    "explanation": "Muhabir 'Batırılan bir gemi deniz yaşamı için ne gibi riskler taşıyabilir?' (A şıkkı) diye sorduğunda biyolog boya, asbest ve kimyasal sızıntı risklerini anlatır."
   },
   {
     "id": "m_q67",
@@ -1259,17 +1261,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Archaeology Students (Tolga & Aylin)",
     "question": "Tolga: Did you hear about the new lidar scans in the Amazon basin? They revealed extensive urban networks hidden under dense forest canopy.\nAylin: That completely disproves the long-held assumption that the Amazon was incapable of supporting large civilizations due to nutrient-poor soils.\nTolga: _____ \nAylin: Absolutely. It proves indigenous communities actively engineered fertile soils and managed sophisticated agrarian economies.",
     "options": {
-      "A": "Exactly, it shows they weren't just nomadic wanderers, but master civil engineers who actively altered their environment.",
-      "B": "I suppose modern satellite imaging is far too expensive to be utilized in third-world excavations.",
-      "C": "Why didn't European conquistadors adopt native agricultural practices instead of mining gold?",
-      "D": "Do you believe tropical rainforests will survive the current rates of commercial deforestation?",
-      "E": "The university should cancel all archaeological field excursions to South America immediately."
+      "A": "So these people must have actively shaped their environment.",
+      "B": "So the soils of the Amazon must have been rich after all.",
+      "C": "But the cities may have been built by later settlers.",
+      "D": "But lidar can sometimes mistake natural features for buildings.",
+      "E": "So the forest must have been cleared completely at that time."
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Aylin'in 'Absolutely. It proves indigenous communities engineered fertile soils' onayına zemin hazırlayan cümle",
-    "trapWarning": "E şıkkı olumsuz bir öneridir; diyalog Amazon'daki şaşırtıcı medeniyet keşfinin heyecanını paylaşır.",
-    "explanation": "Tolga 'Aynen öyle; onların sadece göçebe değil çevrelerini değiştiren usta mühendisler olduklarını gösteriyor' (A şıkkı) dediğinde Aylin 'Kesinlikle' diyerek onaylar."
+    "trapWarning": "Aylin \"Absolutely\" der ve yerli toplulukların verimli toprağı kendilerinin oluşturduğunu söyler. B ince tuzaktır: toprak doğal olarak zengin değildi, insanlar zenginleştirdi. C ve D şüphe bildirir, \"Absolutely\" ile uyuşmaz; E ise aşırı bir sonuçtur.",
+    "explanation": "Tolga 'O halde bu insanlar çevrelerini bilinçli olarak şekillendirmiş olmalı' (A şıkkı) dediğinde Aylin 'Kesinlikle' diyerek onaylar."
   },
   {
     "id": "m_q68",
@@ -1277,16 +1279,16 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "68. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'Had the regional central bank not intervened with unprecedented liquidity injections, several prominent domestic commercial lenders would inevitably have collapsed during the financial panic.'",
     "options": {
-      "A": "The central bank intervened during the panic solely to prevent foreign conglomerates from purchasing distressed domestic lenders.",
+      "A": "Several domestic lenders collapsed during the panic even though the central bank injected record liquidity.",
       "B": "Because the regional central bank stepped in with extraordinary financial resources, major domestic banks managed to avoid bankruptcy during the crisis.",
-      "C": "Although the central bank provided record liquidity, it was unable to halt the catastrophic insolvency of prominent national lenders.",
-      "D": "Commercial banks in the region collapsed rapidly because the central bank refused to authorize liquidity injections during the panic.",
-      "E": "Had private investors liquidated their shares in commercial banks, the central bank would not have felt compelled to intervene."
+      "C": "The central bank intervened only after several domestic lenders had already collapsed during the panic.",
+      "D": "If the central bank intervenes again with large liquidity injections, domestic lenders may avoid collapse.",
+      "E": "The financial panic was caused by the central bank's decision to inject unprecedented liquidity."
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Type 3 Conditional Inversion Eşleştirme (Had X not intervened = If X had not intervened / Because it intervened, they avoided bankruptcy)",
-    "trapWarning": "C şıkkı 'unable to halt' der; oysa bankalar müdahale sayesinde kurtulmuştur.",
+    "trapWarning": "Had ... not intervened ... would have collapsed = müdahale etti, bu yüzden bankalar batmadı. A ve C batışı gerçek kabul eder, D geleceğe taşır, E ise sebep-sonucu ters çevirir.",
     "explanation": "Orijinal cümle: 'Merkez bankası benzeri görülmemiş likidite enjekte etmeseydi, birçok yerli ticari banka kaçınılmaz olarak çökerdi.' -> Demek ki merkez bankası müdahale ettiği için bankalar batmaktan kurtulmuştur (B şıkkı)."
   },
   {
@@ -1295,17 +1297,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "69. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'Although electric vehicles produce zero tailpipe emissions, their overall environmental benefits remain contingent upon how cleanly the electricity charging their batteries is generated.'",
     "options": {
-      "A": "Electric vehicles are universally superior to combustion engines regardless of whether electricity comes from coal or solar power.",
-      "B": "The total ecological advantage of electric vehicles depends on the cleanliness of the energy sources utilized to produce their charging electricity, despite their lack of direct exhaust emissions.",
-      "C": "Because electric cars generate severe emissions during battery charging, they are virtually as harmful to the environment as petroleum cars.",
-      "D": "Unless governments completely eliminate fossil-fueled power plants, electric vehicles will produce more tailpipe emissions than traditional vehicles.",
-      "E": "Battery charging infrastructure is so polluting that electric vehicles have failed to provide any measurable environmental improvements."
+      "A": "Because electric vehicles produce no exhaust at all, they always benefit the environment however their electricity is produced.",
+      "B": "Electric vehicles emit nothing from the exhaust, but how green they really are depends on how their power is generated.",
+      "C": "Electric vehicles would produce zero tailpipe emissions only if their electricity were generated cleanly.",
+      "D": "The way electricity is generated has little effect on the environment compared with tailpipe emissions.",
+      "E": "Electric vehicles are no better for the environment than petrol cars because charging them causes emissions."
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Contingent upon = Depends on (Bağlıdır / Şartına dayalıdır)",
-    "trapWarning": "A şıkkı 'regardless of whether electricity comes from coal' der; metin ise elektriğin nasıl üretildiğinin kritik olduğunu söyler.",
-    "explanation": "'contingent upon how cleanly the electricity ... is generated' = 'depends on the cleanliness of the energy sources' + 'Although produce zero tailpipe emissions' = 'despite their lack of direct exhaust emissions' (B şıkkı)."
+    "trapWarning": "Although: egzoz salımı sıfır, AMA toplam fayda elektriğin temizliğine bağlı. A koşulu yok sayar, C koşulu egzoza bağlar, D önemi tersine çevirir, E ise aşırı bir sonuç çıkarır.",
+    "explanation": "'contingent upon how cleanly the electricity ... is generated' = 'depends on how their power is generated' + 'Although produce zero tailpipe emissions' = 'emit nothing from the exhaust, but...' (B şıkkı)."
   },
   {
     "id": "m_q70",
@@ -1313,17 +1315,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "70. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'No sooner had the experimental antiviral drug been administered to the clinical cohort than their viral loads plummeted to undetectable thresholds.'",
     "options": {
-      "A": "The experimental antiviral drug was administered only after the patients had already reduced their viral loads through natural immunity.",
-      "B": "Immediately after the patients in the trial received the experimental antiviral medication, their viral concentrations dropped sharply to undetectable levels.",
-      "C": "Although the antiviral drug lowered viral loads, it took several weeks before clinical diagnostic tests could detect any meaningful improvement.",
-      "D": "The viral load in the clinical cohort plummeted so rapidly that doctors decided to discontinue the administration of the antiviral drug.",
-      "E": "Patients who refused the experimental antiviral drug exhibited significantly higher viral loads than those who completed the treatment."
+      "A": "Shortly before the patients received the drug, their viral loads had already fallen to undetectable levels.",
+      "B": "As soon as the patients were given the experimental drug, their viral loads fell to undetectable levels.",
+      "C": "The patients' viral loads fell gradually over several weeks after they were given the drug.",
+      "D": "The drug was given to the patients only after their viral loads had become undetectable.",
+      "E": "Hardly had the viral loads fallen when doctors stopped giving the patients the experimental drug."
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "No sooner ... than = As soon as / Immediately after (-er etmez / anında)",
-    "trapWarning": "C şıkkı 'took several weeks' der; oysa 'no sooner...than' eylemin anında gerçekleştiğini ifade eder.",
-    "explanation": "'No sooner had X occurred than Y happened' formülü 'Immediately after X, Y happened' (B şıkkı) demektir. İlaç verilir verilmez virüs yükü tespit edilemez seviyelere düştü."
+    "trapWarning": "No sooner ... than = -ir -mez. A ve D sırayı ters çevirir, C anındalığı kaldırır, E ise aynı yapıyı (Hardly ... when) kullanır ama olayların yerini değiştirir.",
+    "explanation": "'No sooner had X occurred than Y happened' formülü 'As soon as X, Y happened' (B şıkkı) demektir. İlaç verilir verilmez virüs yükü tespit edilemez seviyelere düştü."
   },
   {
     "id": "m_q71",
@@ -1331,17 +1333,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "71. Soru - Anlamca En Yakın Cümle",
     "question": "Given sentence: 'It was not until the decipherment of the Rosetta Stone in the nineteenth century that scholars could systematically comprehend Egyptian hieroglyphic inscriptions.'",
     "options": {
-      "A": "Scholars had already translated most Egyptian hieroglyphic inscriptions before the discovery of the Rosetta Stone.",
-      "B": "Only after the Rosetta Stone was deciphered in the nineteenth century were researchers able to systematically understand Egyptian hieroglyphic writings.",
-      "C": "The Rosetta Stone proved to be completely incomprehensible to nineteenth-century linguists despite their extensive knowledge of ancient scripts.",
-      "D": "Although hieroglyphics were deciphered in the nineteenth century, scholars still struggle to translate stone inscriptions systematically.",
-      "E": "Nineteenth-century scholars focused so heavily on the Rosetta Stone that other ancient Mediterranean languages were neglected."
+      "A": "Scholars had already understood most hieroglyphs before the Rosetta Stone was deciphered in the nineteenth century.",
+      "B": "Only once the Rosetta Stone was deciphered in the nineteenth century could scholars systematically read hieroglyphs.",
+      "C": "The Rosetta Stone was deciphered in the nineteenth century, long after scholars had learned to read hieroglyphs.",
+      "D": "Scholars could read some hieroglyphs systematically, but the Rosetta Stone was not deciphered until the nineteenth century.",
+      "E": "In the nineteenth century, scholars deciphered the Rosetta Stone without being able to understand hieroglyphs."
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "It was not until ... that ... = Only after ... (Ancak ... olduktan sonra)",
-    "trapWarning": "A şıkkı 'Rosetta'dan önce çevirmişlerdi' der, tam tersidir.",
-    "explanation": "'It was not until X that Y could be understood' = 'Only after X was deciphered were researchers able to understand Y' (B şıkkı)."
+    "trapWarning": "It was not until ... that = ancak ... -dıktan sonra. A ve C sırayı ters çevirir, D iki olayı birbirinden koparır, E ise sonucu olumsuzlar.",
+    "explanation": "'It was not until X that Y could be understood' = 'Only once X was deciphered could scholars read Y' (B şıkkı)."
   },
   {
     "id": "m_q72",
@@ -1349,17 +1351,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "72. Soru - Paragraf Tamamlama",
     "question": "For centuries, astronomers debated whether our solar system was unique in harboring planetary bodies. The discovery of the first confirmed exoplanet orbiting a sun-like star in 1995 fundamentally transformed observational astrophysics. [_____] Today, data from Kepler and the James Webb Space Telescope indicates that the Milky Way alone contains more planets than stars, meaning planetary formation is a cosmic inevitability rather than an anomaly.",
     "options": {
-      "A": "Subsequent space missions and ground-based velocity surveys soon triggered a deluge of new exoplanetary discoveries.",
-      "B": "Most seventeenth-century optical lenses suffered from severe chromatic aberration that prevented clear planetary observations.",
-      "C": "Commercial space travel has made interplanetary tourism affordable for ordinary citizens across the globe.",
-      "D": "Galileo Galilei was condemned by the Roman Inquisition for supporting the heliocentric Copernican cosmology.",
-      "E": "Solar flares occasionally disrupt shortwave radio telecommunications in polar jurisdictions."
+      "A": "Later missions and ground-based surveys soon led to thousands of further discoveries.",
+      "B": "That planet, however, was a gas giant orbiting far too close to its star to support life.",
+      "C": "Before 1995, several astronomers had already claimed to detect planets around other stars.",
+      "D": "Even so, most astronomers continued to believe that planets were extremely rare in the galaxy.",
+      "E": "Some scientists argue that the search for exoplanets has received too much funding."
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Zaman ve Mantık Akışı: 1995'te ilk ötegezegen keşfi -> Devamında yeni keşif seli (deluge of discoveries) -> Bugün milyarlarca gezegen olduğu bilgisi",
-    "trapWarning": "D şıkkı Galileo'dan bahseder, zamanda geriye gider ve modern ötegezegen keşif süreciyle uyuşmaz.",
-    "explanation": "1995'teki ilk keşiften bugünkü binlerce gezegen verisine geçişi sağlayan mantıksal köprü A şıkkıdır: 'Bunu takip eden uzay görevleri ve taramalar, yeni ötegezegen keşifleri selini tetikledi'."
+    "trapWarning": "Boşluktan sonra \"Today, ... more planets than stars\" gelir; arada keşiflerin hızla çoğaldığı söylenmelidir. B ve C konuyla ilgili ama akışı kurmaz; D ise sonraki cümleyle çelişir.",
+    "explanation": "1995'teki ilk keşiften bugünkü binlerce gezegen verisine geçişi sağlayan mantıksal köprü A şıkkıdır: 'Sonraki görevler ve yer tabanlı taramalar kısa sürede binlerce yeni keşfe yol açtı'."
   },
   {
     "id": "m_q73",
@@ -1367,17 +1369,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "73. Soru - Paragraf Tamamlama",
     "question": "Sleep is far from a passive state of physiological inactivity; rather, it represents a highly coordinated neurological maintenance cycle. During non-rapid eye movement (NREM) deep sleep, the brain activates the glymphatic system, which flushes out metabolic waste products like amyloid-beta proteins that accumulate during waking hours. [_____] Consequently, chronic sleep deprivation does not merely impair daily cognitive performance; it also exponentially elevates long-term vulnerability to neurodegenerative pathologies like Alzheimer's.",
     "options": {
-      "A": "Without this restorative cleansing process, toxic cellular byproducts gradually damage delicate cerebral neurons.",
-      "B": "Insomnia medications can occasionally cause mild morning drowsiness in elderly patients.",
-      "C": "REM sleep was first documented by researchers working at the University of Chicago in the 1950s.",
-      "D": "Caffeine consumption in the early morning promotes alertness by blocking adenosine receptors.",
-      "E": "Most mammalian species require significantly fewer hours of nocturnal rest than adult humans."
+      "A": "Without this cleaning process, toxic waste slowly damages brain cells.",
+      "B": "During REM sleep, by contrast, the brain is most active in processing emotions.",
+      "C": "Short naps during the day can partly make up for a lost night of sleep.",
+      "D": "The glymphatic system was discovered only about a decade ago in mice.",
+      "E": "As a result, people who sleep longer generally perform better at work."
     },
     "answer": "A",
     "difficulty": "İleri",
-    "tacticUsed": "Referans İpucu: 'Without this restorative cleansing process' (Önceki cümledeki glimfatik atık temizleme sistemine atıf)",
-    "trapWarning": "D şıkkı kafeinden bahseder, metnin konusu uykuda atık temizliği ve Alzheimer riskidir.",
-    "explanation": "Önceki cümledeki 'flushes out metabolic waste products' (metabolik atıkları temizler) eylemine 'Without this restorative cleansing process' (Bu onarıcı temizleme süreci olmadan...) şeklinde atıfta bulunan ve Alzheimer sonucuna bağlayan A şıkkıdır."
+    "tacticUsed": "Referans İpucu: 'Without this cleaning process' (Önceki cümledeki glimfatik atık temizleme sistemine atıf)",
+    "trapWarning": "Sonraki cümle \"Consequently, chronic sleep deprivation ... Alzheimer\" der; boşlukta temizlik yapılmazsa ne olacağı söylenmelidir. B ve D konu içidir ama zinciri kurmaz; E ise sonucu günlük performansa indirger.",
+    "explanation": "Önceki cümledeki 'flushes out metabolic waste products' (metabolik atıkları temizler) eylemine 'Without this cleaning process' (Bu temizlik süreci olmadan...) şeklinde atıfta bulunan ve Alzheimer sonucuna bağlayan A şıkkıdır."
   },
   {
     "id": "m_q74",
@@ -1385,17 +1387,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "74. Soru - Paragraf Tamamlama",
     "question": "In classical economics, markets were presumed to operate on the foundation of the rational actor model—the assumption that individuals consistently make decisions that optimize their personal economic utility. However, real-world financial behavior repeatedly contradicts this idyllic presumption. [_____] Because human decisions are frequently clouded by fear, herd behavior, and loss aversion, financial markets are perpetually vulnerable to irrational speculative bubbles and catastrophic panics.",
     "options": {
-      "A": "Behavioral economists have demonstrated that cognitive biases systematically distort financial judgment.",
-      "B": "Automated algorithmic trading now accounts for more than eighty percent of equity volume in Wall Street.",
-      "C": "Gold bullion has historically functioned as a safe haven asset during periods of currency hyperinflation.",
-      "D": "Central banks frequently lower statutory interest rates to stimulate business capital investments.",
-      "E": "Corporate tax exemptions are designed to encourage research and development inside domestic borders."
+      "A": "Behavioral economists have shown that cognitive biases systematically distort financial judgment.",
+      "B": "Some economists still defend the model, arguing that markets correct individual errors over time.",
+      "C": "Classical economists such as Adam Smith also stressed the role of moral sentiment in trade.",
+      "D": "Financial regulators have therefore introduced stricter rules to prevent speculative bubbles.",
+      "E": "Most investors, in fact, make rational decisions when they have access to complete information."
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Zıtlık Sonrası Açıklama: 'real-world behavior contradicts this presumption' -> Davranışsal iktisatçıların bilişsel önyargı tespiti",
-    "trapWarning": "B şıkkı algoritmik ticaretten bahseder; sonraki cümle insan kararlarındaki 'fear, herd behavior'dan bahsetmektedir.",
-    "explanation": "A şıkkı: 'Davranışsal iktisatçılar bilişsel önyargıların finansal kararları sistematik olarak bozduğunu kanıtlamışlardır.' Bu cümle sonraki 'Because human decisions are clouded by fear...' açıklamasına kusursuz bağlanır."
+    "trapWarning": "Boşluktan önce \"real-world behavior contradicts this\", sonra \"fear, herd behavior\" gelir. B ve E rasyonel modeli savunarak akışı bozar; D sonucu erken verir; C ise zamanda geriye gider.",
+    "explanation": "A şıkkı: 'Davranışsal iktisatçılar bilişsel önyargıların finansal kararları sistematik olarak bozduğunu göstermiştir.' Bu cümle sonraki 'Because human decisions are clouded by fear...' açıklamasına kusursuz bağlanır."
   },
   {
     "id": "m_q75",
@@ -1403,17 +1405,17 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "75. Soru - Paragraf Tamamlama",
     "question": "Volcanic eruptions are notorious for their localized destruction, burying surrounding valleys under incandescent pyroclastic flows. Yet, their climactic influence can extend thousands of kilometers beyond the crater rim. When violent eruptions inject immense plumes of sulfur dioxide into the stratosphere, these gases react with moisture to form reflective sulfate aerosols. [_____] As a consequence, historical megavolcanoes have precipitated 'volcanic winters,' causing widespread crop failures and catastrophic societal collapses across entire continents.",
     "options": {
-      "A": "These suspended airborne particles reflect incoming solar radiation back into space, thereby cooling the planet's surface.",
-      "B": "Volcanic basalt soil is exceptionally fertile and supports productive vineyards in southern Italy.",
-      "C": "Geologists utilize seismometers to measure harmonic tremors preceding explosive magmatic ascents.",
-      "D": "Geothermal power plants extract steam from subterranean aquifers to generate clean municipal electricity.",
-      "E": "Volcanoes located along convergent plate boundaries tend to produce more viscous rhyolitic lavas."
+      "A": "These particles reflect sunlight back into space and cool the surface.",
+      "B": "These aerosols usually fall back to the ground within a few days of the eruption.",
+      "C": "Sulfur dioxide is also released by power plants that burn coal and oil.",
+      "D": "Volcanic ash clouds can also damage aircraft engines and disrupt air travel.",
+      "E": "These gases also trap heat in the atmosphere, warming the planet for decades."
     },
     "answer": "A",
     "difficulty": "İleri",
-    "tacticUsed": "Referans Zamir Eşleşmesi: 'These suspended airborne particles' = 'sulfate aerosols' + cooling the planet -> Volcanic winter",
-    "trapWarning": "B şıkkı volkanik toprağın verimliliğinden bahseder, metnin konusu küresel iklimi soğutması ve kıtlıktır.",
-    "explanation": "Sülfat aerosolleri oluştuktan sonra ne olduğunu açıklayan ve 'As a consequence, precipitated volcanic winters' (Sonuç olarak volkanik kışlar yarattı) cümlesine bağlayan cümle A şıkkıdır: 'Havada asılı kalan bu partiküller güneş ışığını geri yansıtarak gezegen yüzeyini soğutur'."
+    "tacticUsed": "Referans Zamir Eşleşmesi: 'These particles' = 'sulfate aerosols' + cooling the planet -> Volcanic winter",
+    "trapWarning": "Sonraki cümle \"volcanic winters\" der; boşlukta soğumanın mekanizması olmalıdır. B ve E sonuçla çelişir (B etkiyi kısaltır, E ısınma der); C ve D konuyla ilgili ama zinciri kurmaz.",
+    "explanation": "Sülfat aerosolleri oluştuktan sonra ne olduğunu açıklayan ve 'As a consequence, precipitated volcanic winters' (Sonuç olarak volkanik kışlar yarattı) cümlesine bağlayan cümle A şıkkıdır: 'Bu partiküller güneş ışığını uzaya geri yansıtır ve yüzeyi soğutur'."
   },
   {
     "id": "m_q76",
@@ -1506,3 +1508,6 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "explanation": "III numaralı cümle Atacama çölündeki amatör turist turlarından bahsederek James Webb Teleskobu'nun derin uzay kozmoloji misyonunu bozan alakasız cümledir (C şıkkı)."
   }
 ];
+
+// Options are reordered per question so the answer key is not concentrated in A.
+export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = fillGroupPassages(shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_1));

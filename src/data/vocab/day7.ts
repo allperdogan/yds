@@ -31,7 +31,7 @@ export const day7Words: YdsWord[] = [
     "ydsTip": "'Ambition', 'desire', 'aim', 'goal' ve 'yearning' ile eş anlamlıdır. Genellikle çoğul 'aspirations' olarak kullanılır.",
     "frequency": "high",
     "groupDay": 7,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ASPİRİN-GİBİ-FERAHLATAN ARZU' -> İnsanın geleceğe dair içini ferahlatan yüksek ideali ve hedefi: ASPIRATION (emel, gaye)."
+    "mnemonic": "💡 ÇAĞRIŞIM: A + SPIRE (nefes almak; \"respiration\" solunum). Bir hedef için nefes nefese can atmak = büyük arzu, ülkü."
   },
   {
     "id": "w128",
@@ -399,7 +399,7 @@ export const day7Words: YdsWord[] = [
     "ydsTip": "'Involve in', 'incriminate', 'entangle' ve 'connect' ile eş anlamlıdır; pasif yapısı 'be implicated in' çok yaygındır.",
     "frequency": "high",
     "groupDay": 7,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İPLİKLE-BAĞLAMAK' -> Suç mahalline bir iplikle bağlayıp işin içine bulaştırmak: IMPLICATE (suçla ilişkilendirmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: IM (içine) + PLIC (katlamak; \"complicate\"). Birini olayın katlarının arasına sokmak = suça bulaştırmak, ilişkilendirmek."
   },
   {
     "id": "w276",
@@ -431,7 +431,7 @@ export const day7Words: YdsWord[] = [
     "ydsTip": "'Harmless', 'safe', 'nontoxic', 'innocent' ve 'benign' ile tam eş anlamlıdır; zıttı 'noxious' veya 'detrimental'dır.",
     "frequency": "high",
     "groupDay": 7,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İNO-KÜS' -> Kimseye kötülük düşünmeyen, zehirsiz ve tamamen zararsız olan: INNOCUOUS. Zıttı: Noxious."
+    "mnemonic": "💡 ÇAĞRIŞIM: IN (değil) + NOC (zarar vermek; \"noxious\" zehirli). Hiç zarar vermeyen = zararsız, masum."
   },
   {
     "id": "w188",
@@ -495,7 +495,7 @@ export const day7Words: YdsWord[] = [
     "ydsTip": "'Climate change mitigation' (iklim değişikliğinin etkilerini azaltma) YDS çevre metinlerinin en önemli terimidir; 'alleviation', 'reduction' ve 'moderation' ile eştir.",
     "frequency": "ultra",
     "groupDay": 7,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'MITIGATE (Hafifletmek)' fiilinin isim halidir; zararı en aza indirme eylemi: MITIGATION."
+    "mnemonic": "💡 ÇAĞRIŞIM: MITIGATE (yumuşatmak) fiilinin ismi: zararın etkisini azaltma. \"Climate change mitigation\" = iklim değişikliğinin etkilerini azaltma."
   },
   {
     "id": "w322",
@@ -575,7 +575,7 @@ export const day7Words: YdsWord[] = [
     "ydsTip": "'Hypothesize', 'posit', 'propose', 'presuppose' ve 'assume' ile eş anlamlıdır; bilimsel kuram metinlerinde çok sık yer alır.",
     "frequency": "high",
     "groupDay": 7,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'POSTA-ATMAK' -> Bilim dünyasına yeni bir temel varsayım fırlatıp öne sürmek: POSTULATE (varsaymak, ileri sürmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince POSTULARE (talep etmek). Kanıt istemeden bir şeyin doğru kabul edilmesini talep etmek = varsaymak, ileri sürmek."
   },
   {
     "id": "w111",
@@ -735,7 +735,7 @@ export const day7Words: YdsWord[] = [
     "ydsTip": "İki temel anlamı vardır: 1. 'Maintain / support' (sürdürmek, ayakta tutmak); 2. 'Suffer / undergo' (sustain injuries - yara almak/hasara uğramak). İkisi de çok sorulur.",
     "frequency": "ultra",
     "groupDay": 7,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SİSTEMİ-TUTMAK' -> Düşmesine izin vermeyip elinde tutmak, canlılığını ve devamlılığını sürdürmek: SUSTAIN."
+    "mnemonic": "💡 ÇAĞRIŞIM: SUS (alttan) + TAIN (tutmak). Bir şeyi alttan tutup ayakta kalmasını sağlamak = sürdürmek, desteklemek."
   },
   {
     "id": "w600",
@@ -751,7 +751,7 @@ export const day7Words: YdsWord[] = [
     "ydsTip": "'Boring', 'monotonous', 'dull', 'laborious' ve 'wearisome' ile tam eş anlamlıdır.",
     "frequency": "high",
     "groupDay": 7,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TEDİ-YUS' -> Tadı tuzu kalmamış, insanı esneten can sıkıcı tekdüze iş: TEDIOUS (usandırıcı)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince TAEDIUM (bıkkınlık). İnsanı bıkkınlıktan esneten = usandırıcı, sıkıcı."
   },
   {
     "id": "w98",

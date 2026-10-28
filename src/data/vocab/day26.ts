@@ -47,7 +47,7 @@ export const day26Words: YdsWord[] = [
     "ydsTip": "'Acquire' (edinmek) fiilinin isim halidir; hem ticarette 'satın alım' hem de 'dil/bilgi edinimi'dir.",
     "frequency": "ultra",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AK-KAZANÇ' -> Alın teriyle ak kazanılan bilgi ve servet edinimi (acquisition)."
+    "mnemonic": "💡 ÇAĞRIŞIM: ACQUIRE (edinmek) fiilinin ismi. Dil edinimi = \"language acquisition\"; bir şirketin başka bir şirketi satın alması da acquisition."
   },
   {
     "id": "w1057",
@@ -69,9 +69,9 @@ export const day26Words: YdsWord[] = [
     "exampleEn": "Thanks to the adroit maneuvering of the chief diplomat, the border crisis was resolved without military escalation.",
     "exampleTr": "Baş diplomatın hünerli ve ustaca manevraları sayesinde sınır krizi askeri bir tırmanışa varmadan çözüldü.",
     "ydsTip": "'Skillful / dexterous / adept' eşanlamlısıdır; zor durumları ustalıkla çözen kişileri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ANDROİD' -> Android robotlar gibi kusursuz, çevik ve ADROIT (hünerli, becerikli, mahir)."
+    "mnemonic": "💡 ÇAĞRIŞIM: A + DROIT (Fransızca \"sağ el, doğru\"). Sağ eli gibi ustaca iş yapan = hünerli, becerikli. Tersi: maladroit (beceriksiz)."
   },
   {
     "id": "w1379",
@@ -235,7 +235,7 @@ export const day26Words: YdsWord[] = [
     "exampleEn": "International war crimes tribunals documented the shocking depravity and atrocities committed during the armed conflict.",
     "exampleTr": "Uluslararası savaş suçları mahkemeleri, silahlı çatışma sırasında işlenen şoke edici ahlaksızlık ve vahşetleri belgeledi.",
     "ydsTip": "'Corruption / wickedness / immorality' eşanlamlısıdır; derin bir ahlaki çöküşü ifade eder.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 26,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DEPREM-LİK VAHŞET' -> Ahlak temellerini yerle bir eden derin DEPRAVITY (ahlaksızlık, yozlaşma)."
   },
@@ -261,7 +261,7 @@ export const day26Words: YdsWord[] = [
     "ydsTip": "'Inconsistency / disparity / divergence' eşanlamlısıdır; iki hesap veya ifade arasındaki uyumsuzluktur.",
     "frequency": "ultra",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DİSK-KRAP' -> İki diskteki veriler birbiriyle uyuşmuyor; arada büyük bir DISCREPANCY (çelişki, tutarsızlık) var."
+    "mnemonic": "💡 ÇAĞRIŞIM: DIS (ayrı) + CREP (çatırdamak, çatlamak; \"crack\"). İki veri arasında çatlak oluşması = tutarsızlık, uyuşmazlık."
   },
   {
     "id": "w890",
@@ -309,7 +309,7 @@ export const day26Words: YdsWord[] = [
     "ydsTip": "'Reveal / disclose' eşanlamlısıdır; gizli bir bilginin veya sırrın açığa vurulması durumudur.",
     "frequency": "ultra",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DİVİT-GÜL' -> Sırrı divit kalemle kağıda döküp tüm dünyaya DIVULGE etti (ifşa etti, yaydı)."
+    "mnemonic": "💡 ÇAĞRIŞIM: DI (her yana) + VULG (halk; \"vulgar\" = halka ait, kaba). Sırrı halkın arasına yaymak = ifşa etmek."
   },
   {
     "id": "w787",
@@ -378,9 +378,9 @@ export const day26Words: YdsWord[] = [
     "exampleEn": "The professor delivered an erudite lecture examining the theological subtleties of medieval philosophy.",
     "exampleTr": "Profesör, Orta Çağ felsefesinin teolojik inceliklerini inceleyen son derece bilgili ve derinlikli bir ders verdi.",
     "ydsTip": "'Scholarly / learned / knowledgeable' eşanlamlısıdır; çok okumuş, alim kişileri ve eserleri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ERDEMLİ-ALİM' -> Yıllarca kütüphanede dirsek çürütmüş, ERUDITE (alim, bilgili, mürekkep yalamış) profesör."
+    "mnemonic": "💡 ÇAĞRIŞIM: E (dışarı) + RUDE (kaba, işlenmemiş). Cahillikten dışarı çıkmış, işlenmiş zihin = bilgili, âlim."
   },
   {
     "id": "w469",
@@ -451,7 +451,7 @@ export const day26Words: YdsWord[] = [
     "ydsTip": "'Prohibit / ban' eşanlamlısıdır; 'forbid somebody from doing / to do something' kalıbıyla kullanılır.",
     "frequency": "high",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'FOR-BİT (Sona erdir)' -> Yasağı çiğneyenin işini bitirirler; FORBID etmek (kesinlikle yasaklamak)."
+    "mnemonic": "💡 ÇAĞRIŞIM: FOR (karşı) + BID (emretmek, buyurmak). Birine karşı \"yapma!\" diye buyurmak = yasaklamak."
   },
   {
     "id": "w26",
@@ -478,7 +478,7 @@ export const day26Words: YdsWord[] = [
     "ydsTip": "'Encourage / promote / nurture' eşanlamlısıdır; gelişimi olumlu yönde desteklemek anlamında YDS'nin favori kelimelerindendir.",
     "frequency": "ultra",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'FİDAN-BESLE' -> Fidanı suyla besleyip büyütür gibi fikirleri FOSTER etmek (geliştirmek, teşvik etmek)."
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Foster family\" = koruyucu aile: başkasının çocuğunu besleyip büyütür. Bir fikri ya da yeteneği besleyip geliştirmek = teşvik etmek."
   },
   {
     "id": "w708",
@@ -595,7 +595,7 @@ export const day26Words: YdsWord[] = [
     "exampleEn": "The intrepid deep-sea explorer descended into the Mariana Trench to photograph unknown biological organisms.",
     "exampleTr": "Korkusuz derin deniz kaşifi, bilinmeyen biyolojik canlıları fotoğraflamak için Mariana Çukuru'na indi.",
     "ydsTip": "'Fearless / dauntless / courageous' eşanlamlısıdır; tehlikelerden yılmayan cesur kişileri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 26,
     "mnemonic": "💡 ÇAĞRIŞIM: 'İN-TİTRE-MEZ' -> Asla titremeyen, tehlikeden korkup geri adım atmayan INTREPID (korkusuz, yiğit) kaşif."
   },
@@ -789,9 +789,9 @@ export const day26Words: YdsWord[] = [
     "exampleEn": "Benjamin Franklin was celebrated for his pithy maxims that imparted profound moral wisdom in a few sharp words.",
     "exampleTr": "Benjamin Franklin, birkaç keskin kelimeyle derin ahlaki bilgelik aşılayan özlü ve veciz deyişleriyle övgü toplamıştı.",
     "ydsTip": "'Terse / concise / succinct' eşanlamlısıdır; az sözle çok şey anlatan ifadeleri tanımlar.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PİSİ PİSİ' -> Lafı uzatmadan kestirmeden seslenen kısa söz gibi PITHY (özlü, veciz, can alıcı)."
+    "mnemonic": "💡 ÇAĞRIŞIM: PITH = meyvenin ya da bitkinin özü, iç kısmı. Lafın kabuğunu atıp yalnızca özünü söyleyen = özlü, veciz."
   },
   {
     "id": "w817",
@@ -983,7 +983,7 @@ export const day26Words: YdsWord[] = [
     "exampleEn": "The opposition party adopted a truculent tone during the parliamentary debates, refusing any compromise with the coalition.",
     "exampleTr": "Muhalefet partisi, koalisyonla her türlü uzlaşmayı reddederek meclis tartışmaları sırasında hırçın ve kavgacı bir üslup benimsedi.",
     "ydsTip": "'Belligerent / combative / defiant' eşanlamlısıdır; kavgaya hazır, hırçın tavırları niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 26,
     "mnemonic": "💡 ÇAĞRIŞIM: 'TIR-KULENT' -> Yolda herkese selektör yakıp kavga arayan hırçın ve saldırgan (truculent) TIR şoförü."
   },
@@ -1033,7 +1033,7 @@ export const day26Words: YdsWord[] = [
     "ydsTip": "'Remnant / relic / trace' eşanlamlısıdır; yok olmuş bir uygarlık veya düzenin geride kalan son izleridir.",
     "frequency": "high",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'VESİKA-İSTİGE' -> Geçmişten kalan tarihi bir vesika gibi son hatıra, iz, kalıntı (vestige)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince VESTIGIUM (ayak izi). Geçmişten geriye kalan iz, kalıntı."
   },
   {
     "id": "w768",
@@ -1056,6 +1056,6 @@ export const day26Words: YdsWord[] = [
     "ydsTip": "'Viable' (uygulanabilir, yaşayabilir) sıfatının isim halidir; 'feasibility / sustainability' eşanlamlısıdır.",
     "frequency": "ultra",
     "groupDay": 26,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'VİA-BİLE (Yolu bile var)' -> Projenin hayata geçme yolu bile var; VIABILITY (uygulanabilirlik, yaşayabilirlik)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince VITA (hayat; \"vitamin\"). Hayatta kalabilme gücü; bir projenin gerçek hayatta yaşayabilmesi = uygulanabilirlik."
   }
 ];

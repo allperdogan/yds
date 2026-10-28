@@ -29,7 +29,7 @@ export const day20Words: YdsWord[] = [
     "exampleEn": "The dictator's unprovoked belligerence towards neighboring territories drew immediate economic sanctions from the United Nations.",
     "exampleTr": "Diktatörün komşu topraklara yönelik sebepsiz saldırganlığı ve savaşçı tutumu, Birleşmiş Milletler'den anında ekonomik yaptırımlar getirdi.",
     "ydsTip": "Uluslararası kriz metinlerinde askeri saldırganlığı ifade eder; sıfat hali 'belligerent' (saldırgan/savaşan taraf) dır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 20,
     "mnemonic": "💡 ÇAĞRIŞIM: Latince 'BELLUM' (savaş) kökünden gelir (rebellion = isyan gibi); savaşa meyilli olma, SALDIRGANLIK, SAVAŞÇILIK."
   },
@@ -95,7 +95,7 @@ export const day20Words: YdsWord[] = [
     "ydsTip": "'Contingent ON/UPON' (-e bağlı, şarta bağlı) ÖSYM'nin en prestijli preposition ve sıfat sorularındandır.",
     "frequency": "high",
     "groupDay": 20,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'KONTENJAN' kuralına bağlı; bir şeyin olması başka bir durumun gerçekleşmesine BAĞLI, ŞARTA BAĞLI."
+    "mnemonic": "💡 ÇAĞRIŞIM: CON + TING (dokunmak; \"contact\"). Bir şey ancak diğerine dokunursa olur = ona bağlı. Daima \"contingent ON/UPON\"."
   },
   {
     "id": "w884",
@@ -143,7 +143,7 @@ export const day20Words: YdsWord[] = [
     "ydsTip": "'Surplus' (fazlalık) kelimesinin zıttıdır; ekonomi metinlerinde 'trade deficit' veya 'budget deficit' kalıplarıyla gelir.",
     "frequency": "high",
     "groupDay": 20,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DEFİNE' aratacak kadar kasada para kalmaması; bütçede açık çıkması: BÜTÇE AÇIĞI, NOKSAN."
+    "mnemonic": "💡 ÇAĞRIŞIM: DE (eksik) + FIC (yapmak). Gelirin giderleri karşılayamayıp eksik kalması = bütçe açığı. Tersi: surplus (fazla)."
   },
   {
     "id": "w995",
@@ -189,7 +189,7 @@ export const day20Words: YdsWord[] = [
     "exampleEn": "The invention of the automated washing machine liberated millions of households from hours of exhausting domestic drudgery.",
     "exampleTr": "Otomatik çamaşır makinesinin icadı, milyonlarca haneyi saatler süren yorucu ev angaryasından ve bıktırıcı işlerinden kurtardı.",
     "ydsTip": "Teknoloji ve sanayi devrimi metinlerinde insanın mekanik işlerden kurtulmasını anlatırken 'drudgery' kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 20,
     "mnemonic": "💡 ÇAĞRIŞIM: 'DURMADAN DÖVÜŞ gibi, amele gibi' çalışmak; insanı canından bezdiren bıktırıcı monoton iş: ANGARYA."
   },
@@ -239,7 +239,7 @@ export const day20Words: YdsWord[] = [
     "ydsTip": "'Tax evasion' (vergi kaçırma) ve 'evade responsibility' (sorumluluktan kaçma) en yaygın akademik kullanımlarıdır.",
     "frequency": "high",
     "groupDay": 20,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'EVE DOĞRU KAÇMAK' veya 'İĞNEDEN KAÇAR GİBİ' sıyrılmak; yakalanmaktan ya da vergiden YAN ÇİZİP KAÇINMAK (evade)."
+    "mnemonic": "💡 ÇAĞRIŞIM: E (dışarı) + VADE (gitmek; \"invade\" içeri girmek). Sorumluluktan dışarı sıvışıp gitmek = kaçınmak. \"Tax evasion\" = vergi kaçırma."
   },
   {
     "id": "w702",
@@ -317,7 +317,7 @@ export const day20Words: YdsWord[] = [
     "exampleEn": "At this stage, the student's research proposal consists merely of inchoate hypotheses that require extensive theoretical grounding.",
     "exampleTr": "Bu aşamada öğrencinin araştırma önerisi, yalnızca kapsamlı bir teorik temellendirme gerektiren olgunlaşmamış ve taslak halindeki hipotezlerden oluşmaktadır.",
     "ydsTip": "Felsefe, bilim ve edebiyat eleştirilerinde henüz şekil almamış ham düşünceler için kullanılan ileri düzey kelimedir.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 20,
     "mnemonic": "💡 ÇAĞRIŞIM: 'İLK KOD' -> Henüz başında olan, tam şekillenmemiş ham taslak: HENÜZ YENİ BAŞLAMIŞ, OLGUNLAŞMAMIŞ."
   },
@@ -415,7 +415,7 @@ export const day20Words: YdsWord[] = [
     "ydsTip": "'Acquire' ve 'gain' eşanlamlısıdır; izin, fon veya veri elde etmekte temel akademik fiildir.",
     "frequency": "ultra",
     "groupDay": 20,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'OTURDUĞUN YERDEN DEĞİL' çalışarak ELDE ETMEK; 'ob-tain' -> Alıp tutmak, TEMİN ETMEK."
+    "mnemonic": "💡 ÇAĞRIŞIM: OB + TAIN (tutmak; \"contain\", \"retain\"). Bir şeyi ele geçirip elinde tutmak = elde etmek, edinmek."
   },
   {
     "id": "w1141",
@@ -429,7 +429,7 @@ export const day20Words: YdsWord[] = [
     "exampleEn": "The editor's pedantic insistence on trivial punctuation rules often delayed the publication of important academic articles.",
     "exampleTr": "Editörün önemsiz noktalama kuralları üzerindeki gereksiz ayrıntılara takılan ukala ve kuralcı ısrarı, önemli akademik makalelerin yayımlanmasını sık sık geciktiriyordu.",
     "ydsTip": "Eğitim ve edebiyat metinlerinde şekilciliğe boğulup asıl anlamı kaçıran kişileri yermek için kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 20,
     "mnemonic": "💡 ÇAĞRIŞIM: 'PEDAGOJİ'yi ukalalığa dönüştüren hoca; önemsiz detaylara takılıp ukalalık yapan: KURALCI, UKALA (pedantic)."
   },
@@ -463,7 +463,7 @@ export const day20Words: YdsWord[] = [
     "ydsTip": "'Perpetual motion' (sürekli hareket) fizik metinlerinde; 'in perpetual state of...' ise sosyolojide sıkça geçer.",
     "frequency": "high",
     "groupDay": 20,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PER-PET-U-AL' -> Durmadan pet şişe üreten fabrika gibi; HİÇ BİTMEYEN, KESİNTİSİZ, DAİMİ."
+    "mnemonic": "💡 ÇAĞRIŞIM: PER (boyunca) + PET (ilerlemek, gitmek). Durmadan ileri gidip duran = sürekli, ebedi. \"Perpetual motion\" = sürekli hareket."
   },
   {
     "id": "w732",
@@ -479,7 +479,7 @@ export const day20Words: YdsWord[] = [
     "ydsTip": "'Based on the premise that...' (o varsayım üzerine kurulu olarak) kalıbı akademik makalelerin omurgasıdır.",
     "frequency": "high",
     "groupDay": 20,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PRE-' (önce) + 'MİS (fikir)' -> Bir teoriyi kurmadan önce kafaya konulan başlangıç noktası: ÖNCÜL, TEMEL DAYANAK."
+    "mnemonic": "💡 ÇAĞRIŞIM: PRE (önce) + MISE (konmuş, gönderilmiş). Tartışmanın en başına konan temel fikir = öncül, dayanak."
   },
   {
     "id": "w201",

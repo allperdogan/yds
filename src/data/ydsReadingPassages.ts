@@ -1,6 +1,8 @@
 import { ReadingPassage } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
+import { READING_PASSAGE_BANK } from './banks/readingPassageBank';
 
-export const YDS_READING_PASSAGES: ReadingPassage[] = [
+const RAW_YDS_READING_PASSAGES: ReadingPassage[] = [
   {
     id: 'rp1',
     title: 'The Neurological Foundations of Human Memory & Neuroplasticity',
@@ -67,17 +69,17 @@ Furthermore, this regenerative resilience has profound clinical implications for
         type: 'reading',
         question: 'According to the passage, the traditional scientific view regarding the adult human brain was that it _____ .',
         options: {
-          A: 'was inherently resilient against continuous intellectual strain and trauma',
-          B: 'harbored a perpetual ability to replace dying neurons throughout adulthood',
-          C: 'was completely incapable of generating new brain cells and reshaping itself',
-          D: 'depended primarily on high cortisol levels to maintain cognitive integrity',
-          E: 'could easily overcome ischemic damage through involuntary cellular actions'
+          A: 'could reorganize itself only in response to physical damage',
+          B: 'continued to produce new neurons until late adulthood',
+          C: 'could neither produce new neurons nor reorganize itself',
+          D: 'changed its structure mainly through intellectual effort',
+          E: 'lost most of its neurons soon after early development'
         },
         answer: 'C',
         difficulty: 'İleri',
         tacticUsed: 'Paragraftan Doğrudan Bilgi Çıkarımı (Paraphrasing / Eşanlam)',
-        trapWarning: 'A şıkkı günümüz bulgularıdır; soru ise "traditional view (geleneksel / eski görüşü)" sormaktadır!',
-        explanation: '1. Paragrafta: "the adult human brain was a static organ, devoid of the capacity to generate new neurons or significantly reorganize its synaptic architecture" denilmiştir. "devoid of capacity to generate new neurons and reorganize" = "completely incapable of generating new brain cells and reshaping itself" (C şıkkı).'
+        trapWarning: 'Eski görüş: beyin durağandır, yeni nöron üretemez ve yeniden düzenlenemez. B ve D bugünkü görüşü verir; A yarım bir kapasite tanır; E ise metinde olmayan bir kayıp iddiası ekler.',
+        explanation: '1. Paragrafta: "the adult human brain was a static organ, devoid of the capacity to generate new neurons or significantly reorganize its synaptic architecture" denilmiştir. "devoid of capacity to generate new neurons and reorganize" = "could neither produce new neurons nor reorganize itself" (C şıkkı).'
       },
       {
         id: 'rp1_q2',
@@ -91,7 +93,7 @@ Furthermore, this regenerative resilience has profound clinical implications for
           E: 'rely exclusively on surgical procedures rather than natural neuroplasticity'
         },
         answer: 'A',
-        difficulty: 'YDS Master',
+        difficulty: 'Zor',
         tacticUsed: 'Çıkarım (Inference) & Terminoloji Eşleştirme',
         trapWarning: 'D şıkkı tam tersidir; beyin BDNF faktörlerini iyileşmek için daha fazla sentezler.',
         explanation: '3. Paragrafta "exhibit significant compensatory activation in contralateral cortical hemispheres, effectively bypassing damaged neural pathways" ifadesi yer alır. "Contralateral" karşı taraf demektir. Bu da "recruiting intact regions in the opposite brain hemisphere" (karşı yarıküredeki sağlam bölgeleri devreye sokarak) ifadesiyle birebir örtüşür (A şıkkı).'
@@ -101,16 +103,16 @@ Furthermore, this regenerative resilience has profound clinical implications for
         type: 'reading',
         question: 'The author points out that chronic stress is particularly dangerous for brain health because it _____ .',
         options: {
-          A: 'accelerates synaptogenesis at an uncontrollable rate',
+          A: 'reduces the production of neurotrophic factors such as BDNF',
           B: 'triggers the shrinkage of vital cells located in the hippocampus',
-          C: 'suppresses all forms of emotional and sensory perception instantly',
-          D: 'prevents the contralateral hemisphere from communicating with the cerebellum',
-          E: 'destroys the protective cranial bones surrounding the cerebral cortex'
+          C: 'prevents the opposite hemisphere from compensating for damage',
+          D: 'cancels out the benefits gained from physical exercise',
+          E: 'slows down the formation of new synapses in the cortex'
         },
         answer: 'B',
         difficulty: 'İleri',
         tacticUsed: 'Neden-Sonuç İlişkisi & Kelime Eşleştirme',
-        trapWarning: '"Atrophy" kelimesinin küçülme/körelme (shrinkage) anlamına geldiğini bilmek soruyu saniyeler içinde çözdürür.',
+        trapWarning: 'Metin: kortizol "inducing atrophy within hippocampal pyramidal neurons". A ve E makul ama metinde geçmez; C inme rehabilitasyonu bilgisini karıştırır; D ise metnin yapmadığı bir karşılaştırmadır.',
         explanation: 'Metnin son cümlesinde "chronic stress and prolonged elevated cortisol levels exert a severely detrimental influence, inducing atrophy within hippocampal pyramidal neurons" denmektedir. "Atrophy within hippocampal neurons" = "shrinkage of vital cells located in the hippocampus" (B şıkkı).'
       },
       {
@@ -118,16 +120,16 @@ Furthermore, this regenerative resilience has profound clinical implications for
         type: 'reading',
         question: 'What is the primary purpose of the passage?',
         options: {
-          A: 'To warn clinicians against the hazardous side effects of mental exercise on seniors',
-          B: 'To compare the neurological structures of the human brain with those of other primates',
-          C: 'To illustrate how the discovery of neuroplasticity has revolutionized our understanding of brain potential',
-          D: 'To prove that pharmaceutical interventions are superior to lifestyle changes in stroke patients',
-          E: 'To argue that adult humans lose all cognitive abilities once they reach their thirties'
+          A: 'To argue that stress is the main cause of Alzheimer\'s disease',
+          B: 'To describe the latest imaging techniques used in brain research',
+          C: 'To explain how the idea of neuroplasticity changed our view of the brain',
+          D: 'To recommend a specific treatment programme for stroke patients',
+          E: 'To show that intellectual effort matters more than physical exercise'
         },
         answer: 'C',
         difficulty: 'Orta',
         tacticUsed: 'Ana Fikir / Yazarın Amacı (Primary Purpose)',
-        trapWarning: 'A ve E şıklarındaki aşırı uç ifadeler ("warn clinicians against hazardous effects", "lose all cognitive abilities") hemen elenmelidir.',
+        trapWarning: 'Ana amaç bütün paragrafı kapsamalıdır. B, D ve A yalnızca bir ayrıntıyı ana fikir yapar; E ise metinle çelişir: yazar ikisini birlikte önerir.',
         explanation: 'Metin, beynin sabit olduğu yönündeki eski inancın yıkılışını ve nöroplastisitenin insan beyninin yenilenme, öğrenme ve iyileşme potansiyelini nasıl kökten değiştirdiğini açıklamaktadır (C şıkkı).'
       }
     ]
@@ -184,16 +186,16 @@ The renewable infrastructure of tomorrow requires vast quantities of rare earth 
         type: 'reading',
         question: 'It is emphasized in the passage that although the energy transition is publicly defended on moral grounds, it is fundamentally propelled by _____ .',
         options: {
-          A: 'altruistic commitments made by multinational fossil fuel conglomerates',
+          A: 'a sincere global commitment to reducing carbon emissions',
           B: 'aggressive economic interests and strategic geopolitical rivalry',
-          C: 'a unanimous worldwide consensus to eradicate all national borders',
-          D: 'the total exhaustion of petroleum reserves across the Middle East',
-          E: 'the unconditional transfer of battery patents to developing countries'
+          C: 'pressure from environmental groups in developing countries',
+          D: 'the rapidly falling cost of solar and wind technologies',
+          E: 'the gradual exhaustion of the world\'s oil reserves'
         },
         answer: 'B',
         difficulty: 'Orta',
         tacticUsed: 'Zıtlık Analizi & Metin İçi Karşılaştırma',
-        trapWarning: 'A şıkkındaki "altruistic commitments" (özgecil vaatler) metindeki "ruthless economic imperatives" ile çelişir.',
+        trapWarning: 'Soru "although ... moral grounds" diyerek ahlaki gerekçeyi dışarıda bırakır; A bu tuzağa düşer. D ve E makul ekonomik nedenlerdir ama metnin vurguladığı jeopolitik rekabet değildir.',
         explanation: 'İlk paragrafta "the actual mechanics of the transition are driven by ruthless economic imperatives and high-stakes geopolitical competition" ifadesi doğrudan "aggressive economic interests and strategic geopolitical rivalry" (B şıkkı) olarak paraphrased edilmiştir.'
       },
       {
@@ -201,16 +203,16 @@ The renewable infrastructure of tomorrow requires vast quantities of rare earth 
         type: 'reading',
         question: 'According to the author, the geopolitical balance of power is shifting because _____ .',
         options: {
-          A: 'Western nations no longer require any physical materials to construct turbines',
-          B: 'conventional oil reserves have completely lost their industrial utility',
+          A: 'oil producers are investing heavily in renewable energy',
+          B: 'Western nations have become self-sufficient in critical minerals',
           C: 'the strategic importance of oil routes is being superseded by control over critical raw minerals',
-          D: 'petrostates have voluntarily chosen to dismantle their extraction infrastructure',
-          E: 'photovoltaic solar panels have proven entirely inefficient in cold climates'
+          D: 'demand for oil has fallen faster than most experts predicted',
+          E: 'new trade routes have been opened for transporting oil'
         },
         answer: 'C',
         difficulty: 'İleri',
         tacticUsed: 'Sebep-Sonuç & Eş Anlamlı Eşleme (Supersede = Gravitate away / Replace)',
-        trapWarning: 'B şıkkında "completely lost" aşırı genellemedir; petrol önemini tamamen kaybetmemiştir, ağırlık merkezi kaymaktadır.',
+        trapWarning: 'Metne göre güç dengesi petrol yollarından kritik minerallere kayıyor. B tam tersini söyler (metin Batı\'nın bağımlılığını vurgular); A, D ve E metinde olmayan nedenlerdir.',
         explanation: '2. Paragrafın sonunda "the geopolitical epicenter is dramatically gravitating away from conventional oil-producing petrostates toward critical mineral supply chains" denilmektedir. Bu durum C şıkkındaki "oil routes is being superseded by control over critical raw minerals" ile tam olarak aynıdır.'
       },
       {
@@ -218,16 +220,16 @@ The renewable infrastructure of tomorrow requires vast quantities of rare earth 
         type: 'reading',
         question: 'One major concern highlighted in the passage regarding China’s role in clean technologies is that _____ .',
         options: {
-          A: 'it refuses to sell solar panels to any international markets',
-          B: 'its domestic energy network remains strictly powered by imported coal',
-          C: 'its overwhelming dominance in mineral refining creates an asymmetric vulnerability for Western nations',
-          D: 'it has outlawed the recycling of lithium-ion batteries across its provinces',
-          E: 'its processing capacity is inadequate to satisfy its own transportation needs'
+          A: 'it controls most of the world\'s lithium mines',
+          B: 'it produces solar panels at a higher cost than the West',
+          C: 'its dominance in refining makes the West dependent on it',
+          D: 'it has stopped exporting clean technologies to the West',
+          E: 'it still relies heavily on coal for its own electricity'
         },
         answer: 'C',
         difficulty: 'İleri',
         tacticUsed: 'Ana Fikir & Tehlike Tespiti',
-        trapWarning: 'E şıkkı yanlıştır; metin Çin\'in küresel kapasitenin %70\'inden fazlasını elinde tuttuğunu söylemektedir.',
+        trapWarning: 'Endişe, Çin\'in mineral işleme (refining) hakimiyetinin yarattığı asimetrik kırılganlıktır. A ince tuzaktır: metin madencilik değil işleme der; D metinde olmayan bir eylemdir.',
         explanation: 'Son paragrafta "China, which controls over seventy percent of the global processing capacity for key battery minerals—enjoy asymmetrical leverage over Western economies" denmektedir. Bu da C şıkkıdır.'
       },
       {
@@ -235,16 +237,16 @@ The renewable infrastructure of tomorrow requires vast quantities of rare earth 
         type: 'reading',
         question: 'Which of the following would be the most suitable title for this passage?',
         options: {
-          A: 'The Complete Collapse of Renewable Energy Investments',
+          A: 'Why Renewable Energy Is Cheaper Than Oil',
           B: 'From Oil Wells to Mineral Mines: The New Geopolitics of Energy',
-          C: 'Why International Climate Treaties Have Always Succeeded',
-          D: 'The Technological Secrets of Lithium Extraction in South America',
-          E: 'Ethical Guidelines for Reducing Carbon Footprint at Home'
+          C: 'China and the Future of Solar Power',
+          D: 'The Moral Case for a Green Transition',
+          E: 'How Lithium Batteries Are Changing Transport'
         },
         answer: 'B',
         difficulty: 'Orta',
         tacticUsed: 'Başlık Seçimi (Metnin Bütününü Kapsayan Başlık)',
-        trapWarning: 'D şıkkı sadece lityumdan bahsettiği için dar kapsamlıdır (Too narrow).',
+        trapWarning: 'Başlık enerji jeopolitiğinin petrolden minerallere kaymasını kapsamalıdır. C bir ayrıntıyı başlık yapar; D metnin ikincil saydığı ahlaki boyutu öne çıkarır; A ve E ise konuyu değiştirir.',
         explanation: 'Metin, küresel gücün geleneksel petrolden kritik mineral tedarik zincirlerine doğru kayışını ve bu yeni jeopolitik rekabeti ele almaktadır. "From Oil Wells to Mineral Mines: The New Geopolitics of Energy" (B şıkkı) en kapsayıcı başlıktır.'
       }
     ]
@@ -317,16 +319,16 @@ Recent paleoclimatological data, derived from fossilized pollen analysis and spe
         type: 'reading',
         question: 'Recent scientific research in regional caves and pollen deposits indicates that the Mediterranean region _____ .',
         options: {
-          A: 'experienced catastrophic marine tsunamis that submerged major coastal cities',
+          A: 'suffered a series of earthquakes that destroyed its cities',
           B: 'endured an exceptionally prolonged severe drought that ruined agriculture',
-          C: 'was hit by unprecedented freezing temperatures that froze all maritime routes',
-          D: 'was largely spared from the climatic anomalies observed in Central Asia',
-          E: 'benefited from an unexpected agricultural boom that caused overpopulation'
+          C: 'was affected by drought for only a few years',
+          D: 'became colder and wetter during the late Bronze Age',
+          E: 'lost much of its farmland to rising sea levels'
         },
         answer: 'B',
         difficulty: 'İleri',
         tacticUsed: 'Bilimsel Kanıt Eşleme (Megadrought = Prolonged severe drought)',
-        trapWarning: 'C şıkkındaki "freezing temperatures" metinde geçmez; metin kuraklıktan (megadrought) bahsetmektedir.',
+        trapWarning: 'Mağara ve polen verileri uzun süreli (protracted) bir kuraklığı gösterir. C süreyi kısaltır, D iklimi tersine çevirir, A ve E ise metinde olmayan doğal afetlerdir.',
         explanation: 'Son paragrafta "paleoclimatological data ... demonstrate that the Eastern Mediterranean suffered from a protracted and devastating megadrought" denmiştir. "Protracted megadrought" = "exceptionally prolonged severe drought" (B şıkkı).'
       },
       {
@@ -335,15 +337,15 @@ Recent paleoclimatological data, derived from fossilized pollen analysis and spe
         question: 'The passage highlights that the vulnerability of Bronze Age empires was exacerbated by their _____ .',
         options: {
           A: 'deep economic reliance on one another and extreme administrative centralization',
-          B: 'reluctance to train standing armies capable of repelling external invaders',
-          C: 'refusal to adopt monetary currency instead of primitive barter trade',
-          D: 'unwillingness to trade with seafaring merchants from the Aegean Sea',
-          E: 'strict isolationist policies that prohibited foreign diplomatic alliances'
+          B: 'dependence on a single powerful military ally',
+          C: 'lack of written records about agricultural production',
+          D: 'frequent wars with one another over trade routes',
+          E: 'isolation from the trade networks of the Aegean'
         },
         answer: 'A',
         difficulty: 'İleri',
         tacticUsed: 'Sistemik Neden Çıkarımı',
-        trapWarning: 'E şıkkı parçayla tamamen çelişir; metin toplumların birbirine son derece bağlı (interdependent) olduğunu vurgulamaktadır.',
+        trapWarning: 'Kırılganlık karşılıklı ekonomik bağımlılık ve aşırı merkeziyetçilikten gelir. E bunun tam tersidir (izolasyon); D ve B metinde olmayan nedenlerdir.',
         explanation: 'Son paragrafta "Because Late Bronze Age societies were extraordinarily centralized and economically interdependent, a failure in one key node reverberated catastrophically" denilerek kırılganlığın temel nedeni "deep economic reliance on one another and extreme administrative centralization" (A şıkkı) olarak verilmiştir.'
       },
       {
@@ -351,18 +353,27 @@ Recent paleoclimatological data, derived from fossilized pollen analysis and spe
         type: 'reading',
         question: 'Which word in the passage is closest in meaning to "protracted"?',
         options: {
-          A: 'Sudden',
+          A: 'Severe',
           B: 'Prolonged',
-          C: 'Beneficial',
-          D: 'Negligible',
-          E: 'Artificial'
+          C: 'Repeated',
+          D: 'Delayed',
+          E: 'Sudden'
         },
         answer: 'B',
         difficulty: 'Orta',
         tacticUsed: 'Metin İçi Kelime Bilgisi (Vocabulary in Context)',
-        trapWarning: 'A şıkkındaki "Sudden" (ani), protracted kelimesinin tam zıttıdır!',
+        trapWarning: 'Protracted = uzun süren. A (severe) kuraklığın şiddetini anlatır, süresini değil; C ve D yakın çağrışımlıdır ama süreyi anlatmaz; E zıt anlamlıdır.',
         explanation: 'Protracted: uzun süren, uzatılmış demektir. Eşanlamlısı "prolonged" (B şıkkı).'
       }
     ]
   }
+];
+
+// Options are reordered per question so the answer key is not concentrated in one letter.
+export const YDS_READING_PASSAGES: ReadingPassage[] = [
+  ...RAW_YDS_READING_PASSAGES.map((p) => ({
+    ...p,
+    questions: shuffleQuestionList(p.questions)
+  })),
+  ...READING_PASSAGE_BANK
 ];

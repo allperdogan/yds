@@ -2,6 +2,7 @@ import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MistakesView } from '../components/MistakesView';
+import { getUnifiedQuestionById } from '../data/ydsQuestions';
 
 describe('MistakesView Functional & Button Tests', () => {
   it('renders empty state when no mistakes or bookmarks exist', () => {
@@ -55,6 +56,10 @@ describe('MistakesView Functional & Button Tests', () => {
     );
 
     expect(screen.getByText(/Hata #1/i)).toBeInTheDocument();
+    // The answer is hidden until the question is solved again.
+    expect(screen.queryByRole('button', { name: /Öğrendim \(Kaldır\)/i })).not.toBeInTheDocument();
+    const q1 = getUnifiedQuestionById('q1')!;
+    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${q1.answer}\\)`) }));
 
     const removeBtn = screen.getByRole('button', { name: /Öğrendim \(Kaldır\)/i });
     fireEvent.click(removeBtn);

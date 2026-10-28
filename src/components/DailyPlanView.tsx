@@ -48,10 +48,10 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
           <div className="space-y-2 max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/20 border border-sky-400/30 text-sky-200 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>1 Ayda YDS Full Hedefli Yoğun Kamp Programı</span>
+              <span>30 günlük çalışma programı</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">
-              30 Günlük YDS Master Yol Haritası
+              30 Günlük Program
             </h1>
             <p className="text-sm text-sky-100/90 leading-relaxed">
               ÖSYM formatında taranmış en sık çıkan kelimeler, soru tipi formülleri ve SM-2 aralıklı tekrar sistemiyle her gün planlı ilerleyin.
@@ -111,7 +111,7 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
           {[
             { week: 1, label: '1. Hafta: Temel & Çeviri (Gün 1-7)' },
             { week: 2, label: '2. Hafta: Bağlaçlar & Cümle (Gün 8-14)' },
-            { week: 3, label: '3. Hafta: Paragraf Fethi (Gün 15-21)' },
+            { week: 3, label: '3. Hafta: Paragraf (Gün 15-21)' },
             { week: 4, label: '4. Hafta: İleri Soru & Simülasyon (Gün 22-30)' }
           ].map((w) => (
             <button
@@ -340,7 +340,7 @@ export const DailyPlanView: React.FC<DailyPlanViewProps> = ({
                       Sınav Çözüm Taktiği
                     </p>
                     <p className="text-xs text-slate-500 dark:text-slate-400 capitalize">
-                      {currentMission.tacticType.replace('_', ' ')} Altın Formülleri
+                      {currentMission.tacticType.replace('_', ' ')} Formülleri
                     </p>
                   </div>
                 </div>

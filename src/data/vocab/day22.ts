@@ -15,7 +15,7 @@ export const day22Words: YdsWord[] = [
     "ydsTip": "'Language acquisition' (dil edinimi) ve şirket devralmalarında 'mergers and acquisitions' (birleşme ve devralmalar) şeklinde sıkça sorulur.",
     "frequency": "ultra",
     "groupDay": 22,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'AKIL KÂRI' olan bilgi ve beceriyi çalışıp ELDE ETMEK, KAZANMAK (acquire)."
+    "mnemonic": "💡 ÇAĞRIŞIM: AC + QUIRE (aramak, istemek; \"require\"de de var). Arayıp sonunda kendine katmak = edinmek. \"Acquisition\" = edinim."
   },
   {
     "id": "w856",
@@ -45,7 +45,7 @@ export const day22Words: YdsWord[] = [
     "exampleEn": "The philanthropic foundation was renowned for its boundless benevolence, donating millions to famine relief operations.",
     "exampleTr": "Hayırsever vakıf, kıtlık yardım operasyonlarına milyonlarca bağışta bulunarak sınırsız iyilikseverliği ve cömertliği ile tanınıyordu.",
     "ydsTip": "Latince 'BENE-' (iyi) + 'VOLENT' (isteyen) -> İyilik dileyen; 'malevolence' (kötü niyetlilik) kelimesinin tam zıttıdır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 22,
     "mnemonic": "💡 ÇAĞRIŞIM: 'BENE-' (iyi/güzel) kökü -> Herkese iyilik ve hayır dileyen güzel yürek: İYİLİKSEVERLİK, ŞEFKAT."
   },
@@ -189,7 +189,7 @@ export const day22Words: YdsWord[] = [
     "exampleEn": "The architect designed a museum that combined traditional Islamic arches with modernist steel frames in an eclectic style.",
     "exampleTr": "Mimar, eklektik ve seçmeci bir üslupla geleneksel İslami kemerleri modernist çelik çerçevelerle birleştiren bir müze tasarladı.",
     "ydsTip": "Sanat, felsefe ve mimari metinlerinde farklı tarz ve ekolleri harmanlayan yapılar için kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 22,
     "mnemonic": "💡 ÇAĞRIŞIM: 'EKLE-TİK' -> Her tarzdan bir şeyler ekleyip derleyen: EKLEKTİK, SEÇMECİ, DERLEME."
   },
@@ -205,7 +205,7 @@ export const day22Words: YdsWord[] = [
     "exampleEn": "After blatantly plagiarizing his colleague's research paper, the academic had the effrontery to demand co-authorship.",
     "exampleTr": "Meslektaşının araştırma makalesini alenen intihal ettikten sonra akademisyen, bir de utanmadan ortak yazarlık talep etme yüzsüzlüğünü ve küstahlığını gösterdi.",
     "ydsTip": "'Have the effrontery to...' (utanmadan/yüzsüzce bir şeye cüret etmek) kalıbıyla karşımıza çıkar.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 22,
     "mnemonic": "💡 ÇAĞRIŞIM: 'FRONT' (alın/yüz) kökünden gelir; alnı kızarmayan, yüzü tutan: YÜZSÜZLÜK, KÜSTAHLIK, ARSIZLIK."
   },
@@ -287,7 +287,7 @@ export const day22Words: YdsWord[] = [
     "ydsTip": "'Hinder' (engellemek) fiilinden türemiştir; 'a hindrance TO progress' (-e engel teşkil eden) şeklinde preposition ile sorulur.",
     "frequency": "high",
     "groupDay": 22,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HİNDİSTAN CEVİZİ' yola düşmüş gibi ayağa takılan şey; HİNDER fiilinin ismidir: ENGEL, AYAK BAĞI."
+    "mnemonic": "💡 ÇAĞRIŞIM: HINDER (arkadan çekip engellemek) fiilinin ismi: engel, ayak bağı."
   },
   {
     "id": "w916",
@@ -333,9 +333,9 @@ export const day22Words: YdsWord[] = [
     "exampleEn": "Unlike aggressive carcinomas, this particular lymphoma is an indolent tumor that progresses extremely slowly over many years.",
     "exampleTr": "Saldırgan karsinomların aksine, bu lenfoma türü uzun yıllar boyunca son derece yavaş ilerleyen tembel ve uyuşuk bir tümördür.",
     "ydsTip": "Tıbbi metinlerde 'yavaş ilerleyen/ağrısız' tümörleri; edebiyat ve psikolojide ise miskin/tembel kişileri ifade eder.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 22,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'İNDEN' çıkmayan tembel ayı gibi; hiçbir iş yapmayan uyuşuk kimse veya yavaş ilerleyen TEMBEL ur."
+    "mnemonic": "💡 ÇAĞRIŞIM: IN (değil) + DOLENT (acı çekmek; \"condolence\" başsağlığı). Zahmete, acıya hiç girmeyen = tembel, uyuşuk."
   },
   {
     "id": "w307",
@@ -447,7 +447,7 @@ export const day22Words: YdsWord[] = [
     "ydsTip": "Zıttı 'include' (dahil etmek) kelimesidir; isim hali 'omission' (ihmal/hariç bırakma) dur.",
     "frequency": "ultra",
     "groupDay": 22,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'O MİT'ti, listeden çıkartıldı -> Gereksiz görüp metinden ya da listeden ÇIKARMAK, ATLAMAK."
+    "mnemonic": "💡 ÇAĞRIŞIM: O (dışarı) + MIT (göndermek; \"mission\"). Listeden dışarı göndermek = çıkarmak, atlamak. İsmi \"omission\"."
   },
   {
     "id": "w813",
@@ -607,7 +607,7 @@ export const day22Words: YdsWord[] = [
     "ydsTip": "ÖSYM 'susceptible TO' edatlı kullanımını 'vulnerable to / prone to' eşanlamlılarıyla her yıl mutlaka sorar.",
     "frequency": "high",
     "groupDay": 22,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'SESİ BİLE KAPAN' narin mikrofon gibi; hastalığa veya etkiye hemen kapılan: HASSAS, DUYARLI (-to)."
+    "mnemonic": "💡 ÇAĞRIŞIM: SUS (alttan) + CEPT (almak; \"accept\"). Gelen etkiyi hemen içine alan = hassas, kolay etkilenen."
   },
   {
     "id": "w1173",
@@ -623,7 +623,7 @@ export const day22Words: YdsWord[] = [
     "ydsTip": "Kanıtlar arasındaki zayıf bağlar ('tenuous link') veya iktidarın zayıflığı için kullanılan üst düzey sıfattır.",
     "frequency": "high",
     "groupDay": 22,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'TEN-UÇUCU' -> Ten kadar ince, rüzgarda kopacak gibi duran pamuk ipliği: ZAYIF, CILIZ, EĞRETİ."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince TENUIS (ince; İngilizce \"thin\" ile akraba). İncecik bir ipe bağlı = zayıf, pamuk ipliğine bağlı."
   },
   {
     "id": "w397",

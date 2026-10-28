@@ -1,6 +1,8 @@
 import { YdsQuestion } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
+import { fillGroupPassages } from '../services/groupPassages';
 
-export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
+const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
   // =========================================================================
   // 1 - 6: KELİME BİLGİSİ (VOCABULARY)
   // =========================================================================
@@ -493,15 +495,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Although solar panels generate zero direct emissions during electricity production, _____.',
     options: {
       A: 'the mining and refining of silicon and rare earth metals entail considerable ecological damage',
-      B: 'they are completely useless for powering urban metropolitan centers',
-      C: 'because fossil fuel plants will be permanently phased out by the end of the decade',
-      D: 'which proves that renewable energy technologies are a scientific impossibility',
-      E: 'as governmental subsidies for solar installations have completely ceased'
+      B: 'they have already helped millions of households to reduce both their energy bills and their carbon footprint',
+      C: 'their contribution to lowering urban air pollution has been widely documented by researchers',
+      D: 'they are increasingly regarded as one of the cleanest sources of electricity available today',
+      E: 'governments in sunny regions have offered generous subsidies to encourage their installation'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Zıtlık Analizi: Sıfır doğrudan emisyon (+) -> Madencilik ekolojik zarar verir (-)',
-    trapWarning: 'B şıkkında "tamamen işe yaramaz" diyerek aşırıya kaçmıştır; mantıklı akademik zıtlık A\'dadır.',
+    trapWarning: 'Although güneş panellerini övdüğü (+) için ana cümle bir dezavantaj (-) vermelidir. B, C, D ve E övgüyü sürdürür; dil bilgisi olarak uysalar da zıtlık kurmazlar.',
     explanation: 'Although (her ne kadar doğrudan emisyon üretmese de), silikon madenciliği ve arıtımı ciddi ekolojik zarara yol açar (A şıkkı).'
   },
   {
@@ -511,15 +513,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: '_____, neuroscientists have discovered that the adult brain continues generating new neurons throughout life.',
     options: {
       A: 'Contrary to earlier neurological assumptions that brain cellular development ceases after adolescence',
-      B: 'Because cognitive decline is an inevitable biological consequence of reaching adulthood',
-      C: 'In order that elderly citizens could effortlessly memorize complex foreign languages',
-      D: 'Since ancient philosophers had already proven the existence of brain neurogenesis',
-      E: 'Just as early psychoanalysts had predicted in their 19th-century clinical treatises'
+      B: 'Consistent with earlier neurological assumptions that the adult brain is structurally fixed after the teenage years',
+      C: 'Despite a large body of evidence that new neurons continue to form throughout adulthood',
+      D: 'Owing to the long-standing belief that the number of brain cells declines steadily with age',
+      E: 'Just as early anatomists had insisted that no new nerve cells are produced after childhood'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Contrary to (Aksine) Zıtlık Yapısı: Ergenlikten sonra durduğu varsayımının aksine...',
-    trapWarning: 'Ana cümle yeni nöron üretildiğini söyler; giriş eski yanlış varsayımı (ceases after adolescence) çürütmelidir.',
+    trapWarning: 'Ana cümle eski görüşü çürütür, bu yüzden giriş bir zıtlık (contrary to) kurmalıdır. Consistent with ve Just as benzerlik bildirir; Despite ise zıtlığı yanlış yere koyar.',
     explanation: 'Contrary to earlier assumptions (ergenlikten sonra gelişimin durduğu yönündeki eski varsayımların aksine), beyin yaşam boyu yeni nöron üretir (A şıkkı).'
   },
   {
@@ -528,17 +530,17 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '29. Soru - Cümle Tamamlama',
     question: 'In order to preserve endangered benthic coral formations from destructive bottom trawling, _____.',
     options: {
-      A: 'maritime authorities must enforce strict marine protected reserves that prohibit heavy commercial fishing gear',
-      B: 'although industrial fishing fleets generate billions of dollars in export revenues annually',
-      C: 'because tropical coral polyps thrive under high mechanical sedimentation and disturbance',
-      D: 'which explains why deep-sea fish stocks have miraculously doubled over the past decade',
-      E: 'unless regional governments had already banned commercial seafood exports'
+      A: 'maritime authorities must establish protected reserves where heavy fishing gear is banned',
+      B: 'industrial fishing fleets have expanded their operations into deeper and more remote waters',
+      C: 'coral formations in deep water grow far more slowly than those found in shallow reefs',
+      D: 'scientists have recorded a sharp decline in the diversity of species living on the seabed',
+      E: 'bottom trawling has become one of the most profitable methods of commercial fishing'
     },
     answer: 'A',
     difficulty: 'Orta',
-    tacticUsed: 'In order to preserve (Korumak amacıyla) -> Alınması Gereken Önlem (Must enforce)',
-    trapWarning: 'Korumak amacıyla ifadesinden sonra yetkililerin yapması gereken zorunluluk (must enforce) gelmelidir.',
-    explanation: 'Mercanları korumak amacıyla, denizcilik otoriteleri ağır balıkçılığı yasaklayan koruma alanlarını yürürlüğe koymalıdır (A şıkkı).'
+    tacticUsed: 'In order to preserve (Korumak amacıyla) -> Alınması Gereken Önlem (Must establish)',
+    trapWarning: 'C ve D konuyla ilgili gerçekler sunar ama amaç yapısı (In order to) bu amaca ulaşmak için yapılması gereken bir eylem (must establish) ister.',
+    explanation: 'Mercanları korumak amacıyla, denizcilik otoriteleri ağır balıkçılık araçlarının yasak olduğu koruma alanları oluşturmalıdır (A şıkkı).'
   },
   {
     id: 'm3_q30',
@@ -547,15 +549,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Whereas conventional internal combustion engines emit tremendous quantities of toxic pollutants, _____.',
     options: {
       A: 'hydrogen fuel-cell vehicles produce only pure water vapor as their operational exhaust',
-      B: 'petroleum refineries are expanding production across all continents',
-      C: 'electric charging grids have completely eliminated the need for power plants',
-      D: 'which resulted in unprecedented traffic congestion in metropolitan centers',
-      E: 'because modern diesel engines are completely harmless to public respiratory health'
+      B: 'they also release significant amounts of heat-trapping carbon dioxide into the atmosphere',
+      C: 'diesel-powered heavy trucks are responsible for a disproportionate share of urban smog',
+      D: 'modern catalytic converters can reduce, though not eliminate, some of these emissions',
+      E: 'their efficiency has improved steadily over the past several decades of engineering'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Whereas (Taban Tabana Zıt İki Teknoloji: Zehirli gaz vs Saf su buharı)',
-    trapWarning: 'Whereas zıtlık verir: konvansiyonel motorlar kirlilik yayarken, hidrojenli araçlar sadece su buharı çıkarır.',
+    trapWarning: 'Whereas iki farklı şeyi zıt yönde karşılaştırır. B ve C kirliliği sürdürür, D aynı motorlardan bahseder, E ise konudan sapar. Temiz bir alternatif veren tek şık doğru cevaptır.',
     explanation: 'Konvansiyonel motorlar zehirli gaz yayarken (Whereas engines emit pollutants), hidrojen yakıt hücreli araçlar sadece su buharı üretir (A şıkkı).'
   },
   {
@@ -565,15 +567,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Archaeologists deployed high-resolution ground-penetrating radar across the ceremonial site _____',
     options: {
       A: 'so that subsurface architectural foundations could be mapped without disturbing fragile historical strata.',
-      B: 'because ancient builders had constructed no subterranean structures in the valley.',
-      C: 'although modern digital imaging equipment was completely forbidden by ministry officials.',
-      D: 'in case grave robbers had voluntarily returned all stolen gold artifacts.',
-      E: 'as if pastoralist nomads had established massive stone pyramids overnight.'
+      B: 'even though radar surveys can reveal buried foundations without any need for excavation.',
+      C: 'in case earlier excavations had already exposed all the foundations buried at the site.',
+      D: 'as if the buried foundations had already been fully mapped by previous expeditions.',
+      E: 'so that the fragile historical strata could be removed more quickly by heavy machinery.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'So that + Could (Amaç Bağlacı: Kazmadan haritalayabilsinler diye)',
-    trapWarning: 'Radar kullanılmasının mantıklı amacı, hassas katmanları bozmadan mimari temelleri haritalayabilmektir.',
+    trapWarning: 'E şıkkı da so that ile başlar ama amaç mantığa terstir: radar katmanları korumak için kullanılır, hızla kaldırmak için değil. B ise sebebi zıtlık gibi sunar.',
     explanation: 'Arkeologlar yer radarı yerleştirdi; BÖYLECE toprak altı temeller tabakaları bozmadan haritalanabilsin (so that ... could be mapped). Doğru cevap A.'
   },
   {
@@ -582,16 +584,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '32. Soru - Cümle Tamamlama',
     question: 'Unless governments implement stringent carbon emissions caps within the current decade, _____.',
     options: {
-      A: 'low-lying coastal metropolitan regions will experience catastrophic and irreversible marine inundation',
-      B: 'renewable energy corporations have broken previous manufacturing records',
-      C: 'which caused international climate conferences to reach immediate consensus',
-      D: 'although global average temperatures have stabilized at pre-industrial levels',
-      E: 'since industrial manufacturing requires boundless quantities of coal'
+      A: 'low-lying coastal regions will suffer severe and irreversible flooding from rising seas',
+      B: 'sea levels along most coastlines will begin to fall within a few decades',
+      C: 'coastal cities will be largely protected from the effects of rising seas',
+      D: 'global carbon emissions have already started to decline steadily in most of the world\'s industrial nations',
+      E: 'coastal regions would have avoided the severe flooding of the past decade'
     },
     answer: 'A',
     difficulty: 'Orta',
-    tacticUsed: 'Unless (Eğer uygulanmazsa) -> Gelecekteki Kaçınılmaz Tehdit (Will experience)',
-    trapWarning: 'Unless olumsuz şarttır; yapılmazsa ne olacağı ana cümlede (will experience inundation) söylenir.',
+    tacticUsed: 'Unless (Eğer uygulanmazsa) -> Gelecekteki Kaçınılmaz Tehdit (Will suffer)',
+    trapWarning: 'Unless = if not. Önlem alınmazsa olumsuz bir gelecek (will suffer) beklenir. B ve C anlamca terstir; D ve E zaman uyumunu bozar.',
     explanation: 'Hükümetler emisyon kotalarını uygulamazsa (Unless governments implement), kıyı şehirleri geri dönüşsüz su baskınlarıyla karşılaşacaktır (A şıkkı).'
   },
   {
@@ -600,16 +602,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '33. Soru - Cümle Tamamlama',
     question: 'Because the interior temperatures of stellar cores reach tens of millions of degrees, _____.',
     options: {
-      A: 'hydrogen atomic nuclei possess sufficient kinetic energy to overcome electrostatic repulsion and undergo fusion',
-      B: 'solid mineral crusts can form on the surface of giant gaseous stars',
-      C: 'which explains why robotic exploratory spacecraft can easily land on solar surfaces',
-      D: 'even though stellar magnetic fields prevent any nuclear reactions from occurring',
-      E: 'so that astrophysicists could photograph individual neutrons with optical telescopes'
+      A: 'hydrogen nuclei move fast enough to overcome their mutual repulsion and fuse together',
+      B: 'the atoms inside them remain too cold and slow-moving to undergo any form of nuclear fusion',
+      C: 'solid mineral crusts are able to form and persist across the surfaces of most large stars',
+      D: 'spacecraft could in principle land safely on their surfaces using conventional heat shields',
+      E: 'nuclear reactions inside stars occur only rarely and release relatively little energy'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Fiziksel Sebep-Sonuç: Sıcaklık milyonlarca dereceye ulaştığı için füzyon gerçekleşir.',
-    trapWarning: 'Yüksek sıcaklığın bilimsel sonucu nükleer füzyonun (çekirdek kaynaşmasının) gerçekleşmesidir.',
+    trapWarning: 'Sebep cümlesi aşırı yüksek sıcaklıktan bahseder. B, C, D ve E bu sıcaklıkla çelişen sonuçlar verir; mantıklı tek sonuç füzyonun gerçekleşebilmesidir.',
     explanation: 'Yıldız çekirdekleri milyonlarca dereceye ulaştığı için, hidrojen çekirdekleri itme kuvvetini yenip füzyona girecek kinetik enerjiye ulaşır (A şıkkı).'
   },
   {
@@ -619,15 +621,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: '_____, the prolonged drought crippled the agrarian economy of the entire river basin.',
     options: {
       A: 'As regional farmers relied almost exclusively on seasonal precipitation for crop irrigation',
-      B: 'Even though modern automated desalination plants supplied unlimited freshwater',
-      C: 'So that municipal reservoirs could export water to neighboring desert states',
-      D: 'While industrial manufacturing factories generated boundless profits from textile exports',
-      E: 'Unless international humanitarian agencies had delivered emergency grain shipments'
+      B: 'Although regional farmers relied almost exclusively on seasonal rainfall for irrigating their crops',
+      C: 'As regional farmers had access to extensive networks of reservoirs and deep wells',
+      D: 'Even though the drought had been predicted by meteorologists several months earlier',
+      E: 'Unless regional farmers had switched to crops that require far less irrigation water'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Sebep Bağlacı (As = Because): Yağmura bağımlı oldukları için kuraklık ekonomiyi felç etti.',
-    trapWarning: 'B şıkkında suyun sınırsız olduğu söylenir; bu durumda kuraklık ekonomiyi felç edemezdi.',
+    trapWarning: 'B doğru bilgiyi verir ama Although ile zıtlık kurar; oysa yağmura bağımlılık felcin sebebidir. C sebebi tersine çevirir: kuyusu ve rezervuarı olan çiftçiler bu kadar etkilenmezdi.',
     explanation: 'Bölge çiftçileri sulama için neredeyse tamamen mevsimsel yağışlara bağımlı olduğu için (As farmers relied on precipitation), kuraklık ekonomiyi felç etti (A şıkkı).'
   },
   {
@@ -637,15 +639,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Much as artificial intelligence models streamline administrative data processing across hospitals, _____.',
     options: {
       A: 'they cannot replicate the nuanced clinical empathy and bedside judgment of experienced human physicians',
-      B: 'they operate with complete and infallible medical precision in every diagnostic test',
-      C: 'because hospital administrative budgets have completely eliminated physician salaries',
-      D: 'which proves that medical schools should be permanently closed within five years',
-      E: 'so that pharmaceutical corporations could artificially inflate the price of critical vaccines'
+      B: 'they have also reduced the time doctors spend completing routine paperwork each day',
+      C: 'they are now being adopted by a growing number of hospitals across the world',
+      D: 'their speed allows hospital managers to allocate beds and staff more efficiently',
+      E: 'they rarely make the clerical errors that tired administrative staff often commit'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Much as = Although (Her ne kadar verileri hızlandırsa da [+] -> İnsan empatisini taklit edemez [-])',
-    trapWarning: '"Much as" zıtlık bağlacıdır. Hızlandırma pozitifken ikinci cümle yapay zekanın insani empati eksikliğini (-) vermelidir.',
+    trapWarning: 'Much as = although. Giriş yapay zekayı övdüğü (+) için ana cümle bir sınırlılık (-) vermelidir. B, C, D ve E övgüyü sürdürür.',
     explanation: 'Yapay zeka veri işlemlerini ne kadar kolaylaştırsa da (Much as AI streamlines), deneyimli hekimlerin empati ve klinik sağduyusunu taklit edemez (A şıkkı).'
   },
   {
@@ -655,15 +657,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Ever since deep-sea submersibles first documented hydrothermal ecosystems in the late 1970s, _____.',
     options: {
       A: 'marine microbiologists have recognized that complex life can flourish without photosynthetic sunlight',
-      B: 'they will launch an international expedition to map the Mariana Trench next autumn',
-      C: 'which proved that life can only originate in warm shallow equatorial lagoons',
-      D: 'until commercial mining companies extracted all mineral deposits along the ocean floor',
-      E: 'as classical biology had already documented deep-sea chemosynthesis centuries earlier'
+      B: 'marine microbiologists recognized that complex life could flourish without sunlight',
+      C: 'marine microbiologists will need to fundamentally reconsider the environmental conditions under which life can exist',
+      D: 'marine microbiologists had assumed that all deep-sea life depended on photosynthesis',
+      E: 'marine microbiologists are studying how vent organisms survive without any sunlight'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Ever since + V2 -> Present Perfect (Have recognized)',
-    trapWarning: 'Ever since başlangıç anını verir; ana cümle Present Perfect (have recognized) olmak zorundadır.',
+    trapWarning: 'Bütün şıklar anlamca makuldür; soru zaman uyumunu ölçer. Ever since + geçmiş zaman, ana cümlede present perfect (have recognized) ister.',
     explanation: 'Denizaltılar hidrotermal ekosistemleri belgelediğinden beri (Ever since submersibles documented), biyologlar karmaşık yaşamın güneş ışığı olmadan da gelişebileceğini kabul etmiştir (A şıkkı).'
   },
 
@@ -677,15 +679,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Climate scientists emphasize that preserving tropical rainforests is essential not only for conserving global biodiversity but also for mitigating planetary carbon accumulation.',
     options: {
       A: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın yalnızca küresel biyoçeşitliliği muhafaza etmek için değil, aynı zamanda gezegensel karbon birikimini azaltmak için de elzem olduğunu vurgulamaktadır.',
-      B: 'Tropikal yağmur ormanlarının korunması, iklim bilimcilere göre biyoçeşitlilik kadar karbon birikimini önlemek açısından da gereklidir.',
-      C: 'İklim bilimcilerin vurguladığı gibi, gezegensel karbon birikimini azaltmak için yağmur ormanlarını korumak biyoçeşitlilikten daha önemlidir.',
-      D: 'Yağmur ormanlarının korunması gerektiği, hem biyoçeşitlilik kaybı hem de karbon birikimi konusunda iklim bilimciler tarafından savunulmaktadır.',
-      E: 'Gezegensel karbon birikimi ve biyoçeşitlilik kaybı, iklim bilimcilerin belirttiği gibi tropikal yağmur ormanlarının yok olmasıyla hızlanmaktadır.'
+      B: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın küresel biyoçeşitliliği muhafaza etmekten çok gezegensel karbon birikimini azaltmak için elzem olduğunu vurgulamaktadır.',
+      C: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın küresel biyoçeşitliliği muhafaza etmek için elzem olduğunu, ancak gezegensel karbon birikimini azaltmadığını vurgulamaktadır.',
+      D: 'İklim bilimciler, gezegensel karbon birikimini azaltmanın yalnızca tropikal yağmur ormanlarını değil, aynı zamanda küresel biyoçeşitliliği korumak için de elzem olduğunu vurgulamaktadır.',
+      E: 'İklim bilimciler, tropikal yağmur ormanlarını korumanın küresel biyoçeşitliliği muhafaza etmek ya da gezegensel karbon birikimini azaltmak için yeterli olmayabileceğini vurgulamaktadır.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Not only ... but also (Yalnızca ... değil, aynı zamanda ...) & "emphasize that" (vurgulamaktadır)',
-    trapWarning: 'C şıkkında birinin diğerinden daha önemli olduğu söylenir; oysa metin her ikisinin de elzem olduğunu söyler.',
+    trapWarning: '"not only ... but also" iki amacı eşit ağırlıkta verir. B bir karşılaştırma (-den çok) kurar, C ikinci amacı olumsuzlar, D öznesi ile nesneyi yer değiştirir, E ise anlamı tersine çevirir.',
     explanation: 'Özne: Climate scientists, Ana Fiil: emphasize that (vurgulamaktadır), Bağlaç: not only ... but also (yalnızca ... değil aynı zamanda). Doğru cevap A.'
   },
   {
@@ -694,17 +696,17 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '38. Soru - İngilizce-Türkçe Çeviri',
     question: 'Although early historians considered the Roman Empire to be an impregnable superpower, recent archaeological excavations reveal that internal economic decay weakened its frontiers long before nomadic invasions.',
     options: {
-      A: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak değerlendirmiş olsalar da, son arkeolojik kazılar iç ekonomik çöküşün göçebe istilalarından çok önce sınırlarını zayıflattığını ortaya koymaktadır.',
-      B: 'Son arkeolojik kazılar Roma\'nın iç ekonomik çöküşünü gösterse de ilk tarihçiler imparatorluğun göçebe istilalarıyla yıkıldığını düşünüyordu.',
-      C: 'Roma İmparatorluğu zapt edilemez bir güç sanılsa da göçebe akınları iç ekonomik çöküşü tetiklemiş ve sınırları zayıflatmıştır.',
-      D: 'İlk tarihçilerin süper güç olarak tanımladığı Roma İmparatorluğu, arkeolojik kazılara göre göçebe istilaları yüzünden zayıflamıştır.',
-      E: 'Arkeolojik kazılar iç ekonomik çöküşü kanıtlayana kadar tarihçiler Roma İmparatorluğu\'nun süper güç olduğuna inanmaktaydı.'
+      A: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmüş olsalar da, son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından çok önce zayıflattığını ortaya koymaktadır.',
+      B: 'Son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından çok önce zayıflattığını ortaya koysa da, ilk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmeye devam etmektedir.',
+      C: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmüş olsalar da, son kazılar göçebe istilalarının iç ekonomik çöküşü tetikleyerek sınırlarını zayıflattığını ortaya koymaktadır.',
+      D: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak gördükleri için, son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından çok önce zayıflattığını ortaya koymaktadır.',
+      E: 'İlk tarihçiler Roma İmparatorluğu\'nu zapt edilemez bir süper güç olarak görmüş olsalar da, son kazılar iç ekonomik çöküşün sınırlarını göçebe istilalarından hemen sonra zayıflattığını ortaya koymaktadır.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Although (olsalar da) & "reveal that" (ortaya koymaktadır)',
-    trapWarning: 'B şıkkında ana fikir kaydırılmıştır; orijinal cümle kazıların iç ekonomik çöküşü ortaya koyduğunu vurgular.',
-    explanation: 'Although considered... (değerlendirmiş olsalar da), recent excavations reveal... (kazılar ortaya koymaktadır). Kusursuz karşılık A şıkkıdır.'
+    trapWarning: 'B zıtlığı yanlış cümleye taşır, D zıtlığı sebebe çevirir. C sebep-sonucu tersine çevirir (çöküşü istilalar tetiklemiş gibi), E ise "long before" ifadesini "hemen sonra" diye çevirir.',
+    explanation: 'Although considered... (görmüş olsalar da), recent excavations reveal... (kazılar ortaya koymaktadır). Kusursuz karşılık A şıkkıdır.'
   },
   {
     id: 'm3_q39',
@@ -712,17 +714,17 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '39. Soru - İngilizce-Türkçe Çeviri',
     question: 'Epidemiologists warn that unless global vaccination distribution is handled equitably, new viral mutations could arise in under-immunized populations and threaten international health security.',
     options: {
-      A: 'Epidemiyologlar, küresel aşı dağıtımı adil bir şekilde ele alınmadıkça, yetersiz aşılanmış nüfuslarda yeni viral mutasyonların ortaya çıkabileceği ve uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarmaktadır.',
-      B: 'Küresel aşı dağıtımının adil yapılmaması durumunda, yeni mutasyonların ortaya çıkıp uluslararası sağlığı tehdit ettiği epidemiyologlarca uyarılmıştır.',
-      C: 'Yetersiz aşılanan bölgelerde ortaya çıkan mutasyonların uluslararası sağlığı tehdit ettiği, epidemiyologların aşı dağıtımı uyarısıyla kanıtlanmıştır.',
-      D: 'Epidemiyologların uyardığı üzere, mutasyonları engellemek için küresel aşı dağıtımının uluslararası kuruluşlarca yapılması zorunludur.',
-      E: 'Aşı dağıtımı adil yapılmadığı için ortaya çıkan yeni viral mutasyonlar, epidemiyologlara göre küresel sağlık güvenliğini sarsmaktadır.'
+      A: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılmadıkça, yeterince aşılanmamış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarıyor.',
+      B: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılırsa, yeterince aşılanmamış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarıyor.',
+      C: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılmadığı için, yeterince aşılanmamış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit ettiği konusunda uyarıyor.',
+      D: 'Epidemiyologlar, küresel aşı dağıtımı adil yapılmadıkça, tamamen aşılanmış nüfuslarda yeni viral mutasyonların ortaya çıkıp uluslararası sağlık güvenliğini tehdit edebileceği konusunda uyarıyor.',
+      E: 'Epidemiyologlar, yeterince aşılanmamış nüfuslarda ortaya çıkan yeni viral mutasyonlar uluslararası sağlık güvenliğini tehdit etmedikçe küresel aşı dağıtımının adil yapılamayacağı konusunda uyarıyor.'
     },
     answer: 'A',
     difficulty: 'Orta',
-    tacticUsed: 'Unless (ele alınmadıkça) & "could arise ... and threaten" (ortaya çıkabilir ve tehdit edebilir)',
-    trapWarning: 'E şıkkında "yapılmadığı için" denerek sebep cümlesi yapılmıştır; orijinal cümle şart (Unless) içerir.',
-    explanation: 'Unless handled equitably: adil ele alınmadıkça. Could arise and threaten: ortaya çıkabilir ve tehdit edebilir. Doğru cevap A.'
+    tacticUsed: 'Unless (yapılmadıkça) & "could arise ... and threaten" (ortaya çıkabilir ve tehdit edebilir)',
+    trapWarning: 'unless = -medikçe. B olumsuzluğu kaybeder, C koşulu gerçekleşmiş bir sebebe ve could modalını kesinliğe çevirir. D "under-immunized" ifadesini "tamamen aşılanmış" diye çevirir, E ise koşul ile sonucu yer değiştirir.',
+    explanation: 'Unless handled equitably: adil yapılmadıkça. Could arise and threaten: ortaya çıkabilir ve tehdit edebilir. Doğru cevap A.'
   },
   {
     id: 'm3_q40',
@@ -731,15 +733,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Yapay zekanın tıbbi görüntüleri analiz etmedeki başarısı kanıtlanmış olsa da, teşhis sürecinde hekimlerin mesleki deneyimi hala vazgeçilmez kabul edilmektedir.',
     options: {
       A: 'Although the success of artificial intelligence in analyzing medical images has been proven, the professional experience of physicians is still considered indispensable in the diagnostic process.',
-      B: 'Since artificial intelligence successfully analyzes medical imagery, physicians no longer need extensive experience in the diagnostic process.',
-      C: 'The professional experience of physicians in diagnosis is indispensable because artificial intelligence cannot accurately analyze medical images.',
-      D: 'Even if physicians use artificial intelligence to analyze images, their diagnostic decisions are frequently questioned by specialists.',
-      E: 'Artificial intelligence has revolutionized medical imaging, yet human physicians refuse to rely on its diagnostic accuracy.'
+      B: 'Since the success of artificial intelligence in analyzing medical images has been proven, the professional experience of physicians is no longer considered indispensable in the diagnostic process.',
+      C: 'Although the success of artificial intelligence in analyzing medical images has not yet been proven, the professional experience of physicians is still considered indispensable in diagnosis.',
+      D: 'Although the professional experience of physicians has been proven in analyzing medical images, artificial intelligence is still considered indispensable in the diagnostic process.',
+      E: 'Although the success of artificial intelligence in analyzing medical images has been proven, the professional experience of physicians was once considered indispensable in diagnosis.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Türkçe "kanıtlanmış olsa da" = Although the success has been proven & "still considered indispensable"',
-    trapWarning: 'B şıkkında "Since" (çünkü) kullanılmıştır; cümlede zıtlık vardır.',
+    trapWarning: 'B zıtlığı sebebe çevirir ve sonucu tersine çevirir. C "kanıtlanmış" ifadesini olumsuzlar, D yapay zeka ile hekimin yerini değiştirir, E ise "hâlâ" yerine "bir zamanlar" diyerek zamanı bozar.',
     explanation: 'Başarısı kanıtlanmış olsa da: Although the success has been proven... Hala vazgeçilmez kabul edilmektedir: is still considered indispensable. Doğru cevap A.'
   },
   {
@@ -749,15 +751,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Sanayi devriminden bu yana atmosferdeki sera gazı yoğunluğunun sürekli artması, küresel iklim krizinin başlıca nedeni olarak görülmektedir.',
     options: {
       A: 'The continuous increase in atmospheric greenhouse gas concentrations since the Industrial Revolution is regarded as the primary cause of the global climate crisis.',
-      B: 'Atmospheric greenhouse gases have increased because the global climate crisis accelerated during the Industrial Revolution.',
-      C: 'The Industrial Revolution caused the global climate crisis by generating massive concentrations of industrial greenhouse gases.',
-      D: 'Since the Industrial Revolution, greenhouse gas emissions have stabilized, reducing the severity of the global climate crisis.',
-      E: 'Although the climate crisis began with the Industrial Revolution, atmospheric gas concentrations have only recently been measured.'
+      B: 'The continuous increase in atmospheric greenhouse gas concentrations since the Industrial Revolution is regarded as a direct result of the global climate crisis.',
+      C: 'The continuous increase in atmospheric greenhouse gas concentrations before the Industrial Revolution is regarded as the primary cause of the global climate crisis.',
+      D: 'The occasional increase in atmospheric greenhouse gas concentrations since the Industrial Revolution is regarded as one of several minor causes of the climate crisis.',
+      E: 'The continuous increase in atmospheric greenhouse gas concentrations since the Industrial Revolution was once regarded as the primary cause of the global climate crisis.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Özne-Yüklem: "The continuous increase ... is regarded as the primary cause"',
-    trapWarning: 'B şıkkında sebep-sonuç tersine çevrilmiştir (gazlar kriz yüzünden arttı denmiştir).',
+    trapWarning: 'B sebep-sonucu tersine çevirir, C "since" yerine "before" der. D "sürekli" ve "başlıca" kelimelerini yanlış verir, E ise bugünkü görüşü geçmişe taşır (was once regarded).',
     explanation: 'Sera gazı yoğunluğunun sürekli artması (The continuous increase in concentrations), başlıca nedeni olarak görülmektedir (is regarded as the primary cause). Doğru cevap A.'
   },
   {
@@ -767,15 +769,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'Gelişmiş ülkeler yenilenebilir enerji teknolojilerine yeterli finansman sağlamadıkça, gelişmekte olan ekonomilerin kömüre bağımlılığı devam edecektir.',
     options: {
       A: 'Unless developed countries provide adequate financing for renewable energy technologies, the reliance of developing economies on coal will continue.',
-      B: 'If developed nations finance renewable technologies, developing countries will immediately cease burning domestic coal reserves.',
-      C: 'Developing economies depend on coal because developed nations have banned foreign investments in renewable energy.',
-      D: 'Although developed nations offer financial support, developing economies prefer coal over renewable technologies.',
-      E: 'Developed countries should invest in renewable energy so that developing nations can reduce their industrial electricity costs.'
+      B: 'If developed countries provide adequate financing for renewable energy technologies, the reliance of developing economies on coal will continue.',
+      C: 'Unless developing countries provide adequate financing for renewable energy technologies, the reliance of developed economies on coal will continue.',
+      D: 'Because developed countries have not provided adequate financing for renewable energy technologies, developing economies have stopped relying on coal.',
+      E: 'Unless developed countries provide adequate financing for renewable energy technologies, the reliance of developing economies on coal will soon end.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: '"-sağlamadıkça" = Unless & "reliance on coal will continue"',
-    trapWarning: 'Şart bildiren "sağlamadıkça" ifadesini karşılayan yapı "Unless"tir.',
+    trapWarning: '"sağlamadıkça" = Unless. B olumsuzluğu kaybeder, C gelişmiş ve gelişmekte olan ülkelerin yerini değiştirir. D koşulu sebebe çevirir ve sonucu tersine çevirir, E ise "devam edecektir" yerine "sona erecektir" der.',
     explanation: 'Finansman sağlamadıkça: Unless developed countries provide adequate financing... Kömüre bağımlılık devam edecektir: reliance on coal will continue. Doğru cevap A.'
   },
 
@@ -790,16 +792,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'The lowland rainforests of the Yucatán Peninsula presented severe environmental constraints to ancient Maya civilization. Unlike the perennial river systems that nourished ancient Egypt and Mesopotamia, the northern Maya lowlands possessed a karst limestone geology that allowed rainwater to percolate instantly into deep subterranean caverns, leaving the surface arid for half the year. To sustain urban centers numbering tens of thousands of residents, Maya civil engineers devised massive artificial water reservoirs known as aguadas. At major cities like Tikal, monumental plaster-lined plazas were sloped with extreme precision to channel monsoon downpours into filtered settling tanks. Sedimentary core analyses reveal that Maya hydrologists utilized quartz sand and zeolite minerals imported from mountainous regions to purify water supplies. This sophisticated water management infrastructure allowed the Maya to flourish in an unforgiving tropical ecology for millennia until prolonged megadroughts overwhelmed their storage capacity.',
     question: 'According to the passage, the primary hydrological challenge facing the ancient Maya was that _____',
     options: {
-      A: 'the karst limestone landscape allowed rainwater to drain rapidly into underground caves rather than remaining on the surface.',
-      B: 'perennial river floods repeatedly destroyed city plazas and residential farming districts.',
-      C: 'monsoon rainfall was completely absent throughout the entire calendar year.',
-      D: 'subterranean caverns contained toxic volcanic minerals that poisoned all drinking water.',
-      E: 'Maya engineers lacked the mathematical skills required to construct sloped architectural surfaces.'
+      A: 'rainwater quickly drained through the limestone into underground caves.',
+      B: 'the rivers of the region dried up for half the year during the dry season.',
+      C: 'monsoon rains were too heavy for the city plazas to channel effectively.',
+      D: 'the water in subterranean caverns was too salty for urban consumption.',
+      E: 'the mountains blocked rainfall from reaching the northern lowlands.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Doğrudan Bilgi: Karstik kireçtaşı arazisinin suyu hemen yer altına sızdırması',
-    trapWarning: 'B şıkkında nehir taşkınları der; oysa metin bölgede düzenli nehir sistemleri olmadığını söyler.',
+    trapWarning: 'B tuzağı: metin bölgede sürekli akan nehir olmadığını söyler, kuruyan nehirden bahsetmez. C ve D metinde geçen kelimeleri (monsoon, caverns) kullanır ama metnin söylemediği bir sorun uydurur.',
     explanation: 'Metne göre zorluk: "karst limestone geology allowed rainwater to percolate instantly into subterranean caverns, leaving surface arid". Doğru cevap A.'
   },
   {
@@ -809,15 +811,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'It is stated in the passage that the city plazas of Tikal were specifically designed to _____',
     options: {
       A: 'capture monsoon rainfall and channel it directly into filtration and storage systems.',
-      B: 'serve exclusively as defensive fortifications against hostile neighboring kingdoms.',
-      C: 'prevent quartz sand and zeolite minerals from being transported into the city.',
-      D: 'divert rainwater into agricultural valleys to provoke deliberate soil erosion.',
-      E: 'protect sacred temple monuments from any contact with environmental moisture.'
+      B: 'drain the heavy monsoon floods away from the crowded residential districts of the city as quickly as possible.',
+      C: 'collect quartz sand and zeolite carried down by seasonal rains.',
+      D: 'store rainwater directly on the plaza surface during the dry season.',
+      E: 'allow rainwater to soak into the limestone beneath the city.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Plazaların Amacı: Yağmur suyunu yakalayıp filtrelere yönlendirmek',
-    trapWarning: 'Metin: "plazas were sloped with extreme precision to channel downpours into filtered settling tanks" der.',
+    trapWarning: 'Metin: "sloped ... to channel monsoon downpours into filtered settling tanks". B suyu uzaklaştırmaktan bahseder (tersi), D suyu plazada tutar, E ise karst sorununu çözüm gibi sunar.',
     explanation: 'Tikal meydanları: muson yağmurlarını yakalayıp arıtma ve depolama tanklarına yönlendirmek için hassas bir eğimle inşa edilmiştir. Doğru cevap A.'
   },
   {
@@ -826,16 +828,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '45. Soru - Paragraf 1',
     question: 'The passage mentions the use of quartz sand and zeolite minerals to illustrate that the Maya _____',
     options: {
-      A: 'possessed sophisticated water purification technologies that relied on distant imported materials.',
-      B: 'relied entirely on primitive superstition to explain water-borne microbial illnesses.',
-      C: 'traded drinking water to neighboring civilizations in exchange for decorative jewels.',
-      D: 'were completely unaware of the chemical properties of natural volcanic stones.',
-      E: 'intentionally contaminated urban reservoirs to deter invading military forces.'
+      A: 'purified their water with materials brought from distant regions.',
+      B: 'traded actively with mountain communities for building materials.',
+      C: 'used imported minerals to line and seal their reservoir walls.',
+      D: 'lacked the local resources needed to build large reservoirs.',
+      E: 'relied mainly on mountain springs rather than collected rainwater.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Örnekleme Amacı: Gelişmiş su arıtma teknolojisi',
-    trapWarning: 'Zeolit ve kuartz mineralleri su arıtmak (purify water) için dağlık bölgelerden ithal edilmiştir.',
+    trapWarning: 'Minerallerin amacı "to purify water supplies". B ticareti, C sızdırmazlığı (metinde plaster geçer, mineral değil), D eksikliği öne çıkarır; hepsi metne yakın ama amaç yanlıştır.',
     explanation: 'Kuartz ve zeolit mineralleri: Mayaların uzak bölgelerden malzeme getirerek ileri düzey su arıtma teknolojileri geliştirdiğini gösterir. Doğru cevap A.'
   },
   {
@@ -844,16 +846,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '46. Soru - Paragraf 1',
     question: 'Which factor ultimately contributed to the breakdown of the Maya hydrological systems?',
     options: {
-      A: 'Severe and prolonged megadroughts that exceeded their reservoir capacity.',
-      B: 'A catastrophic volcanic eruption that buried the entire Yucatán Peninsula in ash.',
-      C: 'An invasion by Egyptian armies who dismantled the monumental plazas.',
-      D: 'The sudden poisoning of all quartz filtration beds by toxic algae.',
-      E: 'A massive increase in perennial river flooding across the northern lowlands.'
+      A: 'Long droughts that exceeded their storage capacity.',
+      B: 'Population growth that outpaced the size of the reservoirs.',
+      C: 'Contamination of the filtration tanks by imported minerals.',
+      D: 'Heavy monsoon rains that damaged the plaster-lined plazas.',
+      E: 'The loss of trade links with the mountainous regions.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Son Cümle Analizi: Sistemin Çöküş Nedeni',
-    trapWarning: 'Metnin son cümlesi: "until prolonged megadroughts overwhelmed their storage capacity" demektedir.',
+    trapWarning: 'Son cümle: "until prolonged megadroughts overwhelmed their storage capacity". B kapasiteyi doğru anar ama nedeni nüfusa bağlar; C, D, E metindeki unsurları çöküş nedeni gibi gösterir.',
     explanation: 'Sistemin çöküş sebebi: su depolama kapasitelerini aşan uzun süreli şiddetli mega-kuraklıklardır (A şıkkı).'
   },
 
@@ -865,16 +867,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Over the past two decades, medical science has recognized that the human body is not a solitary biological entity, but rather a complex holobiont populated by trillions of symbiotic microorganisms. The vast majority of these microbes reside in the gastrointestinal tract, where they perform essential metabolic functions, including synthesizing vitamins and fermenting indigestible dietary fibers into short-chain fatty acids. However, the most revolutionary revelation is the gut-brain axis—a bidirectional biochemical communication superhighway linking the enteric nervous system with the central nervous system. Gut bacteria synthesize approximately ninety percent of the body’s peripheral serotonin, along with other neuroactive molecules like gamma-aminobutyric acid (GABA). By stimulating the vagus nerve and modulating systemic immune inflammation, the microbial flora directly influences emotional resilience, anxiety phenotypes, and neurodegenerative risks.',
     question: 'According to the passage, the gut-brain axis is significant because it _____',
     options: {
-      A: 'serves as a bidirectional communication pathway through which gut microbes influence neurological function.',
-      B: 'proves that the human body functions completely independently of any microbial organisms.',
-      C: 'demonstrates that serotonin is produced exclusively within the cerebral cortex.',
-      D: 'prevents all forms of emotional stress from affecting human gastrointestinal motility.',
-      E: 'eliminates the biological necessity for dietary fiber fermentation in mammals.'
+      A: 'links gut microbes to the functioning of the brain in both directions.',
+      B: 'allows the brain to control which microbes live in the gut.',
+      C: 'explains how gut bacteria synthesize vitamins and fatty acids.',
+      D: 'shows that most serotonin used by the brain is made in the gut.',
+      E: 'completely replaces the vagus nerve as the main route between gut and brain.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Gut-Brain Axis Tanımı: İki yönlü iletişim otoyolu',
-    trapWarning: 'C şıkkında serotoninin sadece beyinde üretildiğini söyler; oysa metin %90\'ının bağırsakta üretildiğini belirtir.',
+    trapWarning: 'Anahtar: "bidirectional" (iki yönlü). B tek yön verir, C ekseni değil metabolik işlevi anlatır, D "peripheral" serotonin\'i beyne mal eder, E vagus sinirini dışlar.',
     explanation: 'Gut-brain axis önemi: bağırsak mikroplarının sinir sistemini ve beyin fonksiyonlarını etkilediği iki yönlü bir iletişim kanalı olmasıdır. Doğru cevap A.'
   },
   {
@@ -883,16 +885,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '48. Soru - Paragraf 2',
     question: 'It is stated in the text that gut bacteria produce neuroactive substances that can _____',
     options: {
-      A: 'stimulate the vagus nerve and modulate systemic immune inflammation.',
-      B: 'permanently paralyze the central nervous system within hours of ingestion.',
-      C: 'convert all ingested proteins into toxic environmental hydrocarbons.',
-      D: 'suppress all biological communication between the heart and lungs.',
-      E: 'force the human host to cease consuming any form of dietary nutrition.'
+      A: 'affect mood and anxiety by acting on the vagus nerve and immune system.',
+      B: 'replace the serotonin normally produced by the brain.',
+      C: 'convert dietary fibre into short-chain fatty acids.',
+      D: 'prevent neurodegenerative diseases from developing.',
+      E: 'slow down the communication between gut and brain.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Nöroaktif Maddelerin Etkisi: Vagus sinirini uyarır ve enflamasyonu düzenler',
-    trapWarning: 'Metindeki son cümle: "By stimulating the vagus nerve and modulating immune inflammation..." doğrudan bunu söyler.',
+    trapWarning: 'C metinde geçer ama mikropların metabolik işlevidir, nöroaktif maddelerin değil. D aşırı genellemedir: metin "neurodegenerative risks" üzerinde etki der, önler demez.',
     explanation: 'Bağırsak bakterileri vagus sinirini uyarır ve bağışıklık enflamasyonunu düzenler (A şıkkı).'
   },
   {
@@ -901,16 +903,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '49. Soru - Paragraf 2',
     question: 'The term "holobiont" in the passage refers to _____',
     options: {
-      A: 'a composite biological entity consisting of a host organism and its symbiotic microbes.',
-      B: 'a solitary animal that is entirely immune to bacterial infections.',
-      C: 'an artificial computational model used to simulate neural firing patterns.',
-      D: 'a toxic parasite that destroys beneficial gut flora within the gastrointestinal tract.',
-      E: 'a genetically engineered agricultural crop designed to resist droughts.'
+      A: 'a host organism together with its symbiotic microbes.',
+      B: 'the population of bacteria living in the digestive tract.',
+      C: 'a single organism that lives independently of microbes.',
+      D: 'the communication network between the gut and the brain.',
+      E: 'a microorganism that lives inside a larger host.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Terim Açıklaması: Holobiont (Konakçı ve mikropların ortak organizması)',
-    trapWarning: 'Metin: "not a solitary entity, but a holobiont populated by trillions of symbiotic microbes" der.',
+    trapWarning: 'Holobiont = konakçı + mikroplar, bütün olarak. B ve E yalnızca mikrop tarafını verir, C tanımın tersidir, D ise gut-brain axis kavramıyla karıştırır.',
     explanation: 'Holobiont: konak canlı ile onunla yaşayan trilyonlarca simbiyotik mikroorganizmanın oluşturduğu ortak biyolojik varlıktır. Doğru cevap A.'
   },
   {
@@ -919,17 +921,17 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '50. Soru - Paragraf 2',
     question: 'What can be inferred about serotonin from the passage?',
     options: {
-      A: 'A massive majority of the body’s peripheral supply is synthesized within the gut rather than the brain.',
-      B: 'It is an indigestible mineral that cannot pass through the intestinal wall.',
-      C: 'It is only produced when the human body undergoes extreme starvation.',
-      D: 'It causes acute neurodegeneration whenever it comes into contact with the vagus nerve.',
-      E: 'It has zero influence on emotional regulation or psychological resilience.'
+      A: 'Most of the body\'s peripheral supply comes from gut bacteria.',
+      B: 'The brain depends entirely on gut bacteria for its serotonin.',
+      C: 'It is the only neuroactive molecule produced in the gut.',
+      D: 'Gut bacteria produce it only when stimulated by the vagus nerve.',
+      E: 'It reduces immune inflammation throughout the body.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Çıkarım: Serotoninin büyük kısmının bağırsakta üretilmesi',
-    trapWarning: 'Metin: "synthesize approximately ninety percent of the body’s peripheral serotonin" ifadesini içerir.',
-    explanation: 'Serotonin hakkında çıkarım: Vücuttaki periferik serotoninin %90 gibi ezici bir çoğunluğu beyinde değil bağırsakta üretilir (A şıkkı).'
+    trapWarning: 'Metin %95 "peripheral" serotonin der. B "entirely" ve beyin diyerek aşırı genelleme yapar; C GABA\'yı yok sayar; D ve E metindeki ilişkileri karıştırır.',
+    explanation: 'Serotonin hakkında çıkarım: Vücuttaki periferik serotoninin %95 gibi ezici bir çoğunluğu beyinde değil bağırsakta üretilir (A şıkkı).'
   },
 
   // PARAGRAF 3: Kuantum Kriptografi (51-54)
@@ -940,16 +942,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Conventional digital encryption standards, such as RSA, rely on the mathematical difficulty of factoring enormous prime numbers using classical binary computers. However, the advent of fault-tolerant quantum computers threatens to render these algorithms utterly obsolete. Quantum computing leverages quantum mechanical superposition and entanglement to execute Shor\'s algorithm, cracking RSA encryptions in minutes rather than millennia. In response, cryptographers are deploying Quantum Key Distribution (QKD). Unlike mathematical encryption, QKD derives its security from the fundamental laws of quantum physics. Information is encoded onto individual photons in polarized quantum states. According to the Heisenberg uncertainty principle, any unauthorized attempt by an eavesdropper to intercept or measure a photon inevitably alters its quantum state, introducing detectable errors that alert the communicators immediately. Thus, QKD offers theoretically unbreakable security.',
     question: 'Classical encryption systems like RSA are vulnerable to quantum computing because _____',
     options: {
-      A: 'quantum computers can execute algorithms that factor prime numbers exponentially faster than classical computers.',
-      B: 'classical computers are incapable of transmitting digital data over optical fiber cables.',
-      C: 'photons naturally destroy all binary mathematics when exposed to room temperature.',
-      D: 'the Heisenberg uncertainty principle prevents classical algorithms from operating.',
-      E: 'Shor’s algorithm proved that prime numbers do not actually exist in nature.'
+      A: 'quantum computers can factor huge primes far faster.',
+      B: 'RSA keys can be intercepted while they travel as photons.',
+      C: 'classical computers will soon be unable to run RSA at all.',
+      D: 'quantum computers can detect every eavesdropping attempt.',
+      E: 'RSA was never mathematically difficult to break.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Kuantumun RSA\'yı Kırma Mekanizması: Shor algoritması ve asal çarpanlar',
-    trapWarning: 'RSA\'nın zayıflığı: kuantum bilgisayarların Shor algoritmasıyla devasa asal sayıları dakikalar içinde çarpanlarına ayırabilmesidir.',
+    trapWarning: 'B ve D, QKD paragrafındaki bilgileri RSA\'ya taşır. C abartılı bir sonuç, E ise metinle çelişir: RSA klasik bilgisayarlar için zordur ("millennia").',
     explanation: 'Kuantum bilgisayarlar asal çarpanlara ayırma işlemini klasik bilgisayarlardan katbekat hızlı gerçekleştirir (A şıkkı).'
   },
   {
@@ -958,16 +960,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '52. Soru - Paragraf 3',
     question: 'According to the passage, Quantum Key Distribution (QKD) differs from conventional encryption because QKD _____',
     options: {
-      A: 'bases its security on fundamental quantum physical principles rather than mathematical complexity.',
-      B: 'requires binary silicon supercomputers to factor prime integers.',
-      C: 'allows third-party eavesdroppers to alter polarized photons without detection.',
-      D: 'can only be transmitted over short copper electrical wires.',
-      E: 'has been proven mathematically insecure by theoretical cryptographers.'
+      A: 'relies on the laws of physics instead of mathematical difficulty.',
+      B: 'uses longer prime numbers than RSA does.',
+      C: 'can be run only on large, fault-tolerant quantum computers built in specialised laboratories.',
+      D: 'prevents eavesdroppers from measuring photons.',
+      E: 'uses Shor\'s algorithm to encode information.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'QKD ile Klasik Arasındaki Temel Fark',
-    trapWarning: 'Metin: "Unlike mathematical encryption, QKD derives its security from the laws of quantum physics" der.',
+    trapWarning: 'D ince tuzaktır: QKD dinlemeyi engellemez, fark edilmesini sağlar. B matematik temelli düşünceyi sürdürür, E ise Shor algoritmasını saldırı yerine koruma gibi sunar.',
     explanation: 'Fark: QKD güvenliğini matematiksel zorluktan değil, kuantum fiziğinin temel yasalarından alır (A şıkkı).'
   },
   {
@@ -976,16 +978,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '53. Soru - Paragraf 3',
     question: 'How do users of QKD know if an unauthorized eavesdropper is intercepting their communication?',
     options: {
-      A: 'Any measurement by an interceptor alters the photon’s quantum state, generating detectable errors.',
-      B: 'The optical fiber cables physically ignite and melt upon interception.',
-      C: 'The classical binary computer shuts down and permanently deletes all data.',
-      D: 'Eavesdroppers are legally required to notify the transmission partners.',
-      E: 'The Heisenberg uncertainty principle causes the computer monitor to flicker.'
+      A: 'Measuring a photon changes its state and produces detectable errors.',
+      B: 'The intercepted photons stop reaching the receiver altogether.',
+      C: 'The eavesdropper must first crack the key with Shor\'s algorithm.',
+      D: 'Each photon is encrypted with a separate RSA key that reveals any tampering.',
+      E: 'The polarization of all photons is reset automatically.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Casus Girişimi Nasıl Tespit Edilir? Fotonun durumunun bozulması',
-    trapWarning: 'Heisenberg ilkesine göre fotonu ölçmek durumunu bozar ve fark edilir hata üretir.',
+    trapWarning: 'Heisenberg: ölçüm durumu değiştirir ve hata üretir. B fotonun kaybolduğunu söyler (metin değişir der), C ve D konuyu klasik şifrelemeye kaydırır.',
     explanation: 'Casus tespiti: Fotonu ölçmeye çalışmak onun kuantum durumunu bozar ve hemen tespit edilen hatalar üretir (A şıkkı).'
   },
   {
@@ -994,16 +996,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '54. Soru - Paragraf 3',
     question: 'The author concludes that Quantum Key Distribution _____',
     options: {
-      A: 'provides an encryption method that is theoretically impossible to compromise undetected.',
-      B: 'is far too expensive and hazardous ever to be utilized in practical commercial applications.',
-      C: 'will be completely banned by international telecommunication treaties.',
-      D: 'relies on the same outdated mathematical foundations as 1970s binary protocols.',
-      E: 'cannot function unless classical computers are permanently discarded.'
+      A: 'offers security that is, in theory, unbreakable.',
+      B: 'will soon replace all mathematical encryption.',
+      C: 'is already used in most commercial networks.',
+      D: 'can resist quantum attacks only in the short term.',
+      E: 'is secure only as long as RSA remains unbroken.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Sonuç Çıkarımı: "offers theoretically unbreakable security"',
-    trapWarning: 'Metnin son cümlesi QKD\'nin teorik olarak kırılamaz güvenlik sunduğunu açıkça belirtir.',
+    trapWarning: 'Son cümle: "theoretically unbreakable security". B ve C metinde olmayan bir yaygınlık iddiasıdır; D ve E ise güvenliği sınırlayarak metinle çelişir.',
     explanation: 'Yazarın nihai yargısı: QKD fark edilmeden kırılması teorik olarak imkansız bir güvenlik sağlar (A şıkkı).'
   },
 
@@ -1015,16 +1017,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Since the mass commercialization of synthetic polymers in the mid-twentieth century, plastic pollution has permeated every aquatic ecological zone, from Arctic sea ice to the abyssal depths of the Mariana Trench. Because petroleum-based plastics are resilient to biological decay, they do not biodegrade; rather, ultraviolet radiation and wave abrasion fragment macroplastics into microscopic particulates known as microplastics. These particles act as chemical sponges, adsorbing hydrophobic organic toxins like polychlorinated biphenyls (PCBs) from the ambient marine environment. Filter-feeding marine fauna, including zooplankton, bivalves, and baleen whales, inadvertently ingest microplastics, mistaking them for organic prey. The physical blockage of digestive tracts, combined with the biochemical leaching of endocrine-disrupting additives like phthalates, impairs reproductive fecundity and induces chronic metabolic toxicity. Because microplastics bioaccumulate up the trophic pyramid, top apex predators and human seafood consumers increasingly absorb these persistent contaminants.',
     question: 'According to the passage, macroplastics in the ocean _____',
     options: {
-      A: 'break down into microscopic pieces through solar radiation and mechanical wave action.',
-      B: 'completely dissolve into harmless organic sugars within a few months.',
-      C: 'are digested safely by deep-sea bacterial colonies without leaving toxic residues.',
-      D: 'sink immediately into the Earth’s molten mantle through deep oceanic trenches.',
-      E: 'neutralize industrial toxins like PCBs, making seawater significantly cleaner.'
+      A: 'are broken into tiny pieces by sunlight and waves.',
+      B: 'slowly biodegrade into smaller organic particles.',
+      C: 'sink to the deepest parts of the ocean floor.',
+      D: 'absorb toxins before breaking into smaller pieces.',
+      E: 'are mostly swallowed by filter-feeding animals.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Plastiğin Parçalanma Süreci: Güneş ışığı ve dalga aşınması',
-    trapWarning: 'Plastikler biyolojik olarak çözünmez (biodegrade olmaz); fiziksel olarak mikro parçalara ayrılır.',
+    trapWarning: 'B tuzağı: metin plastiklerin "do not biodegrade" olduğunu açıkça söyler. D sıralamayı ters çevirir: toksinleri emen mikroplastiklerdir. E ise mikroplastiğe ait bilgiyi makroplastiğe uygular.',
     explanation: 'Makroplastikler: güneşin ultraviyole radyasyonu ve dalga aşınmasıyla mikroskobik parçalara (mikroplastiklere) ayrılır (A şıkkı).'
   },
   {
@@ -1033,16 +1035,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '56. Soru - Paragraf 4',
     question: 'It is stated in the passage that microplastics in seawater are dangerous partly because they _____',
     options: {
-      A: 'adsorb toxic chemical contaminants from the surrounding water and transfer them into marine animals.',
-      B: 'emit radioactive alpha particles that rapidly warm the temperature of the oceans.',
-      C: 'form massive floating reefs that block transoceanic container shipping routes.',
-      D: 'prevent marine phytoplankton from absorbing ambient solar radiation.',
-      E: 'evaporate into the atmosphere, causing permanent clouds over equatorial latitudes.'
+      A: 'soak up toxins from the water and carry them into animals.',
+      B: 'release PCBs that were added to them during manufacturing.',
+      C: 'dissolve slowly and change the chemistry of seawater.',
+      D: 'attract filter-feeding animals with their bright colours.',
+      E: 'block sunlight from reaching marine organisms.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Mikroplastiğin Tehlikesi: Toksin süngeri gibi çalışması',
-    trapWarning: 'Metin: "particles act as chemical sponges, adsorbing hydrophobic organic toxins" der.',
+    trapWarning: 'B ince tuzaktır: PCB\'ler çevreden emilir; üretimde eklenen katkılar ise ftalatlardır. D metinde olmayan bir neden uydurur (hayvanlar onları av sanır).',
     explanation: 'Tehlike: mikroplastiklerin sudaki zehirli kimyasalları sünger gibi emip canlıların bünyesine taşımasıdır (A şıkkı).'
   },
   {
@@ -1051,16 +1053,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '57. Soru - Paragraf 4',
     question: 'The passage suggests that the ingestion of microplastics by marine animals causes _____',
     options: {
-      A: 'digestive blockages and the release of harmful endocrine-disrupting chemicals.',
-      B: 'an immediate and rapid increase in reproductive fertility across all fish species.',
-      C: 'the complete mutation of bivalves into air-breathing terrestrial amphibians.',
-      D: 'the total elimination of zooplankton from the global maritime food chain.',
-      E: 'a dramatic acceleration in the metabolic rate of baleen whales.'
+      A: 'blocked digestion and exposure to hormone-disrupting additives.',
+      B: 'starvation because animals stop hunting their natural prey.',
+      C: 'immediate death in most filter-feeding species.',
+      D: 'higher fertility caused by endocrine-disrupting chemicals.',
+      E: 'damage only to the largest animals at the top of the food chain.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Canlılardaki Zararlar: Sindirim tıkanması ve hormon bozucular',
-    trapWarning: 'Metin: "blockage of digestive tracts, combined with leaching of endocrine-disrupting additives" der.',
+    trapWarning: 'D yönü tersine çevirir: metin üremenin azaldığını ("impairs fecundity") söyler. C ve E aşırı genellemedir; metin kronik etkiden ve tüm besin zincirinden bahseder.',
     explanation: 'Zararlar: sindirim kanalının tıkanması ve hormon bozucu kimyasalların vücuda sızmasıdır (A şıkkı).'
   },
   {
@@ -1069,16 +1071,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '58. Soru - Paragraf 4',
     question: 'The term "bioaccumulate" in the passage implies that contaminants _____',
     options: {
-      A: 'increase in concentration as they are passed up from lower to higher levels of the food chain.',
-      B: 'naturally dilute and vanish as larger predators consume smaller prey.',
-      C: 'spontaneously transform into nutritious proteins inside apex predators.',
-      D: 'are completely eliminated from the body through ordinary respiration.',
-      E: 'only affect primitive microbial organisms while sparing larger vertebrates.'
+      A: 'become more concentrated at each higher level of the food chain.',
+      B: 'spread evenly to all animals living in the same habitat.',
+      C: 'affect predators only after the contaminated prey has died.',
+      D: 'collect mainly in the bodies of small filter-feeding animals near the seabed.',
+      E: 'break down gradually as they pass from prey to predator.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Kavram Tanımı: Bioaccumulate (Besin zincirinde birikerek yoğunlaşmak)',
-    trapWarning: 'Biyo-birikim piramidin tepesine çıktıkça zehir yoğunluğunun katlanarak artmasıdır.',
+    trapWarning: '"Bioaccumulate up the trophic pyramid": yukarı çıktıkça yoğunlaşır. B eşit dağılım der, D birikimi alt basamakta bırakır, E ise tam tersini söyler.',
     explanation: 'Bioaccumulate: toksinlerin besin zincirinde alt basamaktan üst basamağa geçtikçe yoğunlaşarak artması anlamına gelir (A şıkkı).'
   },
 
@@ -1090,16 +1092,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Human language acquisition in early childhood represents one of the most astonishing feats of cognitive neurology. Without formal pedagogical instruction, human infants effortlessly master intricate phonological categories, hierarchical syntactical rules, and semantic subtleties of their native tongue by age four. Pioneering linguist Noam Chomsky proposed the concept of Universal Grammar, positing that human brains are genetically pre-wired with an innate Language Acquisition Device (LAD) that constrains grammatical possibilities. Contemporary neuroimaging supports this biological preparedness, revealing that specialized left-hemispheric cortical regions—notably Broca\'s and Wernicke\'s areas—exhibit rapid structural synaptic pruning in response to auditory speech exposure. However, developmental psycholinguists emphasize the critical importance of a "critical period." If a child is deprived of linguistic exposure during early neurodevelopment due to profound isolation or untreated auditory impairment, the neural circuitry required for fluent syntactic processing permanently atrophies, making subsequent native-level linguistic competence biologically unattainable.',
     question: 'According to Chomsky’s theory of Universal Grammar, human children learn language effortlessly because _____',
     options: {
-      A: 'the human brain possesses an innate, genetically determined capacity for grammatical structuring.',
-      B: 'parents provide dozens of hours of rigorous formal grammatical drills daily.',
-      C: 'all human languages utilize identical vocabulary and pronunciation patterns.',
-      D: 'infants do not require any exposure to auditory speech to master vocabulary.',
-      E: 'linguistic competence is completely independent of biological neurology.'
+      A: 'their brains are born with a built-in capacity for grammar.',
+      B: 'they hear a large amount of speech during the critical period.',
+      C: 'all human languages share the same basic vocabulary.',
+      D: 'their parents correct their grammatical mistakes constantly.',
+      E: 'Broca\'s area is fully developed at birth.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Chomsky\'nin Görüşü: Doğuştan gelen genetik dil kapasitesi (LAD)',
-    trapWarning: 'Chomsky çocukların resmi derslerle değil, doğuştan gelen genetik donanımla dili edindiğini savunur.',
+    trapWarning: 'B tuzağı metindeki başka bir görüşten (kritik dönem) gelir; soru özellikle Chomsky\'nin açıklamasını sorar. E ise metinle çelişir: bu alanlar konuşmaya maruz kaldıkça gelişir.',
     explanation: 'Chomsky\'ye göre: insan beyni doğuştan gelen ve genetik olarak belirlenmiş bir dil edinim mekanizmasına (LAD) sahiptir (A şıkkı).'
   },
   {
@@ -1108,16 +1110,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '60. Soru - Paragraf 5',
     question: 'Neuroimaging studies mentioned in the passage indicate that speech exposure _____',
     options: {
-      A: 'promotes structural synaptic pruning in specialized left-hemispheric brain regions.',
-      B: 'permanently damages Broca’s and Wernicke’s areas in young infants.',
-      C: 'forces both hemispheres of the brain to develop identical acoustic processing functions.',
-      D: 'causes infants to forget non-verbal visual communication cues completely.',
-      E: 'has no measurable effect on cerebral cortical development before adulthood.'
+      A: 'triggers synaptic pruning in specialized left-hemisphere areas.',
+      B: 'increases the number of synapses throughout the whole brain.',
+      C: 'is needed mainly for Broca\'s area to develop fully in the right hemisphere.',
+      D: 'has little effect until the child reaches age four.',
+      E: 'replaces the role of the innate Language Acquisition Device.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Nörogörüntüleme Bulgusu: Sol yarımküredeki sinaptik budanma',
-    trapWarning: 'Metin: "Broca\'s and Wernicke\'s areas exhibit rapid structural synaptic pruning" der.',
+    trapWarning: 'Pruning budama demektir, artış değil: B bu yüzden yanlıştır. C yarım küreyi, D zamanı değiştirir; E ise metindeki "supports this biological preparedness" ifadesiyle çelişir.',
     explanation: 'Nörogörüntüleme: konuşmaya maruz kalmanın beynin sol yarımküresindeki uzmanlaşmış alanlarda sinaptik budanmayı tetiklediğini gösterir (A şıkkı).'
   },
   {
@@ -1126,16 +1128,16 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '61. Soru - Paragraf 5',
     question: 'The passage highlights the "critical period" hypothesis to demonstrate that _____',
     options: {
-      A: 'linguistic exposure must occur during early neurodevelopment for full grammatical fluency to develop.',
-      B: 'adults can acquire secondary languages much more rapidly than young infants.',
-      C: 'children who are isolated in infancy naturally invent their own complex spoken languages.',
-      D: 'auditory impairment has zero impact on syntactic processing neural networks.',
-      E: 'pedagogical grammar training should only begin after an individual turns eighteen.'
+      A: 'children must hear language early in life to reach full fluency.',
+      B: 'Universal Grammar cannot fully explain how children learn language.',
+      C: 'older children learn grammar faster than younger ones.',
+      D: 'hearing loss permanently prevents all language learning.',
+      E: 'formal instruction is necessary after early childhood.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Critical Period (Kritik Dönem) Hipotezi Analizi',
-    trapWarning: 'Kritik dönemde dil maruziyeti olmazsa sinir devreleri körelir ve anadili seviyesi imkansızlaşır.',
+    trapWarning: 'B makul görünür çünkü paragraf "However" ile döner, ama metin Chomsky\'yi çürütmez; sadece maruz kalmanın şart olduğunu ekler. D aşırı genellemedir: metin "untreated" işitme kaybından ve anadil düzeyinden bahseder.',
     explanation: 'Kritik dönem: tam dilsel akıcılık için dil maruziyetinin erken nörogelişim evresinde gerçekleşmesi gerektiğini kanıtlar (A şıkkı).'
   },
   {
@@ -1145,15 +1147,15 @@ export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'What happens if a child is completely deprived of linguistic exposure during early childhood?',
     options: {
       A: 'The neural circuitry responsible for syntactic processing permanently atrophies.',
-      B: 'The child effortlessly masters multiple languages once they enter primary school.',
-      C: 'Broca’s area shifts completely to the right hemisphere of the cerebral cortex.',
-      D: 'The child develops superior mathematical and geometric reasoning abilities.',
-      E: 'The Language Acquisition Device compensates by enhancing auditory acuity.'
+      B: 'The child can still reach native-level fluency with intensive teaching.',
+      C: 'The child learns vocabulary normally but struggles with pronunciation.',
+      D: 'Broca\'s and Wernicke\'s areas develop more slowly but eventually catch up in adolescence.',
+      E: 'The Language Acquisition Device takes over the missing neural circuits.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Son Cümle Çıkarımı: Sinir devrelerinin kalıcı olarak körelmesi',
-    trapWarning: 'Metnin son cümlesi: "neural circuitry required for syntactic processing permanently atrophies" demektedir.',
+    trapWarning: 'Son cümle: devreler kalıcı olarak körelir ve anadil düzeyi "biologically unattainable" olur. B ve D bunun tersini, C ise metinde olmayan bir ayrımı ileri sürer.',
     explanation: 'Erken dönemde dilden mahrum kalan çocukta: sözdizimsel işlemeden sorumlu sinirsel devreler kalıcı olarak körelir (atrophies) (A şıkkı).'
   },
 
@@ -1177,16 +1179,16 @@ Dr. Evans:
 Dr. Miller:
 — Precisely. If clearing the plaques doesn\'t halt cognitive decline, we must urgently redirect research funding towards neuroinflammation and tau protein tangles.`,
     options: {
-      A: 'So you are implying that amyloid plaques might merely be a secondary symptom rather than the primary cause of neurodegeneration?',
-      B: 'Then we should double the antibody dosage and continue the trial for another five years without changes.',
-      C: 'Are you suggesting that clinical trials should never be monitored by independent regulatory agencies?',
-      D: 'The laboratory testing equipment was obviously uncalibrated, so the amyloid measurements are invalid.',
-      E: 'Most patients actually prefer taking oral tablets rather than undergoing intravenous antibody infusions.'
+      A: 'So you mean the plaques might be a side effect of the disease rather than its main cause?',
+      B: 'So you think the antibody simply needs to be given at an earlier stage of the disease?',
+      C: 'So you suspect that the cognitive tests we used were not sensitive enough to detect change?',
+      D: 'So you believe the trial was too short for any cognitive benefit to become measurable?',
+      E: 'So you think the reduction in plaques was mainly caused by the placebo effect itself?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Sonraki Cevaptan Geriye Yürüme: "Precisely. If clearing plaques doesn\'t halt decline..."',
-    trapWarning: 'Dr. Miller "Tam olarak öyle. Eğer plakları temizlemek gerilemeyi durdurmuyorsa yönümüzü değiştirmeliyiz" diyerek Dr. Evans\'ın hipotez şüphesini doğrular.',
+    trapWarning: 'B, C ve D, amiloid hipotezini kurtarmaya çalışan makul açıklamalardır. Ama Dr. Miller "Plakları temizlemek gerilemeyi durdurmuyorsa araştırmayı başka yöne çevirmeliyiz" der; yani hipotezin kendisini sorgulayan şıkkı onaylar.',
     explanation: 'Dr. Evans: "So you are implying that amyloid plaques might merely be a symptom rather than the cause?" (Yani plakların asıl neden değil, ikincil bir belirti olduğunu mu ima ediyorsun?). Doğru cevap A.'
   },
   {
@@ -1206,16 +1208,16 @@ Rachel:
 Thomas:
 — That would solve the problem completely. Electrochromic smart glass can tint automatically in response to sunlight intensity, blocking infrared radiation while allowing visible light through.`,
     options: {
-      A: 'What if we specify dynamic electrochromic glass that modulates solar heat gain without obstructing views?',
-      B: 'Then let us replace the entire glass design with solid concrete walls devoid of any windows.',
-      C: 'We can simply instruct library patrons to carry personal battery-operated handheld fans.',
-      D: 'Air-conditioning electricity costs are completely irrelevant because the municipality has unlimited funds.',
-      E: 'Glass panels cannot support the structural weight of the library\'s third-floor roof.'
+      A: 'What if we used smart glass that tints itself to block solar heat while still letting light in?',
+      B: 'What if we installed a larger cooling system that can cope with the extra heat in summer?',
+      C: 'What if we moved the whole glass facade to the north side, where it receives less direct sunlight?',
+      D: 'What if we planted tall trees along the south side to shade the glass in the afternoons?',
+      E: 'What if we reduced the glass area and added more artificial lighting inside the atrium?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Teknik Çözüm Önerisi & Sonraki Cümle Uyumu: "Electrochromic smart glass"',
-    trapWarning: 'Thomas son cümlede "Electrochromic smart glass would solve the problem" diyerek Rachel\'ın önerisini doğrular.',
+    trapWarning: 'Bütün öneriler ısı sorununa makul çözümlerdir. Fark Thomas\'ın cevabındadır: "Electrochromic smart glass can tint automatically" der. Bu yüzden boşlukta akıllı cam önerisi olmalıdır.',
     explanation: 'Rachel elektrostatik/akıllı cam kullanılmasını önerir (A şıkkı). Thomas da bu akıllı camın güneşe göre kararıp ısıyı kestiğini onaylar.'
   },
   {
@@ -1235,16 +1237,16 @@ Professor Alvarez:
 Liam:
 — So even if the Mexican forest reserves are protected, agricultural chemical practices thousands of kilometers away in the Midwest are decimating their food supply.`,
     options: {
-      A: 'Illegal logging plays a minor role, but the primary culprit is the widespread use of agricultural herbicides that destroy milkweed across North American breeding corridors.',
-      B: 'No, monarch butterflies have simply chosen to migrate to South America instead of Mexico this winter.',
-      C: 'The sanctuary rangers have deliberately relocated the butterflies to climate-controlled greenhouses.',
-      D: 'Butterflies are completely immune to any agricultural chemicals or industrial pesticides.',
-      E: 'The decline is entirely fictional because satellite imagery cannot detect individual insect wings.'
+      A: 'Logging plays a minor role; the main cause is herbicides destroying milkweed along their breeding routes.',
+      B: 'Yes, illegal logging inside the reserve has removed many of the old fir trees that the butterflies roost on in winter.',
+      C: 'Partly, but the unusually cold winter in Mexico also killed many butterflies on arrival.',
+      D: 'Not really; the main cause seems to be severe storms that struck during their migration south.',
+      E: 'It is too early to say, since this year\'s count may have been affected by poor weather.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Sonraki Cevaptan Geriye Yürüme: "Agricultural practices in the Midwest decimating food supply"',
-    trapWarning: 'Liam son cümlede "Demek ki orman korunsan bile binlerce kilometre uzaktaki herbisitler besinlerini yok ediyor" der.',
+    trapWarning: 'Liam "Orman korunsa bile Ortabatı\'daki tarım kimyasalları besinlerini yok ediyor" der. Bu yüzden Profesör boşlukta herbisitlerden bahsetmiş olmalıdır. B, C, D ve E başka nedenler verir.',
     explanation: 'Profesör Alvarez asıl suçlunun Kuzey Amerika\'daki yabani ot ilaçları (herbicides) olduğunu söyler (A şıkkı). Liam da bunu özetler.'
   },
   {
@@ -1264,16 +1266,16 @@ Miriam:
 David:
 — Excellent idea. By storing frequently requested catalog data in an in-memory Redis cache, we can serve ninety percent of read requests in milliseconds without querying the database at all.`,
     options: {
-      A: 'Could we introduce an in-memory caching layer to intercept and serve repetitive read queries?',
-      B: 'Why don\'t we just delete all customer review tables to reduce disk space?',
-      C: 'We should ask customers to avoid shopping on our platform during the evening hours.',
-      D: 'Relational databases are completely obsolete, so let us rewrite the entire platform in assembly code.',
-      E: 'Latency is beneficial because it encourages customers to browse more products while waiting.'
+      A: 'Could we add an in-memory cache to serve repeated read requests without touching the database?',
+      B: 'Could we upgrade the database server to a machine with more processors and memory?',
+      C: 'Could we rewrite the slowest SQL queries so that they need fewer complex joins?',
+      D: 'Could we move the whole database to a cloud provider that scales automatically at peak shopping times?',
+      E: 'Could we show customers a simpler checkout page during the busiest evening hours?'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Problem-Çözüm Eşleştirmesi & Sonraki Cümle Uyumu: "Redis cache / in-memory cache"',
-    trapWarning: 'David "Excellent idea... in-memory Redis cache" diyerek Miriam\'ın önerisini över.',
+    trapWarning: 'B, C ve D de veritabanı yükünü azaltmaya yönelik makul fikirlerdir. Ama David "Redis önbelleğinde tutarak okuma isteklerini veritabanına gitmeden karşılarız" der. Boşlukta önbellek önerisi olmalıdır.',
     explanation: 'Miriam veri tabanına yük binmesini engellemek için bir "in-memory caching" katmanı önerir (A şıkkı). David de bunu onaylar.'
   },
   {
@@ -1293,16 +1295,16 @@ Dr. Thorne:
 Dr. Vance:
 — I completely agree. Until an independent ground-based observatory confirms these precise fluctuations, we must refrain from making revolutionary claims.`,
     options: {
-      A: 'Before we speculate about exotic multiverse theories, we should conduct rigorous cross-calibration tests with ground-based radio arrays.',
-      B: 'Then let us publish an immediate press release announcing that Albert Einstein’s theory of relativity has been disproven.',
-      C: 'The cosmic microwave background is purely theoretical anyway, so slight temperature fluctuations are meaningless.',
-      D: 'We should permanently deactivate the orbital telescope to save electrical battery power.',
-      E: 'Inflationary cosmology has never been supported by any empirical observational evidence.'
+      A: 'Before we speculate about new physics, we should cross-check the data with ground-based telescopes.',
+      B: 'If this is new physics, it could be the most important cosmological discovery in decades.',
+      C: 'We should submit the results to a journal now so that other teams can begin to analyse them.',
+      D: 'The calibration of our receivers was checked last year, so an instrument error seems unlikely.',
+      E: 'Similar anomalies were reported by an earlier satellite, which strengthens the case for new physics.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Akademik İhtiyat / Doğrulama Çağrısı: "Until independent observatory confirms..."',
-    trapWarning: 'Dr. Vance "I agree. Until an independent observatory confirms..." diyerek Thorne\'un ihtiyatlı yaklaşımını onaylar.',
+    trapWarning: 'Dr. Vance "Bağımsız bir yer gözlemevi doğrulayana kadar devrim niteliğinde iddialardan kaçınmalıyız" der. Boşlukta ihtiyatlı bir doğrulama önerisi olmalıdır. B, D ve E yeni fizik iddiasını güçlendirir, C ise aceleci davranır.',
     explanation: 'Dr. Thorne: "Before we speculate, we should conduct rigorous cross-calibration tests" (Spekülasyon yapmadan önce bağımsız yer dizinleriyle kalibrasyon yapalım). Doğru cevap A.'
   },
 
@@ -1316,15 +1318,15 @@ Dr. Vance:
     question: 'Had municipal authorities retrofitted the urban drainage infrastructure following the 2018 floods, the recent torrential storm would not have caused such widespread destruction.',
     options: {
       A: 'Because city officials failed to upgrade the drainage system after the 2018 flooding, the recent severe storm resulted in extensive devastation.',
-      B: 'Even though city authorities had reinforced the drainage infrastructure after 2018, the recent torrential rain still caused catastrophic damages.',
-      C: 'The recent storm was so powerful that no amount of drainage infrastructure improvement after 2018 could have prevented the disaster.',
-      D: 'Unless municipal officials immediately reconstruct urban drainage systems, future storms will cause even more destruction than in 2018.',
-      E: 'Municipal authorities had already upgraded the drainage networks before 2018, yet the city was unprepared for torrential rainfall.'
+      B: 'Because city officials upgraded the drainage system after the 2018 floods, the recent torrential storm caused relatively little damage.',
+      C: 'Even if city officials had upgraded the entire drainage system after the 2018 floods, the recent storm would still have caused widespread destruction.',
+      D: 'If city officials do not upgrade the drainage system soon, future storms will cause even more destruction than the floods of 2018.',
+      E: 'The recent storm caused widespread destruction, so city officials have finally decided to upgrade the drainage system built after 2018.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Type 3 Devrik If Analizi: Had retrofitted (Yenileseydi yıkım olmazdı -> Yenilemediği için oldu)',
-    trapWarning: 'B şıkkında altyapının güçlendirildiği iddia edilir; oysa orijinal cümle güçlendirilmediğini (had retrofitted ... would not have) anlatır.',
+    trapWarning: 'Had ... would not have = yapılmadı, bu yüzden yıkım oldu. B olumsuzluğu kaldırır, C (Even if) koşulun etkisini yok sayar, D geleceğe taşır, E ise zaman ve sebep ilişkisini bozar.',
     explanation: 'Orijinal cümle: "Yetkililer 2018 sellerinden sonra altyapıyı yenileseydi, son fırtına bu kadar büyük yıkıma yol açmazdı." Birebir karşılık A şıkkıdır: "Yenilemedikleri için son fırtına büyük yıkıma yol açtı."'
   },
   {
@@ -1334,15 +1336,15 @@ Dr. Vance:
     question: 'So computationally demanding is real-time high-resolution climate modeling that even the world’s most advanced supercomputers require weeks to simulate a single century.',
     options: {
       A: 'Real-time high-resolution climate simulation requires so much computational power that simulating one century takes weeks, even on top supercomputers.',
-      B: 'Supercomputers can simulate several centuries of global climate change in a matter of minutes due to modern algorithmic efficiencies.',
-      C: 'Because climate change occurs very slowly, supercomputers only need to run simulations once every century.',
-      D: 'Advanced supercomputers have become so inexpensive that even small universities can simulate centuries of climate models in real time.',
-      E: 'Unless meteorologists simplify their mathematical climate equations, supercomputers will be unable to run any future planetary simulations.'
+      B: 'Even the most advanced supercomputers can now simulate a whole century of high-resolution climate in just a few hours, despite the heavy computational load.',
+      C: 'Real-time climate modeling demands so little computing power that ordinary computers can simulate a whole century within weeks.',
+      D: 'Simulating a century of high-resolution climate takes weeks only on older supercomputers, not on the most advanced ones.',
+      E: 'Because supercomputers require weeks to run, scientists have abandoned real-time high-resolution climate modeling altogether.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'So + Adj + that (Öylesine işlem gücü gerektirir ki...) Kalıp Eşleştirmesi',
-    trapWarning: 'B şıkkında dakikalar içinde simüle ettiğini söyler; orijinal cümle haftalar sürdüğünü belirtir.',
+    trapWarning: 'So ... that: işlem o kadar ağırdır ki en iyi süper bilgisayarlar bile haftalar harcar. B süreyi değiştirir, C yükü olumsuzlar, D "even" anlamını bozar, E ise metinde olmayan bir sonuç ekler.',
     explanation: 'So computationally demanding that (öylesine işlem gücü gerektirir ki) = requires so much computational power that takes weeks. Doğru cevap A.'
   },
   {
@@ -1352,15 +1354,15 @@ Dr. Vance:
     question: 'While regular cardiovascular workouts undeniably bolster heart longevity, their protective benefits against cognitive decline are maximized only when combined with mentally challenging tasks.',
     options: {
       A: 'Aerobic exercises certainly strengthen the heart, but their ability to guard against mental decline is greatest when accompanied by intellectual activities.',
-      B: 'Engaging in intellectually challenging tasks protects against cognitive decline much more effectively than any form of cardiovascular exercise.',
-      C: 'Unless individuals perform vigorous physical exercise daily, intellectual problem-solving will provide zero protection against dementia.',
-      D: 'Cardiovascular longevity is far more critical for brain function than any form of intellectual or puzzle-solving mental engagement.',
-      E: 'Heart health can be completely restored through intellectual puzzles alone, eliminating the necessity for physical aerobic conditioning.'
+      B: 'Regular cardiovascular workouts strengthen the heart, and they fully protect against cognitive decline even without mental challenges.',
+      C: 'Mentally challenging tasks protect the heart just as effectively as regular cardiovascular workouts protect against cognitive decline.',
+      D: 'Cardiovascular workouts may not improve heart longevity, but they protect against cognitive decline when combined with mental tasks.',
+      E: 'Mentally challenging tasks protect against cognitive decline most effectively only when they are combined with cardiovascular workouts.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Zıtlık & Şart Analizi: While undeniably bolsters ... maximized only when combined with...',
-    trapWarning: 'B şıkkı zihinsel egzersizin spordan daha üstün olduğunu iddia eder; oysa metin kombinasyonu (birlikte yapılmasını) savunur.',
+    trapWarning: 'Ana fikir: sporun kalbe faydası kesin, zihinsel gerilemeye karşı koruması ise zihinsel görevlerle birleşince en yüksek düzeye çıkar. B şartı kaldırır, C konuyu değiştirir, D ilk yargıyı olumsuzlar, E koşulu tersine çevirir.',
     explanation: 'Orijinal cümle: Kardiyovasküler egzersiz kalp sağlığını kesinlikle artırsa da, zihinsel gerilemeye karşı koruyucu faydası ancak zihinsel uğraşla birleştirildiğinde en üst düzeye çıkar. Birebir karşılık A\'dır.'
   },
   {
@@ -1370,15 +1372,15 @@ Dr. Vance:
     question: 'Scarcely had the volcanic observatory detected the harmonic tremor beneath the caldera when civil defense authorities initiated mandatory civilian evacuations.',
     options: {
       A: 'Civil defense officials ordered mandatory civilian evacuations almost immediately after the observatory identified the harmonic tremor under the caldera.',
-      B: 'Civil defense authorities waited until the volcanic caldera began erupting violently before issuing any evacuation orders for residents.',
-      C: 'Even though harmonic tremors were detected beneath the caldera, civilian evacuations were deemed unnecessary by emergency officials.',
-      D: 'Volcanic observatories have difficulty detecting harmonic tremors because magma movements under calderas are completely silent.',
-      E: 'Civilian populations voluntarily evacuated their homes long before the volcanic observatory detected any seismic tremors.'
+      B: 'Civil defense authorities ordered evacuations some time after the observatory had recorded several tremors beneath the caldera.',
+      C: 'Civil defense authorities ordered evacuations shortly before the observatory detected the harmonic tremor beneath the caldera.',
+      D: 'As soon as civil defense authorities ordered evacuations, the observatory detected a harmonic tremor beneath the caldera.',
+      E: 'The observatory had hardly detected the harmonic tremor, yet civil defense authorities decided that evacuations were unnecessary.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Scarcely had ... when = Almost immediately after (-er etmez / anında)',
-    trapWarning: 'Scarcely ... when anında gerçekleşen eylemi anlatır. B şıkkı gecikmeli yapıldığını iddia eder.',
+    trapWarning: 'Scarcely ... when = -ir -mez. Titreşim tespit edilir edilmez tahliye başlamıştır. B gecikme ekler, C sırayı tersine çevirir, D olayların yerini değiştirir, E ise tahliyeyi olumsuzlar.',
     explanation: 'Scarcely had detected ... when initiated = titreşimi tespit eder etmez tahliyeyi başlattı (almost immediately after). Doğru cevap A.'
   },
 
@@ -1392,15 +1394,15 @@ Dr. Vance:
     question: `Throughout the evolution of complex life, bioluminescence—the biochemical production of visible light by living organisms—has evolved independently in over forty distinct phylogenetic lineages. In the sunless depths of the mesopelagic and bathypelagic ocean, where solar rays cannot penetrate, light generation is an indispensable survival strategy. Organisms utilize luciferin-luciferase reactions to produce blue-green wavelengths that travel furthest through seawater. (_____) For example, the anglerfish dangles a luminous bacterial lure to attract prey directly toward its jaws, while lanternfish emit ventral light to match downwelling downwelling surface luminescence, effectively rendering themselves invisible to predators swimming below.`,
     options: {
       A: 'This biochemical illumination serves multifaceted ecological functions, ranging from predatory entrapment to counterillumination camouflage.',
-      B: 'Consequently, deep-sea organisms have completely lost their biological eyes through millions of years of evolutionary regression.',
-      C: 'Furthermore, terrestrial land mammals frequently utilize bioluminescence to navigate through subterranean forest caves at night.',
-      D: 'However, producing organic light requires so much caloric energy that most bioluminescent fish die of severe malnutrition.',
-      E: 'Instead, marine biologists have proven that deep-sea fish generate light strictly as an accidental byproduct of kidney filtration.'
+      B: 'Red light, by contrast, is absorbed within a few metres and is therefore rarely produced by deep-sea animals.',
+      C: 'Some species produce light themselves, while others rely on bioluminescent bacteria living in their tissues.',
+      D: 'Scientists still disagree about why this ability has evolved so many separate times in the ocean.',
+      E: 'Most bioluminescent animals, however, live in shallow coastal waters rather than in the deep sea.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Genel Tanımdan Örneğe Geçiş: Boşluktan sonraki "For example" cümlesi avlanma ve kamuflajı açıklar.',
-    trapWarning: 'Boşluktan sonraki cümle avlanma (predatory lure) ve kamuflajdan (camouflage) bahseder. Boşluk bu iki fonksiyonu genelleyen A şıkkıdır.',
+    trapWarning: 'Sonraki cümle "For example" ile avlanma ve kamuflaj örnekleri verir; yani boşlukta ışığın işlevleri genel olarak söylenmelidir. B ve C konuyla ilgili ama örneklerin genellemesini yapmaz; E ise metinle çelişir.',
     explanation: 'A şıkkı: "This illumination serves multifaceted functions, ranging from predatory entrapment to camouflage" (Bu ışık avlanmadan kamuflaja kadar çok yönlü işlevler görür). Ardından gelen "For example" bunu kanıtlar. Doğru cevap A.'
   },
   {
@@ -1410,15 +1412,15 @@ Dr. Vance:
     question: `Soil salinization poses a devastating threat to global agricultural food security, especially in arid and semi-arid river basins. When farmers utilize poorly managed flood irrigation in dry climates, intense evaporation draws subterranean groundwater to the soil surface. (_____) As these toxic salt concentrations accumulate in the root zone, they exert intense osmotic pressure, preventing crops from absorbing essential moisture and eventually rendering fertile croplands completely barren.`,
     options: {
       A: 'As the surface water evaporates, dissolved mineral salts are left behind in the upper topsoil layers.',
-      B: 'Consequently, crop yields increase dramatically because mineral salts act as powerful natural fertilizers.',
-      C: 'Modern farmers have therefore abandoned all chemical fertilizers in favor of pure seawater irrigation.',
-      D: 'Subterranean groundwater, in contrast, contains zero trace minerals or dissolved chemical ions.',
-      E: 'Heavy monsoon rains invariably wash all soil nutrients into deep geological bedrock formations.'
+      B: 'Drip irrigation, by contrast, delivers water directly to the roots and reduces evaporation considerably.',
+      C: 'In some regions, farmers have responded by switching to crops that tolerate higher levels of salt.',
+      D: 'Salinization already affects millions of hectares of farmland, particularly in South Asia and the Middle East.',
+      E: 'This groundwater, however, is usually fresh and therefore improves the quality of the topsoil.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Mantıksal Adım Takibi: Buharlaşma suyu çeker -> Su buharlaşınca tuz geride kalır -> Tuz kökleri kurutur.',
-    trapWarning: 'Önceki cümle buharlaşmadan bahsetti; boşlukta su buharlaşınca tuzun üst katmanda biriktiği (salts left behind) söylenmelidir.',
+    trapWarning: 'Sonraki cümle "As these toxic salt concentrations accumulate" der; "these" göndergesi için boşlukta tuzların toprağın üstünde kaldığı söylenmelidir. B ve C çözümleri erken verir, D genel bilgi verir, E ise sonuçla çelişir.',
     explanation: 'A şıkkı su buharlaşınca tuzların üst toprak katmanında kaldığını açıklar. Sonraki cümle bu tuz konsantrasyonunun (these toxic salt concentrations) etkisini anlatır. Doğru cevap A.'
   },
   {
@@ -1428,15 +1430,15 @@ Dr. Vance:
     question: `For decades, planetary geologists considered Mercury to be a geologically dead world—a desolate, heavily cratered iron sphere that had cooled into complete inactivity billions of years ago. However, high-resolution imagery captured by NASA’s MESSENGER spacecraft has overturned this consensus. (_____) These tectonic landforms indicate that as Mercury\'s disproportionately colossal metallic core has cooled and contracted, the planet’s outer crust has literally buckled and shrunk by several kilometers, a geological process that may continue into the present day.`,
     options: {
       A: 'Orbital instruments revealed extensive fault scarps, known as lobate scarps, cutting across relatively young impact craters.',
-      B: 'The probe discovered that Mercury possesses liquid water oceans covering over fifty percent of its surface.',
-      C: 'Scientists proved that Mercury has maintained an identical planetary diameter since the birth of the solar system.',
-      D: 'Commercial mining satellites have established automated titanium extraction factories near Mercury\'s equator.',
-      E: 'Astronomers concluded that Mercury was originally an icy moon ejected from the orbit of Neptune.'
+      B: 'The spacecraft also detected water ice inside permanently shadowed craters near the poles of Mercury.',
+      C: 'MESSENGER was the first spacecraft to orbit Mercury, completing more than four thousand orbits.',
+      D: 'Mercury\'s iron core, which makes up most of its volume, is unusually large for a planet of its size.',
+      E: 'Its surface, however, shows no signs of having changed since the planet first formed.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Referans Kelime Uyumu: Boşluktan sonra gelen "These tectonic landforms"',
-    trapWarning: 'Boşluktan sonraki cümle "These tectonic landforms" (Bu tektonik yer şekilleri) der. Demek ki boşlukta bu şekiller (fault scarps / lobate scarps) tanıtılmalıdır!',
+    trapWarning: 'Sonraki cümle "These tectonic landforms" der; boşlukta bu yer şekilleri tanıtılmalıdır. B ve C görev hakkında doğru bilgiler verir ama tektonik şekillerden bahsetmez; D çekirdeği erken açıklar, E ise metinle çelişir.',
     explanation: 'A şıkkı tektonik kırık yamaçlarını (fault scarps) tanıtır; sonraki cümle "These tectonic landforms" diyerek bu açıklamayı devam ettirir. Doğru cevap A.'
   },
   {
@@ -1446,15 +1448,15 @@ Dr. Vance:
     question: `In classical economics, consumers were long assumed to be strictly rational agents who systematically calculate marginal utilities to maximize their personal financial welfare. However, the emergence of behavioral economics in the late twentieth century dismantled this theoretical abstraction. (_____) Consequently, human decision-makers consistently deviate from idealized economic models, exhibiting cognitive biases like loss aversion and present bias that lead to systematically suboptimal financial choices.`,
     options: {
       A: 'Pioneering researchers demonstrated that human cognition relies on heuristic shortcuts that are vulnerable to emotional biases.',
-      B: 'Classical mathematical formulas have proven completely infallible in predicting daily consumer spending habits.',
-      C: 'Consumers invariably calculate long-term investment probabilities with absolute statistical perfection.',
-      D: 'Modern corporations have completely eliminated advertising because consumers only buy essential goods.',
-      E: 'Behavioral economists proved that human beings possess boundless computing power in their prefrontal cortex.'
+      B: 'Classical economists, however, continued to defend the rational agent model well into the 1990s.',
+      C: 'Behavioral economics draws on insights from psychology, neuroscience and sociology.',
+      D: 'Governments have since used these insights to design policies that nudge people toward better choices.',
+      E: 'These researchers confirmed that people usually make the choices that best serve their financial interests.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Teorik Geçiş & Boşluk Sonrası Uyumu: "cognitive biases like loss aversion"',
-    trapWarning: 'Boşluktan sonra "bilişsel önyargılar sergilerler" denmektedir. Boşluk insanın kestirme yollara (heuristics) ve önyargılara dayandığını söyleyen A şıkkıdır.',
+    trapWarning: 'Sonraki cümle "Consequently, people deviate from idealized models" der; boşlukta bunun nedeni (zihinsel kestirmeler ve önyargılar) verilmelidir. B ve C konuyla ilgili ama neden vermez; D sonucu erken verir, E ise sonuçla çelişir.',
     explanation: 'A şıkkı bilişsel kestirmelerin ve duygusal önyargıların rolünü açıklar; sonraki cümle "Consequently, decision-makers deviate..." diyerek bunu doğrular. Doğru cevap A.'
   },
 
@@ -1465,7 +1467,7 @@ Dr. Vance:
     id: 'm3_q76',
     type: 'irrelevant_sentence',
     title: '76. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Photosynthesis in terrestrial plants is catalyzed by the enzyme RuBisCO, which captures atmospheric carbon dioxide to synthesize organic sugars. (II) However, RuBisCO is notoriously inefficient because it frequently binds with ambient oxygen instead of carbon dioxide, initiating an energy-wasting metabolic detour known as photorespiration. (III) Under high temperatures, this enzymatic flaw can reduce agricultural crop yields by up to forty percent in major food crops like wheat and soybeans. (IV) Modern combine harvesters manufactured in North America utilize GPS guidance to navigate grain fields with centimeter accuracy. (V) To circumvent this biological bottleneck, bioengineers are attempting to install more efficient bacterial carbon-concentrating mechanisms into staple food crops.`,
+    question: `(I) Photosynthesis in terrestrial plants is catalyzed by the enzyme RuBisCO, which captures atmospheric carbon dioxide to synthesize organic sugars. (II) However, RuBisCO is notoriously inefficient because it frequently binds with ambient oxygen instead of carbon dioxide, initiating an energy-wasting metabolic detour known as photorespiration. (III) RuBisCO is often described as the most abundant protein on Earth, since it is present in vast quantities in every green leaf. (IV) Under high temperatures, this enzymatic flaw can reduce agricultural crop yields by up to forty percent in major food crops like wheat and soybeans. (V) To circumvent this biological bottleneck, bioengineers are attempting to install more efficient bacterial carbon-concentrating mechanisms into staple food crops.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1473,17 +1475,17 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'C',
     difficulty: 'Orta',
-    tacticUsed: 'GPS Biçerdöver Sapması: Paragraf RuBisCO enziminin verimsizliğini ve genetik çözümleri anlatırken IV. cümle GPS\'li biçerdöverden bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri enzimin fotosentezdeki kusurunu ve biyomühendislik çözümlerini anlatır. IV alakasız tarım makinesidir.',
-    explanation: 'IV numaralı cümle GPS\'li biçerdöverlerden bahsederek fotosentez enzimi kusuru konusunun akışını bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf RuBisCO\'nun verimsizliğini, bunun ürün kaybına etkisini ve biyomühendislik çözümünü anlatan bir sorun-çözüm akışıdır. III. cümle de enzimden söz eder ama verimsizlik konusundan bolluğuna geçerek II. ve IV. cümle arasındaki bağı koparır. Doğru cevap C (III).'
   },
   {
     id: 'm3_q77',
     type: 'irrelevant_sentence',
     title: '77. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) The invention of the printing press by Johannes Gutenberg in the mid-fifteenth century catalyzed an unprecedented democratization of knowledge across Europe. (II) Prior to movable type, books were laboriously transcribed by hand in monastic scriptoria, restricting literacy to wealthy elites and clergy. (III) Gutenberg\'s mechanical press drastically slashed book production costs, enabling ideas of the Protestant Reformation and the Scientific Revolution to propagate across continental borders. (IV) The vintage antique furniture market in modern London features rare sixteenth-century oak reading desks that sell for thousands of pounds. (V) Within several decades of its debut, millions of printed volumes circulated throughout European urban centers, permanently destabilizing established authoritarian information monopolies.`,
+    question: `(I) The invention of the printing press by Johannes Gutenberg in the mid-fifteenth century catalyzed an unprecedented democratization of knowledge across Europe. (II) Prior to movable type, books were laboriously transcribed by hand in monastic scriptoria, restricting literacy to wealthy elites and clergy. (III) Gutenberg\'s mechanical press drastically slashed book production costs, enabling ideas of the Protestant Reformation and the Scientific Revolution to propagate across continental borders. (IV) Within several decades of its debut, millions of printed volumes circulated throughout European urban centers, permanently destabilizing established authoritarian information monopolies. (V) Gutenberg himself, however, died in relative poverty after losing control of his printing workshop to his financial backer.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1491,17 +1493,17 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'E',
     difficulty: 'Orta',
-    tacticUsed: 'Antika Mobilya Piyasası Sapması: Paragraf matbaanın bilgi devrimini anlatırken IV. cümle Londra\'daki antika masa fiyatlarından bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri matbaanın bilgiye erişim ve toplumsal dönüşüm üzerindeki etkisidir. IV antika mobilyadır.',
-    explanation: 'IV numaralı cümle Londra antika mobilya pazarından bahsederek Gutenberg matbaasının entelektüel devrimini bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf matbaanın bilgiyi nasıl yaygınlaştırdığını ve Avrupa\'daki etkisini anlatır. V. cümle Gutenberg\'den söz etse de toplumsal etkiden mucidin kişisel hayatına geçer. Doğru cevap E (V).'
   },
   {
     id: 'm3_q78',
     type: 'irrelevant_sentence',
     title: '78. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Coral bleaching occurs when marine heatwaves cause symbiotic zooxanthellae algae to be expelled from coral tissues. (II) Deprived of these photosynthetic algae, corals lose their vibrant coloration and primary nutritional source, exposing their white calcium carbonate skeleton. (III) If ocean temperatures return to baseline levels within several weeks, surviving corals can gradually reacquire algae and recover. (IV) Tropical resort hotels frequently provide complimentary scuba diving lessons for vacationing families during the winter holidays. (V) However, under prolonged thermal stress, massive coral mortality ensues, triggering the ecological collapse of surrounding marine reef biodiversity.`,
+    question: `(I) Coral bleaching occurs when marine heatwaves cause symbiotic zooxanthellae algae to be expelled from coral tissues. (II) Some corals are also threatened by crown-of-thorns starfish, which feed directly on coral tissue. (III) Deprived of these photosynthetic algae, corals lose their vibrant coloration and primary nutritional source, exposing their white calcium carbonate skeleton. (IV) If ocean temperatures return to baseline levels within several weeks, surviving corals can gradually reacquire algae and recover. (V) However, under prolonged thermal stress, massive coral mortality ensues, triggering the ecological collapse of surrounding marine reef biodiversity.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1509,17 +1511,17 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'B',
     difficulty: 'Orta',
-    tacticUsed: 'Tatil Köyü Scuba Dersi Sapması: Paragraf mercan ağarmasını anlatırken IV. cümle tatil köyü dalış dersinden bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri mercan ağarmasının biyolojisi ve ölüm tehlikesidir. IV turizm reklamıdır.',
-    explanation: 'IV numaralı cümle tatil köylerindeki dalış derslerinden bahsederek mercan ağarması felaketini bölen ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf ağarmanın nedenini, kısa süreli sıcaklıkta toparlanmayı ve uzun süreli sıcaklıkta ölümü sırayla anlatır. II. cümle de mercanlara yönelik bir tehditten söz eder ama ağarma sürecinden ayrı bir tehdide geçerek I. ve III. cümle arasındaki neden-sonuç zincirini keser. Doğru cevap B (II).'
   },
   {
     id: 'm3_q79',
     type: 'irrelevant_sentence',
     title: '79. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) The development of CRISPR-Cas9 genetic editing represents one of the most powerful molecular tools in contemporary biological science. (II) Originally discovered as an adaptive immune defense system in bacteria against viral phages, researchers repurposed the Cas9 enzyme to execute targeted double-stranded DNA cuts with pinpoint precision. (III) By introducing customized guide RNA molecules, scientists can knock out defective genetic alleles or insert corrective therapeutic sequences. (IV) Medical laboratory coats are traditionally dyed white to reflect hygiene and allow immediate detection of chemical stains. (V) This programmable genetic precision holds extraordinary promise for curing monogenic hereditary disorders such as sickle cell anemia and cystic fibrosis.`,
+    question: `(I) The development of CRISPR-Cas9 genetic editing represents one of the most powerful molecular tools in contemporary biological science. (II) Originally discovered as an adaptive immune defense system in bacteria against viral phages, researchers repurposed the Cas9 enzyme to execute targeted double-stranded DNA cuts with pinpoint precision. (III) By introducing customized guide RNA molecules, scientists can knock out defective genetic alleles or insert corrective therapeutic sequences. (IV) The scientists who adapted CRISPR for gene editing were awarded the Nobel Prize in Chemistry in 2020. (V) This programmable genetic precision holds extraordinary promise for curing monogenic hereditary disorders such as sickle cell anemia and cystic fibrosis.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1529,15 +1531,15 @@ Dr. Vance:
     },
     answer: 'D',
     difficulty: 'Orta',
-    tacticUsed: 'Beyaz Laboratuvar Önlüğü Sapması: Paragraf CRISPR-Cas9 gen düzenleme mekanizmasını anlatırken IV. cümle doktor önlüğünden bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri CRISPR teknolojisini anlatır. IV önlük kumaşı detayıdır.',
-    explanation: 'IV numaralı cümle beyaz laboratuvar önlüklerinden bahsederek devrim niteliğindeki gen düzenleme teknolojisi akışını bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf CRISPR\'ın nasıl çalıştığını ve kalıtsal hastalıkların tedavisindeki vaadini anlatır. IV. cümle de CRISPR ile ilgilidir ama yöntemden ödüle geçer; V. cümledeki "this programmable genetic precision" ifadesi III. cümleye bağlanır. Doğru cevap D (IV).'
   },
   {
     id: 'm3_q80',
     type: 'irrelevant_sentence',
     title: '80. Soru - Anlam Bütünlüğünü Bozan Cümle',
-    question: `(I) Urban public transit systems are essential for curtailing metropolitan traffic congestion and municipal carbon emissions. (II) Electric subways and bus rapid transit networks transport millions of commuters daily with far greater thermodynamic efficiency than private single-occupancy vehicles. (III) Investments in dedicated bus lanes and signal priority significantly accelerate transit speeds, incentivizing citizens to leave automobiles at home. (IV) Classic vintage sports car exhibitions in Monaco attract high-net-worth vehicle collectors from across the globe every May. (V) Furthermore, expanding reliable urban public transport reduces socioeconomic inequality by connecting disenfranchised suburban communities to central employment corridors.`,
+    question: `(I) Urban public transit systems are essential for curtailing metropolitan traffic congestion and municipal carbon emissions. (II) Electric subways and bus rapid transit networks transport millions of commuters daily with far greater thermodynamic efficiency than private single-occupancy vehicles. (III) Many cities, however, still struggle to fund the maintenance of ageing subway lines built more than a century ago. (IV) Investments in dedicated bus lanes and signal priority significantly accelerate transit speeds, incentivizing citizens to leave automobiles at home. (V) Furthermore, expanding reliable urban public transport reduces socioeconomic inequality by connecting disenfranchised suburban communities to central employment corridors.`,
     options: {
       A: 'I',
       B: 'II',
@@ -1545,10 +1547,13 @@ Dr. Vance:
       D: 'IV',
       E: 'V'
     },
-    answer: 'D',
+    answer: 'C',
     difficulty: 'Orta',
-    tacticUsed: 'Monako Klasik Araba Fuarı Sapması: Paragraf toplu taşımayı anlatırken IV. cümle Monako\'daki zengin klasik araba fuarından bahseder.',
-    trapWarning: 'I, II, III ve V cümleleri kentsel toplu taşımanın faydaları ve sosyal eşitliğidir. IV lüks spor araba hobisidir.',
-    explanation: 'IV numaralı cümle Monako\'daki klasik spor araba sergisinden bahsederek kentsel toplu taşıma planlaması konusunu bozan ilgisiz cümledir (D şıkkı).'
+    tacticUsed: 'Her cümlenin odağını iki kelimeyle özetle; aynı konuda kalıp odağı kaydıran cümleyi bul.',
+    trapWarning: 'Ara cümle konu dışı değildir; paragrafın anahtar kelimelerini tekrarlar ama ana fikre hizmet etmez.',
+    explanation: 'Paragraf toplu taşımanın trafiği, emisyonları ve eşitsizliği azaltan yararlarını sıralar. III. cümle de toplu taşımadan söz eder ama yararlar listesinden bakım finansmanı sorununa geçerek "Furthermore" ile devam eden akışı bozar. Doğru cevap C (III).'
   }
 ];
+
+// Options are reordered per question so the answer key is not concentrated in A.
+export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = fillGroupPassages(shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_3));

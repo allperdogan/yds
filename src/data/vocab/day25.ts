@@ -21,7 +21,7 @@ export const day25Words: YdsWord[] = [
     "exampleEn": "The theater critic was infamous for his acerbic reviews, often tearing apart new productions with biting sarcasm.",
     "exampleTr": "Tiyatro eleştirmeni, iğneleyici alaycılığıyla yeni oyunları yerin dibine soktuğu zehir zemberek eleştirileriyle nam salmıştı.",
     "ydsTip": "Genellikle keskin, yaralayıcı eleştiriler ve üsluplar (acerbic wit/commentary) için kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 25,
     "mnemonic": "💡 ÇAĞRIŞIM: 'ASİT-BİK' -> Asit gibi yakıcı, zehir zemberek ve iğneleyici (acerbic) sözler."
   },
@@ -71,7 +71,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "'aim for / strive for' ile eşanlamlıdır; genellikle yüksek idealleri hedeflemeyi anlatır.",
     "frequency": "high",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'ASPİRİN' -> Baş ağrısı çeken biri rahatlamaya nasıl can atarsa, insan da ideallerine öyle ASPIRE eder (arzu duyar, can atar)."
+    "mnemonic": "💡 ÇAĞRIŞIM: A + SPIRE (nefes almak; \"respiration\"). Bir hedefe nefes nefese koşmak = can atmak, arzulamak. Daima \"aspire TO\"."
   },
   {
     "id": "w859",
@@ -213,7 +213,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "'Intentionally / purposely' ile eşanlamlıdır; 'accidentally / inadvertently' zıttıdır.",
     "frequency": "ultra",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DELİL-BİR-ET' -> Ortada sağlam bir delil varsa, o eylem kaza değil DELIBERATELY (kasten, bilerek) yapılmıştır."
+    "mnemonic": "💡 ÇAĞRIŞIM: DELIBERATE (teraziye koyup tartılmış) sıfatının zarfı: kaza ile değil, düşünülüp tartılarak = kasten, bilerek."
   },
   {
     "id": "w1249",
@@ -336,7 +336,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "Hem duman/sis gibi şeylerin dağılması hem de miras/kaynakların heba edilmesi anlamındadır.",
     "frequency": "high",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DİS-SİP-ATEŞ' -> Duman gökyüzünde puf diye DISSIPATE oldu (dağılıp kayboldu)."
+    "mnemonic": "💡 ÇAĞRIŞIM: DIS (dört bir yana) + SIP (atmak, saçmak). Sis, duman ya da öfke dört bir yana saçılıp kaybolur = dağılmak; parayı saçmak = israf etmek."
   },
   {
     "id": "w84",
@@ -364,7 +364,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "'Drastic measures / changes / cuts' kolokasyonları kriz yönetimi metinlerinde çok sık yer alır.",
     "frequency": "ultra",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'DRAKULA-STİK' -> Drakula gibi dehşet verici, sert ve köklü (drastic) tedbirler."
+    "mnemonic": "💡 ÇAĞRIŞIM: Yunanca \"drastikos\" (etkili, sert etki eden). Tıptaki \"drastik önlem\" gibi: köklü, sert ve ani."
   },
   {
     "id": "w1279",
@@ -410,7 +410,7 @@ export const day25Words: YdsWord[] = [
     "exampleEn": "The coastal valley enjoys an equable climate year-round, with mild winters and pleasantly cool summers.",
     "exampleTr": "Kıyı vadisi; ılıman kışları ve hoş bir serinlikteki yazlarıyla yıl boyunca dengeli ve ılıman bir iklime sahiptir.",
     "ydsTip": "Hem hava şartlarının ılımanlığı (equable climate) hem de bir insanın sakin ve dengeli mizacı için kullanılır.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 25,
     "mnemonic": "💡 ÇAĞRIŞIM: 'EQUAL (Eşit/Dengeli)' -> Sıcaklığı hep dengeli, aşırılıkları olmayan EQUABLE (ılıman, dengeli) iklim."
   },
@@ -531,7 +531,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "Siyasette söylenenle yapılanın taban tabana zıt olması (insincerity, duplicity) durumudur.",
     "frequency": "high",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'HİPOKRİT' -> Hipokrat yemini edip hastayı soyan riyakarın yaptığı HYPOCRISY'dir (ikiyüzlülük)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Yunanca HYPO (altında) + KRISIS (rol, cevap): tiyatroda maskenin altından rol yapan aktör. İçi dışı farklı olmak = ikiyüzlülük."
   },
   {
     "id": "w273",
@@ -606,7 +606,7 @@ export const day25Words: YdsWord[] = [
     "exampleEn": "Modern industrialized societies have developed an insatiable appetite for rare minerals required in high-tech gadgets.",
     "exampleTr": "Modern sanayileşmiş toplumlar, yüksek teknolojili cihazlarda ihtiyaç duyulan nadir minerallere karşı doymak bilmez bir iştah geliştirdi.",
     "ydsTip": "'Satisfy' (tatmin etmek) kökünden gelir; 'in- (olumsuz)' + 'satiable (doyurulabilir)'.",
-    "frequency": "ultra",
+    "frequency": "high",
     "groupDay": 25,
     "mnemonic": "💡 ÇAĞRIŞIM: 'İN-SATISFY' -> Asla tatmin (satisfy) edilemeyen, gözü doymaz, obur (insatiable)."
   },
@@ -659,7 +659,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "'Endanger / imperil / put at risk' ile birebir eşanlamlıdır; YDS çevre ve ekonomi sorularında sıkça doğru cevaptır.",
     "frequency": "ultra",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'JEOPARDY (Tehlike oyunu)' -> Hayatını tehlikeye atıp riskli bir kumar oynamak (jeopardize)."
+    "mnemonic": "💡 ÇAĞRIŞIM: JEOPARDY (yazı tura gibi belirsiz tehlike) + IZE (yapmak). Bir şeyi tehlikeli bir kumara sokmak = tehlikeye atmak."
   },
   {
     "id": "w919",
@@ -707,7 +707,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "'Thorough / painstaking / punctilious' ile eşanlamlıdır; bilimsel araştırma titizliğini ifade eder.",
     "frequency": "ultra",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'METRE-KULUS' -> Her şeyi santimi santimine, metreyle ölçer gibi kılı kırk yaran METICULOUS (titiz) araştırmacı."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince METUS (korku). Hata yapmaktan korkacak kadar dikkatli = kılı kırk yaran, titiz."
   },
   {
     "id": "w1030",
@@ -755,7 +755,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "Ekonomi (borç erteleme) ve çevre/silahsızlanma antlaşmalarında anahtar terimdir.",
     "frequency": "high",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'MORA-DUR-İYUM' -> Borçları ödeyemeyince morarıp işleri durdurmak, ertelemek (moratorium)."
+    "mnemonic": "💡 ÇAĞRIŞIM: Latince MORA (gecikme). Bir işi bilerek geciktirmek, geçici olarak durdurmak = moratoryum, erteleme."
   },
   {
     "id": "w340",
@@ -801,7 +801,7 @@ export const day25Words: YdsWord[] = [
     "exampleEn": "The experienced air traffic controller remained phlegmatic during the emergency, calmly guiding the distressed plane to a safe landing.",
     "exampleTr": "Deneyimli hava trafik kontrolörü acil durum sırasında soğukkanlılığını koruyarak arızalı uçağı sakin bir şekilde güvenli inişe yönlendirdi.",
     "ydsTip": "Kriz anında paniğe kapılmayan, aşırı sakin ve soğukkanlı kişileri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 25,
     "mnemonic": "💡 ÇAĞRIŞIM: 'FİLE-GİMATİK (Fil gibi sakin)' -> Etrafında yangın çıksa bile istifini bozmayan PHLEGMATIC (sakin, soğukkanlı) adam."
   },
@@ -826,7 +826,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "'Plausible' (makul, inandırıcı) sıfatının zarf halidir; bilimsel tezlerin mantıklı savunulmasında kullanılır.",
     "frequency": "high",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'PLAUSIBLE (Alkışlanası mantık)' -> Mantığı o kadar sağlam ve akla yatkın ki (plausibly), herkes alkışlıyor (applause)."
+    "mnemonic": "💡 ÇAĞRIŞIM: PLAUSIBLE (alkışlanacak kadar akla yatkın) sıfatının zarfı: makul bir şekilde."
   },
   {
     "id": "w558",
@@ -948,7 +948,7 @@ export const day25Words: YdsWord[] = [
     "ydsTip": "Haksızlığa uğradığını düşünerek kırılmak veya kin duymaktır; arkasından V-ing veya isim alır.",
     "frequency": "high",
     "groupDay": 25,
-    "mnemonic": "💡 ÇAĞRIŞIM: 'RE-SENT (Yine gönder)' -> Davetiyeyi ona geç gönderince sana RESENT etti (gücendi, içerledi, hınç duydu)."
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (tekrar) + SENT (hissetmek; \"sentiment\" duygu). Kırgınlığı tekrar tekrar hissetmek = içerlemek, gücenmek."
   },
   {
     "id": "w588",
@@ -994,7 +994,7 @@ export const day25Words: YdsWord[] = [
     "exampleEn": "The investigative journalist delivered a trenchant critique of the administration's catastrophic handling of the banking crisis.",
     "exampleTr": "Araştırmacı gazeteci, yönetimin bankacılık krizini felaket derecesinde kötü yönetişine dair keskin ve can alıcı bir eleştiri sundu.",
     "ydsTip": "'Trenchant criticism / analysis / remarks' kolokasyonuyla çok sevilir; lafı gediğine koyan, keskin analizleri niteler.",
-    "frequency": "high",
+    "frequency": "medium",
     "groupDay": 25,
     "mnemonic": "💡 ÇAĞRIŞIM: 'TREN-ÇAN' -> Trenin rayları kesip biçen çeliği gibi jilet gibi keskin ve sivri dilli (trenchant) eleştiri."
   },

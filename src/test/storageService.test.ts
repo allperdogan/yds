@@ -9,7 +9,7 @@ describe('StorageService', () => {
 
   it('loads fresh initial stats when storage is empty', () => {
     const stats = StorageService.loadStats();
-    expect(stats.streak).toBe(1);
+    expect(stats.streak).toBe(0);
     expect(stats.knownVocabIds).toEqual([]);
     expect(stats.pendingReviewVocabIds).toEqual([]);
     expect(stats.totalQuestionsSolved).toBe(0);

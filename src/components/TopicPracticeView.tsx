@@ -1,0 +1,255 @@
+import React, { useEffect, useRef, useState } from 'react';
+import { ArrowLeft, ArrowRight, Timer, Lightbulb } from 'lucide-react';
+import { QuestionType, UserStats, YdsQuestion } from '../types';
+import { StudyTopic, getQuestionStatus } from '../services/studyTopics';
+import { getPaceStatus, PACE_TARGET_SECONDS } from '../services/examInsights';
+
+type Mode = 'new' | 'review';
+
+interface TopicPracticeViewProps {
+  topic: StudyTopic;
+  solvedQuestions: UserStats['solvedQuestions'];
+  mistakeIds: string[];
+  onRecordQuestionResult: (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => void;
+  onAddMistake: (questionId: string) => void;
+  onRemoveMistake: (questionId: string) => void;
+  onBack: () => void;
+  onOpenTactic?: (type: QuestionType) => void;
+}
+
+const OPTION_KEYS = ['A', 'B', 'C', 'D', 'E'] as const;
+
+export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
+  topic,
+  solvedQuestions,
+  mistakeIds,
+  onRecordQuestionResult,
+  onAddMistake,
+  onRemoveMistake,
+  onBack,
+  onOpenTactic
+}) => {
+  const buildList = (mode: Mode): YdsQuestion[] => {
+    const mistakes = new Set(mistakeIds);
+    const wanted = mode === 'new' ? 'new' : 'learning';
+    return topic.questions.filter((q) => getQuestionStatus(q.id, solvedQuestions, mistakes) === wanted);
+  };
+
+  const mistakeSet = new Set(mistakeIds);
+  const newCount = topic.questions.filter((q) => getQuestionStatus(q.id, solvedQuestions, mistakeSet) === 'new').length;
+  const reviewCount = topic.questions.filter((q) => mistakeSet.has(q.id)).length;
+
+  const [mode, setMode] = useState<Mode>(() => (newCount === 0 && reviewCount > 0 ? 'review' : 'new'));
+  // The list is fixed for a session so answering never reshuffles the questions.
+  const [list, setList] = useState<YdsQuestion[]>(() => buildList(mode));
+  const [index, setIndex] = useState(0);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [seconds, setSeconds] = useState(0);
+  const [showPassage, setShowPassage] = useState(true);
+  const topRef = useRef<HTMLDivElement>(null);
+
+  const startMode = (next: Mode) => {
+    setMode(next);
+    setList(buildList(next));
+    setIndex(0);
+    setAnswers({});
+    setSeconds(0);
+  };
+
+  const q = list[index];
+  const selected = q ? answers[q.id] : undefined;
+  const answered = Boolean(selected);
+
+  useEffect(() => {
+    if (!q || answered) return;
+    const id = setInterval(() => setSeconds((s) => s + 1), 1000);
+    return () => clearInterval(id);
+  }, [q, answered]);
+
+  const choose = (key: string) => {
+    if (!q || answered) return;
+    setAnswers((prev) => ({ ...prev, [q.id]: key }));
+    const isCorrect = key === q.answer;
+    onRecordQuestionResult(q.id, key, isCorrect, seconds);
+    if (isCorrect) onRemoveMistake(q.id);
+    else onAddMistake(q.id);
+  };
+
+  const next = () => {
+    setIndex((i) => i + 1);
+    setSeconds(0);
+    setShowPassage(true);
+    topRef.current?.scrollIntoView?.({ block: 'start' });
+  };
+
+  const pace = q ? getPaceStatus(seconds, q.type) : 'ok';
+  const paceClass =
+    pace === 'over'
+      ? 'bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300'
+      : pace === 'warn'
+      ? 'bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300'
+      : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300';
+
+  return (
+    <div ref={topRef} className="max-w-3xl mx-auto space-y-3 pb-24 md:pb-8 scroll-mt-20">
+      {/* One compact bar: back, topic, counter, timer */}
+      <div className="flex items-center gap-2">
+        <button
+          onClick={onBack}
+          aria-label="Konulara dön"
+          className="p-2 -ml-2 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+        >
+          <ArrowLeft className="w-5 h-5" />
+        </button>
+        <h2 className="font-bold text-slate-900 dark:text-white truncate flex-1">{topic.label}</h2>
+        {q && (
+          <>
+            <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
+              {index + 1}/{list.length}
+            </span>
+            <span
+              className={`text-xs font-semibold px-2 py-1 rounded-md tabular-nums inline-flex items-center gap-1 ${paceClass}`}
+              title={`Hedef süre: ${PACE_TARGET_SECONDS[q.type]} sn`}
+            >
+              <Timer className="w-3.5 h-3.5" />
+              {seconds}/{PACE_TARGET_SECONDS[q.type]} sn
+            </span>
+          </>
+        )}
+      </div>
+
+      <div className="flex items-center gap-1 text-xs font-semibold">
+        <button
+          onClick={() => startMode('new')}
+          className={`px-3 py-1.5 rounded-lg ${
+            mode === 'new' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-600 dark:text-slate-400'
+          }`}
+        >
+          Yeni sorular ({newCount})
+        </button>
+        <button
+          onClick={() => startMode('review')}
+          className={`px-3 py-1.5 rounded-lg ${
+            mode === 'review' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-600 dark:text-slate-400'
+          }`}
+        >
+          Tekrar et ({reviewCount})
+        </button>
+        {onOpenTactic && (
+          <button
+            onClick={() => onOpenTactic(topic.types[0])}
+            className="ml-auto inline-flex items-center gap-1 px-2 py-1.5 text-sky-700 dark:text-sky-400"
+          >
+            <Lightbulb className="w-3.5 h-3.5" />
+            Taktik
+          </button>
+        )}
+      </div>
+
+      {!q ? (
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 text-center space-y-3">
+          <p className="font-semibold text-slate-900 dark:text-white">
+            {mode === 'new'
+              ? list.length === 0
+                ? 'Bu konuda yeni soru kalmadı.'
+                : 'Bu turdaki soruları bitirdin.'
+              : list.length === 0
+              ? 'Tekrar edilecek soru yok.'
+              : 'Tekrar turunu bitirdin.'}
+          </p>
+          <p className="text-sm text-slate-600 dark:text-slate-400">
+            Yanlış yaptığın sorular "Tekrar et" listesine düşer. Doğru cevaplayınca öğrendiklerine geçer.
+          </p>
+          <div className="flex justify-center gap-2">
+            {reviewCount > 0 && (
+              <button onClick={() => startMode('review')} className="px-4 py-2 rounded-lg bg-sky-600 text-white text-sm font-semibold">
+                Yanlışlarımı tekrar et ({reviewCount})
+              </button>
+            )}
+            {newCount > 0 && (
+              <button onClick={() => startMode('new')} className="px-4 py-2 rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-sm font-semibold">
+                Yeni sorulara devam et ({newCount})
+              </button>
+            )}
+            <button onClick={onBack} className="px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 text-sm font-semibold">
+              Konulara dön
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div key={q.id} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 md:p-6 space-y-4">
+          {q.passage && (
+            <div className="rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+              <button
+                onClick={() => setShowPassage((s) => !s)}
+                className="w-full text-left px-3 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300"
+              >
+                {showPassage ? 'Metni gizle' : 'Metni göster'}
+              </button>
+              {showPassage && (
+                <p className="px-3 pb-3 text-sm leading-relaxed text-slate-800 dark:text-slate-200 whitespace-pre-line max-h-[35vh] overflow-y-auto">
+                  {q.passage}
+                </p>
+              )}
+            </div>
+          )}
+
+          <p className="text-base md:text-lg font-medium text-slate-900 dark:text-white leading-relaxed whitespace-pre-line">
+            {q.question}
+          </p>
+
+          <div className="space-y-2">
+            {OPTION_KEYS.map((key) => {
+              const text = q.options[key];
+              if (!text) return null;
+              const isAnswer = key === q.answer;
+              const isPicked = key === selected;
+              let cls =
+                'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:border-sky-400 hover:bg-sky-50 dark:hover:bg-slate-800';
+              if (answered) {
+                if (isAnswer) cls = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50 text-emerald-900 dark:text-emerald-200';
+                else if (isPicked) cls = 'border-rose-500 bg-rose-50 dark:bg-rose-950/50 text-rose-900 dark:text-rose-200';
+                else cls = 'border-slate-200 dark:border-slate-800 opacity-50';
+              }
+              return (
+                <button
+                  key={key}
+                  onClick={() => choose(key)}
+                  disabled={answered}
+                  className={`w-full text-left flex gap-3 px-3 py-2.5 rounded-xl border text-sm md:text-base transition-colors ${cls}`}
+                >
+                  <span className="font-bold shrink-0">{key})</span>
+                  <span>{text}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {answered && (
+            <div className="space-y-3 pt-1">
+              <p
+                className={`text-sm font-bold ${
+                  selected === q.answer ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-700 dark:text-rose-400'
+                }`}
+              >
+                {selected === q.answer
+                  ? 'Doğru. Bu soru öğrendiklerine eklendi.'
+                  : `Yanlış. Doğru cevap ${q.answer}. Soru tekrar listene eklendi.`}
+              </p>
+              <div className="text-sm leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line bg-slate-50 dark:bg-slate-800/60 rounded-xl p-3">
+                {q.explanation}
+                {q.trapWarning && <span className="block mt-2 text-amber-800 dark:text-amber-300">Dikkat: {q.trapWarning}</span>}
+              </div>
+              <button
+                onClick={next}
+                className="w-full py-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold inline-flex items-center justify-center gap-2"
+              >
+                {index < list.length - 1 ? 'Sonraki soru' : 'Turu bitir'} <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};

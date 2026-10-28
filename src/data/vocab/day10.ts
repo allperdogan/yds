@@ -143,7 +143,7 @@ export const day10Words: YdsWord[] = [
     ydsTip: "'Bone of contention' (anlaşmazlık/çekişme konusu) kalıbı ve okuma parçalarında yazarın savını belirten 'contention' sıkça sorulur.",
     frequency: "high",
     groupDay: 10,
-    mnemonic: "💡 ÇAĞRIŞIM: 'KONTENJAN KAVGASI' -> Sınırlı bir kontenjan yüzünden herkesin birbiriyle çekişmesi, savını iddia etmesi: CONTENTION."
+    mnemonic: "💡 ÇAĞRIŞIM: CONTEND (iddia etmek, çekişmek) fiilinin ismi: tartışmadaki savın ya da taraflar arasındaki çekişme. \"A point of contention\" = tartışma konusu."
   },
   {
     id: "w1234",
@@ -159,7 +159,7 @@ export const day10Words: YdsWord[] = [
     ydsTip: "Hukuk ve ceza metinlerinde sanığın suçundan dolayı duyduğu samimi pişmanlığı ('genuine contrition') belirtirken 'remorse' ile eşleşir.",
     frequency: "medium",
     groupDay: 10,
-    mnemonic: "💡 ÇAĞRIŞIM: 'KAHROL-İÇTEN' -> Yaptığı hatadan dolayı içten içe kahrolup kıvranmak, derin bir nedamet ve pişmanlık duymak: CONTRITION."
+    mnemonic: "💡 ÇAĞRIŞIM: CON + TRIT (ufalamak, aşındırmak). Vicdanı pişmanlıktan ufalanmak = derin pişmanlık, nedamet."
   },
   {
     id: "w1393",
@@ -191,7 +191,7 @@ export const day10Words: YdsWord[] = [
     ydsTip: "Doğruyu yanlıştan, iyiyi kötüden ayırabilme zekasını anlatır; 'insight' ve 'keen judgment' muadilidir.",
     frequency: "medium",
     groupDay: 10,
-    mnemonic: "💡 ÇAĞRIŞIM: 'DİSK-AYIRT' -> Karışık sinyaller arasından doğru olanı hemen sezen, olayların ardını gören feraset ve basiret: DISCERNMENT."
+    mnemonic: "💡 ÇAĞRIŞIM: DISCERN (ayırt etmek) fiilinin ismi: doğruyu yanlıştan ayırt edebilme gücü = feraset, basiret."
   },
   {
     id: "w453",
@@ -415,7 +415,7 @@ export const day10Words: YdsWord[] = [
     ydsTip: "'In jeopardy' (tehlikede) ve 'put/place in jeopardy' (tehlikeye atmak = jeopardize) şeklinde sınavlarda çok yaygındır.",
     frequency: "high",
     groupDay: 10,
-    mnemonic: "💡 ÇAĞRIŞIM: 'JEEP + PARDİ' -> Uçurumun kenarında dengesiz giden bir ciptesiniz; her an düşme riski, canınız büyük tehlikede (jeopardy)."
+    mnemonic: "💡 ÇAĞRIŞIM: Fransızca \"jeu parti\" (iki tarafın şansı eşit oyun). Sonucu yazı tura gibi belirsiz durum = tehlike, risk. \"In jeopardy\" = tehlikede."
   },
   {
     id: "w1324",
@@ -607,7 +607,7 @@ export const day10Words: YdsWord[] = [
     ydsTip: "Fiziksel olarak bükülmeyen maddeler ('rigid material') veya tavizsiz katı kurallar ('rigid rules') için 'inflexible' muadili olarak test edilir.",
     frequency: "ultra",
     groupDay: 10,
-    mnemonic: "💡 ÇAĞRIŞIM: 'RİTİM / TAŞ GİBİ SERT' -> Eğilip bükülmeyen, esneklik payı sıfır olan katı ve tavizsiz (rigid) yapı."
+    mnemonic: "💡 ÇAĞRIŞIM: Latince RIGERE (donmak, katılaşmak); \"rigor mortis\" = ölüm katılığı. Donmuş gibi katı, esnemeyen."
   },
   {
     id: "w573",
@@ -735,7 +735,7 @@ export const day10Words: YdsWord[] = [
     ydsTip: "Yeni bir teknolojinin veya kanunun eskisinin yerini alıp onu hükümsüz kılması bağlamında 'replace' ve 'supplant' ile eş anlamlıdır.",
     frequency: "high",
     groupDay: 10,
-    mnemonic: "💡 ÇAĞRIŞIM: 'SÜPER-SED' -> Daha süper ve üstün bir model gelerek eskisinin tahtını sallayıp yerini alması (supersede)."
+    mnemonic: "💡 ÇAĞRIŞIM: SUPER (üstüne) + SEDE (oturmak). Yeni olan, eskisinin koltuğuna oturur = yerini almak, geçersiz kılmak."
   },
   {
     id: "w69",
@@ -751,7 +751,7 @@ export const day10Words: YdsWord[] = [
     ydsTip: "Daima 'to' edatıyla kullanılır: 'susceptible to' = 'vulnerable to' = 'prone to'. Tıp ve ekoloji parçalarının vazgeçilmezidir!",
     frequency: "ultra",
     groupDay: 10,
-    mnemonic: "💡 ÇAĞRIŞIM: 'SUS-ÇEPİK (Hassas yapı)' -> Soğukta hemen hasta olan, mikroplara ve tehlikelere karşı korumasız ve hassas (susceptible to) bünye."
+    mnemonic: "💡 ÇAĞRIŞIM: SUS (alttan) + CEPT (almak; \"accept\"). Mikrobu, etkiyi hemen içine alan = -e karşı hassas, kolay yakalanan. Daima \"susceptible TO\"."
   },
   {
     id: "w603",

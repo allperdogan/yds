@@ -143,7 +143,7 @@ export const day12Words: YdsWord[] = [
     ydsTip: "Genellikle olumsuz cümlelerde 'cannot condone violence/behavior' (şiddete/yanlış davranışa asla göz yumamaz) şeklinde çıkar; 'condemn' zıttıdır.",
     frequency: "high",
     groupDay: 12,
-    mnemonic: "💡 ÇAĞRIŞIM: 'KONDURAMAMAK' -> Yapılan ayıbı görmezden gelip 'ona konduramam' diyerek suça göz yummak, onaylamak (condone)."
+    mnemonic: "💡 ÇAĞRIŞIM: CON (tamamen) + DONE ~ DONATE (bağışlamak). Kötü bir davranışı bağışlayıp sesini çıkarmamak = göz yummak."
   },
   {
     id: "w664",
@@ -623,7 +623,7 @@ export const day12Words: YdsWord[] = [
     ydsTip: "'Salient feature / point / fact' (en can alıcı/belirgin özellik, nokta veya olgu) akademik metinlerin en gözde sıfatlarındandır.",
     frequency: "high",
     groupDay: 12,
-    mnemonic: "💡 ÇAĞRIŞIM: 'SALINAN' -> Ortada devasa şekilde salınarak hemen herkesin dikkatini çeken, en göze çarpan ve belirgin (salient) unsur."
+    mnemonic: "💡 ÇAĞRIŞIM: Latince SALIRE (sıçramak). Kalabalıktan öne sıçrayıp hemen göze çarpan = en belirgin, can alıcı."
   },
   {
     id: "w103",
@@ -703,7 +703,7 @@ export const day12Words: YdsWord[] = [
     ydsTip: "'Subtle' sıfatının zarf halidir. 'Blatantly / obviously' (bariz/açık şekilde) kelimelerinin tam zıttıdır; 'imperceptibly' ile eştir.",
     frequency: "high",
     groupDay: 12,
-    mnemonic: "💡 ÇAĞRIŞIM: 'SÜT-LİMAN' -> Sessizce, hiç gürültü patırtı koparmadan, alttan alta belli belirsiz ve ustaca (subtly) yapmak."
+    mnemonic: "💡 ÇAĞRIŞIM: SUBTLE (ince, güç fark edilen) sıfatının zarfı; \"b\" okunmaz: /ˈsʌtli/. Kimse fark etmeden, ince bir şekilde."
   },
   {
     id: "w1047",

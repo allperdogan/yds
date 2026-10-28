@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { HelpCircle, Check, X, ShieldAlert, Sparkles, BookMarked, RefreshCw, EyeOff, Eye, ChevronRight, ChevronLeft, Timer, Lightbulb } from 'lucide-react';
 import { YdsQuestion, QuestionType } from '../types';
 import { YDS_QUESTIONS_DATA } from '../data/ydsQuestions';
+import { getPaceStatus, PACE_TARGET_SECONDS } from '../services/examInsights';
 
 interface QuestionPracticeViewProps {
   initialType?: QuestionType;
   mistakeIds: string[];
   onAddMistake: (questionId: string) => void;
   onRemoveMistake: (questionId: string) => void;
-  onRecordQuestionResult: (questionId: string, selected: string, isCorrect: boolean) => void;
+  onRecordQuestionResult: (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => void;
   onBackToTactics?: () => void;
 }
 
@@ -41,17 +42,6 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
   const [seconds, setSeconds] = useState<number>(0);
   const [isTimerRunning, setIsTimerRunning] = useState<boolean>(true);
 
-  useEffect(() => {
-    let interval: ReturnType<typeof setInterval> | null = null;
-    if (isTimerRunning) {
-      interval = setInterval(() => {
-        setSeconds((s) => s + 1);
-      }, 1000);
-    }
-    return () => {
-      if (interval) clearInterval(interval);
-    };
-  }, [isTimerRunning]);
 
   const filteredQuestions: YdsQuestion[] = YDS_QUESTIONS_DATA.filter((q) => {
     if (selectedTypeFilter === 'all') return true;
@@ -66,6 +56,19 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
   const selectedOption = currentQ ? practiceAnswers[currentQ.id] || null : null;
   const isAnswered = Boolean(selectedOption);
 
+  // The clock stops once the question is answered, so the time shown is the solve time
+  useEffect(() => {
+    let interval: ReturnType<typeof setInterval> | null = null;
+    if (isTimerRunning && !isAnswered) {
+      interval = setInterval(() => {
+        setSeconds((s) => s + 1);
+      }, 1000);
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [isTimerRunning, isAnswered]);
+
   const handleSelectOption = (key: string) => {
     if (isAnswered || !currentQ) return;
     setPracticeAnswers((prev) => ({
@@ -75,7 +78,7 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
     setShowExplanation(true);
 
     const isCorrect = key === currentQ.answer;
-    onRecordQuestionResult(currentQ.id, key, isCorrect);
+    onRecordQuestionResult(currentQ.id, key, isCorrect, seconds);
     if (!isCorrect) {
       onAddMistake(currentQ.id);
     }
@@ -106,6 +109,8 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
       setSeconds(0);
     }
   };
+
+  const paceStatus = currentQ ? getPaceStatus(seconds, currentQ.type) : 'ok';
 
   const formatTimer = (sec: number) => {
     const mins = Math.floor(sec / 60);
@@ -164,11 +169,25 @@ export const QuestionPracticeView: React.FC<QuestionPracticeViewProps> = ({
           )}
 
           {/* Question Timer */}
-          <div className="flex items-center gap-2 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-xl">
+          <div
+            data-testid="practice-pace"
+            className={`flex items-center gap-2 px-3 py-1.5 rounded-xl ${
+              paceStatus === 'over'
+                ? 'bg-rose-100 dark:bg-rose-950/60'
+                : paceStatus === 'warn'
+                ? 'bg-amber-100 dark:bg-amber-950/60'
+                : 'bg-slate-100 dark:bg-slate-800'
+            }`}
+          >
             <Timer className="w-4 h-4 text-sky-600 dark:text-sky-400" />
             <span className="font-mono text-xs font-bold text-slate-800 dark:text-slate-200">
               {formatTimer(seconds)}
             </span>
+            {currentQ && (
+              <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400">
+                / hedef {PACE_TARGET_SECONDS[currentQ.type]} sn{paceStatus === 'over' ? ' · süre aşıldı' : ''}
+              </span>
+            )}
             <button
               onClick={() => setIsTimerRunning(!isTimerRunning)}
               className="text-[10px] text-slate-500 underline ml-1"

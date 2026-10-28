@@ -13,7 +13,7 @@ interface TacticsViewProps {
   mistakeIds?: string[];
   onAddMistake?: (questionId: string) => void;
   onRemoveMistake?: (questionId: string) => void;
-  onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean) => void;
+  onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => void;
 }
 
 export const TacticsView: React.FC<TacticsViewProps> = ({
@@ -68,7 +68,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
             <span>80 Soruluk YDS Sınav Stratejisi</span>
           </div>
           <h2 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-            10 Soru Tipi İçin Altın Taktik Kılavuzu
+            Soru Tipleri İçin Taktik Kılavuzu
           </h2>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-xl">
             ÖSYM'nin soru hazırlama psikolojisini çözen formüller, çeldirici eleme hileleri ve 30 saniyelik kestirme yollar.
@@ -190,7 +190,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
             <Lightbulb className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
             <div>
               <h4 className="text-xs font-black uppercase text-amber-800 dark:text-amber-400">
-                Altın Sınav Tüyosu (ÖSYM Sırrı)
+                Sınav İpucu
               </h4>
               <p className="text-xs font-medium text-amber-950 dark:text-amber-200 mt-1 leading-relaxed">
                 {activeTactic.proTip}
@@ -203,7 +203,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
             <div className="flex items-center justify-between">
               <h4 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-emerald-500" />
-                <span>Soru Tipinin Altın Kuralları & Formülleri</span>
+                <span>Soru Tipinin Kuralları ve Formülleri</span>
               </h4>
             </div>
 
@@ -510,7 +510,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
                   Öğrenci cümlede "since" ve bir geçmiş yıl (in the 1990s) görünce hemen iki tarafta da Simple Past (V2) arar. ÖSYM'nin en popüler tuzak şıkkı budur.
                 </p>
                 <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 font-mono text-xs text-slate-800 dark:text-slate-200">
-                  <span className="text-amber-600 dark:text-amber-400 font-bold">Altın Formül:</span> Since + Past Simple (V2) , [Present Perfect: Have/Has V3]
+                  <span className="text-amber-600 dark:text-amber-400 font-bold">Formül:</span> Since + Past Simple (V2) , [Present Perfect: Have/Has V3]
                 </div>
               </div>
 
@@ -557,7 +557,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
               <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-black px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300">
-                    Tuzak 5: Noktalama Hilesi
+                    Tuzak 5: Noktalama Tuzağı
                   </span>
                   <span className="text-[10px] font-bold text-slate-400">However vs But</span>
                 </div>
@@ -601,7 +601,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
               </div>
               <div>
                 <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-amber-500 text-white shadow-sm">
-                  80 - 90 Alanların Sırrı
+                  Yüksek Puan İçin
                 </span>
                 <h4 className="text-xl font-black text-slate-900 dark:text-white mt-1">
                   Son 30 Gün Fiziki Çıkmış Soru Protokolü (Neden Bu App Tek Başına Yetmez?)
@@ -667,7 +667,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
           <div className="bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-indigo-500/10 border-2 border-emerald-300 dark:border-emerald-900/60 rounded-3xl p-6 md:p-8 space-y-4">
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-600 text-white shadow-sm">
-                🎯 ÖSYM Altın Refleks Modülü
+                🎯 Edat Refleks Modülü
               </span>
               <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-slate-900 dark:bg-slate-800 text-slate-200">
                 {YDS_PREPOSITION_MATRIX.length} İmza Kalıp
@@ -695,7 +695,7 @@ export const TacticsView: React.FC<TacticsViewProps> = ({
                 }`}
               >
                 <BookOpen className="w-3.5 h-3.5" />
-                <span>📖 Altın Edat Atlası ({YDS_PREPOSITION_MATRIX.length})</span>
+                <span>📖 Edat Listesi ({YDS_PREPOSITION_MATRIX.length})</span>
               </button>
               <button
                 onClick={() => setPrepSubTab('test')}

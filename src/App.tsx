@@ -11,6 +11,10 @@ import { InstallPromptModal } from './components/InstallPromptModal';
 import { ReadingLabView } from './components/ReadingLabView';
 import { FullMockExamView } from './components/FullMockExamView';
 import { SyncModal } from './components/SyncModal';
+import { TodayView } from './components/TodayView';
+import { StudyHubView } from './components/StudyHubView';
+import { TopicPracticeView } from './components/TopicPracticeView';
+import { getTopicById, topicForType } from './services/studyTopics';
 
 import { UserStats, SRSItem, QuestionType } from './types';
 import { StorageService } from './services/storageService';
@@ -18,9 +22,29 @@ import { SRSEngine } from './services/srsEngine';
 import { BackupPayload } from './services/syncService';
 import { getUnifiedQuestionById } from './data/ydsQuestions';
 import { YDS_VOCABULARY_LIST } from './data/ydsVocabulary';
+import { wordForms } from './services/vocabBlank';
 
 export const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>('vocab_drill');
+  const [activeTab, setActiveTabState] = useState<string>('today');
+  const [studyTopicId, setStudyTopicId] = useState<string | undefined>(undefined);
+
+  // Choosing a main tab always lands on its first screen.
+  const setActiveTab = (tab: string) => {
+    if (tab === 'study') setStudyTopicId(undefined);
+    setActiveTabState(tab);
+    window.scrollTo?.(0, 0);
+  };
+
+  const openTopic = (topicId: string) => {
+    setStudyTopicId(topicId);
+    setActiveTabState('study');
+    window.scrollTo?.(0, 0);
+  };
+
+  const openVocabDrill = () => {
+    setVocabDayFilter(undefined);
+    setActiveTab('vocab_drill');
+  };
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     return localStorage.getItem('yds_dark_mode') === 'true';
   });
@@ -71,18 +95,38 @@ export const App: React.FC = () => {
     StorageService.saveStats(stats);
   }, [stats]);
 
+  // The streak counts days with at least one answered question, card or word.
+  const markStudied = () => setStats((prev) => StorageService.withStudyToday(prev));
+
   // Persist SRS data
   const handleUpdateSRS = (newSRS: Record<string, SRSItem>) => {
+    markStudied();
     setSrsData(newSRS);
     SRSEngine.saveSRSData(newSRS);
 
-    // Update mastered count
+    // Flashcard grades feed the same word progress as the drill: a recalled
+    // card counts as learned, a forgotten one goes back to "learning".
+    const changed = Object.values(newSRS).filter((item) => item !== srsData[item.wordId]);
+    const recalled = changed.filter((i) => i.repetition > 0).map((i) => i.wordId);
+    const forgotten = changed.filter((i) => i.repetition === 0 && i.lastReviewed).map((i) => i.wordId);
+
     const mastered = Object.values(newSRS).filter((i) => i.state === 'mastered').length;
-    setStats((prev) => ({
-      ...prev,
-      masteredWordsCount: mastered,
-      totalCardsReviewed: prev.totalCardsReviewed + 1
-    }));
+    setStats((prev) => {
+      const known = new Set(prev.knownVocabIds);
+      const pending = new Set(prev.pendingReviewVocabIds);
+      recalled.forEach((id) => {
+        known.add(id);
+        pending.delete(id);
+      });
+      forgotten.forEach((id) => pending.add(id));
+      return {
+        ...prev,
+        masteredWordsCount: mastered,
+        totalCardsReviewed: prev.totalCardsReviewed + 1,
+        knownVocabIds: [...known],
+        pendingReviewVocabIds: [...pending]
+      };
+    });
   };
 
   // Toggle Bookmark (with optional forceAdd)
@@ -113,12 +157,18 @@ export const App: React.FC = () => {
   };
 
   // Record Question Result
-  const handleRecordQuestionResult = (questionId: string, selected: string, isCorrect: boolean) => {
+  const handleRecordQuestionResult = (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => {
+    markStudied();
     setStats((prev) => {
       const alreadySolved = prev.solvedQuestions[questionId];
       const newSolved = {
         ...prev.solvedQuestions,
-        [questionId]: { selected, isCorrect }
+        [questionId]: {
+          selected,
+          isCorrect,
+          firstIsCorrect: alreadySolved ? alreadySolved.firstIsCorrect ?? alreadySolved.isCorrect : isCorrect,
+          ...(alreadySolved?.seconds || seconds ? { seconds: alreadySolved?.seconds || seconds } : {})
+        }
       };
 
       return {
@@ -143,6 +193,16 @@ export const App: React.FC = () => {
     });
   };
 
+  // First answer per word feeds the score estimate's vocabulary rate.
+  const handleRecordVocabAnswer = (wordId: string, isCorrect: boolean) => {
+    markStudied();
+    setStats((prev) => {
+      const first = prev.vocabFirstAnswers || {};
+      if (wordId in first) return prev;
+      return { ...prev, vocabFirstAnswers: { ...first, [wordId]: isCorrect } };
+    });
+  };
+
   // Add / Remove Mistake
   const handleAddMistake = (qId: string) => {
     setStats((prev) => {
@@ -159,9 +219,11 @@ export const App: React.FC = () => {
       if (q) {
         const correctText = q.options[q.answer]?.trim().toLowerCase();
         if (correctText) {
+          // Only the word itself or an inflected form ("inspired" -> inspire),
+          // so a missed preposition like "in" never flags "indigenous".
           const matched = YDS_VOCABULARY_LIST.find((w) => {
             const wText = w.word.toLowerCase();
-            return wText === correctText || correctText.startsWith(wText) || wText.startsWith(correctText);
+            return wText === correctText || (!wText.includes(' ') && wordForms(wText).includes(correctText));
           });
           if (matched) {
             if (!newBookmarked.includes(matched.id)) {
@@ -247,6 +309,48 @@ export const App: React.FC = () => {
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 pt-6">
+        {activeTab === 'today' && (
+          <TodayView
+            stats={stats}
+            dueWordCount={dueCount}
+            onOpenTopic={openTopic}
+            onOpenVocab={openVocabDrill}
+            onOpenFlashcards={() => {
+              setVocabInitialViewMode('flashcard');
+              setActiveTab('vocab');
+            }}
+            onOpenPlan={() => setActiveTab('daily')}
+          />
+        )}
+
+        {activeTab === 'study' && !studyTopicId && (
+          <StudyHubView
+            solvedQuestions={stats.solvedQuestions}
+            mistakeQuestionIds={stats.mistakeQuestionIds}
+            knownVocabIds={stats.knownVocabIds}
+            pendingReviewVocabIds={stats.pendingReviewVocabIds}
+            onOpenTopic={openTopic}
+            onOpenVocab={openVocabDrill}
+          />
+        )}
+
+        {activeTab === 'study' && studyTopicId && getTopicById(studyTopicId) && (
+          <TopicPracticeView
+            key={studyTopicId}
+            topic={getTopicById(studyTopicId)!}
+            solvedQuestions={stats.solvedQuestions}
+            mistakeIds={stats.mistakeQuestionIds}
+            onRecordQuestionResult={handleRecordQuestionResult}
+            onAddMistake={handleAddMistake}
+            onRemoveMistake={handleRemoveMistake}
+            onBack={() => setActiveTab('study')}
+            onOpenTactic={(type) => {
+              setTacticFilter(type);
+              setActiveTab('tactics');
+            }}
+          />
+        )}
+
         {activeTab === 'daily' && (
           <DailyPlanView
             completedDays={stats.completedDays}
@@ -260,10 +364,7 @@ export const App: React.FC = () => {
               setTacticFilter(type as QuestionType);
               setActiveTab('tactics');
             }}
-            onNavigateToPractice={(day) => {
-              setPracticeTypeFilter(undefined);
-              setActiveTab('practice');
-            }}
+            onNavigateToPractice={() => setActiveTab('study')}
           />
         )}
 
@@ -286,6 +387,7 @@ export const App: React.FC = () => {
             pendingReviewVocabIds={stats.pendingReviewVocabIds}
             bookmarkedWordIds={stats.bookmarkedWords}
             onMarkKnown={handleMarkKnown}
+            onRecordVocabAnswer={handleRecordVocabAnswer}
             onMarkPendingReview={handleMarkPendingReview}
             onRemovePendingReview={handleRemovePendingReview}
             onToggleBookmark={handleToggleBookmark}
@@ -309,6 +411,7 @@ export const App: React.FC = () => {
           <FullMockExamView
             onAddMistake={handleAddMistake}
             onSaveExamResult={(res) => {
+              markStudied();
               setStats((prev) => ({
                 ...prev,
                 mockExamResults: [...(prev.mockExamResults || []), res],
@@ -329,8 +432,8 @@ export const App: React.FC = () => {
             onRemoveMistake={handleRemoveMistake}
             onRecordQuestionResult={handleRecordQuestionResult}
             onSelectPracticeType={(type) => {
-              setPracticeTypeFilter(type);
-              setActiveTab('practice');
+              const topic = topicForType(type);
+              if (topic) openTopic(topic.id);
             }}
           />
         )}
@@ -355,6 +458,7 @@ export const App: React.FC = () => {
             bookmarkedWords={stats.bookmarkedWords}
             pendingReviewWords={stats.pendingReviewVocabIds}
             onRemoveMistake={handleRemoveMistake}
+            onRecordQuestionResult={handleRecordQuestionResult}
             onRemoveBookmark={(wId) => {
               handleToggleBookmark(wId);
               handleRemovePendingReview(wId);
@@ -367,8 +471,8 @@ export const App: React.FC = () => {
                 bookmarkedWords: prev.bookmarkedWords.filter((id) => id !== wId)
               }));
             }}
-            onNavigateToPractice={() => setActiveTab('practice')}
-            onNavigateToVocab={() => setActiveTab('vocab_drill')}
+            onNavigateToPractice={() => setActiveTab('study')}
+            onNavigateToVocab={openVocabDrill}
           />
         )}
       </main>
