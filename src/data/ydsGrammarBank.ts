@@ -1,5 +1,6 @@
 import { GrammarDrillQuestion } from '../types';
 import { EXTENDED_GRAMMAR_BANK } from './grammarBankExtended';
+import { shuffleQuestionList } from '../services/optionShuffle';
 
 export type { GrammarDrillQuestion };
 
@@ -797,7 +798,8 @@ const BASE_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
   }
 ];
 
-export const YDS_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = [
+// Options are reordered per question so the answer key is not concentrated in A.
+export const YDS_GRAMMAR_DRILL_BANK: GrammarDrillQuestion[] = shuffleQuestionList([
   ...BASE_GRAMMAR_DRILL_BANK,
   ...EXTENDED_GRAMMAR_BANK
-];
+]);

@@ -1,6 +1,7 @@
 import { YdsQuestion } from '../types';
 import { YDS_GRAMMAR_DRILL_BANK } from './ydsGrammarBank';
 import { PREPOSITION_REFLEX_QUESTIONS } from './ydsPrepositions';
+import { shuffleQuestionList } from '../services/optionShuffle';
 
 const BASE_YDS_QUESTIONS_DATA: YdsQuestion[] = [
   // 1. KELİME SORUSU (Vocabulary)
@@ -272,7 +273,7 @@ Dr. Wright: Precisely. Without modifying the dosing regimen or introducing prote
 ];
 
 export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
-  ...BASE_YDS_QUESTIONS_DATA,
+  ...shuffleQuestionList(BASE_YDS_QUESTIONS_DATA),
   ...YDS_GRAMMAR_DRILL_BANK,
   ...PREPOSITION_REFLEX_QUESTIONS
 ];

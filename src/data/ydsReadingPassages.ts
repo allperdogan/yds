@@ -1,6 +1,7 @@
 import { ReadingPassage } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
 
-export const YDS_READING_PASSAGES: ReadingPassage[] = [
+const RAW_YDS_READING_PASSAGES: ReadingPassage[] = [
   {
     id: 'rp1',
     title: 'The Neurological Foundations of Human Memory & Neuroplasticity',
@@ -366,3 +367,9 @@ Recent paleoclimatological data, derived from fossilized pollen analysis and spe
     ]
   }
 ];
+
+// Options are reordered per question so the answer key is not concentrated in one letter.
+export const YDS_READING_PASSAGES: ReadingPassage[] = RAW_YDS_READING_PASSAGES.map((p) => ({
+  ...p,
+  questions: shuffleQuestionList(p.questions)
+}));

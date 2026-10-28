@@ -1,4 +1,5 @@
 import { YdsQuestion } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
 
 export interface PrepositionReflexItem {
   id: string;
@@ -71,7 +72,7 @@ export const YDS_PREPOSITION_MATRIX: PrepositionReflexItem[] = [
 ];
 
 // 2. EDAT VE PHRASAL VERB REFLEKS TESTİ SORULARI (ÖSYM Formatında 30 Soru)
-export const PREPOSITION_REFLEX_QUESTIONS: PrepositionReflexQuestion[] = [
+const RAW_PREPOSITION_REFLEX_QUESTIONS: PrepositionReflexQuestion[] = [
   {
     id: 'prep_q1',
     type: 'grammar',
@@ -273,3 +274,8 @@ export const PREPOSITION_REFLEX_QUESTIONS: PrepositionReflexQuestion[] = [
     explanation: '🎯 FORMÜL: "put up with pollution" = kirliliğe katlanmak, tolere etmek. Doğru cevap B (up).'
   }
 ];
+
+// Options are reordered per question so the answer key is not concentrated in one letter.
+export const PREPOSITION_REFLEX_QUESTIONS: PrepositionReflexQuestion[] = shuffleQuestionList(
+  RAW_PREPOSITION_REFLEX_QUESTIONS
+);

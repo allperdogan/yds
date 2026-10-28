@@ -1,6 +1,7 @@
 import { YdsQuestion } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
 
-export const YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
+const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
   // =========================================================================
   // 1 - 6: KELİME BİLGİSİ (VOCABULARY)
   // =========================================================================
@@ -1552,3 +1553,6 @@ Dr. Novak:
     explanation: 'IV numaralı cümle Kanada\'daki açık hava buz hokeyi turnuvalarından bahsederek tehlikeli küresel ısınma döngüsünü bozan alakasız cümledir (D şıkkı).'
   }
 ];
+
+// Options are reordered per question so the answer key is not concentrated in A.
+export const YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_2);

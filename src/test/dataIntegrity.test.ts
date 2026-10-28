@@ -114,14 +114,15 @@ describe('Data Integrity & Question Engine Tests', () => {
       const q = getUnifiedQuestionById('q1');
       expect(q).toBeDefined();
       expect(q?.type).toBe('vocabulary');
-      expect(q?.options.C).toBe('detrimental');
+      // Options are shuffled per question, so check the answer text rather than its letter
+      expect(q && q.options[q.answer]).toBe('detrimental');
     });
 
     it('retrieves mock exam questions by id', () => {
       const mockQ = getUnifiedQuestionById('m_q1');
       expect(mockQ).toBeDefined();
       expect(mockQ?.options).toBeDefined();
-      expect(mockQ?.options.B).toBe('proliferation');
+      expect(mockQ && mockQ.options[mockQ.answer]).toBe('proliferation');
     });
 
     it('synthesizes questions for infinite vocabulary IDs (inf_w...)', () => {

@@ -1,6 +1,7 @@
 import { YdsTacticGuide } from '../types';
+import { shuffleQuestionOptions } from '../services/optionShuffle';
 
-export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
+const RAW_YDS_TACTIC_GUIDES: YdsTacticGuide[] = [
   {
     id: 'vocabulary',
     numberRange: '1 - 6. Sorular',
@@ -478,3 +479,9 @@ Dr. Miller:
     }
   }
 ];
+
+// Sample question options are reordered so the answer is not always A.
+export const YDS_TACTIC_GUIDES: YdsTacticGuide[] = RAW_YDS_TACTIC_GUIDES.map((g) => ({
+  ...g,
+  sampleQuestion: g.sampleQuestion ? shuffleQuestionOptions(g.sampleQuestion, `tactic_${g.id}`) : undefined
+}));

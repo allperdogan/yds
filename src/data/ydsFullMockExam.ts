@@ -1,4 +1,5 @@
 import { YdsQuestion } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
 export { YDS_FULL_MOCK_EXAM_2 } from './ydsFullMockExam2';
 export { YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam3';
 
@@ -29,7 +30,7 @@ export const YDS_MOCK_EXAMS_LIST = [
   }
 ];
 
-export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
+const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
   {
     "id": "m_q1",
     "type": "vocabulary",
@@ -1506,3 +1507,6 @@ export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "explanation": "III numaralı cümle Atacama çölündeki amatör turist turlarından bahsederek James Webb Teleskobu'nun derin uzay kozmoloji misyonunu bozan alakasız cümledir (C şıkkı)."
   }
 ];
+
+// Options are reordered per question so the answer key is not concentrated in A.
+export const YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_1);

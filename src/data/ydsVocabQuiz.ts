@@ -1,6 +1,7 @@
 import { VocabQuizQuestion } from '../types';
+import { shuffleArrayStable } from '../services/optionShuffle';
 
-export const YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
+const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
   {
     "id": "vq1",
     "category": "vocab",
@@ -1329,3 +1330,9 @@ export const YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
     }
   }
 ];
+
+// Options are reordered per question so the target word is not always the first choice.
+export const YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = RAW_YDS_VOCAB_QUIZ_QUESTIONS.map((q) => ({
+  ...q,
+  options: shuffleArrayStable(q.options, q.id)
+}));

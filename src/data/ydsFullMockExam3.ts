@@ -1,6 +1,7 @@
 import { YdsQuestion } from '../types';
+import { shuffleQuestionList } from '../services/optionShuffle';
 
-export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
+const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
   // =========================================================================
   // 1 - 6: KELİME BİLGİSİ (VOCABULARY)
   // =========================================================================
@@ -1552,3 +1553,6 @@ Dr. Vance:
     explanation: 'IV numaralı cümle Monako\'daki klasik spor araba sergisinden bahsederek kentsel toplu taşıma planlaması konusunu bozan ilgisiz cümledir (D şıkkı).'
   }
 ];
+
+// Options are reordered per question so the answer key is not concentrated in A.
+export const YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_3);
