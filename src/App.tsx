@@ -346,6 +346,10 @@ export const App: React.FC = () => {
             onOpenTopic={openTopic}
             onOpenVocab={openVocabDrill}
             onOpenWordLists={() => setActiveTab('vocab_lists')}
+            onOpenTactics={() => {
+              setTacticFilter(undefined);
+              setActiveTab('tactics');
+            }}
           />
         )}
 
@@ -383,6 +387,7 @@ export const App: React.FC = () => {
             completedDays={stats.completedDays}
             onToggleDayCompleted={handleToggleDayCompleted}
             onResetProgress={handleResetProgress}
+            onBack={() => setActiveTab('today')}
             onNavigateToVocabDay={(day) => {
               setVocabDayFilter(day);
               setActiveTab('vocab');
@@ -418,6 +423,7 @@ export const App: React.FC = () => {
             onRecordVocabAnswer={handleRecordVocabAnswer}
             onRecordReview={handleRecordVocabReview}
             onOpenWordLists={() => setActiveTab('vocab_lists')}
+            onBack={() => setActiveTab('study')}
             onMarkPendingReview={handleMarkPendingReview}
             onRemovePendingReview={handleRemovePendingReview}
             onToggleBookmark={handleToggleBookmark}
@@ -457,6 +463,7 @@ export const App: React.FC = () => {
           <TacticsView
             initialType={tacticFilter}
             initialMode="tactic"
+            onBack={() => setActiveTab('study')}
             mistakeIds={stats.mistakeQuestionIds}
             onAddMistake={handleAddMistake}
             onRemoveMistake={handleRemoveMistake}

@@ -21,22 +21,22 @@ describe('MistakesView Functional & Button Tests', () => {
     );
 
     // Empty questions state
-    expect(screen.getByText(/Harika! Hata defterinde bekleyen soru yok/i)).toBeInTheDocument();
+    expect(screen.getByText(/Bekleyen hatalı soru yok/i)).toBeInTheDocument();
 
     // Click "Soru Bankasına Git" button
-    const goPracticeBtn = screen.getByRole('button', { name: /Soru Bankasına Git/i });
+    const goPracticeBtn = screen.getByRole('button', { name: /Soru çözmeye git/i });
     fireEvent.click(goPracticeBtn);
     expect(onNavigatePractice).toHaveBeenCalledTimes(1);
 
     // Switch to words tab
-    const wordsTabBtn = screen.getByText(/Zor Kelimeler/i);
+    const wordsTabBtn = screen.getByText(/^Kelimeler \(\d+\)$/);
     fireEvent.click(wordsTabBtn);
 
     // Empty words state
-    expect(screen.getByText(/Henüz kaydedilmiş kelime yok/i)).toBeInTheDocument();
+    expect(screen.getByText(/Bekleyen kelime yok/i)).toBeInTheDocument();
 
     // Click "Kelimeleri İncele" button
-    const goVocabBtn = screen.getByRole('button', { name: /Kelimeleri İncele/i });
+    const goVocabBtn = screen.getByRole('button', { name: /Kelime çalışmaya git/i });
     fireEvent.click(goVocabBtn);
     expect(onNavigateVocab).toHaveBeenCalledTimes(1);
   });
@@ -82,7 +82,7 @@ describe('MistakesView Functional & Button Tests', () => {
     );
 
     // Switch to words tab
-    const wordsTabBtn = screen.getByText(/Zor Kelimeler \(1\)/i);
+    const wordsTabBtn = screen.getByText(/^Kelimeler \(1\)$/);
     fireEvent.click(wordsTabBtn);
 
     // Find delete button
@@ -106,7 +106,7 @@ describe('MistakesView Functional & Button Tests', () => {
     );
 
     // Switch to words tab
-    const wordsTabBtn = screen.getByText(/Zor Kelimeler \(1\)/i);
+    const wordsTabBtn = screen.getByText(/^Kelimeler \(1\)$/);
     fireEvent.click(wordsTabBtn);
 
     expect(screen.getByRole('heading', { name: /compel/i })).toBeInTheDocument();

@@ -240,148 +240,98 @@ export const FullMockExamView: React.FC<FullMockExamViewProps> = ({
     <div className="max-w-5xl mx-auto space-y-6 pb-24 md:pb-12 px-2">
       {/* 1. INTRO / BAŞLANGIÇ EKRANI */}
       {examState === 'intro' && (
-        <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-10 shadow-sm space-y-8 text-center max-w-3xl mx-auto">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-600 to-indigo-600 text-white flex items-center justify-center mx-auto shadow-lg shadow-sky-500/20">
-            <Timer className="w-8 h-8" />
-          </div>
-
-          <div className="space-y-3">
-            <div className="inline-flex items-center gap-2">
-              <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300">
-                Gerçek ÖSYM Standartı
-              </span>
-              <span className="text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300">
-                3 Farklı Tam Deneme
-              </span>
-            </div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white">
-              180 Dakika / 80 Soruluk Tam YDS Deneme Sınavı
-            </h2>
-            <p className="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-lg mx-auto">
-              Sınav kondisyonunu ve 3 saatlik zihinsel dayanıklılığı geliştirmek için gerçek sınavdaki soru dağılımıyla hazırlanmış deneme.
+        <div className="max-w-3xl mx-auto space-y-4">
+          <div>
+            <h1 className="text-xl font-bold text-slate-900 dark:text-white">Deneme</h1>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              Gerçek sınav gibi: 80 soru, 180 dakika. Bir deneme seç ve başlat; yarıda bırakırsan kaldığın yerden devam edersin.
             </p>
           </div>
 
-          {/* DENEME SEÇİM KARTLARI */}
-          <div className="space-y-2 text-left">
-            <span className="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">
-              Çözmek İstediğiniz Denemeyi Seçin:
-            </span>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              {ALL_MOCK_EXAMS.map((exam) => {
-                const isSelected = selectedExamId === exam.id;
-                return (
-                  <div
-                    key={exam.id}
-                    onClick={() => setSelectedExamId(exam.id)}
-                    className={`p-4 rounded-2xl border cursor-pointer transition-all ${
-                      isSelected
-                        ? 'border-sky-500 bg-sky-50/70 dark:bg-sky-950/40 ring-2 ring-sky-500/30 shadow-md'
-                        : 'border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/40 hover:border-slate-300'
+          {/* DENEME SEÇİMİ */}
+          <div
+            role="radiogroup"
+            aria-label="Deneme seç"
+            className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl divide-y divide-slate-200 dark:divide-slate-800 overflow-hidden"
+          >
+            {ALL_MOCK_EXAMS.map((exam) => {
+              const isSelected = selectedExamId === exam.id;
+              const [name, subtitle] = exam.title.split(': ');
+              return (
+                <button
+                  key={exam.id}
+                  role="radio"
+                  aria-checked={isSelected}
+                  onClick={() => setSelectedExamId(exam.id)}
+                  className={`w-full text-left flex items-start gap-3 px-4 py-3 transition-colors ${
+                    isSelected ? 'bg-sky-50 dark:bg-sky-950/40' : 'hover:bg-slate-50 dark:hover:bg-slate-800/60'
+                  }`}
+                >
+                  <span
+                    aria-hidden="true"
+                    className={`mt-1 w-4 h-4 rounded-full border-2 shrink-0 ${
+                      isSelected ? 'border-sky-600 bg-sky-600 ring-2 ring-inset ring-white dark:ring-slate-900' : 'border-slate-300 dark:border-slate-600'
                     }`}
-                  >
-                    <div className="flex items-center justify-between mb-1.5">
-                      <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-full ${
-                        isSelected
-                          ? 'bg-sky-600 text-white'
-                          : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
-                      }`}>
-                        {exam.badge}
-                      </span>
-                      <span className="text-[11px] font-bold text-slate-500">80 Soru</span>
-                    </div>
-                    <h4 className="text-xs font-black text-slate-900 dark:text-white leading-snug">
-                      {exam.title}
-                    </h4>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                      {exam.description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-            <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">{GENERATED_MOCK_NOTE}</p>
+                  />
+                  <span className="flex-1 min-w-0">
+                    <span className="flex items-baseline justify-between gap-2">
+                      <span className="font-semibold text-slate-900 dark:text-white">{name}</span>
+                      <span className="text-xs text-slate-500 dark:text-slate-400 shrink-0">{exam.badge}</span>
+                    </span>
+                    {subtitle && !subtitle.startsWith(exam.badge) && <span className="block text-sm text-slate-600 dark:text-slate-400">{subtitle}</span>}
+                    {isSelected && (
+                      <span className="block text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">{exam.description}</span>
+                    )}
+                  </span>
+                </button>
+              );
+            })}
           </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{GENERATED_MOCK_NOTE}</p>
 
-          {/* 80-90 ALANLARIN KONDİSYON VE GLİKOZ PROTOKOLÜ (EXPANDABLE REHBER) */}
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/30 border border-amber-200 dark:border-amber-800/70 rounded-2xl p-4 text-left space-y-3">
-            <div className="flex items-start justify-between gap-3">
-              <div className="flex items-center gap-2 text-amber-800 dark:text-amber-300 font-black text-xs md:text-sm">
-                <Brain className="w-4 h-4 text-amber-600 shrink-0" />
-                <span>🔥 Realist Olalım: Neden SADECE Bu App Yetmez? (12-15 Tam Deneme Şartı)</span>
-              </div>
-              <button
-                onClick={() => setIsStaminaGuideOpen(!isStaminaGuideOpen)}
-                className="text-xs font-extrabold text-amber-700 dark:text-amber-400 hover:underline shrink-0"
-              >
-                {isStaminaGuideOpen ? 'Kapat' : 'Protokolü Oku'}
-              </button>
-            </div>
+          <button
+            onClick={handleStartExam}
+            className="sticky bottom-20 md:bottom-4 z-10 shadow-lg shadow-sky-900/10 w-full px-6 py-3.5 rounded-2xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-base active:scale-[0.99] transition-all"
+          >
+            Denemeyi başlat
+          </button>
 
-            <p className="text-xs text-amber-900/80 dark:text-amber-300/80 leading-relaxed">
-              Sınav 180 dakika ve 80 soru. Çoğu adayda dikkat ikinci saatin sonunda (yaklaşık 60. soru civarında) belirgin şekilde düşer. 75+ hedefleyen bir adayın sınava kadar en az <strong>10-12 tam denemeyi</strong> kesintisiz çözüp bu yorgunluğa alışmış olması gerekir.
-            </p>
+          {/* Sınav Dağılımı ve öneriler: açılır, ekranı kalabalıklaştırmaz */}
+          <details className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 text-sm">
+            <summary className="cursor-pointer font-semibold text-slate-800 dark:text-slate-200">Sınavın bölümleri</summary>
+            <ul className="mt-2 space-y-1 text-slate-600 dark:text-slate-400 tabular-nums">
+              <li>1–6 · Kelime bilgisi (6 soru)</li>
+              <li>7–16 · Dil bilgisi ve edat (10 soru)</li>
+              <li>17–26 · Cloze test (10 soru)</li>
+              <li>27–36 · Cümle tamamlama (10 soru)</li>
+              <li>37–42 · Çeviri (6 soru)</li>
+              <li>43–62 · Okuma, 5 paragraf (20 soru)</li>
+              <li>63–80 · Diyalog, anlamca en yakın, paragraf tamamlama, anlamı bozan cümle</li>
+            </ul>
+          </details>
 
-            {isStaminaGuideOpen && (
-              <div className="pt-2 border-t border-amber-200/80 dark:border-amber-800/80 space-y-2 text-xs text-amber-950 dark:text-amber-200">
-                <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
-                  <span className="font-extrabold text-amber-800 dark:text-amber-300">1. Kesintisiz 180 Dakika Masada Oturma Disiplini:</span>
-                  <p className="text-slate-700 dark:text-slate-300 text-[11px]">
-                    Deneme çözerken telefonu uçak moduna alın, asla masadan kalkmayın ve ara vermeyin. Beyin ancak bu şekilde 180 dakikalık odaklanma kasını geliştirir.
-                  </p>
-                </div>
-                <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
-                  <span className="font-extrabold text-amber-800 dark:text-amber-300">2. Glikoz ve Sıvı Desteği (60. Soru Krizi):</span>
-                  <p className="text-slate-700 dark:text-slate-300 text-[11px]">
-                    Uzun sınavlarda yorgunluk ve susuzluk dikkati düşürür. Sınavdan önce düzgün kahvaltı yapın, yanınızda su bulundurun (sınav kurallarının izin verdiği ölçüde) ve 60. soru civarında 20-30 saniyelik bir nefes molası verin.
-                  </p>
-                </div>
-                <div className="p-2.5 rounded-xl bg-white/70 dark:bg-slate-900/60 space-y-1">
-                  <span className="font-extrabold text-amber-800 dark:text-amber-300">3. Son 6 Hafta Maratonu (Haftada 2 Tam Deneme):</span>
-                  <p className="text-slate-700 dark:text-slate-300 text-[11px]">
-                    Sınava son 1.5 ay kala her hafta Çarşamba ve Pazar saat 10:15'te tam deneme başlatın. Biyolojik saatiniz sınav saatinde en yüksek zihinsel performansa kilitlensin.
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Sınav Dağılım Tablosu */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-left text-xs font-medium">
-            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
-              <span className="font-extrabold text-sky-600 dark:text-sky-400">1 - 6</span>
-              <p className="text-slate-700 dark:text-slate-300">Kelime Bilgisi (6 Soru)</p>
+          <details
+            open={isStaminaGuideOpen}
+            onToggle={(e) => setIsStaminaGuideOpen((e.target as HTMLDetailsElement).open)}
+            className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl px-4 py-3 text-sm"
+          >
+            <summary className="cursor-pointer font-semibold text-slate-800 dark:text-slate-200">Deneme önerileri</summary>
+            <div className="mt-2 space-y-2 text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p>
+                Çoğu adayda dikkat ikinci saatin sonunda, yaklaşık 60. soru civarında düşer. Sınava kadar en az{' '}
+                <strong className="text-slate-800 dark:text-slate-200">10–12 tam denemeyi</strong> kesintisiz çözüp bu yorgunluğa alış.
+              </p>
+              <p>
+                <strong className="text-slate-800 dark:text-slate-200">Kesintisiz otur:</strong> telefonu uçak moduna al, ara verme.
+              </p>
+              <p>
+                <strong className="text-slate-800 dark:text-slate-200">60. soru molası:</strong> su iç, 20–30 saniye nefeslen.
+              </p>
+              <p>
+                <strong className="text-slate-800 dark:text-slate-200">Son 6 hafta:</strong> haftada iki tam deneme, sınav saatinde (10:15) başlat.
+              </p>
             </div>
-            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
-              <span className="font-extrabold text-sky-600 dark:text-sky-400">7 - 16</span>
-              <p className="text-slate-700 dark:text-slate-300">Gramer & Edat (10 Soru)</p>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
-              <span className="font-extrabold text-sky-600 dark:text-sky-400">17 - 26</span>
-              <p className="text-slate-700 dark:text-slate-300">Cloze Test (10 Soru)</p>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
-              <span className="font-extrabold text-sky-600 dark:text-sky-400">27 - 36</span>
-              <p className="text-slate-700 dark:text-slate-300">Cümle Tamamlama (10 Soru)</p>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
-              <span className="font-extrabold text-sky-600 dark:text-sky-400">37 - 42</span>
-              <p className="text-slate-700 dark:text-slate-300">Çeviriler (6 Soru)</p>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
-              <span className="font-extrabold text-sky-600 dark:text-sky-400">43 - 62</span>
-              <p className="text-slate-700 dark:text-slate-300">5 Paragraf (20 Soru)</p>
-            </div>
-          </div>
-
-          <div className="pt-2">
-            <button
-              onClick={handleStartExam}
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-sky-600 hover:bg-sky-700 text-white font-extrabold text-sm shadow-xl shadow-sky-500/20 active:scale-95 transition-all"
-            >
-              180 Dakikalık Deneme Sınavını Başlat
-            </button>
-          </div>
+          </details>
         </div>
       )}
 

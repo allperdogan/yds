@@ -157,42 +157,36 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
 
   return (
     <div className="space-y-6 pb-24 md:pb-12 max-w-4xl mx-auto">
-      {/* Header Card */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      {/* Header */}
+      <div className="space-y-3">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 dark:bg-rose-950/80 text-rose-700 dark:text-rose-300 text-xs font-bold mb-2">
-            <AlertCircle className="w-3.5 h-3.5 text-rose-500" />
-            <span>Kişisel İyileştirme İstasyonu</span>
-          </div>
-          <h2 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-            Hata Defterim & Zayıf Noktalarım
-          </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-xl">
-            Yanlış yaptığın soruları ve zorlandığın kelimeleri düzenli tekrar etmek, en verimli çalışma yoludur.
+          <h1 className="text-xl font-bold text-slate-900 dark:text-white">Hatalarım</h1>
+          <p className="text-sm text-slate-600 dark:text-slate-400">
+            Yanlış yaptığın sorular ve kelimeler burada. Doğru çözünce listeden çıkar.
           </p>
         </div>
 
         {/* Tab switch pills */}
-        <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold shrink-0">
+        <div className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-sm font-semibold w-full sm:w-auto sm:inline-flex">
           <button
             onClick={() => setActiveTab('questions')}
-            className={`px-3.5 py-2 rounded-lg transition-all ${
+            className={`flex-1 sm:flex-initial px-3.5 py-2 rounded-lg transition-all ${
               activeTab === 'questions'
                 ? 'bg-white dark:bg-slate-700 text-rose-600 dark:text-rose-400 shadow-sm'
                 : 'text-slate-600 dark:text-slate-400'
             }`}
           >
-            Hatalı Sorular ({mistakeQuestions.length})
+            Sorular ({mistakeQuestions.length})
           </button>
           <button
             onClick={() => setActiveTab('words')}
-            className={`px-3.5 py-2 rounded-lg transition-all ${
+            className={`flex-1 sm:flex-initial px-3.5 py-2 rounded-lg transition-all ${
               activeTab === 'words'
                 ? 'bg-white dark:bg-slate-700 text-amber-600 dark:text-amber-400 shadow-sm'
                 : 'text-slate-600 dark:text-slate-400'
             }`}
           >
-            Zor Kelimeler ({bookmarkedWordList.length})
+            Kelimeler ({bookmarkedWordList.length})
           </button>
         </div>
       </div>
@@ -201,19 +195,19 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
       {activeTab === 'questions' && (
         <div className="space-y-4">
           {mistakeQuestions.length === 0 ? (
-            <div className="text-center py-16 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 space-y-4">
+            <div className="text-center py-10 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 space-y-4">
               <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
-              <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                Harika! Hata defterinde bekleyen soru yok.
+              <h3 className="text-base font-semibold text-slate-900 dark:text-white">
+                Bekleyen hatalı soru yok.
               </h3>
-              <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                Test çözerken yanlış yaptığın tüm sorular otomatik olarak burada toplanır ve tekrar çözmene imkan tanır.
+              <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
+                Yanlış yaptığın sorular burada toplanır, sen de tekrar çözersin.
               </p>
               <button
                 onClick={onNavigateToPractice}
-                className="px-4 py-2 bg-sky-600 text-white rounded-xl text-xs font-bold hover:bg-sky-700 transition-colors"
+                className="px-4 py-2.5 bg-sky-600 text-white rounded-xl text-sm font-semibold hover:bg-sky-700 transition-colors"
               >
-                Soru Bankasına Git
+                Soru çözmeye git
               </button>
             </div>
           ) : (
@@ -234,19 +228,19 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
       {activeTab === 'words' && (
         <div className="space-y-4">
           {bookmarkedWordList.length === 0 ? (
-            <div className="text-center py-16 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 space-y-4">
+            <div className="text-center py-10 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 space-y-4">
               <Bookmark className="w-12 h-12 text-slate-400 mx-auto" />
-              <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                Henüz kaydedilmiş kelime yok.
+              <h3 className="text-base font-semibold text-slate-900 dark:text-white">
+                Bekleyen kelime yok.
               </h3>
-              <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                Kelime drill testlerinde yanlış yaptığın veya zorlandığın kelimeler otomatik olarak burada toplanır.
+              <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
+                Kelime çalışırken yanlış yaptığın kelimeler burada toplanır.
               </p>
               <button
                 onClick={onNavigateToVocab}
-                className="px-4 py-2 bg-sky-600 text-white rounded-xl text-xs font-bold hover:bg-sky-700 transition-colors"
+                className="px-4 py-2.5 bg-sky-600 text-white rounded-xl text-sm font-semibold hover:bg-sky-700 transition-colors"
               >
-                Kelimeleri İncele
+                Kelime çalışmaya git
               </button>
             </div>
           ) : (

@@ -53,6 +53,24 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [seconds, setSeconds] = useState(0);
   const [showPassage, setShowPassage] = useState(true);
+  // The clock is optional: a running timer is pressure while learning a topic.
+  const [showTimer, setShowTimer] = useState(() => {
+    try {
+      return localStorage.getItem('yds_show_timer') === 'true';
+    } catch {
+      return false;
+    }
+  });
+  const toggleTimer = () => {
+    setShowTimer((v) => {
+      try {
+        localStorage.setItem('yds_show_timer', String(!v));
+      } catch {
+        // ignore
+      }
+      return !v;
+    });
+  };
   const topRef = useRef<HTMLDivElement>(null);
 
   const startMode = (next: Mode) => {
@@ -120,37 +138,41 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
             <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
               {index + 1}/{list.length}
             </span>
-            <span
-              className={`text-xs font-semibold px-2 py-1 rounded-md tabular-nums inline-flex items-center gap-1 ${paceClass}`}
+            <button
+              onClick={toggleTimer}
+              aria-label={showTimer ? 'Süreyi gizle' : 'Süreyi göster'}
               title={`Hedef süre: ${PACE_TARGET_SECONDS[q.type]} sn`}
+              className={`text-xs font-semibold px-2 py-1.5 rounded-md tabular-nums inline-flex items-center gap-1 ${
+                showTimer ? paceClass : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+              }`}
             >
-              <Timer className="w-3.5 h-3.5" />
-              {seconds}/{PACE_TARGET_SECONDS[q.type]} sn
-            </span>
+              <Timer className="w-4 h-4" />
+              {showTimer && `${seconds}/${PACE_TARGET_SECONDS[q.type]} sn`}
+            </button>
           </>
         )}
       </div>
 
-      <div className="flex items-center gap-1 text-xs font-semibold">
+      <div className="flex items-center gap-1 text-sm font-semibold whitespace-nowrap">
         <button
           onClick={() => startMode('new')}
-          className={`px-3 py-1.5 rounded-lg ${
+          className={`px-3 py-2 rounded-lg ${
             mode === 'new' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-600 dark:text-slate-400'
           }`}
         >
-          Yeni sorular ({newCount})
+          Yeni ({newCount})
         </button>
         <button
           onClick={() => startMode('review')}
-          className={`px-3 py-1.5 rounded-lg ${
+          className={`px-3 py-2 rounded-lg ${
             mode === 'review' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-600 dark:text-slate-400'
           }`}
         >
-          Tekrar et ({reviewCount})
+          Tekrar ({reviewCount})
         </button>
         <button
           onClick={() => startMode('all')}
-          className={`px-3 py-1.5 rounded-lg ${
+          className={`px-3 py-2 rounded-lg ${
             mode === 'all' ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900' : 'text-slate-600 dark:text-slate-400'
           }`}
         >
@@ -159,7 +181,7 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
         {onOpenTactic && (
           <button
             onClick={() => onOpenTactic(topic.types[0])}
-            className="ml-auto inline-flex items-center gap-1 px-2 py-1.5 text-sky-700 dark:text-sky-400"
+            className="ml-auto inline-flex items-center gap-1 px-2 py-2 text-sky-700 dark:text-sky-400"
           >
             <Lightbulb className="w-3.5 h-3.5" />
             Taktik
@@ -187,9 +209,9 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
               : 'Tekrar turunu bitirdin.'}
           </p>
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            Yanlış yaptığın sorular "Tekrar et" listesine düşer. Doğru cevaplayınca öğrendiklerine geçer.
+            Yanlış yaptığın sorular "Tekrar" listesine düşer. Doğru cevaplayınca öğrendiklerine geçer.
           </p>
-          <div className="flex justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {reviewCount > 0 && (
               <button onClick={() => startMode('review')} className="px-4 py-2 rounded-lg bg-sky-600 text-white text-sm font-semibold">
                 Yanlışlarımı tekrar et ({reviewCount})

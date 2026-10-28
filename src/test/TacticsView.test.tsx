@@ -8,8 +8,7 @@ describe('TacticsView Functional & Button Tests', () => {
     const onSelectPracticeType = vi.fn();
     render(<TacticsView onSelectPracticeType={onSelectPracticeType} />);
 
-    expect(screen.getByText(/80 Soruluk YDS Sınav Stratejisi/i)).toBeInTheDocument();
-    expect(screen.getByText(/Soru Tipleri İçin Taktik Kılavuzu/i)).toBeInTheDocument();
+    expect(screen.getByText(/Soru tipini seç/i)).toBeInTheDocument();
     expect(screen.getByText(/Sınav İpucu/i)).toBeInTheDocument();
     expect(screen.getByText(/Soru Tipinin Kuralları ve Formülleri/i)).toBeInTheDocument();
   });
@@ -31,7 +30,7 @@ describe('TacticsView Functional & Button Tests', () => {
     const onSelectPracticeType = vi.fn();
     render(<TacticsView initialType="vocabulary" onSelectPracticeType={onSelectPracticeType} />);
 
-    const practiceBtn = screen.getByRole('button', { name: /Bu Taktikten Soru Çöz/i });
+    const practiceBtn = screen.getByRole('button', { name: /Bu tipten soru çöz/i });
     fireEvent.click(practiceBtn);
 
     expect(onSelectPracticeType).toHaveBeenCalledWith('vocabulary');
@@ -67,7 +66,7 @@ describe('TacticsView Functional & Button Tests', () => {
     render(<TacticsView />);
 
     // Click traps tab button
-    const trapsBtn = screen.getByRole('button', { name: /ÖSYM Çeldirici Deşifresi/i });
+    const trapsBtn = screen.getByRole('button', { name: /^Çeldiriciler$/ });
     fireEvent.click(trapsBtn);
 
     expect(screen.getByText(/ÖSYM Çeldirici Psikolojisi & Son 5 Yıl Çıkmış Soru Deşifresi/i)).toBeInTheDocument();

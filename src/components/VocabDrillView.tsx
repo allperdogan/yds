@@ -38,6 +38,7 @@ interface VocabDrillViewProps {
   onRecordVocabAnswer?: (wordId: string, isCorrect: boolean) => void;
   onRecordReview?: (wordId: string, isCorrect: boolean) => void;
   onOpenWordLists?: () => void;
+  onBack?: () => void;
   onMarkPendingReview: (wordId: string) => void;
   onRemovePendingReview: (wordId: string) => void;
   onToggleBookmark?: (wordId: string) => void;
@@ -60,6 +61,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   onRecordVocabAnswer,
   onRecordReview,
   onOpenWordLists,
+  onBack,
   onMarkPendingReview,
   onRemovePendingReview,
   onToggleBookmark,
@@ -356,6 +358,15 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     <div className="max-w-3xl mx-auto space-y-4 pb-24 px-2">
       {/* Compact header so the question is visible first; settings fold away */}
       <div className="flex items-center gap-2">
+        {onBack && (
+          <button
+            onClick={onBack}
+            aria-label="Konulara dön"
+            className="p-2 -ml-2 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </button>
+        )}
         <h2 className="font-bold text-slate-900 dark:text-white flex-1">Kelime</h2>
         {studyStage === 'test' && (
           <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
@@ -375,7 +386,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
           aria-expanded={showOptions}
           className="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300"
         >
-          {showOptions ? 'Ayarları kapat' : 'Ayarlar'}
+          {showOptions ? 'Seçenekleri kapat' : 'Seçenekler'}
         </button>
       </div>
 
@@ -850,17 +861,6 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
                   </span>
                 )}
               </div>
-
-              {/* Direct "Biliyorum" shortcut */}
-              {!hasAnswered && (
-                <button
-                  onClick={handleDirectMarkKnown}
-                  className="text-xs font-bold text-slate-400 hover:text-emerald-600 transition-colors flex items-center gap-1"
-                >
-                  <Check className="w-3.5 h-3.5" />
-                  <span>Biliyorum (Atla)</span>
-                </button>
-              )}
             </div>
 
             {/* The Sentence with Blank */}
@@ -921,18 +921,18 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
               <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
                 <button
                   onClick={handleDontKnow}
-                  className="text-xs font-bold text-slate-400 hover:text-rose-500 py-2 px-3 rounded-xl transition-colors flex items-center gap-1.5"
+                  className="text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-rose-500 py-2 px-3 rounded-xl transition-colors flex items-center gap-1.5"
                 >
                   <HelpCircle className="w-4 h-4" />
-                  <span>Bilmiyorum (Tüm Şıkları Öğret)</span>
+                  <span>Bilmiyorum</span>
                 </button>
 
                 <button
                   onClick={handleDirectMarkKnown}
-                  className="text-xs font-bold text-emerald-600 hover:text-emerald-700 py-2 px-3 rounded-xl transition-colors flex items-center gap-1"
+                  className="text-sm font-semibold text-emerald-700 dark:text-emerald-400 hover:text-emerald-800 py-2 px-3 rounded-xl transition-colors flex items-center gap-1"
                 >
                   <Check className="w-3.5 h-3.5" />
-                  <span>Biliyorum (Atla)</span>
+                  <span>Biliyorum, geç</span>
                 </button>
               </div>
             )}

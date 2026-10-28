@@ -1,5 +1,5 @@
-import React from 'react';
-import { Flame, Moon, Sun, Smartphone, Cloud, Eye } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Flame, Moon, Sun, Smartphone, Cloud, Eye, Settings } from 'lucide-react';
 import { UserStats } from '../types';
 import { MAIN_TABS, parentTab } from '../navigation';
 
@@ -15,6 +15,40 @@ interface NavbarProps {
   setActiveTab: (tab: string) => void;
 }
 
+const MenuItem: React.FC<{ icon: React.ReactNode; label: string; onClick: () => void }> = ({ icon, label, onClick }) => (
+  <button
+    role="menuitem"
+    onClick={onClick}
+    className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800"
+  >
+    <span className="text-slate-500 dark:text-slate-400">{icon}</span>
+    {label}
+  </button>
+);
+
+const MenuToggle: React.FC<{ icon: React.ReactNode; label: string; on: boolean; onClick: () => void }> = ({
+  icon,
+  label,
+  on,
+  onClick
+}) => (
+  <button
+    role="menuitemcheckbox"
+    aria-checked={on}
+    onClick={onClick}
+    className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800"
+  >
+    <span className="text-slate-500 dark:text-slate-400">{icon}</span>
+    <span className="flex-1">{label}</span>
+    <span
+      aria-hidden="true"
+      className={`w-9 h-5 rounded-full p-0.5 transition-colors ${on ? 'bg-sky-600' : 'bg-slate-300 dark:bg-slate-600'}`}
+    >
+      <span className={`block w-4 h-4 rounded-full bg-white transition-transform ${on ? 'translate-x-4' : ''}`} />
+    </span>
+  </button>
+);
+
 export const Navbar: React.FC<NavbarProps> = ({
   stats,
   darkMode,
@@ -26,6 +60,29 @@ export const Navbar: React.FC<NavbarProps> = ({
   activeTab,
   setActiveTab
 }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Close the settings menu on an outside tap or Escape.
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onDown = (e: MouseEvent) => {
+      if (!menuRef.current?.contains(e.target as Node)) setMenuOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setMenuOpen(false);
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [menuOpen]);
+
+  const pick = (action: () => void) => {
+    setMenuOpen(false);
+    action();
+  };
+
   return (
     <header className="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 shadow-xs">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
@@ -64,60 +121,62 @@ export const Navbar: React.FC<NavbarProps> = ({
           ))}
         </nav>
 
-        {/* Right Badges & Action Controls */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          {/* Streak */}
+        {/* Streak and one labelled settings menu */}
+        <div className="flex items-center gap-2">
           <div
-            title="Günlük Çalışma Serisi"
-            className="flex items-center gap-1 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 px-2.5 py-1 rounded-full text-amber-600 dark:text-amber-400 font-bold text-xs"
+            title="Günlük çalışma serisi"
+            className="flex items-center gap-1 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 px-2.5 py-1 rounded-full text-amber-700 dark:text-amber-400 font-bold text-xs"
           >
             <Flame className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
             <span>{stats.streak} Gün</span>
           </div>
 
-          {/* Eye-Care / Warm Reading Mode */}
-          {onToggleEyeCare && (
+          <div ref={menuRef} className="relative">
             <button
-              onClick={onToggleEyeCare}
-              title={eyeCareMode ? 'Göz Dinlendirme Açık (Sıcak Sepya / Mavi Işık Filtresi)' : 'Göz Dinlendirme Modunu Aç'}
-              className={`p-2 rounded-xl transition-colors ${
-                eyeCareMode
-                  ? 'bg-amber-100 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border border-amber-300/60 dark:border-amber-700/60'
-                  : 'text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400 hover:text-amber-600'
-              }`}
+              onClick={() => setMenuOpen((o) => !o)}
+              aria-label="Ayarlar"
+              aria-expanded={menuOpen}
+              className="flex items-center gap-1.5 px-2.5 py-2 rounded-xl text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
-              <Eye className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+              <Settings className="w-5 h-5" />
+              <span className="hidden sm:inline">Ayarlar</span>
             </button>
-          )}
 
-          {/* Progress Sync / Backup Modal */}
-          {onOpenSyncModal && (
-            <button
-              onClick={onOpenSyncModal}
-              title="İlerleme Yedekle & Cihaz Eşitle"
-              className="p-2 rounded-xl text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400 hover:text-indigo-600 transition-colors"
-            >
-              <Cloud className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-            </button>
-          )}
-
-          {/* iPhone / PWA Help */}
-          <button
-            onClick={onOpenInstallModal}
-            title="iPhone / Bilgisayar Kurulumu"
-            className="p-2 rounded-xl text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400 hover:text-sky-600 transition-colors"
-          >
-            <Smartphone className="w-4 h-4 text-sky-600" />
-          </button>
-
-          {/* Dark Mode */}
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            title={darkMode ? 'Açık Mod' : 'Karanlık Mod'}
-            className="p-2 rounded-xl text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-400 transition-colors"
-          >
-            {darkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4" />}
-          </button>
+            {menuOpen && (
+              <div
+                role="menu"
+                className="absolute right-0 mt-2 w-72 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-lg p-1.5 text-sm"
+              >
+                <MenuToggle
+                  icon={darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                  label="Karanlık mod"
+                  on={darkMode}
+                  onClick={() => setDarkMode(!darkMode)}
+                />
+                {onToggleEyeCare && (
+                  <MenuToggle
+                    icon={<Eye className="w-4 h-4" />}
+                    label="Göz dinlendirme (sıcak renkler)"
+                    on={!!eyeCareMode}
+                    onClick={onToggleEyeCare}
+                  />
+                )}
+                <div className="my-1 border-t border-slate-200 dark:border-slate-700" />
+                {onOpenSyncModal && (
+                  <MenuItem
+                    icon={<Cloud className="w-4 h-4" />}
+                    label="Yedekle / başka cihaza taşı"
+                    onClick={() => pick(onOpenSyncModal)}
+                  />
+                )}
+                <MenuItem
+                  icon={<Smartphone className="w-4 h-4" />}
+                  label="Telefona / bilgisayara kur"
+                  onClick={() => pick(onOpenInstallModal)}
+                />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </header>

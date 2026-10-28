@@ -30,8 +30,8 @@ describe('VocabDrillView Functional & Button Tests', () => {
     expect(screen.getByRole('button', { name: /deplete/i })).toBeInTheDocument();
 
     // Action buttons before answering should be present
-    expect(screen.getByText(/Bilmiyorum \(Tüm Şıkları Öğret\)/i)).toBeInTheDocument();
-    expect(screen.getAllByText(/Biliyorum \(Atla\)/i).length).toBeGreaterThanOrEqual(1);
+    expect(screen.getByText(/^Bilmiyorum$/)).toBeInTheDocument();
+    expect(screen.getAllByText(/Biliyorum, geç/i).length).toBeGreaterThanOrEqual(1);
   });
 
   it('handles choosing the correct answer: marks as known, removes from review, and opens mnemonics', () => {
@@ -167,7 +167,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     expect(screen.queryByText(/Soru 1 \//i)).not.toBeInTheDocument();
   });
 
-  it('handles clicking "Bilmiyorum (Tüm Şıkları Öğret)" button', () => {
+  it('handles clicking "Bilmiyorum, şıkları öğret" button', () => {
     const handleMarkKnown = vi.fn();
     const handleMarkPendingReview = vi.fn();
     const handleRemovePendingReview = vi.fn();
@@ -183,7 +183,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
       />
     );
 
-    const dontKnowBtn = screen.getByText(/Bilmiyorum \(Tüm Şıkları Öğret\)/i);
+    const dontKnowBtn = screen.getByText(/^Bilmiyorum$/);
     fireEvent.click(dontKnowBtn);
 
     expect(handleMarkPendingReview).toHaveBeenCalledWith('w1');
@@ -206,7 +206,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
       />
     );
 
-    const directKnowBtn = screen.getAllByText(/Biliyorum \(Atla\)/i)[0];
+    const directKnowBtn = screen.getAllByText(/Biliyorum, geç/i)[0];
     fireEvent.click(directKnowBtn);
 
     expect(handleMarkKnown).toHaveBeenCalledWith('w1');
@@ -230,7 +230,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Click the Mastered Words button
-    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Seçenekler' }));
     const openModalBtn = screen.getByText(/1 Öğrendim \(Listele\)/i);
     fireEvent.click(openModalBtn);
 
@@ -265,7 +265,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Switch to "Bağlaçlar" category
-    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Seçenekler' }));
     const conjBtn = screen.getByRole('button', { name: /Bağlaçlar/i });
     fireEvent.click(conjBtn);
 
@@ -295,7 +295,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Open Atlas modal
-    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Seçenekler' }));
     const openAtlasBtn = screen.getByRole('button', { name: /Fiil & Bağlaç Atlası/i });
     fireEvent.click(openAtlasBtn);
 
@@ -323,7 +323,7 @@ describe('VocabDrillView Functional & Button Tests', () => {
     );
 
     // Switch to Learn mode
-    fireEvent.click(screen.getByRole('button', { name: 'Ayarlar' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Seçenekler' }));
     const learnTabBtn = screen.getByRole('button', { name: /1\. Adım: Günün Kelimelerini Öğren/i });
     fireEvent.click(learnTabBtn);
 
