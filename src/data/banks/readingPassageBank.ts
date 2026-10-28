@@ -1,4 +1,4 @@
-// Generated reading bank: 25 passages x 4 questions.
+// Generated reading bank: 45 passages x 4 questions.
 import { ReadingPassage } from '../../types';
 import { shuffleQuestionList } from '../../services/optionShuffle';
 
@@ -3223,6 +3223,2585 @@ const RAW_READING_PASSAGE_BANK: ReadingPassage[] = [
         "tacticUsed": "Çıkarım",
         "trapWarning": "A şıkkı tersidir. C şıkkı canlandırmanın her zaman gerçekleştiğini varsayar. E şıkkı metinle çelişir: bir zamanlar herkes konuşuyordu.",
         "explanation": "İkinci paragrafa göre bir dilin sadece yaşlılar arasında kalması, iki üç kuşakta yok olma sürecinin son aşamasıdır; yani ciddi tehlike altındadır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb026",
+    "title": "Self-Driving Cars and the Long Tail",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from IEEE Spectrum & Wired",
+    "wordCount": 248,
+    "passageText": "A decade ago, many technology companies predicted that fully self-driving cars would be common on public roads by around 2020. That prediction has not come true. Although autonomous taxis now operate in a handful of cities, they are restricted to carefully mapped areas and good weather, and most new cars offer only driver-assistance features that still require a human to pay attention.\n\nEngineers often explain the delay with the idea of the \"long tail\". Teaching a car to handle ninety-nine percent of driving situations, such as following lanes, keeping distance and stopping at red lights, turned out to be relatively manageable. The difficulty lies in the remaining one percent: an enormous variety of rare events, from a mattress falling off a lorry to a police officer directing traffic by hand or a child chasing a ball between parked cars. Each event is unusual on its own, but together they occur often enough that a car unable to deal with them would be dangerous.\n\nBecause machine-learning systems learn from examples, rare events pose a particular problem: there are, by definition, few examples to learn from. Companies have tried to solve this by driving millions of kilometres in computer simulations, where unusual situations can be created deliberately. Critics argue, however, that no simulation can anticipate everything the real world produces. Meanwhile, regulators face the difficult question of how safe an autonomous car must be before it is allowed on the road: as safe as an average human driver, or far safer?",
+    "vocabularyNotes": [
+      {
+        "word": "autonomous",
+        "meaningTr": "otonom, kendi kendine işleyen",
+        "contextNote": "İsim: autonomy (özerklik)."
+      },
+      {
+        "word": "restricted to",
+        "meaningTr": "-e sınırlı",
+        "contextNote": "Eş anlamlısı: limited to, confined to."
+      },
+      {
+        "word": "manageable",
+        "meaningTr": "üstesinden gelinebilir, yönetilebilir",
+        "contextNote": "manage fiilinden."
+      },
+      {
+        "word": "pose a problem",
+        "meaningTr": "sorun teşkil etmek",
+        "contextNote": "pose a threat/risk/challenge kalıpları sık gelir."
+      },
+      {
+        "word": "deliberately",
+        "meaningTr": "kasıtlı olarak",
+        "contextNote": "Eş anlamlısı: intentionally, on purpose."
+      },
+      {
+        "word": "anticipate",
+        "meaningTr": "öngörmek, beklemek",
+        "contextNote": "Eş anlamlısı: foresee, predict."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Each event is unusual on its own, but together they occur often enough that a car unable to deal with them would be dangerous.",
+        "subject": "Each event / they (her olay / onlar)",
+        "mainVerb": "is / occur (dır / meydana gelir)",
+        "objectsAndComplements": "unusual on its own (tek başına alışılmadık) + often enough that ... (... yetecek kadar sık)",
+        "grammaticalStructures": [
+          "but ile zıtlık.",
+          "enough that: -ecek kadar (sonuç).",
+          "Reduced relative clause (a car [that is] unable to deal with them).",
+          "would: varsayımsal sonuç."
+        ],
+        "translationTr": "Her olay tek başına sıra dışıdır, ancak hepsi birlikte, bunlarla başa çıkamayan bir aracın tehlikeli olacağı kadar sık meydana gelir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb026_q1",
+        "type": "reading",
+        "title": "Self-Driving Cars and the Long Tail",
+        "question": "According to the passage, the current situation of self-driving cars is that _____ .",
+        "options": {
+          "A": "they are widely used on public roads in most countries, as companies had predicted",
+          "B": "they operate only in limited areas and under favourable conditions",
+          "C": "they have completely replaced human drivers in taxi services in major cities",
+          "D": "they are no longer being developed by technology companies because of the costs",
+          "E": "they can handle every driving situation but are blocked by strict regulators"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Detay & Güncel Durum",
+        "trapWarning": "A şıkkı tahminin gerçekleştiğini söyler; metin tam tersini söyler. E şıkkı \"long tail\" sorununu yok sayar. C ve D aşırı iddialardır.",
+        "explanation": "Otonom taksiler sadece birkaç şehirde, haritalanmış bölgelerde ve iyi havada çalışır (B şıkkı)."
+      },
+      {
+        "id": "rb026_q2",
+        "type": "reading",
+        "title": "Self-Driving Cars and the Long Tail",
+        "question": "The \"long tail\" mentioned in the passage refers to _____ .",
+        "options": {
+          "A": "the ordinary tasks such as following lanes that cars learned quickly",
+          "B": "the large number of rare and unpredictable situations on the road",
+          "C": "the long period that companies needed to map city streets",
+          "D": "the queue of regulators waiting to approve autonomous vehicles",
+          "E": "the extra distance that self-driving cars keep from other vehicles"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Kavram Tanımı",
+        "trapWarning": "A şıkkı uzun kuyruğun tam karşıtı olan yüzde doksan dokuzu tarif eder. C, D ve E kelimenin gerçek anlamıyla oynayan tuzaklardır.",
+        "explanation": "Uzun kuyruk, toplamda sık görülen ama tek tek nadir olan olaylardır (B şıkkı)."
+      },
+      {
+        "id": "rb026_q3",
+        "type": "reading",
+        "title": "Self-Driving Cars and the Long Tail",
+        "question": "Why do rare events pose a particular problem for machine-learning systems?",
+        "options": {
+          "A": "Because such systems are unable to learn from any kind of example",
+          "B": "Because few real examples of these events exist to learn from",
+          "C": "Because rare events cannot be simulated on any computer",
+          "D": "Because human drivers also fail to deal with them correctly",
+          "E": "Because regulators do not allow such events to be recorded"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep Sorusu (by definition)",
+        "trapWarning": "A şıkkı abartılıdır: sistemler örneklerden öğrenir. C şıkkı metinle çelişir: simülasyonda kasıtlı olarak oluşturulabilir. D ve E metinde yoktur.",
+        "explanation": "Makine öğrenmesi örneklerden öğrenir ve nadir olayların tanımı gereği az örneği vardır (B şıkkı)."
+      },
+      {
+        "id": "rb026_q4",
+        "type": "reading",
+        "title": "Self-Driving Cars and the Long Tail",
+        "question": "The question in the last sentence suggests that _____ .",
+        "options": {
+          "A": "regulators have already decided that autonomous cars must be perfect",
+          "B": "there is no agreed standard for how safe autonomous cars must be",
+          "C": "human drivers are known to be safer than any autonomous car",
+          "D": "autonomous cars will never be allowed on public roads",
+          "E": "simulations have answered all of the regulators' safety questions"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Retorik Sorunun İşlevi",
+        "trapWarning": "A ve E soruyu cevaplanmış sayar. C ve D metinde olmayan kesin hükümlerdir.",
+        "explanation": "Soru düzenleyicilerin hâlâ ne kadar güvenliğin yeterli olduğuna karar veremediğini gösterir; ortak bir standart yoktur (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb027",
+    "title": "Meat Without Animals",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from Nature Food & The Guardian",
+    "wordCount": 243,
+    "passageText": "Cultivated meat, sometimes called lab-grown meat, is produced by taking a small sample of cells from a living animal and growing them in large steel tanks known as bioreactors. Fed with a nutrient-rich liquid, the cells multiply and can be formed into products such as minced meat or chicken nuggets. Supporters claim that the technology could eventually provide real meat without the slaughter of animals and with a fraction of the land, water and greenhouse gas emissions of conventional farming.\n\nThe first cultivated burger, presented in London in 2013, cost more than 300,000 dollars to produce. Prices have since fallen dramatically, and in 2020 Singapore became the first country to approve the sale of a cultivated chicken product. Nevertheless, the industry faces serious obstacles. Producing meat at large scale requires enormous bioreactors that must be kept completely sterile, since bacteria grow much faster than animal cells. The nutrient liquid has traditionally contained fetal bovine serum, taken from the blood of unborn calves, which undermines the claim that no animals are harmed, though several companies have now developed animal-free alternatives.\n\nThe environmental benefits are also less certain than early studies suggested. A 2023 analysis found that if the energy used to run bioreactors and purify ingredients comes from fossil fuels, cultivated beef could have a higher carbon footprint than some conventional beef. Whether cultivated meat becomes a mainstream food or remains a niche product may therefore depend as much on the energy system as on the technology itself.",
+    "vocabularyNotes": [
+      {
+        "word": "cultivate",
+        "meaningTr": "yetiştirmek, ekmek",
+        "contextNote": "Hücre yetiştirme için de kullanılır."
+      },
+      {
+        "word": "multiply",
+        "meaningTr": "çoğalmak",
+        "contextNote": "Matematikte çarpmak anlamı da vardır."
+      },
+      {
+        "word": "slaughter",
+        "meaningTr": "kesim, katliam",
+        "contextNote": "Hayvan kesimi için kullanılır."
+      },
+      {
+        "word": "sterile",
+        "meaningTr": "steril, mikropsuz",
+        "contextNote": "Zıt anlamlısı: contaminated."
+      },
+      {
+        "word": "footprint",
+        "meaningTr": "ayak izi",
+        "contextNote": "carbon footprint: karbon ayak izi."
+      },
+      {
+        "word": "niche",
+        "meaningTr": "niş, dar bir pazar",
+        "contextNote": "niche product: sınırlı kitleye hitap eden ürün."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Whether cultivated meat becomes a mainstream food or remains a niche product may therefore depend as much on the energy system as on the technology itself.",
+        "subject": "Whether cultivated meat becomes ... or remains ... (isim cümleciği özne)",
+        "mainVerb": "may depend (bağlı olabilir)",
+        "objectsAndComplements": "as much on the energy system as on the technology itself (teknolojinin kendisi kadar enerji sistemine)",
+        "grammaticalStructures": [
+          "Whether ... or ... isim cümleciği özne konumunda.",
+          "as much ... as ...: eşitlik karşılaştırması.",
+          "depend on: -e bağlı olmak.",
+          "therefore: sonuç bağlacı."
+        ],
+        "translationTr": "Bu nedenle laboratuvar etinin ana akım bir gıda mı olacağı yoksa niş bir ürün olarak mı kalacağı, teknolojinin kendisi kadar enerji sistemine de bağlı olabilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb027_q1",
+        "type": "reading",
+        "title": "Meat Without Animals",
+        "question": "According to the passage, cultivated meat is produced by _____ .",
+        "options": {
+          "A": "mixing plant proteins so that they imitate the texture of meat",
+          "B": "growing animal cells in tanks filled with a nutrient liquid",
+          "C": "raising animals in sterile conditions to prevent the spread of disease",
+          "D": "taking blood from unborn calves and turning it into a meat product",
+          "E": "using bacteria to convert fossil fuels into proteins that can be eaten"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Tanım Sorusu",
+        "trapWarning": "A şıkkı bitkisel et alternatiflerini tarif eder. D şıkkı besin sıvısındaki serumu ürünün kendisiyle karıştırır. E şıkkı bakteri ve fosil yakıt bilgilerini birleştiren bir uydurmadır.",
+        "explanation": "Hayvan hücreleri biyoreaktörlerde besin açısından zengin bir sıvıyla beslenerek çoğaltılır (B şıkkı)."
+      },
+      {
+        "id": "rb027_q2",
+        "type": "reading",
+        "title": "Meat Without Animals",
+        "question": "Why must bioreactors be kept completely sterile?",
+        "options": {
+          "A": "Because animal cells die when they are exposed to light",
+          "B": "Because bacteria would grow faster than the animal cells",
+          "C": "Because regulators in Singapore require it by law",
+          "D": "Because fetal bovine serum is easily contaminated by plants",
+          "E": "Because sterile tanks use less energy than ordinary ones"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep (since ...)",
+        "trapWarning": "C ve E metinde olmayan nedenlerdir. D şıkkı serum bilgisini yanlış bir bağlama taşır.",
+        "explanation": "\"since bacteria grow much faster than animal cells\" ifadesi doğrudan B şıkkıdır."
+      },
+      {
+        "id": "rb027_q3",
+        "type": "reading",
+        "title": "Meat Without Animals",
+        "question": "The use of fetal bovine serum is presented as a problem because it _____ .",
+        "options": {
+          "A": "makes cultivated meat taste different from conventional meat",
+          "B": "contradicts the claim that the process does not harm animals",
+          "C": "is the main reason that the first burger was so expensive",
+          "D": "cannot be replaced by any animal-free alternative that companies have tested",
+          "E": "increases the risk of bacterial contamination in the tanks"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Çelişki Tespiti (undermines the claim)",
+        "trapWarning": "D şıkkı metinle çelişir: bazı şirketler alternatif geliştirmiştir. A, C ve E metinde serumla ilişkilendirilmez.",
+        "explanation": "Serum doğmamış buzağıların kanından alınır; bu da hayvanlara zarar verilmediği iddiasını zayıflatır (B şıkkı)."
+      },
+      {
+        "id": "rb027_q4",
+        "type": "reading",
+        "title": "Meat Without Animals",
+        "question": "It can be inferred from the last paragraph that the environmental benefit of cultivated meat _____ .",
+        "options": {
+          "A": "has been clearly proven by every study carried out since 2013",
+          "B": "depends heavily on the source of the energy used in production",
+          "C": "is greater for beef than for any other kind of conventional meat",
+          "D": "is unimportant because consumers care only about the price",
+          "E": "disappears completely once production reaches a very large scale"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Çıkarım (if the energy ... comes from fossil fuels)",
+        "trapWarning": "A şıkkı \"less certain than early studies suggested\" ile çelişir. E şıkkı ölçek ile çevre etkisi arasında metinde olmayan bir bağ kurar. D şıkkı metinde yoktur.",
+        "explanation": "Enerji fosil yakıtlardan gelirse karbon ayak izi daha yüksek olabilir; yani fayda enerji kaynağına bağlıdır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb028",
+    "title": "Galaxies That Formed Too Early",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from Nature Astronomy & NASA reports",
+    "wordCount": 253,
+    "passageText": "The James Webb Space Telescope, launched in December 2021, was designed above all to look back in time. Because light travels at a finite speed, observing very distant objects means seeing them as they were when the light left them. Webb's large mirror and sensitivity to infrared light allow it to detect galaxies whose light has been travelling for more than thirteen billion years, showing the universe as it was only a few hundred million years after the Big Bang.\n\nWithin months of beginning its observations, Webb produced a surprise. It found a number of galaxies in this very early period that appeared to be far brighter and more massive than standard models of galaxy formation had predicted. According to those models, the first galaxies should have been small and faint, gradually growing larger by merging with one another and drawing in gas over billions of years. Some headlines claimed that the discoveries had \"broken\" cosmology.\n\nMost astronomers have responded more cautiously. Some of the earliest estimates of distance turned out to be wrong when they were checked with more detailed measurements. Others suggest that the galaxies may appear unusually bright because young stars formed in intense bursts, or because the stars in the early universe were different from those we see today, rather than because the galaxies contained an impossible amount of matter. The standard model of cosmology, in other words, may need adjustments to its description of how galaxies form, but there is little evidence so far that its foundations are wrong.",
+    "vocabularyNotes": [
+      {
+        "word": "finite",
+        "meaningTr": "sonlu, sınırlı",
+        "contextNote": "Zıt anlamlısı: infinite."
+      },
+      {
+        "word": "infrared",
+        "meaningTr": "kızılötesi",
+        "contextNote": "infra- (altında) + red."
+      },
+      {
+        "word": "merge",
+        "meaningTr": "birleşmek",
+        "contextNote": "İsim: merger."
+      },
+      {
+        "word": "cautiously",
+        "meaningTr": "dikkatle, temkinle",
+        "contextNote": "Sıfat: cautious."
+      },
+      {
+        "word": "burst",
+        "meaningTr": "patlama, ani artış",
+        "contextNote": "a burst of activity: ani bir hareketlilik."
+      },
+      {
+        "word": "adjustment",
+        "meaningTr": "ayarlama, düzeltme",
+        "contextNote": "adjust (ayarlamak) fiilinden."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Others suggest that the galaxies may appear unusually bright because young stars formed in intense bursts, rather than because the galaxies contained an impossible amount of matter.",
+        "subject": "Others (diğerleri)",
+        "mainVerb": "suggest (öne sürer)",
+        "objectsAndComplements": "[that-clause: galaksilerin ... madde içerdikleri için değil, genç yıldızlar yoğun patlamalarla oluştuğu için alışılmadık derecede parlak görünebileceği]",
+        "grammaticalStructures": [
+          "may appear + sıfat: gibi görünebilir.",
+          "because ... rather than because ...: iki sebebin karşılaştırılması.",
+          "Simple past (formed / contained)."
+        ],
+        "translationTr": "Diğerleri, galaksilerin imkânsız miktarda madde içerdikleri için değil, genç yıldızların yoğun patlamalar halinde oluşması nedeniyle alışılmadık derecede parlak görünebileceğini öne sürüyor."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb028_q1",
+        "type": "reading",
+        "title": "Galaxies That Formed Too Early",
+        "question": "According to the passage, observing very distant galaxies allows astronomers to _____ .",
+        "options": {
+          "A": "measure the exact speed at which light travels through space",
+          "B": "see what the universe looked like a very long time ago",
+          "C": "predict how galaxies will develop in the distant future",
+          "D": "detect galaxies that are invisible in infrared light",
+          "E": "prove that the Big Bang happened thirteen billion years ago"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Detay (look back in time)",
+        "trapWarning": "D şıkkı teleskobun kızılötesi hassasiyetini ters çevirir. E şıkkı metnin yapmadığı bir kanıt iddiası ekler. A ve C metinde yoktur.",
+        "explanation": "Uzak nesneleri gözlemlemek onları ışığın yola çıktığı andaki halleriyle görmek demektir; yani evrenin çok eski halini görmektir (B şıkkı)."
+      },
+      {
+        "id": "rb028_q2",
+        "type": "reading",
+        "title": "Galaxies That Formed Too Early",
+        "question": "Webb's discovery was surprising because the early galaxies _____ .",
+        "options": {
+          "A": "were smaller and fainter than any of the galaxies that had been seen before",
+          "B": "seemed brighter and more massive than models had predicted",
+          "C": "were moving away from each other at an impossible speed",
+          "D": "contained no stars at all but only clouds of gas",
+          "E": "had merged with one another much more slowly than expected"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Beklenti-Gerçek Zıtlığı",
+        "trapWarning": "A şıkkı modellerin beklediği durumdur, sürpriz değildir. C, D ve E metinde yoktur.",
+        "explanation": "Galaksiler standart modellerin öngördüğünden çok daha parlak ve kütleli görünmüştür (B şıkkı)."
+      },
+      {
+        "id": "rb028_q3",
+        "type": "reading",
+        "title": "Galaxies That Formed Too Early",
+        "question": "The author mentions headlines claiming that cosmology had been \"broken\" in order to _____ .",
+        "options": {
+          "A": "support the view that the standard model of cosmology has now completely failed",
+          "B": "contrast a dramatic reaction with the more careful view of astronomers",
+          "C": "show that journalists understand cosmology better than scientists",
+          "D": "explain why the telescope was launched in December 2021",
+          "E": "suggest that distance measurements are always unreliable"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Zıtlık İçin Kullanılan Örnek",
+        "trapWarning": "A şıkkı son cümleyle çelişir. E şıkkı abartılı bir genellemedir: sadece bazı ilk tahminler yanlış çıkmıştır. C ve D ilgisizdir.",
+        "explanation": "Hemen ardından \"Most astronomers have responded more cautiously\" gelir; manşetler temkinli görüşle karşılaştırılmak için verilmiştir (B şıkkı)."
+      },
+      {
+        "id": "rb028_q4",
+        "type": "reading",
+        "title": "Galaxies That Formed Too Early",
+        "question": "The author's conclusion is that the standard model of cosmology _____ .",
+        "options": {
+          "A": "must be replaced entirely by a new theory of the universe",
+          "B": "may need some revision but is not fundamentally wrong",
+          "C": "has been confirmed in every detail by the new observations",
+          "D": "cannot explain why light travels at a finite speed",
+          "E": "was designed only to describe galaxies near our own"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sonuç Cümlesi (may need adjustments, but ...)",
+        "trapWarning": "A şıkkı manşetlerin görüşüdür. C şıkkı ayarlamaya ihtiyaç olabileceği bilgisini yok sayar. D ve E metinde yoktur.",
+        "explanation": "Model galaksi oluşumu açıklamasında ayarlama gerektirebilir ama temellerinin yanlış olduğuna dair kanıt azdır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb029",
+    "title": "Quantum Computers and the Future of Encryption",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from Scientific American & NIST reports",
+    "wordCount": 257,
+    "passageText": "Much of the security of the internet rests on a simple mathematical fact: multiplying two large prime numbers is easy, but working out which two primes were multiplied to produce a given result is extraordinarily hard. The encryption systems that protect online banking, email and many government communications rely on this asymmetry. Even the most powerful conventional computers would need thousands of years to break a well-chosen key.\n\nQuantum computers could change this. Instead of bits that are either 0 or 1, they use quantum bits, or qubits, which can exist in a combination of states at once. In 1994, the mathematician Peter Shor showed that a sufficiently large quantum computer could factor large numbers dramatically faster than any ordinary machine, making today's widely used encryption methods vulnerable. No existing quantum computer is anywhere near large or reliable enough to do this; current machines have at most a few thousand qubits, and they make frequent errors. Estimates of when a dangerous machine might exist range from about a decade to several decades.\n\nSecurity experts nevertheless argue that preparation must begin now. One reason is the threat known as \"harvest now, decrypt later\": an attacker could record encrypted data today and store it until a quantum computer becomes available to unlock it. Information that must remain secret for many years, such as medical records or state secrets, is therefore already at risk. In 2024, the United States National Institute of Standards and Technology published the first standards for post-quantum encryption, based on mathematical problems believed to be hard even for quantum computers.",
+    "vocabularyNotes": [
+      {
+        "word": "rest on",
+        "meaningTr": "-e dayanmak",
+        "contextNote": "Eş anlamlısı: depend on, be based on."
+      },
+      {
+        "word": "asymmetry",
+        "meaningTr": "asimetri, orantısızlık",
+        "contextNote": "a- olumsuzluk + symmetry."
+      },
+      {
+        "word": "factor",
+        "meaningTr": "çarpanlarına ayırmak; etken",
+        "contextNote": "Burada matematik fiili."
+      },
+      {
+        "word": "vulnerable",
+        "meaningTr": "savunmasız, korunmasız",
+        "contextNote": "ÖSYM favorisi. Eş anlamlısı: susceptible, exposed."
+      },
+      {
+        "word": "decrypt",
+        "meaningTr": "şifresini çözmek",
+        "contextNote": "Zıt anlamlısı: encrypt."
+      },
+      {
+        "word": "harvest",
+        "meaningTr": "hasat etmek, toplamak",
+        "contextNote": "Burada veriyi toplayıp biriktirmek anlamında mecazi."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "An attacker could record encrypted data today and store it until a quantum computer becomes available to unlock it.",
+        "subject": "An attacker (bir saldırgan)",
+        "mainVerb": "could record ... and store (kaydedebilir ve saklayabilir)",
+        "objectsAndComplements": "encrypted data (şifreli veri) + [until-clause: bir kuantum bilgisayar onu açmak için kullanılabilir hale gelene kadar]",
+        "grammaticalStructures": [
+          "could: olasılık.",
+          "Paralel fiiller (record ... and store).",
+          "until + present simple: gelecek anlamı taşıyan zaman yan cümlesi.",
+          "Amaç bildiren to-infinitive (to unlock it)."
+        ],
+        "translationTr": "Bir saldırgan şifreli verileri bugün kaydedip, onları çözebilecek bir kuantum bilgisayar kullanılabilir hale gelene kadar saklayabilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb029_q1",
+        "type": "reading",
+        "title": "Quantum Computers and the Future of Encryption",
+        "question": "According to the passage, current internet encryption depends on the fact that _____ .",
+        "options": {
+          "A": "prime numbers are very difficult to multiply together quickly",
+          "B": "finding the two primes behind a large number is extremely difficult",
+          "C": "quantum computers make frequent errors when they handle large numbers",
+          "D": "conventional computers can break any key within a few years",
+          "E": "qubits can exist in a combination of different states at once"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Temel Prensip",
+        "trapWarning": "A şıkkı ilişkiyi tersine çevirir: çarpmak kolaydır. D şıkkı metinle çelişir (binlerce yıl). C ve E kuantum bilgisayarlara aittir, mevcut şifrelemenin dayanağı değildir.",
+        "explanation": "Asal sayıları çarpmak kolay, ama sonuçtan hangi asalların çarpıldığını bulmak çok zordur (B şıkkı)."
+      },
+      {
+        "id": "rb029_q2",
+        "type": "reading",
+        "title": "Quantum Computers and the Future of Encryption",
+        "question": "Which of the following is true about existing quantum computers?",
+        "options": {
+          "A": "They have already broken several of the most widely used encryption systems.",
+          "B": "They are still too small and error-prone to threaten encryption.",
+          "C": "They were first built by Peter Shor in the year 1994.",
+          "D": "They use ordinary bits that are either 0 or 1.",
+          "E": "They will certainly become dangerous within the next five years."
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Doğru Bilgi Seçimi",
+        "trapWarning": "A ve E metinle çelişir. C şıkkı tuzaktır: Shor bir algoritma göstermiştir, bilgisayar yapmamıştır. D şıkkı kübit tanımının tersidir.",
+        "explanation": "Metne göre mevcut makineler bunu yapacak kadar büyük ve güvenilir değildir; hata oranları yüksektir (B şıkkı)."
+      },
+      {
+        "id": "rb029_q3",
+        "type": "reading",
+        "title": "Quantum Computers and the Future of Encryption",
+        "question": "The threat called \"harvest now, decrypt later\" means that _____ .",
+        "options": {
+          "A": "quantum computers are being used today to steal medical records",
+          "B": "data stolen now could be read in the future when quantum computers exist",
+          "C": "attackers are waiting for new standards before collecting any data",
+          "D": "encrypted data will automatically be deleted after several years",
+          "E": "governments must decrypt their own secrets before quantum computers arrive"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Kavram Açıklaması",
+        "trapWarning": "A şıkkı zamanlamayı bozar: bugün çalınan veri gelecekte okunacaktır. C, D ve E kavramla ilgisizdir.",
+        "explanation": "Saldırgan şifreli veriyi bugün kaydedip gelecekte bir kuantum bilgisayarla çözebilir (B şıkkı)."
+      },
+      {
+        "id": "rb029_q4",
+        "type": "reading",
+        "title": "Quantum Computers and the Future of Encryption",
+        "question": "It can be inferred from the passage that the experts' main argument is that _____ .",
+        "options": {
+          "A": "quantum computers will never be powerful enough to break encryption",
+          "B": "action against the quantum threat should not wait until it actually arrives",
+          "C": "medical records should no longer be stored in an encrypted form",
+          "D": "conventional computers should be replaced by quantum ones as soon as possible",
+          "E": "post-quantum encryption is already broken by today's machines"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Ana Argüman (preparation must begin now)",
+        "trapWarning": "A şıkkı uzmanların görüşünü boşa çıkarır. C ve D metinde olmayan tavsiyelerdir. E şıkkı metne aykırıdır.",
+        "explanation": "Uzmanlar hazırlığın şimdi başlaması gerektiğini savunur; tehdidin gelmesini beklememek gerekir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb030",
+    "title": "Graphene's Slow Road to Market",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from Nature Nanotechnology & Physics World",
+    "wordCount": 239,
+    "passageText": "When Andre Geim and Konstantin Novoselov isolated graphene in 2004, using little more than a pencil and a roll of sticky tape, the discovery was greeted with extraordinary excitement. Graphene is a single layer of carbon atoms arranged in a honeycomb pattern. It is about two hundred times stronger than steel by weight, conducts electricity and heat better than copper and is almost completely transparent. Within six years, the two physicists had received the Nobel Prize, and commentators predicted that graphene would soon transform everything from computer chips to aircraft.\n\nTwenty years later, these predictions have been only partly fulfilled. Graphene is now used in a range of products, including sports equipment, batteries and coatings, but usually in small quantities added to other materials to improve their strength or conductivity. The revolutionary applications, such as graphene-based processors replacing silicon, remain largely in the laboratory.\n\nThe gap between promise and reality has several causes. Producing large sheets of high-quality graphene cheaply has proved extremely difficult; methods that work in the laboratory often introduce defects when scaled up. In addition, graphene lacks a property called a band gap, which allows silicon transistors to be switched off completely, so it cannot simply replace silicon in digital electronics. Historians of technology point out, however, that such delays are normal. Aluminium was discovered in the 1820s, but it took more than half a century before an affordable method of production made it a common material.",
+    "vocabularyNotes": [
+      {
+        "word": "isolate",
+        "meaningTr": "ayırmak, yalıtmak",
+        "contextNote": "Burada saf hâlde elde etmek anlamında."
+      },
+      {
+        "word": "transparent",
+        "meaningTr": "şeffaf",
+        "contextNote": "Zıt anlamlısı: opaque."
+      },
+      {
+        "word": "fulfil",
+        "meaningTr": "yerine getirmek, gerçekleştirmek",
+        "contextNote": "fulfil a prediction/promise."
+      },
+      {
+        "word": "coating",
+        "meaningTr": "kaplama",
+        "contextNote": "coat (kaplamak) fiilinden."
+      },
+      {
+        "word": "defect",
+        "meaningTr": "kusur, hata",
+        "contextNote": "Eş anlamlısı: flaw, fault."
+      },
+      {
+        "word": "affordable",
+        "meaningTr": "uygun fiyatlı, karşılanabilir",
+        "contextNote": "afford (gücü yetmek) fiilinden."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Graphene lacks a property called a band gap, which allows silicon transistors to be switched off completely, so it cannot simply replace silicon in digital electronics.",
+        "subject": "Graphene (grafen)",
+        "mainVerb": "lacks (yoksundur)",
+        "objectsAndComplements": "a property called a band gap (bant aralığı denen bir özellikten) + [which-clause] + so-clause (bu yüzden ...)",
+        "grammaticalStructures": [
+          "lack + nesne (edat almaz).",
+          "Reduced passive relative (a property called ...).",
+          "allow + nesne + to be V3 (passive infinitive).",
+          "so: sonuç bağlacı."
+        ],
+        "translationTr": "Grafen, silikon transistörlerin tamamen kapatılabilmesini sağlayan bant aralığı adlı bir özellikten yoksundur; bu yüzden dijital elektronikte silikonun yerini basitçe alamaz."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb030_q1",
+        "type": "reading",
+        "title": "Graphene's Slow Road to Market",
+        "question": "According to the passage, graphene is used in commercial products today mainly _____ .",
+        "options": {
+          "A": "as a complete replacement for silicon in computer processors",
+          "B": "in small amounts added to improve other materials",
+          "C": "in the form of large sheets for the bodies of aircraft",
+          "D": "only in laboratories, since no products contain it yet",
+          "E": "as a cheaper alternative to aluminium in construction"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Güncel Kullanım Detayı",
+        "trapWarning": "A ve C ilk dönemin tahminleridir, gerçekleşmemiştir. D şıkkı metinle çelişir: bazı ürünlerde kullanılmaktadır. E şıkkı alüminyum örneğini yanlış bağlar.",
+        "explanation": "Grafen genellikle diğer malzemelere az miktarda eklenerek kullanılmaktadır (B şıkkı)."
+      },
+      {
+        "id": "rb030_q2",
+        "type": "reading",
+        "title": "Graphene's Slow Road to Market",
+        "question": "Which of the following is given as a reason why graphene cannot simply replace silicon?",
+        "options": {
+          "A": "It conducts electricity and heat much less efficiently than silicon does",
+          "B": "It does not have a band gap that allows transistors to switch off",
+          "C": "It is too transparent to be used inside electronic devices",
+          "D": "It is weaker than steel when measured by its weight",
+          "E": "Its discovery was made using very simple equipment"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep Detayı",
+        "trapWarning": "A ve D metinle çelişir: grafen bakırdan iyi iletir ve çelikten güçlüdür. C ve E ilgisiz özelliklerdir.",
+        "explanation": "Grafen bant aralığından yoksundur; bu yüzden silikon gibi tamamen kapatılamaz (B şıkkı)."
+      },
+      {
+        "id": "rb030_q3",
+        "type": "reading",
+        "title": "Graphene's Slow Road to Market",
+        "question": "The example of aluminium is used to suggest that _____ .",
+        "options": {
+          "A": "graphene will never become a widely used material",
+          "B": "a long delay between discovery and wide use is not unusual",
+          "C": "aluminium is a stronger material than graphene",
+          "D": "graphene was discovered earlier than most people think",
+          "E": "historians are more optimistic than scientists about every material"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Benzetme / Örnek İşlevi (such delays are normal)",
+        "trapWarning": "A şıkkı örneğin amacının tersidir. C, D ve E metinde olmayan karşılaştırmalardır.",
+        "explanation": "Alüminyum keşfinden yarım asır sonra yaygınlaşmıştır; bu da gecikmenin olağan olduğunu gösterir (B şıkkı)."
+      },
+      {
+        "id": "rb030_q4",
+        "type": "reading",
+        "title": "Graphene's Slow Road to Market",
+        "question": "The passage is mainly concerned with _____ .",
+        "options": {
+          "A": "the personal lives and scientific careers of two physicists who won the Nobel Prize",
+          "B": "why the practical use of graphene has developed more slowly than expected",
+          "C": "the methods used to produce high-quality aluminium in the 1800s",
+          "D": "a comparison of the strength of different building materials",
+          "E": "the reasons why silicon is likely to disappear from electronics in the near future"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Ana Konu",
+        "trapWarning": "A ve C metnin küçük bir kısmıdır. E şıkkı metinle çelişir. D şıkkı ana konu değildir.",
+        "explanation": "Metin grafenle ilgili büyük beklentilerin neden kısmen gerçekleştiğini ve gecikmenin nedenlerini anlatır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb031",
+    "title": "Intermittent Fasting Under the Microscope",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from The New England Journal of Medicine & JAMA",
+    "wordCount": 262,
+    "passageText": "Intermittent fasting, an approach to eating that alternates periods of normal eating with periods of little or no food, has become one of the most popular diets of the past decade. Its best-known forms include the 16:8 method, in which all food is eaten within an eight-hour window each day, and the 5:2 diet, which involves eating normally for five days a week and sharply reducing calories on the other two. Supporters claim that fasting does more than reduce calories: it is said to improve the body's response to insulin, reduce inflammation and even slow ageing.\n\nMuch of the enthusiasm originally came from animal studies. Mice and rats placed on fasting schedules often live longer and develop fewer age-related diseases than animals allowed to eat freely. Human evidence, however, is more limited. Several well-designed trials have compared intermittent fasting with ordinary calorie restriction, in which people simply eat less every day, and found that the two approaches lead to similar weight loss and similar improvements in blood pressure and blood sugar.\n\nThese results suggest that the main benefit of intermittent fasting may come from the fact that people eat less overall, rather than from any special effect of the timing of meals. This does not make the method worthless. Some people find it easier to follow a rule about when to eat than to count calories, and for them fasting may be the more practical choice. Doctors caution, however, that it is not suitable for everyone, including pregnant women, people with diabetes who take certain medications and those with a history of eating disorders.",
+    "vocabularyNotes": [
+      {
+        "word": "intermittent",
+        "meaningTr": "aralıklı, kesintili",
+        "contextNote": "Eş anlamlısı: periodic, sporadic."
+      },
+      {
+        "word": "alternate",
+        "meaningTr": "dönüşümlü yapmak; sırayla gelmek",
+        "contextNote": "alternate A with B."
+      },
+      {
+        "word": "restriction",
+        "meaningTr": "kısıtlama",
+        "contextNote": "calorie restriction: kalori kısıtlaması."
+      },
+      {
+        "word": "enthusiasm",
+        "meaningTr": "coşku, heves",
+        "contextNote": "Sıfat: enthusiastic."
+      },
+      {
+        "word": "worthless",
+        "meaningTr": "değersiz",
+        "contextNote": "-less eki: -sız."
+      },
+      {
+        "word": "caution",
+        "meaningTr": "uyarmak; dikkat",
+        "contextNote": "caution against: -e karşı uyarmak."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "These results suggest that the main benefit of intermittent fasting may come from the fact that people eat less overall, rather than from any special effect of the timing of meals.",
+        "subject": "These results (bu sonuçlar)",
+        "mainVerb": "suggest (göstermektedir)",
+        "objectsAndComplements": "[that-clause: aralıklı orucun asıl faydasının ... öğün zamanlamasının özel bir etkisinden değil, insanların genel olarak daha az yemesinden kaynaklanabileceği]",
+        "grammaticalStructures": [
+          "the fact that: -dığı gerçeği (isim + açıklayıcı cümle).",
+          "may come from: -den kaynaklanabilir.",
+          "rather than: -den ziyade (iki from yapısını karşılaştırır)."
+        ],
+        "translationTr": "Bu sonuçlar, aralıklı orucun asıl faydasının öğün zamanlamasının özel bir etkisinden ziyade insanların genel olarak daha az yemesinden kaynaklanabileceğini göstermektedir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb031_q1",
+        "type": "reading",
+        "title": "Intermittent Fasting Under the Microscope",
+        "question": "According to the passage, the 5:2 diet involves _____ .",
+        "options": {
+          "A": "eating all meals within an eight-hour period on five days a week",
+          "B": "eating normally on most days and eating very little on two days",
+          "C": "eating five small meals a day instead of two large ones",
+          "D": "reducing calories slightly on every day of the week",
+          "E": "fasting completely for two weeks out of every five"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Tanım Detayı",
+        "trapWarning": "A şıkkı iki yöntemi karıştırır (16:8). D şıkkı sürekli kalori kısıtlamasını tarif eder. C ve E sayılarla oynayan tuzaklardır.",
+        "explanation": "5:2 diyeti haftada beş gün normal yemeyi ve diğer iki gün kaloriyi ciddi şekilde azaltmayı içerir (B şıkkı)."
+      },
+      {
+        "id": "rb031_q2",
+        "type": "reading",
+        "title": "Intermittent Fasting Under the Microscope",
+        "question": "Trials comparing intermittent fasting with ordinary calorie restriction found that _____ .",
+        "options": {
+          "A": "fasting led to much greater weight loss than simply eating a little less every day",
+          "B": "both approaches produced similar results for weight and health measures",
+          "C": "only calorie restriction improved blood pressure and blood sugar",
+          "D": "people who fasted lived longer than those who restricted calories",
+          "E": "fasting slowed ageing in humans just as it did in mice and rats"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Araştırma Sonucu",
+        "trapWarning": "A ve C sonuçlardan birini üstün gösterir. D ve E hayvan çalışmalarının bulgularını insanlara yanlış aktarır.",
+        "explanation": "İki yaklaşım da benzer kilo kaybı ve benzer kan basıncı/şekeri iyileşmeleri sağlamıştır (B şıkkı)."
+      },
+      {
+        "id": "rb031_q3",
+        "type": "reading",
+        "title": "Intermittent Fasting Under the Microscope",
+        "question": "The author suggests that intermittent fasting may still be useful because _____ .",
+        "options": {
+          "A": "it has special effects on ageing that calorie counting does not have",
+          "B": "some people find a timing rule easier to follow than counting calories",
+          "C": "it is the only diet that is considered safe for people with diabetes who take medication",
+          "D": "doctors recommend it for pregnant women and their babies",
+          "E": "it works better in humans than in laboratory animals"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Yazarın Değerlendirmesi (This does not make the method worthless)",
+        "trapWarning": "A şıkkı metnin vardığı sonuçla çelişir. C ve D son cümlede uygun olmadığı söylenen gruplardır. E şıkkı metinde yoktur.",
+        "explanation": "Bazı insanlar ne zaman yiyeceğine dair bir kuralı uygulamayı kalori saymaktan daha kolay bulur (B şıkkı)."
+      },
+      {
+        "id": "rb031_q4",
+        "type": "reading",
+        "title": "Intermittent Fasting Under the Microscope",
+        "question": "It can be inferred that the original enthusiasm for intermittent fasting _____ .",
+        "options": {
+          "A": "was based mainly on large and well-designed human trials",
+          "B": "was based largely on results from studies of animals",
+          "C": "was caused by doctors who recommended it to all patients",
+          "D": "has been completely confirmed by recent human research",
+          "E": "came from people with a history of eating disorders"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Çıkarım (Much of the enthusiasm came from animal studies)",
+        "trapWarning": "A şıkkı tuzaktır: insan çalışmaları daha sınırlıdır ve heyecanı doğrulamamıştır. D şıkkı bu yüzden yanlıştır. C ve E metinde yoktur.",
+        "explanation": "\"Much of the enthusiasm originally came from animal studies\" cümlesi doğrudan B şıkkıdır."
+      }
+    ]
+  },
+  {
+    "id": "rb032",
+    "title": "Herd Immunity Explained",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from WHO fact sheets & The Lancet Infectious Diseases",
+    "wordCount": 233,
+    "passageText": "Vaccines protect not only the people who receive them but also those who cannot. When a large enough share of a population is immune to an infectious disease, the disease has difficulty spreading, because an infected person is unlikely to meet someone who can catch it. This indirect protection, known as herd immunity, shields newborn babies who are too young to be vaccinated, people undergoing cancer treatment and others whose immune systems are weakened.\n\nThe proportion of people who need to be immune depends on how contagious a disease is. Epidemiologists measure this with a number called R0, the average number of people one infected person will infect in a population with no immunity. Measles, one of the most contagious diseases known, has an R0 of between twelve and eighteen, which means that about ninety-five percent of the population must be immune to prevent outbreaks. For diseases that spread less easily, the threshold is considerably lower.\n\nBecause the threshold for measles is so high, even small declines in vaccination rates can have serious consequences. In several European countries and in parts of the United States, outbreaks have returned in recent years in communities where vaccine hesitancy has spread, often fuelled by misinformation online. Public health experts emphasize that herd immunity is a collective achievement: it cannot be reached by individuals acting alone, and it can be lost more quickly than it was built.",
+    "vocabularyNotes": [
+      {
+        "word": "immune",
+        "meaningTr": "bağışık",
+        "contextNote": "immune to: -e karşı bağışık. İsim: immunity."
+      },
+      {
+        "word": "contagious",
+        "meaningTr": "bulaşıcı",
+        "contextNote": "Eş anlamlısı: infectious, communicable."
+      },
+      {
+        "word": "epidemiologist",
+        "meaningTr": "epidemiyolog (salgın bilimci)",
+        "contextNote": "epidemic (salgın) kelimesinden."
+      },
+      {
+        "word": "outbreak",
+        "meaningTr": "salgın, patlak verme",
+        "contextNote": "break out fiilinden türeyen isim."
+      },
+      {
+        "word": "threshold",
+        "meaningTr": "eşik",
+        "contextNote": "ÖSYM'de çok sık geçer."
+      },
+      {
+        "word": "hesitancy",
+        "meaningTr": "tereddüt, isteksizlik",
+        "contextNote": "vaccine hesitancy: aşı karşıtlığı/tereddüdü."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Measles, one of the most contagious diseases known, has an R0 of between twelve and eighteen, which means that about ninety-five percent of the population must be immune to prevent outbreaks.",
+        "subject": "Measles (kızamık)",
+        "mainVerb": "has (sahiptir)",
+        "objectsAndComplements": "an R0 of between twelve and eighteen (12 ile 18 arasında bir R0 değeri) + [which-clause: bu da nüfusun yaklaşık %95'inin bağışık olması gerektiği anlamına gelir]",
+        "grammaticalStructures": [
+          "Appositive (one of the most contagious diseases known).",
+          "Sentential which: önceki bilgiyi bir bütün olarak açıklar.",
+          "must be: zorunluluk.",
+          "Amaç bildiren to-infinitive (to prevent outbreaks)."
+        ],
+        "translationTr": "Bilinen en bulaşıcı hastalıklardan biri olan kızamığın R0 değeri 12 ile 18 arasındadır; bu da salgınları önlemek için nüfusun yaklaşık yüzde doksan beşinin bağışık olması gerektiği anlamına gelir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb032_q1",
+        "type": "reading",
+        "title": "Herd Immunity Explained",
+        "question": "According to the passage, herd immunity benefits people who cannot be vaccinated because _____ .",
+        "options": {
+          "A": "they receive a weaker version of the vaccine through contact with others",
+          "B": "the disease spreads less easily when most people around them are immune",
+          "C": "their own immune systems become stronger when others are vaccinated",
+          "D": "doctors give them priority access to new and more effective treatments",
+          "E": "they are kept away from the rest of the population during outbreaks"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Mekanizma",
+        "trapWarning": "A ve C dolaylı korumayı biyolojik bir aktarım gibi sunar. D ve E metinde yoktur.",
+        "explanation": "Nüfusun büyük kısmı bağışık olduğunda hastalık yayılmakta zorlanır ve enfekte kişi hastalığı kapabilecek birine rastlamaz (B şıkkı)."
+      },
+      {
+        "id": "rb032_q2",
+        "type": "reading",
+        "title": "Herd Immunity Explained",
+        "question": "The number R0 refers to _____ .",
+        "options": {
+          "A": "the percentage of a population that has already been vaccinated against a particular disease",
+          "B": "the average number of people one case will infect in a non-immune population",
+          "C": "the number of years that immunity lasts after a person has been vaccinated",
+          "D": "the rate at which vaccination levels decline in a particular community",
+          "E": "the number of outbreaks of a disease recorded in a single year"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Kavram Tanımı",
+        "trapWarning": "A şıkkı eşiği R0 ile karıştırır. C, D ve E metinde geçmeyen tanımlardır.",
+        "explanation": "R0, bağışıklık olmayan bir nüfusta bir enfekte kişinin ortalama kaç kişiyi enfekte edeceğidir (B şıkkı)."
+      },
+      {
+        "id": "rb032_q3",
+        "type": "reading",
+        "title": "Herd Immunity Explained",
+        "question": "Why can small declines in vaccination have serious consequences for measles?",
+        "options": {
+          "A": "Because the measles vaccine is less effective than most of the other vaccines in use",
+          "B": "Because the share of the population that must be immune is very high",
+          "C": "Because measles mainly affects people undergoing cancer treatment",
+          "D": "Because misinformation about measles is spread only in Europe",
+          "E": "Because measles has a lower R0 than most other infectious diseases"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep (Because the threshold ... is so high)",
+        "trapWarning": "E şıkkı tam tersidir. D şıkkı \"only\" ile aşırı genelleme yapar. A ve C metinde yoktur.",
+        "explanation": "Kızamık için eşik yaklaşık yüzde doksan beş gibi çok yüksektir; küçük düşüşler bile eşiğin altına inmeye yeter (B şıkkı)."
+      },
+      {
+        "id": "rb032_q4",
+        "type": "reading",
+        "title": "Herd Immunity Explained",
+        "question": "The statement that herd immunity \"is a collective achievement\" means that _____ .",
+        "options": {
+          "A": "each person can protect the whole community simply by being careful",
+          "B": "it depends on a large number of people being immunized together",
+          "C": "only governments, not individuals, are responsible for vaccination",
+          "D": "it is achieved by collecting data about infections from many countries",
+          "E": "once it has been reached, it can never be lost again"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "İfade Yorumu",
+        "trapWarning": "A şıkkı \"cannot be reached by individuals acting alone\" ile çelişir. E şıkkı \"can be lost more quickly than it was built\" ile çelişir. C ve D yanlış yorumlardır.",
+        "explanation": "Toplu başarı, sürü bağışıklığının çok sayıda kişinin birlikte bağışık olmasına dayandığı anlamına gelir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb033",
+    "title": "Air Pollution and the Ageing Brain",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from The Lancet Commission on Dementia",
+    "wordCount": 260,
+    "passageText": "The harmful effects of air pollution on the lungs and heart have been recognized for decades. More recently, researchers have begun to examine its effects on the brain. Fine particulate matter, known as PM2.5, consists of particles less than 2.5 micrometres in diameter, about thirty times thinner than a human hair. These particles are produced mainly by vehicle exhausts, power plants and the burning of wood and coal, and they are small enough to pass from the lungs into the bloodstream. Some of the smallest may even reach the brain directly through the nose.\n\nA growing number of large population studies have linked long-term exposure to PM2.5 with a higher risk of dementia. In 2020, an influential international commission added air pollution to its list of modifiable risk factors for dementia, alongside factors such as physical inactivity, smoking and hearing loss. The commission estimated that around two percent of dementia cases worldwide could be attributed to air pollution.\n\nEstablishing cause and effect is difficult, however. People who live in polluted areas often differ from those in cleaner areas in income, diet and access to health care, all of which also affect the risk of dementia. Researchers try to account for these differences statistically, but they cannot rule them out completely. Laboratory studies in animals provide some support for a causal link, showing that exposure to fine particles can trigger inflammation in the brain. Because air pollution can be reduced through policy, many scientists argue that cleaner air may offer one of the few ways of lowering dementia risk across an entire population.",
+    "vocabularyNotes": [
+      {
+        "word": "particulate matter",
+        "meaningTr": "partikül madde",
+        "contextNote": "PM2.5: ince partikül madde."
+      },
+      {
+        "word": "exhaust",
+        "meaningTr": "egzoz; tüketmek",
+        "contextNote": "Burada araç egzozu anlamında isim."
+      },
+      {
+        "word": "exposure",
+        "meaningTr": "maruz kalma",
+        "contextNote": "be exposed to fiilinden."
+      },
+      {
+        "word": "modifiable",
+        "meaningTr": "değiştirilebilir",
+        "contextNote": "modify (değiştirmek) + -able."
+      },
+      {
+        "word": "attribute to",
+        "meaningTr": "-e atfetmek, bağlamak",
+        "contextNote": "Passive: be attributed to."
+      },
+      {
+        "word": "rule out",
+        "meaningTr": "ihtimal dışı bırakmak",
+        "contextNote": "ÖSYM'nin sık sorduğu phrasal verb."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "People who live in polluted areas often differ from those in cleaner areas in income, diet and access to health care, all of which also affect the risk of dementia.",
+        "subject": "People who live in polluted areas (kirli bölgelerde yaşayan insanlar)",
+        "mainVerb": "differ from (farklılık gösterir)",
+        "objectsAndComplements": "those in cleaner areas (daha temiz bölgelerdekilerden) + in income, diet and access to health care + [all of which-clause]",
+        "grammaticalStructures": [
+          "Defining relative clause öznede (People who live ...).",
+          "differ from A in B: A'dan B bakımından farklı olmak.",
+          "those: people yerine geçen zamir.",
+          "all of which: hepsi (non-defining relative)."
+        ],
+        "translationTr": "Kirli bölgelerde yaşayan insanlar, daha temiz bölgelerde yaşayanlardan genellikle gelir, beslenme ve sağlık hizmetlerine erişim bakımından farklılık gösterir ve bunların hepsi de demans riskini etkiler."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb033_q1",
+        "type": "reading",
+        "title": "Air Pollution and the Ageing Brain",
+        "question": "According to the passage, PM2.5 particles may affect the brain because they _____ .",
+        "options": {
+          "A": "are too large to be filtered out by the lungs and therefore build up in the blood",
+          "B": "can enter the bloodstream and possibly reach the brain through the nose",
+          "C": "are produced mainly by plants and natural sources",
+          "D": "damage the heart, which then stops supplying the brain with blood",
+          "E": "are about thirty times thicker than a human hair and are breathed in through the nose"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Detay & Mekanizma",
+        "trapWarning": "A ve E boyut bilgisini tersine çevirir. C şıkkı kaynakları yanlış verir. D şıkkı metinde olmayan bir zincir kurar.",
+        "explanation": "Parçacıklar akciğerden kana geçebilecek kadar küçüktür ve bazıları burun yoluyla doğrudan beyne ulaşabilir (B şıkkı)."
+      },
+      {
+        "id": "rb033_q2",
+        "type": "reading",
+        "title": "Air Pollution and the Ageing Brain",
+        "question": "The international commission mentioned in the passage _____ .",
+        "options": {
+          "A": "concluded that air pollution is now the main cause of most dementia cases worldwide",
+          "B": "included air pollution among the risk factors for dementia that can be changed",
+          "C": "found that hearing loss is caused by long-term exposure to PM2.5",
+          "D": "estimated that half of all dementia cases are due to pollution",
+          "E": "rejected the idea that physical inactivity affects dementia risk"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Detay (modifiable risk factors)",
+        "trapWarning": "A ve D oranı abartır (yaklaşık yüzde iki). C şıkkı risk faktörlerini birbirine bağlar. E şıkkı metinle çelişir.",
+        "explanation": "Komisyon hava kirliliğini değiştirilebilir risk faktörleri listesine eklemiştir (B şıkkı)."
+      },
+      {
+        "id": "rb033_q3",
+        "type": "reading",
+        "title": "Air Pollution and the Ageing Brain",
+        "question": "Why is it difficult to prove that air pollution causes dementia?",
+        "options": {
+          "A": "Because the level of PM2.5 cannot be measured accurately in large and crowded cities",
+          "B": "Because people in polluted areas also differ in other ways that affect risk",
+          "C": "Because animal studies have shown that particles do not harm the brain",
+          "D": "Because dementia is too rare for large population studies",
+          "E": "Because the commission refused to examine the evidence"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Karıştırıcı Değişkenler",
+        "trapWarning": "C şıkkı metinle çelişir: hayvan çalışmaları nedensel bağı destekler. A, D ve E metinde yoktur.",
+        "explanation": "Kirli bölgelerde yaşayanlar gelir, beslenme ve sağlık hizmetine erişim bakımından da farklıdır ve bunlar da riski etkiler (B şıkkı)."
+      },
+      {
+        "id": "rb033_q4",
+        "type": "reading",
+        "title": "Air Pollution and the Ageing Brain",
+        "question": "According to many scientists, cleaner air is important for dementia prevention because _____ .",
+        "options": {
+          "A": "it is the single most important risk factor for dementia",
+          "B": "it can be achieved through policy and affect whole populations",
+          "C": "it removes the need to deal with other risk factors such as hearing loss",
+          "D": "it completely cures people who already have dementia",
+          "E": "it is cheaper than any medication currently available"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Son Cümle Yorumu",
+        "trapWarning": "A şıkkı oranla çelişir (yaklaşık yüzde iki). D şıkkı tedavi iddiası metinde yoktur. C ve E ilgisiz karşılaştırmalardır.",
+        "explanation": "Hava kirliliği politikayla azaltılabilir; bu da tüm nüfusta riski düşürmenin az sayıdaki yolundan biridir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb034",
+    "title": "The Trouble with Ultra-Processed Food",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from Cell Metabolism & BMJ",
+    "wordCount": 252,
+    "passageText": "Nutrition scientists have traditionally judged food by its ingredients: how much fat, sugar, salt or fibre it contains. In 2009, the Brazilian researcher Carlos Monteiro proposed a different approach, classifying foods according to how much they have been processed. At one end are unprocessed foods such as fruit, vegetables and eggs; at the other are ultra-processed foods, industrial products made mostly from substances extracted from foods, such as starches and oils, combined with additives like flavourings, colourings and emulsifiers. Examples include soft drinks, packaged snacks, many breakfast cereals and ready meals.\n\nIn many wealthy countries, ultra-processed foods now provide more than half of all the calories people eat. Observational studies have linked high consumption with obesity, type 2 diabetes, heart disease and early death. A carefully controlled experiment conducted in 2019 strengthened these concerns. Twenty adults lived in a clinic for four weeks and were offered either an ultra-processed or an unprocessed diet, each matched for calories, sugar, fat and fibre, and allowed to eat as much as they wished. On the ultra-processed diet, they ate about five hundred more calories a day and gained weight.\n\nWhy this happens is not yet clear. One possibility is that ultra-processed foods are eaten faster, giving the body less time to signal fullness. Another is that they are engineered to be especially pleasurable. Critics of the classification argue that it groups together very different products, from wholemeal bread made in a factory to sugary drinks, and that it is not always obvious which category a food belongs to.",
+    "vocabularyNotes": [
+      {
+        "word": "classify",
+        "meaningTr": "sınıflandırmak",
+        "contextNote": "İsim: classification."
+      },
+      {
+        "word": "extract",
+        "meaningTr": "çıkarmak, özütlemek",
+        "contextNote": "İsim olarak öz, ekstrakt."
+      },
+      {
+        "word": "additive",
+        "meaningTr": "katkı maddesi",
+        "contextNote": "add (eklemek) fiilinden."
+      },
+      {
+        "word": "observational",
+        "meaningTr": "gözleme dayalı",
+        "contextNote": "Deneysel (experimental) çalışmalardan farklıdır."
+      },
+      {
+        "word": "matched for",
+        "meaningTr": "-e göre eşleştirilmiş",
+        "contextNote": "Deney tasarımında gruplar eşitlenir."
+      },
+      {
+        "word": "engineer",
+        "meaningTr": "tasarlamak, kurgulamak",
+        "contextNote": "Burada fiil: özel olarak tasarlamak."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Twenty adults lived in a clinic for four weeks and were offered either an ultra-processed or an unprocessed diet, each matched for calories, sugar, fat and fibre, and allowed to eat as much as they wished.",
+        "subject": "Twenty adults (yirmi yetişkin)",
+        "mainVerb": "lived ... and were offered ... and allowed (yaşadılar, sunuldu, izin verildi)",
+        "objectsAndComplements": "either A or B diet + [each matched for ...: her biri ... açısından eşleştirilmiş] + to eat as much as they wished",
+        "grammaticalStructures": [
+          "either ... or ...: ya ... ya da ...",
+          "Passive yapılar (were offered / [were] allowed).",
+          "Absolute phrase (each matched for ...).",
+          "as much as: istedikleri kadar."
+        ],
+        "translationTr": "Yirmi yetişkin dört hafta boyunca bir klinikte kaldı ve kendilerine kalori, şeker, yağ ve lif açısından eşleştirilmiş ya aşırı işlenmiş ya da işlenmemiş bir diyet sunuldu ve istedikleri kadar yemelerine izin verildi."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb034_q1",
+        "type": "reading",
+        "title": "The Trouble with Ultra-Processed Food",
+        "question": "Monteiro's approach differed from traditional nutrition science in that it _____ .",
+        "options": {
+          "A": "focused only on the amount of sugar and salt that each of the products contained",
+          "B": "classified foods by the degree to which they had been processed",
+          "C": "recommended that people eat only fruit, vegetables and eggs",
+          "D": "measured the number of calories that each food contained",
+          "E": "was based on experiments carried out in hospital clinics"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Karşılaştırma",
+        "trapWarning": "A ve D geleneksel yaklaşımı tarif eder. C ve E yöntemin kendisi değildir.",
+        "explanation": "Monteiro gıdaları içeriklerine göre değil, ne kadar işlendiklerine göre sınıflandırmayı önermiştir (B şıkkı)."
+      },
+      {
+        "id": "rb034_q2",
+        "type": "reading",
+        "title": "The Trouble with Ultra-Processed Food",
+        "question": "The 2019 experiment is important because it _____ .",
+        "options": {
+          "A": "proved that ultra-processed foods contain far more sugar and fat than unprocessed ones",
+          "B": "showed people ate more on the ultra-processed diet despite matched nutrients",
+          "C": "was the first study to observe large populations over many years",
+          "D": "found that participants lost weight on the ultra-processed diet",
+          "E": "showed that factory-made bread is as harmful as soft drinks"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Deneyin Önemi",
+        "trapWarning": "A şıkkı tuzaktır: diyetler şeker ve yağ açısından eşleştirilmişti. C şıkkı gözlemsel çalışmaları tarif eder. D şıkkı sonucu tersine çevirir.",
+        "explanation": "Besin değerleri eşitlenmiş olmasına rağmen katılımcılar aşırı işlenmiş diyette günde yaklaşık 500 kalori fazla yemiştir (B şıkkı)."
+      },
+      {
+        "id": "rb034_q3",
+        "type": "reading",
+        "title": "The Trouble with Ultra-Processed Food",
+        "question": "Which of the following is offered as a possible explanation for the results?",
+        "options": {
+          "A": "Ultra-processed foods contain much less fibre than other foods",
+          "B": "People eat ultra-processed foods quickly, before feeling full",
+          "C": "Participants were not allowed to eat as much as they wanted",
+          "D": "Unprocessed foods are more expensive and harder to find",
+          "E": "The clinic served larger portions of unprocessed food"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Olası Açıklama",
+        "trapWarning": "A şıkkı deney tasarımıyla çelişir (lif eşitlenmişti). C şıkkı tam tersidir. D ve E metinde yoktur.",
+        "explanation": "Bir olasılık, bu yiyeceklerin daha hızlı yenmesi ve vücuda tokluk sinyali için daha az zaman bırakmasıdır (B şıkkı)."
+      },
+      {
+        "id": "rb034_q4",
+        "type": "reading",
+        "title": "The Trouble with Ultra-Processed Food",
+        "question": "Critics of the classification argue that _____ .",
+        "options": {
+          "A": "ultra-processed foods are healthier than unprocessed ones",
+          "B": "it puts very different products into the same category",
+          "C": "it should be applied only in Brazil and not elsewhere",
+          "D": "the 2019 experiment involved too many participants",
+          "E": "nutrients such as sugar and fat are not important"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Eleştiri Tespiti",
+        "trapWarning": "A şıkkı eleştiri değil, aşırı bir iddiadır. D şıkkı tuzaktır: katılımcı sayısı az olsa da eleştiri bu değildir. C ve E metinde yoktur.",
+        "explanation": "Eleştirmenlere göre sınıflandırma fabrikada yapılmış tam buğday ekmeğiyle şekerli içecekleri aynı gruba koyar (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb035",
+    "title": "Phantom Limbs and Mirror Therapy",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from Brain & the work of V. S. Ramachandran",
+    "wordCount": 274,
+    "passageText": "Most people who lose an arm or a leg continue to feel that the missing limb is still there. They may sense it moving, feel it itch or, in many cases, experience severe pain in it. This phenomenon, known as phantom limb pain, affects a majority of amputees at some point, and for some it lasts for years. Because the pain seems to come from a part of the body that no longer exists, it was once thought to be largely psychological.\n\nResearch in neuroscience has shown that the source of the pain is in fact the brain. Every part of the body is represented in a map on the surface of the brain. When a limb is lost, the area that once received signals from it does not simply fall silent; neighbouring areas may take it over, and the brain may continue to send commands to move the missing limb without receiving any feedback. One theory holds that this mismatch between the brain's commands and the absence of sensory information contributes to the pain.\n\nIn the 1990s, the neuroscientist V. S. Ramachandran developed a remarkably simple treatment. A patient places the remaining arm on one side of a mirror and the stump on the other, so that the reflection makes it appear as though both arms are present. When the patient moves the healthy arm, the brain sees the missing arm moving as well. In some patients, this visual feedback reduces pain considerably. Mirror therapy does not work for everyone, and larger trials have produced mixed results, but it has encouraged researchers to explore other ways of retraining the brain, including virtual reality.",
+    "vocabularyNotes": [
+      {
+        "word": "phantom",
+        "meaningTr": "hayalet, hayali",
+        "contextNote": "phantom limb: hayalet uzuv."
+      },
+      {
+        "word": "amputee",
+        "meaningTr": "uzvu kesilmiş kişi",
+        "contextNote": "amputate: uzvu kesmek."
+      },
+      {
+        "word": "represent",
+        "meaningTr": "temsil etmek",
+        "contextNote": "İsim: representation."
+      },
+      {
+        "word": "mismatch",
+        "meaningTr": "uyumsuzluk",
+        "contextNote": "mis- yanlış + match."
+      },
+      {
+        "word": "stump",
+        "meaningTr": "güdük, kütük",
+        "contextNote": "Kesilen uzvun kalan kısmı."
+      },
+      {
+        "word": "retrain",
+        "meaningTr": "yeniden eğitmek",
+        "contextNote": "re- yeniden + train."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "When a limb is lost, the area that once received signals from it does not simply fall silent; neighbouring areas may take it over.",
+        "subject": "the area that once received signals from it (bir zamanlar ondan sinyal alan bölge)",
+        "mainVerb": "does not simply fall silent (öylece susmaz)",
+        "objectsAndComplements": "[When-clause, passive] + ; neighbouring areas may take it over (komşu bölgeler onu devralabilir)",
+        "grammaticalStructures": [
+          "Passive zaman yan cümlesi (When a limb is lost).",
+          "Defining relative clause öznede (the area that once received ...).",
+          "fall + sıfat: bir duruma geçmek (fall silent).",
+          "Ayrılabilir phrasal verb (take it over)."
+        ],
+        "translationTr": "Bir uzuv kaybedildiğinde, bir zamanlar ondan sinyal alan bölge öylece susmaz; komşu bölgeler onu devralabilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb035_q1",
+        "type": "reading",
+        "title": "Phantom Limbs and Mirror Therapy",
+        "question": "In the past, phantom limb pain was considered to be _____ .",
+        "options": {
+          "A": "a rare condition affecting only a few amputees",
+          "B": "mainly a psychological problem",
+          "C": "caused by damage to the remaining limb",
+          "D": "the result of infection in the stump",
+          "E": "a sign that the limb could grow back"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Eski Görüş",
+        "trapWarning": "A şıkkı metinle çelişir: amputelerin çoğunu etkiler. C ve D metinde olmayan nedenlerdir. E şıkkı saçma bir iddiadır.",
+        "explanation": "\"it was once thought to be largely psychological\" ifadesi doğrudan B şıkkıdır."
+      },
+      {
+        "id": "rb035_q2",
+        "type": "reading",
+        "title": "Phantom Limbs and Mirror Therapy",
+        "question": "According to one theory mentioned in the passage, phantom pain is partly caused by _____ .",
+        "options": {
+          "A": "the brain receiving far too much information from the limb that has been lost",
+          "B": "a conflict between the brain's commands and the lack of sensory feedback",
+          "C": "the complete silence of the brain area that represented the limb",
+          "D": "an injury to the brain that occurs during the operation itself",
+          "E": "the patient's constant fear of losing yet another part of his or her body"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Teori Tespiti (mismatch)",
+        "trapWarning": "A şıkkı tersidir: geri bildirim yoktur. C şıkkı metnin \"does not simply fall silent\" ifadesiyle çelişir. D ve E metinde yoktur.",
+        "explanation": "Beynin komutları ile duyusal bilginin yokluğu arasındaki uyumsuzluk ağrıya katkıda bulunur (B şıkkı)."
+      },
+      {
+        "id": "rb035_q3",
+        "type": "reading",
+        "title": "Phantom Limbs and Mirror Therapy",
+        "question": "Mirror therapy works by _____ .",
+        "options": {
+          "A": "allowing the patient to feel the missing limb with the healthy hand",
+          "B": "giving the brain visual feedback that the missing limb is moving",
+          "C": "strengthening the muscles of the stump through regular exercise",
+          "D": "showing the patient that the missing limb really is gone",
+          "E": "replacing the lost limb with an artificial one controlled by the mind"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Yöntem Açıklaması",
+        "trapWarning": "D şıkkı tuzaktır: ayna tam tersine uzvun varmış gibi görünmesini sağlar. A, C ve E yöntemle ilgisizdir.",
+        "explanation": "Sağlam kol hareket edince yansıma beyne kayıp kolun da hareket ettiği görsel geri bildirimini verir (B şıkkı)."
+      },
+      {
+        "id": "rb035_q4",
+        "type": "reading",
+        "title": "Phantom Limbs and Mirror Therapy",
+        "question": "The author's view of mirror therapy can best be described as _____ .",
+        "options": {
+          "A": "entirely negative, since larger trials found that it never works",
+          "B": "cautiously positive, noting its limits as well as its influence",
+          "C": "uncritical, presenting it as a cure for all amputees",
+          "D": "indifferent, as it is mentioned only as a historical curiosity",
+          "E": "hostile, because it delayed the development of virtual reality"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Yazarın Tutumu",
+        "trapWarning": "A şıkkı \"mixed results\" ifadesini \"never works\" ile abartır. C şıkkı \"does not work for everyone\" ile çelişir. E şıkkı metinle çelişir: VR araştırmalarını teşvik etmiştir.",
+        "explanation": "Yazar yöntemin herkeste işe yaramadığını belirtir ama yeni araştırmalara ilham verdiğini de vurgular; temkinli olumlu bir tutumdur (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb036",
+    "title": "Çatalhöyük: A Town Without Rulers?",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from Ian Hodder's excavation reports & Science",
+    "wordCount": 247,
+    "passageText": "Çatalhöyük, a Neolithic settlement on the Konya Plain in central Anatolia, was home to as many as several thousand people between about 7100 and 5950 BC, making it one of the largest and best-preserved early farming communities in the world. Its houses were built so closely together that there were no streets; residents moved across the rooftops and entered their homes through openings in the roof, climbing down wooden ladders.\n\nWhat has fascinated archaeologists most is the apparent absence of social hierarchy. Excavations have found no palaces, temples or public buildings, and the houses are remarkably similar in size and layout. Studies of skeletons show that men and women had broadly similar diets and spent similar amounts of time indoors and outdoors, suggesting that they did comparable kinds of work. Burial practices, in which the dead were placed beneath the floors of houses, also show little difference in the treatment of individuals.\n\nThe settlement was not, however, a static paradise of equality. In its later phases, houses became more independent of one another, and there are signs that some households were storing more goods than others. Researchers have suggested that these changes may reflect a gradual shift towards private ownership. Furthermore, the absence of grand buildings does not necessarily prove that no one held authority; power may simply have been expressed in ways that leave few traces in the archaeological record. Nonetheless, Çatalhöyük shows that large communities could function for centuries without obvious central rulers.",
+    "vocabularyNotes": [
+      {
+        "word": "settlement",
+        "meaningTr": "yerleşim yeri",
+        "contextNote": "settle (yerleşmek) fiilinden."
+      },
+      {
+        "word": "hierarchy",
+        "meaningTr": "hiyerarşi, aşama düzeni",
+        "contextNote": "Sıfat: hierarchical."
+      },
+      {
+        "word": "layout",
+        "meaningTr": "yerleşim planı, düzen",
+        "contextNote": "Bina ve sayfa düzeni için kullanılır."
+      },
+      {
+        "word": "comparable",
+        "meaningTr": "benzer, karşılaştırılabilir",
+        "contextNote": "comparable to/with."
+      },
+      {
+        "word": "static",
+        "meaningTr": "durağan",
+        "contextNote": "Zıt anlamlısı: dynamic."
+      },
+      {
+        "word": "trace",
+        "meaningTr": "iz",
+        "contextNote": "leave few traces: az iz bırakmak."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Furthermore, the absence of grand buildings does not necessarily prove that no one held authority; power may simply have been expressed in ways that leave few traces in the archaeological record.",
+        "subject": "the absence of grand buildings (görkemli binaların yokluğu)",
+        "mainVerb": "does not necessarily prove (mutlaka kanıtlamaz)",
+        "objectsAndComplements": "[that-clause: kimsenin otorite sahibi olmadığını] + ; power may have been expressed ... (iktidar ... şekillerde ifade edilmiş olabilir)",
+        "grammaticalStructures": [
+          "not necessarily: mutlaka değil (kısmi olumsuzluk).",
+          "may have been + V3: geçmişe dair olasılık (passive).",
+          "Defining relative clause (ways that leave few traces).",
+          "Furthermore: ek bilgi bağlacı."
+        ],
+        "translationTr": "Dahası, görkemli binaların yokluğu kimsenin otorite sahibi olmadığını mutlaka kanıtlamaz; iktidar yalnızca arkeolojik kayıtlarda az iz bırakan yollarla ifade edilmiş olabilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb036_q1",
+        "type": "reading",
+        "title": "Çatalhöyük: A Town Without Rulers?",
+        "question": "According to the passage, residents of Çatalhöyük entered their houses _____ .",
+        "options": {
+          "A": "through doors that opened onto narrow streets",
+          "B": "through openings in the roofs, using ladders",
+          "C": "through underground tunnels connecting the houses",
+          "D": "through a central public building in the town",
+          "E": "through gates in a wall surrounding the town"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Basit Detay",
+        "trapWarning": "A şıkkı metinle çelişir: sokak yoktu. D şıkkı kamu binası olmadığı bilgisiyle çelişir. C ve E metinde yoktur.",
+        "explanation": "Sakinler çatılardan geçip evlerine çatıdaki açıklıklardan merdivenle iniyordu (B şıkkı)."
+      },
+      {
+        "id": "rb036_q2",
+        "type": "reading",
+        "title": "Çatalhöyük: A Town Without Rulers?",
+        "question": "Which of the following is NOT presented as evidence of social equality at Çatalhöyük?",
+        "options": {
+          "A": "The lack of palaces, temples and other public buildings",
+          "B": "The similar size and layout of almost all the houses",
+          "C": "The similar diets of men and women",
+          "D": "The similar treatment of the dead",
+          "E": "The goods stored by some households"
+        },
+        "answer": "E",
+        "difficulty": "Orta",
+        "tacticUsed": "NOT Sorusu",
+        "trapWarning": "A, B, C ve D eşitlik kanıtı olarak sunulur. E şıkkı ise son paragrafta eşitsizliğe doğru bir değişimin işareti olarak geçer.",
+        "explanation": "Bazı hanelerin daha fazla mal depolaması eşitlik değil, özel mülkiyete doğru kaymanın işaretidir (E şıkkı)."
+      },
+      {
+        "id": "rb036_q3",
+        "type": "reading",
+        "title": "Çatalhöyük: A Town Without Rulers?",
+        "question": "The last paragraph mainly serves to _____ .",
+        "options": {
+          "A": "show that Çatalhöyük was in fact ruled by a single powerful king",
+          "B": "add qualifications to the picture of a perfectly equal society",
+          "C": "explain why the settlement was finally abandoned around 5950 BC",
+          "D": "prove that men and women did different kinds of work",
+          "E": "describe the methods used to excavate the houses"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Paragraf İşlevi (however)",
+        "trapWarning": "A şıkkı aşırıya kaçar: metin sadece otoritenin iz bırakmamış olabileceğini söyler. D şıkkı ikinci paragrafla çelişir. C ve E metinde yoktur.",
+        "explanation": "Son paragraf \"not, however, a static paradise of equality\" diyerek eşitlik tablosuna çekinceler ekler (B şıkkı)."
+      },
+      {
+        "id": "rb036_q4",
+        "type": "reading",
+        "title": "Çatalhöyük: A Town Without Rulers?",
+        "question": "It can be inferred that the author believes the absence of grand buildings _____ .",
+        "options": {
+          "A": "is clear proof that nobody at all held any authority in the settlement",
+          "B": "is consistent with equality but does not rule out hidden forms of power",
+          "C": "shows that the residents were too poor to build public structures",
+          "D": "was caused by the lack of streets between the houses",
+          "E": "means that the settlement must have been very small"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Çıkarım (does not necessarily prove)",
+        "trapWarning": "A şıkkı \"does not necessarily prove\" ifadesiyle çelişir. E şıkkı nüfus bilgisiyle çelişir. C ve D metinde olmayan nedenlerdir.",
+        "explanation": "Yazar görkemli binaların yokluğunun eşitlikle uyumlu olduğunu ama izsiz iktidar biçimlerini dışlamadığını söyler (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb037",
+    "title": "Europe's Little Ice Age",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from Past & Present & Nature Geoscience",
+    "wordCount": 255,
+    "passageText": "Between roughly the fourteenth and nineteenth centuries, much of the Northern Hemisphere experienced a period of cooler temperatures known as the Little Ice Age. The term is somewhat misleading: global temperatures fell by less than one degree Celsius on average, and the cooling was neither continuous nor uniform. Nevertheless, the effects were dramatic in some regions. Alpine glaciers advanced and destroyed farms and villages, the River Thames in London froze over on several occasions, and Norse settlements in Greenland were eventually abandoned.\n\nScientists have proposed several causes. Periods of low solar activity, during which very few sunspots were observed, coincided with some of the coldest decades. A series of large volcanic eruptions also threw ash and sulphur into the upper atmosphere, reflecting sunlight away from the Earth. A more recent and controversial theory suggests that the deaths of tens of millions of indigenous people in the Americas after European contact led to the abandonment of farmland, which was then reclaimed by forests that absorbed carbon dioxide from the air.\n\nHistorians have increasingly studied how societies responded to the changing climate. Repeated harvest failures contributed to famines, rising food prices and social unrest in many parts of Europe. Yet the period also stimulated innovation. In the Dutch Republic, for example, merchants built a flexible trading network that allowed grain to be imported from the Baltic when local harvests failed, and farmers adopted new crops and techniques. The Little Ice Age thus offers a historical case study of both the vulnerability and the adaptability of human societies.",
+    "vocabularyNotes": [
+      {
+        "word": "uniform",
+        "meaningTr": "tekdüze, her yerde aynı",
+        "contextNote": "İsim olarak üniforma anlamı da vardır."
+      },
+      {
+        "word": "advance",
+        "meaningTr": "ilerlemek",
+        "contextNote": "Buzullar için genişlemek anlamında."
+      },
+      {
+        "word": "coincide with",
+        "meaningTr": "-e denk gelmek",
+        "contextNote": "İsim: coincidence."
+      },
+      {
+        "word": "controversial",
+        "meaningTr": "tartışmalı",
+        "contextNote": "İsim: controversy."
+      },
+      {
+        "word": "reclaim",
+        "meaningTr": "geri kazanmak, geri almak",
+        "contextNote": "Burada doğanın araziyi geri alması."
+      },
+      {
+        "word": "unrest",
+        "meaningTr": "huzursuzluk, kargaşa",
+        "contextNote": "social unrest: toplumsal huzursuzluk."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "A more recent and controversial theory suggests that the deaths of tens of millions of indigenous people in the Americas after European contact led to the abandonment of farmland, which was then reclaimed by forests that absorbed carbon dioxide from the air.",
+        "subject": "A more recent and controversial theory (daha yeni ve tartışmalı bir teori)",
+        "mainVerb": "suggests (ileri sürer)",
+        "objectsAndComplements": "[that-clause: on milyonlarca yerlinin ölümünün tarım arazilerinin terk edilmesine yol açtığı] + [which-clause: ki bu arazi daha sonra ... ormanlar tarafından geri alındı] + [that-clause: havadan karbondioksit emen]",
+        "grammaticalStructures": [
+          "lead to + isim: -e yol açmak.",
+          "Non-defining relative (which was then reclaimed).",
+          "Defining relative (forests that absorbed ...).",
+          "Passive (was reclaimed by)."
+        ],
+        "translationTr": "Daha yeni ve tartışmalı bir teori, Avrupalılarla temastan sonra Amerika'da on milyonlarca yerlinin ölümünün tarım arazilerinin terk edilmesine yol açtığını ve bu arazilerin daha sonra havadaki karbondioksiti emen ormanlarca geri alındığını ileri sürer."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb037_q1",
+        "type": "reading",
+        "title": "Europe's Little Ice Age",
+        "question": "The author describes the term \"Little Ice Age\" as somewhat misleading because _____ .",
+        "options": {
+          "A": "temperatures actually rose during most of the period",
+          "B": "the cooling was relatively small and varied across time and place",
+          "C": "the period lasted for only a few decades in the fourteenth century",
+          "D": "it affected the Southern Hemisphere much more than the Northern",
+          "E": "glaciers retreated rather than advanced during the period"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Terim Eleştirisi",
+        "trapWarning": "A ve E metinle çelişir. C şıkkı süreyi yanlış verir. D şıkkı metinde yoktur.",
+        "explanation": "Küresel sıcaklıklar ortalama bir dereceden az düşmüş ve soğuma ne sürekli ne de her yerde aynıydı (B şıkkı)."
+      },
+      {
+        "id": "rb037_q2",
+        "type": "reading",
+        "title": "Europe's Little Ice Age",
+        "question": "Which of the following is NOT mentioned as a possible cause of the Little Ice Age?",
+        "options": {
+          "A": "Periods of low solar activity",
+          "B": "Large volcanic eruptions",
+          "C": "The regrowth of forests on abandoned farmland",
+          "D": "A sudden change in the Earth's orbit",
+          "E": "Ash and sulphur reflecting sunlight"
+        },
+        "answer": "D",
+        "difficulty": "Orta",
+        "tacticUsed": "NOT Sorusu",
+        "trapWarning": "A, B, C ve E ikinci paragrafta geçer.",
+        "explanation": "Metin Dünya'nın yörüngesindeki bir değişimden söz etmez (D şıkkı)."
+      },
+      {
+        "id": "rb037_q3",
+        "type": "reading",
+        "title": "Europe's Little Ice Age",
+        "question": "The example of the Dutch Republic is used to illustrate _____ .",
+        "options": {
+          "A": "how repeated harvest failures led to famine and social unrest in Europe",
+          "B": "how some societies adapted successfully to the colder climate",
+          "C": "why the River Thames froze over on several occasions",
+          "D": "why Norse settlements in Greenland were abandoned",
+          "E": "how volcanic eruptions affected trade in the Baltic"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örneğin İşlevi (Yet ... stimulated innovation)",
+        "trapWarning": "A şıkkı örnekten önceki olumsuz etkilerdir. C, D ve E ilk paragraflardaki başka bilgilerdir.",
+        "explanation": "Hollanda örneği iklim değişikliğine karşı yenilik ve uyum gösterilmesini örnekler (B şıkkı)."
+      },
+      {
+        "id": "rb037_q4",
+        "type": "reading",
+        "title": "Europe's Little Ice Age",
+        "question": "The main idea of the last paragraph is that the Little Ice Age _____ .",
+        "options": {
+          "A": "had no significant or lasting effect on the societies of Europe",
+          "B": "revealed both the weaknesses and the flexibility of societies",
+          "C": "was caused mainly by changes in the farming methods used across Europe",
+          "D": "led directly to the collapse of the Dutch Republic",
+          "E": "was beneficial to all the regions that it affected"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Paragraf Ana Fikri",
+        "trapWarning": "A ve E metinle çelişir. D şıkkı örneği tersine çevirir. C şıkkı nedeni yanlış verir.",
+        "explanation": "Son cümle dönemin toplumların hem kırılganlığını hem de uyum yeteneğini gösterdiğini söyler (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb038",
+    "title": "The Coffeehouses of Istanbul",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from studies of Ottoman social history",
+    "wordCount": 261,
+    "passageText": "Coffee reached Istanbul from Yemen in the early sixteenth century, and the first coffeehouses are said to have opened in the city around 1555. They spread with remarkable speed. Within a few decades, travellers reported hundreds of them, ranging from simple shops to elegant establishments with fountains and cushioned benches. Unlike the mosque or the household, the coffeehouse offered a space where men from different social backgrounds, including craftsmen, soldiers, scholars and officials, could meet as equals.\n\nCoffeehouses quickly became centres of entertainment and conversation. Customers listened to professional storytellers, watched shadow-puppet plays, played games such as chess and backgammon and, above all, exchanged news. In an age before newspapers, the coffeehouse was one of the main places where information about prices, wars and court affairs circulated. Poets recited their latest works, and debates on religion and politics were common.\n\nThis freedom of discussion made the authorities uneasy. Some religious scholars argued that coffee was an intoxicant forbidden by Islamic law, while officials worried that coffeehouses encouraged idleness and spread criticism of the government. Several sultans ordered them to be closed, most famously Murad IV in the 1630s, who is said to have patrolled the streets in disguise to enforce the ban. Yet such prohibitions never lasted long. Coffee had become too popular, and the taxes collected from its trade were too valuable for the state to give up. Some historians have compared Ottoman coffeehouses to those of London and Paris, which have been described as early forms of a public sphere where opinions were formed outside the control of the state.",
+    "vocabularyNotes": [
+      {
+        "word": "establishment",
+        "meaningTr": "kurum, işletme",
+        "contextNote": "Burada işyeri anlamında."
+      },
+      {
+        "word": "circulate",
+        "meaningTr": "dolaşmak, yayılmak",
+        "contextNote": "İsim: circulation."
+      },
+      {
+        "word": "recite",
+        "meaningTr": "ezbere okumak, okumak (şiir)",
+        "contextNote": "İsim: recitation."
+      },
+      {
+        "word": "intoxicant",
+        "meaningTr": "sarhoş edici madde",
+        "contextNote": "intoxicate fiilinden."
+      },
+      {
+        "word": "idleness",
+        "meaningTr": "aylaklık, tembellik",
+        "contextNote": "Sıfat: idle."
+      },
+      {
+        "word": "prohibition",
+        "meaningTr": "yasak",
+        "contextNote": "prohibit (yasaklamak) fiilinden."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Coffee had become too popular, and the taxes collected from its trade were too valuable for the state to give up.",
+        "subject": "Coffee / the taxes collected from its trade (kahve / ticaretinden toplanan vergiler)",
+        "mainVerb": "had become / were (olmuştu / idi)",
+        "objectsAndComplements": "too popular (fazla popüler) + too valuable for the state to give up (devletin vazgeçemeyeceği kadar değerli)",
+        "grammaticalStructures": [
+          "Past perfect (had become).",
+          "Reduced passive relative (the taxes collected from ...).",
+          "too + sıfat + for + nesne + to V1: -nin -emeyeceği kadar.",
+          "give up: vazgeçmek."
+        ],
+        "translationTr": "Kahve fazlasıyla popüler hale gelmişti ve ticaretinden toplanan vergiler devletin vazgeçemeyeceği kadar değerliydi."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb038_q1",
+        "type": "reading",
+        "title": "The Coffeehouses of Istanbul",
+        "question": "According to the passage, what made the coffeehouse different from the mosque or the household?",
+        "options": {
+          "A": "It was open only to religious scholars and senior government officials",
+          "B": "Men of different social backgrounds could meet there on equal terms",
+          "C": "It was the only place where coffee could be legally prepared",
+          "D": "It was a place where women and men were able to meet each other freely",
+          "E": "It served as the main place for religious education"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Karşılaştırma (Unlike ...)",
+        "trapWarning": "A şıkkı metinle çelişir: zanaatkârlar ve askerler de vardı. D şıkkı metinde yoktur; metin sadece erkeklerden söz eder. C ve E uydurmadır.",
+        "explanation": "Kahvehane farklı sosyal geçmişlerden erkeklerin eşit olarak buluşabildiği bir alandı (B şıkkı)."
+      },
+      {
+        "id": "rb038_q2",
+        "type": "reading",
+        "title": "The Coffeehouses of Istanbul",
+        "question": "In an age before newspapers, coffeehouses were important because _____ .",
+        "options": {
+          "A": "they printed and sold the first news sheets in the city",
+          "B": "news about prices, wars and the court spread through them",
+          "C": "the government used them to announce new taxes officially",
+          "D": "storytellers there were paid by the state to praise the sultan",
+          "E": "they were the only places where people were allowed to read"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Detay",
+        "trapWarning": "A şıkkı gazete öncesi dönemle çelişir. C ve D metinde olmayan resmi roller uydurur. E şıkkı aşırı bir iddiadır.",
+        "explanation": "Kahvehaneler fiyatlar, savaşlar ve saray işleri hakkındaki haberlerin dolaştığı başlıca yerlerdendi (B şıkkı)."
+      },
+      {
+        "id": "rb038_q3",
+        "type": "reading",
+        "title": "The Coffeehouses of Istanbul",
+        "question": "Why did the bans on coffeehouses never last long?",
+        "options": {
+          "A": "Because religious scholars soon declared coffee to be healthy",
+          "B": "Because coffee was too popular and its taxes too valuable",
+          "C": "Because Murad IV changed his mind after visiting one",
+          "D": "Because the coffeehouses moved to London and Paris",
+          "E": "Because soldiers refused to enforce the sultan's orders"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep (Coffee had become too popular, and ...)",
+        "trapWarning": "C ve E metinde olmayan anekdotlardır. A şıkkı dinî tartışmayı tersine çevirir. D şıkkı karşılaştırmayı yanlış yorumlar.",
+        "explanation": "Kahve fazlasıyla popülerdi ve vergileri devletin vazgeçemeyeceği kadar değerliydi (B şıkkı)."
+      },
+      {
+        "id": "rb038_q4",
+        "type": "reading",
+        "title": "The Coffeehouses of Istanbul",
+        "question": "The comparison with coffeehouses in London and Paris suggests that Ottoman coffeehouses _____ .",
+        "options": {
+          "A": "were copied from European models that appeared in the seventeenth century",
+          "B": "may have served as places where public opinion formed independently",
+          "C": "were under the strict control of the state at all times",
+          "D": "were far less popular than their European counterparts",
+          "E": "were mainly used for trade rather than for conversation"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Karşılaştırmadan Çıkarım (public sphere)",
+        "trapWarning": "A şıkkı tarih sırasını bozar: İstanbul'daki kahvehaneler daha eskidir. C şıkkı metnin anlattığı yasakların başarısızlığıyla çelişir. D ve E metinde yoktur.",
+        "explanation": "Karşılaştırma, kahvehanelerin devlet kontrolü dışında kamuoyunun oluştuğu erken bir kamusal alan olabileceğini ima eder (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb039",
+    "title": "Cracking the Code of the Rosetta Stone",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from British Museum publications",
+    "wordCount": 228,
+    "passageText": "For more than a thousand years after the last hieroglyphic inscriptions were carved in Egypt, no one could read them. Many European scholars believed that hieroglyphs were purely symbolic, each sign representing an idea or a mystical concept rather than a sound. This assumption made progress almost impossible.\n\nThe discovery of the Rosetta Stone by French soldiers in 1799 provided the key. The stone carries the same decree, issued in 196 BC, in three scripts: hieroglyphs, a later Egyptian script called demotic, and ancient Greek, which scholars could already read. In principle, the Greek text offered a translation of the other two. In practice, decipherment took more than twenty years, partly because large sections of the hieroglyphic text were missing.\n\nThe English scholar Thomas Young made important early progress, recognizing that some signs enclosed in oval rings, known as cartouches, spelled out royal names such as Ptolemy phonetically. It was the French linguist Jean-François Champollion, however, who achieved the decisive breakthrough in 1822. Champollion, who had studied Coptic, a late form of the Egyptian language still used in church services, realized that hieroglyphic writing combined signs representing sounds with signs representing whole words or ideas. His knowledge of Coptic allowed him to match sounds to the meanings of Egyptian words. Within a few years, he could read entire texts, opening up three thousand years of Egyptian history to modern study.",
+    "vocabularyNotes": [
+      {
+        "word": "carve",
+        "meaningTr": "oymak, kazımak",
+        "contextNote": "carved inscriptions: oyulmuş yazıtlar."
+      },
+      {
+        "word": "decree",
+        "meaningTr": "ferman, kararname",
+        "contextNote": "issue a decree: ferman çıkarmak."
+      },
+      {
+        "word": "decipherment",
+        "meaningTr": "şifre çözme, okuma",
+        "contextNote": "decipher (çözmek) fiilinden."
+      },
+      {
+        "word": "enclose",
+        "meaningTr": "çevrelemek, kuşatmak",
+        "contextNote": "Ayrıca mektuba eklemek anlamı vardır."
+      },
+      {
+        "word": "phonetically",
+        "meaningTr": "sesçil olarak",
+        "contextNote": "phonetic: sesle ilgili."
+      },
+      {
+        "word": "breakthrough",
+        "meaningTr": "çığır açan buluş",
+        "contextNote": "ÖSYM bilim metinlerinde sık kullanır."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Champollion, who had studied Coptic, a late form of the Egyptian language still used in church services, realized that hieroglyphic writing combined signs representing sounds with signs representing whole words or ideas.",
+        "subject": "Champollion",
+        "mainVerb": "realized (fark etti)",
+        "objectsAndComplements": "[that-clause: hiyeroglif yazının sesleri temsil eden işaretlerle bütün kelimeleri ya da fikirleri temsil eden işaretleri birleştirdiğini]",
+        "grammaticalStructures": [
+          "Non-defining relative clause (who had studied Coptic).",
+          "Appositive (a late form of the Egyptian language ...).",
+          "Reduced passive relative (still used in church services).",
+          "combine A with B.",
+          "Reduced active relatives (signs representing ...)."
+        ],
+        "translationTr": "Kilise ayinlerinde hâlâ kullanılan, Mısır dilinin geç bir biçimi olan Kıpticeyi incelemiş olan Champollion, hiyeroglif yazının sesleri temsil eden işaretlerle bütün kelimeleri ya da fikirleri temsil eden işaretleri bir araya getirdiğini fark etti."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb039_q1",
+        "type": "reading",
+        "title": "Cracking the Code of the Rosetta Stone",
+        "question": "According to the passage, early European scholars failed to read hieroglyphs mainly because they _____ .",
+        "options": {
+          "A": "did not have access to any Egyptian inscriptions",
+          "B": "assumed that each sign stood only for an idea, not a sound",
+          "C": "were unable to read the ancient Greek text on the stone",
+          "D": "believed that hieroglyphs were a form of the Coptic language",
+          "E": "thought the Rosetta Stone had been carved by French soldiers"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep (This assumption made progress almost impossible)",
+        "trapWarning": "C şıkkı tuzaktır: Yunanca zaten okunabiliyordu. A, D ve E metinle çelişir ya da metinde yoktur.",
+        "explanation": "Akademisyenler hiyerogliflerin tamamen sembolik olduğunu, ses değil fikir temsil ettiğini varsaymışlardı (B şıkkı)."
+      },
+      {
+        "id": "rb039_q2",
+        "type": "reading",
+        "title": "Cracking the Code of the Rosetta Stone",
+        "question": "Why was the Rosetta Stone so valuable for decipherment?",
+        "options": {
+          "A": "It contained a complete dictionary of all the hieroglyphic signs",
+          "B": "It presented the same text in a known language and in hieroglyphs",
+          "C": "It was the oldest Egyptian inscription ever discovered",
+          "D": "It explained how Coptic was used in church services",
+          "E": "Its hieroglyphic section had been perfectly preserved over the centuries"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Detay & Önem",
+        "trapWarning": "E şıkkı metinle çelişir: hiyeroglif kısmın büyük bölümü eksikti. A, C ve D metinde yoktur.",
+        "explanation": "Taş aynı fermanı üç yazıyla verir; bunlardan biri okunabilen antik Yunancadır (B şıkkı)."
+      },
+      {
+        "id": "rb039_q3",
+        "type": "reading",
+        "title": "Cracking the Code of the Rosetta Stone",
+        "question": "Thomas Young's contribution was to show that _____ .",
+        "options": {
+          "A": "the whole hieroglyphic text could be translated using Coptic",
+          "B": "some signs in cartouches represented the sounds of royal names",
+          "C": "demotic and Greek were in fact two forms of the same language",
+          "D": "hieroglyphs never represented sounds at all, only ideas",
+          "E": "the stone had been carved in 196 BC by order of the king"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Kişiye Göre Katkı",
+        "trapWarning": "A şıkkı Champollion'un katkısıdır. D Young'ın bulgusunun tersidir. C ve E metinde ona atfedilmez.",
+        "explanation": "Young, kartuşlardaki bazı işaretlerin Ptolemy gibi kraliyet adlarını sesçil olarak yazdığını fark etmiştir (B şıkkı)."
+      },
+      {
+        "id": "rb039_q4",
+        "type": "reading",
+        "title": "Cracking the Code of the Rosetta Stone",
+        "question": "What allowed Champollion to make the decisive breakthrough?",
+        "options": {
+          "A": "His discovery of a second stone with the same text",
+          "B": "His knowledge of Coptic, which helped him link sounds to meanings",
+          "C": "His decision to ignore the Greek part of the inscription altogether",
+          "D": "His belief that every hieroglyph represented a mystical concept",
+          "E": "His access to the notes of the soldiers who found the stone"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep Detayı",
+        "trapWarning": "D şıkkı eski yanlış varsayımdır. A, C ve E metinde yoktur.",
+        "explanation": "Kıptice bilgisi, sesleri Mısırca kelimelerin anlamlarıyla eşleştirmesini sağlamıştır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb040",
+    "title": "Rethinking the Maya Collapse",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from Science & Proceedings of the National Academy of Sciences",
+    "wordCount": 243,
+    "passageText": "Between about AD 800 and 950, many of the great cities of the Classic Maya in the southern lowlands of present-day Guatemala, Mexico and Belize were gradually abandoned. Monuments with dated inscriptions stopped being erected, royal dynasties came to an end and populations declined dramatically. This process has often been described as a collapse, and it has been the subject of intense debate.\n\nOne influential explanation focuses on drought. Sediment cores from lakes and mineral layers in caves record a series of severe dry periods during the ninth and tenth centuries. Because Maya cities depended on seasonal rainfall stored in reservoirs, prolonged drought would have reduced harvests and water supplies, especially in densely populated areas. Some researchers argue that deforestation, carried out to clear land for farming and to produce lime plaster for buildings, made the effects of drought worse by reducing rainfall locally and increasing soil erosion.\n\nOther scholars emphasize political factors. Inscriptions from the period describe frequent wars between rival kingdoms, and the authority of kings may have depended on their claim to be able to ensure good harvests through ritual. When droughts persisted, this claim would have lost its credibility. It is important to note, however, that the Maya people did not disappear. Cities in the northern Yucatán, such as Chichén Itzá, flourished after the southern decline, and millions of Maya people live in the region today. What collapsed was a particular political system, not a civilization or its people.",
+    "vocabularyNotes": [
+      {
+        "word": "erect",
+        "meaningTr": "dikmek, inşa etmek",
+        "contextNote": "Sıfat olarak dik anlamı da vardır."
+      },
+      {
+        "word": "dynasty",
+        "meaningTr": "hanedan",
+        "contextNote": "royal dynasty: kraliyet hanedanı."
+      },
+      {
+        "word": "reservoir",
+        "meaningTr": "su deposu, baraj gölü",
+        "contextNote": "Okunuşu: rezervuar."
+      },
+      {
+        "word": "deforestation",
+        "meaningTr": "ormansızlaşma",
+        "contextNote": "de- + forest."
+      },
+      {
+        "word": "credibility",
+        "meaningTr": "inanılırlık, güvenilirlik",
+        "contextNote": "Sıfat: credible."
+      },
+      {
+        "word": "flourish",
+        "meaningTr": "gelişmek, serpilmek",
+        "contextNote": "Eş anlamlısı: thrive, prosper."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "The authority of kings may have depended on their claim to be able to ensure good harvests through ritual.",
+        "subject": "The authority of kings (kralların otoritesi)",
+        "mainVerb": "may have depended on (dayanmış olabilir)",
+        "objectsAndComplements": "their claim to be able to ensure good harvests through ritual (ritüel yoluyla iyi hasat sağlayabilme iddialarına)",
+        "grammaticalStructures": [
+          "may have + V3: geçmişe dair olasılık.",
+          "depend on + isim.",
+          "claim to + V1: -dığını iddia etmek (isim + to-infinitive).",
+          "be able to: -ebilmek."
+        ],
+        "translationTr": "Kralların otoritesi, ritüel yoluyla iyi hasat sağlayabildikleri iddiasına dayanmış olabilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb040_q1",
+        "type": "reading",
+        "title": "Rethinking the Maya Collapse",
+        "question": "According to the passage, evidence for severe droughts comes from _____ .",
+        "options": {
+          "A": "inscriptions describing wars between rival kingdoms",
+          "B": "lake sediments and mineral layers in caves",
+          "C": "the reservoirs that were built in Maya cities",
+          "D": "the records of Chichén Itzá in the northern Yucatán",
+          "E": "the lime plaster used to build monuments"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Kanıt Kaynağı",
+        "trapWarning": "A şıkkı siyasi açıklamanın kanıtıdır. C, D ve E metinde geçen ama kuraklık kanıtı olmayan unsurlardır.",
+        "explanation": "Göl tortu örnekleri ve mağaralardaki mineral katmanları kurak dönemleri kaydeder (B şıkkı)."
+      },
+      {
+        "id": "rb040_q2",
+        "type": "reading",
+        "title": "Rethinking the Maya Collapse",
+        "question": "How might deforestation have contributed to the decline?",
+        "options": {
+          "A": "It provided far too much wood, which caused the price of timber to collapse",
+          "B": "It may have worsened drought by reducing rainfall and causing erosion",
+          "C": "It forced the Maya to move north to Chichén Itzá",
+          "D": "It destroyed many of the reservoirs that stored the seasonal rainfall",
+          "E": "It led to wars over the right to produce lime plaster"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep-Sonuç",
+        "trapWarning": "D, C ve E metinde olmayan bağlantılar kurar. A şıkkı anlamsız bir ekonomik iddiadır.",
+        "explanation": "Ormansızlaşma yerel yağışı azaltıp toprak erozyonunu artırarak kuraklığın etkisini kötüleştirmiş olabilir (B şıkkı)."
+      },
+      {
+        "id": "rb040_q3",
+        "type": "reading",
+        "title": "Rethinking the Maya Collapse",
+        "question": "According to the political explanation, prolonged drought weakened kings because _____ .",
+        "options": {
+          "A": "they were blamed by their subjects for cutting down too many forests",
+          "B": "their claim to secure good harvests through ritual lost credibility",
+          "C": "they spent all their wealth on building new reservoirs",
+          "D": "rival kingdoms had better access to water in the south",
+          "E": "they stopped erecting monuments with dated inscriptions in their cities"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Görüş Detayı",
+        "trapWarning": "E şıkkı bir sonuçtur, neden değildir. A, C ve D metinde yoktur.",
+        "explanation": "Kralların otoritesi ritüelle iyi hasat sağlama iddiasına dayanıyordu; kuraklık sürünce bu iddia inanılırlığını yitirdi (B şıkkı)."
+      },
+      {
+        "id": "rb040_q4",
+        "type": "reading",
+        "title": "Rethinking the Maya Collapse",
+        "question": "The author's main point in the final paragraph is that _____ .",
+        "options": {
+          "A": "the whole Maya civilization had disappeared completely by about AD 950",
+          "B": "the decline affected a political system rather than the Maya people",
+          "C": "political factors were more important than drought in the collapse",
+          "D": "Chichén Itzá was abandoned at the same time as the southern cities",
+          "E": "millions of Maya people moved to the southern lowlands after 950"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Son Paragraf Vurgusu",
+        "trapWarning": "A şıkkı son cümlenin tersidir. C şıkkı yazarın yapmadığı bir sıralamadır. D şıkkı metinle çelişir: Chichén Itzá gelişmiştir. E şıkkı yönü tersine çevirir.",
+        "explanation": "\"What collapsed was a particular political system, not a civilization or its people\" (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb041",
+    "title": "Wolves and the Yellowstone Story",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from BioScience & Ecology Letters",
+    "wordCount": 255,
+    "passageText": "Grey wolves were eliminated from Yellowstone National Park in the United States by the 1920s, mainly through government programmes designed to protect livestock. In their absence, the population of elk, a large deer, grew rapidly. The elk grazed heavily on young willow and aspen trees, especially along rivers, and many scientists believe this prevented the trees from regenerating for decades.\n\nIn 1995 and 1996, thirty-one wolves were reintroduced to the park. What followed has become one of the most famous stories in ecology. According to the popular version, the wolves not only reduced elk numbers but also changed their behaviour: fearing attack, elk avoided open river valleys, allowing trees to recover. The returning trees stabilized riverbanks, provided food for beavers and habitat for songbirds, and even changed the course of rivers. This chain of effects, in which a predator at the top of the food chain influences plants and landscapes far below it, is known as a trophic cascade.\n\nMore recent research suggests that the story is real but has been simplified. Studies that tracked elk with GPS collars found that they did not avoid risky areas as consistently as once thought. The decline in elk numbers also had other causes, including human hunting outside the park, drought and the return of bears and cougars. In some areas, willows have recovered only partly, because decades without beavers had lowered the water table, leaving the soil too dry. Ecologists now argue that reintroducing a predator can start important changes, but it cannot simply reverse a century of damage.",
+    "vocabularyNotes": [
+      {
+        "word": "eliminate",
+        "meaningTr": "yok etmek, ortadan kaldırmak",
+        "contextNote": "Eş anlamlısı: eradicate, wipe out."
+      },
+      {
+        "word": "livestock",
+        "meaningTr": "çiftlik hayvanları",
+        "contextNote": "Sayılamaz isim."
+      },
+      {
+        "word": "regenerate",
+        "meaningTr": "yenilenmek, yeniden büyümek",
+        "contextNote": "İsim: regeneration."
+      },
+      {
+        "word": "reintroduce",
+        "meaningTr": "yeniden doğaya salmak",
+        "contextNote": "re- + introduce."
+      },
+      {
+        "word": "stabilize",
+        "meaningTr": "sağlamlaştırmak, dengelemek",
+        "contextNote": "Sıfat: stable."
+      },
+      {
+        "word": "water table",
+        "meaningTr": "yeraltı su seviyesi",
+        "contextNote": "Hidroloji terimi."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "In some areas, willows have recovered only partly, because decades without beavers had lowered the water table, leaving the soil too dry.",
+        "subject": "willows (söğütler)",
+        "mainVerb": "have recovered only partly (sadece kısmen toparlanmıştır)",
+        "objectsAndComplements": "[because-clause: kunduzsuz geçen onlarca yıl su seviyesini düşürmüş olduğu için] + [participle: toprağı fazla kuru bırakarak]",
+        "grammaticalStructures": [
+          "Present perfect (have recovered).",
+          "Past perfect (had lowered): daha önceki bir neden.",
+          "Sonuç bildiren -ing (leaving the soil too dry).",
+          "leave + nesne + sıfat."
+        ],
+        "translationTr": "Bazı bölgelerde söğütler yalnızca kısmen toparlanmıştır, çünkü kunduzsuz geçen onlarca yıl yeraltı su seviyesini düşürmüş ve toprağı fazla kuru bırakmıştı."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb041_q1",
+        "type": "reading",
+        "title": "Wolves and the Yellowstone Story",
+        "question": "According to the passage, after wolves were removed from Yellowstone, _____ .",
+        "options": {
+          "A": "the number of elk fell sharply because of human hunting",
+          "B": "elk grazing prevented young trees from growing back",
+          "C": "beavers increased in number along the park's rivers",
+          "D": "willow and aspen trees spread rapidly along the riverbanks",
+          "E": "bears and cougars took over the role of the main predator"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep-Sonuç Zinciri",
+        "trapWarning": "A ve E kurtların dönüşünden sonraki gelişmelerle karıştırır. C ve D tam tersidir.",
+        "explanation": "Kurtsuz dönemde geyik sayısı arttı ve yoğun otlama genç ağaçların yenilenmesini engelledi (B şıkkı)."
+      },
+      {
+        "id": "rb041_q2",
+        "type": "reading",
+        "title": "Wolves and the Yellowstone Story",
+        "question": "A \"trophic cascade\" is defined in the passage as _____ .",
+        "options": {
+          "A": "the process by which rivers gradually change their course after periods of heavy rainfall",
+          "B": "a chain of effects from a top predator down to plants and landscapes",
+          "C": "the reintroduction of animals that were removed from a national park",
+          "D": "the movement of elk away from open valleys out of fear of wolves",
+          "E": "a decline in the population of a species caused by a long drought"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Kavram Tanımı",
+        "trapWarning": "D şıkkı zincirin sadece bir halkasıdır, tanımın kendisi değildir. A, C ve E kavramı daraltır ya da başka bir şeyi anlatır.",
+        "explanation": "Tepedeki bir avcının besin zincirinin çok altındaki bitki ve arazileri etkilediği etki zinciridir (B şıkkı)."
+      },
+      {
+        "id": "rb041_q3",
+        "type": "reading",
+        "title": "Wolves and the Yellowstone Story",
+        "question": "Which of the following is presented as evidence that the popular story is too simple?",
+        "options": {
+          "A": "Elk were found to avoid risky areas less consistently than believed",
+          "B": "Wolves were reintroduced to the park in much smaller numbers than reported",
+          "C": "Beavers returned to the park long before the wolves were reintroduced",
+          "D": "Songbirds disappeared from the park after the wolves returned",
+          "E": "Trees grew back everywhere in the park within a few years"
+        },
+        "answer": "A",
+        "difficulty": "İleri",
+        "tacticUsed": "Kanıt Tespiti",
+        "trapWarning": "E şıkkı metne aykırıdır: bazı yerlerde kısmen toparlanma vardır. B, C ve D metinde yoktur.",
+        "explanation": "GPS tasmalı geyikler riskli alanlardan sanıldığı kadar tutarlı biçimde kaçınmamıştır (A şıkkı)."
+      },
+      {
+        "id": "rb041_q4",
+        "type": "reading",
+        "title": "Wolves and the Yellowstone Story",
+        "question": "The ecologists' conclusion in the last sentence suggests that _____ .",
+        "options": {
+          "A": "reintroducing wolves had no real effect on Yellowstone at all",
+          "B": "predators can trigger change but cannot undo all earlier damage",
+          "C": "wolves should be removed from the park again to allow the elk population to recover",
+          "D": "all the damage caused over a century has now been repaired",
+          "E": "beavers are more important than wolves for river ecosystems"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sonuç Yorumu",
+        "trapWarning": "A şıkkı \"the story is real\" ile çelişir. D şıkkı tam tersidir. C ve E metnin varmadığı sonuçlardır.",
+        "explanation": "Avcıyı geri getirmek önemli değişiklikler başlatabilir ama bir asırlık hasarı basitçe tersine çeviremez (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb042",
+    "title": "Experiments with Basic Income",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from Journal of Economic Perspectives",
+    "wordCount": 253,
+    "passageText": "A universal basic income is a regular cash payment made by the government to every citizen, regardless of employment or wealth, with no conditions attached. The idea has supporters on both the left and the right. Some see it as a way to reduce poverty and give workers more bargaining power; others see it as a simpler and less bureaucratic replacement for complicated welfare programmes. Critics, however, worry that it would be extremely expensive and that people might stop working if they received money unconditionally.\n\nBecause a full national programme has never been tried, researchers have relied on smaller experiments. Between 2017 and 2018, Finland gave 2,000 unemployed people a monthly payment of 560 euros, which they kept even if they found work. Participants reported better well-being and less stress than a comparison group, and they were slightly more likely to be employed, although the effect on employment was small. In Kenya, a charity has been running a long-term study in which entire villages receive payments for up to twelve years. Early results show that recipients invested in businesses and livestock rather than spending the money on alcohol or other so-called temptation goods.\n\nThese experiments have important limits. Most of them gave money only to particular groups, such as the unemployed, rather than to everyone, and they lasted for a limited period. People may behave differently if they know that payments will continue for life. Moreover, no experiment can show how a national programme would be financed, which is perhaps the most difficult political question of all.",
+    "vocabularyNotes": [
+      {
+        "word": "regardless of",
+        "meaningTr": "-e bakılmaksızın",
+        "contextNote": "YDS bağlaç sorularında çok sık çıkar."
+      },
+      {
+        "word": "bureaucratic",
+        "meaningTr": "bürokratik",
+        "contextNote": "bureaucracy kelimesinden."
+      },
+      {
+        "word": "unconditionally",
+        "meaningTr": "koşulsuz olarak",
+        "contextNote": "un- + condition."
+      },
+      {
+        "word": "well-being",
+        "meaningTr": "iyi oluş, refah",
+        "contextNote": "Psikolojik ve fiziksel sağlık hali."
+      },
+      {
+        "word": "recipient",
+        "meaningTr": "alıcı",
+        "contextNote": "receive fiilinden."
+      },
+      {
+        "word": "finance",
+        "meaningTr": "finanse etmek",
+        "contextNote": "Fiil olarak kaynak sağlamak."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Early results show that recipients invested in businesses and livestock rather than spending the money on alcohol or other so-called temptation goods.",
+        "subject": "Early results (ilk sonuçlar)",
+        "mainVerb": "show (göstermektedir)",
+        "objectsAndComplements": "[that-clause: alıcıların parayı alkole ya da sözde ayartıcı mallara harcamak yerine işletmelere ve hayvanlara yatırdıklarını]",
+        "grammaticalStructures": [
+          "invest in: -e yatırım yapmak.",
+          "rather than + V-ing: -mek yerine.",
+          "spend money on: -e para harcamak.",
+          "so-called: sözde, ... diye adlandırılan."
+        ],
+        "translationTr": "İlk sonuçlar, alıcıların parayı alkole ya da sözde ayartıcı mallara harcamak yerine işletmelere ve hayvanlara yatırdığını göstermektedir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb042_q1",
+        "type": "reading",
+        "title": "Experiments with Basic Income",
+        "question": "According to the passage, a universal basic income is a payment that _____ .",
+        "options": {
+          "A": "is given only to people who have lost their jobs",
+          "B": "is made to all citizens without any conditions",
+          "C": "replaces wages for workers in the public sector",
+          "D": "must be spent on businesses or livestock",
+          "E": "is paid by charities rather than by governments"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Tanım",
+        "trapWarning": "A şıkkı Finlandiya deneyinin sınırlı grubunu tanımla karıştırır. E şıkkı Kenya deneyini genelleştirir. C ve D metinde yoktur.",
+        "explanation": "Hükümetin her vatandaşa, istihdam veya servetten bağımsız ve koşulsuz yaptığı düzenli nakit ödemedir (B şıkkı)."
+      },
+      {
+        "id": "rb042_q2",
+        "type": "reading",
+        "title": "Experiments with Basic Income",
+        "question": "The Finnish experiment found that participants _____ .",
+        "options": {
+          "A": "stopped looking for work once they began receiving payments",
+          "B": "felt better and were slightly more likely to have jobs",
+          "C": "lost their payments as soon as they found employment",
+          "D": "spent most of the money on so-called temptation goods",
+          "E": "reported more stress than those in the comparison group"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Deney Bulgusu",
+        "trapWarning": "A şıkkı eleştirmenlerin korkusudur, bulgu değildir. C şıkkı metinle çelişir: iş bulsalar da ödemeyi koruyorlardı. D şıkkı Kenya'ya dair bulgunun tersidir. E şıkkı tersine çevirir.",
+        "explanation": "Katılımcılar daha iyi bir iyi oluş ve daha az stres bildirmiş, istihdam ihtimalleri de biraz artmıştır (B şıkkı)."
+      },
+      {
+        "id": "rb042_q3",
+        "type": "reading",
+        "title": "Experiments with Basic Income",
+        "question": "The results from Kenya challenge the concern that _____ .",
+        "options": {
+          "A": "payments would be too small to make any difference",
+          "B": "recipients would waste the money on things like alcohol",
+          "C": "villages would become dependent on a single charity",
+          "D": "basic income would soon replace all of the existing welfare programmes",
+          "E": "the government would not be able to finance the scheme"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Çürütülen Kaygı",
+        "trapWarning": "E şıkkı son paragrafta açık kalan bir sorundur. A, C ve D Kenya sonuçlarıyla ilgisizdir.",
+        "explanation": "Alıcılar parayı alkol gibi mallara değil işletme ve hayvanlara yatırmıştır; bu da israf kaygısını zayıflatır (B şıkkı)."
+      },
+      {
+        "id": "rb042_q4",
+        "type": "reading",
+        "title": "Experiments with Basic Income",
+        "question": "Which of the following is NOT mentioned as a limitation of the experiments?",
+        "options": {
+          "A": "They often targeted particular groups instead of everyone",
+          "B": "They lasted only for a limited period of time",
+          "C": "They cannot show how a national scheme would be paid for",
+          "D": "They were carried out only in wealthy European countries",
+          "E": "People might act differently if payments continued for life"
+        },
+        "answer": "D",
+        "difficulty": "Orta",
+        "tacticUsed": "NOT Sorusu",
+        "trapWarning": "A, B, C ve E son paragrafta sınırlılık olarak geçer.",
+        "explanation": "Deneylerden biri Kenya'dadır; yani sadece zengin Avrupa ülkelerinde yapıldığı söylenemez ve metin bunu sınırlılık olarak saymaz (D şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb043",
+    "title": "Turning Seawater into Drinking Water",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from Nature Water & World Bank reports",
+    "wordCount": 266,
+    "passageText": "Although water covers most of the Earth's surface, about ninety-seven percent of it is salt water, and much of the remaining fresh water is locked in ice. As populations grow and droughts become more frequent, an increasing number of countries are turning to desalination, the process of removing salt from seawater. More than 20,000 desalination plants now operate worldwide, and countries such as Saudi Arabia, the United Arab Emirates and Israel obtain a large share of their drinking water this way.\n\nThe dominant technology today is reverse osmosis, in which seawater is pushed at high pressure through membranes that allow water molecules to pass but block salt. It has become far more efficient over the past few decades, and the energy needed to produce a cubic metre of fresh water has fallen by more than half since the 1980s. Even so, desalination remains more energy-intensive and more expensive than most traditional sources, such as rivers and groundwater, which is why it is used mainly in wealthy, water-scarce regions.\n\nDesalination also has environmental costs. For every litre of fresh water produced, plants generate roughly one and a half litres of brine, a highly concentrated salt solution that often also contains chemicals used to clean the membranes. When this brine is discharged back into the sea, it can sink to the seabed and harm marine life. Researchers are exploring ways to dilute the brine more effectively or to extract useful minerals from it. Many experts stress, however, that desalination should complement, rather than replace, efforts to use existing water more efficiently, such as repairing leaking pipes and recycling wastewater.",
+    "vocabularyNotes": [
+      {
+        "word": "desalination",
+        "meaningTr": "tuzdan arındırma",
+        "contextNote": "de- + salt."
+      },
+      {
+        "word": "membrane",
+        "meaningTr": "zar, membran",
+        "contextNote": "Biyoloji ve teknoloji metinlerinde geçer."
+      },
+      {
+        "word": "energy-intensive",
+        "meaningTr": "yoğun enerji gerektiren",
+        "contextNote": "-intensive: yoğun ... gerektiren."
+      },
+      {
+        "word": "brine",
+        "meaningTr": "tuzlu su, salamura",
+        "contextNote": "Arıtma atığı olarak kullanılır."
+      },
+      {
+        "word": "discharge",
+        "meaningTr": "boşaltmak, deşarj etmek",
+        "contextNote": "Hastaneden taburcu etmek anlamı da vardır."
+      },
+      {
+        "word": "complement",
+        "meaningTr": "tamamlamak",
+        "contextNote": "compliment (iltifat) ile karıştırılmamalı."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Many experts stress, however, that desalination should complement, rather than replace, efforts to use existing water more efficiently.",
+        "subject": "Many experts (birçok uzman)",
+        "mainVerb": "stress (vurgular)",
+        "objectsAndComplements": "[that-clause: tuzdan arındırmanın mevcut suyu daha verimli kullanma çabalarının yerini almak yerine onları tamamlaması gerektiğini]",
+        "grammaticalStructures": [
+          "however: cümle içinde araya giren zıtlık zarfı.",
+          "should: tavsiye.",
+          "complement, rather than replace, X: ortak nesneye sahip iki fiil.",
+          "efforts to + V1."
+        ],
+        "translationTr": "Ancak birçok uzman, tuzdan arındırmanın mevcut suyu daha verimli kullanma çabalarının yerini almak yerine onları tamamlaması gerektiğini vurgulamaktadır."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb043_q1",
+        "type": "reading",
+        "title": "Turning Seawater into Drinking Water",
+        "question": "According to the passage, reverse osmosis works by _____ .",
+        "options": {
+          "A": "boiling the seawater and then collecting the steam that rises from it",
+          "B": "forcing seawater through membranes that let water pass but stop salt",
+          "C": "adding special chemicals that cause the salt to sink to the bottom of the tank",
+          "D": "freezing seawater so that the salt is separated from the ice",
+          "E": "mixing seawater with groundwater to reduce its salt content"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Süreç Tanımı",
+        "trapWarning": "A ve D başka arıtma yöntemlerini çağrıştıran tuzaklardır. C şıkkı kimyasalların membran temizliğindeki rolünü çarpıtır. E şıkkı metinde yoktur.",
+        "explanation": "Deniz suyu yüksek basınçla suyu geçirip tuzu tutan zarlardan geçirilir (B şıkkı)."
+      },
+      {
+        "id": "rb043_q2",
+        "type": "reading",
+        "title": "Turning Seawater into Drinking Water",
+        "question": "Why is desalination used mainly in wealthy regions with little water?",
+        "options": {
+          "A": "Because poorer regions have far more fresh water available in rivers and lakes",
+          "B": "Because it still costs more and uses more energy than most other sources",
+          "C": "Because the energy it uses has risen sharply in every decade since the 1980s",
+          "D": "Because its membranes can be produced only in rich countries",
+          "E": "Because international law limits the number of plants elsewhere"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep (which is why ...)",
+        "trapWarning": "C şıkkı metinle çelişir: enerji ihtiyacı yarıdan fazla azalmıştır. A, D ve E metinde yoktur.",
+        "explanation": "Desalinasyon geleneksel kaynakların çoğundan daha pahalı ve daha fazla enerji gerektirir (B şıkkı)."
+      },
+      {
+        "id": "rb043_q3",
+        "type": "reading",
+        "title": "Turning Seawater into Drinking Water",
+        "question": "According to the passage, brine is harmful mainly because it _____ .",
+        "options": {
+          "A": "evaporates quickly and increases the salt content of the air",
+          "B": "may sink to the seabed and damage marine organisms",
+          "C": "contains fresh water that dilutes the surrounding sea",
+          "D": "blocks the membranes and stops the plant from working",
+          "E": "is used to produce minerals that pollute the oceans"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Çevresel Etki Detayı",
+        "trapWarning": "C şıkkı mantığı tersine çevirir: tuzlu su yoğun tuz içerir. E şıkkı araştırılan çözümü sorun gibi sunar. A ve D metinde yoktur.",
+        "explanation": "Tuzlu su denize boşaltıldığında dibe çökebilir ve deniz canlılarına zarar verebilir (B şıkkı)."
+      },
+      {
+        "id": "rb043_q4",
+        "type": "reading",
+        "title": "Turning Seawater into Drinking Water",
+        "question": "Many experts believe that desalination _____ .",
+        "options": {
+          "A": "should become the main source of drinking water in every country",
+          "B": "should support, not replace, efforts to use existing water better",
+          "C": "is no longer needed at all if the leaking pipes in cities are properly repaired",
+          "D": "has no environmental costs once the brine is diluted",
+          "E": "should be banned until the brine problem is solved"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Uzman Görüşü",
+        "trapWarning": "A ve C iki uç görüştür. D ve E metinde olmayan kesin yargılardır.",
+        "explanation": "Uzmanlara göre desalinasyon, mevcut suyu verimli kullanma çabalarının yerini almamalı, onları tamamlamalıdır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb044",
+    "title": "The Gig Economy and the Meaning of Work",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from Harvard Business Review & ILO reports",
+    "wordCount": 257,
+    "passageText": "Over the past fifteen years, digital platforms have created a new labour market often called the gig economy. Through smartphone applications, people can find short-term jobs such as delivering food, driving passengers or completing small online tasks. Companies that run these platforms usually describe their workers not as employees but as independent contractors who use the app to find customers.\n\nThis classification has major consequences. Employees in most countries are entitled to a minimum wage, paid holidays, sick pay and protection against unfair dismissal; independent contractors generally are not. Platform companies argue that their workers value the freedom to choose when and how much to work, and surveys confirm that flexibility is one of the main attractions of gig work, particularly for students, carers and people seeking additional income. Critics respond that this freedom is often limited in practice. Algorithms decide which jobs a worker is offered, set prices and can deactivate accounts with little explanation, giving companies a degree of control that resembles that of an employer.\n\nCourts and governments have reached different conclusions. In 2021, the United Kingdom's Supreme Court ruled that drivers for one major ride-hailing company were workers entitled to the minimum wage and holiday pay. Spain passed a law presuming that food-delivery riders are employees. The European Union has since adopted rules intended to determine more clearly when platform workers should be treated as employees. The debate reflects a wider question: whether labour laws designed for factories and offices in the twentieth century can be adapted to forms of work organized by software.",
+    "vocabularyNotes": [
+      {
+        "word": "contractor",
+        "meaningTr": "yüklenici, sözleşmeli çalışan",
+        "contextNote": "independent contractor: serbest çalışan."
+      },
+      {
+        "word": "entitled to",
+        "meaningTr": "-e hakkı olan",
+        "contextNote": "be entitled to + isim."
+      },
+      {
+        "word": "dismissal",
+        "meaningTr": "işten çıkarma",
+        "contextNote": "dismiss (kovmak) fiilinden."
+      },
+      {
+        "word": "deactivate",
+        "meaningTr": "devre dışı bırakmak",
+        "contextNote": "de- + activate."
+      },
+      {
+        "word": "resemble",
+        "meaningTr": "benzemek",
+        "contextNote": "Edat almaz: resemble something."
+      },
+      {
+        "word": "presume",
+        "meaningTr": "varsaymak",
+        "contextNote": "Hukukta aksi kanıtlanana kadar kabul etmek."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Algorithms decide which jobs a worker is offered, set prices and can deactivate accounts with little explanation, giving companies a degree of control that resembles that of an employer.",
+        "subject": "Algorithms (algoritmalar)",
+        "mainVerb": "decide ..., set ... and can deactivate (karar verir, belirler, kapatabilir)",
+        "objectsAndComplements": "[which-clause: bir çalışana hangi işlerin teklif edileceğine] + prices + accounts + [participle: şirketlere ... bir kontrol düzeyi vererek]",
+        "grammaticalStructures": [
+          "Üç paralel fiil (decide, set, can deactivate).",
+          "Dolaylı soru (which jobs a worker is offered) – passive.",
+          "Sonuç bildiren -ing (giving companies ...).",
+          "that of: aynı isim tekrarını önleyen zamir (the control of an employer)."
+        ],
+        "translationTr": "Algoritmalar bir çalışana hangi işlerin teklif edileceğine karar verir, fiyatları belirler ve hesapları çok az açıklamayla kapatabilir; bu da şirketlere bir işverenin kontrolüne benzeyen bir denetim gücü verir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb044_q1",
+        "type": "reading",
+        "title": "The Gig Economy and the Meaning of Work",
+        "question": "Why is the classification of gig workers as independent contractors important?",
+        "options": {
+          "A": "Because contractors earn considerably more than employees do in most countries",
+          "B": "Because contractors usually lack rights such as minimum wage and sick pay",
+          "C": "Because it prevents workers from using more than one app",
+          "D": "Because it forces the platforms to pay for their workers' smartphones and fuel",
+          "E": "Because contractors are not free to choose when and where they work"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sonuç Önemi",
+        "trapWarning": "E şıkkı durumu ters çevirir: esneklik bağımsız çalışmanın cazibesidir. A, C ve D metinde yoktur.",
+        "explanation": "Çalışanların sahip olduğu asgari ücret, ücretli izin ve hastalık ödemesi gibi haklar genellikle serbest çalışanlara verilmez (B şıkkı)."
+      },
+      {
+        "id": "rb044_q2",
+        "type": "reading",
+        "title": "The Gig Economy and the Meaning of Work",
+        "question": "Platform companies defend their model by arguing that _____ .",
+        "options": {
+          "A": "algorithms treat all workers more fairly than human managers",
+          "B": "workers appreciate being able to decide when and how much to work",
+          "C": "gig workers are already protected by twentieth-century labour laws",
+          "D": "courts in most countries have supported their classification",
+          "E": "students and carers prefer full-time employment"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Görüş Sahibi",
+        "trapWarning": "D şıkkı metinle çelişir: mahkemeler farklı sonuçlara varmıştır. E şıkkı tersidir. A ve C metinde şirketlere atfedilmez.",
+        "explanation": "Şirketler çalışanların ne zaman ve ne kadar çalışacaklarını seçme özgürlüğüne değer verdiğini savunur (B şıkkı)."
+      },
+      {
+        "id": "rb044_q3",
+        "type": "reading",
+        "title": "The Gig Economy and the Meaning of Work",
+        "question": "Critics argue that gig workers' freedom is limited because _____ .",
+        "options": {
+          "A": "they are required to work a fixed number of hours each week",
+          "B": "algorithms control job offers, prices and account access",
+          "C": "they must sign long-term contracts with a single company",
+          "D": "platforms do not allow them to work as students or carers",
+          "E": "governments forbid them from choosing their own customers"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Eleştiri Gerekçesi",
+        "trapWarning": "A ve C esnekliğin tersini varsayar; metinde yoktur. D ve E metne aykırıdır.",
+        "explanation": "Algoritmalar iş tekliflerini ve fiyatları belirler ve hesapları kapatabilir (B şıkkı)."
+      },
+      {
+        "id": "rb044_q4",
+        "type": "reading",
+        "title": "The Gig Economy and the Meaning of Work",
+        "question": "The examples of the United Kingdom, Spain and the European Union show that _____ .",
+        "options": {
+          "A": "almost all countries now treat gig workers as independent contractors under the law",
+          "B": "authorities have increasingly given some gig workers employee-like rights",
+          "C": "platform companies have stopped operating in Europe",
+          "D": "labour laws from the twentieth century need no changes",
+          "E": "food-delivery riders now earn considerably more than drivers for ride-hailing apps"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örneklerden Genelleme",
+        "trapWarning": "A ve D örneklerin tersini söyler. C ve E metinde yoktur.",
+        "explanation": "Üç örnek de bazı platform çalışanlarına işçi haklarına benzer haklar tanındığını gösterir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb045",
+    "title": "Mining the Deep Sea",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from Nature & International Seabed Authority reports",
+    "wordCount": 263,
+    "passageText": "Scattered across vast areas of the deep ocean floor, at depths of four to six kilometres, lie billions of potato-sized lumps known as polymetallic nodules. Formed over millions of years, they are rich in metals such as nickel, cobalt, manganese and copper, all of which are needed to manufacture batteries for electric vehicles and to store renewable energy. As demand for these metals grows, several companies have proposed collecting the nodules with robotic vehicles that would move across the seabed and pump them up to ships on the surface.\n\nSupporters argue that deep-sea mining could reduce the environmental and social damage associated with mining on land, which often involves clearing forests and, in some countries, child labour. They also point out that the nodules lie on the surface of the seabed and do not require digging deep into the earth.\n\nMarine scientists, however, have raised serious concerns. The deep sea is one of the least explored environments on the planet, and a large proportion of the species collected there in recent surveys were previously unknown to science. Many of these organisms live on the nodules themselves, which take millions of years to form and therefore cannot be replaced on any human timescale. Mining machines would also stir up clouds of sediment that could spread for many kilometres and smother animals that feed by filtering the water. An experiment that disturbed a small area of the Pacific seabed in 1989 found that, decades later, the site had still not recovered. More than thirty countries have called for a pause until the risks are better understood.",
+    "vocabularyNotes": [
+      {
+        "word": "polymetallic",
+        "meaningTr": "çok metalli",
+        "contextNote": "poly- (çok) + metallic."
+      },
+      {
+        "word": "nodule",
+        "meaningTr": "yumru, nodül",
+        "contextNote": "Okyanus tabanındaki metal yumruları."
+      },
+      {
+        "word": "proportion",
+        "meaningTr": "oran, pay",
+        "contextNote": "a large proportion of: büyük bir kısmı."
+      },
+      {
+        "word": "stir up",
+        "meaningTr": "karıştırmak, kaldırmak (toz, tortu)",
+        "contextNote": "Mecazi olarak kışkırtmak anlamı da vardır."
+      },
+      {
+        "word": "smother",
+        "meaningTr": "boğmak, örtüp nefessiz bırakmak",
+        "contextNote": "Eş anlamlısı: suffocate."
+      },
+      {
+        "word": "pause",
+        "meaningTr": "duraklama, ara",
+        "contextNote": "call for a pause: durdurulma çağrısı yapmak."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Many of these organisms live on the nodules themselves, which take millions of years to form and therefore cannot be replaced on any human timescale.",
+        "subject": "Many of these organisms (bu organizmaların birçoğu)",
+        "mainVerb": "live on (üzerinde yaşar)",
+        "objectsAndComplements": "the nodules themselves (nodüllerin kendileri) + [which-clause: oluşması milyonlarca yıl süren ve bu nedenle insan zaman ölçeğinde yerine konamayan]",
+        "grammaticalStructures": [
+          "Reflexive vurgu (the nodules themselves).",
+          "take + süre + to V1: -mesi ... sürmek.",
+          "therefore: sonuç.",
+          "Passive modal (cannot be replaced)."
+        ],
+        "translationTr": "Bu organizmaların birçoğu, oluşması milyonlarca yıl süren ve bu nedenle insan ölçeğinde hiçbir zaman diliminde yerine konamayacak olan nodüllerin bizzat üzerinde yaşar."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb045_q1",
+        "type": "reading",
+        "title": "Mining the Deep Sea",
+        "question": "According to the passage, polymetallic nodules are attractive to companies because they _____ .",
+        "options": {
+          "A": "are found in shallow coastal waters that are easy to reach",
+          "B": "contain metals needed for batteries and energy storage",
+          "C": "can be replaced quickly after they have been collected",
+          "D": "are home to many species that are valuable as food",
+          "E": "are buried deep under the seabed and protected from damage"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Detay",
+        "trapWarning": "A şıkkı derinlik bilgisiyle, C oluşum süresiyle, E \"lie on the surface\" ifadesiyle çelişir. D şıkkı metindeki türleri yanlış bağlar.",
+        "explanation": "Nodüller elektrikli araç bataryaları ve enerji depolama için gereken nikel, kobalt gibi metaller içerir (B şıkkı)."
+      },
+      {
+        "id": "rb045_q2",
+        "type": "reading",
+        "title": "Mining the Deep Sea",
+        "question": "Supporters of deep-sea mining claim that it _____ .",
+        "options": {
+          "A": "would cause no damage to marine life of any kind",
+          "B": "could reduce some of the harm caused by mining on land",
+          "C": "would create millions of new jobs in coastal countries",
+          "D": "has already been tested successfully in the Pacific Ocean",
+          "E": "is necessary because land-based mines have been exhausted"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Görüş Sahibi",
+        "trapWarning": "A şıkkı aşırı bir iddiadır. D şıkkı 1989 deneyinin sonucunu tersine çevirir. C ve E metinde yoktur.",
+        "explanation": "Destekçiler derin deniz madenciliğinin karadaki madenciliğin çevresel ve sosyal zararlarını azaltabileceğini savunur (B şıkkı)."
+      },
+      {
+        "id": "rb045_q3",
+        "type": "reading",
+        "title": "Mining the Deep Sea",
+        "question": "The 1989 experiment is mentioned to show that _____ .",
+        "options": {
+          "A": "robotic mining vehicles work well at great depths",
+          "B": "damage to the deep seabed may last for decades",
+          "C": "nodules form much faster than scientists had believed",
+          "D": "sediment clouds settle within a few days",
+          "E": "most deep-sea species are already known to science"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örneğin İşlevi",
+        "trapWarning": "C, D ve E metinle çelişir. A şıkkı deneyin amacı değildir.",
+        "explanation": "Deney alanı onlarca yıl sonra bile toparlanmamıştır; yani hasar çok uzun sürebilir (B şıkkı)."
+      },
+      {
+        "id": "rb045_q4",
+        "type": "reading",
+        "title": "Mining the Deep Sea",
+        "question": "It can be inferred that the countries calling for a pause believe that _____ .",
+        "options": {
+          "A": "deep-sea mining should never be allowed under any circumstances",
+          "B": "too little is known about the risks to begin mining now",
+          "C": "land-based mining is more harmful than deep-sea mining",
+          "D": "electric vehicles do not need nickel and cobalt",
+          "E": "companies have already collected enough nodules"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Çıkarım (until the risks are better understood)",
+        "trapWarning": "A şıkkı tuzaktır: duraklama kalıcı yasak değildir. C şıkkı destekçilerin görüşüdür. D ve E metinle çelişir.",
+        "explanation": "Risklerin daha iyi anlaşılmasına kadar ara verilmesini istemeleri, şu an riskler hakkında yeterli bilgi olmadığını düşündüklerini gösterir (B şıkkı)."
       }
     ]
   }
