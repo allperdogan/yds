@@ -15,7 +15,7 @@ import { TodayView } from './components/TodayView';
 import { StudyHubView } from './components/StudyHubView';
 import { TopicPracticeView } from './components/TopicPracticeView';
 import { VocabListsView } from './components/VocabListsView';
-import { recordWordReview } from './services/vocabReview';
+import { countDueWords, recordWordReview } from './services/vocabReview';
 import { getTopicById, topicForType } from './services/studyTopics';
 
 import { UserStats, SRSItem, QuestionType } from './types';
@@ -29,6 +29,7 @@ import { wordForms } from './services/vocabBlank';
 export const App: React.FC = () => {
   const [activeTab, setActiveTabState] = useState<string>('today');
   const [studyTopicId, setStudyTopicId] = useState<string | undefined>(undefined);
+  const [studyTopicMode, setStudyTopicMode] = useState<'new' | 'review' | undefined>(undefined);
 
   // Choosing a main tab always lands on its first screen.
   const setActiveTab = (tab: string) => {
@@ -37,8 +38,9 @@ export const App: React.FC = () => {
     window.scrollTo?.(0, 0);
   };
 
-  const openTopic = (topicId: string) => {
+  const openTopic = (topicId: string, mode?: 'new' | 'review') => {
     setStudyTopicId(topicId);
+    setStudyTopicMode(mode);
     setActiveTabState('study');
     window.scrollTo?.(0, 0);
   };
@@ -304,8 +306,8 @@ export const App: React.FC = () => {
     }));
   };
 
-  // Calculate SRS Due Count for badge
-  const dueCount = Object.values(srsData).filter((item) => SRSEngine.isDueToday(item)).length;
+  // Words the vocabulary drill will bring back first today.
+  const dueCount = countDueWords(stats.vocabReviews || {}, stats.pendingReviewVocabIds);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors">
@@ -330,10 +332,7 @@ export const App: React.FC = () => {
             dueWordCount={dueCount}
             onOpenTopic={openTopic}
             onOpenVocab={openVocabDrill}
-            onOpenFlashcards={() => {
-              setVocabInitialViewMode('flashcard');
-              setActiveTab('vocab');
-            }}
+            onOpenFlashcards={openVocabDrill}
             onOpenPlan={() => setActiveTab('daily')}
           />
         )}
@@ -363,8 +362,9 @@ export const App: React.FC = () => {
 
         {activeTab === 'study' && studyTopicId && getTopicById(studyTopicId) && (
           <TopicPracticeView
-            key={studyTopicId}
+            key={`${studyTopicId}:${studyTopicMode ?? ''}`}
             topic={getTopicById(studyTopicId)!}
+            initialMode={studyTopicMode}
             solvedQuestions={stats.solvedQuestions}
             mistakeIds={stats.mistakeQuestionIds}
             onRecordQuestionResult={handleRecordQuestionResult}

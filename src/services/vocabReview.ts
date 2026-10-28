@@ -72,6 +72,15 @@ export const requeueAfter = <T>(list: T[], index: number, item: T, sameAs: (a: T
   return [...list.slice(0, at), item, ...list.slice(at)];
 };
 
+/** Words due for review now: missed ones still in the review list plus scheduled reviews that came due. */
+export const countDueWords = (reviews: Record<string, WordReview>, pendingIds: string[], now = Date.now()): number => {
+  const due = new Set(pendingIds);
+  Object.entries(reviews).forEach(([id, r]) => {
+    if (r.due <= now) due.add(id);
+  });
+  return due.size;
+};
+
 export type WordListKind = 'learned' | 'unseen' | 'mistakes';
 
 export interface WordLists {
