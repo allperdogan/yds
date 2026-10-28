@@ -26447,5 +26447,3205 @@ export const VOCAB_BANK_WORDS: YdsWord[] = [
       "discover"
     ],
     "groupDay": 26
+  },
+  {
+    "id": "wb0987",
+    "word": "address",
+    "type": "verb",
+    "meaning": "ele almak, çözmeye çalışmak; hitap etmek",
+    "synonyms": [
+      "tackle",
+      "deal with",
+      "speak to"
+    ],
+    "collocations": [
+      "address a problem",
+      "address the issue"
+    ],
+    "exampleEn": "The new law aims to address the problem of youth unemployment.",
+    "exampleTr": "Yeni yasa genç işsizliği sorununu ele almayı amaçlıyor.",
+    "ydsTip": "address bir sorunu/konuyu \"ele almak\" anlamında ÖSYM'de çok sık geçer.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: ADDRESS = adres. Sorunun adresine doğrudan gitmek = ele almak.",
+    "distractors": [
+      "ignore",
+      "neglect",
+      "evade",
+      "dismiss"
+    ],
+    "groupDay": 27
+  },
+  {
+    "id": "wb0988",
+    "word": "administer",
+    "type": "verb",
+    "meaning": "yönetmek; (ilaç) vermek, uygulamak",
+    "synonyms": [
+      "manage",
+      "give",
+      "dispense"
+    ],
+    "collocations": [
+      "administer a drug",
+      "administer a test"
+    ],
+    "exampleEn": "Nurses are trained to administer vaccines safely.",
+    "exampleTr": "Hemşireler aşıları güvenli şekilde uygulamak üzere eğitilir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Administrasyon\" = yönetim. AD + MINISTER (hizmet etmek): ilacı hastaya hizmet olarak vermek.",
+    "distractors": [
+      "minister",
+      "register",
+      "sinister",
+      "withhold"
+    ],
+    "groupDay": 28
+  },
+  {
+    "id": "wb0989",
+    "word": "afford",
+    "type": "verb",
+    "meaning": "-e gücü yetmek",
+    "synonyms": [
+      "manage",
+      "pay for",
+      "bear the cost of"
+    ],
+    "collocations": [
+      "can afford",
+      "afford to"
+    ],
+    "exampleEn": "Many families can no longer afford to heat their homes in winter.",
+    "exampleTr": "Pek çok aile artık kışın evlerini ısıtmaya güç yetiremiyor.",
+    "ydsTip": "afford genellikle can/could ile gelir: \"can't afford to + V1\".",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: AF + FORD (ilerletmek). Bütçen bir şeye kadar ilerleyebiliyorsa = gücün yetiyor.",
+    "distractors": [
+      "accord",
+      "offer",
+      "effort",
+      "avoid"
+    ],
+    "groupDay": 29
+  },
+  {
+    "id": "wb0990",
+    "word": "appeal",
+    "type": "verb",
+    "meaning": "çağrıda bulunmak; cazip gelmek",
+    "synonyms": [
+      "call",
+      "request",
+      "attract"
+    ],
+    "collocations": [
+      "appeal for",
+      "appeal to"
+    ],
+    "exampleEn": "The charity appealed for donations to help the earthquake victims.",
+    "exampleTr": "Hayır kurumu deprem mağdurlarına yardım için bağış çağrısında bulundu.",
+    "ydsTip": "appeal FOR = için çağrıda bulunmak; appeal TO = -e cazip gelmek.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: AP + PELLERE (sürmek). Birini yardıma sürmek = çağrı. \"Apel\" = başvuru.",
+    "distractors": [
+      "repeal",
+      "appear",
+      "compel",
+      "dispel"
+    ],
+    "groupDay": 30
+  },
+  {
+    "id": "wb0991",
+    "word": "appoint",
+    "type": "verb",
+    "meaning": "atamak, tayin etmek",
+    "synonyms": [
+      "nominate",
+      "assign",
+      "designate"
+    ],
+    "collocations": [
+      "appoint as",
+      "newly appointed"
+    ],
+    "exampleEn": "The president appointed a new health minister last week.",
+    "exampleTr": "Cumhurbaşkanı geçen hafta yeni bir sağlık bakanı atadı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: AP + POINT (işaret etmek). Birini bir göreve işaret edip koymak = atamak.",
+    "distractors": [
+      "disappoint",
+      "dismiss",
+      "anoint",
+      "disjoint"
+    ],
+    "groupDay": 1
+  },
+  {
+    "id": "wb0992",
+    "word": "argue",
+    "type": "verb",
+    "meaning": "savunmak, iddia etmek; tartışmak",
+    "synonyms": [
+      "claim",
+      "contend",
+      "maintain"
+    ],
+    "collocations": [
+      "argue that",
+      "argue against"
+    ],
+    "exampleEn": "Some scientists argue that the risks of the technology are exaggerated.",
+    "exampleTr": "Bazı bilim insanları teknolojinin risklerinin abartıldığını savunuyor.",
+    "ydsTip": "argue THAT = iddia etmek; ÖSYM'de \"tartışmak\"tan çok \"savunmak\" anlamında gelir.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Argüman\" = gerekçe. Gerekçeyle bir fikri savunmak = argue.",
+    "distractors": [
+      "persuade",
+      "convince",
+      "remind",
+      "inform"
+    ],
+    "groupDay": 2
+  },
+  {
+    "id": "wb0993",
+    "word": "assemble",
+    "type": "verb",
+    "meaning": "monte etmek; toplanmak",
+    "synonyms": [
+      "construct",
+      "gather",
+      "convene"
+    ],
+    "collocations": [
+      "assemble a team",
+      "assemble parts"
+    ],
+    "exampleEn": "The cars are assembled in a factory near the capital.",
+    "exampleTr": "Arabalar başkentin yakınındaki bir fabrikada monte ediliyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Asamble\" (toplantı) ile aynı kök: parçaları bir araya getirmek = monte etmek.",
+    "distractors": [
+      "resemble",
+      "dissemble",
+      "disassemble",
+      "dismantle"
+    ],
+    "groupDay": 3
+  },
+  {
+    "id": "wb0994",
+    "word": "associate",
+    "type": "verb",
+    "meaning": "ilişkilendirmek",
+    "synonyms": [
+      "link",
+      "connect",
+      "relate"
+    ],
+    "collocations": [
+      "associate with",
+      "be associated with"
+    ],
+    "exampleEn": "Heavy drinking is associated with a higher risk of liver disease.",
+    "exampleTr": "Aşırı alkol tüketimi daha yüksek karaciğer hastalığı riskiyle ilişkilendiriliyor.",
+    "ydsTip": "\"be associated with\" = ile ilişkili olmak.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: AS + SOCIUS (arkadaş, \"sosyal\"). İki şeyi arkadaş yapmak = ilişkilendirmek.",
+    "distractors": [
+      "dissociate",
+      "separate",
+      "isolate",
+      "exclude"
+    ],
+    "groupDay": 4
+  },
+  {
+    "id": "wb0995",
+    "word": "assure",
+    "type": "verb",
+    "meaning": "temin etmek, güvence vermek",
+    "synonyms": [
+      "reassure",
+      "promise",
+      "guarantee"
+    ],
+    "collocations": [
+      "assure someone that"
+    ],
+    "exampleEn": "The minister assured the public that the water was safe to drink.",
+    "exampleTr": "Bakan kamuoyuna suyun içmek için güvenli olduğunu temin etti.",
+    "ydsTip": "assure SOMEONE that; ensure THAT (birine değil, duruma). ÖSYM bu üçlüyü (assure/ensure/insure) karıştırır.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: A + SURE (emin). Birini emin kılmak = temin etmek.",
+    "distractors": [
+      "insure",
+      "ensure",
+      "measure",
+      "endure"
+    ],
+    "groupDay": 5
+  },
+  {
+    "id": "wb0996",
+    "word": "authorize",
+    "type": "verb",
+    "meaning": "yetki vermek, izin vermek",
+    "synonyms": [
+      "permit",
+      "approve",
+      "sanction"
+    ],
+    "collocations": [
+      "authorize the use of",
+      "authorized by"
+    ],
+    "exampleEn": "The health ministry has authorized the use of the vaccine in children over five, so parents can now book appointments.",
+    "exampleTr": "Sağlık bakanlığı aşının beş yaşın üzerindeki çocuklarda kullanılmasına izin verdi, bu yüzden ebeveynler artık randevu alabiliyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: AUTHORITY (yetki) kelimesinin fiili: yetki vermek.",
+    "distractors": [
+      "prohibit",
+      "ban",
+      "forbid",
+      "veto"
+    ],
+    "groupDay": 6
+  },
+  {
+    "id": "wb0997",
+    "word": "award",
+    "type": "verb",
+    "meaning": "ödüllendirmek, vermek",
+    "synonyms": [
+      "grant",
+      "give",
+      "present"
+    ],
+    "collocations": [
+      "award a prize",
+      "be awarded"
+    ],
+    "exampleEn": "She was awarded the Nobel Prize for her work on DNA.",
+    "exampleTr": "DNA üzerine çalışmaları nedeniyle Nobel Ödülü'ne layık görüldü.",
+    "ydsTip": "award (ödül vermek, resmî) ile reward (karşılığını vermek) yakın ama farklıdır: \"be awarded a prize\".",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Award töreni\" = ödül töreni. award = ödül vermek.",
+    "distractors": [
+      "reward",
+      "ward",
+      "deprive",
+      "strip"
+    ],
+    "groupDay": 7
+  },
+  {
+    "id": "wb0998",
+    "word": "ban",
+    "type": "verb",
+    "meaning": "yasaklamak",
+    "synonyms": [
+      "prohibit",
+      "forbid",
+      "outlaw"
+    ],
+    "collocations": [
+      "ban smoking",
+      "be banned from"
+    ],
+    "exampleEn": "Many cities have banned cars from their historic centres.",
+    "exampleTr": "Pek çok şehir tarihi merkezlerinde arabaları yasakladı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Ban\" yemek = engellenmek. ban = yasaklamak.",
+    "distractors": [
+      "permit",
+      "allow",
+      "authorize",
+      "encourage"
+    ],
+    "groupDay": 8
+  },
+  {
+    "id": "wb0999",
+    "word": "bear",
+    "type": "verb",
+    "meaning": "katlanmak; taşımak; (sorumluluk) üstlenmek",
+    "synonyms": [
+      "tolerate",
+      "carry",
+      "endure"
+    ],
+    "collocations": [
+      "bear the cost",
+      "bear in mind"
+    ],
+    "exampleEn": "Taxpayers will have to bear the cost of the failed project.",
+    "exampleTr": "Başarısız projenin maliyetine vergi mükellefleri katlanmak zorunda kalacak.",
+    "ydsTip": "\"bear in mind\" = aklında tutmak; \"bear the cost\" = maliyetini üstlenmek.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: BEAR (ayı) bile yükü taşır. Yük taşımak = katlanmak.",
+    "distractors": [
+      "bare",
+      "bore",
+      "beat",
+      "bury"
+    ],
+    "groupDay": 9
+  },
+  {
+    "id": "wb1000",
+    "word": "blame",
+    "type": "verb",
+    "meaning": "suçlamak, sorumlu tutmak",
+    "synonyms": [
+      "accuse",
+      "hold responsible",
+      "criticize"
+    ],
+    "collocations": [
+      "blame for",
+      "blame on"
+    ],
+    "exampleEn": "Experts blame poor diet for the rise in childhood obesity.",
+    "exampleTr": "Uzmanlar çocukluk çağı obezitesindeki artış için kötü beslenmeyi sorumlu tutuyor.",
+    "ydsTip": "blame SOMEONE for STH = blame STH on SOMEONE.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Blöf\" değil: BLAME = suçu birine yüklemek. Futbolda \"blame game\" = suçlama oyunu.",
+    "distractors": [
+      "praise",
+      "credit",
+      "commend",
+      "thank"
+    ],
+    "groupDay": 10
+  },
+  {
+    "id": "wb1001",
+    "word": "breed",
+    "type": "verb",
+    "meaning": "üremek; yetiştirmek",
+    "synonyms": [
+      "reproduce",
+      "raise",
+      "rear"
+    ],
+    "collocations": [
+      "breed animals",
+      "breeding season"
+    ],
+    "exampleEn": "Many birds return to the same place every year to breed.",
+    "exampleTr": "Pek çok kuş üremek için her yıl aynı yere geri döner.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Breeding\" = hayvan yetiştiriciliği. breed = üremek, yetiştirmek.",
+    "distractors": [
+      "bleed",
+      "brood",
+      "breathe",
+      "feed"
+    ],
+    "groupDay": 11
+  },
+  {
+    "id": "wb1002",
+    "word": "broadcast",
+    "type": "verb",
+    "meaning": "yayınlamak (radyo, TV)",
+    "synonyms": [
+      "transmit",
+      "air",
+      "televise"
+    ],
+    "collocations": [
+      "broadcast live",
+      "broadcast news"
+    ],
+    "exampleEn": "The final will be broadcast live in more than one hundred countries.",
+    "exampleTr": "Final yüzden fazla ülkede canlı yayınlanacak.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: BROAD (geniş) + CAST (atmak). Geniş alana yaymak = yayınlamak.",
+    "distractors": [
+      "forecast",
+      "overcast",
+      "outcast",
+      "cast away"
+    ],
+    "groupDay": 12
+  },
+  {
+    "id": "wb1003",
+    "word": "cancel",
+    "type": "verb",
+    "meaning": "iptal etmek",
+    "synonyms": [
+      "call off",
+      "abandon",
+      "scrap"
+    ],
+    "collocations": [
+      "cancel a flight",
+      "be cancelled"
+    ],
+    "exampleEn": "Hundreds of flights were cancelled because of the snowstorm.",
+    "exampleTr": "Kar fırtınası nedeniyle yüzlerce uçuş iptal edildi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"İptal\" = cancel. Klavyede \"Cancel\" tuşu.",
+    "distractors": [
+      "schedule",
+      "book",
+      "confirm",
+      "board"
+    ],
+    "groupDay": 13
+  },
+  {
+    "id": "wb1004",
+    "word": "categorize",
+    "type": "verb",
+    "meaning": "sınıflandırmak",
+    "synonyms": [
+      "classify",
+      "group",
+      "sort"
+    ],
+    "collocations": [
+      "categorize as",
+      "categorize into"
+    ],
+    "exampleEn": "Doctors categorize patients according to the severity of their symptoms.",
+    "exampleTr": "Doktorlar hastaları belirtilerinin şiddetine göre sınıflandırır.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CATEGORY (kategori) + IZE.",
+    "distractors": [
+      "criticize",
+      "characterize",
+      "summarize",
+      "memorize"
+    ],
+    "groupDay": 14
+  },
+  {
+    "id": "wb1005",
+    "word": "characterize",
+    "type": "verb",
+    "meaning": "nitelendirmek, karakterize etmek",
+    "synonyms": [
+      "describe",
+      "distinguish",
+      "mark"
+    ],
+    "collocations": [
+      "be characterized by"
+    ],
+    "exampleEn": "The disease is characterized by high fever and severe headaches.",
+    "exampleTr": "Hastalık yüksek ateş ve şiddetli baş ağrılarıyla karakterizedir.",
+    "ydsTip": "\"be characterized by\" = ile belirginleşmek, ... özelliği taşımak.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CHARACTER (karakter) + IZE. Bir şeyin karakterini belirlemek.",
+    "distractors": [
+      "categorize",
+      "criticize",
+      "customize",
+      "authorize"
+    ],
+    "groupDay": 15
+  },
+  {
+    "id": "wb1006",
+    "word": "charge",
+    "type": "verb",
+    "meaning": "ücret almak; suçlamak; şarj etmek",
+    "synonyms": [
+      "bill",
+      "accuse",
+      "indict"
+    ],
+    "collocations": [
+      "charge a fee",
+      "be charged with"
+    ],
+    "exampleEn": "The man was charged with murder.",
+    "exampleTr": "Adam cinayetle suçlandı.",
+    "ydsTip": "charge WITH (suçlamak); charge FOR (ücret almak).",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Şarj\" = yüklemek. Birine suç yüklemek = suçlamak; faturaya ücret yüklemek = ücret almak.",
+    "distractors": [
+      "discharge",
+      "acquit",
+      "release",
+      "pardon"
+    ],
+    "groupDay": 16
+  },
+  {
+    "id": "wb1007",
+    "word": "circulate",
+    "type": "verb",
+    "meaning": "dolaşmak, dolaştırmak; yaymak",
+    "synonyms": [
+      "spread",
+      "flow",
+      "distribute"
+    ],
+    "collocations": [
+      "circulate rumours",
+      "blood circulates"
+    ],
+    "exampleEn": "False rumours about the vaccine circulated widely on social media.",
+    "exampleTr": "Aşı hakkında yanlış söylentiler sosyal medyada geniş çapta yayıldı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CIRCLE (daire) + ATE. Daire çizerek dolaşmak.",
+    "distractors": [
+      "calculate",
+      "stimulate",
+      "speculate",
+      "regulate"
+    ],
+    "groupDay": 17
+  },
+  {
+    "id": "wb1008",
+    "word": "colonize",
+    "type": "verb",
+    "meaning": "sömürgeleştirmek; (canlılar) yerleşmek",
+    "synonyms": [
+      "settle",
+      "occupy",
+      "populate"
+    ],
+    "collocations": [
+      "colonize a country"
+    ],
+    "exampleEn": "Bacteria quickly colonize the wound if it is not kept clean.",
+    "exampleTr": "Yara temiz tutulmazsa bakteriler hızla oraya yerleşir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: COLONY (koloni) + IZE. Koloni kurmak.",
+    "distractors": [
+      "recognize",
+      "organize",
+      "sterilize",
+      "criticize"
+    ],
+    "groupDay": 18
+  },
+  {
+    "id": "wb1009",
+    "word": "communicate",
+    "type": "verb",
+    "meaning": "iletişim kurmak",
+    "synonyms": [
+      "convey",
+      "interact",
+      "contact"
+    ],
+    "collocations": [
+      "communicate with",
+      "communicate effectively"
+    ],
+    "exampleEn": "Dolphins communicate with each other using clicks and whistles.",
+    "exampleTr": "Yunuslar birbirleriyle tıklama ve ıslık sesleri kullanarak iletişim kurar.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: COMMUNIS (ortak). Bilgiyi ortak kılmak = iletişim kurmak.",
+    "distractors": [
+      "excommunicate",
+      "eliminate",
+      "accumulate",
+      "speculate"
+    ],
+    "groupDay": 19
+  },
+  {
+    "id": "wb1010",
+    "word": "compose",
+    "type": "verb",
+    "meaning": "oluşturmak; beste yapmak",
+    "synonyms": [
+      "make up",
+      "constitute",
+      "write"
+    ],
+    "collocations": [
+      "be composed of",
+      "compose music"
+    ],
+    "exampleEn": "The committee is composed of doctors, lawyers and scientists.",
+    "exampleTr": "Komite doktorlar, avukatlar ve bilim insanlarından oluşuyor.",
+    "ydsTip": "\"be composed of\" = -den oluşmak (consist of).",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: COM (birlikte) + POSE (koymak). Bir arada koymak = oluşturmak. \"Kompozitör\" = besteci.",
+    "distractors": [
+      "compost",
+      "expose",
+      "impose",
+      "depose"
+    ],
+    "groupDay": 20
+  },
+  {
+    "id": "wb1011",
+    "word": "compress",
+    "type": "verb",
+    "meaning": "sıkıştırmak",
+    "synonyms": [
+      "squeeze",
+      "condense",
+      "press"
+    ],
+    "collocations": [
+      "compress data",
+      "compress a file"
+    ],
+    "exampleEn": "Engineers developed a way to compress large files without losing quality.",
+    "exampleTr": "Mühendisler büyük dosyaları kalite kaybı olmadan sıkıştırmanın bir yolunu geliştirdi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: COM (birlikte) + PRESS (bastırmak). Birlikte bastırmak = sıkıştırmak. \"Kompresör\".",
+    "distractors": [
+      "express",
+      "suppress",
+      "impress",
+      "depress"
+    ],
+    "groupDay": 21
+  },
+  {
+    "id": "wb1012",
+    "word": "conquer",
+    "type": "verb",
+    "meaning": "fethetmek; üstesinden gelmek",
+    "synonyms": [
+      "defeat",
+      "overcome",
+      "capture"
+    ],
+    "collocations": [
+      "conquer a city",
+      "conquer fear"
+    ],
+    "exampleEn": "The Ottomans conquered Constantinople in 1453.",
+    "exampleTr": "Osmanlılar 1453'te Konstantinopolis'i fethetti.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CON + QUAERERE (aramak). Arayıp ele geçirmek = fethetmek. \"Konkistador\" = fatih.",
+    "distractors": [
+      "surrender",
+      "yield",
+      "abandon",
+      "concede"
+    ],
+    "groupDay": 22
+  },
+  {
+    "id": "wb1013",
+    "word": "conserve",
+    "type": "verb",
+    "meaning": "korumak, tasarruf etmek",
+    "synonyms": [
+      "save",
+      "preserve",
+      "protect"
+    ],
+    "collocations": [
+      "conserve energy",
+      "conserve water"
+    ],
+    "exampleEn": "Households are encouraged to conserve water during the dry summer months.",
+    "exampleTr": "Kuru yaz aylarında hanelerin su tasarrufu yapması teşvik ediliyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Konserve\" yiyeceği korur: conserve = korumak, tasarruf etmek.",
+    "distractors": [
+      "waste",
+      "squander",
+      "deplete",
+      "consume"
+    ],
+    "groupDay": 23
+  },
+  {
+    "id": "wb1014",
+    "word": "contract",
+    "type": "verb",
+    "meaning": "(hastalık) kapmak; daralmak; sözleşme yapmak",
+    "synonyms": [
+      "catch",
+      "develop",
+      "shrink"
+    ],
+    "collocations": [
+      "contract a disease",
+      "muscles contract"
+    ],
+    "exampleEn": "Several health workers contracted the virus while treating patients.",
+    "exampleTr": "Birkaç sağlık çalışanı hastaları tedavi ederken virüsü kaptı.",
+    "ydsTip": "contract a disease = hastalık kapmak (catch). ÖSYM bu anlamı sever.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CON + TRACT (çekmek). İçine çekmek: hastalığı içine çekmek = kapmak; kası içe çekmek = kasılmak.",
+    "distractors": [
+      "contrast",
+      "contact",
+      "contradict",
+      "contribute"
+    ],
+    "groupDay": 24
+  },
+  {
+    "id": "wb1015",
+    "word": "coordinate",
+    "type": "verb",
+    "meaning": "koordine etmek, düzenlemek",
+    "synonyms": [
+      "organize",
+      "arrange",
+      "synchronize"
+    ],
+    "collocations": [
+      "coordinate efforts",
+      "coordinate with"
+    ],
+    "exampleEn": "The United Nations is coordinating the international relief effort.",
+    "exampleTr": "Birleşmiş Milletler uluslararası yardım çalışmalarını koordine ediyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: CO (birlikte) + ORDINATE (düzenlemek). Birlikte düzene sokmak.",
+    "distractors": [
+      "subordinate",
+      "contaminate",
+      "dominate",
+      "nominate"
+    ],
+    "groupDay": 25
+  },
+  {
+    "id": "wb1016",
+    "word": "credit",
+    "type": "verb",
+    "meaning": "-e mal etmek, -e atfetmek",
+    "synonyms": [
+      "attribute",
+      "ascribe",
+      "acknowledge"
+    ],
+    "collocations": [
+      "credit with",
+      "be credited with"
+    ],
+    "exampleEn": "Fleming is credited with the discovery of penicillin.",
+    "exampleTr": "Penisilinin keşfi Fleming'e atfedilir.",
+    "ydsTip": "\"be credited with\" = -in başarısı ona mal edilmek.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Kredi\" = güven. Başarıyı birinin hanesine \"kredi\" olarak yazmak.",
+    "distractors": [
+      "blame",
+      "accuse",
+      "debit",
+      "deny"
+    ],
+    "groupDay": 26
+  },
+  {
+    "id": "wb1017",
+    "word": "declare",
+    "type": "verb",
+    "meaning": "ilan etmek, beyan etmek",
+    "synonyms": [
+      "announce",
+      "proclaim",
+      "state"
+    ],
+    "collocations": [
+      "declare war",
+      "declare a state of emergency"
+    ],
+    "exampleEn": "The government declared a state of emergency after the floods.",
+    "exampleTr": "Hükümet sellerin ardından olağanüstü hâl ilan etti.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: DE + CLARUS (açık, \"clear\"). Açıkça söylemek = ilan etmek. \"Deklarasyon\".",
+    "distractors": [
+      "conceal",
+      "withhold",
+      "deny",
+      "suppress"
+    ],
+    "groupDay": 27
+  },
+  {
+    "id": "wb1018",
+    "word": "defeat",
+    "type": "verb",
+    "meaning": "yenmek, bozguna uğratmak",
+    "synonyms": [
+      "beat",
+      "overcome",
+      "conquer"
+    ],
+    "collocations": [
+      "defeat an enemy",
+      "be defeated"
+    ],
+    "exampleEn": "The government's proposal was defeated in parliament, and ministers were forced to withdraw it.",
+    "exampleTr": "Hükümetin önerisi mecliste reddedildi ve bakanlar onu geri çekmek zorunda kaldı.",
+    "ydsTip": "\"defeat a proposal/bill\" = bir öneriyi oylamada düşürmek.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: DE + FEAT (yapmak). Yapılanı bozmak = yenmek. \"Defeat\" = yenilgi.",
+    "distractors": [
+      "approve",
+      "endorse",
+      "support",
+      "adopt"
+    ],
+    "groupDay": 28
+  },
+  {
+    "id": "wb1019",
+    "word": "describe",
+    "type": "verb",
+    "meaning": "tanımlamak, betimlemek",
+    "synonyms": [
+      "depict",
+      "portray",
+      "explain"
+    ],
+    "collocations": [
+      "describe as",
+      "describe in detail"
+    ],
+    "exampleEn": "Witnesses described the man as tall and in his forties.",
+    "exampleTr": "Tanıklar adamı uzun boylu ve kırklı yaşlarında olarak tarif etti.",
+    "ydsTip": "describe ... AS kalıbı; prescribe (reçete yazmak) ile ses tuzağı.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: DE + SCRIBE (yazmak). Bir şeyi yazıyla çizmek = betimlemek.",
+    "distractors": [
+      "prescribe",
+      "subscribe",
+      "inscribe",
+      "ascribe"
+    ],
+    "groupDay": 29
+  },
+  {
+    "id": "wb1020",
+    "word": "dictate",
+    "type": "verb",
+    "meaning": "dikte etmek; belirlemek, zorunlu kılmak",
+    "synonyms": [
+      "determine",
+      "command",
+      "impose"
+    ],
+    "collocations": [
+      "dictate terms",
+      "dictate the outcome"
+    ],
+    "exampleEn": "In many cases, the weather dictates when farmers can plant their crops.",
+    "exampleTr": "Pek çok durumda çiftçilerin ekinlerini ne zaman ekebileceğini hava belirler.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: DICTATOR (diktatör) emir verir: dictate = belirlemek, dayatmak.",
+    "distractors": [
+      "indicate",
+      "dedicate",
+      "predicate",
+      "abdicate"
+    ],
+    "groupDay": 30
+  },
+  {
+    "id": "wb1021",
+    "word": "dispose",
+    "type": "verb",
+    "meaning": "elden çıkarmak, atmak (dispose of)",
+    "synonyms": [
+      "get rid of",
+      "discard",
+      "throw away"
+    ],
+    "collocations": [
+      "dispose of waste"
+    ],
+    "exampleEn": "Hospitals must dispose of medical waste safely.",
+    "exampleTr": "Hastaneler tıbbi atıkları güvenli şekilde bertaraf etmelidir.",
+    "ydsTip": "dispose OF + isim = -den kurtulmak, atmak.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: DIS (uzağa) + POSE (koymak). Uzağa koymak = atmak. \"Disposable\" = tek kullanımlık.",
+    "distractors": [
+      "propose",
+      "impose",
+      "expose",
+      "oppose"
+    ],
+    "groupDay": 1
+  },
+  {
+    "id": "wb1022",
+    "word": "distract",
+    "type": "verb",
+    "meaning": "dikkatini dağıtmak",
+    "synonyms": [
+      "divert",
+      "sidetrack",
+      "disturb"
+    ],
+    "collocations": [
+      "distract from",
+      "easily distracted"
+    ],
+    "exampleEn": "Using a mobile phone while driving distracts drivers from the road.",
+    "exampleTr": "Araç kullanırken cep telefonu kullanmak sürücülerin dikkatini yoldan dağıtır.",
+    "ydsTip": "distract FROM = -den dikkatini dağıtmak.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: DIS (uzağa) + TRACT (çekmek). Dikkati uzağa çekmek.",
+    "distractors": [
+      "attract",
+      "extract",
+      "subtract",
+      "retract"
+    ],
+    "groupDay": 2
+  },
+  {
+    "id": "wb1023",
+    "word": "disturb",
+    "type": "verb",
+    "meaning": "rahatsız etmek; bozmak",
+    "synonyms": [
+      "bother",
+      "interrupt",
+      "disrupt"
+    ],
+    "collocations": [
+      "do not disturb",
+      "disturb the balance"
+    ],
+    "exampleEn": "Noise from the new airport disturbs the sleep of thousands of residents.",
+    "exampleTr": "Yeni havalimanından gelen gürültü binlerce sakinin uykusunu bozuyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: Otel kapısındaki \"Do not disturb\" = rahatsız etmeyin.",
+    "distractors": [
+      "soothe",
+      "calm",
+      "comfort",
+      "pacify"
+    ],
+    "groupDay": 3
+  },
+  {
+    "id": "wb1024",
+    "word": "donate",
+    "type": "verb",
+    "meaning": "bağışlamak",
+    "synonyms": [
+      "give",
+      "contribute",
+      "grant"
+    ],
+    "collocations": [
+      "donate blood",
+      "donate money"
+    ],
+    "exampleEn": "More people are needed to donate blood during the summer months.",
+    "exampleTr": "Yaz aylarında kan bağışlayacak daha fazla insana ihtiyaç var.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: DONUM (hediye). Hediye vermek = bağışlamak. \"Donör\".",
+    "distractors": [
+      "denote",
+      "detonate",
+      "dominate",
+      "nominate"
+    ],
+    "groupDay": 4
+  },
+  {
+    "id": "wb1025",
+    "word": "drain",
+    "type": "verb",
+    "meaning": "boşaltmak, akıtmak; tüketmek",
+    "synonyms": [
+      "empty",
+      "remove",
+      "exhaust"
+    ],
+    "collocations": [
+      "drain water",
+      "drain resources"
+    ],
+    "exampleEn": "The long war drained the country's resources.",
+    "exampleTr": "Uzun savaş ülkenin kaynaklarını tüketti.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: Lavabodaki \"drain\" = gider. Suyun akıp gitmesi = boşalmak, tükenmek.",
+    "distractors": [
+      "replenish",
+      "restore",
+      "fill",
+      "boost"
+    ],
+    "groupDay": 5
+  },
+  {
+    "id": "wb1026",
+    "word": "dump",
+    "type": "verb",
+    "meaning": "(çöp) dökmek, atmak",
+    "synonyms": [
+      "discard",
+      "dispose of",
+      "unload"
+    ],
+    "collocations": [
+      "dump waste",
+      "dump rubbish"
+    ],
+    "exampleEn": "The company was fined for dumping chemicals into the river.",
+    "exampleTr": "Şirket nehre kimyasal döktüğü için para cezasına çarptırıldı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Damping\" (ucuz mal dökme). dump = boşaltıp atmak.",
+    "distractors": [
+      "pump",
+      "bump",
+      "jump",
+      "stump"
+    ],
+    "groupDay": 6
+  },
+  {
+    "id": "wb1027",
+    "word": "earn",
+    "type": "verb",
+    "meaning": "kazanmak (para, saygı)",
+    "synonyms": [
+      "make",
+      "gain",
+      "deserve"
+    ],
+    "collocations": [
+      "earn a living",
+      "earn respect"
+    ],
+    "exampleEn": "Women still earn less than men for doing the same job.",
+    "exampleTr": "Kadınlar aynı işi yaptıkları hâlde hâlâ erkeklerden daha az kazanıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: EARN ~ \"ERN\": emek verip hak edip almak = kazanmak.",
+    "distractors": [
+      "learn",
+      "yearn",
+      "spend",
+      "owe"
+    ],
+    "groupDay": 7
+  },
+  {
+    "id": "wb1028",
+    "word": "ease",
+    "type": "verb",
+    "meaning": "hafifletmek, kolaylaştırmak",
+    "synonyms": [
+      "relieve",
+      "alleviate",
+      "soothe"
+    ],
+    "collocations": [
+      "ease pain",
+      "ease tension"
+    ],
+    "exampleEn": "The medicine helps ease the pain but does not cure the disease.",
+    "exampleTr": "İlaç ağrıyı hafifletmeye yardımcı oluyor ama hastalığı tedavi etmiyor.",
+    "ydsTip": "\"but does not cure\" ipucu hafifletme anlamını gösterir.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: EASY (kolay) kelimesinin kökü. Kolaylaştırmak = hafifletmek.",
+    "distractors": [
+      "aggravate",
+      "intensify",
+      "worsen",
+      "increase"
+    ],
+    "groupDay": 8
+  },
+  {
+    "id": "wb1029",
+    "word": "elect",
+    "type": "verb",
+    "meaning": "seçmek (oyla)",
+    "synonyms": [
+      "vote for",
+      "choose",
+      "select"
+    ],
+    "collocations": [
+      "elect a president",
+      "be elected"
+    ],
+    "exampleEn": "She was elected mayor with sixty percent of the vote.",
+    "exampleTr": "Oyların yüzde altmışını alarak belediye başkanı seçildi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Elektif\" = seçmeli. E + LEGERE (seçmek). \"Election\" = seçim.",
+    "distractors": [
+      "erect",
+      "eject",
+      "neglect",
+      "reject"
+    ],
+    "groupDay": 9
+  },
+  {
+    "id": "wb1030",
+    "word": "embarrass",
+    "type": "verb",
+    "meaning": "utandırmak, mahcup etmek",
+    "synonyms": [
+      "humiliate",
+      "shame",
+      "mortify"
+    ],
+    "collocations": [
+      "feel embarrassed",
+      "embarrass someone"
+    ],
+    "exampleEn": "The minister's comments embarrassed the government.",
+    "exampleTr": "Bakanın yorumları hükümeti mahcup etti.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: EMBAR (engel) + RASS. İnsanı engelleyip kızartan durum = utandırmak.",
+    "distractors": [
+      "embrace",
+      "embargo",
+      "harass",
+      "encourage"
+    ],
+    "groupDay": 10
+  },
+  {
+    "id": "wb1031",
+    "word": "emigrate",
+    "type": "verb",
+    "meaning": "(başka ülkeye) göç etmek",
+    "synonyms": [
+      "migrate",
+      "move abroad",
+      "relocate"
+    ],
+    "collocations": [
+      "emigrate to",
+      "emigrate from"
+    ],
+    "exampleEn": "Millions of Italians emigrated to America in the early twentieth century.",
+    "exampleTr": "Milyonlarca İtalyan yirminci yüzyılın başında Amerika'ya göç etti.",
+    "ydsTip": "EMigrate FROM (bir ülkeden çıkmak) / IMmigrate TO (bir ülkeye girmek).",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: E (dışarı) + MIGRATE. Ülkeden dışarı göç etmek.",
+    "distractors": [
+      "immigrate",
+      "imitate",
+      "emulate",
+      "irritate"
+    ],
+    "groupDay": 11
+  },
+  {
+    "id": "wb1032",
+    "word": "enclose",
+    "type": "verb",
+    "meaning": "ekte göndermek; çevrelemek",
+    "synonyms": [
+      "attach",
+      "surround",
+      "include"
+    ],
+    "collocations": [
+      "enclose a copy",
+      "enclosed area"
+    ],
+    "exampleEn": "Please enclose a copy of your passport with the application.",
+    "exampleTr": "Lütfen başvuruyla birlikte pasaportunuzun bir kopyasını ekleyin.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: EN (içine) + CLOSE (kapatmak). Zarfın içine kapatmak = ekte göndermek.",
+    "distractors": [
+      "disclose",
+      "close",
+      "expose",
+      "compose"
+    ],
+    "groupDay": 12
+  },
+  {
+    "id": "wb1033",
+    "word": "entertain",
+    "type": "verb",
+    "meaning": "eğlendirmek; (fikir) göz önünde bulundurmak",
+    "synonyms": [
+      "amuse",
+      "host",
+      "consider"
+    ],
+    "collocations": [
+      "entertain guests",
+      "entertain an idea"
+    ],
+    "exampleEn": "The government refused to entertain the idea of raising taxes.",
+    "exampleTr": "Hükümet vergileri artırma fikrini dikkate almayı reddetti.",
+    "ydsTip": "\"entertain an idea\" = bir fikri göz önünde bulundurmak.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: ENTER + TAIN (tutmak). İçeride tutup eğlendirmek; bir fikri içeride tutmak = düşünmek.",
+    "distractors": [
+      "maintain",
+      "retain",
+      "contain",
+      "attain"
+    ],
+    "groupDay": 13
+  },
+  {
+    "id": "wb1034",
+    "word": "export",
+    "type": "verb",
+    "meaning": "ihraç etmek",
+    "synonyms": [
+      "sell abroad",
+      "ship",
+      "trade"
+    ],
+    "collocations": [
+      "export goods",
+      "export to"
+    ],
+    "exampleEn": "Turkey exports textiles to many European countries.",
+    "exampleTr": "Türkiye pek çok Avrupa ülkesine tekstil ürünleri ihraç ediyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: EX (dışarı) + PORT (liman). Limandan dışarı gönder = ihraç et.",
+    "distractors": [
+      "import",
+      "report",
+      "support",
+      "transport"
+    ],
+    "groupDay": 14
+  },
+  {
+    "id": "wb1035",
+    "word": "forgive",
+    "type": "verb",
+    "meaning": "affetmek",
+    "synonyms": [
+      "pardon",
+      "excuse",
+      "absolve"
+    ],
+    "collocations": [
+      "forgive someone for"
+    ],
+    "exampleEn": "It took her years to forgive her father for leaving the family.",
+    "exampleTr": "Babasını aileyi terk ettiği için affetmesi yıllarını aldı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: FOR (tamamen) + GIVE (vermek). Suçu tamamen bağışlamak = affetmek.",
+    "distractors": [
+      "forget",
+      "forbid",
+      "forgo",
+      "foresee"
+    ],
+    "groupDay": 15
+  },
+  {
+    "id": "wb1036",
+    "word": "gain",
+    "type": "verb",
+    "meaning": "kazanmak, elde etmek",
+    "synonyms": [
+      "obtain",
+      "acquire",
+      "achieve"
+    ],
+    "collocations": [
+      "gain weight",
+      "gain experience"
+    ],
+    "exampleEn": "Students can gain valuable experience by working part-time.",
+    "exampleTr": "Öğrenciler yarı zamanlı çalışarak değerli deneyim kazanabilir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: GAIN = kazanç. \"No pain, no gain\" = emek olmadan kazanç olmaz.",
+    "distractors": [
+      "lose",
+      "forfeit",
+      "sacrifice",
+      "waste"
+    ],
+    "groupDay": 16
+  },
+  {
+    "id": "wb1037",
+    "word": "generalize",
+    "type": "verb",
+    "meaning": "genelleme yapmak",
+    "synonyms": [
+      "make generalizations",
+      "extrapolate"
+    ],
+    "collocations": [
+      "generalize from"
+    ],
+    "exampleEn": "It is dangerous to generalize from such a small sample.",
+    "exampleTr": "Bu kadar küçük bir örneklemden genelleme yapmak tehlikelidir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: GENERAL (genel) + IZE.",
+    "distractors": [
+      "specialize",
+      "individualize",
+      "itemize",
+      "minimize"
+    ],
+    "groupDay": 17
+  },
+  {
+    "id": "wb1038",
+    "word": "heal",
+    "type": "verb",
+    "meaning": "iyileşmek, iyileştirmek",
+    "synonyms": [
+      "cure",
+      "recover",
+      "mend"
+    ],
+    "collocations": [
+      "heal wounds",
+      "heal quickly"
+    ],
+    "exampleEn": "Broken bones usually heal within six to eight weeks.",
+    "exampleTr": "Kırık kemikler genellikle altı ila sekiz hafta içinde iyileşir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: HEAL ~ \"HEALTH\" (sağlık). Sağlığına kavuşmak = iyileşmek.",
+    "distractors": [
+      "deal",
+      "seal",
+      "reveal",
+      "steal"
+    ],
+    "groupDay": 18
+  },
+  {
+    "id": "wb1039",
+    "word": "hire",
+    "type": "verb",
+    "meaning": "işe almak; kiralamak",
+    "synonyms": [
+      "employ",
+      "recruit",
+      "rent"
+    ],
+    "collocations": [
+      "hire staff",
+      "hire a car"
+    ],
+    "exampleEn": "The company plans to hire two hundred new employees next year.",
+    "exampleTr": "Şirket gelecek yıl iki yüz yeni çalışan işe almayı planlıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: HIRE (işe al) / FIRE (kov): ses benzer ama zıt anlamlı.",
+    "distractors": [
+      "fire",
+      "dismiss",
+      "retire",
+      "expel"
+    ],
+    "groupDay": 19
+  },
+  {
+    "id": "wb1040",
+    "word": "impress",
+    "type": "verb",
+    "meaning": "etkilemek",
+    "synonyms": [
+      "amaze",
+      "inspire",
+      "affect"
+    ],
+    "collocations": [
+      "be impressed by",
+      "impress on"
+    ],
+    "exampleEn": "The judges were impressed by the quality of the students' research.",
+    "exampleTr": "Jüri öğrencilerin araştırmalarının kalitesinden etkilendi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: IM (içine) + PRESS (bastırmak). Zihne bastırılıp iz bırakmak = etkilemek.",
+    "distractors": [
+      "depress",
+      "express",
+      "compress",
+      "suppress"
+    ],
+    "groupDay": 20
+  },
+  {
+    "id": "wb1041",
+    "word": "include",
+    "type": "verb",
+    "meaning": "içermek, kapsamak",
+    "synonyms": [
+      "contain",
+      "comprise",
+      "incorporate"
+    ],
+    "collocations": [
+      "include in",
+      "including"
+    ],
+    "exampleEn": "The price includes breakfast and airport transfers, so guests do not need to pay anything extra.",
+    "exampleTr": "Fiyata kahvaltı ve havalimanı transferleri dahil, bu yüzden konukların ekstra bir şey ödemesine gerek yok.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: IN (içine) + CLUDE (kapatmak). İçine kapatmak = içermek. Zıttı exclude.",
+    "distractors": [
+      "exclude",
+      "omit",
+      "exempt",
+      "eliminate"
+    ],
+    "groupDay": 21
+  },
+  {
+    "id": "wb1042",
+    "word": "indulge",
+    "type": "verb",
+    "meaning": "kendini (bir zevke) kaptırmak, şımartmak",
+    "synonyms": [
+      "pamper",
+      "satisfy",
+      "yield to"
+    ],
+    "collocations": [
+      "indulge in",
+      "indulge oneself"
+    ],
+    "exampleEn": "Many people indulge in unhealthy snacks when they are stressed.",
+    "exampleTr": "Pek çok insan stresliyken sağlıksız atıştırmalıklara kendini kaptırır.",
+    "ydsTip": "indulge IN + isim/V-ing.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: IN + DULGERE (hoş görmek). Kendine her şeyi hoş görmek = kendini kaptırmak.",
+    "distractors": [
+      "abstain",
+      "refrain",
+      "restrain",
+      "divulge"
+    ],
+    "groupDay": 22
+  },
+  {
+    "id": "wb1043",
+    "word": "infect",
+    "type": "verb",
+    "meaning": "bulaştırmak, enfekte etmek",
+    "synonyms": [
+      "contaminate",
+      "spread to"
+    ],
+    "collocations": [
+      "infect with",
+      "infected with"
+    ],
+    "exampleEn": "The virus has infected more than ten million people worldwide.",
+    "exampleTr": "Virüs dünya genelinde on milyondan fazla insana bulaştı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Enfeksiyon\" = infection. infect = hastalık bulaştırmak.",
+    "distractors": [
+      "inflict",
+      "inject",
+      "affect",
+      "perfect"
+    ],
+    "groupDay": 23
+  },
+  {
+    "id": "wb1044",
+    "word": "inhale",
+    "type": "verb",
+    "meaning": "solumak, nefesle içine çekmek",
+    "synonyms": [
+      "breathe in",
+      "absorb"
+    ],
+    "collocations": [
+      "inhale smoke",
+      "inhale deeply"
+    ],
+    "exampleEn": "Firefighters wear masks so that they do not inhale toxic smoke.",
+    "exampleTr": "İtfaiyeciler zehirli dumanı solumamak için maske takar.",
+    "ydsTip": "inhale (solumak) ile exhale (nefes vermek) zıttır.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: IN (içeri) + HALARE (nefes). Nefesi içeri almak. Astım \"inhaler\"ı.",
+    "distractors": [
+      "exhale",
+      "expel",
+      "inhabit",
+      "inhibit"
+    ],
+    "groupDay": 24
+  },
+  {
+    "id": "wb1045",
+    "word": "injure",
+    "type": "verb",
+    "meaning": "yaralamak",
+    "synonyms": [
+      "hurt",
+      "wound",
+      "harm"
+    ],
+    "collocations": [
+      "seriously injured",
+      "injure oneself"
+    ],
+    "exampleEn": "Three people were seriously injured in the explosion.",
+    "exampleTr": "Patlamada üç kişi ağır yaralandı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: INJURY (yaralanma) kelimesinin fiili. IN (değil) + JUS (hak): haksız zarar.",
+    "distractors": [
+      "cure",
+      "heal",
+      "rescue",
+      "treat"
+    ],
+    "groupDay": 25
+  },
+  {
+    "id": "wb1046",
+    "word": "inject",
+    "type": "verb",
+    "meaning": "enjekte etmek; (para, enerji) katmak",
+    "synonyms": [
+      "administer",
+      "introduce",
+      "infuse"
+    ],
+    "collocations": [
+      "inject a drug",
+      "inject money into"
+    ],
+    "exampleEn": "The government injected billions of dollars into the economy to prevent a recession.",
+    "exampleTr": "Hükümet durgunluğu önlemek için ekonomiye milyarlarca dolar aktardı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Enjeksiyon\" = iğne. IN (içine) + JECT (atmak). İçine atmak.",
+    "distractors": [
+      "withdraw",
+      "extract",
+      "eject",
+      "deject"
+    ],
+    "groupDay": 26
+  },
+  {
+    "id": "wb1047",
+    "word": "inspect",
+    "type": "verb",
+    "meaning": "denetlemek, teftiş etmek",
+    "synonyms": [
+      "examine",
+      "check",
+      "scrutinize"
+    ],
+    "collocations": [
+      "inspect a building",
+      "regularly inspected"
+    ],
+    "exampleEn": "Restaurants are regularly inspected to make sure they meet hygiene standards.",
+    "exampleTr": "Restoranlar hijyen standartlarını karşıladıklarından emin olmak için düzenli olarak denetlenir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Enspektör\" = müfettiş. IN + SPECT (bakmak). İçine bakmak = denetlemek.",
+    "distractors": [
+      "ignore",
+      "overlook",
+      "suspect",
+      "respect"
+    ],
+    "groupDay": 27
+  },
+  {
+    "id": "wb1048",
+    "word": "instruct",
+    "type": "verb",
+    "meaning": "talimat vermek; öğretmek",
+    "synonyms": [
+      "order",
+      "direct",
+      "teach"
+    ],
+    "collocations": [
+      "instruct someone to"
+    ],
+    "exampleEn": "Residents were instructed to stay indoors and close all windows.",
+    "exampleTr": "Sakinlere evde kalmaları ve tüm pencereleri kapatmaları talimatı verildi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Instructor\" = eğitmen. IN + STRUCT (inşa etmek). Bilgiyi zihne inşa etmek = öğretmek.",
+    "distractors": [
+      "construct",
+      "obstruct",
+      "destruct",
+      "induct"
+    ],
+    "groupDay": 28
+  },
+  {
+    "id": "wb1049",
+    "word": "insult",
+    "type": "verb",
+    "meaning": "hakaret etmek",
+    "synonyms": [
+      "offend",
+      "abuse",
+      "humiliate"
+    ],
+    "collocations": [
+      "insult someone",
+      "feel insulted"
+    ],
+    "exampleEn": "The fans were banned from the stadium for insulting the referee.",
+    "exampleTr": "Taraftarlar hakeme hakaret ettikleri için stadyumdan men edildi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: IN (üzerine) + SALIRE (zıplamak). Birinin üzerine sözle zıplamak = hakaret.",
+    "distractors": [
+      "consult",
+      "result",
+      "exult",
+      "praise"
+    ],
+    "groupDay": 29
+  },
+  {
+    "id": "wb1050",
+    "word": "interact",
+    "type": "verb",
+    "meaning": "etkileşmek",
+    "synonyms": [
+      "communicate",
+      "mix",
+      "relate"
+    ],
+    "collocations": [
+      "interact with",
+      "interact socially"
+    ],
+    "exampleEn": "Some medicines interact dangerously with alcohol.",
+    "exampleTr": "Bazı ilaçlar alkolle tehlikeli şekilde etkileşir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: INTER (arasında) + ACT. Aralarında eylemde bulunmak = etkileşmek.",
+    "distractors": [
+      "interrupt",
+      "intercept",
+      "intervene",
+      "interpret"
+    ],
+    "groupDay": 30
+  },
+  {
+    "id": "wb1051",
+    "word": "interrupt",
+    "type": "verb",
+    "meaning": "kesmek, sözünü kesmek, yarıda kesmek",
+    "synonyms": [
+      "disrupt",
+      "break",
+      "stop"
+    ],
+    "collocations": [
+      "interrupt a speech",
+      "be interrupted"
+    ],
+    "exampleEn": "The storm interrupted the power supply for several hours.",
+    "exampleTr": "Fırtına elektrik akışını birkaç saatliğine kesti.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: INTER (arasında) + RUPT (kırmak). Araya girip kırmak = kesmek.",
+    "distractors": [
+      "resume",
+      "sustain",
+      "restore",
+      "continue"
+    ],
+    "groupDay": 1
+  },
+  {
+    "id": "wb1052",
+    "word": "introduce",
+    "type": "verb",
+    "meaning": "tanıtmak; yürürlüğe koymak",
+    "synonyms": [
+      "bring in",
+      "launch",
+      "present"
+    ],
+    "collocations": [
+      "introduce a law",
+      "introduce a species"
+    ],
+    "exampleEn": "To fight childhood obesity, the government introduced a new tax on sugary drinks.",
+    "exampleTr": "Çocukluk çağı obezitesiyle mücadele etmek için hükümet şekerli içeceklere yeni bir vergi getirdi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: INTRO (içeri) + DUCE (götürmek). İçeri götürmek = sunmak, getirmek.",
+    "distractors": [
+      "abolish",
+      "repeal",
+      "reduce",
+      "deduce"
+    ],
+    "groupDay": 2
+  },
+  {
+    "id": "wb1053",
+    "word": "irritate",
+    "type": "verb",
+    "meaning": "sinirlendirmek; tahriş etmek",
+    "synonyms": [
+      "annoy",
+      "inflame",
+      "aggravate"
+    ],
+    "collocations": [
+      "irritate the skin",
+      "irritate the eyes"
+    ],
+    "exampleEn": "Chemicals in some soaps can irritate sensitive skin.",
+    "exampleTr": "Bazı sabunlardaki kimyasallar hassas cildi tahriş edebilir.",
+    "ydsTip": "irritate (tahriş etmek) ile irrigate (sulamak) ses tuzağıdır.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"İrrite\" olmak = tahriş olmak. irritate = sinirlendirmek, tahriş etmek.",
+    "distractors": [
+      "irrigate",
+      "imitate",
+      "soothe",
+      "hesitate"
+    ],
+    "groupDay": 3
+  },
+  {
+    "id": "wb1054",
+    "word": "label",
+    "type": "verb",
+    "meaning": "etiketlemek",
+    "synonyms": [
+      "tag",
+      "mark",
+      "brand"
+    ],
+    "collocations": [
+      "label as",
+      "clearly labelled"
+    ],
+    "exampleEn": "All food products must be clearly labelled with their ingredients.",
+    "exampleTr": "Tüm gıda ürünleri içindekileri açıkça belirtilerek etiketlenmelidir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Label\" = etiket. Etiket yapıştırmak.",
+    "distractors": [
+      "level",
+      "lapse",
+      "libel",
+      "ladle"
+    ],
+    "groupDay": 4
+  },
+  {
+    "id": "wb1055",
+    "word": "lend",
+    "type": "verb",
+    "meaning": "ödünç vermek",
+    "synonyms": [
+      "loan",
+      "advance",
+      "give"
+    ],
+    "collocations": [
+      "lend money",
+      "lend support"
+    ],
+    "exampleEn": "Banks are less willing to lend money to small businesses during a recession.",
+    "exampleTr": "Bankalar durgunluk döneminde küçük işletmelere borç para vermeye daha az istekli.",
+    "ydsTip": "lend (ödünç vermek) ile borrow (ödünç almak) zıttır: \"lend TO someone\".",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: LEND ~ \"LOAN\": banka verir = lend; sen alırsın = borrow.",
+    "distractors": [
+      "borrow",
+      "owe",
+      "bend",
+      "spend"
+    ],
+    "groupDay": 5
+  },
+  {
+    "id": "wb1056",
+    "word": "manage",
+    "type": "verb",
+    "meaning": "yönetmek; başarmak",
+    "synonyms": [
+      "run",
+      "handle",
+      "succeed in"
+    ],
+    "collocations": [
+      "manage to",
+      "manage a company"
+    ],
+    "exampleEn": "Despite the storm, the pilot managed to land the plane safely.",
+    "exampleTr": "Fırtınaya rağmen pilot uçağı güvenle indirmeyi başardı.",
+    "ydsTip": "manage TO + V1 = başarmak.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Menajer\" = yönetici. manage to = (zorluğa rağmen) başarmak.",
+    "distractors": [
+      "fail",
+      "neglect",
+      "refuse",
+      "hesitate"
+    ],
+    "groupDay": 6
+  },
+  {
+    "id": "wb1057",
+    "word": "mention",
+    "type": "verb",
+    "meaning": "bahsetmek, değinmek",
+    "synonyms": [
+      "refer to",
+      "cite",
+      "note"
+    ],
+    "collocations": [
+      "mention briefly",
+      "not to mention"
+    ],
+    "exampleEn": "The report did not mention the risks of the new technology.",
+    "exampleTr": "Rapor yeni teknolojinin risklerinden bahsetmedi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: MENTION ~ \"MENTAL\": akla getirip söz etmek.",
+    "distractors": [
+      "retention",
+      "intention",
+      "invention",
+      "attention"
+    ],
+    "groupDay": 7
+  },
+  {
+    "id": "wb1058",
+    "word": "mourn",
+    "type": "verb",
+    "meaning": "yas tutmak",
+    "synonyms": [
+      "grieve",
+      "lament",
+      "weep for"
+    ],
+    "collocations": [
+      "mourn the loss of",
+      "mourn the dead"
+    ],
+    "exampleEn": "The whole nation mourned the victims of the earthquake.",
+    "exampleTr": "Bütün ulus deprem kurbanları için yas tuttu.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: MOURN ~ \"MORN\" değil: Germen kökü \"kaygılanmak\". Ölünün ardından yas tutmak.",
+    "distractors": [
+      "celebrate",
+      "rejoice",
+      "applaud",
+      "cheer"
+    ],
+    "groupDay": 8
+  },
+  {
+    "id": "wb1059",
+    "word": "nominate",
+    "type": "verb",
+    "meaning": "aday göstermek",
+    "synonyms": [
+      "propose",
+      "put forward",
+      "recommend"
+    ],
+    "collocations": [
+      "nominate for",
+      "be nominated"
+    ],
+    "exampleEn": "The film was nominated for five Oscars.",
+    "exampleTr": "Film beş Oscar'a aday gösterildi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: NOMEN (isim). Birinin ismini öne sürmek = aday göstermek.",
+    "distractors": [
+      "dominate",
+      "terminate",
+      "eliminate",
+      "denominate"
+    ],
+    "groupDay": 9
+  },
+  {
+    "id": "wb1060",
+    "word": "offend",
+    "type": "verb",
+    "meaning": "kırmak, gücendirmek",
+    "synonyms": [
+      "insult",
+      "upset",
+      "hurt"
+    ],
+    "collocations": [
+      "be offended by",
+      "offend someone"
+    ],
+    "exampleEn": "The minister's remarks offended many women.",
+    "exampleTr": "Bakanın sözleri pek çok kadını gücendirdi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Ofans\" = saldırı. OF + FEND (vurmak). Birine sözle vurmak = gücendirmek.",
+    "distractors": [
+      "defend",
+      "please",
+      "attend",
+      "amend"
+    ],
+    "groupDay": 10
+  },
+  {
+    "id": "wb1061",
+    "word": "operate",
+    "type": "verb",
+    "meaning": "işletmek, çalışmak; ameliyat etmek",
+    "synonyms": [
+      "run",
+      "function",
+      "work"
+    ],
+    "collocations": [
+      "operate on",
+      "operate a machine"
+    ],
+    "exampleEn": "Surgeons operated on the patient for six hours.",
+    "exampleTr": "Cerrahlar hastayı altı saat ameliyat etti.",
+    "ydsTip": "operate ON someone = ameliyat etmek.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Operasyon\" = ameliyat. operate on = ameliyat etmek.",
+    "distractors": [
+      "cooperate",
+      "separate",
+      "celebrate",
+      "exaggerate"
+    ],
+    "groupDay": 11
+  },
+  {
+    "id": "wb1062",
+    "word": "owe",
+    "type": "verb",
+    "meaning": "borçlu olmak",
+    "synonyms": [
+      "be in debt",
+      "be indebted"
+    ],
+    "collocations": [
+      "owe money",
+      "owe to"
+    ],
+    "exampleEn": "The country owes billions of dollars to foreign banks.",
+    "exampleTr": "Ülke yabancı bankalara milyarlarca dolar borçlu.",
+    "ydsTip": "\"owe sth TO sb\" = birine bir şey borçlu olmak; \"owing to\" = -den dolayı.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: OWE ~ \"ÖDE\"! Ödemen gereken = borçlu olmak.",
+    "distractors": [
+      "own",
+      "lend",
+      "earn",
+      "loan"
+    ],
+    "groupDay": 12
+  },
+  {
+    "id": "wb1063",
+    "word": "perform",
+    "type": "verb",
+    "meaning": "yapmak, icra etmek; performans göstermek",
+    "synonyms": [
+      "carry out",
+      "conduct",
+      "execute"
+    ],
+    "collocations": [
+      "perform surgery",
+      "perform well"
+    ],
+    "exampleEn": "Robots now perform many tasks that were once done by humans.",
+    "exampleTr": "Robotlar artık bir zamanlar insanların yaptığı pek çok görevi yerine getiriyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: PER (tamamen) + FORM. Bir işi tam olarak biçimlendirip yapmak.",
+    "distractors": [
+      "reform",
+      "conform",
+      "inform",
+      "deform"
+    ],
+    "groupDay": 13
+  },
+  {
+    "id": "wb1064",
+    "word": "praise",
+    "type": "verb",
+    "meaning": "övmek",
+    "synonyms": [
+      "commend",
+      "applaud",
+      "acclaim"
+    ],
+    "collocations": [
+      "praise for",
+      "highly praised"
+    ],
+    "exampleEn": "The president praised the doctors for their courage during the pandemic.",
+    "exampleTr": "Cumhurbaşkanı pandemi sırasındaki cesaretleri için doktorları övdü.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: PRAISE ~ \"PRICE\" (değer). Birinin değerini söylemek = övmek.",
+    "distractors": [
+      "criticize",
+      "blame",
+      "condemn",
+      "scold"
+    ],
+    "groupDay": 14
+  },
+  {
+    "id": "wb1065",
+    "word": "pretend",
+    "type": "verb",
+    "meaning": "-miş gibi yapmak",
+    "synonyms": [
+      "feign",
+      "fake",
+      "act"
+    ],
+    "collocations": [
+      "pretend to",
+      "pretend that"
+    ],
+    "exampleEn": "Some patients pretend to take their medicine but secretly throw it away.",
+    "exampleTr": "Bazı hastalar ilaçlarını alıyormuş gibi yapıp gizlice atıyor.",
+    "ydsTip": "pretend TO + V1 / pretend THAT.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: PRE (önce) + TEND (germek). Gerçeğin önüne perde germek = -mış gibi yapmak.",
+    "distractors": [
+      "intend",
+      "contend",
+      "extend",
+      "attend"
+    ],
+    "groupDay": 15
+  },
+  {
+    "id": "wb1066",
+    "word": "pronounce",
+    "type": "verb",
+    "meaning": "telaffuz etmek; resmen bildirmek",
+    "synonyms": [
+      "articulate",
+      "declare",
+      "announce"
+    ],
+    "collocations": [
+      "pronounce dead",
+      "difficult to pronounce"
+    ],
+    "exampleEn": "The patient was pronounced dead on arrival at the hospital.",
+    "exampleTr": "Hastanın hastaneye vardığında öldüğü resmen bildirildi.",
+    "ydsTip": "\"be pronounced dead\" = resmen ölü ilan edilmek.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: PRO (öne) + NUNTIARE (duyurmak). Öne çıkıp duyurmak; sesi duyurmak = telaffuz.",
+    "distractors": [
+      "renounce",
+      "denounce",
+      "announce",
+      "bounce"
+    ],
+    "groupDay": 16
+  },
+  {
+    "id": "wb1067",
+    "word": "protest",
+    "type": "verb",
+    "meaning": "protesto etmek, itiraz etmek",
+    "synonyms": [
+      "object",
+      "demonstrate",
+      "oppose"
+    ],
+    "collocations": [
+      "protest against",
+      "protest about"
+    ],
+    "exampleEn": "Thousands of students protested against the rise in tuition fees.",
+    "exampleTr": "Binlerce öğrenci öğrenim ücretlerindeki artışı protesto etti.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: Türkçedeki \"protesto\" ile aynı.",
+    "distractors": [
+      "support",
+      "endorse",
+      "welcome",
+      "applaud"
+    ],
+    "groupDay": 17
+  },
+  {
+    "id": "wb1068",
+    "word": "punish",
+    "type": "verb",
+    "meaning": "cezalandırmak",
+    "synonyms": [
+      "penalize",
+      "discipline",
+      "sentence"
+    ],
+    "collocations": [
+      "punish for",
+      "severely punished"
+    ],
+    "exampleEn": "Companies that pollute rivers should be severely punished.",
+    "exampleTr": "Nehirleri kirleten şirketler ağır biçimde cezalandırılmalıdır.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: PUNISH ~ \"PENALTY\" (ceza) ile aynı kök: POENA.",
+    "distractors": [
+      "reward",
+      "praise",
+      "pardon",
+      "excuse"
+    ],
+    "groupDay": 18
+  },
+  {
+    "id": "wb1069",
+    "word": "purify",
+    "type": "verb",
+    "meaning": "arıtmak, saflaştırmak",
+    "synonyms": [
+      "clean",
+      "filter",
+      "cleanse"
+    ],
+    "collocations": [
+      "purify water",
+      "purify the air"
+    ],
+    "exampleEn": "Plants can help purify the air inside our homes.",
+    "exampleTr": "Bitkiler evlerimizin içindeki havayı arındırmaya yardımcı olabilir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: PURE (saf) + IFY. Saf yapmak = arıtmak.",
+    "distractors": [
+      "pollute",
+      "contaminate",
+      "taint",
+      "poison"
+    ],
+    "groupDay": 19
+  },
+  {
+    "id": "wb1070",
+    "word": "quote",
+    "type": "verb",
+    "meaning": "alıntı yapmak",
+    "synonyms": [
+      "cite",
+      "mention",
+      "repeat"
+    ],
+    "collocations": [
+      "quote from",
+      "quote someone"
+    ],
+    "exampleEn": "The article quotes several doctors who criticize the new policy.",
+    "exampleTr": "Makale yeni politikayı eleştiren birkaç doktordan alıntı yapıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Kot\" değil \"quote\": tırnak işareti (\"quotation marks\") ile alıntı.",
+    "distractors": [
+      "vote",
+      "note",
+      "quota",
+      "devote"
+    ],
+    "groupDay": 20
+  },
+  {
+    "id": "wb1071",
+    "word": "rank",
+    "type": "verb",
+    "meaning": "sıralamak, sıralanmak",
+    "synonyms": [
+      "rate",
+      "place",
+      "grade"
+    ],
+    "collocations": [
+      "rank among",
+      "be ranked"
+    ],
+    "exampleEn": "The university is ranked among the top ten in the world.",
+    "exampleTr": "Üniversite dünyanın ilk onu arasında yer alıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: RANK = rütbe, sıra. \"Ranking\" = sıralama.",
+    "distractors": [
+      "rack",
+      "bank",
+      "rink",
+      "tank"
+    ],
+    "groupDay": 21
+  },
+  {
+    "id": "wb1072",
+    "word": "rebel",
+    "type": "verb",
+    "meaning": "isyan etmek, başkaldırmak",
+    "synonyms": [
+      "revolt",
+      "rise up",
+      "resist"
+    ],
+    "collocations": [
+      "rebel against"
+    ],
+    "exampleEn": "Many teenagers rebel against their parents' rules.",
+    "exampleTr": "Pek çok genç ebeveynlerinin kurallarına başkaldırır.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE + BELLUM (savaş). Yeniden savaşa girmek = isyan.",
+    "distractors": [
+      "obey",
+      "comply",
+      "conform",
+      "submit"
+    ],
+    "groupDay": 22
+  },
+  {
+    "id": "wb1073",
+    "word": "record",
+    "type": "verb",
+    "meaning": "kaydetmek",
+    "synonyms": [
+      "register",
+      "document",
+      "note"
+    ],
+    "collocations": [
+      "record data",
+      "highest temperature ever recorded"
+    ],
+    "exampleEn": "This summer saw the highest temperatures ever recorded in Europe.",
+    "exampleTr": "Bu yaz Avrupa'da şimdiye kadar kaydedilen en yüksek sıcaklıklar görüldü.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Rekor\" = kayıt. RE + CORD (kalp, \"cardiac\"). Kalbe geri yazmak = kaydetmek.",
+    "distractors": [
+      "regard",
+      "reward",
+      "accord",
+      "discard"
+    ],
+    "groupDay": 23
+  },
+  {
+    "id": "wb1074",
+    "word": "recycle",
+    "type": "verb",
+    "meaning": "geri dönüştürmek",
+    "synonyms": [
+      "reuse",
+      "reprocess",
+      "salvage"
+    ],
+    "collocations": [
+      "recycle paper",
+      "recycle plastic"
+    ],
+    "exampleEn": "Only nine percent of all plastic ever produced has been recycled.",
+    "exampleTr": "Bugüne kadar üretilen tüm plastiğin yalnızca yüzde dokuzu geri dönüştürüldü.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (yeniden) + CYCLE (döngü). Yeniden döngüye sokmak.",
+    "distractors": [
+      "discard",
+      "dump",
+      "waste",
+      "bicycle"
+    ],
+    "groupDay": 24
+  },
+  {
+    "id": "wb1075",
+    "word": "refund",
+    "type": "verb",
+    "meaning": "(parayı) iade etmek",
+    "synonyms": [
+      "repay",
+      "reimburse",
+      "return"
+    ],
+    "collocations": [
+      "refund the money",
+      "fully refunded"
+    ],
+    "exampleEn": "Passengers whose flights were cancelled will be fully refunded.",
+    "exampleTr": "Uçuşları iptal edilen yolculara paranın tamamı iade edilecek.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (geri) + FUND (para). Parayı geri vermek = iade.",
+    "distractors": [
+      "charge",
+      "fund",
+      "refuse",
+      "fine"
+    ],
+    "groupDay": 25
+  },
+  {
+    "id": "wb1076",
+    "word": "refuse",
+    "type": "verb",
+    "meaning": "reddetmek",
+    "synonyms": [
+      "decline",
+      "reject",
+      "turn down"
+    ],
+    "collocations": [
+      "refuse to",
+      "flatly refuse"
+    ],
+    "exampleEn": "The company refused to comment on the allegations and would not answer journalists' questions.",
+    "exampleTr": "Şirket iddialar hakkında yorum yapmayı reddetti ve gazetecilerin sorularını yanıtlamadı.",
+    "ydsTip": "refuse TO + V1.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (geri) + FUSE (dökmek). Geri dökmek = kabul etmemek.",
+    "distractors": [
+      "agree",
+      "consent",
+      "offer",
+      "volunteer"
+    ],
+    "groupDay": 26
+  },
+  {
+    "id": "wb1077",
+    "word": "register",
+    "type": "verb",
+    "meaning": "kaydolmak, kaydetmek",
+    "synonyms": [
+      "enrol",
+      "record",
+      "sign up"
+    ],
+    "collocations": [
+      "register for",
+      "register a birth"
+    ],
+    "exampleEn": "All births must be registered within thirty days.",
+    "exampleTr": "Tüm doğumlar otuz gün içinde kayıt altına alınmalıdır.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: Türkçedeki \"rejistre\". RE + GERERE (taşımak). Kayıt defterine geri taşımak.",
+    "distractors": [
+      "resister",
+      "minister",
+      "administer",
+      "canister"
+    ],
+    "groupDay": 27
+  },
+  {
+    "id": "wb1078",
+    "word": "regret",
+    "type": "verb",
+    "meaning": "pişman olmak; üzülmek",
+    "synonyms": [
+      "be sorry",
+      "repent",
+      "lament"
+    ],
+    "collocations": [
+      "regret doing",
+      "deeply regret"
+    ],
+    "exampleEn": "Many people regret not spending more time with their families.",
+    "exampleTr": "Pek çok insan aileleriyle daha fazla zaman geçirmediği için pişmanlık duyar.",
+    "ydsTip": "regret + V-ing = yaptığına pişman olmak; regret to + V1 = üzülerek bildirmek.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE + GRET (ağlamak). Geriye dönüp ağlamak = pişman olmak.",
+    "distractors": [
+      "forget",
+      "resent",
+      "relish",
+      "regain"
+    ],
+    "groupDay": 28
+  },
+  {
+    "id": "wb1079",
+    "word": "relate",
+    "type": "verb",
+    "meaning": "ilişkilendirmek; ilgili olmak",
+    "synonyms": [
+      "connect",
+      "associate",
+      "link"
+    ],
+    "collocations": [
+      "relate to",
+      "closely related"
+    ],
+    "exampleEn": "Many health problems are related to poor diet.",
+    "exampleTr": "Pek çok sağlık sorunu kötü beslenmeyle ilişkilidir.",
+    "ydsTip": "\"be related to\" = ile ilgili olmak.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Relasyon\" = ilişki. relate = ilişki kurmak.",
+    "distractors": [
+      "relay",
+      "rotate",
+      "dilate",
+      "elate"
+    ],
+    "groupDay": 29
+  },
+  {
+    "id": "wb1080",
+    "word": "remark",
+    "type": "verb",
+    "meaning": "söylemek, belirtmek",
+    "synonyms": [
+      "comment",
+      "observe",
+      "note"
+    ],
+    "collocations": [
+      "remark on",
+      "remark that"
+    ],
+    "exampleEn": "Visitors often remark on how clean the city is.",
+    "exampleTr": "Ziyaretçiler şehrin ne kadar temiz olduğuna sık sık değinir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE + MARK (işaret). Bir şeyi işaret ederek söylemek. \"Remarkable\" = dikkate değer.",
+    "distractors": [
+      "remake",
+      "mark",
+      "embark",
+      "bark"
+    ],
+    "groupDay": 30
+  },
+  {
+    "id": "wb1081",
+    "word": "remind",
+    "type": "verb",
+    "meaning": "hatırlatmak",
+    "synonyms": [
+      "prompt",
+      "jog someone's memory"
+    ],
+    "collocations": [
+      "remind someone to",
+      "remind someone of"
+    ],
+    "exampleEn": "The app reminds patients to take their medicine on time.",
+    "exampleTr": "Uygulama hastalara ilaçlarını zamanında almalarını hatırlatıyor.",
+    "ydsTip": "remind SOMEONE to/of; remember (hatırlamak) ise nesne olarak kişiyi bu şekilde almaz.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (tekrar) + MIND (akıl). Tekrar akla getirmek = hatırlatmak.",
+    "distractors": [
+      "remember",
+      "recall",
+      "mind",
+      "remain"
+    ],
+    "groupDay": 1
+  },
+  {
+    "id": "wb1082",
+    "word": "rent",
+    "type": "verb",
+    "meaning": "kiralamak",
+    "synonyms": [
+      "lease",
+      "hire",
+      "let"
+    ],
+    "collocations": [
+      "rent a flat",
+      "rent out"
+    ],
+    "exampleEn": "Many young people cannot afford to buy a house, so they rent instead.",
+    "exampleTr": "Pek çok genç ev satın alamadığı için onun yerine kiralıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Rent a car\" = araç kirala. rent = kiralamak.",
+    "distractors": [
+      "lend",
+      "sell",
+      "own",
+      "mend"
+    ],
+    "groupDay": 2
+  },
+  {
+    "id": "wb1083",
+    "word": "report",
+    "type": "verb",
+    "meaning": "bildirmek, rapor etmek",
+    "synonyms": [
+      "announce",
+      "state",
+      "inform"
+    ],
+    "collocations": [
+      "report to",
+      "it is reported that"
+    ],
+    "exampleEn": "Several patients reported side effects after taking the drug.",
+    "exampleTr": "Birkaç hasta ilacı aldıktan sonra yan etkiler bildirdi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: RE (geri) + PORT (taşımak). Bilgiyi geri taşımak = bildirmek.",
+    "distractors": [
+      "support",
+      "import",
+      "transport",
+      "deport"
+    ],
+    "groupDay": 3
+  },
+  {
+    "id": "wb1084",
+    "word": "reserve",
+    "type": "verb",
+    "meaning": "ayırmak, rezerve etmek",
+    "synonyms": [
+      "book",
+      "set aside",
+      "keep"
+    ],
+    "collocations": [
+      "reserve a seat",
+      "reserve the right"
+    ],
+    "exampleEn": "The hotel reserves the right to cancel bookings without notice.",
+    "exampleTr": "Otel rezervasyonları haber vermeden iptal etme hakkını saklı tutar.",
+    "ydsTip": "\"reserve the right to\" = ... hakkını saklı tutmak.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Rezervasyon\" = ayırtma. reserve = önceden ayırmak.",
+    "distractors": [
+      "deserve",
+      "preserve",
+      "observe",
+      "serve"
+    ],
+    "groupDay": 4
+  },
+  {
+    "id": "wb1085",
+    "word": "sacrifice",
+    "type": "verb",
+    "meaning": "feda etmek",
+    "synonyms": [
+      "give up",
+      "surrender",
+      "forgo"
+    ],
+    "collocations": [
+      "sacrifice for",
+      "sacrifice one's life"
+    ],
+    "exampleEn": "Many parents sacrifice their own comfort to give their children a good education.",
+    "exampleTr": "Pek çok ebeveyn çocuklarına iyi bir eğitim vermek için kendi rahatlarını feda eder.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: SACRED (kutsal) + FACERE (yapmak). Kutsal bir amaç için vermek = feda etmek.",
+    "distractors": [
+      "sacrilege",
+      "suffice",
+      "satisfy",
+      "indulge"
+    ],
+    "groupDay": 5
+  },
+  {
+    "id": "wb1086",
+    "word": "schedule",
+    "type": "verb",
+    "meaning": "planlamak, programlamak",
+    "synonyms": [
+      "plan",
+      "arrange",
+      "timetable"
+    ],
+    "collocations": [
+      "be scheduled for",
+      "schedule a meeting"
+    ],
+    "exampleEn": "The launch of the satellite is scheduled for next March.",
+    "exampleTr": "Uydunun fırlatılması gelecek mart ayı için planlandı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Skedül\" = program, takvim. Takvime koymak.",
+    "distractors": [
+      "cancel",
+      "delay",
+      "abandon",
+      "scramble"
+    ],
+    "groupDay": 6
+  },
+  {
+    "id": "wb1087",
+    "word": "seize",
+    "type": "verb",
+    "meaning": "el koymak; ele geçirmek; fırsatı kaçırmamak",
+    "synonyms": [
+      "confiscate",
+      "grab",
+      "capture"
+    ],
+    "collocations": [
+      "seize power",
+      "seize the opportunity"
+    ],
+    "exampleEn": "Customs officers seized two tonnes of illegal drugs at the port.",
+    "exampleTr": "Gümrük memurları limanda iki ton yasa dışı uyuşturucuya el koydu.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: SEIZE ~ \"SİZİN\" olanı elinizden alıp el koymak. \"Seize the day\" = anı yakala.",
+    "distractors": [
+      "release",
+      "smuggle",
+      "seed",
+      "size"
+    ],
+    "groupDay": 7
+  },
+  {
+    "id": "wb1088",
+    "word": "separate",
+    "type": "verb",
+    "meaning": "ayırmak",
+    "synonyms": [
+      "divide",
+      "split",
+      "isolate"
+    ],
+    "collocations": [
+      "separate from",
+      "separate into"
+    ],
+    "exampleEn": "Patients with the virus are separated from other patients to prevent infection.",
+    "exampleTr": "Virüslü hastalar enfeksiyonu önlemek için diğer hastalardan ayrılıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: SE (ayrı) + PARARE (hazırlamak). Ayrı hazırlamak = ayırmak.",
+    "distractors": [
+      "combine",
+      "unite",
+      "merge",
+      "integrate"
+    ],
+    "groupDay": 8
+  },
+  {
+    "id": "wb1089",
+    "word": "shape",
+    "type": "verb",
+    "meaning": "şekillendirmek, biçimlendirmek",
+    "synonyms": [
+      "form",
+      "mould",
+      "influence"
+    ],
+    "collocations": [
+      "shape the future",
+      "shape opinions"
+    ],
+    "exampleEn": "Childhood experiences shape our personality as adults.",
+    "exampleTr": "Çocukluk deneyimleri yetişkinlikteki kişiliğimizi şekillendirir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: SHAPE = şekil. Şekil vermek.",
+    "distractors": [
+      "shade",
+      "share",
+      "shake",
+      "shave"
+    ],
+    "groupDay": 9
+  },
+  {
+    "id": "wb1090",
+    "word": "sponsor",
+    "type": "verb",
+    "meaning": "sponsor olmak, desteklemek",
+    "synonyms": [
+      "fund",
+      "finance",
+      "back"
+    ],
+    "collocations": [
+      "sponsor an event",
+      "government-sponsored"
+    ],
+    "exampleEn": "The research was sponsored by a large pharmaceutical company.",
+    "exampleTr": "Araştırma büyük bir ilaç şirketi tarafından desteklendi.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: Türkçedeki \"sponsor\" ile aynı.",
+    "distractors": [
+      "sponge",
+      "respond",
+      "spoil",
+      "sever"
+    ],
+    "groupDay": 10
+  },
+  {
+    "id": "wb1091",
+    "word": "strain",
+    "type": "verb",
+    "meaning": "zorlamak, germek; yıpratmak",
+    "synonyms": [
+      "stretch",
+      "tax",
+      "burden"
+    ],
+    "collocations": [
+      "strain relations",
+      "strain resources"
+    ],
+    "exampleEn": "The growing number of refugees has strained the country's health system.",
+    "exampleTr": "Artan mülteci sayısı ülkenin sağlık sistemini zorladı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: STRAIN ~ \"STRES\": bir sistemi gerip zorlamak.",
+    "distractors": [
+      "train",
+      "restrain",
+      "relieve",
+      "ease"
+    ],
+    "groupDay": 11
+  },
+  {
+    "id": "wb1092",
+    "word": "stretch",
+    "type": "verb",
+    "meaning": "germek, uzatmak; uzanmak",
+    "synonyms": [
+      "extend",
+      "expand",
+      "reach"
+    ],
+    "collocations": [
+      "stretch for",
+      "stretch muscles"
+    ],
+    "exampleEn": "The desert stretches for hundreds of kilometres in every direction.",
+    "exampleTr": "Çöl her yöne yüzlerce kilometre uzanıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Streç film\" gerilir. stretch = germek, uzanmak.",
+    "distractors": [
+      "shrink",
+      "contract",
+      "fetch",
+      "scratch"
+    ],
+    "groupDay": 12
+  },
+  {
+    "id": "wb1093",
+    "word": "substitute",
+    "type": "verb",
+    "meaning": "yerine koymak",
+    "synonyms": [
+      "replace",
+      "swap",
+      "exchange"
+    ],
+    "collocations": [
+      "substitute for",
+      "substitute A with B"
+    ],
+    "exampleEn": "You can substitute honey for sugar in most recipes.",
+    "exampleTr": "Çoğu tarifte şekerin yerine bal kullanabilirsiniz.",
+    "ydsTip": "substitute A FOR B = B'nin yerine A'yı koymak.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Substitüsyon\" = yerine koyma. SUB (alt) + STITUTE (koymak).",
+    "distractors": [
+      "constitute",
+      "institute",
+      "prostitute",
+      "subtract"
+    ],
+    "groupDay": 13
+  },
+  {
+    "id": "wb1094",
+    "word": "supervise",
+    "type": "verb",
+    "meaning": "denetlemek, gözetmek",
+    "synonyms": [
+      "oversee",
+      "monitor",
+      "manage"
+    ],
+    "collocations": [
+      "closely supervise",
+      "supervise staff"
+    ],
+    "exampleEn": "Young children must be supervised at all times near water.",
+    "exampleTr": "Küçük çocuklar su kenarında her zaman gözetim altında tutulmalıdır.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: SUPER (üstten) + VISE (görmek). Üstten bakmak = denetlemek. \"Süpervizör\".",
+    "distractors": [
+      "supersede",
+      "surprise",
+      "supplement",
+      "suppose"
+    ],
+    "groupDay": 14
+  },
+  {
+    "id": "wb1095",
+    "word": "swallow",
+    "type": "verb",
+    "meaning": "yutmak",
+    "synonyms": [
+      "gulp",
+      "ingest",
+      "consume"
+    ],
+    "collocations": [
+      "swallow a pill",
+      "difficulty swallowing"
+    ],
+    "exampleEn": "Some patients have difficulty swallowing large pills.",
+    "exampleTr": "Bazı hastalar büyük hapları yutmakta zorlanır.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: SWALLOW (kırlangıç) değil burada: boğazdan aşağı yutmak.",
+    "distractors": [
+      "shallow",
+      "follow",
+      "hollow",
+      "wallow"
+    ],
+    "groupDay": 15
+  },
+  {
+    "id": "wb1096",
+    "word": "tempt",
+    "type": "verb",
+    "meaning": "cezbetmek, ayartmak",
+    "synonyms": [
+      "lure",
+      "entice",
+      "attract"
+    ],
+    "collocations": [
+      "be tempted to",
+      "tempt someone"
+    ],
+    "exampleEn": "Low prices tempt many consumers to buy things they do not need.",
+    "exampleTr": "Düşük fiyatlar pek çok tüketiciyi ihtiyaç duymadığı şeyleri almaya ayartıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: TEMPTATION (cazibe). \"Temptation Island\" = cazibe adası.",
+    "distractors": [
+      "attempt",
+      "contempt",
+      "exempt",
+      "deter"
+    ],
+    "groupDay": 16
+  },
+  {
+    "id": "wb1097",
+    "word": "trace",
+    "type": "verb",
+    "meaning": "izini sürmek; kökenini bulmak",
+    "synonyms": [
+      "track",
+      "follow",
+      "find"
+    ],
+    "collocations": [
+      "trace back to",
+      "trace the source"
+    ],
+    "exampleEn": "Scientists traced the outbreak back to a single contaminated well.",
+    "exampleTr": "Bilim insanları salgının kaynağını tek bir kirlenmiş kuyuya kadar izledi.",
+    "ydsTip": "trace BACK TO = kökenini -e kadar izlemek.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: TRACE = iz. İzini sürmek. \"Track\" ile akraba.",
+    "distractors": [
+      "race",
+      "erase",
+      "grace",
+      "brace"
+    ],
+    "groupDay": 17
+  },
+  {
+    "id": "wb1098",
+    "word": "trap",
+    "type": "verb",
+    "meaning": "tuzağa düşürmek, hapsetmek",
+    "synonyms": [
+      "catch",
+      "capture",
+      "confine"
+    ],
+    "collocations": [
+      "be trapped",
+      "trap heat"
+    ],
+    "exampleEn": "Greenhouse gases trap heat in the atmosphere.",
+    "exampleTr": "Sera gazları ısıyı atmosferde hapseder.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: TRAP = tuzak. \"Heat trap\" = ısı tuzağı.",
+    "distractors": [
+      "release",
+      "emit",
+      "radiate",
+      "wrap"
+    ],
+    "groupDay": 18
+  },
+  {
+    "id": "wb1099",
+    "word": "treat",
+    "type": "verb",
+    "meaning": "tedavi etmek; davranmak",
+    "synonyms": [
+      "cure",
+      "handle",
+      "deal with"
+    ],
+    "collocations": [
+      "treat a disease",
+      "treat someone fairly"
+    ],
+    "exampleEn": "Doctors now treat the disease with a combination of drugs.",
+    "exampleTr": "Doktorlar artık hastalığı bir ilaç kombinasyonuyla tedavi ediyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Treatment\" = tedavi. treat = tedavi etmek; ayrıca birine davranmak.",
+    "distractors": [
+      "cheat",
+      "threat",
+      "retreat",
+      "defeat"
+    ],
+    "groupDay": 19
+  },
+  {
+    "id": "wb1100",
+    "word": "unite",
+    "type": "verb",
+    "meaning": "birleştirmek, birleşmek",
+    "synonyms": [
+      "join",
+      "combine",
+      "merge"
+    ],
+    "collocations": [
+      "unite against",
+      "united by"
+    ],
+    "exampleEn": "The disaster united the community, and neighbours who had never spoken began helping each other.",
+    "exampleTr": "Felaket toplumu birleştirdi ve hiç konuşmamış komşular birbirine yardım etmeye başladı.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"United Nations\" = Birleşmiş Milletler. UNUS (bir): bir yapmak.",
+    "distractors": [
+      "divide",
+      "separate",
+      "split",
+      "isolate"
+    ],
+    "groupDay": 20
+  },
+  {
+    "id": "wb1101",
+    "word": "upgrade",
+    "type": "verb",
+    "meaning": "yükseltmek, iyileştirmek",
+    "synonyms": [
+      "improve",
+      "enhance",
+      "modernize"
+    ],
+    "collocations": [
+      "upgrade facilities",
+      "upgrade software"
+    ],
+    "exampleEn": "The city plans to upgrade its old water pipes.",
+    "exampleTr": "Şehir eski su borularını yenilemeyi planlıyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: UP (yukarı) + GRADE (derece). Bir derece yukarı çıkarmak.",
+    "distractors": [
+      "downgrade",
+      "degrade",
+      "neglect",
+      "abandon"
+    ],
+    "groupDay": 21
+  },
+  {
+    "id": "wb1102",
+    "word": "upset",
+    "type": "verb",
+    "meaning": "üzmek; bozmak",
+    "synonyms": [
+      "disturb",
+      "distress",
+      "disrupt"
+    ],
+    "collocations": [
+      "upset the balance",
+      "be upset"
+    ],
+    "exampleEn": "Removing a single species can upset the balance of an entire ecosystem.",
+    "exampleTr": "Tek bir türün ortadan kalkması bütün bir ekosistemin dengesini bozabilir.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "medium",
+    "mnemonic": "💡 ÇAĞRIŞIM: UP + SET: üst-alt etmek = altüst etmek, bozmak.",
+    "distractors": [
+      "restore",
+      "maintain",
+      "preserve",
+      "sustain"
+    ],
+    "groupDay": 22
+  },
+  {
+    "id": "wb1103",
+    "word": "vote",
+    "type": "verb",
+    "meaning": "oy vermek",
+    "synonyms": [
+      "cast a vote",
+      "elect",
+      "ballot"
+    ],
+    "collocations": [
+      "vote for",
+      "vote against"
+    ],
+    "exampleEn": "Citizens over eighteen are entitled to vote in national elections.",
+    "exampleTr": "On sekiz yaşın üzerindeki vatandaşlar ulusal seçimlerde oy kullanma hakkına sahip.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: Türkçedeki \"votka\" değil! VOTUM (dilek, yemin). Oy = vote.",
+    "distractors": [
+      "veto",
+      "quote",
+      "note",
+      "devote"
+    ],
+    "groupDay": 23
+  },
+  {
+    "id": "wb1104",
+    "word": "warn",
+    "type": "verb",
+    "meaning": "uyarmak",
+    "synonyms": [
+      "alert",
+      "caution",
+      "advise"
+    ],
+    "collocations": [
+      "warn of",
+      "warn someone not to"
+    ],
+    "exampleEn": "Scientists warn that sea levels could rise by one metre by 2100.",
+    "exampleTr": "Bilim insanları deniz seviyelerinin 2100'e kadar bir metre yükselebileceği konusunda uyarıyor.",
+    "ydsTip": "warn OF/ABOUT / warn someone NOT TO.",
+    "frequency": "ultra",
+    "mnemonic": "💡 ÇAĞRIŞIM: \"Warning\" = uyarı. warn = uyarmak.",
+    "distractors": [
+      "reassure",
+      "comfort",
+      "warm",
+      "earn"
+    ],
+    "groupDay": 24
+  },
+  {
+    "id": "wb1105",
+    "word": "waste",
+    "type": "verb",
+    "meaning": "israf etmek",
+    "synonyms": [
+      "squander",
+      "misuse",
+      "throw away"
+    ],
+    "collocations": [
+      "waste time",
+      "waste money"
+    ],
+    "exampleEn": "Households waste millions of tonnes of food every year.",
+    "exampleTr": "Haneler her yıl milyonlarca ton gıdayı israf ediyor.",
+    "ydsTip": "Fiil sorularında nesneye ve cümlenin olumlu/olumsuz yönüne bak; ÖSYM aynı anlam alanındaki fiilleri çeldirici yapar.",
+    "frequency": "high",
+    "mnemonic": "💡 ÇAĞRIŞIM: WASTE = atık. Atık hâline getirmek = israf.",
+    "distractors": [
+      "save",
+      "conserve",
+      "preserve",
+      "taste"
+    ],
+    "groupDay": 25
   }
 ];
