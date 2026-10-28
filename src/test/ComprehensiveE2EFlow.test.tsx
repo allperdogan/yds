@@ -15,7 +15,7 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     render(<App />);
 
     // 1. Default view: Kelime Soru Çözücü (vocab_drill)
-    expect(screen.getByText(/1.412 kelimelik havuzdan test çöz/i)).toBeInTheDocument();
+    expect(screen.getByText(/kelimelik havuzdan test çöz/i)).toBeInTheDocument();
 
     // 2. Navigate to Sınav Taktikleri (tactics)
     const tacticsTab = screen.getByRole('button', { name: /2\. Soru Tipleri & Taktikler/i });

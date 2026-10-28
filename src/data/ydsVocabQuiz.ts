@@ -13,7 +13,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "enhance",
       "undermine",
       "deteriorate",
-      "deplete"
+      "deplete",
+      "impede"
     ],
     "correctAnswer": "enhance",
     "meaningTr": "geliştirmek, artırmak, yükseltmek",
@@ -49,6 +50,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "tüketmek, suyunu çekmek, boşaltmak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"DE- (aşağı/yokluk)\" + \"PLETE (dolu - complete/plenty)\". Doluluğu sıfırlayıp tüketmek.",
         "rootAnalysis": "🔬 Zıt Anlam: Replenish (tekrar doldurmak) kelimesinin tam tersidir."
+      },
+      "impede": {
+        "word": "impede",
+        "meaning": "engellemek, köstek olmak, ilerlemesini yavaşlatmak",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'İM-PED (Ayak bağı olmak)' -> Latince 'ped' (ayak) kökünden; insanın ayağına çelme takıp ilerlemesine mani olmak: IMPEDE.",
+        "rootAnalysis": "🔬 YDS Notu: 'Hinder', 'hamper', 'obstruct' ve 'block' ile tam eştir; isim hali 'impediment' (engel) kelimesi de çok sorulur."
       }
     }
   },
@@ -63,7 +70,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "flourish",
       "deteriorate",
       "alleviate",
-      "comply with"
+      "comply with",
+      "prosper"
     ],
     "correctAnswer": "deteriorate",
     "meaningTr": "kötüleşmek, bozulmak",
@@ -98,6 +106,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "uymak, riayet etmek",
         "mnemonic": "💡 ÇAĞRIŞIM: \"KOMutanın PLAnına\" COMPLY WITH yapacaksın (uyacaksın/riayet edeceksin).",
         "rootAnalysis": "🔬 Edat: Mutlaka \"WITH\" edatı alır."
+      },
+      "prosper": {
+        "word": "prosper",
+        "meaning": "zenginleşmek, refaha ermek, serpilmek, gelişmek",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'PROSPERITY (Refah)' -> İşlerin tıkırında gidip refah içinde büyümesi: PROSPER (refaha ermek, serpilmek).",
+        "rootAnalysis": "🔬 YDS Notu: 'Prosperity' (refah) ve 'prosperous' (müreffeh) kelimelerinin fiilidir; 'thrive' ve 'flourish' ile eşanlamlıdır."
       }
     }
   },
@@ -112,7 +126,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "aggravate",
       "mitigate",
       "jeopardize",
-      "hamper"
+      "hamper",
+      "exacerbate"
     ],
     "correctAnswer": "mitigate",
     "meaningTr": "hafifletmek, etkisini azaltmak",
@@ -148,6 +163,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "engellemek, aksatmak, köstek olmak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"HAMPUR HUMPUR\" tıkınırken konuşması ve işi HAMPER oldu (aksadı/engellendi).",
         "rootAnalysis": "🔬 Kök: \"Hinder / impede\" kelimeleriyle eş anlamlıdır."
+      },
+      "exacerbate": {
+        "word": "exacerbate",
+        "meaning": "daha da kötüleştirmek",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'EKSTRA-BERBAT' -> Durumu zaten kötüyken ekstra berbat hale getirmek, EXACERBATE etmek (daha da kötüleştirmek).",
+        "rootAnalysis": "🔬 YDS Notu: 'Worsen / aggravate' ile eşanlamlıdır; sağlık, ekonomi ve çevre felaketi sorularında sıkça doğru cevaptır."
       }
     }
   },
@@ -162,7 +183,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "reinforce",
       "fortify",
       "undermine",
-      "precede"
+      "precede",
+      "bolster"
     ],
     "correctAnswer": "undermine",
     "meaningTr": "baltalamak, zayıflatmak, temelini sarsmak",
@@ -197,6 +219,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "önde/önce gelmek, -den önce olmak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"PRE (önce)\" + \"CEDE (gitmek)\". Zamanda veya sırada önden gitmek.",
         "rootAnalysis": "🔬 Kök: \"Preceding year\" (önceki yıl)."
+      },
+      "bolster": {
+        "word": "bolster",
+        "meaning": "desteklemek, güçlendirmek, takviye etmek",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'BOL-STAR' -> Kadrosuna bol bol yıldız (star) futbolcu alarak takımını takviye eden, BOLSTER eden (güçlendiren) kulüp.",
+        "rootAnalysis": "🔬 YDS Notu: ÖSYM'nin en sevdiği pozitif fiillerdendir; 'strengthen', 'reinforce' veya 'boost' yerine sıklıkla doğru cevap olarak sorulur."
       }
     }
   },
@@ -211,7 +239,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "resilient to",
       "immune to",
       "vulnerable to",
-      "indispensable to"
+      "indispensable to",
+      "impervious to"
     ],
     "correctAnswer": "vulnerable to",
     "meaningTr": "savunmasız, hassas, kolay incinen",
@@ -246,6 +275,11 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "vazgeçilmez, elzem, zorunlu",
         "mnemonic": "💡 ÇAĞRIŞIM: \"IN (değil)\" + \"DISPENSE (vazgeçmek/dağıtmak)\". Vazgeçilmesi mümkün olmayan şey.",
         "rootAnalysis": "🔬 Eşanlam: Essential, crucial, vital."
+      },
+      "impervious to": {
+        "word": "impervious to",
+        "meaning": "etkilenmeyen, geçirmez, kayıtsız",
+        "mnemonic": "💡 ÇELDİRİCİ: Anlam alanı yakın ama cümlenin mantığına/yapısına uymuyor."
       }
     }
   },
@@ -260,7 +294,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "beneficial to",
       "detrimental to",
       "lucrative to",
-      "coherent with"
+      "coherent with",
+      "conducive to"
     ],
     "correctAnswer": "detrimental to",
     "meaningTr": "zararlı, hasar verici, olumsuz",
@@ -295,6 +330,11 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "tutarlı, uyumlu, mantıklı",
         "mnemonic": "💡 ÇAĞRIŞIM: \"CO (birlikte)\" + \"HERE (yapışmak - adhere/adhesive)\". Parçaları birbirine yapışık, tutarlı olan.",
         "rootAnalysis": "🔬 Zıttı: Incoherent (tutarsız/kopuk)."
+      },
+      "conducive to": {
+        "word": "conducive to",
+        "meaning": "elverişli, yol açan, katkı sağlayan",
+        "mnemonic": "💡 ÇELDİRİCİ: Anlam alanı yakın ama cümlenin mantığına/yapısına uymuyor."
       }
     }
   },
@@ -309,7 +349,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "call off",
       "bring about",
       "turn down",
-      "back up"
+      "back up",
+      "break out"
     ],
     "correctAnswer": "bring about",
     "meaningTr": "sebep olmak, yol açmak (= cause)",
@@ -344,6 +385,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "desteklemek, arkasında durmak, yedeklemek",
         "mnemonic": "💡 ÇAĞRIŞIM: Arkadaşının \"BACK (arkasında)\" durup ona UP (arka çıkmak/destek olmak).",
         "rootAnalysis": "🔬 Eşanlam: Support, reinforce."
+      },
+      "break out": {
+        "word": "break out",
+        "meaning": "patlak vermek (savaş/yangın/salgın)",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'BREAK (Kırmak)' + 'OUT (Dışarı)' -> Bastırılan öfke zincirlerini kırıp dışarı taştı, isyan BREAK OUT oldu (patlak verdi).",
+        "rootAnalysis": "🔬 YDS Notu: Savaş, yangın, isyan veya salgın hastalıkların aniden 'patlak vermesi' anlamında en sık çıkan phrasal verb'lerdendir."
       }
     }
   },
@@ -358,7 +405,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "carry out",
       "rule out",
       "wipe out",
-      "give up"
+      "give up",
+      "set off"
     ],
     "correctAnswer": "carry out",
     "meaningTr": "yürütmek, gerçekleştirmek, uygulamak (= conduct)",
@@ -393,6 +441,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "vazgeçmek, pes etmek, bırakmak",
         "mnemonic": "💡 ÇAĞRIŞIM: Elleri yukarı kaldırıp (UP) teslim olmak / vazgeçmek.",
         "rootAnalysis": "🔬 Eşanlam: Abandon, surrender."
+      },
+      "set off": {
+        "word": "set off",
+        "meaning": "tetiklemek, yol açmak; yola çıkmak",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'SET (Kurmak)' + 'OFF (Ateşlemek)' -> Bombanın fitilini ateşleyip patlamayı veya krizi tetiklemek (set off).",
+        "rootAnalysis": "🔬 YDS Notu: İki anlam: 1) Yolculuğa başlamak ('set off on a journey'); 2) Bir krizi, alarmı veya zincirleme reaksiyonu tetiklemek ('set off a reaction')."
       }
     }
   },
@@ -407,7 +461,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "Although",
       "Because",
       "Since",
-      "Provided that"
+      "Provided that",
+      "Once"
     ],
     "correctAnswer": "Although",
     "meaningTr": "-e rağmen, her ne kadar ... ise de (Zıtlık / Cümle Alan)",
@@ -442,6 +497,11 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "şartıyla, koşuluyla (= If)",
         "mnemonic": "💡 FORMÜL: Bir koşul bağlacıdır. Koşul gerçekleşirse sonuç doğar.",
         "rootAnalysis": "🔬 Eşanlam: Providing (that), on condition that."
+      },
+      "Once": {
+        "word": "Once",
+        "meaning": "-dığında, -ır -maz (zaman bağlacı)",
+        "mnemonic": "💡 ÇELDİRİCİ: Anlam alanı yakın ama cümlenin mantığına/yapısına uymuyor."
       }
     }
   },
@@ -456,7 +516,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "Although",
       "Despite",
       "Even though",
-      "Whereas"
+      "Whereas",
+      "Owing to"
     ],
     "correctAnswer": "Despite",
     "meaningTr": "-e rağmen (İsim / İsim Öbeği Alan Zıtlık Bağlacı)",
@@ -490,6 +551,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "oysaki, -e karşın (Kıyaslama / Tam Cümle İster)",
         "mnemonic": "💡 FORMÜL: İki farklı özneyi kıyaslar ve arkasından tam cümle ister.",
         "rootAnalysis": "🔬 Kural: İsim öbeği alamaz."
+      },
+      "Owing to": {
+        "word": "Owing to",
+        "meaning": "-den dolayı, yüzünden, sebebiyle (+ Noun)",
+        "mnemonic": "💡 FORMÜL: OWING TO + İSİM. 'Due to' ve 'because of' ile aynı anlama gelen sebep yapısı (-den dolayı).",
+        "rootAnalysis": "🔬 YDS Notu: Kendinden sonra tam cümle değil, bir isim öbeği alır. 'Due to' ve 'because of' ile tamamen birbirinin yerine geçebilir."
       }
     }
   },
@@ -504,7 +571,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "whereas",
       "therefore",
       "so that",
-      "in case"
+      "in case",
+      "provided that"
     ],
     "correctAnswer": "whereas",
     "meaningTr": "oysaki, halbuki, -e karşın (Taban Tabana İki Durumu Kıyaslar)",
@@ -538,6 +606,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "-mesi ihtimaline karşı (Önlem)",
         "mnemonic": "💡 FORMÜL: İleride olabilecek kötü bir olaya karşı tedbir alma durumudur (\"şemsiye al, yağmur yağabilir\").",
         "rootAnalysis": "🔬 Kural: If ile aynı değildir, önlem bildirir."
+      },
+      "provided that": {
+        "word": "provided that",
+        "meaning": "şartıyla, -mesi koşuluyla (+ Cümle)",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'PROVIDE' (sağlamak) fiilinden gelir; o şart sağlandığı takdirde: ŞARTIYLA, -MESİ KOŞULUYLA.",
+        "rootAnalysis": "🔬 YDS Notu: Koşul bildiren 'if' bağlacının en prestijli akademik eşanlamlısıdır; ardından tam cümle gelir."
       }
     }
   },
@@ -552,7 +626,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "Unless",
       "As long as",
       "Since",
-      "Because"
+      "Because",
+      "Even though"
     ],
     "correctAnswer": "Unless",
     "meaningTr": "-mezse, -madıkça (If not - Gizli Olumsuzluk Koşulu)",
@@ -586,6 +661,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "çünkü (Sebep)",
         "mnemonic": "💡 TUZAK: Neden-sonuç bağlamına uymaz.",
         "rootAnalysis": "🔬 Kural: Anlamca çelişir."
+      },
+      "Even though": {
+        "word": "Even though",
+        "meaning": "-e rağmen, -se bile, her ne kadar ... ise de (+ Tam Cümle)",
+        "mnemonic": "💡 FORMÜL: EVEN THOUGH + Tam Cümle. Beklentinin tersine gerçekleşen zıtlık bildirir: '+ iken - olur'.",
+        "rootAnalysis": "🔬 YDS Notu: 'Although', 'though' ve 'while' ile tam eş anlamlıdır. Kendisinden sonra İsim değil, Tam Cümle (S+V) alır."
       }
     }
   },
@@ -600,7 +681,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "discovered / has transformed",
       "has discovered / transformed",
       "had discovered / transforms",
-      "discovered / will transform"
+      "discovered / will transform",
+      "had discovered / has transformed"
     ],
     "correctAnswer": "discovered / has transformed",
     "meaningTr": "Ever since + Past Simple (V2), Present Perfect (have/has V3)",
@@ -633,6 +715,11 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "Gelecek Zaman Tutarsızlığı",
         "mnemonic": "💡 TUZAK: Olay 1928'de başlayıp bugüne kadar dönüştürmüştür, geleceğe atıf yapmaz.",
         "rootAnalysis": "🔬 Kural: Since yapısı \"will\" ile ana cümle kurmaz."
+      },
+      "had discovered / has transformed": {
+        "word": "had discovered / has transformed",
+        "meaning": "Past Perfect + Present Perfect: \"since\" cümlesinde Past Perfect kullanılmaz",
+        "mnemonic": "💡 ÇELDİRİCİ: Anlam alanı yakın ama cümlenin mantığına/yapısına uymuyor."
       }
     }
   },
@@ -647,7 +734,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "Driving",
       "Driven",
       "Having driven",
-      "To drive"
+      "To drive",
+      "Drives"
     ],
     "correctAnswer": "Driven",
     "meaningTr": "Güdülenen, harekete geçirilen (Edilgen / Pasif Sadeleştirme)",
@@ -681,6 +769,11 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "Amaç Bildiren Sadeleştirme (-mek için)",
         "mnemonic": "💡 TUZAK: Cümle başında \"To V1\" amaç anlatır (\"harekete geçirmek için\"). \"By\" ile uyumsuzdur.",
         "rootAnalysis": "🔬 Kural: Amaç anlamı bağlama uymaz."
+      },
+      "Drives": {
+        "word": "Drives",
+        "meaning": "Çekimli fiil: cümle başında yan cümle kuramaz, cümlede iki ana fiil olur",
+        "mnemonic": "💡 ÇELDİRİCİ: Anlam alanı yakın ama cümlenin mantığına/yapısına uymuyor."
       }
     }
   },
@@ -695,7 +788,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "substantiate",
       "undermine",
       "fabricate",
-      "repudiate"
+      "repudiate",
+      "distort"
     ],
     "correctAnswer": "substantiate",
     "meaningTr": "kanıtlamak, somut verilerle doğrulamak",
@@ -731,6 +825,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "reddetmek, inkar etmek, tanımamak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"RE- (geri)\" + \"PUD (ayakla itmek)\". Ayakla geri itip antlaşmayı/iddiayı reddetmek.",
         "rootAnalysis": "🔬 Kök: Latince repudiare (boşanmak, defetmek, tanımamak)."
+      },
+      "distort": {
+        "word": "distort",
+        "meaning": "çarpıtmak, saptırmak, şeklini/anlamını bozmak",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'TORTE / DİS-TORT' -> Gitar sesini bozan distortion pedalı gibi, gerçeğin orijinal biçimini bozup yamultmak, çarpıtmak (distort).",
+        "rootAnalysis": "🔬 YDS Notu: Gerçeklerin çarpıtılması ('distort facts/truth') veya sinyallerin bozulması ('distort signals') metinlerinde 'falsify' veya 'misrepresent' yerine sorulur."
       }
     }
   },
@@ -745,7 +845,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "jeopardize",
       "safeguard",
       "foster",
-      "reconcile"
+      "reconcile",
+      "bolster"
     ],
     "correctAnswer": "jeopardize",
     "meaningTr": "tehlikeye atmak, riske sokmak",
@@ -781,6 +882,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "uzlaştırmak, barıştırmak",
         "mnemonic": "💡 ÇAĞRIŞIM: Küsleri \"RE-CON-SİLE (sil baştan)\" barıştırıp uzlaştırmak.",
         "rootAnalysis": "🔬 Edat: Reconcile with (ile uzlaştırmak)."
+      },
+      "bolster": {
+        "word": "bolster",
+        "meaning": "desteklemek, güçlendirmek, takviye etmek",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'BOL-STAR' -> Kadrosuna bol bol yıldız (star) futbolcu alarak takımını takviye eden, BOLSTER eden (güçlendiren) kulüp.",
+        "rootAnalysis": "🔬 YDS Notu: ÖSYM'nin en sevdiği pozitif fiillerdendir; 'strengthen', 'reinforce' veya 'boost' yerine sıklıkla doğru cevap olarak sorulur."
       }
     }
   },
@@ -795,7 +902,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "hamper",
       "facilitate",
       "accelerate",
-      "substantiate"
+      "substantiate",
+      "expedite"
     ],
     "correctAnswer": "hamper",
     "meaningTr": "engellemek, aksatmak, güçleştirmek",
@@ -831,6 +939,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "somut kanıtlarla doğrulamak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"Substance\" katarak iddiayı sağlam kanıtlarla ispatlamak.",
         "rootAnalysis": "🔬 Akademik Terim: Bilimsel kanıtlama."
+      },
+      "expedite": {
+        "word": "expedite",
+        "meaning": "hızlandırmak, kolaylaştırmak",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'EKSPRES' -> Ekspres kargo gibi süreci jet hızıyla EXPEDITE etmek (hızlandırmak).",
+        "rootAnalysis": "🔬 YDS Notu: 'Accelerate / hasten / speed up' eşanlamlısıdır; bürokratik veya fiziksel süreçleri hızlandırmaktır."
       }
     }
   },
@@ -845,7 +959,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "exacerbate",
       "mitigate",
       "alleviate",
-      "soothe"
+      "soothe",
+      "offset"
     ],
     "correctAnswer": "exacerbate",
     "meaningTr": "kötüleştirmek, alevlendirmek, şiddetlendirmek",
@@ -880,6 +995,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "teskin etmek, yatıştırmak",
         "mnemonic": "💡 ÇAĞRIŞIM: Bebeğe emzik verip kulağına ninniyle SOOTHE ettiler (sakinleştirdiler).",
         "rootAnalysis": "🔬 Kullanım: Ağrıyı ya da öfkeyi dindirmek."
+      },
+      "offset": {
+        "word": "offset",
+        "meaning": "dengelemek, telafi etmek, karşılamak, nötrlemek",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'OFF-SET (Ayarını sıfırlamak)' -> Bir taraftaki fazlalığı diğer taraftaki eksiyle eşitleyip dengelemek: OFFSET (dengelemek, telafi etmek).",
+        "rootAnalysis": "🔬 YDS Notu: ÖSYM çevre ve ekonomi metinlerinde 'offset carbon emissions' (karbon emisyonlarını nötrlemek) ve 'offset losses' (kayıpları telafi etmek) olarak sıkça sorar."
       }
     }
   },
@@ -894,7 +1015,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "susceptible",
       "impervious",
       "immune",
-      "indifferent"
+      "indifferent",
+      "resilient"
     ],
     "correctAnswer": "susceptible",
     "meaningTr": "hassas, savunmasız, kolay etkilenen (-to ile)",
@@ -929,6 +1051,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "kayıtsız, umursamaz (-to)",
         "mnemonic": "💡 ÇAĞRIŞIM: \"IN (değil)\" + \"DIFFERENT (farklı)\". Benim için hiç fark etmez, banane diyen umursamaz.",
         "rootAnalysis": "🔬 Duygu Analizi: Nötr / İlgisiz."
+      },
+      "resilient": {
+        "word": "resilient",
+        "meaning": "dirençli, dayanıklı, çabuk toparlanan, esnek",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'REZİSTANS (Direnç)' -> Darbeler karşısında kırılmayan, esneyip hemen eski sağlam haline toparlanan dirençli (resilient) yapı.",
+        "rootAnalysis": "🔬 YDS Notu: ÖSYM'nin en popüler sıfatlarından biridir! Krizden çabuk çıkan ekonomi ('resilient economy') veya afetlere dirençli yapılar için kullanılır."
       }
     }
   },
@@ -943,7 +1071,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "detrimental",
       "lucrative",
       "beneficial",
-      "negligible"
+      "negligible",
+      "benign"
     ],
     "correctAnswer": "detrimental",
     "meaningTr": "zararlı, hasar verici, yıkıcı (-to)",
@@ -979,6 +1108,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "ihmal edilebilir, önemsiz",
         "mnemonic": "💡 ÇAĞRIŞIM: \"NEGLECT (ihmal etmek)\". O kadar küçük ki görmezden gelinebilir.",
         "rootAnalysis": "🔬 Kök: Negligere (ihmal etmek)."
+      },
+      "benign": {
+        "word": "benign",
+        "meaning": "iyi huylu, zararsız, tehlikesiz, sevecen",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'BENE- (İyi)' -> Latince 'bene' (iyi, güzel) kökünden; kanser yapmayan, zararsız ve iyi huylu: BENIGN.",
+        "rootAnalysis": "🔬 YDS Notu: Tıpta 'benign tumor' (iyi huylu tümör) olarak; 'malignant' (kötü huylu) kelimesinin zıttı olarak sürekli sorulur."
       }
     }
   },
@@ -993,7 +1128,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "indispensable",
       "superfluous",
       "redundant",
-      "negligible"
+      "negligible",
+      "trivial"
     ],
     "correctAnswer": "indispensable",
     "meaningTr": "vazgeçilmez, olmazsa olmaz, zorunlu",
@@ -1029,6 +1165,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "önemsiz, hesaba katılmayacak kadar az",
         "mnemonic": "💡 ÇAĞRIŞIM: \"Neglect\" edilen önemsiz ayrıntı.",
         "rootAnalysis": "🔬 Eşanlam: Insignificant."
+      },
+      "trivial": {
+        "word": "trivial",
+        "meaning": "önemsiz, incir çekirdeğini doldurmaz, adi, kayda değmez",
+        "mnemonic": "💡 ÇAĞRIŞIM: Bilgi yarışması 'TRIVIA' -> Çok büyük bir önemi olmayan, incir çekirdeğini doldurmaz ufak tefek detaylar: TRIVIAL (önemsiz).",
+        "rootAnalysis": "🔬 YDS Notu: 'Trivial' önemsiz olanı nitelerken; 'vital/crucial/momentous' kelimelerinin doğrudan zıttı olarak sınavlarda çeldiricidir."
       }
     }
   },
@@ -1043,7 +1185,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "nevertheless",
       "therefore",
       "furthermore",
-      "otherwise"
+      "otherwise",
+      "moreover"
     ],
     "correctAnswer": "nevertheless",
     "meaningTr": "yine de, buna rağmen, bununla birlikte",
@@ -1079,6 +1222,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "aksi takdirde, yoksa",
         "mnemonic": "💡 KURAL: Tehdit veya şart bildirir: \"Çalış yoksa kalırsın (Study, otherwise you will fail)\".",
         "rootAnalysis": "🔬 Kullanım: Gizli If Not anlamı taşır."
+      },
+      "moreover": {
+        "word": "moreover",
+        "meaning": "dahası, ayrıca, üstelik, buna ek olarak",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'MORE (daha fazlası)' + 'OVER (üzerine)' -> Mevcut bilginin üzerine bir fazlasını daha eklemek: MOREOVER (dahası, üstelik).",
+        "rootAnalysis": "🔬 YDS Notu: Ek bilgi bağlacıdır (Addition); 'furthermore', 'in addition' ve 'besides' ile eş anlamlı olarak iki olumlu veya iki olumsuz fikri bağlar."
       }
     }
   },
@@ -1093,7 +1242,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "provided that",
       "unless",
       "although",
-      "whereas"
+      "whereas",
+      "even though"
     ],
     "correctAnswer": "provided that",
     "meaningTr": "şartıyla, koşuluyla (if / as long as)",
@@ -1128,6 +1278,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "oysa ki, -e karşın",
         "mnemonic": "💡 KURAL: İki farklı özneyi karşılaştırır (Ali zenginken, Veli fakirdir).",
         "rootAnalysis": "🔬 Eşdeğer: While."
+      },
+      "even though": {
+        "word": "even though",
+        "meaning": "-e rağmen, -se bile, her ne kadar ... ise de (+ Tam Cümle)",
+        "mnemonic": "💡 FORMÜL: EVEN THOUGH + Tam Cümle. Beklentinin tersine gerçekleşen zıtlık bildirir: '+ iken - olur'.",
+        "rootAnalysis": "🔬 YDS Notu: 'Although', 'though' ve 'while' ile tam eş anlamlıdır. Kendisinden sonra İsim değil, Tam Cümle (S+V) alır."
       }
     }
   },
@@ -1142,7 +1298,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "thereby",
       "whereas",
       "unless",
-      "nonetheless"
+      "nonetheless",
+      "otherwise"
     ],
     "correctAnswer": "thereby",
     "meaningTr": "böylelikle, bu sayede (thereby + V-ing)",
@@ -1176,6 +1333,11 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "yine de, buna rağmen",
         "mnemonic": "💡 KURAL: Zıtlık geçiş zarfıdır, arkasından tam cümle ister.",
         "rootAnalysis": "🔬 Zıtlık zarfı."
+      },
+      "otherwise": {
+        "word": "otherwise",
+        "meaning": "aksi takdirde, yoksa (koşul/uyarı bağlacı)",
+        "mnemonic": "💡 ÇELDİRİCİ: Anlam alanı yakın ama cümlenin mantığına/yapısına uymuyor."
       }
     }
   },
@@ -1190,7 +1352,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "bring about",
       "call off",
       "turn down",
-      "put out"
+      "put out",
+      "give off"
     ],
     "correctAnswer": "bring about",
     "meaningTr": "yol açmak, sebep olmak, meydana getirmek",
@@ -1227,6 +1390,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "yangını söndürmek, yayımlamak",
         "mnemonic": "💡 ÇAĞRIŞIM: İtfaiyeci ateşi dışarıya (OUT) attı ve söndürdü.",
         "rootAnalysis": "🔬 Eşdeğer: Extinguish."
+      },
+      "give off": {
+        "word": "give off",
+        "meaning": "(koku, duman, ısı, ışık) salmak, yaymak",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'GIVE (Vermek) + OFF (Dışarı)' -> Dışarıya koku, duman veya ısı fışkırtmak: GIVE OFF (salmak, yaymak).",
+        "rootAnalysis": "🔬 YDS Notu: 'Emit' fiilinin birebir phrasal verb karşılığıdır; gaz, koku, duman ve ışık yayılmalarında sınavın en popüler kalıbıdır."
       }
     }
   },
@@ -1241,7 +1410,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "cope with",
       "account for",
       "rule out",
-      "rely on"
+      "rely on",
+      "dispose of"
     ],
     "correctAnswer": "cope with",
     "meaningTr": "başa çıkmak, üstesinden gelmek, göğüs germek",
@@ -1277,6 +1447,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "güvenmek, bel bağlamak",
         "mnemonic": "💡 ÇAĞRIŞIM: \"Rely ON / Depend ON\". Birinin omzuna dayanmak.",
         "rootAnalysis": "🔬 Eşdeğer: Trust, depend on."
+      },
+      "dispose of": {
+        "word": "dispose of",
+        "meaning": "elden çıkarmak, imha etmek, kurtulmak",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'DİS-POZET' -> Çöp poşetine koyup DISPOSE OF yaptı (elden çıkardı, attı).",
+        "rootAnalysis": "🔬 YDS Notu: 'Get rid of' eşanlamlısıdır; özellikle atıkların imhası metinlerinde 'dispose of waste' kalıbı standarttır."
       }
     }
   },
@@ -1291,7 +1467,8 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
       "stem from",
       "result in",
       "lead to",
-      "call for"
+      "call for",
+      "make up for"
     ],
     "correctAnswer": "stem from",
     "meaningTr": "-den kaynaklanmak, -den ileri gelmek",
@@ -1326,6 +1503,12 @@ const RAW_YDS_VOCAB_QUIZ_QUESTIONS: VocabQuizQuestion[] = [
         "meaning": "çağrıda bulunmak, talep etmek",
         "mnemonic": "💡 ÇAĞRIŞIM: Mikrofonla acil eylem çağrısı yapmak.",
         "rootAnalysis": "🔬 Eşdeğer: Demand, urge."
+      },
+      "make up for": {
+        "word": "make up for",
+        "meaning": "telafi etmek, açığı kapatmak, bedelini ödemek",
+        "mnemonic": "💡 ÇAĞRIŞIM: 'MAKE UP (makyaj / düzeltmek)' -> Eksik ve kusurlu olan yeri kapatıp düzeltmek, aradaki açığı telafi etmek (make up for).",
+        "rootAnalysis": "🔬 YDS Notu: ÖSYM phrasal verb sorularının efsanesidir: 'make up for' = 'compensate for' = 'offset'. Kaçırılmaması gereken bir kelimedir!"
       }
     }
   }

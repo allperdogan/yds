@@ -15,6 +15,7 @@ export interface YdsWord {
   frequency: 'ultra' | 'high' | 'medium';
   groupDay: number; // Day 1 to 30
   mnemonic?: string; // Akılda kalıcı çağrışım / ses benzeşimi / hafıza tekniği
+  distractors?: string[]; // Aynı türden, yakın anlamlı ama cümleye uymayan 4 çeldirici
 }
 
 export type SRSGrade = 0 | 3 | 4 | 5; // 0: Again, 3: Hard, 4: Good, 5: Easy
@@ -44,7 +45,7 @@ export interface VocabQuizQuestion {
   targetWord: string;
   type: WordType;
   sentence: string; // Sentence with "_____"
-  options: string[]; // 4 options
+  options: string[]; // 5 options (ÖSYM formatı)
   correctAnswer: string;
   meaningTr: string;
   explanation: string;
