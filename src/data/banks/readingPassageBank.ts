@@ -1,4 +1,4 @@
-// Generated reading bank: 75 passages x 4 questions.
+// Generated reading bank: 90 passages x 4 questions.
 import { ReadingPassage } from '../../types';
 import { shuffleQuestionList } from '../../services/optionShuffle';
 
@@ -9666,6 +9666,1938 @@ const RAW_READING_PASSAGE_BANK: ReadingPassage[] = [
         "tacticUsed": "Görüş",
         "trapWarning": "A ve C aşırı genellemelerdir. D ve E metinde yoktur.",
         "explanation": "Gruplar genellikle tek bir kişiden daha fazla bilgiye sahip olduğu için çoğunluğa uymak makul bir strateji olabilir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb076",
+    "title": "The Growing Problem of Space Debris",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from European Space Agency reports & Science",
+    "wordCount": 280,
+    "passageText": "Since the launch of Sputnik in 1957, humanity has placed thousands of objects into orbit around the Earth. Many of them are no longer working. Along with active satellites, low Earth orbit now contains dead satellites, spent rocket stages and millions of fragments created by explosions and collisions. The European Space Agency estimates that there are more than 36,000 pieces of debris larger than ten centimetres and around a million between one and ten centimetres. Because objects in orbit travel at about 28,000 kilometres per hour, even a fragment the size of a marble can strike with the energy of a hand grenade.\n\nThe risk is growing quickly. Companies are launching large constellations of small satellites to provide internet access, and the number of active satellites has increased several times over in only a few years. In 1978, the NASA scientist Donald Kessler warned that if the density of objects in orbit became high enough, collisions could trigger a chain reaction: each collision would create more fragments, which would cause further collisions, eventually making some orbits unusable for generations. This scenario is now known as the Kessler syndrome.\n\nSeveral measures are being taken to reduce the danger. International guidelines recommend that satellites be removed from low orbit within twenty-five years of the end of their mission, and some agencies now require five. Operators move satellites to avoid predicted collisions, and companies are developing spacecraft designed to capture and remove large pieces of debris. However, compliance with the guidelines is voluntary in many countries, and tests in which countries deliberately destroyed their own satellites with missiles have added thousands of new fragments. Experts argue that binding international rules will be needed to keep orbit usable.",
+    "vocabularyNotes": [
+      {
+        "word": "debris",
+        "meaningTr": "enkaz, döküntü",
+        "contextNote": "space debris: uzay çöpü."
+      },
+      {
+        "word": "fragment",
+        "meaningTr": "parça, kırıntı",
+        "contextNote": "Fiil olarak parçalanmak."
+      },
+      {
+        "word": "constellation",
+        "meaningTr": "takımyıldız; uydu ağı",
+        "contextNote": "Burada çok sayıda uydudan oluşan ağ."
+      },
+      {
+        "word": "density",
+        "meaningTr": "yoğunluk",
+        "contextNote": "dense: yoğun."
+      },
+      {
+        "word": "compliance",
+        "meaningTr": "uyum, uyma",
+        "contextNote": "comply with: -e uymak."
+      },
+      {
+        "word": "binding",
+        "meaningTr": "bağlayıcı",
+        "contextNote": "binding rules: bağlayıcı kurallar."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Kessler warned that if the density of objects in orbit became high enough, collisions could trigger a chain reaction.",
+        "subject": "Kessler",
+        "mainVerb": "warned (uyardı)",
+        "objectsAndComplements": "[that-clause: yörüngedeki nesnelerin yoğunluğu yeterince yükselirse çarpışmaların bir zincirleme reaksiyonu tetikleyebileceği]",
+        "grammaticalStructures": [
+          "Dolaylı anlatımda koşul cümlesi (if ... became, ... could).",
+          "sıfat + enough: yeterince ...",
+          "trigger: tetiklemek."
+        ],
+        "translationTr": "Kessler, yörüngedeki nesnelerin yoğunluğu yeterince yükselirse çarpışmaların zincirleme bir reaksiyonu tetikleyebileceği konusunda uyardı."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb076_q1",
+        "type": "reading",
+        "title": "The Growing Problem of Space Debris",
+        "question": "According to the passage, even small pieces of debris are dangerous because they _____ .",
+        "options": {
+          "A": "are too small to be seen by any satellite",
+          "B": "move at extremely high speeds",
+          "C": "contain explosive material from rockets",
+          "D": "can fall back to Earth at any moment",
+          "E": "are made of heavier metals than satellites"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep",
+        "trapWarning": "C şıkkı el bombası benzetmesini gerçek patlayıcı gibi okur. A, D ve E metinde yoktur.",
+        "explanation": "Yörüngedeki nesneler saatte yaklaşık 28.000 km hızla hareket ettiği için küçük bir parça bile büyük enerjiyle çarpar (B şıkkı)."
+      },
+      {
+        "id": "rb076_q2",
+        "type": "reading",
+        "title": "The Growing Problem of Space Debris",
+        "question": "The \"Kessler syndrome\" refers to _____ .",
+        "options": {
+          "A": "a rule that satellites must leave orbit within five years",
+          "B": "a chain of collisions that could make orbits unusable",
+          "C": "the illness suffered by astronauts after long missions",
+          "D": "the rapid growth of internet satellite constellations",
+          "E": "the destruction of satellites by missiles"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Kavram Tanımı",
+        "trapWarning": "A, D ve E metinde geçen başka unsurlardır. C şıkkı \"syndrome\" kelimesinin tıbbi çağrışımına dayanan tuzaktır.",
+        "explanation": "Her çarpışmanın yeni parçalar yaratıp yeni çarpışmalara yol açtığı ve bazı yörüngeleri kullanılamaz hale getirdiği zincirleme süreçtir (B şıkkı)."
+      },
+      {
+        "id": "rb076_q3",
+        "type": "reading",
+        "title": "The Growing Problem of Space Debris",
+        "question": "Why does the author mention satellite constellations?",
+        "options": {
+          "A": "To show that debris is decreasing",
+          "B": "To explain why the risk is rising quickly",
+          "C": "To describe a method of removing debris",
+          "D": "To argue that internet access is unnecessary",
+          "E": "To give an example of a missile test"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örneğin İşlevi",
+        "trapWarning": "A şıkkı tersidir. C, D ve E bağlamla ilgisizdir.",
+        "explanation": "Uydu ağları aktif uydu sayısını birkaç kat artırmıştır; bu da riskin hızla büyümesinin bir nedenidir (B şıkkı)."
+      },
+      {
+        "id": "rb076_q4",
+        "type": "reading",
+        "title": "The Growing Problem of Space Debris",
+        "question": "The experts mentioned in the last sentence believe that _____ .",
+        "options": {
+          "A": "voluntary guidelines are already sufficient",
+          "B": "binding international rules will be necessary",
+          "C": "debris removal spacecraft will solve the problem",
+          "D": "missile tests are a useful way to remove debris",
+          "E": "satellites should no longer be launched at all"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Uzman Görüşü",
+        "trapWarning": "A şıkkı son cümlenin tersidir. D şıkkı metinle çelişir: testler parça eklemiştir. C ve E aşırıdır.",
+        "explanation": "Uzmanlar yörüngeyi kullanılabilir tutmak için bağlayıcı uluslararası kuralların gerekeceğini savunur (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb077",
+    "title": "Predicting Earthquakes Versus Warning of Them",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from Nature Geoscience & USGS publications",
+    "wordCount": 285,
+    "passageText": "Despite decades of research, scientists still cannot predict earthquakes in the sense that most people understand the word: stating in advance that an earthquake of a particular size will strike a particular place within a specific period. Many possible warning signs have been investigated, including small foreshocks, changes in groundwater levels, releases of radon gas and unusual animal behaviour, but none has proved reliable. Foreshocks, for instance, can only be identified as foreshocks after the main earthquake has occurred.\n\nWhat seismologists can do is estimate long-term probabilities. By studying the history of a fault and the rate at which stress builds up along it, they can calculate, for example, that there is a certain percentage chance of a major earthquake in a region over the next thirty years. Such forecasts do not tell anyone when to evacuate, but they are valuable for setting building codes, planning emergency services and deciding where to strengthen hospitals and schools.\n\nA different approach, earthquake early warning, has proved more practical. When an earthquake begins, it sends out fast but relatively weak waves followed by slower, more destructive ones. Networks of sensors near the source can detect the first waves and send alerts electronically, which travel faster than the seismic waves themselves. Depending on the distance from the epicentre, people may receive a warning a few seconds to a minute before strong shaking arrives. This may sound insignificant, but it is enough time to stop trains, halt surgery, open fire station doors and allow people to take cover. Japan, Mexico and parts of the United States already operate such systems. Their main limitation is that places closest to the epicentre, where shaking is often strongest, receive little or no warning.",
+    "vocabularyNotes": [
+      {
+        "word": "foreshock",
+        "meaningTr": "öncü deprem",
+        "contextNote": "aftershock: artçı deprem."
+      },
+      {
+        "word": "seismologist",
+        "meaningTr": "sismolog, deprem bilimci",
+        "contextNote": "seismic: sismik."
+      },
+      {
+        "word": "fault",
+        "meaningTr": "fay; hata",
+        "contextNote": "fault line: fay hattı."
+      },
+      {
+        "word": "building code",
+        "meaningTr": "yapı yönetmeliği",
+        "contextNote": "İnşaat kuralları."
+      },
+      {
+        "word": "epicentre",
+        "meaningTr": "merkez üssü",
+        "contextNote": "AmE: epicenter."
+      },
+      {
+        "word": "take cover",
+        "meaningTr": "siper almak, korunmak",
+        "contextNote": "Afet durumunda güvenli yere geçmek."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Networks of sensors near the source can detect the first waves and send alerts electronically, which travel faster than the seismic waves themselves.",
+        "subject": "Networks of sensors near the source (kaynağa yakın sensör ağları)",
+        "mainVerb": "can detect ... and send (tespit edebilir ve gönderebilir)",
+        "objectsAndComplements": "the first waves (ilk dalgaları) + alerts electronically + [which-clause: sismik dalgaların kendisinden daha hızlı ilerleyen]",
+        "grammaticalStructures": [
+          "Paralel modal fiiller (can detect and send).",
+          "Non-defining relative clause (which travel faster ...).",
+          "Comparative (faster than).",
+          "Reflexive vurgu (the seismic waves themselves)."
+        ],
+        "translationTr": "Kaynağa yakın sensör ağları ilk dalgaları tespit edip uyarıları elektronik olarak gönderebilir; bu uyarılar sismik dalgaların kendisinden daha hızlı ilerler."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb077_q1",
+        "type": "reading",
+        "title": "Predicting Earthquakes Versus Warning of Them",
+        "question": "According to the passage, foreshocks are not useful for prediction because _____ .",
+        "options": {
+          "A": "they occur only after the large earthquakes have ended",
+          "B": "they can be recognized only after the main quake",
+          "C": "they are too weak to be detected by sensors",
+          "D": "they are mainly caused by changes in groundwater levels",
+          "E": "they happen too far from the epicentre"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep",
+        "trapWarning": "A şıkkı tuzaktır: öncü depremler önce gelir ama ancak ana depremden sonra öncü olarak tanınır. C, D ve E metinde yoktur.",
+        "explanation": "Öncü depremler ancak ana deprem gerçekleştikten sonra öncü deprem olarak tanımlanabilir (B şıkkı)."
+      },
+      {
+        "id": "rb077_q2",
+        "type": "reading",
+        "title": "Predicting Earthquakes Versus Warning of Them",
+        "question": "Long-term earthquake forecasts are described as useful for _____ .",
+        "options": {
+          "A": "telling people exactly when they need to evacuate their homes",
+          "B": "setting building rules and planning emergency services",
+          "C": "stopping trains and halting surgery a few seconds before shaking",
+          "D": "detecting the first waves of an earthquake",
+          "E": "measuring releases of radon gas"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Kullanım Alanı",
+        "trapWarning": "A şıkkı metnin açıkça reddettiği kullanımdır. C ve D erken uyarı sistemlerine aittir. E şıkkı metinde tahmin girişimi olarak geçer.",
+        "explanation": "Uzun vadeli tahminler yapı yönetmelikleri ve acil durum planlaması için değerlidir (B şıkkı)."
+      },
+      {
+        "id": "rb077_q3",
+        "type": "reading",
+        "title": "Predicting Earthquakes Versus Warning of Them",
+        "question": "Earthquake early warning is possible because _____ .",
+        "options": {
+          "A": "scientists can now predict quakes several days in advance",
+          "B": "electronic alerts travel faster than the seismic waves",
+          "C": "animals behave unusually before large earthquakes",
+          "D": "the most destructive waves arrive first",
+          "E": "sensors are placed in every building"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Mekanizma",
+        "trapWarning": "A şıkkı ilk paragrafla çelişir. D şıkkı sırayı tersine çevirir. C şıkkı güvenilmez bulunmuş bir işarettir. E şıkkı metinde yoktur.",
+        "explanation": "Elektronik uyarılar sismik dalgalardan daha hızlı yol alır (B şıkkı)."
+      },
+      {
+        "id": "rb077_q4",
+        "type": "reading",
+        "title": "Predicting Earthquakes Versus Warning of Them",
+        "question": "The main limitation of early warning systems is that _____ .",
+        "options": {
+          "A": "they give warnings only after the strong shaking has already ended",
+          "B": "areas nearest the epicentre get little or no warning",
+          "C": "they are used only in Japan and in no other country",
+          "D": "they cannot stop trains or halt surgery",
+          "E": "they require warnings of at least an hour"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sınırlılık",
+        "trapWarning": "C şıkkı metinle çelişir: Meksika ve ABD'de de vardır. D şıkkı metindeki faydalarla çelişir. A ve E metinde yoktur.",
+        "explanation": "Sarsıntının genellikle en güçlü olduğu merkez üssüne en yakın yerler çok az uyarı alır ya da hiç almaz (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb078",
+    "title": "Searching for New Antibiotics",
+    "topic": "Science & Technology",
+    "sourceHint": "Adapted from Cell & Nature Reviews Drug Discovery",
+    "wordCount": 277,
+    "passageText": "Most of the antibiotics used today belong to classes discovered between the 1940s and the 1960s, a period often called the golden age of antibiotic discovery. Many came from soil microorganisms, which produce chemicals to compete with one another. Since then, the discovery of genuinely new classes has slowed dramatically, while bacteria have steadily evolved resistance to existing drugs. Drug-resistant infections were associated with nearly five million deaths in 2019.\n\nThe slowdown has scientific and economic causes. The easiest compounds to find in soil were found long ago, and many promising candidates fail because they are toxic to human cells. At the same time, new antibiotics are commercially unattractive. Doctors are encouraged to keep new drugs in reserve for cases where older ones fail, in order to slow the development of resistance, and patients typically take antibiotics for only a week or two. As a result, companies that develop a new antibiotic often sell very little of it, and several small firms have gone bankrupt shortly after receiving approval for their drugs.\n\nScientists are exploring new sources of drugs. Only a small fraction of soil bacteria can be grown in the laboratory, and new techniques that allow these unculturable species to grow have already led to the discovery of compounds such as teixobactin. Researchers are also using artificial intelligence to screen millions of molecules for antibacterial activity; in 2020, a machine-learning model identified a compound, later named halicin, that killed many resistant bacteria in laboratory tests. Governments are also experimenting with new payment models, such as subscription schemes in which health systems pay a fixed annual fee for access to a new antibiotic regardless of how much is used.",
+    "vocabularyNotes": [
+      {
+        "word": "genuinely",
+        "meaningTr": "gerçekten, hakikaten",
+        "contextNote": "genuine: gerçek, sahici."
+      },
+      {
+        "word": "resistance",
+        "meaningTr": "direnç",
+        "contextNote": "antibiotic resistance: antibiyotik direnci."
+      },
+      {
+        "word": "compound",
+        "meaningTr": "bileşik",
+        "contextNote": "Kimya terimi."
+      },
+      {
+        "word": "in reserve",
+        "meaningTr": "yedekte",
+        "contextNote": "keep in reserve: yedekte tutmak."
+      },
+      {
+        "word": "unculturable",
+        "meaningTr": "kültürü yapılamayan",
+        "contextNote": "Laboratuvarda üretilemeyen."
+      },
+      {
+        "word": "screen",
+        "meaningTr": "taramak",
+        "contextNote": "screen molecules: molekülleri taramak."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Doctors are encouraged to keep new drugs in reserve for cases where older ones fail, in order to slow the development of resistance.",
+        "subject": "Doctors (doktorlar)",
+        "mainVerb": "are encouraged (teşvik edilir)",
+        "objectsAndComplements": "to keep new drugs in reserve (yeni ilaçları yedekte tutmaya) + [where-clause: eski ilaçların başarısız olduğu durumlar için] + [amaç: direncin gelişimini yavaşlatmak için]",
+        "grammaticalStructures": [
+          "Passive + to-infinitive (are encouraged to keep).",
+          "Relative adverb where (cases where ...).",
+          "ones: drugs yerine geçen zamir.",
+          "in order to + V1: amaç."
+        ],
+        "translationTr": "Direncin gelişimini yavaşlatmak için doktorlar, yeni ilaçları eski ilaçların başarısız olduğu durumlar için yedekte tutmaya teşvik edilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb078_q1",
+        "type": "reading",
+        "title": "Searching for New Antibiotics",
+        "question": "According to the passage, the period between the 1940s and the 1960s was important because _____ .",
+        "options": {
+          "A": "bacteria had not yet developed any resistance",
+          "B": "most of today's antibiotic classes were discovered then",
+          "C": "artificial intelligence was first used in medicine",
+          "D": "soil bacteria were grown in laboratories for the first time",
+          "E": "governments began paying subscriptions for antibiotics"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Detay",
+        "trapWarning": "C ve E günümüze ait gelişmelerdir. A ve D metinde yoktur.",
+        "explanation": "Bugün kullanılan antibiyotiklerin çoğu bu dönemde keşfedilen sınıflara aittir (B şıkkı)."
+      },
+      {
+        "id": "rb078_q2",
+        "type": "reading",
+        "title": "Searching for New Antibiotics",
+        "question": "New antibiotics are commercially unattractive mainly because _____ .",
+        "options": {
+          "A": "they are usually more toxic than older antibiotics",
+          "B": "they are used sparingly and for short periods",
+          "C": "patients refuse to take them for more than a week",
+          "D": "governments set their prices far too high",
+          "E": "they are difficult to find in the soil"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Ekonomik Sebep",
+        "trapWarning": "A ve E bilimsel zorluklardır, ticari değil. C ve D metinde yoktur.",
+        "explanation": "Yeni ilaçlar yedekte tutulur ve kısa süre kullanılır; bu yüzden şirketler çok az satış yapar (B şıkkı)."
+      },
+      {
+        "id": "rb078_q3",
+        "type": "reading",
+        "title": "Searching for New Antibiotics",
+        "question": "The examples of teixobactin and halicin show that _____ .",
+        "options": {
+          "A": "the golden age of discovery has finally ended",
+          "B": "new methods are helping scientists find compounds",
+          "C": "soil bacteria are no longer useful for drug discovery",
+          "D": "machine learning can replace laboratory tests",
+          "E": "all resistant bacteria can now be treated successfully"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örneklerin İşlevi",
+        "trapWarning": "C şıkkı teixobactin örneğiyle çelişir. D ve E aşırıdır. A şıkkı örneklerin amacı değildir.",
+        "explanation": "Yeni kültür teknikleri ve yapay zekâ yeni bileşiklerin keşfine yardımcı olmaktadır (B şıkkı)."
+      },
+      {
+        "id": "rb078_q4",
+        "type": "reading",
+        "title": "Searching for New Antibiotics",
+        "question": "Under a subscription scheme, health systems _____ .",
+        "options": {
+          "A": "pay according to the number of patients treated",
+          "B": "pay a fixed yearly fee whatever the amount used",
+          "C": "buy antibiotics only when older drugs fail",
+          "D": "require companies to lower the price of old drugs",
+          "E": "develop new antibiotics in their own laboratories"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Tanım",
+        "trapWarning": "A şıkkı modelin tersidir. C ve D metinde yoktur. E şıkkı metinle ilgisizdir.",
+        "explanation": "Sağlık sistemleri ne kadar kullanıldığından bağımsız olarak sabit bir yıllık ücret öder (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb079",
+    "title": "The New Weight-Loss Drugs",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from The New England Journal of Medicine & Nature Medicine",
+    "wordCount": 260,
+    "passageText": "A new class of drugs has transformed the treatment of obesity. Originally developed for type 2 diabetes, medicines such as semaglutide mimic a hormone called GLP-1, which the gut releases after eating. The hormone stimulates insulin production, slows the emptying of the stomach and acts on areas of the brain that regulate appetite, making people feel full sooner and for longer. In clinical trials, patients taking semaglutide lost on average about fifteen percent of their body weight over sixteen months, far more than with earlier medications and closer to the results of weight-loss surgery.\n\nThe benefits appear to extend beyond weight. A large trial published in 2023 found that semaglutide reduced the risk of heart attacks, strokes and cardiovascular deaths by about a fifth in people with obesity and heart disease, even among those who did not have diabetes. Researchers are now investigating whether the drugs might also help with kidney disease, sleep apnoea and even addiction.\n\nThe drugs nevertheless raise important questions. Common side effects include nausea and digestive problems, and some patients stop treatment because of them. Studies show that most people regain much of the lost weight within a year of stopping, suggesting that treatment may need to continue indefinitely. Weight loss also includes some loss of muscle, which may be a concern for older patients. Finally, the drugs are expensive, and demand has at times exceeded supply, leading to shortages for diabetes patients who depend on them. Health systems must therefore decide who should have priority access and how to pay for treatment that may last for life.",
+    "vocabularyNotes": [
+      {
+        "word": "mimic",
+        "meaningTr": "taklit etmek",
+        "contextNote": "Eş anlamlısı: imitate."
+      },
+      {
+        "word": "regulate",
+        "meaningTr": "düzenlemek",
+        "contextNote": "İsim: regulation."
+      },
+      {
+        "word": "appetite",
+        "meaningTr": "iştah",
+        "contextNote": "suppress appetite: iştahı bastırmak."
+      },
+      {
+        "word": "nausea",
+        "meaningTr": "mide bulantısı",
+        "contextNote": "Sıfat: nauseous."
+      },
+      {
+        "word": "regain",
+        "meaningTr": "geri kazanmak",
+        "contextNote": "regain weight: kilo geri almak."
+      },
+      {
+        "word": "indefinitely",
+        "meaningTr": "süresiz olarak",
+        "contextNote": "definite: kesin."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Studies show that most people regain much of the lost weight within a year of stopping, suggesting that treatment may need to continue indefinitely.",
+        "subject": "Studies (çalışmalar)",
+        "mainVerb": "show (göstermektedir)",
+        "objectsAndComplements": "[that-clause: çoğu insanın bıraktıktan sonraki bir yıl içinde verdiği kilonun çoğunu geri aldığını] + [participle: tedavinin süresiz devam etmesi gerekebileceğini düşündürerek]",
+        "grammaticalStructures": [
+          "within + süre + of: -den sonraki ... içinde.",
+          "Reduced relative (the lost weight).",
+          "Sonuç/yorum bildiren -ing (suggesting that ...).",
+          "may need to + V1."
+        ],
+        "translationTr": "Çalışmalar çoğu insanın ilacı bıraktıktan sonraki bir yıl içinde verdiği kilonun büyük kısmını geri aldığını göstermektedir; bu da tedavinin süresiz devam etmesi gerekebileceğini düşündürmektedir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb079_q1",
+        "type": "reading",
+        "title": "The New Weight-Loss Drugs",
+        "question": "According to the passage, GLP-1 drugs help people lose weight by _____ .",
+        "options": {
+          "A": "preventing the body from absorbing fat from food",
+          "B": "making people feel full sooner and for longer",
+          "C": "increasing the amount of exercise people do",
+          "D": "removing part of the stomach without surgery",
+          "E": "reducing insulin production after meals"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Mekanizma",
+        "trapWarning": "E şıkkı tersidir: hormon insülin üretimini uyarır. D şıkkı ameliyatla karıştırır. A ve C metinde yoktur.",
+        "explanation": "İlaçlar iştahı düzenleyen beyin bölgelerine etki ederek insanların daha erken ve daha uzun süre tok hissetmesini sağlar (B şıkkı)."
+      },
+      {
+        "id": "rb079_q2",
+        "type": "reading",
+        "title": "The New Weight-Loss Drugs",
+        "question": "The 2023 trial found that semaglutide _____ .",
+        "options": {
+          "A": "helped only those patients who also had type 2 diabetes",
+          "B": "lowered cardiovascular risk even without diabetes",
+          "C": "caused more heart attacks than a placebo",
+          "D": "cured kidney disease and sleep apnoea",
+          "E": "worked better than weight-loss surgery"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Bulgu",
+        "trapWarning": "A şıkkı metnin özellikle belirttiği bilgiyle çelişir. D şıkkı araştırılmakta olan bir konudur. C ve E metinle çelişir.",
+        "explanation": "İlaç diyabeti olmayanlarda bile kalp krizi, inme ve kardiyovasküler ölüm riskini yaklaşık beşte bir azaltmıştır (B şıkkı)."
+      },
+      {
+        "id": "rb079_q3",
+        "type": "reading",
+        "title": "The New Weight-Loss Drugs",
+        "question": "Which of the following is NOT mentioned as a concern about the drugs?",
+        "options": {
+          "A": "Digestive side effects such as nausea",
+          "B": "Weight regain after stopping treatment",
+          "C": "Loss of muscle in older patients",
+          "D": "Damage to the liver after long use",
+          "E": "High cost and supply shortages"
+        },
+        "answer": "D",
+        "difficulty": "Orta",
+        "tacticUsed": "NOT Sorusu",
+        "trapWarning": "A, B, C ve E son paragrafta sayılır.",
+        "explanation": "Metin karaciğer hasarından söz etmez (D şıkkı)."
+      },
+      {
+        "id": "rb079_q4",
+        "type": "reading",
+        "title": "The New Weight-Loss Drugs",
+        "question": "The final sentence suggests that health systems face _____ .",
+        "options": {
+          "A": "no difficulty at all, since the drugs are cheap",
+          "B": "hard choices about access and costs",
+          "C": "pressure to ban the drugs entirely",
+          "D": "a surplus of drugs for diabetes patients",
+          "E": "a decline in demand for the drugs"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sonuç Çıkarımı",
+        "trapWarning": "A ve D metinle çelişir. C ve E metinde yoktur.",
+        "explanation": "Sağlık sistemleri kimin öncelikli erişim alacağına ve ömür boyu sürebilecek tedavinin nasıl ödeneceğine karar vermek zorundadır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb080",
+    "title": "Hearing Loss and the Risk of Dementia",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from The Lancet & JAMA Neurology",
+    "wordCount": 274,
+    "passageText": "Hearing loss is extremely common in later life; about two-thirds of people over seventy have some degree of it. Because it develops gradually and is not painful, it often goes untreated for years. Yet a growing body of research suggests that it may be one of the most important modifiable risk factors for dementia. The Lancet Commission on dementia estimated in 2020 that untreated hearing loss in midlife could account for around eight percent of dementia cases worldwide, more than any other single modifiable factor.\n\nScientists have proposed several explanations for the link. One is cognitive load: when hearing is poor, the brain must work harder to understand speech, which may draw resources away from memory and thinking. Another is social isolation, since people who struggle to follow conversations may withdraw from social activities, and isolation is itself linked to cognitive decline. A third possibility is that reduced input from the ears leads to changes in the structure of the brain, particularly in areas involved in processing sound. It is also possible that hearing loss and dementia share common causes, such as damage to small blood vessels.\n\nWhether treating hearing loss reduces dementia risk has been harder to establish. A trial published in 2023 found that, among older adults overall, providing hearing aids and counselling did not significantly slow cognitive decline over three years. However, among participants who were at higher risk of dementia, the intervention reduced the rate of decline by almost half. Although further research is needed, experts recommend regular hearing tests in middle and older age, noting that hearing aids also improve quality of life and communication regardless of any effect on dementia.",
+    "vocabularyNotes": [
+      {
+        "word": "untreated",
+        "meaningTr": "tedavi edilmemiş",
+        "contextNote": "un- + treated."
+      },
+      {
+        "word": "cognitive load",
+        "meaningTr": "bilişsel yük",
+        "contextNote": "Beynin işlem yükü."
+      },
+      {
+        "word": "withdraw from",
+        "meaningTr": "-den çekilmek",
+        "contextNote": "withdraw from social life: sosyal hayattan çekilmek."
+      },
+      {
+        "word": "input",
+        "meaningTr": "girdi",
+        "contextNote": "sensory input: duyusal girdi."
+      },
+      {
+        "word": "counselling",
+        "meaningTr": "danışmanlık",
+        "contextNote": "counsel: öğüt vermek."
+      },
+      {
+        "word": "regardless of",
+        "meaningTr": "-e bakılmaksızın",
+        "contextNote": "Bağlaç sorularında sık gelir."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "When hearing is poor, the brain must work harder to understand speech, which may draw resources away from memory and thinking.",
+        "subject": "the brain (beyin)",
+        "mainVerb": "must work harder (daha çok çalışmak zorundadır)",
+        "objectsAndComplements": "[When-clause] + to understand speech (konuşmayı anlamak için) + [which-clause: bu da kaynakları bellek ve düşünmeden uzaklaştırabilir]",
+        "grammaticalStructures": [
+          "must: zorunluluk.",
+          "Comparative zarf (harder).",
+          "Amaç bildiren to-infinitive.",
+          "Sentential which.",
+          "draw away from: -den uzaklaştırmak."
+        ],
+        "translationTr": "İşitme zayıf olduğunda beyin konuşmayı anlamak için daha çok çalışmak zorunda kalır; bu da kaynakları bellek ve düşünme süreçlerinden uzaklaştırabilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb080_q1",
+        "type": "reading",
+        "title": "Hearing Loss and the Risk of Dementia",
+        "question": "According to the passage, hearing loss often goes untreated because it _____ .",
+        "options": {
+          "A": "cannot be detected by ordinary tests",
+          "B": "develops slowly and causes no pain",
+          "C": "affects only people over seventy",
+          "D": "is considered a normal part of dementia",
+          "E": "can be cured only by surgery"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep",
+        "trapWarning": "C şıkkı oranı yanlış genelleştirir. A, D ve E metinde yoktur.",
+        "explanation": "İşitme kaybı yavaş gelişir ve ağrısızdır; bu yüzden yıllarca tedavi edilmeden kalabilir (B şıkkı)."
+      },
+      {
+        "id": "rb080_q2",
+        "type": "reading",
+        "title": "Hearing Loss and the Risk of Dementia",
+        "question": "Which of the following is NOT proposed as an explanation for the link?",
+        "options": {
+          "A": "Extra mental effort needed to understand speech",
+          "B": "Withdrawal from social activities",
+          "C": "Structural changes in the brain",
+          "D": "Side effects of wearing hearing aids",
+          "E": "Shared causes such as blood vessel damage"
+        },
+        "answer": "D",
+        "difficulty": "Orta",
+        "tacticUsed": "NOT Sorusu",
+        "trapWarning": "A, B, C ve E ikinci paragrafta açıklama olarak geçer.",
+        "explanation": "Metin işitme cihazlarının yan etkilerinden söz etmez (D şıkkı)."
+      },
+      {
+        "id": "rb080_q3",
+        "type": "reading",
+        "title": "Hearing Loss and the Risk of Dementia",
+        "question": "The 2023 trial found that hearing aids and counselling _____ .",
+        "options": {
+          "A": "slowed the decline greatly in all of the older adults",
+          "B": "helped mainly those at higher risk of dementia",
+          "C": "made cognitive decline faster in some groups",
+          "D": "had no effect on any of the participants",
+          "E": "cured dementia in most participants"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Bulgu Nüansı",
+        "trapWarning": "A şıkkı genel grupta anlamlı etki bulunmamasıyla çelişir. D şıkkı yüksek risk grubundaki etkiyi yok sayar. C ve E metinde yoktur.",
+        "explanation": "Genel grupta anlamlı etki yokken, yüksek risk grubunda düşüş hızı neredeyse yarıya inmiştir (B şıkkı)."
+      },
+      {
+        "id": "rb080_q4",
+        "type": "reading",
+        "title": "Hearing Loss and the Risk of Dementia",
+        "question": "Experts recommend regular hearing tests because _____ .",
+        "options": {
+          "A": "hearing aids have now been proven to prevent dementia",
+          "B": "treatment improves daily life whatever its effect",
+          "C": "hearing loss is rare before the age of seventy",
+          "D": "most cases of dementia are caused by untreated hearing loss",
+          "E": "tests can reverse damage to blood vessels"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Gerekçe (regardless of any effect on dementia)",
+        "trapWarning": "A şıkkı \"further research is needed\" ile çelişir. D şıkkı oranı abartır (yaklaşık yüzde sekiz). C ve E metinde yoktur.",
+        "explanation": "İşitme cihazları demansa etkisinden bağımsız olarak yaşam kalitesini ve iletişimi iyileştirir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb081",
+    "title": "Snakebite: A Neglected Emergency",
+    "topic": "Health & Medicine",
+    "sourceHint": "Adapted from WHO reports & PLOS Neglected Tropical Diseases",
+    "wordCount": 274,
+    "passageText": "Every year, an estimated 4.5 to 5.4 million people are bitten by snakes, and between 80,000 and 140,000 of them die. Around three times as many survive with permanent disabilities, such as amputations, scarring or kidney damage. Most victims are farmers, herders and children in rural areas of sub-Saharan Africa, South Asia and Latin America, where people often walk barefoot and work in fields at night. In 2017, after years of campaigning by doctors and researchers, the World Health Organization added snakebite envenoming to its list of neglected tropical diseases.\n\nThe main treatment, antivenom, has changed little since it was first developed in the 1890s. It is produced by injecting small amounts of venom into horses or sheep and then collecting the antibodies their immune systems produce. Antivenom can be highly effective if given quickly, but it has serious limitations. Each product usually works only against the venom of particular species from particular regions, it often needs to be kept refrigerated, and it can cause severe allergic reactions. Moreover, it is expensive, and in many affected regions the nearest hospital that stocks it may be hours away. Many victims turn first to traditional healers, losing valuable time.\n\nResearchers are developing alternatives. Some are designing antibodies produced in the laboratory that could neutralize the toxins of many different species. Others are testing small-molecule drugs, such as varespladib, which block a key family of venom enzymes and could potentially be taken as tablets immediately after a bite, before a patient reaches hospital. The WHO has set a goal of halving deaths and disabilities from snakebite by 2030, which experts say will also require better access to health care and education about prevention.",
+    "vocabularyNotes": [
+      {
+        "word": "envenoming",
+        "meaningTr": "zehirlenme (yılan vb.)",
+        "contextNote": "venom: zehir."
+      },
+      {
+        "word": "neglected",
+        "meaningTr": "ihmal edilmiş",
+        "contextNote": "neglected tropical diseases: ihmal edilmiş tropikal hastalıklar."
+      },
+      {
+        "word": "antibody",
+        "meaningTr": "antikor",
+        "contextNote": "Bağışıklık sisteminin ürettiği protein."
+      },
+      {
+        "word": "refrigerated",
+        "meaningTr": "soğutulmuş",
+        "contextNote": "refrigerator: buzdolabı."
+      },
+      {
+        "word": "neutralize",
+        "meaningTr": "etkisiz hale getirmek",
+        "contextNote": "Eş anlamlısı: counteract."
+      },
+      {
+        "word": "halve",
+        "meaningTr": "yarıya indirmek",
+        "contextNote": "half kelimesinden fiil."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "It is produced by injecting small amounts of venom into horses or sheep and then collecting the antibodies their immune systems produce.",
+        "subject": "It (antivenom) (panzehir)",
+        "mainVerb": "is produced (üretilir)",
+        "objectsAndComplements": "by injecting ... and then collecting ... (enjekte edip ardından toplayarak)",
+        "grammaticalStructures": [
+          "Passive (is produced).",
+          "by + V-ing: yöntem bildirir.",
+          "Paralel gerund yapısı (injecting ... and collecting).",
+          "Gizli relative clause (the antibodies [that] their immune systems produce)."
+        ],
+        "translationTr": "Panzehir, atlara ya da koyunlara küçük miktarlarda zehir enjekte edilip ardından bağışıklık sistemlerinin ürettiği antikorların toplanmasıyla üretilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb081_q1",
+        "type": "reading",
+        "title": "Snakebite: A Neglected Emergency",
+        "question": "According to the passage, most snakebite victims are _____ .",
+        "options": {
+          "A": "tourists visiting tropical forests",
+          "B": "rural workers and children in poorer regions",
+          "C": "researchers who handle snakes in laboratories",
+          "D": "people living in large modern cities",
+          "E": "elderly patients in European hospitals"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Detay",
+        "trapWarning": "A, C, D ve E metinde verilen mağdur profiliyle uyuşmaz.",
+        "explanation": "Mağdurların çoğu Sahra altı Afrika, Güney Asya ve Latin Amerika'nın kırsal bölgelerindeki çiftçiler, çobanlar ve çocuklardır (B şıkkı)."
+      },
+      {
+        "id": "rb081_q2",
+        "type": "reading",
+        "title": "Snakebite: A Neglected Emergency",
+        "question": "Which of the following is NOT mentioned as a limitation of antivenom?",
+        "options": {
+          "A": "It often works only against particular species",
+          "B": "It may need to be kept cold",
+          "C": "It can cause severe allergic reactions",
+          "D": "It must be taken every day for several months",
+          "E": "It is expensive and often far away"
+        },
+        "answer": "D",
+        "difficulty": "Orta",
+        "tacticUsed": "NOT Sorusu",
+        "trapWarning": "A, B, C ve E ikinci paragrafta sınırlılık olarak sayılır.",
+        "explanation": "Metin panzehirin aylarca her gün alınması gerektiğinden söz etmez (D şıkkı)."
+      },
+      {
+        "id": "rb081_q3",
+        "type": "reading",
+        "title": "Snakebite: A Neglected Emergency",
+        "question": "Drugs such as varespladib are promising because they _____ .",
+        "options": {
+          "A": "are produced by injecting venom into horses",
+          "B": "might be taken as tablets right after a bite",
+          "C": "work only against the venom of a single species",
+          "D": "replace the need for any hospital care",
+          "E": "were first developed in the 1890s"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Avantaj",
+        "trapWarning": "A ve E geleneksel panzehiri tarif eder. C şıkkı tam tersidir. D şıkkı aşırıdır.",
+        "explanation": "Bu ilaçlar ısırıktan hemen sonra, hastaneye ulaşmadan tablet olarak alınabilir (B şıkkı)."
+      },
+      {
+        "id": "rb081_q4",
+        "type": "reading",
+        "title": "Snakebite: A Neglected Emergency",
+        "question": "According to experts, reaching the WHO's 2030 goal will also require _____ .",
+        "options": {
+          "A": "stopping the production of traditional antivenom completely",
+          "B": "better health care access and prevention education",
+          "C": "removing snakes from all agricultural areas",
+          "D": "training traditional healers to produce antivenom",
+          "E": "keeping all victims in hospital for a month"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Gereklilik",
+        "trapWarning": "A, C, D ve E metinde yoktur.",
+        "explanation": "Uzmanlara göre hedef sağlık hizmetlerine daha iyi erişim ve korunma eğitimi de gerektirecektir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb082",
+    "title": "The Secret of Roman Concrete",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from Science Advances & MIT News",
+    "wordCount": 270,
+    "passageText": "Many Roman structures have survived for two thousand years, including harbour walls that have been battered by seawater for centuries. Modern concrete, by contrast, often begins to crack and crumble within decades, especially in marine environments. For a long time, the durability of Roman concrete was something of a mystery.\n\nRoman builders mixed lime with volcanic ash, known as pozzolana after the town of Pozzuoli near Naples, together with pieces of rock. Research published in 2017 showed that in marine structures, seawater seeping into the concrete reacted with the volcanic ash to form rare minerals, including one called aluminous tobermorite. These crystals grew within the pores and cracks of the material, gradually making it stronger rather than weaker over time. Modern concrete is designed to be chemically inert once it has hardened, so any reaction with seawater tends to damage it.\n\nIn 2023, researchers at the Massachusetts Institute of Technology proposed another explanation. They noticed that Roman concrete contained small white lumps of lime, which had long been dismissed as evidence of poor mixing. Their analysis suggested that the Romans used quicklime, a highly reactive form of lime, and mixed it at high temperatures. The resulting lumps acted as a reservoir of calcium. When cracks formed and water entered them, the calcium dissolved and then recrystallized, filling the cracks and effectively allowing the concrete to heal itself.\n\nThese discoveries have attracted interest from engineers because the production of modern cement is responsible for about eight percent of global carbon dioxide emissions. Concrete that lasts longer, or that can repair its own cracks, would need to be replaced less often, reducing those emissions.",
+    "vocabularyNotes": [
+      {
+        "word": "batter",
+        "meaningTr": "hırpalamak, dövmek",
+        "contextNote": "battered by waves: dalgalarla hırpalanmış."
+      },
+      {
+        "word": "crumble",
+        "meaningTr": "ufalanmak, parçalanmak",
+        "contextNote": "Eş anlamlısı: disintegrate."
+      },
+      {
+        "word": "seep",
+        "meaningTr": "sızmak",
+        "contextNote": "seep into: içine sızmak."
+      },
+      {
+        "word": "inert",
+        "meaningTr": "tepkimesiz, eylemsiz",
+        "contextNote": "Kimyada tepkimeye girmeyen."
+      },
+      {
+        "word": "dismiss as",
+        "meaningTr": "... diye önemsememek",
+        "contextNote": "dismiss something as a mistake."
+      },
+      {
+        "word": "recrystallize",
+        "meaningTr": "yeniden kristalleşmek",
+        "contextNote": "re- + crystallize."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "These crystals grew within the pores and cracks of the material, gradually making it stronger rather than weaker over time.",
+        "subject": "These crystals (bu kristaller)",
+        "mainVerb": "grew (büyüdü)",
+        "objectsAndComplements": "within the pores and cracks of the material (malzemenin gözenek ve çatlaklarında) + [participle: onu zamanla daha zayıf değil daha güçlü yaparak]",
+        "grammaticalStructures": [
+          "Sonuç bildiren -ing (gradually making it ...).",
+          "make + nesne + sıfat.",
+          "rather than: -den ziyade.",
+          "over time: zamanla."
+        ],
+        "translationTr": "Bu kristaller malzemenin gözenekleri ve çatlakları içinde büyüyerek onu zamanla daha zayıf değil, daha güçlü hale getirdi."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb082_q1",
+        "type": "reading",
+        "title": "The Secret of Roman Concrete",
+        "question": "According to the passage, seawater affects Roman and modern concrete differently because _____ .",
+        "options": {
+          "A": "Roman concrete was never exposed to seawater",
+          "B": "in Roman concrete it forms minerals that strengthen it",
+          "C": "modern concrete contains more volcanic ash",
+          "D": "Roman builders sealed their concrete with lime paint",
+          "E": "modern concrete reacts with seawater to form tobermorite"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Karşılaştırma",
+        "trapWarning": "A şıkkı ilk paragrafla çelişir. E şıkkı karşılaştırmayı tersine çevirir. C ve D metinde yoktur.",
+        "explanation": "Roma betonunda deniz suyu volkanik külle tepkimeye girip malzemeyi güçlendiren mineraller oluşturur; modern beton ise zarar görür (B şıkkı)."
+      },
+      {
+        "id": "rb082_q2",
+        "type": "reading",
+        "title": "The Secret of Roman Concrete",
+        "question": "The white lumps of lime in Roman concrete were previously thought to be _____ .",
+        "options": {
+          "A": "a deliberate method of self-repair",
+          "B": "a sign that the materials were badly mixed",
+          "C": "crystals formed by contact with seawater",
+          "D": "pieces of volcanic rock from Pozzuoli",
+          "E": "the main source of the concrete's great strength over time"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Eski Yorum",
+        "trapWarning": "A ve E 2023 araştırmasının yeni yorumudur. C ve D başka malzemelerle karıştırır.",
+        "explanation": "Kireç topakları uzun süre kötü karıştırmanın kanıtı olarak görülmüştür (B şıkkı)."
+      },
+      {
+        "id": "rb082_q3",
+        "type": "reading",
+        "title": "The Secret of Roman Concrete",
+        "question": "According to the MIT researchers, the lumps allowed the concrete to _____ .",
+        "options": {
+          "A": "harden much more quickly when it was first poured into moulds",
+          "B": "fill its own cracks as calcium recrystallized",
+          "C": "resist high temperatures during volcanic eruptions",
+          "D": "remain chemically inert after hardening",
+          "E": "absorb carbon dioxide from the atmosphere"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Mekanizma",
+        "trapWarning": "D şıkkı modern betonun özelliğidir. A, C ve E metinde yoktur.",
+        "explanation": "Çatlaklara su girince kalsiyum çözünüp yeniden kristalleşerek çatlakları doldurur; beton kendini onarır (B şıkkı)."
+      },
+      {
+        "id": "rb082_q4",
+        "type": "reading",
+        "title": "The Secret of Roman Concrete",
+        "question": "Engineers are interested in these discoveries mainly because _____ .",
+        "options": {
+          "A": "they want to build new harbours exactly like the Roman ones",
+          "B": "longer-lasting concrete could reduce carbon emissions",
+          "C": "volcanic ash is cheaper than modern cement",
+          "D": "modern concrete cannot be produced any more",
+          "E": "quicklime is safer to handle than modern cement"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Önem / Amaç",
+        "trapWarning": "A, C, D ve E metinde yoktur.",
+        "explanation": "Daha uzun ömürlü ya da kendini onaran beton daha az değiştirilir ve çimento kaynaklı emisyonları azaltır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb083",
+    "title": "The Nutmeg Islands",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from Journal of Southeast Asian Studies & History Today",
+    "wordCount": 277,
+    "passageText": "For centuries, nutmeg grew in only one place on Earth: the Banda Islands, a tiny group of volcanic islands in what is now eastern Indonesia. Traded through a long chain of merchants across Asia and the Middle East, the spice reached Europe at prices that could be hundreds of times higher than at its source. Wealthy Europeans valued nutmeg as a flavouring, a preservative and a medicine, and some believed it could protect against the plague.\n\nIn the early seventeenth century, the Dutch East India Company, a powerful trading corporation with its own army and the right to make treaties, set out to control the nutmeg trade completely. The Bandanese, who had traded freely with merchants from many nations for generations, resisted the Company's demands for a monopoly. In 1621, the Dutch commander Jan Pieterszoon Coen led an invasion of the islands. Most of the population, estimated at around fifteen thousand, were killed, starved or enslaved and deported. The Company then divided the land into plantations worked by enslaved people brought from other parts of Asia.\n\nThe English also had a foothold in the area, on the small island of Run. Under the Treaty of Breda in 1667, England formally gave up its claim to Run, while the Dutch confirmed English possession of a North American colony that the English had recently seized from them: New Amsterdam, later renamed New York. This exchange is often told as an amusing historical curiosity. Historians increasingly stress, however, that the story of nutmeg is also one of the earliest examples of a corporation using extreme violence to control a global commodity, with consequences for the Bandanese people that are still remembered today.",
+    "vocabularyNotes": [
+      {
+        "word": "preservative",
+        "meaningTr": "koruyucu madde",
+        "contextNote": "preserve: korumak."
+      },
+      {
+        "word": "treaty",
+        "meaningTr": "antlaşma",
+        "contextNote": "sign a treaty: antlaşma imzalamak."
+      },
+      {
+        "word": "monopoly",
+        "meaningTr": "tekel",
+        "contextNote": "Sıfat: monopolistic."
+      },
+      {
+        "word": "deport",
+        "meaningTr": "sürgün etmek, sınır dışı etmek",
+        "contextNote": "İsim: deportation."
+      },
+      {
+        "word": "foothold",
+        "meaningTr": "dayanak noktası, mevzi",
+        "contextNote": "gain a foothold: tutunmak."
+      },
+      {
+        "word": "commodity",
+        "meaningTr": "emtia, ticari mal",
+        "contextNote": "global commodity: küresel emtia."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "The Bandanese, who had traded freely with merchants from many nations for generations, resisted the Company's demands for a monopoly.",
+        "subject": "The Bandanese (Bandalılar)",
+        "mainVerb": "resisted (direndi)",
+        "objectsAndComplements": "the Company's demands for a monopoly (Şirket'in tekel taleplerine)",
+        "grammaticalStructures": [
+          "Non-defining relative (who had traded ...).",
+          "Past perfect (had traded): direnişten önceki uzun süreli durum.",
+          "for generations: kuşaklar boyunca.",
+          "demand for: ... talebi."
+        ],
+        "translationTr": "Kuşaklar boyunca birçok milletten tüccarla serbestçe ticaret yapmış olan Bandalılar, Şirket'in tekel taleplerine direndi."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb083_q1",
+        "type": "reading",
+        "title": "The Nutmeg Islands",
+        "question": "According to the passage, nutmeg was extremely expensive in Europe because _____ .",
+        "options": {
+          "A": "it was grown only in a small region of the Netherlands",
+          "B": "it came from one remote place via many merchants",
+          "C": "it was used only by doctors to treat the plague",
+          "D": "the English had banned its import",
+          "E": "it could be harvested only once every ten years"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep",
+        "trapWarning": "A şıkkı coğrafyayı karıştırır. C şıkkı kullanım alanlarını daraltır. D ve E metinde yoktur.",
+        "explanation": "Küçük hindistan cevizi yalnızca Banda Adaları'nda yetişiyor ve uzun bir tüccar zinciriyle Avrupa'ya ulaşıyordu (B şıkkı)."
+      },
+      {
+        "id": "rb083_q2",
+        "type": "reading",
+        "title": "The Nutmeg Islands",
+        "question": "The Dutch East India Company invaded the Banda Islands in 1621 in order to _____ .",
+        "options": {
+          "A": "protect the Bandanese from English traders",
+          "B": "gain complete control over the nutmeg trade",
+          "C": "establish a colony in North America",
+          "D": "stop the spread of the plague in Asia",
+          "E": "free enslaved people from other parts of Asia"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Amaç",
+        "trapWarning": "A ve E Şirket'in eylemlerinin tersidir. C ve D metinle ilgisizdir.",
+        "explanation": "Şirket hindistan cevizi ticaretini tamamen kontrol etmek, yani tekel kurmak istiyordu (B şıkkı)."
+      },
+      {
+        "id": "rb083_q3",
+        "type": "reading",
+        "title": "The Nutmeg Islands",
+        "question": "Under the Treaty of Breda, _____ .",
+        "options": {
+          "A": "the Dutch handed the island of Run over to the English",
+          "B": "England gave up Run but kept New Amsterdam",
+          "C": "the Bandanese regained control of their islands",
+          "D": "New York was handed back to the Dutch East India Company",
+          "E": "nutmeg trade was opened to all nations"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Detay",
+        "trapWarning": "A şıkkı yönü tersine çevirir. D şıkkı antlaşmanın tersidir. C ve E metinde yoktur.",
+        "explanation": "İngiltere Run üzerindeki iddiasından vazgeçti, Hollanda da İngilizlerin New Amsterdam'a sahipliğini onayladı (B şıkkı)."
+      },
+      {
+        "id": "rb083_q4",
+        "type": "reading",
+        "title": "The Nutmeg Islands",
+        "question": "The author suggests that the exchange of Run and New Amsterdam _____ .",
+        "options": {
+          "A": "was the most important event in the history of New York",
+          "B": "should not hide the violence behind the nutmeg trade",
+          "C": "was a fair agreement that benefited the Bandanese",
+          "D": "proves that the Dutch made a poor bargain",
+          "E": "is no longer of any interest to historians"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Yazarın Vurgusu",
+        "trapWarning": "D şıkkı yaygın anlatımın esprili yorumudur, yazarın vurgusu değildir. C şıkkı metinle çelişir. A ve E metinde yoktur.",
+        "explanation": "Yazar bu takasın eğlenceli bir merak olarak anlatıldığını ama ardındaki aşırı şiddetin unutulmaması gerektiğini vurgular (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb084",
+    "title": "How Writing Began",
+    "topic": "History & Archaeology",
+    "sourceHint": "Adapted from the work of Denise Schmandt-Besserat & The British Museum",
+    "wordCount": 262,
+    "passageText": "Writing is often associated with literature, religion and law, but the earliest known writing system appears to have developed for a far more practical purpose: keeping accounts. Around 3300 BC, in the city of Uruk in southern Mesopotamia, administrators began pressing signs into clay tablets to record quantities of goods such as grain, sheep, beer and textiles, along with the names of people and institutions responsible for them.\n\nThe archaeologist Denise Schmandt-Besserat has argued that this system grew out of an even older practice. For thousands of years, people in the Near East had used small clay tokens of different shapes to represent goods: a cone might stand for a measure of grain, a cylinder for an animal. Tokens were sometimes sealed inside hollow clay balls to guarantee a transaction, and the shapes of the tokens were pressed onto the outside so that the contents could be known without breaking the ball. Eventually, she suggests, people realized that the impressions alone were sufficient, and the tokens became unnecessary. Not all scholars accept every detail of this theory, but the connection between early writing and accounting is widely recognized.\n\nOver the following centuries, the signs developed into the wedge-shaped script known as cuneiform, made with a cut reed. Signs that originally represented objects increasingly came to represent sounds, which allowed scribes to write names, words from other languages and eventually complete sentences. By around 2600 BC, cuneiform was being used for letters, literature and royal inscriptions. The system was adapted for more than a dozen languages and remained in use for about three thousand years.",
+    "vocabularyNotes": [
+      {
+        "word": "administrator",
+        "meaningTr": "yönetici, idareci",
+        "contextNote": "administer: yönetmek."
+      },
+      {
+        "word": "token",
+        "meaningTr": "jeton, simge",
+        "contextNote": "Burada mal temsil eden kil nesne."
+      },
+      {
+        "word": "hollow",
+        "meaningTr": "içi boş",
+        "contextNote": "Zıt anlamlısı: solid."
+      },
+      {
+        "word": "transaction",
+        "meaningTr": "işlem",
+        "contextNote": "commercial transaction: ticari işlem."
+      },
+      {
+        "word": "impression",
+        "meaningTr": "baskı izi; izlenim",
+        "contextNote": "Burada kile bastırılan iz."
+      },
+      {
+        "word": "wedge-shaped",
+        "meaningTr": "kama biçimli",
+        "contextNote": "cuneiform = çivi yazısı."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Signs that originally represented objects increasingly came to represent sounds, which allowed scribes to write names, words from other languages and eventually complete sentences.",
+        "subject": "Signs that originally represented objects (başlangıçta nesneleri temsil eden işaretler)",
+        "mainVerb": "came to represent (temsil eder hale geldi)",
+        "objectsAndComplements": "sounds (sesleri) + [which-clause: bu da kâtiplerin ... yazmasına olanak verdi]",
+        "grammaticalStructures": [
+          "Defining relative clause öznede.",
+          "come to + V1: zamanla ... hale gelmek.",
+          "Sentential which.",
+          "allow + nesne + to V1."
+        ],
+        "translationTr": "Başlangıçta nesneleri temsil eden işaretler giderek sesleri temsil eder hale geldi; bu da kâtiplerin adları, başka dillerden kelimeleri ve sonunda bütün cümleleri yazabilmesini sağladı."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb084_q1",
+        "type": "reading",
+        "title": "How Writing Began",
+        "question": "According to the passage, the earliest writing in Mesopotamia was used mainly to _____ .",
+        "options": {
+          "A": "record religious texts and prayers for the city's temples",
+          "B": "keep records of goods and who held them",
+          "C": "write letters between kings",
+          "D": "preserve important works of poetry and literature",
+          "E": "translate between different languages"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Ana Bilgi",
+        "trapWarning": "A, C ve D sonraki kullanımlardır veya ilk paragrafta yazının genelde ilişkilendirildiği alanlardır. E şıkkı metinde böyle geçmez.",
+        "explanation": "İlk yazı tahıl, koyun gibi malların miktarını ve sorumlu kişileri kaydetmek, yani muhasebe için kullanılmıştır (B şıkkı)."
+      },
+      {
+        "id": "rb084_q2",
+        "type": "reading",
+        "title": "How Writing Began",
+        "question": "According to Schmandt-Besserat, clay tokens became unnecessary when people realized that _____ .",
+        "options": {
+          "A": "the hollow clay balls could be broken far too easily",
+          "B": "the marks on the outside were enough alone",
+          "C": "cone-shaped tokens could also be used to represent animals",
+          "D": "reeds could be used to cut clay",
+          "E": "goods no longer needed to be counted"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Teori Detayı",
+        "trapWarning": "A şıkkı teorinin tersidir: amaç topu kırmadan içeriği bilmekti. C, D ve E metinde böyle geçmez.",
+        "explanation": "İnsanlar dıştaki izlerin tek başına yeterli olduğunu fark edince jetonlara gerek kalmamıştır (B şıkkı)."
+      },
+      {
+        "id": "rb084_q3",
+        "type": "reading",
+        "title": "How Writing Began",
+        "question": "What does the passage say about scholarly views of the token theory?",
+        "options": {
+          "A": "All scholars now accept it in every single detail",
+          "B": "Details are disputed, but the accounting link is accepted",
+          "C": "It has been completely disproved",
+          "D": "It applies only to the development of Egyptian hieroglyphs",
+          "E": "It was proposed by the scribes of Uruk"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Akademik Uzlaşı",
+        "trapWarning": "A ve C iki uçtaki yanlış yorumlardır. D ve E metinde yoktur.",
+        "explanation": "Teorinin her detayı kabul görmese de erken yazı ile muhasebe arasındaki bağ geniş çapta kabul edilir (B şıkkı)."
+      },
+      {
+        "id": "rb084_q4",
+        "type": "reading",
+        "title": "How Writing Began",
+        "question": "The change of signs from representing objects to representing sounds was important because it _____ .",
+        "options": {
+          "A": "made writing on clay tablets completely unnecessary",
+          "B": "made it possible to write names and sentences",
+          "C": "replaced cuneiform with an alphabet",
+          "D": "limited writing to a single language for many centuries",
+          "E": "ended the use of writing for accounting"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Önem",
+        "trapWarning": "D şıkkı tersidir: sistem birçok dile uyarlanmıştır. A, C ve E metinde yoktur.",
+        "explanation": "Ses temsil eden işaretler adların, yabancı kelimelerin ve sonunda tam cümlelerin yazılmasını sağlamıştır (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb085",
+    "title": "The Scale of Food Waste",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from UNEP Food Waste Index & FAO reports",
+    "wordCount": 278,
+    "passageText": "According to the United Nations Environment Programme, more than one billion tonnes of food were wasted in 2022, about a fifth of all food available to consumers, in addition to the roughly thirteen percent lost in the supply chain between harvest and retail. At the same time, around 780 million people suffered from hunger. Food waste also has a large environmental cost: producing food that is never eaten uses land, water and energy, and food rotting in landfills releases methane, a powerful greenhouse gas. Taken together, food loss and waste are estimated to generate eight to ten percent of global greenhouse gas emissions.\n\nWhere waste occurs differs by country. In low-income countries, most losses take place early in the supply chain, because of inadequate storage, lack of refrigeration and poor roads that slow transport to markets. In high-income countries, a larger share is wasted by retailers and households. Supermarkets may reject fruit and vegetables that do not meet cosmetic standards, and consumers throw away food that has passed its date label, even though many such products are still safe to eat. Contrary to a common assumption, however, household food waste per person is similar in high-income and middle-income countries.\n\nSolutions therefore vary. In poorer countries, investment in cold storage, better packaging and roads can reduce losses significantly. In wealthier ones, governments and companies have tried clearer date labelling, distinguishing between \"best before\", which refers to quality, and \"use by\", which refers to safety. France passed a law in 2016 banning large supermarkets from destroying unsold food and requiring them to donate it to charities. Campaigns encouraging households to plan meals and use leftovers have also shown measurable results in some countries.",
+    "vocabularyNotes": [
+      {
+        "word": "supply chain",
+        "meaningTr": "tedarik zinciri",
+        "contextNote": "Üretimden satışa kadar süreç."
+      },
+      {
+        "word": "retail",
+        "meaningTr": "perakende",
+        "contextNote": "retailer: perakendeci."
+      },
+      {
+        "word": "methane",
+        "meaningTr": "metan",
+        "contextNote": "Güçlü bir sera gazı."
+      },
+      {
+        "word": "inadequate",
+        "meaningTr": "yetersiz",
+        "contextNote": "Zıt anlamlısı: adequate."
+      },
+      {
+        "word": "cosmetic",
+        "meaningTr": "görünüşle ilgili, kozmetik",
+        "contextNote": "cosmetic standards: görünüş standartları."
+      },
+      {
+        "word": "leftovers",
+        "meaningTr": "artık yemek",
+        "contextNote": "Çoğul kullanılır."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Contrary to a common assumption, however, household food waste per person is similar in high-income and middle-income countries.",
+        "subject": "household food waste per person (kişi başına hane gıda israfı)",
+        "mainVerb": "is (dır)",
+        "objectsAndComplements": "similar in high-income and middle-income countries (yüksek ve orta gelirli ülkelerde benzer)",
+        "grammaticalStructures": [
+          "Contrary to: -in aksine.",
+          "however: cümle içinde zıtlık.",
+          "per person: kişi başına.",
+          "similar in: ... bakımından benzer."
+        ],
+        "translationTr": "Ancak yaygın bir varsayımın aksine, kişi başına hane gıda israfı yüksek ve orta gelirli ülkelerde benzerdir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb085_q1",
+        "type": "reading",
+        "title": "The Scale of Food Waste",
+        "question": "According to the passage, food waste harms the environment partly because _____ .",
+        "options": {
+          "A": "it reduces the number of people who suffer from hunger",
+          "B": "rotting food in landfills releases methane",
+          "C": "it encourages farmers to use less water",
+          "D": "supermarkets donate unsold food to charities",
+          "E": "most waste occurs in low-income countries"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep",
+        "trapWarning": "A şıkkı mantık dışıdır. C şıkkı tersidir: israf edilen gıda su kullanır. D şıkkı bir çözümdür. E şıkkı çevresel zararın nedeni değildir.",
+        "explanation": "Çöplükte çürüyen gıda güçlü bir sera gazı olan metan salar (B şıkkı)."
+      },
+      {
+        "id": "rb085_q2",
+        "type": "reading",
+        "title": "The Scale of Food Waste",
+        "question": "In low-income countries, food is mostly lost _____ .",
+        "options": {
+          "A": "in households after it has been bought and cooked",
+          "B": "early on, due to poor storage and transport",
+          "C": "because supermarkets reject imperfect vegetables",
+          "D": "because consumers misunderstand date labels",
+          "E": "in restaurants, hotels and other parts of the food service industry"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Karşılaştırma",
+        "trapWarning": "C ve D yüksek gelirli ülkelere ait nedenlerdir. A ve E metinde böyle geçmez.",
+        "explanation": "Düşük gelirli ülkelerde kayıplar yetersiz depolama, soğutma eksikliği ve kötü yollar nedeniyle tedarik zincirinin başında olur (B şıkkı)."
+      },
+      {
+        "id": "rb085_q3",
+        "type": "reading",
+        "title": "The Scale of Food Waste",
+        "question": "The sentence beginning \"Contrary to a common assumption\" indicates that _____ .",
+        "options": {
+          "A": "middle-income countries waste no food at all",
+          "B": "household waste per person is not much higher in rich nations",
+          "C": "high-income countries waste far more food per person at home",
+          "D": "households in the poorest countries waste the most food per person",
+          "E": "date labels are used only in high-income countries"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Varsayımın Düzeltilmesi",
+        "trapWarning": "C şıkkı cümlenin düzelttiği yaygın varsayımdır. A, D ve E metinden çıkmaz.",
+        "explanation": "Kişi başına hane israfı yüksek ve orta gelirli ülkelerde benzerdir; yani zengin ülkelerde belirgin şekilde yüksek değildir (B şıkkı)."
+      },
+      {
+        "id": "rb085_q4",
+        "type": "reading",
+        "title": "The Scale of Food Waste",
+        "question": "The French law of 2016 is mentioned as an example of _____ .",
+        "options": {
+          "A": "investment in cold storage and better roads",
+          "B": "a rule making supermarkets donate unsold food",
+          "C": "a campaign encouraging households to plan their meals",
+          "D": "a new system of date labelling",
+          "E": "a ban on cosmetic standards for fruit and vegetables"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örnek",
+        "trapWarning": "A şıkkı yoksul ülkeler için önerilen çözümdür. C ve D başka önlemlerdir. E şıkkı metinde yoktur.",
+        "explanation": "Yasa büyük süpermarketlerin satılmayan gıdayı yok etmesini yasaklayıp hayır kurumlarına bağışlamasını zorunlu kılar (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb086",
+    "title": "Charging Drivers to Enter the City",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from Transport Policy & The Economist",
+    "wordCount": 274,
+    "passageText": "Traffic congestion imposes heavy costs on cities: lost working hours, wasted fuel, air pollution and slower buses and deliveries. Economists have long argued that congestion persists because road space is usually free at the point of use. Each driver who enters a busy street slows down everyone else, but does not pay for the delay imposed on others. The economist William Vickrey proposed in the 1950s that drivers should be charged for using roads at busy times, a policy now known as congestion pricing.\n\nSeveral cities have put the idea into practice. Singapore introduced a charge in 1975 and later adopted an electronic system in which prices vary by location and time of day. London introduced a daily charge for driving into its centre in 2003, and traffic in the zone initially fell by around eighteen percent. Stockholm offers a particularly instructive case. Before a trial in 2006, a majority of residents opposed the charge. During the seven-month trial, traffic across the charging cordon fell by about twenty percent, and queues shrank dramatically. In a referendum held after the trial, a majority voted to keep the charge, and public support has since grown further.\n\nCongestion pricing nevertheless remains controversial. Critics argue that it is unfair to lower-income drivers, who may have fewer alternatives, and that it can harm businesses in the charged area. Supporters reply that most lower-income residents in large cities do not commute by car and that the revenue can be used to improve public transport. New York City, after years of political and legal battles, began charging vehicles entering lower Manhattan in January 2025, becoming the first city in the United States to do so.",
+    "vocabularyNotes": [
+      {
+        "word": "congestion",
+        "meaningTr": "tıkanıklık, sıkışıklık",
+        "contextNote": "traffic congestion: trafik sıkışıklığı."
+      },
+      {
+        "word": "at the point of use",
+        "meaningTr": "kullanım anında",
+        "contextNote": "free at the point of use: kullanırken ücretsiz."
+      },
+      {
+        "word": "instructive",
+        "meaningTr": "öğretici, aydınlatıcı",
+        "contextNote": "instruct: öğretmek."
+      },
+      {
+        "word": "cordon",
+        "meaningTr": "kordon, çevre hattı",
+        "contextNote": "charging cordon: ücretlendirme sınırı."
+      },
+      {
+        "word": "referendum",
+        "meaningTr": "referandum, halk oylaması",
+        "contextNote": "hold a referendum."
+      },
+      {
+        "word": "commute",
+        "meaningTr": "işe gidip gelmek",
+        "contextNote": "commuter: işe gidip gelen."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Each driver who enters a busy street slows down everyone else, but does not pay for the delay imposed on others.",
+        "subject": "Each driver who enters a busy street (kalabalık bir sokağa giren her sürücü)",
+        "mainVerb": "slows down ... but does not pay (yavaşlatır ama ödemez)",
+        "objectsAndComplements": "everyone else (diğer herkesi) + for the delay imposed on others (başkalarına yüklenen gecikme için)",
+        "grammaticalStructures": [
+          "Defining relative öznede (Each driver who ...).",
+          "Phrasal verb (slow down).",
+          "but ile zıt iki yüklem.",
+          "Reduced passive relative (the delay imposed on others)."
+        ],
+        "translationTr": "Kalabalık bir sokağa giren her sürücü diğer herkesi yavaşlatır, ancak başkalarına yüklediği gecikmenin bedelini ödemez."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb086_q1",
+        "type": "reading",
+        "title": "Charging Drivers to Enter the City",
+        "question": "According to economists, congestion persists mainly because _____ .",
+        "options": {
+          "A": "cities have far too few roads for their growing populations",
+          "B": "drivers do not pay for the delays they cause others",
+          "C": "public transport is always slower than driving",
+          "D": "fuel prices are too low in most countries",
+          "E": "deliveries are made at the busiest times of day"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Sebep",
+        "trapWarning": "A, C, D ve E metinde ekonomistlerin açıklaması olarak geçmez.",
+        "explanation": "Yol kullanım anında ücretsizdir; sürücüler başkalarına yükledikleri gecikmenin bedelini ödemez (B şıkkı)."
+      },
+      {
+        "id": "rb086_q2",
+        "type": "reading",
+        "title": "Charging Drivers to Enter the City",
+        "question": "Stockholm is described as an instructive case because _____ .",
+        "options": {
+          "A": "it was the very first city in the world to charge drivers for entry",
+          "B": "opinion moved in favour of the charge after a trial",
+          "C": "traffic increased after the charge was introduced",
+          "D": "the charge was abolished after a referendum",
+          "E": "it uses electronic prices that vary by location and time of day"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örneğin Önemi",
+        "trapWarning": "A şıkkı Singapur'a aittir. C ve D metinle çelişir. E şıkkı Singapur sistemiyle karıştırır.",
+        "explanation": "Denemeden önce çoğunluk karşıydı, denemeden sonra çoğunluk ücretin sürmesine oy verdi (B şıkkı)."
+      },
+      {
+        "id": "rb086_q3",
+        "type": "reading",
+        "title": "Charging Drivers to Enter the City",
+        "question": "Critics of congestion pricing argue that _____ .",
+        "options": {
+          "A": "it has never really reduced traffic levels in any of the cities",
+          "B": "it is unfair to poorer drivers and may hurt businesses",
+          "C": "its revenue is always wasted by city governments",
+          "D": "it makes buses and trains more expensive for ordinary passengers",
+          "E": "it was invented too long ago to be useful"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Eleştiri",
+        "trapWarning": "A şıkkı örneklerle çelişir. C, D ve E metinde yoktur.",
+        "explanation": "Eleştirmenler ücretin düşük gelirli sürücülere haksızlık olduğunu ve bölgedeki işletmelere zarar verebileceğini savunur (B şıkkı)."
+      },
+      {
+        "id": "rb086_q4",
+        "type": "reading",
+        "title": "Charging Drivers to Enter the City",
+        "question": "According to the passage, New York City _____ .",
+        "options": {
+          "A": "finally rejected congestion pricing after a long legal battle",
+          "B": "became the first US city to charge vehicles entering an area",
+          "C": "copied Stockholm's referendum system",
+          "D": "introduced the charge before London did",
+          "E": "now charges drivers who use roads in all parts of the city"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Detay",
+        "trapWarning": "A şıkkı tersidir. D şıkkı tarihle çelişir. E şıkkı metinle çelişir: aşağı Manhattan. C şıkkı metinde yoktur.",
+        "explanation": "New York 2025'te aşağı Manhattan'a giren araçlardan ücret alan ilk ABD şehri olmuştur (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb087",
+    "title": "What Happens When the Minimum Wage Rises?",
+    "topic": "Economics & Environment",
+    "sourceHint": "Adapted from American Economic Review & Nobel Prize summaries",
+    "wordCount": 272,
+    "passageText": "For much of the twentieth century, standard economic theory predicted that raising the minimum wage would reduce employment. The reasoning was straightforward: if the price of labour rises, employers will hire fewer workers, just as consumers buy less of a product when its price goes up. Most economics textbooks presented this conclusion with considerable confidence.\n\nIn 1994, David Card and Alan Krueger published a study that challenged this view. When the American state of New Jersey raised its minimum wage in 1992, they compared employment at fast-food restaurants there with restaurants in neighbouring eastern Pennsylvania, where the minimum wage had not changed. Because the two areas were similar in most other respects, Pennsylvania served as a natural comparison group. Contrary to the prediction, employment in New Jersey did not fall relative to Pennsylvania. This method of using real-world events to create comparison groups, known as a natural experiment, helped earn Card a share of the Nobel Prize in Economics in 2021.\n\nThe study provoked a long debate. Some economists reanalysed the data and found small negative effects; others confirmed the original findings. Several explanations have been proposed for why moderate increases may not reduce employment. Higher wages can reduce staff turnover, saving firms the costs of recruiting and training. In addition, in many local labour markets, employers have some power to set wages below what a fully competitive market would produce, so a higher minimum can bring wages closer to that level without reducing jobs. Most economists now agree that modest increases have little effect on employment, but they continue to disagree about how high the minimum wage can go before significant job losses occur.",
+    "vocabularyNotes": [
+      {
+        "word": "straightforward",
+        "meaningTr": "basit, açık",
+        "contextNote": "Eş anlamlısı: simple, clear."
+      },
+      {
+        "word": "neighbouring",
+        "meaningTr": "komşu",
+        "contextNote": "neighbour kelimesinden."
+      },
+      {
+        "word": "comparison group",
+        "meaningTr": "karşılaştırma grubu",
+        "contextNote": "Kontrol grubu anlamında."
+      },
+      {
+        "word": "natural experiment",
+        "meaningTr": "doğal deney",
+        "contextNote": "Gerçek olayları kullanan araştırma yöntemi."
+      },
+      {
+        "word": "turnover",
+        "meaningTr": "işgücü devri; ciro",
+        "contextNote": "staff turnover: personel devir hızı."
+      },
+      {
+        "word": "modest",
+        "meaningTr": "ılımlı, küçük",
+        "contextNote": "modest increase: küçük artış."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Higher wages can reduce staff turnover, saving firms the costs of recruiting and training.",
+        "subject": "Higher wages (daha yüksek ücretler)",
+        "mainVerb": "can reduce (azaltabilir)",
+        "objectsAndComplements": "staff turnover (personel devir hızını) + [participle: firmaları işe alım ve eğitim maliyetlerinden kurtararak]",
+        "grammaticalStructures": [
+          "can: olasılık.",
+          "Sonuç bildiren -ing (saving firms ...).",
+          "save + kişi + şey: birini bir şeyden kurtarmak."
+        ],
+        "translationTr": "Daha yüksek ücretler personel devir hızını azaltarak firmaları işe alım ve eğitim maliyetlerinden kurtarabilir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb087_q1",
+        "type": "reading",
+        "title": "What Happens When the Minimum Wage Rises?",
+        "question": "According to the standard theory described in the passage, raising the minimum wage would _____ .",
+        "options": {
+          "A": "increase employment by attracting more workers",
+          "B": "lead employers to hire fewer workers",
+          "C": "have no effect on employment at all",
+          "D": "reduce the price of fast food",
+          "E": "increase consumer demand for labour"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Eski Görüş",
+        "trapWarning": "A ve C Card-Krueger tartışmasıyla ilgili yorumlardır, standart teoriye ait değildir. D ve E metinde yoktur.",
+        "explanation": "Standart teoriye göre emeğin fiyatı yükselirse işverenler daha az işçi alır (B şıkkı)."
+      },
+      {
+        "id": "rb087_q2",
+        "type": "reading",
+        "title": "What Happens When the Minimum Wage Rises?",
+        "question": "Why did Card and Krueger compare New Jersey with eastern Pennsylvania?",
+        "options": {
+          "A": "Because Pennsylvania had raised its minimum wage even more",
+          "B": "Because the areas were similar except for the wage change",
+          "C": "Because Pennsylvania had no fast-food restaurants",
+          "D": "Because New Jersey had refused to raise its minimum wage",
+          "E": "Because both states had abolished the minimum wage"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Yöntem Gerekçesi",
+        "trapWarning": "A ve D durumu tersine çevirir. C ve E metinle çelişir.",
+        "explanation": "İki bölge asgari ücret değişikliği dışında çoğu bakımdan benzerdi; bu yüzden Pensilvanya doğal bir karşılaştırma grubu oldu (B şıkkı)."
+      },
+      {
+        "id": "rb087_q3",
+        "type": "reading",
+        "title": "What Happens When the Minimum Wage Rises?",
+        "question": "Which of the following is offered as an explanation for why moderate increases may not reduce jobs?",
+        "options": {
+          "A": "Workers stop looking for jobs when wages rise",
+          "B": "Lower staff turnover can save firms money",
+          "C": "Firms always pass the costs on to the government",
+          "D": "Competition among employers is always perfect",
+          "E": "Fast-food restaurants are not affected by wages"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Açıklama",
+        "trapWarning": "D şıkkı tersidir: metin işverenlerin ücret belirleme gücüne vurgu yapar. A, C ve E metinde yoktur.",
+        "explanation": "Yüksek ücretler personel devrini azaltarak işe alım ve eğitim maliyetlerini düşürür (B şıkkı)."
+      },
+      {
+        "id": "rb087_q4",
+        "type": "reading",
+        "title": "What Happens When the Minimum Wage Rises?",
+        "question": "What do most economists now agree on, according to the passage?",
+        "options": {
+          "A": "Any increase in the minimum wage destroys many jobs",
+          "B": "Modest increases have little effect on employment",
+          "C": "There should be no limit on how high the minimum wage goes",
+          "D": "Card and Krueger's data were entirely wrong",
+          "E": "Natural experiments are useless in economics"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Güncel Uzlaşı",
+        "trapWarning": "A ve D eski görüş ya da tartışmanın bir tarafıdır. C şıkkı son cümleyle çelişir. E şıkkı Nobel bilgisiyle çelişir.",
+        "explanation": "Ekonomistlerin çoğu küçük artışların istihdam üzerinde az etkisi olduğunda hemfikirdir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb088",
+    "title": "A World of Falling Birth Rates",
+    "topic": "Social Sciences",
+    "sourceHint": "Adapted from The Lancet & UN World Population Prospects",
+    "wordCount": 277,
+    "passageText": "For most of history, governments worried about populations growing too fast. Today, an increasing number are worried about the opposite. The total fertility rate, the average number of children a woman is expected to have over her lifetime, has fallen below 2.1, the level needed to keep a population stable without immigration, in more than half of the world's countries. South Korea's rate fell to about 0.72 in 2023, the lowest in the world, while rates in Italy, Spain, Japan and China are all well below 1.5.\n\nThe causes are complex. As countries become richer and more urban, children are less needed as farm workers or as support in old age, and the costs of raising them, especially housing and education, rise. Greater access to education and paid work has given women more choices, and many people now marry later or not at all. In some societies, long working hours and the expectation that women will do most of the childcare discourage people from having children.\n\nLow fertility has major economic consequences. As the share of older people grows, fewer workers support more retirees, putting pressure on pension and health systems. Governments have tried a range of policies, including cash payments for each birth, longer parental leave and subsidized childcare. The evidence suggests that such measures can raise birth rates somewhat, but rarely back to replacement level. Countries such as France and Sweden, which have invested heavily in family support for decades, have higher fertility than most of Europe, yet still below 2.1. Many demographers therefore argue that societies will need to adapt to ageing populations, through immigration, higher retirement ages and increased productivity, rather than expect birth rates to recover fully.",
+    "vocabularyNotes": [
+      {
+        "word": "fertility rate",
+        "meaningTr": "doğurganlık hızı",
+        "contextNote": "total fertility rate: toplam doğurganlık hızı."
+      },
+      {
+        "word": "replacement level",
+        "meaningTr": "nüfusu yenileme düzeyi",
+        "contextNote": "Yaklaşık 2,1 çocuk."
+      },
+      {
+        "word": "retiree",
+        "meaningTr": "emekli",
+        "contextNote": "retire: emekli olmak."
+      },
+      {
+        "word": "subsidized",
+        "meaningTr": "sübvanse edilmiş",
+        "contextNote": "subsidy: devlet desteği."
+      },
+      {
+        "word": "demographer",
+        "meaningTr": "demograf, nüfus bilimci",
+        "contextNote": "demography kelimesinden."
+      },
+      {
+        "word": "productivity",
+        "meaningTr": "verimlilik",
+        "contextNote": "productive: verimli."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "The evidence suggests that such measures can raise birth rates somewhat, but rarely back to replacement level.",
+        "subject": "The evidence (kanıtlar)",
+        "mainVerb": "suggests (göstermektedir)",
+        "objectsAndComplements": "[that-clause: bu tür önlemlerin doğum oranlarını bir miktar artırabileceğini ama nadiren yenileme düzeyine geri getirebileceğini]",
+        "grammaticalStructures": [
+          "somewhat: bir miktar.",
+          "but rarely ...: eksiltili yapı (but [they] rarely [raise them] back ...).",
+          "back to: -e geri."
+        ],
+        "translationTr": "Kanıtlar bu tür önlemlerin doğum oranlarını bir miktar artırabileceğini, ancak nadiren yenileme düzeyine geri getirebileceğini göstermektedir."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb088_q1",
+        "type": "reading",
+        "title": "A World of Falling Birth Rates",
+        "question": "According to the passage, a total fertility rate of 2.1 is significant because it _____ .",
+        "options": {
+          "A": "is the highest fertility rate that has ever been recorded",
+          "B": "keeps a population stable without migration",
+          "C": "is the current rate in South Korea",
+          "D": "is the target set by the United Nations",
+          "E": "is reached only in rich countries"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Tanım",
+        "trapWarning": "C şıkkı Güney Kore'nin oranını yanlış verir. A, D ve E metinde yoktur.",
+        "explanation": "2,1 göç olmadan bir nüfusu sabit tutmak için gereken düzeydir (B şıkkı)."
+      },
+      {
+        "id": "rb088_q2",
+        "type": "reading",
+        "title": "A World of Falling Birth Rates",
+        "question": "Which of the following is NOT given as a cause of falling birth rates?",
+        "options": {
+          "A": "Rising costs of housing and education",
+          "B": "More education and work options for women",
+          "C": "People marrying later or not at all",
+          "D": "A decline in the health of young adults",
+          "E": "Long working hours"
+        },
+        "answer": "D",
+        "difficulty": "Orta",
+        "tacticUsed": "NOT Sorusu",
+        "trapWarning": "A, B, C ve E ikinci paragrafta neden olarak geçer.",
+        "explanation": "Metin genç yetişkinlerin sağlığının kötüleşmesinden söz etmez (D şıkkı)."
+      },
+      {
+        "id": "rb088_q3",
+        "type": "reading",
+        "title": "A World of Falling Birth Rates",
+        "question": "The examples of France and Sweden show that _____ .",
+        "options": {
+          "A": "family support has raised birth rates above replacement level in both",
+          "B": "strong family policies help but do not restore 2.1",
+          "C": "cash payments are more effective than childcare",
+          "D": "these countries have the lowest fertility in Europe",
+          "E": "immigration has stopped in both countries"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Örneğin Çıkarımı",
+        "trapWarning": "A şıkkı metinle çelişir: oranlar hâlâ 2,1'in altındadır. D şıkkı tersidir. C ve E metinde yoktur.",
+        "explanation": "Uzun süreli aile desteği oranları Avrupa ortalamasının üstüne çıkarmış ama 2,1'e ulaştırmamıştır (B şıkkı)."
+      },
+      {
+        "id": "rb088_q4",
+        "type": "reading",
+        "title": "A World of Falling Birth Rates",
+        "question": "Many demographers believe that societies should _____ .",
+        "options": {
+          "A": "expect birth rates to return to their earlier levels soon",
+          "B": "adapt to ageing populations, not wait for recovery",
+          "C": "ban immigration in order to protect their pension systems",
+          "D": "lower the retirement age to create jobs",
+          "E": "stop all forms of family support"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Görüş",
+        "trapWarning": "A şıkkı son cümlenin reddettiği beklentidir. C ve D önerilenlerin tersidir. E şıkkı metinde yoktur.",
+        "explanation": "Demograflar doğum oranlarının tamamen toparlanmasını beklemek yerine yaşlanan nüfusa uyum sağlanması gerektiğini savunur (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb089",
+    "title": "The Myth of Multitasking",
+    "topic": "Social Sciences",
+    "sourceHint": "Adapted from PNAS & Journal of Experimental Psychology",
+    "wordCount": 278,
+    "passageText": "Many people believe that they are good at multitasking: answering emails during meetings, studying with the television on or checking their phones while talking to friends. Research in cognitive psychology suggests that this belief is largely mistaken. For tasks that require attention, the brain does not truly do two things at once. Instead, it switches rapidly between them, and each switch carries a cost in time and accuracy.\n\nThese costs can be surprisingly large. In laboratory experiments, people who alternate between two tasks take longer and make more errors than people who complete the same tasks one after the other. The penalty increases when the tasks are complex or unfamiliar. Even brief interruptions matter: one study found that interruptions lasting only a few seconds doubled the error rate on a sequence-based task. Some activities can be combined with little cost, such as walking and talking, because one of them has become automatic through practice. Problems arise when both tasks compete for the same mental resources, such as language or visual attention.\n\nA well-known 2009 study at Stanford University compared people who regularly used many forms of media at once with those who rarely did. Surprisingly, the heavy multitaskers performed worse on tests of filtering out irrelevant information and switching between tasks, the very skills one might expect them to have developed. Later studies have produced mixed results, and it is not clear whether heavy multitasking causes these weaknesses or whether people who are easily distracted are more likely to multitask. Nevertheless, the practical advice from researchers is consistent: for demanding work, such as studying for an exam, focusing on a single task and limiting interruptions leads to better results.",
+    "vocabularyNotes": [
+      {
+        "word": "multitask",
+        "meaningTr": "aynı anda birden fazla iş yapmak",
+        "contextNote": "multi- + task."
+      },
+      {
+        "word": "alternate",
+        "meaningTr": "dönüşümlü yapmak",
+        "contextNote": "alternate between A and B."
+      },
+      {
+        "word": "penalty",
+        "meaningTr": "ceza, bedel",
+        "contextNote": "Burada performans kaybı."
+      },
+      {
+        "word": "interruption",
+        "meaningTr": "kesinti",
+        "contextNote": "interrupt fiilinden."
+      },
+      {
+        "word": "filter out",
+        "meaningTr": "ayıklamak, süzmek",
+        "contextNote": "filter out irrelevant information."
+      },
+      {
+        "word": "distracted",
+        "meaningTr": "dikkati dağılmış",
+        "contextNote": "distract: dikkatini dağıtmak."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Surprisingly, the heavy multitaskers performed worse on tests of filtering out irrelevant information and switching between tasks, the very skills one might expect them to have developed.",
+        "subject": "the heavy multitaskers (yoğun çoklu görev yapanlar)",
+        "mainVerb": "performed worse (daha kötü performans gösterdi)",
+        "objectsAndComplements": "on tests of filtering out ... and switching ... + [appositive: tam da onların geliştirmiş olmasını bekleyebileceğimiz beceriler]",
+        "grammaticalStructures": [
+          "Surprisingly: beklenti dışılığı vurgular.",
+          "of + V-ing (gerund) yapıları.",
+          "the very + isim: tam da o.",
+          "expect + nesne + to have + V3: -miş olmasını beklemek."
+        ],
+        "translationTr": "Şaşırtıcı biçimde, yoğun çoklu görev yapanlar, ilgisiz bilgiyi ayıklama ve görevler arasında geçiş yapma testlerinde, yani tam da geliştirmiş olmalarını bekleyebileceğimiz becerilerde daha kötü performans gösterdi."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb089_q1",
+        "type": "reading",
+        "title": "The Myth of Multitasking",
+        "question": "According to the passage, when people multitask on tasks requiring attention, the brain _____ .",
+        "options": {
+          "A": "performs both tasks at the same time without any cost",
+          "B": "switches quickly between tasks, losing time and accuracy",
+          "C": "stops working on the more difficult of the two tasks",
+          "D": "becomes faster and more accurate with every switch",
+          "E": "uses separate areas of the brain that never compete"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Ana Bilgi",
+        "trapWarning": "A şıkkı metnin reddettiği inançtır. D ve E metinle çelişir. C şıkkı metinde yoktur.",
+        "explanation": "Beyin gerçekte iki işi aynı anda yapmaz; aralarında hızla geçiş yapar ve her geçişin bir bedeli vardır (B şıkkı)."
+      },
+      {
+        "id": "rb089_q2",
+        "type": "reading",
+        "title": "The Myth of Multitasking",
+        "question": "Walking and talking can be combined with little cost because _____ .",
+        "options": {
+          "A": "both tasks require language skills",
+          "B": "one of them has become automatic through practice",
+          "C": "the brain stops switching during physical activity",
+          "D": "talking is a less demanding task than reading",
+          "E": "most people practise both tasks in laboratories"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sebep",
+        "trapWarning": "A şıkkı tam tersidir: sorun aynı kaynakları kullanan görevlerde çıkar. C, D ve E metinde yoktur.",
+        "explanation": "Biri pratikle otomatik hale geldiği için bu iki etkinlik az bedelle birleştirilebilir (B şıkkı)."
+      },
+      {
+        "id": "rb089_q3",
+        "type": "reading",
+        "title": "The Myth of Multitasking",
+        "question": "The result of the 2009 Stanford study was surprising because heavy multitaskers _____ .",
+        "options": {
+          "A": "performed better than expected on all of the tests used",
+          "B": "were weaker at the very skills they might have built",
+          "C": "refused to take part in the switching tests",
+          "D": "used fewer forms of media than other people",
+          "E": "were faster at filtering out irrelevant information"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Beklenti-Sonuç Zıtlığı",
+        "trapWarning": "A ve E sonucu tersine çevirir. C ve D metinde yoktur.",
+        "explanation": "Yoğun çoklu görev yapanlar, geliştirmiş olmaları beklenebilecek becerilerde daha zayıf çıkmıştır (B şıkkı)."
+      },
+      {
+        "id": "rb089_q4",
+        "type": "reading",
+        "title": "The Myth of Multitasking",
+        "question": "The researchers' practical advice for studying for an exam is to _____ .",
+        "options": {
+          "A": "study with music or television to stay alert",
+          "B": "focus on one task and limit interruptions",
+          "C": "alternate between several subjects every few minutes",
+          "D": "check messages briefly between each page",
+          "E": "practise multitasking until it becomes automatic"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Tavsiye",
+        "trapWarning": "A, C ve D metnin uyardığı alışkanlıklardır. E şıkkı metinden çıkarılamaz.",
+        "explanation": "Zorlu işlerde tek bir göreve odaklanmak ve kesintileri sınırlamak daha iyi sonuç verir (B şıkkı)."
+      }
+    ]
+  },
+  {
+    "id": "rb090",
+    "title": "Restorative Justice",
+    "topic": "Social Sciences",
+    "sourceHint": "Adapted from Criminology & Campbell Systematic Reviews",
+    "wordCount": 269,
+    "passageText": "Conventional criminal justice systems focus mainly on establishing guilt and imposing punishment. The victim's role is often limited to that of a witness, and offenders may never have to confront the human consequences of what they did. Restorative justice offers a different approach. It brings together offenders, victims and sometimes members of the community, usually in a meeting led by a trained facilitator, to discuss the harm that was caused and agree on how it can be repaired.\n\nIn a typical restorative conference, the offender must first admit responsibility. Victims can then describe how the crime affected them and ask questions that a court trial rarely answers, such as why they were targeted. Agreements may include an apology, financial compensation, community work or commitments to undergo treatment. Restorative justice is usually used alongside, rather than instead of, the formal justice system, and participation is voluntary for victims.\n\nResearch on its effects has been encouraging. A systematic review of ten randomized trials in Australia, the United Kingdom and the United States found that offenders who took part in face-to-face restorative conferences committed somewhat fewer repeat offences over the following two years than those processed only through conventional courts. The effects appeared stronger for violent crimes than for property crimes. Victims who participated reported higher satisfaction, less fear of the offender and, in some studies, fewer symptoms of post-traumatic stress. Critics caution that the approach is not suitable for all cases, particularly where there is a large imbalance of power between offender and victim, as in some cases of domestic violence, and that victims must never feel pressured to take part.",
+    "vocabularyNotes": [
+      {
+        "word": "restorative",
+        "meaningTr": "onarıcı",
+        "contextNote": "restore: onarmak, eski haline getirmek."
+      },
+      {
+        "word": "confront",
+        "meaningTr": "yüzleşmek",
+        "contextNote": "confront the consequences: sonuçlarla yüzleşmek."
+      },
+      {
+        "word": "facilitator",
+        "meaningTr": "kolaylaştırıcı, moderatör",
+        "contextNote": "facilitate: kolaylaştırmak."
+      },
+      {
+        "word": "compensation",
+        "meaningTr": "tazminat",
+        "contextNote": "compensate: telafi etmek."
+      },
+      {
+        "word": "repeat offence",
+        "meaningTr": "tekrar suç",
+        "contextNote": "reoffend: yeniden suç işlemek."
+      },
+      {
+        "word": "imbalance",
+        "meaningTr": "dengesizlik",
+        "contextNote": "power imbalance: güç dengesizliği."
+      }
+    ],
+    "deconstructedSentences": [
+      {
+        "originalSentence": "Restorative justice is usually used alongside, rather than instead of, the formal justice system, and participation is voluntary for victims.",
+        "subject": "Restorative justice / participation (onarıcı adalet / katılım)",
+        "mainVerb": "is used / is (kullanılır / dır)",
+        "objectsAndComplements": "alongside, rather than instead of, the formal justice system (resmi adalet sisteminin yerine değil yanında) + voluntary for victims",
+        "grammaticalStructures": [
+          "Passive (is used).",
+          "alongside, rather than instead of, X: ortak nesneli iki edat.",
+          "and ile iki bağımsız cümle."
+        ],
+        "translationTr": "Onarıcı adalet genellikle resmi adalet sisteminin yerine değil yanında kullanılır ve mağdurlar için katılım gönüllüdür."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rb090_q1",
+        "type": "reading",
+        "title": "Restorative Justice",
+        "question": "According to the passage, restorative justice differs from conventional justice in that it _____ .",
+        "options": {
+          "A": "focuses only on punishing offenders more severely than before",
+          "B": "brings both sides together to address the harm",
+          "C": "replaces courts completely in most countries",
+          "D": "prevents victims from asking any questions",
+          "E": "is used only for property crimes"
+        },
+        "answer": "B",
+        "difficulty": "Orta",
+        "tacticUsed": "Karşılaştırma",
+        "trapWarning": "A şıkkı geleneksel sistemi tarif eder. C şıkkı metinle çelişir: resmi sistemin yanında kullanılır. D şıkkı tersidir. E şıkkı bulgularla çelişir.",
+        "explanation": "Onarıcı adalet failleri, mağdurları ve bazen topluluğu bir araya getirerek verilen zararı ve onarımını tartışır (B şıkkı)."
+      },
+      {
+        "id": "rb090_q2",
+        "type": "reading",
+        "title": "Restorative Justice",
+        "question": "Before a restorative conference can proceed, the offender must _____ .",
+        "options": {
+          "A": "pay financial compensation",
+          "B": "accept responsibility for the offence",
+          "C": "complete a period of community work",
+          "D": "be found guilty of the crime by a jury",
+          "E": "receive psychological treatment"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Ön Koşul",
+        "trapWarning": "A, C ve E sonradan varılabilecek anlaşmalardır. D şıkkı metinde yoktur.",
+        "explanation": "Tipik bir konferansta fail önce sorumluluğu kabul etmelidir (B şıkkı)."
+      },
+      {
+        "id": "rb090_q3",
+        "type": "reading",
+        "title": "Restorative Justice",
+        "question": "The systematic review found that restorative conferences _____ .",
+        "options": {
+          "A": "eliminated all repeat offending among the participants",
+          "B": "reduced reoffending, especially after violent crime",
+          "C": "worked better for property crimes than violent ones",
+          "D": "made victims more afraid of their offenders than before",
+          "E": "had no effect on victims' satisfaction"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Bulgu",
+        "trapWarning": "A şıkkı abartılıdır. C ve D sonucu tersine çevirir. E şıkkı metinle çelişir.",
+        "explanation": "Konferanslar tekrar suçu bir miktar azaltmış, etki şiddet suçlarında daha güçlü olmuştur (B şıkkı)."
+      },
+      {
+        "id": "rb090_q4",
+        "type": "reading",
+        "title": "Restorative Justice",
+        "question": "Critics warn that restorative justice may be unsuitable when _____ .",
+        "options": {
+          "A": "the offender has fully admitted responsibility for the crime",
+          "B": "there is a large power imbalance between the sides",
+          "C": "the crime involved damage to someone's property",
+          "D": "victims want to ask the offender questions",
+          "E": "a trained facilitator leads the meeting"
+        },
+        "answer": "B",
+        "difficulty": "İleri",
+        "tacticUsed": "Sınırlılık",
+        "trapWarning": "A, C, D ve E sürecin normal unsurlarıdır, uygunsuzluk nedeni değildir.",
+        "explanation": "Fail ile mağdur arasında büyük bir güç dengesizliği olduğunda, örneğin bazı aile içi şiddet vakalarında, uygun olmayabilir (B şıkkı)."
       }
     ]
   }
