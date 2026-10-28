@@ -515,16 +515,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "27. Soru - Cümle Tamamlama",
     "question": "Although modern desalination facilities have alleviated chronic freshwater shortages across the Persian Gulf, _____ .",
     "options": {
-      "A": "the hyper-saline brine discharge they release back into shallow marine ecosystems threatens local coral reefs",
-      "B": "they have completely eliminated the need for municipal wastewater management systems",
-      "C": "surrounding desert populations have universally migrated toward equatorial river basins",
-      "D": "oil refineries in the region have consequently abandoned all fossil fuel extraction technologies",
-      "E": "freshwater consumption among wealthy households has dropped to historical minimums"
+      "A": "the brine they discharge into shallow waters threatens local coral reefs",
+      "B": "they have become the main source of drinking water for most coastal cities",
+      "C": "governments in the region have continued to invest heavily in new plants",
+      "D": "the energy they consume is mostly supplied by cheap domestic natural gas",
+      "E": "water shortages in the region are therefore unlikely to return in the near future"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Although Zıtlık Analizi (+/-): Tatlı su krizini hafifletti (+) / Ancak bıraktığı aşırı tuzlu atık mercan resiflerini tehdit ediyor (-)",
-    "trapWarning": "B şıkkındaki 'completely eliminated' YDS'nin sevmediği aşırı genelleme tuzağıdır ve zıtlık yaratmaz.",
+    "trapWarning": "Although zıtlık ister: ilk yarı olumlu (kıtlığı azalttı), ikinci yarı bir sorun söylemeli. B, C, D ve E dilbilgisi olarak oturur ama ya aynı yönde devam eder ya da zıtlık kurmaz.",
     "explanation": "Although tatlı su krizini hafifletti (+) dediği için devamında tesislerin yol açtığı çevre kirliliği veya maliyet gibi olumsuz bir bedel (-) gelmelidir (A şıkkı)."
   },
   {
@@ -535,14 +535,14 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "options": {
       "A": "contemporary social media platforms have fostered deep ideological fragmentation and rapid disinformation",
       "B": "the widespread adoption of the internet has democratized global access to specialized knowledge",
-      "C": "manuscripts written by medieval monks were preserved inside subterranean library vaults",
-      "D": "industrial textile machinery forced thousands of manual laborers into chronic urban unemployment",
-      "E": "steam navigation enabled transoceanic trade routes to circumvent dangerous cape crossings"
+      "C": "the internet has made it harder for governments to control the spread of information",
+      "D": "the printing press also made books much cheaper than handwritten manuscripts",
+      "E": "many scholars believe that the internet has reduced the amount people actually read"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Just as ... so too (Benzerlik / Paralellik Kurgusu)",
-    "trapWarning": "A şıkkı olumsuz bir etki (disinformation) verdiği için matbaanın olumlu eğitim devrimiyle paralellik taşımaz.",
+    "trapWarning": "Just as ... (tıpkı ... gibi) paralel bir olumlu etki ister: matbaa okuryazarlığı yaydı, internet de bilgiye erişimi yaydı. A ve E olumsuz sonuç verir; C yakındır ama okuryazarlık/bilgiye erişim paralelliğini değil siyasi kontrolü öne çıkarır; D ise ikinci yarıda yine matbaadan bahseder.",
     "explanation": "Just as: Tıpkı matbaanın okuryazarlığı ve reformu tetiklemesi gibi, internet de küresel bilgiye erişimi demokratikleştirmiştir (B şıkkı)."
   },
   {
@@ -551,16 +551,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "29. Soru - Cümle Tamamlama",
     "question": "Unless developing countries receive substantial international technology transfers and concessional climate finance, _____ .",
     "options": {
-      "A": "they will have completely transformed their national power grids into carbon-free systems by 2030",
+      "A": "they have already reduced their emissions faster than most developed nations",
       "B": "their reliance on cheap domestic coal to power industrial development will persist for decades",
-      "C": "wealthy donor states will immediately cease all bilateral diplomatic negotiations",
-      "D": "global temperature anomalies will spontaneously revert to pre-industrial benchmarks",
-      "E": "renewable solar panels will automatically become the sole source of electricity worldwide"
+      "C": "they will be able to switch to renewable energy within a few years",
+      "D": "wealthy countries have pledged billions of dollars to help them adapt",
+      "E": "they have been criticized for blocking agreements at recent climate summits"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Unless (Olumsuz Şart) -> Doğal Olumsuz Sonuç",
-    "trapWarning": "A ve E şıkları teknoloji almadan mucizevi şekilde yeşil enerjiye geçeceklerini söyler, saçmadır.",
+    "trapWarning": "Unless (-mezse) gelecek zamanlı olumsuz bir sonuç ister. A ve E zaman uyumunu bozar (present perfect), C anlam olarak ters yöndedir, D ise koşula bağlı bir sonuç değildir.",
     "explanation": "Unless teknoloji transferi ve finansman almadıkları sürece, sanayilerini beslemek için ucuz yerli kömüre olan bağımlılıkları devam edecektir (B şıkkı)."
   },
   {
@@ -569,17 +569,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "30. Soru - Cümle Tamamlama",
     "question": "Because honeybees perform pollination services essential to more than a third of human food crops, _____ .",
     "options": {
-      "A": "their sudden colony collapse poses an existential threat to international agricultural security",
-      "B": "pesticide manufacturers have intentionally doubled their chemical production targets",
-      "C": "wild avian predators avoid hunting near commercial apiaries during seasonal migrations",
-      "D": "synthetic fertilizers have completely replaced all biological processes in modern farming",
-      "E": "honey production has ceased to hold any economic value across regional retail markets"
+      "A": "their declining numbers pose a serious threat to global food security",
+      "B": "many farmers have begun to rent hives during the flowering season",
+      "C": "they have been studied by biologists for more than two centuries",
+      "D": "honey has long been one of the most widely traded natural products",
+      "E": "some wild bee species have become more common in urban gardens"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Because (Sebep-Sonuç Mantığı): İnsan gıdasının üçte birini tozlaştırıyorlar (sebep) -> Yok olmaları küresel tarım güvenliğine tehdittir (sonuç)",
-    "trapWarning": "B şıkkı arıların önemini değil böcek ilacı üreticilerinin niyetini söyler, anlamsızdır.",
-    "explanation": "A şıkkı: Kolonilerinin aniden çökmesi uluslararası tarımsal güvenlik için varoluşsal bir tehdit oluşturmaktadır."
+    "trapWarning": "Because neden-sonuç ister: tozlaşma gıdanın üçte biri için gerekli, o halde arıların azalması gıda güvenliğini tehdit eder. B makul bir sonuçtur ama \"essential to a third of food crops\" vurgusunu karşılamaz; C, D ve E nedenle bağlanmaz.",
+    "explanation": "A şıkkı: Sayılarının azalması küresel gıda güvenliği için ciddi bir tehdit oluşturur."
   },
   {
     "id": "m_q31",
@@ -588,16 +588,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "question": "Whereas traditional classroom instruction is fundamentally bounded by strict geographic and chronological parameters, _____ .",
     "options": {
       "A": "online learning platforms allow self-paced mastery irrespective of physical location",
-      "B": "university textbooks have remained remarkably unchanged over the past fifty years",
-      "C": "standardized pen-and-paper examinations are preferred by conservative educators",
-      "D": "commute times for suburban students frequently exceed ninety minutes every morning",
-      "E": "vocational apprenticeships prioritize manual craftsmanship over abstract theories"
+      "B": "online courses are also limited to a fixed schedule of live lectures",
+      "C": "students learn more effectively when they interact with a teacher face to face",
+      "D": "most universities have been reluctant to give up their physical campuses",
+      "E": "classroom teachers can adapt their lessons to the needs of each student"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Whereas (Kıyaslama): Geleneksel sınıf coğrafi ve zamansal sınırlara tabiyken, online platformlar konumdan bağımsız öğrenme sağlar.",
-    "trapWarning": "B şıkkı ders kitaplarından bahseder, sınıf öğretimiyle karşıtlık oluşturmaz.",
-    "explanation": "A şıkkı: 'online learning platforms allow self-paced mastery irrespective of physical location' tam bir zıt kıyaslamadır."
+    "trapWarning": "Whereas iki şeyi karşılaştırır: sınıf (yer ve zamana bağlı) vs. çevrimiçi (bağımsız). B karşılaştırmayı kurar ama aynı sınırlamayı söyler; C ve E sınıf lehine konuşup karşıtlığı kurmaz; D ise ikinci tarafı vermez.",
+    "explanation": "A şıkkı: Çevrimiçi kurslar her yerden ve kendi hızında öğrenmeye izin verir; bu, sınıfın yer ve zaman sınırlarıyla tam bir zıt kıyaslamadır."
   },
   {
     "id": "m_q32",
@@ -605,16 +605,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "32. Soru - Cümle Tamamlama",
     "question": "_____ , deep-sea hydrothermal vents harbor thriving ecosystems that derive their energy exclusively from chemosynthesis.",
     "options": {
-      "A": "Since solar radiation penetrates down to the abyssal trenches of the Mariana basin",
+      "A": "Because sunlight reaches even the deepest parts of the ocean floor",
       "B": "Despite the total absence of sunlight and the crushing hydrostatic pressure of the ocean floor",
-      "C": "Whenever commercial trawlers drag heavy nets across shallow continental shelves",
-      "D": "Because marine algae perform photosynthesis at rates far exceeding terrestrial plants",
-      "E": "In order that coastal mangroves can protect barrier islands against seasonal typhoons"
+      "C": "Although they were discovered only in the late 1970s",
+      "D": "Since the water around them is rich in dissolved oxygen and light",
+      "E": "Unlike the coral reefs that also depend on chemical energy"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Zıtlık Zarfı (Güneş ışığının tamamen yokluğuna ve ezici basınca rağmen canlılar yaşar)",
-    "trapWarning": "A şıkkı bilimsel olarak yanlıştır; güneş ışığı okyanus tabanına asla ulaşamaz.",
+    "trapWarning": "Ana cümle \"enerjiyi yalnızca kemosentezden alır\" der; boşlukta ışıksızlığa rağmen gibi bir zıtlık gerekir. A ve D metinle çelişir; C dilbilgisi olarak oturur ama zıtlık mantığı kurmaz; E ise mercanlar hakkında yanlış bir karşılaştırma yapar.",
     "explanation": "B şıkkı: 'Güneş ışığının tamamen yokluğuna ve okyanus tabanının ezici hidrostatik basıncına rağmen, derin deniz bacaları kemosentezden beslenen canlı ekosistemler barındırır'."
   },
   {
@@ -623,16 +623,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "33. Soru - Cümle Tamamlama",
     "question": "So rapidly have artificial intelligence models evolved in generating natural human language _____ .",
     "options": {
-      "A": "that distinguishing between machine-generated essays and human scholarship has become exceptionally challenging",
-      "B": "because international copyright conventions were originally drafted for printed literary works",
-      "C": "unless supercomputing clusters are cooled with specialized cryogenic liquid nitrogen loops",
-      "D": "although cognitive linguists had predicted that syntax was entirely unique to hominid brains",
-      "E": "in case malicious cyber attackers exploit weaknesses in municipal electrical grids"
+      "A": "that it is now very hard to tell machine-written essays from human ones",
+      "B": "as many experts had predicted at the beginning of the decade",
+      "C": "that most universities banned their use in written exams years ago",
+      "D": "since researchers first trained them on large collections of text",
+      "E": "that their ability to understand meaning has been proven conclusively"
     },
     "answer": "A",
     "difficulty": "YDS Master",
     "tacticUsed": "So + Adverb + Inversion ... that + Cümle (So rapidly have they evolved that...)",
-    "trapWarning": "'So ... that' kalıbıdır! 'So rapidly' başa geldiği için cümle devriktir (have AI models evolved), arkasından kesinlikle 'that' gelir.",
+    "trapWarning": "So ... that yapısı: boşluk \"that\" ile başlamalı (B ve D elenir). C zaman olarak tutarsızdır (\"years ago\" ile yakın gelişme), E ise üretim hızından anlama kapasitesine sıçrayan aşırı bir sonuçtur.",
     "explanation": "So + zarf devrik başlangıcının tamlayıcısı 'that' sonucudur. O kadar hızlı geliştiler ki, makine metinlerini insan yazısından ayırt etmek olağanüstü zorlaştı (A şıkkı)."
   },
   {
@@ -641,16 +641,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "34. Soru - Cümle Tamamlama",
     "question": "While genetic predisposition undoubtedly plays an influential role in the manifestation of clinical depression, _____ .",
     "options": {
-      "A": "monozygotic twins always exhibit identical susceptibility to affective disorders",
+      "A": "identical twins almost always share the same risk of developing the disorder",
       "B": "environmental stressors and social isolation are equally potent determinants of psychiatric vulnerability",
-      "C": "antidepressant pharmaceuticals alter neurotransmitter concentrations within thirty minutes of ingestion",
-      "D": "neurosurgeons rarely perform lobotomies in contemporary psychiatric institutions",
-      "E": "the human genome project has successfully mapped every single base pair sequence"
+      "C": "antidepressants remain the most widely prescribed treatment for the condition",
+      "D": "scientists have identified a single gene that is responsible for most cases",
+      "E": "people with a family history of depression are more likely to develop it"
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "While Zıtlığı (Genetik yatkınlık rol oynarken, çevresel faktörler de eşit derecede etkilidir)",
-    "trapWarning": "A şıkkındaki 'always exhibit identical' zıtlık yaratmaz ve aşırı uç bir ifadedir.",
+    "trapWarning": "While (-se de) zıtlık ister: genetik önemli AMA başka etkenler de önemli. A ve E yine genetiği destekler; D genetiği daha da güçlendirir; C ise konuyu tedaviye kaydırır.",
     "explanation": "While genetik rol oynar dese de, çevresel stres faktörleri ve sosyal izolasyon da eşit derecede güçlü belirleyicilerdir (B şıkkı)."
   },
   {
@@ -659,16 +659,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "35. Soru - Cümle Tamamlama",
     "question": "In light of mounting evidence linking microplastic ingestion to endocrine disruption in marine mammals, _____ .",
     "options": {
-      "A": "several sovereign governments have enacted comprehensive bans on single-use non-biodegradable packaging",
-      "B": "plastic manufacturing conglomerates have enjoyed unprecedented profit margins in recent quarters",
-      "C": "oceanic currents have slowed their circulatory speed across the North Atlantic gyre",
-      "D": "offshore oil drilling rigs have expanded their operations into protected polar sanctuaries",
-      "E": "deep-sea submersibles are capable of descending beneath eleven thousand meters of depth"
+      "A": "several governments have banned single-use plastic packaging",
+      "B": "plastic producers have argued that the evidence is still incomplete",
+      "C": "marine mammals have been observed eating plastic for decades",
+      "D": "plastic production has continued to increase worldwide",
+      "E": "researchers have called for more studies on the effects of plastic on humans"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "In light of (Işığında / Göz önüne alındığında) -> Harekete Geçme / Karar",
-    "trapWarning": "B şıkkı şirket karlarından bahseder, hükümetlerin plastik kirliliğine karşı tedbir alması mantıksal beklentidir.",
+    "trapWarning": "In light of (... ışığında) sonuç/tepki ister. B ve D artan kanıtla ters yöne gider; C neden-sonuç değil arka plan bilgisidir. E de bir tepkidir ama kanıtın sonucu değil başka bir konuya geçer; en doğrudan sonuç yasaklamadır.",
     "explanation": "A şıkkı: Deniz memelilerinde hormon bozukluğu kanıtları ışığında, birçok hükümet tek kullanımlık ambalajlara kapsamlı yasaklar getirdi."
   },
   {
@@ -677,16 +677,16 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "title": "36. Soru - Cümle Tamamlama",
     "question": "Even if multinational trade agreements are finalized with the utmost diplomatic diligence, _____ .",
     "options": {
-      "A": "customs officials will celebrate the immediate disappearance of all black market smuggling",
+      "A": "they will probably be welcomed by local manufacturers and labour unions",
       "B": "domestic interest groups and protectionist lobbies will inevitably voice vehement opposition",
-      "C": "every member nation will automatically enjoy identical export surpluses in manufactured goods",
-      "D": "foreign direct investment has historically remained immune to sudden currency devaluations",
-      "E": "consumer prices will universally fall by more than fifty percent across retail sectors"
+      "C": "they usually take several years to negotiate and approve",
+      "D": "they were often rejected by national parliaments in the past",
+      "E": "consumers will benefit from lower prices on imported goods"
     },
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Even if (Olsa bile): Büyük bir özenle imzalansa bile, yerel çıkar grupları sert muhalefet gösterecektir.",
-    "trapWarning": "A, C ve E şıklarındaki pembe tablolar (herkesin aynı karı elde etmesi vb.) 'even if' zıtlığıyla uyuşmaz.",
+    "trapWarning": "Even if (... olsa bile) beklenmedik/olumsuz bir sonuç ister. A ve E olumlu sonuç verip zıtlığı kurmaz; C ve D genel bilgi verir, D ayrıca zaman uyumunu bozar.",
     "explanation": "B şıkkı: Ne kadar özenle hazırlansa bile (Even if), yerel çıkar grupları ve korumacı lobiler kaçınılmaz olarak şiddetli muhalefet dile getirecektir."
   },
   {
@@ -1184,17 +1184,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Dr. Evans & Prof. Jenkins",
     "question": "Dr. Evans: Did you review the latest clinical trial results for the novel oncology drug?\nProf. Jenkins: Yes, and while the tumor shrinkage was indeed impressive, the incidence of severe hepatotoxicity among elderly patients is alarming.\nDr. Evans: _____ \nProf. Jenkins: Exactly. Unless we can synthesize a targeted delivery mechanism, the regulatory agency will never grant commercial approval.",
     "options": {
-      "A": "So you mean that the therapeutic benefits are completely overshadowed by its systemic toxicity?",
-      "B": "Why don't we immediately start mass production without consulting the ethics committee?",
-      "C": "I disagree with you entirely; the liver enzymes returned to normal levels within hours.",
-      "D": "Have you scheduled an interview with the patient's immediate relatives yet?",
-      "E": "The cost of the laboratory equipment was fortunately reimbursed by our university."
+      "A": "So you think the side effects may outweigh its benefits for these patients?",
+      "B": "So you think we should simply lower the dose for elderly patients?",
+      "C": "So you believe the liver damage was caused by another medication?",
+      "D": "So you suggest we test the drug on younger patients only?",
+      "E": "So you expect the agency to approve it despite the side effects?"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Diyalog Mantığı & 'Exactly' Onayı: Prof. Jenkins 'Exactly. Unless we synthesize a targeted delivery...' diyerek Evans'ın tehlike tespitini onaylıyor.",
-    "trapWarning": "C şıkkı 'I disagree' der; oysa Jenkins 'Exactly' ile Evans'a tam destek vermektedir.",
-    "explanation": "Prof. Jenkins ilacın karaciğere toksik olduğunu söylediğinde Dr. Evans 'Yani tedavi edici faydalarının toksisitesi tarafından gölgelendiğini mi söylüyorsun?' diye özetler (A şıkkı)."
+    "trapWarning": "Bütün şıklar \"So you...\" ile başlar. Jenkins \"Exactly\" deyip özel bir taşıma sistemi gerektiğini söyler; bu yüzden boşlukta yan etkilerin faydayı gölgelediği yorumu olmalıdır. B ve D başka çözümler önerir, E ise Jenkins'in sözüyle çelişir.",
+    "explanation": "Prof. Jenkins ilacın karaciğere toksik olduğunu söylediğinde Dr. Evans 'Yani yan etkilerin bu hastalar için faydalardan ağır basabileceğini mi düşünüyorsun?' diye özetler (A şıkkı)."
   },
   {
     "id": "m_q64",
@@ -1203,17 +1203,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Sarah & David (Urban Planning Conference)",
     "question": "Sarah: Several major metropolitan areas in Europe have started banning private diesel vehicles from central business districts to combat smog.\nDavid: _____ \nSarah: Actually, economic data shows the opposite. Foot traffic increased substantially, and retail revenues rose because city centers became far more hospitable and pedestrian-friendly.",
     "options": {
-      "A": "I wonder whether local shop owners lodged fierce protests fearing an immediate collapse in consumer retail sales.",
-      "B": "Diesel vehicles have historically been proven to consume far less fuel than gasoline engines.",
-      "C": "Are electric vehicle charging stations being installed at every street intersection?",
-      "D": "I suppose bicycles will eventually be banned from shared bus lanes as well.",
-      "E": "Did the mayor decide to run for prime minister in the upcoming general elections?"
+      "A": "Didn't local shop owners fear that their sales would fall?",
+      "B": "Has the air quality in those cities actually improved since then?",
+      "C": "Weren't commuters angry about the longer travel times?",
+      "D": "Do you think the bans will be extended to petrol cars as well?",
+      "E": "How did the cities persuade residents to accept the bans?"
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "'Actually, economic data shows the opposite': Karşı tarafın ekonomik kayıp endişesini çürüten cevap",
-    "trapWarning": "Sarah 'tam tersine yaya trafiği ve esnaf geliri arttı' diyorsa, David öncesinde dükkan sahiplerinin iflas edeceğinden korktuğunu söylemiş olmalıdır.",
-    "explanation": "A şıkkında David esnafın satışların çökeceğinden korkup protesto edip etmediğini sorar; Sarah da 'Aksine, veriler yaya trafiğinin ve dükkan gelirlerinin arttığını gösteriyor' der."
+    "trapWarning": "Sarah \"Actually ... the opposite\" der ve yaya trafiği ile satışların arttığını anlatır. Yani David ekonomik bir kaygı dile getirmiş olmalıdır. B, C, D ve E de makul sorulardır ama Sarah'nın cevabı satışlarla ilgilidir.",
+    "explanation": "A şıkkında David esnafın satışların düşeceğinden korkmadığını sorar; Sarah da 'Aksine, veriler yaya trafiğinin ve dükkan gelirlerinin arttığını gösteriyor' der."
   },
   {
     "id": "m_q65",
@@ -1222,17 +1222,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Clara & Mark (Astronomy Seminar)",
     "question": "Clara: Why are astrophysicists so eager to construct space-based gravitational wave observatories when we already have LIGO on Earth?\nMark: _____ \nClara: Ah, that makes complete sense. Ground vibrations and seismic tremors mask low-frequency signals that only space-based instruments can detect.",
     "options": {
-      "A": "Because space-based projects are funded entirely by private philanthropic donations rather than taxes.",
-      "B": "Terrestrial detectors suffer from unavoidable seismic noise, whereas the cosmic vacuum provides an undisturbed vantage point for low-frequency waves.",
-      "C": "Ground-based observatories were all destroyed by recent meteor showers over the Pacific.",
-      "D": "LIGO has already detected every single black hole merger that will ever occur in the universe.",
-      "E": "Optical telescopes in Chile have completely superseded all gravitational wave technology."
+      "A": "Because space observatories are much cheaper to maintain than LIGO.",
+      "B": "Because on Earth seismic noise drowns out low-frequency waves.",
+      "C": "Because LIGO cannot detect waves from distant black holes.",
+      "D": "Because space detectors can be built with much longer arms.",
+      "E": "Because the atmosphere distorts gravitational waves before they reach us."
     },
     "answer": "B",
     "difficulty": "Orta",
     "tacticUsed": "Clara'nın İkinci Cümlesinden Çıkarım: 'Ground vibrations and seismic tremors mask low-frequency signals'",
-    "trapWarning": "Clara 'Ah, yer titreşimlerinin sinyali engellediği mantıklı' dediğine göre Mark yerdeki sismik gürültüden (seismic noise) bahsetmiş olmalıdır.",
-    "explanation": "B şıkkında Mark yeryüzündeki sismik gürültünün sinyalleri bozduğunu, uzaydaki boşluğun ise pürüzsüz gözlem sağladığını belirtir."
+    "trapWarning": "Clara \"Ground vibrations and seismic tremors mask low-frequency signals\" diye özetler. D gerçek bir avantajdır ama Clara'nın özetiyle bağlanmaz; E ise atmosferi karıştırır.",
+    "explanation": "B şıkkında Mark yeryüzündeki sismik gürültünün düşük frekanslı dalgaları bastırdığını söyler; Clara da bunu özetler."
   },
   {
     "id": "m_q66",
@@ -1241,17 +1241,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Reporter & Marine Biologist",
     "question": "Reporter: Many tourists are thrilled when coastal municipalities build artificial reefs using decommissioned ships.\nMarine Biologist: While they can indeed provide immediate hard substrates for sessile marine invertebrates, we must remain vigilant.\nReporter: _____ \nMarine Biologist: If the vessels are not meticulously stripped of lead paints, asbestos, and toxic petrochemical residues, they become long-term sources of marine contamination.",
     "options": {
-      "A": "What kind of hazards could submerged metal structures possibly pose to benthic life?",
-      "B": "How many scuba diving licenses were issued to tourists during the previous summer season?",
-      "C": "Do commercial fishermen agree to donate their boats without receiving any financial subsidies?",
-      "D": "Which coral species reproduces fastest when attached to granite boulders?",
-      "E": "Are shipping containers lighter than military aircraft carriers?"
+      "A": "What risks could a sunken ship pose to marine life?",
+      "B": "How long does it take for coral to cover a sunken ship?",
+      "C": "Do artificial reefs attract more fish than natural ones?",
+      "D": "Why do tourists find these artificial reefs so attractive?",
+      "E": "Who pays for sinking the ships in the right location?"
     },
     "answer": "A",
     "difficulty": "Orta",
     "tacticUsed": "Tehlike Detayı İsteme: Biyolog 'meticulously stripped of lead, asbestos, petrochemicals' diyerek tehlikeleri sıralıyor.",
-    "trapWarning": "B ve C şıkları turizm ve para üzerinedir; biyoloğun cevabı kurşun ve asbest gibi çevre tehlikeleridir.",
-    "explanation": "Muhabir 'Batırılan gemiler deniz yaşamına ne gibi tehlikeler yaratabilir ki?' (A şıkkı) diye sorduğunda biyolog boya, asbest ve kimyasal sızıntı risklerini anlatır."
+    "trapWarning": "Biyolog cevabında kurşun boya, asbest ve kirlilik gibi riskleri anlatır; boşlukta risk sorusu olmalıdır. B ve C konuyla ilgili ama cevabı \"if the vessels are not stripped...\" ile bağlanmaz.",
+    "explanation": "Muhabir 'Batırılan bir gemi deniz yaşamı için ne gibi riskler taşıyabilir?' (A şıkkı) diye sorduğunda biyolog boya, asbest ve kimyasal sızıntı risklerini anlatır."
   },
   {
     "id": "m_q67",
@@ -1260,17 +1260,17 @@ const RAW_YDS_FULL_MOCK_EXAM_1: YdsQuestion[] = [
     "dialogueSpeaker": "Archaeology Students (Tolga & Aylin)",
     "question": "Tolga: Did you hear about the new lidar scans in the Amazon basin? They revealed extensive urban networks hidden under dense forest canopy.\nAylin: That completely disproves the long-held assumption that the Amazon was incapable of supporting large civilizations due to nutrient-poor soils.\nTolga: _____ \nAylin: Absolutely. It proves indigenous communities actively engineered fertile soils and managed sophisticated agrarian economies.",
     "options": {
-      "A": "Exactly, it shows they weren't just nomadic wanderers, but master civil engineers who actively altered their environment.",
-      "B": "I suppose modern satellite imaging is far too expensive to be utilized in third-world excavations.",
-      "C": "Why didn't European conquistadors adopt native agricultural practices instead of mining gold?",
-      "D": "Do you believe tropical rainforests will survive the current rates of commercial deforestation?",
-      "E": "The university should cancel all archaeological field excursions to South America immediately."
+      "A": "So these people must have actively shaped their environment.",
+      "B": "So the soils of the Amazon must have been rich after all.",
+      "C": "But the cities may have been built by later settlers.",
+      "D": "But lidar can sometimes mistake natural features for buildings.",
+      "E": "So the forest must have been cleared completely at that time."
     },
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Aylin'in 'Absolutely. It proves indigenous communities engineered fertile soils' onayına zemin hazırlayan cümle",
-    "trapWarning": "E şıkkı olumsuz bir öneridir; diyalog Amazon'daki şaşırtıcı medeniyet keşfinin heyecanını paylaşır.",
-    "explanation": "Tolga 'Aynen öyle; onların sadece göçebe değil çevrelerini değiştiren usta mühendisler olduklarını gösteriyor' (A şıkkı) dediğinde Aylin 'Kesinlikle' diyerek onaylar."
+    "trapWarning": "Aylin \"Absolutely\" der ve yerli toplulukların verimli toprağı kendilerinin oluşturduğunu söyler. B ince tuzaktır: toprak doğal olarak zengin değildi, insanlar zenginleştirdi. C ve D şüphe bildirir, \"Absolutely\" ile uyuşmaz; E ise aşırı bir sonuçtur.",
+    "explanation": "Tolga 'O halde bu insanlar çevrelerini bilinçli olarak şekillendirmiş olmalı' (A şıkkı) dediğinde Aylin 'Kesinlikle' diyerek onaylar."
   },
   {
     "id": "m_q68",
