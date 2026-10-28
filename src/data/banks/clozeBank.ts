@@ -54,7 +54,7 @@ const RAW_CLOZE_BANK: YdsQuestion[] = [
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "Geçmişte anlatılan olasılık: could + V1",
-    "trapWarning": "C şıkkıümle geçmiş zamandadır ('could not explain'); 'causes', 'has caused' ve 'will cause' zaman uyumunu bozar.",
+    "trapWarning": "Cümle geçmiş zamandadır ('could not explain'); 'causes', 'has caused' ve 'will cause' zaman uyumunu bozar.",
     "explanation": "Kıtaları hareket ettirebilecek kuvveti açıklayamadı: could cause (B şıkkı)."
   },
   {
@@ -252,7 +252,7 @@ const RAW_CLOZE_BANK: YdsQuestion[] = [
     "answer": "C",
     "difficulty": "İleri",
     "tacticUsed": "Örnekleme: including",
-    "trapWarning": "C şıkkıümlenin ana fiili var ('spread'); ikinci çekimli fiil gelemez. 'including' örnek veren edat gibi kullanılır.",
+    "trapWarning": "Cümlenin ana fiili var ('spread'); ikinci çekimli fiil gelemez. 'including' örnek veren edat gibi kullanılır.",
     "explanation": "Kağıt yapımı ve barut dahil: including (C şıkkı)."
   },
   {
@@ -954,7 +954,7 @@ const RAW_CLOZE_BANK: YdsQuestion[] = [
     "answer": "C",
     "difficulty": "İleri",
     "tacticUsed": "Sonuç/açıklama bildiren -ing yapısı",
-    "trapWarning": "C şıkkıümlenin ana fiili 'act' zaten var; ikinci çekimli fiil gelemez. '-ing' ek açıklama yapar.",
+    "trapWarning": "Cümlenin ana fiili 'act' zaten var; ikinci çekimli fiil gelemez. '-ing' ek açıklama yapar.",
     "explanation": "Kuru mevsimlerde su sağlayarak doğal su kulesi görevi görürler: supplying (C şıkkı)."
   },
   {
@@ -1512,7 +1512,7 @@ const RAW_CLOZE_BANK: YdsQuestion[] = [
     "answer": "A",
     "difficulty": "İleri",
     "tacticUsed": "Neden: as",
-    "trapWarning": "A şıkkığaçların yardımcı olma nedeni sesi emmeleridir; 'although' ve 'whereas' zıtlık, 'unless' koşul bildirir; 'so' sonuç bildirir ve yönü ters çevirir.",
+    "trapWarning": "Ağaçların yardımcı olma nedeni sesi emmeleridir; 'although' ve 'whereas' zıtlık, 'unless' koşul bildirir; 'so' sonuç bildirir ve yönü ters çevirir.",
     "explanation": "Ağaçlar sesi emdikleri için yardımcı olabilir: as (A şıkkı)."
   },
   {
@@ -1548,7 +1548,7 @@ const RAW_CLOZE_BANK: YdsQuestion[] = [
     "answer": "B",
     "difficulty": "İleri",
     "tacticUsed": "depending on (… bağlı olarak)",
-    "trapWarning": "C şıkkıümlenin ana fiili 'has' zaten var; çekimli 'depends' ikinci yüklem yaratır. 'depending on' kalıp edattır.",
+    "trapWarning": "Cümlenin ana fiili 'has' zaten var; çekimli 'depends' ikinci yüklem yaratır. 'depending on' kalıp edattır.",
     "explanation": "Her arının yaşına bağlı olarak belirli bir rolü vardır: depending (B şıkkı)."
   },
   {
