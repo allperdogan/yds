@@ -791,16 +791,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'The lowland rainforests of the Yucatán Peninsula presented severe environmental constraints to ancient Maya civilization. Unlike the perennial river systems that nourished ancient Egypt and Mesopotamia, the northern Maya lowlands possessed a karst limestone geology that allowed rainwater to percolate instantly into deep subterranean caverns, leaving the surface arid for half the year. To sustain urban centers numbering tens of thousands of residents, Maya civil engineers devised massive artificial water reservoirs known as aguadas. At major cities like Tikal, monumental plaster-lined plazas were sloped with extreme precision to channel monsoon downpours into filtered settling tanks. Sedimentary core analyses reveal that Maya hydrologists utilized quartz sand and zeolite minerals imported from mountainous regions to purify water supplies. This sophisticated water management infrastructure allowed the Maya to flourish in an unforgiving tropical ecology for millennia until prolonged megadroughts overwhelmed their storage capacity.',
     question: 'According to the passage, the primary hydrological challenge facing the ancient Maya was that _____',
     options: {
-      A: 'the karst limestone landscape allowed rainwater to drain rapidly into underground caves rather than remaining on the surface.',
-      B: 'perennial river floods repeatedly destroyed city plazas and residential farming districts.',
-      C: 'monsoon rainfall was completely absent throughout the entire calendar year.',
-      D: 'subterranean caverns contained toxic volcanic minerals that poisoned all drinking water.',
-      E: 'Maya engineers lacked the mathematical skills required to construct sloped architectural surfaces.'
+      A: 'rainwater quickly drained through the limestone into underground caves.',
+      B: 'the rivers of the region dried up for half the year during the dry season.',
+      C: 'monsoon rains were too heavy for the city plazas to channel effectively.',
+      D: 'the water in subterranean caverns was too salty for urban consumption.',
+      E: 'the mountains blocked rainfall from reaching the northern lowlands.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Doğrudan Bilgi: Karstik kireçtaşı arazisinin suyu hemen yer altına sızdırması',
-    trapWarning: 'B şıkkında nehir taşkınları der; oysa metin bölgede düzenli nehir sistemleri olmadığını söyler.',
+    trapWarning: 'B tuzağı: metin bölgede sürekli akan nehir olmadığını söyler, kuruyan nehirden bahsetmez. C ve D metinde geçen kelimeleri (monsoon, caverns) kullanır ama metnin söylemediği bir sorun uydurur.',
     explanation: 'Metne göre zorluk: "karst limestone geology allowed rainwater to percolate instantly into subterranean caverns, leaving surface arid". Doğru cevap A.'
   },
   {
@@ -810,15 +810,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'It is stated in the passage that the city plazas of Tikal were specifically designed to _____',
     options: {
       A: 'capture monsoon rainfall and channel it directly into filtration and storage systems.',
-      B: 'serve exclusively as defensive fortifications against hostile neighboring kingdoms.',
-      C: 'prevent quartz sand and zeolite minerals from being transported into the city.',
-      D: 'divert rainwater into agricultural valleys to provoke deliberate soil erosion.',
-      E: 'protect sacred temple monuments from any contact with environmental moisture.'
+      B: 'drain monsoon floods away from the residential districts of the city.',
+      C: 'collect quartz sand and zeolite carried down by seasonal rains.',
+      D: 'store rainwater directly on the plaza surface during the dry season.',
+      E: 'allow rainwater to soak into the limestone beneath the city.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Plazaların Amacı: Yağmur suyunu yakalayıp filtrelere yönlendirmek',
-    trapWarning: 'Metin: "plazas were sloped with extreme precision to channel downpours into filtered settling tanks" der.',
+    trapWarning: 'Metin: "sloped ... to channel monsoon downpours into filtered settling tanks". B suyu uzaklaştırmaktan bahseder (tersi), D suyu plazada tutar, E ise karst sorununu çözüm gibi sunar.',
     explanation: 'Tikal meydanları: muson yağmurlarını yakalayıp arıtma ve depolama tanklarına yönlendirmek için hassas bir eğimle inşa edilmiştir. Doğru cevap A.'
   },
   {
@@ -827,16 +827,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '45. Soru - Paragraf 1',
     question: 'The passage mentions the use of quartz sand and zeolite minerals to illustrate that the Maya _____',
     options: {
-      A: 'possessed sophisticated water purification technologies that relied on distant imported materials.',
-      B: 'relied entirely on primitive superstition to explain water-borne microbial illnesses.',
-      C: 'traded drinking water to neighboring civilizations in exchange for decorative jewels.',
-      D: 'were completely unaware of the chemical properties of natural volcanic stones.',
-      E: 'intentionally contaminated urban reservoirs to deter invading military forces.'
+      A: 'purified their water with materials brought from distant regions.',
+      B: 'traded actively with mountain communities for building materials.',
+      C: 'used imported minerals to line and seal their reservoir walls.',
+      D: 'lacked the local resources needed to build large reservoirs.',
+      E: 'relied mainly on mountain springs rather than collected rainwater.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Örnekleme Amacı: Gelişmiş su arıtma teknolojisi',
-    trapWarning: 'Zeolit ve kuartz mineralleri su arıtmak (purify water) için dağlık bölgelerden ithal edilmiştir.',
+    trapWarning: 'Minerallerin amacı "to purify water supplies". B ticareti, C sızdırmazlığı (metinde plaster geçer, mineral değil), D eksikliği öne çıkarır; hepsi metne yakın ama amaç yanlıştır.',
     explanation: 'Kuartz ve zeolit mineralleri: Mayaların uzak bölgelerden malzeme getirerek ileri düzey su arıtma teknolojileri geliştirdiğini gösterir. Doğru cevap A.'
   },
   {
@@ -845,16 +845,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '46. Soru - Paragraf 1',
     question: 'Which factor ultimately contributed to the breakdown of the Maya hydrological systems?',
     options: {
-      A: 'Severe and prolonged megadroughts that exceeded their reservoir capacity.',
-      B: 'A catastrophic volcanic eruption that buried the entire Yucatán Peninsula in ash.',
-      C: 'An invasion by Egyptian armies who dismantled the monumental plazas.',
-      D: 'The sudden poisoning of all quartz filtration beds by toxic algae.',
-      E: 'A massive increase in perennial river flooding across the northern lowlands.'
+      A: 'Long droughts that exceeded their storage capacity.',
+      B: 'Population growth that outpaced the size of the reservoirs.',
+      C: 'Contamination of the filtration tanks by imported minerals.',
+      D: 'Heavy monsoon rains that damaged the plaster-lined plazas.',
+      E: 'The loss of trade links with the mountainous regions.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Son Cümle Analizi: Sistemin Çöküş Nedeni',
-    trapWarning: 'Metnin son cümlesi: "until prolonged megadroughts overwhelmed their storage capacity" demektedir.',
+    trapWarning: 'Son cümle: "until prolonged megadroughts overwhelmed their storage capacity". B kapasiteyi doğru anar ama nedeni nüfusa bağlar; C, D, E metindeki unsurları çöküş nedeni gibi gösterir.',
     explanation: 'Sistemin çöküş sebebi: su depolama kapasitelerini aşan uzun süreli şiddetli mega-kuraklıklardır (A şıkkı).'
   },
 
@@ -866,16 +866,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Over the past two decades, medical science has recognized that the human body is not a solitary biological entity, but rather a complex holobiont populated by trillions of symbiotic microorganisms. The vast majority of these microbes reside in the gastrointestinal tract, where they perform essential metabolic functions, including synthesizing vitamins and fermenting indigestible dietary fibers into short-chain fatty acids. However, the most revolutionary revelation is the gut-brain axis—a bidirectional biochemical communication superhighway linking the enteric nervous system with the central nervous system. Gut bacteria synthesize approximately ninety percent of the body’s peripheral serotonin, along with other neuroactive molecules like gamma-aminobutyric acid (GABA). By stimulating the vagus nerve and modulating systemic immune inflammation, the microbial flora directly influences emotional resilience, anxiety phenotypes, and neurodegenerative risks.',
     question: 'According to the passage, the gut-brain axis is significant because it _____',
     options: {
-      A: 'serves as a bidirectional communication pathway through which gut microbes influence neurological function.',
-      B: 'proves that the human body functions completely independently of any microbial organisms.',
-      C: 'demonstrates that serotonin is produced exclusively within the cerebral cortex.',
-      D: 'prevents all forms of emotional stress from affecting human gastrointestinal motility.',
-      E: 'eliminates the biological necessity for dietary fiber fermentation in mammals.'
+      A: 'links gut microbes to the functioning of the brain in both directions.',
+      B: 'allows the brain to control which microbes live in the gut.',
+      C: 'explains how gut bacteria synthesize vitamins and fatty acids.',
+      D: 'shows that most serotonin used by the brain is made in the gut.',
+      E: 'replaces the vagus nerve as the main route between gut and brain.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Gut-Brain Axis Tanımı: İki yönlü iletişim otoyolu',
-    trapWarning: 'C şıkkında serotoninin sadece beyinde üretildiğini söyler; oysa metin %90\'ının bağırsakta üretildiğini belirtir.',
+    trapWarning: 'Anahtar: "bidirectional" (iki yönlü). B tek yön verir, C ekseni değil metabolik işlevi anlatır, D "peripheral" serotonin\'i beyne mal eder, E vagus sinirini dışlar.',
     explanation: 'Gut-brain axis önemi: bağırsak mikroplarının sinir sistemini ve beyin fonksiyonlarını etkilediği iki yönlü bir iletişim kanalı olmasıdır. Doğru cevap A.'
   },
   {
@@ -884,16 +884,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '48. Soru - Paragraf 2',
     question: 'It is stated in the text that gut bacteria produce neuroactive substances that can _____',
     options: {
-      A: 'stimulate the vagus nerve and modulate systemic immune inflammation.',
-      B: 'permanently paralyze the central nervous system within hours of ingestion.',
-      C: 'convert all ingested proteins into toxic environmental hydrocarbons.',
-      D: 'suppress all biological communication between the heart and lungs.',
-      E: 'force the human host to cease consuming any form of dietary nutrition.'
+      A: 'affect mood and anxiety by acting on the vagus nerve and immune system.',
+      B: 'replace the serotonin normally produced by the brain.',
+      C: 'convert dietary fibre into short-chain fatty acids.',
+      D: 'prevent neurodegenerative diseases from developing.',
+      E: 'slow down the communication between gut and brain.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Nöroaktif Maddelerin Etkisi: Vagus sinirini uyarır ve enflamasyonu düzenler',
-    trapWarning: 'Metindeki son cümle: "By stimulating the vagus nerve and modulating immune inflammation..." doğrudan bunu söyler.',
+    trapWarning: 'C metinde geçer ama mikropların metabolik işlevidir, nöroaktif maddelerin değil. D aşırı genellemedir: metin "neurodegenerative risks" üzerinde etki der, önler demez.',
     explanation: 'Bağırsak bakterileri vagus sinirini uyarır ve bağışıklık enflamasyonunu düzenler (A şıkkı).'
   },
   {
@@ -902,16 +902,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '49. Soru - Paragraf 2',
     question: 'The term "holobiont" in the passage refers to _____',
     options: {
-      A: 'a composite biological entity consisting of a host organism and its symbiotic microbes.',
-      B: 'a solitary animal that is entirely immune to bacterial infections.',
-      C: 'an artificial computational model used to simulate neural firing patterns.',
-      D: 'a toxic parasite that destroys beneficial gut flora within the gastrointestinal tract.',
-      E: 'a genetically engineered agricultural crop designed to resist droughts.'
+      A: 'a host organism together with its symbiotic microbes.',
+      B: 'the population of bacteria living in the digestive tract.',
+      C: 'a single organism that lives independently of microbes.',
+      D: 'the communication network between the gut and the brain.',
+      E: 'a microorganism that lives inside a larger host.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Terim Açıklaması: Holobiont (Konakçı ve mikropların ortak organizması)',
-    trapWarning: 'Metin: "not a solitary entity, but a holobiont populated by trillions of symbiotic microbes" der.',
+    trapWarning: 'Holobiont = konakçı + mikroplar, bütün olarak. B ve E yalnızca mikrop tarafını verir, C tanımın tersidir, D ise gut-brain axis kavramıyla karıştırır.',
     explanation: 'Holobiont: konak canlı ile onunla yaşayan trilyonlarca simbiyotik mikroorganizmanın oluşturduğu ortak biyolojik varlıktır. Doğru cevap A.'
   },
   {
@@ -920,16 +920,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '50. Soru - Paragraf 2',
     question: 'What can be inferred about serotonin from the passage?',
     options: {
-      A: 'A massive majority of the body’s peripheral supply is synthesized within the gut rather than the brain.',
-      B: 'It is an indigestible mineral that cannot pass through the intestinal wall.',
-      C: 'It is only produced when the human body undergoes extreme starvation.',
-      D: 'It causes acute neurodegeneration whenever it comes into contact with the vagus nerve.',
-      E: 'It has zero influence on emotional regulation or psychological resilience.'
+      A: 'Most of the body\'s peripheral supply comes from gut bacteria.',
+      B: 'The brain depends entirely on gut bacteria for its serotonin.',
+      C: 'It is the only neuroactive molecule produced in the gut.',
+      D: 'Gut bacteria produce it only when stimulated by the vagus nerve.',
+      E: 'It reduces immune inflammation throughout the body.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Çıkarım: Serotoninin büyük kısmının bağırsakta üretilmesi',
-    trapWarning: 'Metin: "synthesize approximately ninety percent of the body’s peripheral serotonin" ifadesini içerir.',
+    trapWarning: 'Metin %90 "peripheral" serotonin der. B "entirely" ve beyin diyerek aşırı genelleme yapar; C GABA\'yı yok sayar; D ve E metindeki ilişkileri karıştırır.',
     explanation: 'Serotonin hakkında çıkarım: Vücuttaki periferik serotoninin %90 gibi ezici bir çoğunluğu beyinde değil bağırsakta üretilir (A şıkkı).'
   },
 
@@ -941,16 +941,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Conventional digital encryption standards, such as RSA, rely on the mathematical difficulty of factoring enormous prime numbers using classical binary computers. However, the advent of fault-tolerant quantum computers threatens to render these algorithms utterly obsolete. Quantum computing leverages quantum mechanical superposition and entanglement to execute Shor\'s algorithm, cracking RSA encryptions in minutes rather than millennia. In response, cryptographers are deploying Quantum Key Distribution (QKD). Unlike mathematical encryption, QKD derives its security from the fundamental laws of quantum physics. Information is encoded onto individual photons in polarized quantum states. According to the Heisenberg uncertainty principle, any unauthorized attempt by an eavesdropper to intercept or measure a photon inevitably alters its quantum state, introducing detectable errors that alert the communicators immediately. Thus, QKD offers theoretically unbreakable security.',
     question: 'Classical encryption systems like RSA are vulnerable to quantum computing because _____',
     options: {
-      A: 'quantum computers can execute algorithms that factor prime numbers exponentially faster than classical computers.',
-      B: 'classical computers are incapable of transmitting digital data over optical fiber cables.',
-      C: 'photons naturally destroy all binary mathematics when exposed to room temperature.',
-      D: 'the Heisenberg uncertainty principle prevents classical algorithms from operating.',
-      E: 'Shor’s algorithm proved that prime numbers do not actually exist in nature.'
+      A: 'quantum computers can factor huge primes far faster.',
+      B: 'RSA keys can be intercepted while they travel as photons.',
+      C: 'classical computers will soon be unable to run RSA at all.',
+      D: 'quantum computers can detect every eavesdropping attempt.',
+      E: 'RSA was never mathematically difficult to break.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Kuantumun RSA\'yı Kırma Mekanizması: Shor algoritması ve asal çarpanlar',
-    trapWarning: 'RSA\'nın zayıflığı: kuantum bilgisayarların Shor algoritmasıyla devasa asal sayıları dakikalar içinde çarpanlarına ayırabilmesidir.',
+    trapWarning: 'B ve D, QKD paragrafındaki bilgileri RSA\'ya taşır. C abartılı bir sonuç, E ise metinle çelişir: RSA klasik bilgisayarlar için zordur ("millennia").',
     explanation: 'Kuantum bilgisayarlar asal çarpanlara ayırma işlemini klasik bilgisayarlardan katbekat hızlı gerçekleştirir (A şıkkı).'
   },
   {
@@ -959,16 +959,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '52. Soru - Paragraf 3',
     question: 'According to the passage, Quantum Key Distribution (QKD) differs from conventional encryption because QKD _____',
     options: {
-      A: 'bases its security on fundamental quantum physical principles rather than mathematical complexity.',
-      B: 'requires binary silicon supercomputers to factor prime integers.',
-      C: 'allows third-party eavesdroppers to alter polarized photons without detection.',
-      D: 'can only be transmitted over short copper electrical wires.',
-      E: 'has been proven mathematically insecure by theoretical cryptographers.'
+      A: 'relies on the laws of physics instead of mathematical difficulty.',
+      B: 'uses longer prime numbers than RSA does.',
+      C: 'can be run only on fault-tolerant quantum computers.',
+      D: 'prevents eavesdroppers from measuring photons.',
+      E: 'uses Shor\'s algorithm to encode information.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'QKD ile Klasik Arasındaki Temel Fark',
-    trapWarning: 'Metin: "Unlike mathematical encryption, QKD derives its security from the laws of quantum physics" der.',
+    trapWarning: 'D ince tuzaktır: QKD dinlemeyi engellemez, fark edilmesini sağlar. B matematik temelli düşünceyi sürdürür, E ise Shor algoritmasını saldırı yerine koruma gibi sunar.',
     explanation: 'Fark: QKD güvenliğini matematiksel zorluktan değil, kuantum fiziğinin temel yasalarından alır (A şıkkı).'
   },
   {
@@ -977,16 +977,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '53. Soru - Paragraf 3',
     question: 'How do users of QKD know if an unauthorized eavesdropper is intercepting their communication?',
     options: {
-      A: 'Any measurement by an interceptor alters the photon’s quantum state, generating detectable errors.',
-      B: 'The optical fiber cables physically ignite and melt upon interception.',
-      C: 'The classical binary computer shuts down and permanently deletes all data.',
-      D: 'Eavesdroppers are legally required to notify the transmission partners.',
-      E: 'The Heisenberg uncertainty principle causes the computer monitor to flicker.'
+      A: 'Measuring a photon changes its state and produces detectable errors.',
+      B: 'The intercepted photons stop reaching the receiver altogether.',
+      C: 'The eavesdropper must first crack the key with Shor\'s algorithm.',
+      D: 'Each photon is encrypted with an RSA key that reveals tampering.',
+      E: 'The polarization of all photons is reset automatically.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Casus Girişimi Nasıl Tespit Edilir? Fotonun durumunun bozulması',
-    trapWarning: 'Heisenberg ilkesine göre fotonu ölçmek durumunu bozar ve fark edilir hata üretir.',
+    trapWarning: 'Heisenberg: ölçüm durumu değiştirir ve hata üretir. B fotonun kaybolduğunu söyler (metin değişir der), C ve D konuyu klasik şifrelemeye kaydırır.',
     explanation: 'Casus tespiti: Fotonu ölçmeye çalışmak onun kuantum durumunu bozar ve hemen tespit edilen hatalar üretir (A şıkkı).'
   },
   {
@@ -995,16 +995,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '54. Soru - Paragraf 3',
     question: 'The author concludes that Quantum Key Distribution _____',
     options: {
-      A: 'provides an encryption method that is theoretically impossible to compromise undetected.',
-      B: 'is far too expensive and hazardous ever to be utilized in practical commercial applications.',
-      C: 'will be completely banned by international telecommunication treaties.',
-      D: 'relies on the same outdated mathematical foundations as 1970s binary protocols.',
-      E: 'cannot function unless classical computers are permanently discarded.'
+      A: 'offers security that is, in theory, unbreakable.',
+      B: 'will soon replace all mathematical encryption.',
+      C: 'is already used in most commercial networks.',
+      D: 'can resist quantum attacks only in the short term.',
+      E: 'is secure only as long as RSA remains unbroken.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Sonuç Çıkarımı: "offers theoretically unbreakable security"',
-    trapWarning: 'Metnin son cümlesi QKD\'nin teorik olarak kırılamaz güvenlik sunduğunu açıkça belirtir.',
+    trapWarning: 'Son cümle: "theoretically unbreakable security". B ve C metinde olmayan bir yaygınlık iddiasıdır; D ve E ise güvenliği sınırlayarak metinle çelişir.',
     explanation: 'Yazarın nihai yargısı: QKD fark edilmeden kırılması teorik olarak imkansız bir güvenlik sağlar (A şıkkı).'
   },
 
@@ -1016,16 +1016,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Since the mass commercialization of synthetic polymers in the mid-twentieth century, plastic pollution has permeated every aquatic ecological zone, from Arctic sea ice to the abyssal depths of the Mariana Trench. Because petroleum-based plastics are resilient to biological decay, they do not biodegrade; rather, ultraviolet radiation and wave abrasion fragment macroplastics into microscopic particulates known as microplastics. These particles act as chemical sponges, adsorbing hydrophobic organic toxins like polychlorinated biphenyls (PCBs) from the ambient marine environment. Filter-feeding marine fauna, including zooplankton, bivalves, and baleen whales, inadvertently ingest microplastics, mistaking them for organic prey. The physical blockage of digestive tracts, combined with the biochemical leaching of endocrine-disrupting additives like phthalates, impairs reproductive fecundity and induces chronic metabolic toxicity. Because microplastics bioaccumulate up the trophic pyramid, top apex predators and human seafood consumers increasingly absorb these persistent contaminants.',
     question: 'According to the passage, macroplastics in the ocean _____',
     options: {
-      A: 'break down into microscopic pieces through solar radiation and mechanical wave action.',
-      B: 'completely dissolve into harmless organic sugars within a few months.',
-      C: 'are digested safely by deep-sea bacterial colonies without leaving toxic residues.',
-      D: 'sink immediately into the Earth’s molten mantle through deep oceanic trenches.',
-      E: 'neutralize industrial toxins like PCBs, making seawater significantly cleaner.'
+      A: 'are broken into tiny pieces by sunlight and waves.',
+      B: 'slowly biodegrade into smaller organic particles.',
+      C: 'sink to the deepest parts of the ocean floor.',
+      D: 'absorb toxins before breaking into smaller pieces.',
+      E: 'are mostly swallowed by filter-feeding animals.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Plastiğin Parçalanma Süreci: Güneş ışığı ve dalga aşınması',
-    trapWarning: 'Plastikler biyolojik olarak çözünmez (biodegrade olmaz); fiziksel olarak mikro parçalara ayrılır.',
+    trapWarning: 'B tuzağı: metin plastiklerin "do not biodegrade" olduğunu açıkça söyler. D sıralamayı ters çevirir: toksinleri emen mikroplastiklerdir. E ise mikroplastiğe ait bilgiyi makroplastiğe uygular.',
     explanation: 'Makroplastikler: güneşin ultraviyole radyasyonu ve dalga aşınmasıyla mikroskobik parçalara (mikroplastiklere) ayrılır (A şıkkı).'
   },
   {
@@ -1034,16 +1034,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '56. Soru - Paragraf 4',
     question: 'It is stated in the passage that microplastics in seawater are dangerous partly because they _____',
     options: {
-      A: 'adsorb toxic chemical contaminants from the surrounding water and transfer them into marine animals.',
-      B: 'emit radioactive alpha particles that rapidly warm the temperature of the oceans.',
-      C: 'form massive floating reefs that block transoceanic container shipping routes.',
-      D: 'prevent marine phytoplankton from absorbing ambient solar radiation.',
-      E: 'evaporate into the atmosphere, causing permanent clouds over equatorial latitudes.'
+      A: 'soak up toxins from the water and carry them into animals.',
+      B: 'release PCBs that were added to them during manufacturing.',
+      C: 'dissolve slowly and change the chemistry of seawater.',
+      D: 'attract filter-feeding animals with their bright colours.',
+      E: 'block sunlight from reaching marine organisms.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Mikroplastiğin Tehlikesi: Toksin süngeri gibi çalışması',
-    trapWarning: 'Metin: "particles act as chemical sponges, adsorbing hydrophobic organic toxins" der.',
+    trapWarning: 'B ince tuzaktır: PCB\'ler çevreden emilir; üretimde eklenen katkılar ise ftalatlardır. D metinde olmayan bir neden uydurur (hayvanlar onları av sanır).',
     explanation: 'Tehlike: mikroplastiklerin sudaki zehirli kimyasalları sünger gibi emip canlıların bünyesine taşımasıdır (A şıkkı).'
   },
   {
@@ -1052,16 +1052,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '57. Soru - Paragraf 4',
     question: 'The passage suggests that the ingestion of microplastics by marine animals causes _____',
     options: {
-      A: 'digestive blockages and the release of harmful endocrine-disrupting chemicals.',
-      B: 'an immediate and rapid increase in reproductive fertility across all fish species.',
-      C: 'the complete mutation of bivalves into air-breathing terrestrial amphibians.',
-      D: 'the total elimination of zooplankton from the global maritime food chain.',
-      E: 'a dramatic acceleration in the metabolic rate of baleen whales.'
+      A: 'blocked digestion and exposure to hormone-disrupting additives.',
+      B: 'starvation because animals stop hunting their natural prey.',
+      C: 'immediate death in most filter-feeding species.',
+      D: 'higher fertility caused by endocrine-disrupting chemicals.',
+      E: 'damage only to the largest animals at the top of the food chain.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Canlılardaki Zararlar: Sindirim tıkanması ve hormon bozucular',
-    trapWarning: 'Metin: "blockage of digestive tracts, combined with leaching of endocrine-disrupting additives" der.',
+    trapWarning: 'D yönü tersine çevirir: metin üremenin azaldığını ("impairs fecundity") söyler. C ve E aşırı genellemedir; metin kronik etkiden ve tüm besin zincirinden bahseder.',
     explanation: 'Zararlar: sindirim kanalının tıkanması ve hormon bozucu kimyasalların vücuda sızmasıdır (A şıkkı).'
   },
   {
@@ -1070,16 +1070,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '58. Soru - Paragraf 4',
     question: 'The term "bioaccumulate" in the passage implies that contaminants _____',
     options: {
-      A: 'increase in concentration as they are passed up from lower to higher levels of the food chain.',
-      B: 'naturally dilute and vanish as larger predators consume smaller prey.',
-      C: 'spontaneously transform into nutritious proteins inside apex predators.',
-      D: 'are completely eliminated from the body through ordinary respiration.',
-      E: 'only affect primitive microbial organisms while sparing larger vertebrates.'
+      A: 'become more concentrated at each higher level of the food chain.',
+      B: 'spread evenly to all animals living in the same habitat.',
+      C: 'affect predators only after the contaminated prey has died.',
+      D: 'collect mainly in the bodies of small filter-feeding animals.',
+      E: 'break down gradually as they pass from prey to predator.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Kavram Tanımı: Bioaccumulate (Besin zincirinde birikerek yoğunlaşmak)',
-    trapWarning: 'Biyo-birikim piramidin tepesine çıktıkça zehir yoğunluğunun katlanarak artmasıdır.',
+    trapWarning: '"Bioaccumulate up the trophic pyramid": yukarı çıktıkça yoğunlaşır. B eşit dağılım der, D birikimi alt basamakta bırakır, E ise tam tersini söyler.',
     explanation: 'Bioaccumulate: toksinlerin besin zincirinde alt basamaktan üst basamağa geçtikçe yoğunlaşarak artması anlamına gelir (A şıkkı).'
   },
 
@@ -1091,16 +1091,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     passage: 'Human language acquisition in early childhood represents one of the most astonishing feats of cognitive neurology. Without formal pedagogical instruction, human infants effortlessly master intricate phonological categories, hierarchical syntactical rules, and semantic subtleties of their native tongue by age four. Pioneering linguist Noam Chomsky proposed the concept of Universal Grammar, positing that human brains are genetically pre-wired with an innate Language Acquisition Device (LAD) that constrains grammatical possibilities. Contemporary neuroimaging supports this biological preparedness, revealing that specialized left-hemispheric cortical regions—notably Broca\'s and Wernicke\'s areas—exhibit rapid structural synaptic pruning in response to auditory speech exposure. However, developmental psycholinguists emphasize the critical importance of a "critical period." If a child is deprived of linguistic exposure during early neurodevelopment due to profound isolation or untreated auditory impairment, the neural circuitry required for fluent syntactic processing permanently atrophies, making subsequent native-level linguistic competence biologically unattainable.',
     question: 'According to Chomsky’s theory of Universal Grammar, human children learn language effortlessly because _____',
     options: {
-      A: 'the human brain possesses an innate, genetically determined capacity for grammatical structuring.',
-      B: 'parents provide dozens of hours of rigorous formal grammatical drills daily.',
-      C: 'all human languages utilize identical vocabulary and pronunciation patterns.',
-      D: 'infants do not require any exposure to auditory speech to master vocabulary.',
-      E: 'linguistic competence is completely independent of biological neurology.'
+      A: 'their brains are born with a built-in capacity for grammar.',
+      B: 'they hear a large amount of speech during the critical period.',
+      C: 'all human languages share the same basic vocabulary.',
+      D: 'their parents correct their grammatical mistakes constantly.',
+      E: 'Broca\'s area is fully developed at birth.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Chomsky\'nin Görüşü: Doğuştan gelen genetik dil kapasitesi (LAD)',
-    trapWarning: 'Chomsky çocukların resmi derslerle değil, doğuştan gelen genetik donanımla dili edindiğini savunur.',
+    trapWarning: 'B tuzağı metindeki başka bir görüşten (kritik dönem) gelir; soru özellikle Chomsky\'nin açıklamasını sorar. E ise metinle çelişir: bu alanlar konuşmaya maruz kaldıkça gelişir.',
     explanation: 'Chomsky\'ye göre: insan beyni doğuştan gelen ve genetik olarak belirlenmiş bir dil edinim mekanizmasına (LAD) sahiptir (A şıkkı).'
   },
   {
@@ -1109,16 +1109,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '60. Soru - Paragraf 5',
     question: 'Neuroimaging studies mentioned in the passage indicate that speech exposure _____',
     options: {
-      A: 'promotes structural synaptic pruning in specialized left-hemispheric brain regions.',
-      B: 'permanently damages Broca’s and Wernicke’s areas in young infants.',
-      C: 'forces both hemispheres of the brain to develop identical acoustic processing functions.',
-      D: 'causes infants to forget non-verbal visual communication cues completely.',
-      E: 'has no measurable effect on cerebral cortical development before adulthood.'
+      A: 'triggers synaptic pruning in specialized left-hemisphere areas.',
+      B: 'increases the number of synapses throughout the whole brain.',
+      C: 'is needed for Broca\'s area to develop in the right hemisphere.',
+      D: 'has little effect until the child reaches age four.',
+      E: 'replaces the role of the innate Language Acquisition Device.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Nörogörüntüleme Bulgusu: Sol yarımküredeki sinaptik budanma',
-    trapWarning: 'Metin: "Broca\'s and Wernicke\'s areas exhibit rapid structural synaptic pruning" der.',
+    trapWarning: 'Pruning budama demektir, artış değil: B bu yüzden yanlıştır. C yarım küreyi, D zamanı değiştirir; E ise metindeki "supports this biological preparedness" ifadesiyle çelişir.',
     explanation: 'Nörogörüntüleme: konuşmaya maruz kalmanın beynin sol yarımküresindeki uzmanlaşmış alanlarda sinaptik budanmayı tetiklediğini gösterir (A şıkkı).'
   },
   {
@@ -1127,16 +1127,16 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     title: '61. Soru - Paragraf 5',
     question: 'The passage highlights the "critical period" hypothesis to demonstrate that _____',
     options: {
-      A: 'linguistic exposure must occur during early neurodevelopment for full grammatical fluency to develop.',
-      B: 'adults can acquire secondary languages much more rapidly than young infants.',
-      C: 'children who are isolated in infancy naturally invent their own complex spoken languages.',
-      D: 'auditory impairment has zero impact on syntactic processing neural networks.',
-      E: 'pedagogical grammar training should only begin after an individual turns eighteen.'
+      A: 'children must hear language early in life to reach full fluency.',
+      B: 'Universal Grammar cannot fully explain how children learn language.',
+      C: 'older children learn grammar faster than younger ones.',
+      D: 'hearing loss permanently prevents all language learning.',
+      E: 'formal instruction is necessary after early childhood.'
     },
     answer: 'A',
     difficulty: 'Orta',
     tacticUsed: 'Critical Period (Kritik Dönem) Hipotezi Analizi',
-    trapWarning: 'Kritik dönemde dil maruziyeti olmazsa sinir devreleri körelir ve anadili seviyesi imkansızlaşır.',
+    trapWarning: 'B makul görünür çünkü paragraf "However" ile döner, ama metin Chomsky\'yi çürütmez; sadece maruz kalmanın şart olduğunu ekler. D aşırı genellemedir: metin "untreated" işitme kaybından ve anadil düzeyinden bahseder.',
     explanation: 'Kritik dönem: tam dilsel akıcılık için dil maruziyetinin erken nörogelişim evresinde gerçekleşmesi gerektiğini kanıtlar (A şıkkı).'
   },
   {
@@ -1146,15 +1146,15 @@ const RAW_YDS_FULL_MOCK_EXAM_3: YdsQuestion[] = [
     question: 'What happens if a child is completely deprived of linguistic exposure during early childhood?',
     options: {
       A: 'The neural circuitry responsible for syntactic processing permanently atrophies.',
-      B: 'The child effortlessly masters multiple languages once they enter primary school.',
-      C: 'Broca’s area shifts completely to the right hemisphere of the cerebral cortex.',
-      D: 'The child develops superior mathematical and geometric reasoning abilities.',
-      E: 'The Language Acquisition Device compensates by enhancing auditory acuity.'
+      B: 'The child can still reach native-level fluency with intensive teaching.',
+      C: 'The child learns vocabulary normally but struggles with pronunciation.',
+      D: 'Broca\'s and Wernicke\'s areas develop more slowly but eventually catch up.',
+      E: 'The Language Acquisition Device takes over the missing neural circuits.'
     },
     answer: 'A',
     difficulty: 'İleri',
     tacticUsed: 'Son Cümle Çıkarımı: Sinir devrelerinin kalıcı olarak körelmesi',
-    trapWarning: 'Metnin son cümlesi: "neural circuitry required for syntactic processing permanently atrophies" demektedir.',
+    trapWarning: 'Son cümle: devreler kalıcı olarak körelir ve anadil düzeyi "biologically unattainable" olur. B ve D bunun tersini, C ise metinde olmayan bir ayrımı ileri sürer.',
     explanation: 'Erken dönemde dilden mahrum kalan çocukta: sözdizimsel işlemeden sorumlu sinirsel devreler kalıcı olarak körelir (atrophies) (A şıkkı).'
   },
 
