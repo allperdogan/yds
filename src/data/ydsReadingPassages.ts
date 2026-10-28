@@ -1,5 +1,6 @@
 import { ReadingPassage } from '../types';
 import { shuffleQuestionList } from '../services/optionShuffle';
+import { READING_PASSAGE_BANK } from './banks/readingPassageBank';
 
 const RAW_YDS_READING_PASSAGES: ReadingPassage[] = [
   {
@@ -369,7 +370,10 @@ Recent paleoclimatological data, derived from fossilized pollen analysis and spe
 ];
 
 // Options are reordered per question so the answer key is not concentrated in one letter.
-export const YDS_READING_PASSAGES: ReadingPassage[] = RAW_YDS_READING_PASSAGES.map((p) => ({
-  ...p,
-  questions: shuffleQuestionList(p.questions)
-}));
+export const YDS_READING_PASSAGES: ReadingPassage[] = [
+  ...RAW_YDS_READING_PASSAGES.map((p) => ({
+    ...p,
+    questions: shuffleQuestionList(p.questions)
+  })),
+  ...READING_PASSAGE_BANK
+];
