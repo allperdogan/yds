@@ -12,6 +12,7 @@ import {
 interface ScoreEstimateCardProps {
   solvedQuestions: UserStats['solvedQuestions'];
   mockExamResults: MockExamResult[];
+  vocabFirstAnswers?: UserStats['vocabFirstAnswers'];
   onPracticeType: (type: QuestionType) => void;
 }
 
@@ -20,16 +21,19 @@ const QUESTION_TYPE_BY_ID = new Map(STUDY_TOPICS.flatMap((t) => t.questions).map
 export const ScoreEstimateCard: React.FC<ScoreEstimateCardProps> = ({
   solvedQuestions,
   mockExamResults,
+  vocabFirstAnswers = {},
   onPracticeType
 }) => {
   const estimate = useMemo(() => {
     const records: SolvedRecord[] = [];
     Object.entries(solvedQuestions).forEach(([id, s]) => {
       const type = QUESTION_TYPE_BY_ID.get(id);
-      if (type) records.push({ type, isCorrect: s.isCorrect, seconds: s.seconds });
+      if (type) records.push({ type, isCorrect: s.firstIsCorrect ?? s.isCorrect, seconds: s.seconds });
     });
+    // Vocabulary drill answers stand in for the exam's vocabulary questions.
+    Object.values(vocabFirstAnswers).forEach((isCorrect) => records.push({ type: 'vocabulary', isCorrect }));
     return estimateOverallScore(records, mockExamResults);
-  }, [solvedQuestions, mockExamResults]);
+  }, [solvedQuestions, mockExamResults, vocabFirstAnswers]);
 
   if (!estimate.hasEnoughData) {
     return (

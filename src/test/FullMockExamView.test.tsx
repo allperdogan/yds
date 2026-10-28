@@ -1,9 +1,24 @@
 import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { FullMockExamView } from '../components/FullMockExamView';
 
 describe('FullMockExamView Functional & Button Tests', () => {
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
+  it('resumes an unfinished exam after leaving the screen', () => {
+    const first = render(<FullMockExamView onAddMistake={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: /180 Dakikalık Deneme Sınavını Başlat/i }));
+    expect(screen.getByText(/Sınavı Bitir/i)).toBeInTheDocument();
+    first.unmount();
+
+    render(<FullMockExamView onAddMistake={vi.fn()} />);
+    expect(screen.getByText(/Sınavı Bitir/i)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /180 Dakikalık Deneme Sınavını Başlat/i })).not.toBeInTheDocument();
+  });
+
   it('renders intro screen with 180 min information and start button', () => {
     render(<FullMockExamView onAddMistake={vi.fn()} />);
 

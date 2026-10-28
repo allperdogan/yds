@@ -46,7 +46,7 @@ export const TARGET_RATE_FOR_75: Record<QuestionType, number> = {
 };
 
 const RECOMMENDATIONS: Record<QuestionType, string> = {
-  vocabulary: 'Her gün 40 yeni kelime + SRS tekrarı; kelimeyi eş anlamlısı ve edatıyla birlikte çalış.',
+  vocabulary: 'Her gün programdaki günün kelime grubunu (~100 kelime) antrenmanla çöz, kartlarla tekrar et; kelimeyi eş anlamlısı ve edatıyla birlikte çalış.',
   grammar: 'Tense uyumu, bağlaçlar ve edat kalıplarında günde 20 gramer sorusu çöz.',
   cloze: 'Boşluktan önceki ve sonraki cümleyi oku; bağlacın yönünü (+/-) belirle, sonra şıklara bak.',
   sentence_completion: 'Önce bağlacı ve zaman uyumunu kontrol et, sonra anlamca uymayanları ele.',
@@ -249,7 +249,7 @@ export const MIN_ANSWERS_FOR_ESTIMATE = 20;
  */
 export const estimateOverallScore = (
   solved: SolvedRecord[],
-  mockResults: Array<{ categoryBreakdown: Record<string, { total: number; correct: number; wrong: number }> }> = []
+  mockResults: Array<{ examId?: string; categoryBreakdown: Record<string, { total: number; correct: number; wrong: number }> }> = []
 ): OverallEstimate => {
   const acc = new Map<QuestionType, { weight: number; correct: number; answered: number; timeSum: number; timed: number }>();
   const get = (t: QuestionType) => {
@@ -273,7 +273,16 @@ export const estimateOverallScore = (
     }
   });
 
-  mockResults.slice(-RECENT_MOCKS).forEach((m) => {
+  // A retaken mock has been seen before, so only the first sitting of each counts.
+  const seenExams = new Set<string>();
+  const freshMocks = mockResults.filter((m) => {
+    if (!m.examId) return true;
+    if (seenExams.has(m.examId)) return false;
+    seenExams.add(m.examId);
+    return true;
+  });
+
+  freshMocks.slice(-RECENT_MOCKS).forEach((m) => {
     Object.entries(m.categoryBreakdown || {}).forEach(([type, b]) => {
       if (!(type in YDS_EXAM_DISTRIBUTION) || !b.total) return;
       const e = get(type as QuestionType);

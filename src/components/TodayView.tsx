@@ -81,6 +81,7 @@ export const TodayView: React.FC<TodayViewProps> = ({ stats, dueWordCount, onOpe
       <ScoreEstimateCard
         solvedQuestions={stats.solvedQuestions}
         mockExamResults={mockResults}
+        vocabFirstAnswers={stats.vocabFirstAnswers}
         onPracticeType={(type: QuestionType) => {
           const t = topicForType(type);
           if (t) onOpenTopic(t.id);

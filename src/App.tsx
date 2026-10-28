@@ -22,6 +22,7 @@ import { SRSEngine } from './services/srsEngine';
 import { BackupPayload } from './services/syncService';
 import { getUnifiedQuestionById } from './data/ydsQuestions';
 import { YDS_VOCABULARY_LIST } from './data/ydsVocabulary';
+import { wordForms } from './services/vocabBlank';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTabState] = useState<string>('today');
@@ -94,18 +95,38 @@ export const App: React.FC = () => {
     StorageService.saveStats(stats);
   }, [stats]);
 
+  // The streak counts days with at least one answered question, card or word.
+  const markStudied = () => setStats((prev) => StorageService.withStudyToday(prev));
+
   // Persist SRS data
   const handleUpdateSRS = (newSRS: Record<string, SRSItem>) => {
+    markStudied();
     setSrsData(newSRS);
     SRSEngine.saveSRSData(newSRS);
 
-    // Update mastered count
+    // Flashcard grades feed the same word progress as the drill: a recalled
+    // card counts as learned, a forgotten one goes back to "learning".
+    const changed = Object.values(newSRS).filter((item) => item !== srsData[item.wordId]);
+    const recalled = changed.filter((i) => i.repetition > 0).map((i) => i.wordId);
+    const forgotten = changed.filter((i) => i.repetition === 0 && i.lastReviewed).map((i) => i.wordId);
+
     const mastered = Object.values(newSRS).filter((i) => i.state === 'mastered').length;
-    setStats((prev) => ({
-      ...prev,
-      masteredWordsCount: mastered,
-      totalCardsReviewed: prev.totalCardsReviewed + 1
-    }));
+    setStats((prev) => {
+      const known = new Set(prev.knownVocabIds);
+      const pending = new Set(prev.pendingReviewVocabIds);
+      recalled.forEach((id) => {
+        known.add(id);
+        pending.delete(id);
+      });
+      forgotten.forEach((id) => pending.add(id));
+      return {
+        ...prev,
+        masteredWordsCount: mastered,
+        totalCardsReviewed: prev.totalCardsReviewed + 1,
+        knownVocabIds: [...known],
+        pendingReviewVocabIds: [...pending]
+      };
+    });
   };
 
   // Toggle Bookmark (with optional forceAdd)
@@ -137,11 +158,17 @@ export const App: React.FC = () => {
 
   // Record Question Result
   const handleRecordQuestionResult = (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => {
+    markStudied();
     setStats((prev) => {
       const alreadySolved = prev.solvedQuestions[questionId];
       const newSolved = {
         ...prev.solvedQuestions,
-        [questionId]: seconds ? { selected, isCorrect, seconds } : { selected, isCorrect }
+        [questionId]: {
+          selected,
+          isCorrect,
+          firstIsCorrect: alreadySolved ? alreadySolved.firstIsCorrect ?? alreadySolved.isCorrect : isCorrect,
+          ...(alreadySolved?.seconds || seconds ? { seconds: alreadySolved?.seconds || seconds } : {})
+        }
       };
 
       return {
@@ -166,6 +193,16 @@ export const App: React.FC = () => {
     });
   };
 
+  // First answer per word feeds the score estimate's vocabulary rate.
+  const handleRecordVocabAnswer = (wordId: string, isCorrect: boolean) => {
+    markStudied();
+    setStats((prev) => {
+      const first = prev.vocabFirstAnswers || {};
+      if (wordId in first) return prev;
+      return { ...prev, vocabFirstAnswers: { ...first, [wordId]: isCorrect } };
+    });
+  };
+
   // Add / Remove Mistake
   const handleAddMistake = (qId: string) => {
     setStats((prev) => {
@@ -182,9 +219,11 @@ export const App: React.FC = () => {
       if (q) {
         const correctText = q.options[q.answer]?.trim().toLowerCase();
         if (correctText) {
+          // Only the word itself or an inflected form ("inspired" -> inspire),
+          // so a missed preposition like "in" never flags "indigenous".
           const matched = YDS_VOCABULARY_LIST.find((w) => {
             const wText = w.word.toLowerCase();
-            return wText === correctText || correctText.startsWith(wText) || wText.startsWith(correctText);
+            return wText === correctText || (!wText.includes(' ') && wordForms(wText).includes(correctText));
           });
           if (matched) {
             if (!newBookmarked.includes(matched.id)) {
@@ -348,6 +387,7 @@ export const App: React.FC = () => {
             pendingReviewVocabIds={stats.pendingReviewVocabIds}
             bookmarkedWordIds={stats.bookmarkedWords}
             onMarkKnown={handleMarkKnown}
+            onRecordVocabAnswer={handleRecordVocabAnswer}
             onMarkPendingReview={handleMarkPendingReview}
             onRemovePendingReview={handleRemovePendingReview}
             onToggleBookmark={handleToggleBookmark}
@@ -371,6 +411,7 @@ export const App: React.FC = () => {
           <FullMockExamView
             onAddMistake={handleAddMistake}
             onSaveExamResult={(res) => {
+              markStudied();
               setStats((prev) => ({
                 ...prev,
                 mockExamResults: [...(prev.mockExamResults || []), res],
@@ -417,6 +458,7 @@ export const App: React.FC = () => {
             bookmarkedWords={stats.bookmarkedWords}
             pendingReviewWords={stats.pendingReviewVocabIds}
             onRemoveMistake={handleRemoveMistake}
+            onRecordQuestionResult={handleRecordQuestionResult}
             onRemoveBookmark={(wId) => {
               handleToggleBookmark(wId);
               handleRemovePendingReview(wId);

@@ -1,5 +1,6 @@
 import { YdsQuestion } from '../types';
 import { shuffleQuestionList } from '../services/optionShuffle';
+import { fillGroupPassages } from '../services/groupPassages';
 
 const RAW_YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = [
   // =========================================================================
@@ -1555,4 +1556,4 @@ Dr. Novak:
 ];
 
 // Options are reordered per question so the answer key is not concentrated in A.
-export const YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_2);
+export const YDS_FULL_MOCK_EXAM_2: YdsQuestion[] = fillGroupPassages(shuffleQuestionList(RAW_YDS_FULL_MOCK_EXAM_2));

@@ -5,7 +5,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
   // 1. TENSES & TIME CLAUSES (EK ZAMAN & ZAMAN BAĞLAÇLARI - 15 SORU)
   // =========================================================================
   {
-    id: 'g_t7',
+    id: 'g_t7_b',
     type: 'grammar',
     grammarCategory: 'tenses_time_clauses',
     grammarTopicTitle: 'Future Perfect (By + Gelecek Zaman -> Will Have V3)',
@@ -24,7 +24,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 FORMÜL: "By + Gelecek Tarih (by 2040, by the end of this century)", o tarihe kadar tamamlanmış olacak eylemleri anlatmak için daima "Will have V3" (Future Perfect) gerektirir. Doğru cevap A.'
   },
   {
-    id: 'g_t8',
+    id: 'g_t8_b',
     type: 'grammar',
     grammarCategory: 'tenses_time_clauses',
     grammarTopicTitle: 'No Sooner ... Than (Geçmiş Zaman Sıralaması & Devriklik)',
@@ -161,7 +161,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
   // 2. CONJUNCTIONS & TRANSITIONS (EK BAĞLAÇLAR & GEÇİŞ İFADELERİ - 20 SORU)
   // =========================================================================
   {
-    id: 'g_c7',
+    id: 'g_c7_b',
     type: 'grammar',
     grammarCategory: 'conjunctions_transitions',
     grammarTopicTitle: 'Although vs In spite of (Cümle vs İsim Ayrımı)',
@@ -180,7 +180,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 KURAL: Virgüle kadar olan kısımda yüklem (fiil) var mı? Yok! Sadece isim tamlaması var. Dolayısıyla "In spite of" veya "Despite" gelmek zorundadır. Doğru cevap A.'
   },
   {
-    id: 'g_c8',
+    id: 'g_c8_b',
     type: 'grammar',
     grammarCategory: 'conjunctions_transitions',
     grammarTopicTitle: 'However / Nevertheless (Noktalı Virgül & Virgül Uyumu)',
@@ -317,7 +317,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
   // 3. PREPOSITIONS & PHRASAL VERBS (EK EDATLAR & EDAT KOMBİNASYONLARI - 20 SORU)
   // =========================================================================
   {
-    id: 'g_p7',
+    id: 'g_p7_b',
     type: 'grammar',
     grammarCategory: 'prepositions',
     grammarTopicTitle: 'Prone to / Deficient in',
@@ -716,7 +716,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
   // TENSES & TIME CLAUSES (DEVAM - 9 SORU)
   // =========================================================================
   {
-    id: 'g_t11',
+    id: 'g_t11_b',
     type: 'grammar',
     grammarCategory: 'tenses_time_clauses',
     grammarTopicTitle: 'Past Simple vs Present Perfect (Zaman Belirteci Ayrımı)',
@@ -735,7 +735,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 FORMÜL: "in 1984" geçmiş belirli zaman zarfıdır (Past Simple: discovered). "in recent years" ise günümüze kadar gelen süreci anlatır (Present Perfect: have deciphered). Doğru cevap A.'
   },
   {
-    id: 'g_t12',
+    id: 'g_t12_b',
     type: 'grammar',
     grammarCategory: 'tenses_time_clauses',
     grammarTopicTitle: 'Until vs By (Süreç vs Son Bitiş Tarihi)',
@@ -754,7 +754,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 ÖSYM AYRIMI: Gözlemler biyobelirteçler stabilize olana kadar SÜRECEK (until stabilized); rapor ise Cuma gününe kadar BİTMİŞ/TESLİM EDİLMİŞ olmalıdır (by Friday). Doğru cevap A.'
   },
   {
-    id: 'g_t13',
+    id: 'g_t13_b',
     type: 'grammar',
     grammarCategory: 'tenses_time_clauses',
     grammarTopicTitle: 'Future Continuous (This time next decade / in the future)',
@@ -773,7 +773,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 ZAMAN FORMÜLÜ: "By this time next year / decade", gelecekte belirli bir anda sürüyor olacak eylemleri bildirir (will be surveying). Doğru cevap A.'
   },
   {
-    id: 'g_t14',
+    id: 'g_t14_b',
     type: 'grammar',
     grammarCategory: 'tenses_time_clauses',
     grammarTopicTitle: 'Once / As soon as (Zaman Uyumu: Present -> Future)',
@@ -891,7 +891,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
   // CONJUNCTIONS & TRANSITIONS (DEVAM - 9 SORU)
   // =========================================================================
   {
-    id: 'g_c10',
+    id: 'g_c10_b',
     type: 'grammar',
     grammarCategory: 'conjunctions_transitions',
     grammarTopicTitle: 'Inasmuch as / Seeing that (Sebep Bildiren Bağlaçlar)',
@@ -910,7 +910,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 SEBEP BAĞLACI: "Inasmuch as the trials yielded ambiguous outcomes..." (İlk deneyler belirsiz sonuçlar verdiği için / mademki verdi, kurul ikinci bir araştırma talep etti). Tam cümle alan sebep bağlacıdır. Doğru cevap A.'
   },
   {
-    id: 'g_c11',
+    id: 'g_c11_b',
     type: 'grammar',
     grammarCategory: 'conjunctions_transitions',
     grammarTopicTitle: 'Provided that / Providing (Şartıyla, Koşuluyla)',
@@ -929,7 +929,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 ŞART BAĞLACI: "Gıda güvenliği sağlanabilir ŞARTIYLA Kİ (provided that) sürdürülebilir sulama altyapısı kurulsun". Doğru cevap A.'
   },
   {
-    id: 'g_c12',
+    id: 'g_c12_b',
     type: 'grammar',
     grammarCategory: 'conjunctions_transitions',
     grammarTopicTitle: 'Despite / In spite of + Noun Phrase (Zıtlık Edatı)',
@@ -948,7 +948,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 ÖSYM GRAMER AYRIMI: İsim öbeği öncesi zıtlık edatı "Despite / In spite of" kullanılır. Merkez bankasının sıkı tedbirlerine RAĞMEN enflasyon hızlanmaya devam etti. Doğru cevap A.'
   },
   {
-    id: 'g_c13',
+    id: 'g_c13_b',
     type: 'grammar',
     grammarCategory: 'conjunctions_transitions',
     grammarTopicTitle: 'Whereas / While (Taban Tabana Kıyaslama ve Zıtlık)',
@@ -967,7 +967,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 KIYASLAMA ZITLIĞI: Güneş tarlaları geniş arazi isterken, OYSA Kİ (whereas) jeotermal tesisler son derece kompakt alanlarda çalışır. Doğru cevap A.'
   },
   {
-    id: 'g_c14',
+    id: 'g_c14_b',
     type: 'grammar',
     grammarCategory: 'conjunctions_transitions',
     grammarTopicTitle: 'In case (Önlem Bildirme: -olur diye / -durumunda)',
@@ -1066,7 +1066,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
   // PREPOSITIONS & COLLOCATIONS (DEVAM - 9 SORU)
   // =========================================================================
   {
-    id: 'g_p10',
+    id: 'g_p10_b',
     type: 'grammar',
     grammarCategory: 'prepositions',
     grammarTopicTitle: 'Abstain from / Refrain from (Uzak Durmak, Kaçınmak)',
@@ -1085,7 +1085,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 EDAT FORMÜLÜ: "abstain from", "refrain from", "prohibit from", "prevent from". Sakınma ve men etme fiilleri "from" ile birleşir. Doğru cevap A.'
   },
   {
-    id: 'g_p11',
+    id: 'g_p11_b',
     type: 'grammar',
     grammarCategory: 'prepositions',
     grammarTopicTitle: 'Adhere to (Uymak, Bağlı Kalmak)',
@@ -1104,7 +1104,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
     explanation: '🎯 ÖSYM AYIRT EDİCİSİ: "comply with" <-> "adhere to". Protokollere sıkı sıkıya bağlı kalmak (adhere to). Doğru cevap A.'
   },
   {
-    id: 'g_p12',
+    id: 'g_p12_b',
     type: 'grammar',
     grammarCategory: 'prepositions',
     grammarTopicTitle: 'Prone to (Yatkın, Meyilli)',
@@ -1241,7 +1241,7 @@ export const EXTENDED_GRAMMAR_BANK: GrammarDrillQuestion[] = [
   // REDUCTIONS & PARTICIPLES (DEVAM - 9 SORU)
   // =========================================================================
   {
-    id: 'g_r10',
+    id: 'g_r10_b',
     type: 'grammar',
     grammarCategory: 'reductions_participles',
     grammarTopicTitle: 'Having been V3 (Öncelikli Edilgen Kısaltma)',

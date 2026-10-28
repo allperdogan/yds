@@ -284,6 +284,20 @@ import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from
 import { YDS_READING_PASSAGES } from './ydsReadingPassages';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from './ydsVocabQuiz';
 import { YDS_VOCABULARY_LIST } from './ydsVocabulary';
+import { buildVocabOptions } from '../services/vocabOptions';
+import { blankExample } from '../services/vocabBlank';
+import { YdsWord } from '../types';
+
+let wordsByType: Record<string, YdsWord[]> | null = null;
+const getWordsByType = () => {
+  if (!wordsByType) {
+    wordsByType = {};
+    YDS_VOCABULARY_LIST.forEach((w) => {
+      (wordsByType![w.type] ||= []).push(w);
+    });
+  }
+  return wordsByType;
+};
 
 // Flatten reading questions
 const readingPassageQuestions: YdsQuestion[] = YDS_READING_PASSAGES.flatMap((p) => p.questions);
@@ -325,27 +339,24 @@ export const getUnifiedQuestionById = (id: string): YdsQuestion | undefined => {
     return unifiedQuestionMap.get(id);
   }
 
-  // Handle synthetic infinite vocab questions (e.g., inf_w14)
+  // Vocab drill questions (inf_<wordId>) are generated, so rebuild the same
+  // question the student saw: blanked example sentence and the same 5 options.
   if (id.startsWith('inf_')) {
-    const wordId = id.replace('inf_', '');
-    const wordObj = YDS_VOCABULARY_LIST.find((w) => w.id === wordId);
+    const wordObj = YDS_VOCABULARY_LIST.find((w) => w.id === id.slice(4));
     if (wordObj) {
+      const options = buildVocabOptions(wordObj, getWordsByType());
+      const letters = ['A', 'B', 'C', 'D', 'E'] as const;
       const syntheticQ: YdsQuestion = {
         id,
         type: 'vocabulary',
-        title: `Hatalı Kelime Testi: ${wordObj.word}`,
-        question: `The research committee pointed out that _____ conditions were critical. ("${wordObj.exampleEn}")`,
-        options: {
-          A: wordObj.word,
-          B: 'enhance',
-          C: 'undermine',
-          D: 'mitigate',
-          E: 'deteriorate'
-        },
-        answer: 'A',
-        explanation: `Doğru Kelime: ${wordObj.word} (${wordObj.meaning}). Örnek: "${wordObj.exampleEn}" - ${wordObj.exampleTr}. Çağrışım: ${wordObj.mnemonic || 'sık çıkan sözcük'}`,
+        title: `Kelime Sorusu: ${wordObj.word}`,
+        question: blankExample(wordObj.word, wordObj.exampleEn) ?? `Anlamı "${wordObj.meaning}" olan kelime: _____`,
+        options: { A: options[0], B: options[1], C: options[2], D: options[3], E: options[4] },
+        answer: letters[options.indexOf(wordObj.word)],
+        explanation: `Doğru kelime: ${wordObj.word} (${wordObj.meaning}). "${wordObj.exampleEn}" - ${wordObj.exampleTr}${
+          wordObj.mnemonic ? ` Çağrışım: ${wordObj.mnemonic}` : ''
+        }`,
         tacticUsed: 'Kelime Çağrışım ve Soru Çözümü',
-        trapWarning: 'Bu kelimede pratik testi sırasında hata yapıldı.',
         difficulty: 'İleri'
       };
       unifiedQuestionMap.set(id, syntheticQ);
