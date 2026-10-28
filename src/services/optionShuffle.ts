@@ -146,3 +146,30 @@ export const shuffleQuestionOptions = <T extends ShufflableQuestion>(q: T, seedK
 
 export const shuffleQuestionList = <T extends ShufflableQuestion>(list: T[]): T[] =>
   list.map((q) => shuffleQuestionOptions(q));
+
+/**
+ * Moves the correct option to `target` and orders the distractors pseudo-randomly
+ * (seeded by the question id), keeping explanations in sync like shuffleQuestionOptions.
+ */
+export const placeAnswerAt = <T extends ShufflableQuestion>(q: T, target: Letter): T => {
+  if (!q || !q.options || isOrderedOptionSet(q.options)) return q;
+  const others = LETTERS.filter((l) => l !== q.answer);
+  const order = seededPermutation(others.length, `${q.id || q.options.A}_place`).map((i) => others[i]);
+  const oldToNew = {} as Record<Letter, Letter>;
+  oldToNew[q.answer] = target;
+  LETTERS.filter((l) => l !== target).forEach((slot, i) => {
+    oldToNew[order[i]] = slot;
+  });
+  const newToOld = Object.fromEntries(LETTERS.map((old) => [oldToNew[old], old])) as Record<Letter, Letter>;
+  const newOptions = {} as OptionSet;
+  LETTERS.forEach((slot) => {
+    newOptions[slot] = q.options[newToOld[slot]];
+  });
+  const result: T = { ...q, options: newOptions, answer: target };
+  const record = result as unknown as Record<string, unknown>;
+  TEXT_FIELDS.forEach((field) => {
+    const value = record[field];
+    if (typeof value === 'string') record[field] = remapLetterReferences(value, oldToNew);
+  });
+  return result;
+};

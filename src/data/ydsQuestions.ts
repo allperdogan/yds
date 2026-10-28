@@ -284,6 +284,7 @@ export const YDS_QUESTIONS_DATA: YdsQuestion[] = [
 
 import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from './ydsFullMockExam';
 import { YDS_READING_PASSAGES } from './ydsReadingPassages';
+import { GENERATED_MOCK_EXAMS } from './ydsGeneratedMockExams';
 import { YDS_VOCAB_QUIZ_QUESTIONS } from './ydsVocabQuiz';
 import { YDS_VOCABULARY_LIST } from './ydsVocabulary';
 import { buildVocabQuestion } from '../services/vocabOptions';
@@ -328,6 +329,7 @@ export const ALL_UNIFIED_YDS_QUESTIONS: YdsQuestion[] = [
   ...YDS_FULL_MOCK_EXAM_1,
   ...YDS_FULL_MOCK_EXAM_2,
   ...YDS_FULL_MOCK_EXAM_3,
+  ...Object.values(GENERATED_MOCK_EXAMS).flat().filter((q) => q.id.startsWith('xl_')),
   ...readingPassageQuestions,
   ...vocabQuizAsYdsQuestions
 ];

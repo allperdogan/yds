@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { ALL_UNIFIED_YDS_QUESTIONS } from '../data/ydsQuestions';
 import { YDS_FULL_MOCK_EXAM_1, YDS_FULL_MOCK_EXAM_2, YDS_FULL_MOCK_EXAM_3 } from '../data/ydsFullMockExam';
-import { remapLetterReferences, shuffleQuestionOptions } from '../services/optionShuffle';
+import { placeAnswerAt, remapLetterReferences, shuffleQuestionOptions } from '../services/optionShuffle';
 import { YdsQuestion } from '../types';
 
 const sampleQuestion: YdsQuestion = {
@@ -57,5 +57,22 @@ describe('Option shuffling', () => {
       const match = (q.explanation || '').match(/Doğru (?:cevap|Şık|şık)[: ]*([A-E])\b/);
       if (match) expect(match[1]).toBe(q.answer);
     });
+  });
+});
+
+describe('placeAnswerAt', () => {
+  it('moves the answer to the target letter and keeps options in A-E order', () => {
+    const q = {
+      id: 'x1',
+      options: { A: 'right', B: 'b', C: 'c', D: 'd', E: 'e' },
+      answer: 'A' as const,
+      explanation: 'B şıkkı yanlış. Doğru cevap A.'
+    };
+    const placed = placeAnswerAt(q, 'D');
+    expect(Object.keys(placed.options)).toEqual(['A', 'B', 'C', 'D', 'E']);
+    expect(placed.options.D).toBe('right');
+    expect(placed.explanation).toContain('Doğru cevap D.');
+    const bLetter = (Object.keys(placed.options) as Array<keyof typeof placed.options>).find((k) => placed.options[k] === 'b');
+    expect(placed.explanation).toContain(`${bLetter} şıkkı yanlış`);
   });
 });
