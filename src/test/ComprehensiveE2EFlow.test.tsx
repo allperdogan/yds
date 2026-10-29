@@ -1,5 +1,5 @@
 import React from 'react';
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { App } from '../App';
 import { StorageService } from '../services/storageService';
@@ -15,6 +15,10 @@ describe('Comprehensive E2E Function & Button Verification', () => {
   beforeEach(() => {
     localStorage.clear();
     vi.clearAllMocks();
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
   });
 
   it('verifies all main sections and sub-screens open cleanly', async () => {
@@ -50,8 +54,9 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     expect(screen.getByText(/Yanlış yaptığın sorular ve kelimeler burada/i)).toBeInTheDocument();
   });
 
-  it('moves a question from "learning" to "learned" once it is answered correctly', () => {
-    render(<App />);
+  it('moves a question from "learning" to "learned" after three right answers on its review days', () => {
+    vi.useFakeTimers({ toFake: ['Date'] });
+    const { unmount } = render(<App />);
     fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
     fireEvent.click(screen.getByRole('button', { name: /Cloze Test/ }));
 
@@ -72,12 +77,29 @@ describe('Comprehensive E2E Function & Button Verification', () => {
     const wrong = screen.getByText(/^Yanlış\. Doğru cevap ([A-E])/);
     answer = wrong.textContent!.match(/Doğru cevap ([A-E])/)![1];
 
-    // It now counts as "öğreniyorum" and is waiting in the review list
-    expect(screen.getByRole('button', { name: /Tekrar \(1\)/ })).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /Tekrar \(1\)/ }));
-    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${answer}\\)`) }));
-    expect(screen.getByText(/^Doğru\./)).toBeInTheDocument();
+    // It now counts as "öğreniyorum" but only comes back tomorrow
     expect(screen.getByRole('button', { name: /Tekrar \(0\)/ })).toBeInTheDocument();
+    unmount();
+
+    // Right answers on the due days: tomorrow, 3 days later, 7 days later
+    const start = new Date();
+    let offset = 0;
+    for (const [gap, feedback] of [
+      [1, /^Doğru\. 1\/3 tamam, 3 gün sonra/],
+      [3, /^Doğru\. 2\/3 tamam, 7 gün sonra/],
+      [7, /^Doğru\. Bu soru öğrendiklerine eklendi/]
+    ] as const) {
+      offset += gap;
+      vi.setSystemTime(new Date(start.getFullYear(), start.getMonth(), start.getDate() + offset, 12));
+      const view = render(<App />);
+      fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);
+      fireEvent.click(screen.getByRole('button', { name: /Cloze Test/ }));
+      fireEvent.click(screen.getByRole('button', { name: /Tekrar \(1\)/ }));
+      fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${answer}\\)`) }));
+      expect(screen.getByText(feedback)).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /Tekrar \(0\)/ })).toBeInTheDocument();
+      if (gap !== 7) view.unmount();
+    }
 
     // The hub shows nothing left to relearn in this topic
     fireEvent.click(screen.getAllByRole('button', { name: 'Çalış' })[0]);

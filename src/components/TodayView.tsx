@@ -4,6 +4,7 @@ import { MockExamResult, QuestionType, UserStats } from '../types';
 import { STUDY_TOPICS, TopicProgress, getTopicProgress, getVocabProgress, topicForType } from '../services/studyTopics';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { ScoreEstimateCard } from './ScoreEstimateCard';
+import { dueMistakeIds } from '../services/mistakeReview';
 import { ProgressBar, ProgressNumbers } from './StudyHubView';
 
 interface TodayViewProps {
@@ -34,14 +35,18 @@ export const TodayView: React.FC<TodayViewProps> = ({ stats, dueWordCount, onOpe
   const questions = sumProgress(topicProgress.map((t) => t.progress));
   const vocab = getVocabProgress(YDS_VOCABULARY_LIST.length, stats.knownVocabIds, stats.pendingReviewVocabIds);
 
-  // Continue where the student left off: wrong answers first, then the topic
-  // with the smallest share already solved.
-  const withMistakes = topicProgress.filter((t) => t.progress.learning > 0).sort((a, b) => b.progress.learning - a.progress.learning)[0];
+  // Continue where the student left off: mistakes due today first, then the
+  // topic with the smallest share already solved.
+  const due = new Set(dueMistakeIds(stats.mistakeQuestionIds, stats.mistakeReviews));
+  const withMistakes = topicProgress
+    .map((t) => ({ ...t, due: t.topic.questions.filter((q) => due.has(q.id)).length }))
+    .filter((t) => t.due > 0)
+    .sort((a, b) => b.due - a.due)[0];
   const leastSolved = topicProgress
     .filter((t) => t.progress.solved < t.progress.total)
     .sort((a, b) => a.progress.solved / a.progress.total - b.progress.solved / b.progress.total)[0];
   const next = withMistakes
-    ? { topic: withMistakes.topic, mode: 'review' as const, text: `${withMistakes.topic.label}: ${withMistakes.progress.learning} yanlışını tekrar et` }
+    ? { topic: withMistakes.topic, mode: 'review' as const, text: `${withMistakes.topic.label}: bugün ${withMistakes.due} yanlışını tekrar et` }
     : leastSolved
     ? { topic: leastSolved.topic, mode: 'new' as const, text: `${leastSolved.topic.label}: yeni sorularla devam et` }
     : null;

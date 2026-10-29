@@ -187,6 +187,16 @@ export interface WordReview {
   lastSeen: number;
 }
 
+// Why a question was missed; the student picks one after a wrong answer.
+export type MistakeCause = 'vocab' | 'grammar' | 'reading' | 'careless' | 'time';
+
+// When a missed question comes back and how many due-day answers in a row were right.
+export interface MistakeReview {
+  streak: number;
+  due: string; // YYYY-MM-DD
+  cause?: MistakeCause;
+}
+
 export interface UserStats {
   streak: number;
   lastStudyDate: string;
@@ -209,5 +219,6 @@ export interface UserStats {
   vocabFirstAnswers?: { [wordId: string]: boolean };
   // When each word comes back; known words come back rarely, missed ones soon.
   vocabReviews?: { [wordId: string]: WordReview };
+  mistakeReviews?: { [questionId: string]: MistakeReview };
   mockExamResults?: MockExamResult[];
 }
