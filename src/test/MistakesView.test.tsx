@@ -41,14 +41,14 @@ describe('MistakesView Functional & Button Tests', () => {
     expect(onNavigateVocab).toHaveBeenCalledTimes(1);
   });
 
-  it('renders mistaken question and calls onRemoveMistake when "Öğrendim (Kaldır)" is clicked', () => {
-    const onRemoveMistake = vi.fn();
-
+  it('counts a right answer as one review step and keeps the card with its explanation', () => {
+    const onMistakeCorrect = vi.fn();
     render(
       <MistakesView
         mistakeQuestionIds={['q1']}
         bookmarkedWords={[]}
-        onRemoveMistake={onRemoveMistake}
+        onRemoveMistake={vi.fn()}
+        onMistakeCorrect={onMistakeCorrect}
         onRemoveBookmark={vi.fn()}
         onNavigateToPractice={vi.fn()}
         onNavigateToVocab={vi.fn()}
@@ -56,15 +56,43 @@ describe('MistakesView Functional & Button Tests', () => {
     );
 
     expect(screen.getByText(/Hata #1/i)).toBeInTheDocument();
-    // The answer is hidden until the question is solved again.
-    expect(screen.queryByRole('button', { name: /Öğrendim \(Kaldır\)/i })).not.toBeInTheDocument();
     const q1 = getUnifiedQuestionById('q1')!;
     fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${q1.answer}\\)`) }));
+    expect(onMistakeCorrect).toHaveBeenCalledWith('q1');
+    expect(screen.getByText(/Taktiksel Çözüm/)).toBeInTheDocument();
+  });
 
-    const removeBtn = screen.getByRole('button', { name: /Öğrendim \(Kaldır\)/i });
-    fireEvent.click(removeBtn);
+  it('asks why a wrong answer happened and shows only mistakes due today', () => {
+    const onMistakeWrong = vi.fn();
+    const onSetMistakeCause = vi.fn();
+    const q1 = getUnifiedQuestionById('q1')!;
+    const wrong = (['A', 'B', 'C', 'D', 'E'] as const).find((k) => k !== q1.answer)!;
+    render(
+      <MistakesView
+        mistakeQuestionIds={['q1', 'm_q1']}
+        mistakeReviews={{
+          q1: { streak: 1, due: '2000-01-01', cause: 'grammar' },
+          m_q1: { streak: 0, due: '2999-01-01', cause: 'grammar' }
+        }}
+        bookmarkedWords={[]}
+        onRemoveMistake={vi.fn()}
+        onMistakeWrong={onMistakeWrong}
+        onSetMistakeCause={onSetMistakeCause}
+        onRemoveBookmark={vi.fn()}
+        onNavigateToPractice={vi.fn()}
+        onNavigateToVocab={vi.fn()}
+      />
+    );
 
-    expect(onRemoveMistake).toHaveBeenCalledWith('q1');
+    expect(screen.getByText(/^Bugün \(1\)$/)).toBeInTheDocument();
+    expect(screen.getByText(/1 soru tekrar gününü bekliyor/)).toBeInTheDocument();
+    expect(screen.getByText(/En çok yanlış nedenin/)).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${wrong}\\)`) }));
+    expect(onMistakeWrong).toHaveBeenCalledWith('q1');
+    expect(screen.getByText(/Yarın tekrar sorulacak/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Kelimeyi bilmedim' }));
+    expect(onSetMistakeCause).toHaveBeenCalledWith('q1', 'vocab');
   });
 
   it('renders bookmarked words and calls onRemoveBookmark when delete button is clicked', () => {

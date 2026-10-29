@@ -30,7 +30,8 @@ export class StorageService {
       solvedQuestions: {},
       mockExamResults: [],
       vocabFirstAnswers: {},
-      vocabReviews: {}
+      vocabReviews: {},
+      mistakeReviews: {}
     };
   }
 

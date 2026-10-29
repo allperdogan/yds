@@ -18,13 +18,14 @@ import { VocabListsView } from './components/VocabListsView';
 import { countDueWords, recordWordReview } from './services/vocabReview';
 import { getTopicById, topicForType } from './services/studyTopics';
 
-import { UserStats, SRSItem, QuestionType } from './types';
+import { UserStats, SRSItem, QuestionType, MistakeCause, MistakeReview } from './types';
 import { StorageService } from './services/storageService';
 import { SRSEngine } from './services/srsEngine';
 import { BackupPayload } from './services/syncService';
 import { getUnifiedQuestionById } from './data/ydsQuestions';
 import { YDS_VOCABULARY_LIST } from './data/ydsVocabulary';
 import { wordForms } from './services/vocabBlank';
+import { recordMistakeCorrect, recordMistakeWrong } from './services/mistakeReview';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTabState] = useState<string>('today');
@@ -256,20 +257,58 @@ export const App: React.FC = () => {
         }
       }
 
+      const reviews = prev.mistakeReviews || {};
       return {
         ...prev,
         mistakeQuestionIds: newMistakes,
         bookmarkedWords: newBookmarked,
-        pendingReviewVocabIds: newPending
+        pendingReviewVocabIds: newPending,
+        // A miss (first or again) restarts the 1-3-7 day review cycle.
+        mistakeReviews: { ...reviews, [qId]: recordMistakeWrong(reviews[qId]) }
       };
     });
+  };
+
+  const withoutReview = (reviews: Record<string, MistakeReview> | undefined, qId: string) => {
+    const rest = { ...(reviews || {}) };
+    delete rest[qId];
+    return rest;
   };
 
   const handleRemoveMistake = (qId: string) => {
     setStats((prev) => ({
       ...prev,
-      mistakeQuestionIds: prev.mistakeQuestionIds.filter((id) => id !== qId)
+      mistakeQuestionIds: prev.mistakeQuestionIds.filter((id) => id !== qId),
+      mistakeReviews: withoutReview(prev.mistakeReviews, qId)
     }));
+  };
+
+  // A right answer on a due day moves the mistake one step on; the third one
+  // takes it off the list. Answers before the due day do not count.
+  const handleMistakeCorrect = (qId: string) => {
+    setStats((prev) => {
+      if (!prev.mistakeQuestionIds.includes(qId)) return prev;
+      const reviews = prev.mistakeReviews || {};
+      const next = recordMistakeCorrect(reviews[qId]);
+      if (next === reviews[qId]) return prev;
+      if (!next) {
+        return {
+          ...prev,
+          mistakeQuestionIds: prev.mistakeQuestionIds.filter((id) => id !== qId),
+          mistakeReviews: withoutReview(reviews, qId)
+        };
+      }
+      return { ...prev, mistakeReviews: { ...reviews, [qId]: next } };
+    });
+  };
+
+  const handleSetMistakeCause = (qId: string, cause: MistakeCause) => {
+    setStats((prev) => {
+      const reviews = prev.mistakeReviews || {};
+      const current = reviews[qId];
+      if (!current) return prev;
+      return { ...prev, mistakeReviews: { ...reviews, [qId]: { ...current, cause } } };
+    });
   };
 
   // Reset entire progress to Day 0
@@ -374,9 +413,11 @@ export const App: React.FC = () => {
             initialMode={studyTopicMode}
             solvedQuestions={stats.solvedQuestions}
             mistakeIds={stats.mistakeQuestionIds}
+            mistakeReviews={stats.mistakeReviews}
             onRecordQuestionResult={handleRecordQuestionResult}
             onAddMistake={handleAddMistake}
-            onRemoveMistake={handleRemoveMistake}
+            onMistakeCorrect={handleMistakeCorrect}
+            onSetMistakeCause={handleSetMistakeCause}
             onBack={() => setActiveTab('study')}
             onOpenTactic={(type) => {
               setTacticFilter(type);
@@ -498,7 +539,11 @@ export const App: React.FC = () => {
             mistakeQuestionIds={stats.mistakeQuestionIds}
             bookmarkedWords={stats.bookmarkedWords}
             pendingReviewWords={stats.pendingReviewVocabIds}
+            mistakeReviews={stats.mistakeReviews}
             onRemoveMistake={handleRemoveMistake}
+            onMistakeCorrect={handleMistakeCorrect}
+            onMistakeWrong={handleAddMistake}
+            onSetMistakeCause={handleSetMistakeCause}
             onRecordQuestionResult={handleRecordQuestionResult}
             onRemoveBookmark={(wId) => {
               handleToggleBookmark(wId);

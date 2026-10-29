@@ -10,7 +10,7 @@ const props = {
   topic: grammar,
   onRecordQuestionResult: noop,
   onAddMistake: noop,
-  onRemoveMistake: noop,
+  onMistakeCorrect: noop,
   onBack: noop
 };
 

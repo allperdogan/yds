@@ -1,16 +1,22 @@
 import React, { useState, useMemo } from 'react';
-import { AlertCircle, Bookmark, CheckCircle2, Trash2, ArrowRight, BookOpen, Sparkles, Volume2, HelpCircle, RotateCcw, Lightbulb } from 'lucide-react';
-import { YdsQuestion, YdsWord } from '../types';
+import { AlertCircle, Bookmark, CheckCircle2, Trash2, ArrowRight, BookOpen, Sparkles, Volume2, HelpCircle, Lightbulb } from 'lucide-react';
+import { MistakeCause, MistakeReview, YdsQuestion, YdsWord } from '../types';
 import { getUnifiedQuestionById } from '../data/ydsQuestions';
 import { YDS_VOCABULARY_LIST } from '../data/ydsVocabulary';
 import { AudioService } from '../services/audioService';
 import { QUESTION_TYPE_LABELS } from '../services/examInsights';
+import { CORRECT_TO_RETIRE, MISTAKE_CAUSES, MISTAKE_CAUSE_LABELS, describeDue, isMistakeDue } from '../services/mistakeReview';
+import { MistakeCausePicker } from './MistakeCausePicker';
 
 interface MistakesViewProps {
   mistakeQuestionIds: string[];
   bookmarkedWords: string[];
   pendingReviewWords?: string[];
+  mistakeReviews?: Record<string, MistakeReview>;
   onRemoveMistake: (questionId: string) => void;
+  onMistakeCorrect?: (questionId: string) => void;
+  onMistakeWrong?: (questionId: string) => void;
+  onSetMistakeCause?: (questionId: string, cause: MistakeCause) => void;
   onRemoveBookmark: (wordId: string) => void;
   onMarkWordKnown?: (wordId: string) => void;
   onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean) => void;
@@ -21,16 +27,21 @@ interface MistakesViewProps {
 const OPTION_KEYS = ['A', 'B', 'C', 'D', 'E'] as const;
 
 /**
- * A mistake is solved again before it can leave the list: the answer stays
- * hidden until the student picks an option, and only a correct pick offers
- * "Öğrendim (Kaldır)".
+ * A mistake is solved again on its due day with the answer hidden. A right
+ * answer moves it to the next review (3, then 7 days later) and the third one
+ * takes it off the list; a wrong one brings it back tomorrow.
  */
 const MistakeCard: React.FC<{
   q: YdsQuestion;
   index: number;
+  review?: MistakeReview;
+  stillListed: boolean;
   onRemoveMistake: (questionId: string) => void;
+  onMistakeCorrect?: (questionId: string) => void;
+  onMistakeWrong?: (questionId: string) => void;
+  onSetMistakeCause?: (questionId: string, cause: MistakeCause) => void;
   onRecordQuestionResult?: (questionId: string, selected: string, isCorrect: boolean) => void;
-}> = ({ q, index, onRemoveMistake, onRecordQuestionResult }) => {
+}> = ({ q, index, review, stillListed, onRemoveMistake, onMistakeCorrect, onMistakeWrong, onSetMistakeCause, onRecordQuestionResult }) => {
   const [picked, setPicked] = useState<string | null>(null);
   const [showPassage, setShowPassage] = useState(true);
   const answered = picked !== null;
@@ -39,8 +50,19 @@ const MistakeCard: React.FC<{
   const choose = (key: string) => {
     if (answered) return;
     setPicked(key);
-    onRecordQuestionResult?.(q.id, key, key === q.answer);
+    const isCorrect = key === q.answer;
+    onRecordQuestionResult?.(q.id, key, isCorrect);
+    if (isCorrect) onMistakeCorrect?.(q.id);
+    else onMistakeWrong?.(q.id);
   };
+
+  const status = !answered
+    ? null
+    : !correct
+    ? `Yanlış. Doğru cevap ${q.answer}. Yarın tekrar sorulacak.`
+    : !stillListed
+    ? `Doğru. ${CORRECT_TO_RETIRE}. kez doğru çözdün, listeden çıktı.`
+    : `Doğru (${review?.streak ?? 0}/${CORRECT_TO_RETIRE}). ${review ? describeDue(review.due) : ''} tekrar sorulacak.`;
 
   return (
     <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-4">
@@ -51,15 +73,14 @@ const MistakeCard: React.FC<{
           </span>
           <span className="text-xs font-semibold text-slate-500">{QUESTION_TYPE_LABELS[q.type] || q.type}</span>
         </div>
-        {answered && (
+        {stillListed && (
           <button
-            onClick={() => (correct ? onRemoveMistake(q.id) : setPicked(null))}
-            className={`flex items-center gap-1 text-xs font-bold transition-colors ${
-              correct ? 'text-emerald-600 hover:text-emerald-700' : 'text-slate-500 hover:text-sky-600'
-            }`}
+            onClick={() => onRemoveMistake(q.id)}
+            title="Bu soruyu tekrar listesinden çıkar"
+            className="flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-rose-600 transition-colors"
           >
-            {correct ? <CheckCircle2 className="w-4 h-4" /> : <RotateCcw className="w-4 h-4" />}
-            <span>{correct ? 'Öğrendim (Kaldır)' : 'Tekrar dene'}</span>
+            <Trash2 className="w-3.5 h-3.5" />
+            <span>Listeden çıkar</span>
           </button>
         )}
       </div>
@@ -107,8 +128,11 @@ const MistakeCard: React.FC<{
       {answered && (
         <div className="space-y-2">
           <p className={`text-sm font-bold ${correct ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-700 dark:text-rose-400'}`}>
-            {correct ? 'Doğru. Artık listeden çıkarabilirsin.' : `Yanlış. Doğru cevap ${q.answer}. Soru listede kalıyor.`}
+            {status}
           </p>
+          {!correct && onSetMistakeCause && (
+            <MistakeCausePicker value={review?.cause} onPick={(cause) => onSetMistakeCause(q.id, cause)} />
+          )}
           <div className="bg-slate-50 dark:bg-slate-850 p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
             <div className="flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400">
               <Sparkles className="w-3.5 h-3.5" />
@@ -126,7 +150,11 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
   mistakeQuestionIds,
   bookmarkedWords,
   pendingReviewWords = [],
+  mistakeReviews = {},
   onRemoveMistake,
+  onMistakeCorrect,
+  onMistakeWrong,
+  onSetMistakeCause,
   onRemoveBookmark,
   onMarkWordKnown,
   onRecordQuestionResult,
@@ -135,12 +163,28 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
 }) => {
   const [activeTab, setActiveTab] = useState<'questions' | 'words'>('questions');
 
+  // Today's list is fixed when the screen opens, so a card stays (with its
+  // explanation) after it is answered and moves to a later day.
+  const [dueIds] = useState(() => mistakeQuestionIds.filter((id) => isMistakeDue(mistakeReviews[id])));
+
   // Resolve mistake questions across all sources (Mock 1/2/3, Practice Bank, Reading, Vocab Drill)
   const mistakeQuestions: YdsQuestion[] = useMemo(() => {
-    return mistakeQuestionIds
+    return dueIds
       .map((id) => getUnifiedQuestionById(id))
       .filter((q): q is YdsQuestion => Boolean(q));
-  }, [mistakeQuestionIds]);
+  }, [dueIds]);
+
+  const listed = new Set(mistakeQuestionIds);
+  const waiting = mistakeQuestionIds.filter((id) => !isMistakeDue(mistakeReviews[id]));
+  const nextDue = waiting.map((id) => mistakeReviews[id].due).sort()[0];
+
+  // Which kind of mistake keeps coming back: the student's own tags on the open list.
+  const causeCounts = MISTAKE_CAUSES.map((cause) => ({
+    cause,
+    count: mistakeQuestionIds.filter((id) => mistakeReviews[id]?.cause === cause).length
+  }))
+    .filter((c) => c.count > 0)
+    .sort((a, b) => b.count - a.count);
 
   // Combine manually bookmarked words AND words failed in questions/drills (pendingReviewWords)
   const combinedWordIds = useMemo(() => {
@@ -162,7 +206,7 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
         <div>
           <h1 className="text-xl font-bold text-slate-900 dark:text-white">Hatalarım</h1>
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            Yanlış yaptığın sorular ve kelimeler burada. Doğru çözünce listeden çıkar.
+            Yanlış yaptığın sorular ve kelimeler burada. Bir soru ertesi gün, sonra 3 ve 7 gün sonra tekrar gelir; üç kez doğru çözünce listeden çıkar.
           </p>
         </div>
 
@@ -176,7 +220,7 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
                 : 'text-slate-600 dark:text-slate-400'
             }`}
           >
-            Sorular ({mistakeQuestions.length})
+            Bugün ({mistakeQuestions.length})
           </button>
           <button
             onClick={() => setActiveTab('words')}
@@ -194,11 +238,37 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
       {/* Tab 1: Yanlış Çözülen Sorular */}
       {activeTab === 'questions' && (
         <div className="space-y-4">
+          {(waiting.length > 0 || causeCounts.length > 0) && (
+            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-4 space-y-2 text-sm">
+              {waiting.length > 0 && (
+                <p className="text-slate-700 dark:text-slate-300">
+                  {waiting.length} soru tekrar gününü bekliyor (ilki {describeDue(nextDue)}).
+                </p>
+              )}
+              {causeCounts.length > 0 && (
+                <div className="space-y-1">
+                  <p className="text-slate-700 dark:text-slate-300">
+                    En çok yanlış nedenin: <span className="font-semibold">{MISTAKE_CAUSE_LABELS[causeCounts[0].cause]}</span>
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {causeCounts.map((c) => (
+                      <span
+                        key={c.cause}
+                        className="text-xs px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
+                      >
+                        {MISTAKE_CAUSE_LABELS[c.cause]}: {c.count}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
           {mistakeQuestions.length === 0 ? (
             <div className="text-center py-10 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 space-y-4">
               <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
               <h3 className="text-base font-semibold text-slate-900 dark:text-white">
-                Bekleyen hatalı soru yok.
+                {waiting.length > 0 ? 'Bugün tekrar edilecek soru yok.' : 'Bekleyen hatalı soru yok.'}
               </h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
                 Yanlış yaptığın sorular burada toplanır, sen de tekrar çözersin.
@@ -216,7 +286,12 @@ export const MistakesView: React.FC<MistakesViewProps> = ({
                 key={q.id}
                 q={q}
                 index={idx}
+                review={mistakeReviews[q.id]}
+                stillListed={listed.has(q.id)}
                 onRemoveMistake={onRemoveMistake}
+                onMistakeCorrect={onMistakeCorrect}
+                onMistakeWrong={onMistakeWrong}
+                onSetMistakeCause={onSetMistakeCause}
                 onRecordQuestionResult={onRecordQuestionResult}
               />
             ))

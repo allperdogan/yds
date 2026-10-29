@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Timer, Lightbulb } from 'lucide-react';
-import { QuestionType, UserStats, YdsQuestion } from '../types';
+import { MistakeCause, MistakeReview, QuestionType, UserStats, YdsQuestion } from '../types';
 import { StudyTopic, getQuestionStatus, questionGroupLabel } from '../services/studyTopics';
 import { getPaceStatus, PACE_TARGET_SECONDS } from '../services/examInsights';
+import { CORRECT_TO_RETIRE, describeDue, isMistakeDue } from '../services/mistakeReview';
+import { MistakeCausePicker } from './MistakeCausePicker';
 
 type Mode = 'new' | 'review' | 'all';
 
@@ -10,9 +12,11 @@ interface TopicPracticeViewProps {
   topic: StudyTopic;
   solvedQuestions: UserStats['solvedQuestions'];
   mistakeIds: string[];
+  mistakeReviews?: Record<string, MistakeReview>;
   onRecordQuestionResult: (questionId: string, selected: string, isCorrect: boolean, seconds?: number) => void;
   onAddMistake: (questionId: string) => void;
-  onRemoveMistake: (questionId: string) => void;
+  onMistakeCorrect: (questionId: string) => void;
+  onSetMistakeCause?: (questionId: string, cause: MistakeCause) => void;
   onBack: () => void;
   onOpenTactic?: (type: QuestionType) => void;
   // Which list to open with; defaults to new questions, or review when none are left.
@@ -25,9 +29,11 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
   topic,
   solvedQuestions,
   mistakeIds,
+  mistakeReviews = {},
   onRecordQuestionResult,
   onAddMistake,
-  onRemoveMistake,
+  onMistakeCorrect,
+  onSetMistakeCause,
   onBack,
   onOpenTactic,
   initialMode
@@ -35,14 +41,17 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
   const buildList = (mode: Mode): YdsQuestion[] => {
     if (mode === 'all') return topic.questions;
     const mistakes = new Set(mistakeIds);
-    const wanted = mode === 'new' ? 'new' : 'learning';
-    return topic.questions.filter((q) => getQuestionStatus(q.id, solvedQuestions, mistakes) === wanted);
+    // Review holds only the mistakes whose day has come; the rest wait.
+    if (mode === 'review') return topic.questions.filter((q) => mistakes.has(q.id) && isMistakeDue(mistakeReviews[q.id]));
+    return topic.questions.filter((q) => getQuestionStatus(q.id, solvedQuestions, mistakes) === 'new');
   };
 
   const mistakeSet = new Set(mistakeIds);
   const newCount = topic.questions.filter((q) => getQuestionStatus(q.id, solvedQuestions, mistakeSet) === 'new').length;
-  const reviewCount = topic.questions.filter((q) => mistakeSet.has(q.id)).length;
-  const solvedCount = topic.questions.length - newCount - reviewCount;
+  const mistakeCount = topic.questions.filter((q) => mistakeSet.has(q.id)).length;
+  const reviewCount = topic.questions.filter((q) => mistakeSet.has(q.id) && isMistakeDue(mistakeReviews[q.id])).length;
+  const waitingCount = mistakeCount - reviewCount;
+  const solvedCount = topic.questions.length - newCount - mistakeCount;
 
   const [mode, setMode] = useState<Mode>(() =>
     initialMode === 'review' && reviewCount > 0 ? 'review' : newCount === 0 && reviewCount > 0 ? 'review' : 'new'
@@ -102,7 +111,7 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
     setAnswers((prev) => ({ ...prev, [q.id]: key }));
     const isCorrect = key === q.answer;
     onRecordQuestionResult(q.id, key, isCorrect, seconds);
-    if (isCorrect) onRemoveMistake(q.id);
+    if (isCorrect) onMistakeCorrect(q.id);
     else onAddMistake(q.id);
   };
 
@@ -209,8 +218,11 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
               : 'Tekrar turunu bitirdin.'}
           </p>
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            Yanlış yaptığın sorular "Tekrar" listesine düşer. Doğru cevaplayınca öğrendiklerine geçer.
+            Yanlış yaptığın sorular ertesi gün, sonra 3 ve 7 gün sonra "Tekrar" listesine gelir. Üç kez doğru çözünce öğrendiklerine geçer.
           </p>
+          {waitingCount > 0 && (
+            <p className="text-sm text-slate-600 dark:text-slate-400">Tekrar günü henüz gelmemiş {waitingCount} yanlışın var.</p>
+          )}
           <div className="flex flex-wrap justify-center gap-2">
             {reviewCount > 0 && (
               <button onClick={() => startMode('review')} className="px-4 py-2 rounded-lg bg-sky-600 text-white text-sm font-semibold">
@@ -290,9 +302,16 @@ export const TopicPracticeView: React.FC<TopicPracticeViewProps> = ({
                 }`}
               >
                 {selected === q.answer
-                  ? 'Doğru. Bu soru öğrendiklerine eklendi.'
-                  : `Yanlış. Doğru cevap ${q.answer}. Soru tekrar listene eklendi.`}
+                  ? mistakeSet.has(q.id)
+                    ? `Doğru. ${mistakeReviews[q.id]?.streak ?? 0}/${CORRECT_TO_RETIRE} tamam, ${describeDue(
+                        mistakeReviews[q.id]?.due ?? ''
+                      )} tekrar sorulacak.`
+                    : 'Doğru. Bu soru öğrendiklerine eklendi.'
+                  : `Yanlış. Doğru cevap ${q.answer}. Soru yarın tekrar sorulacak.`}
               </p>
+              {selected !== q.answer && onSetMistakeCause && (
+                <MistakeCausePicker value={mistakeReviews[q.id]?.cause} onPick={(cause) => onSetMistakeCause(q.id, cause)} />
+              )}
               <div className="text-sm leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-line bg-slate-50 dark:bg-slate-800/60 rounded-xl p-3">
                 {q.explanation}
                 {q.trapWarning && <span className="block mt-2 text-amber-800 dark:text-amber-300">Dikkat: {q.trapWarning}</span>}
