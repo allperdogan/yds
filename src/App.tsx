@@ -61,9 +61,11 @@ export const App: React.FC = () => {
   const [isInstallModalOpen, setIsInstallModalOpen] = useState<boolean>(false);
   const [isSyncModalOpen, setIsSyncModalOpen] = useState<boolean>(false);
 
+  // Backups from older versions lack newer fields; fill them before use.
   const handleRestoreBackup = (payload: BackupPayload) => {
-    setStats(payload.stats);
-    StorageService.saveStats(payload.stats);
+    const restored = StorageService.normalizeStats(payload.stats);
+    setStats(restored);
+    StorageService.saveStats(restored);
     setSrsData(payload.srsData);
     SRSEngine.saveSRSData(payload.srsData);
   };
@@ -214,6 +216,7 @@ export const App: React.FC = () => {
   // Every drill answer moves the word's next review: known words come back
   // rarely, missed ones right away.
   const handleRecordVocabReview = (wordId: string, isCorrect: boolean) => {
+    markStudied();
     setStats((prev) => {
       const reviews = prev.vocabReviews || {};
       return { ...prev, vocabReviews: { ...reviews, [wordId]: recordWordReview(reviews[wordId], isCorrect) } };
@@ -432,6 +435,7 @@ export const App: React.FC = () => {
               handleToggleBookmark(wId, true);
             }}
             onAddMistake={handleAddMistake}
+            onRemoveMistake={handleRemoveMistake}
             onNavigateToFlashcards={(mode) => {
               setVocabInitialViewMode(mode || 'flashcard');
               setActiveTab('vocab');

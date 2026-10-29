@@ -44,6 +44,7 @@ interface VocabDrillViewProps {
   onToggleBookmark?: (wordId: string) => void;
   onAddMistakeWord?: (wordId: string) => void;
   onAddMistake?: (questionId: string) => void;
+  onRemoveMistake?: (questionId: string) => void;
   onNavigateToFlashcards?: (mode?: 'flashcard' | 'dictionary') => void;
 }
 
@@ -67,6 +68,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
   onToggleBookmark,
   onAddMistakeWord,
   onAddMistake,
+  onRemoveMistake,
   onNavigateToFlashcards
 }) => {
   // Drill Mode: Curated VIP Questions vs Infinite Question Generator
@@ -263,6 +265,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (isCorrect) {
       onMarkKnown(currentQ.targetWordId);
       onRemovePendingReview(currentQ.targetWordId);
+      onRemoveMistake?.(currentQ.id);
     } else {
       onMarkPendingReview(currentQ.targetWordId);
       if (onAddMistakeWord) {
@@ -304,6 +307,7 @@ export const VocabDrillView: React.FC<VocabDrillViewProps> = ({
     if (!hasAnswered) onRecordReview?.(currentQ.targetWordId, true);
     onMarkKnown(currentQ.targetWordId);
     onRemovePendingReview(currentQ.targetWordId);
+    onRemoveMistake?.(currentQ.id);
     handleNext();
   };
 
